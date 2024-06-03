@@ -1,5 +1,6 @@
 Test case 1: FAILED
 Expected output:
-1 1 
+10000
 Actual output:
-0 0 
+11000
+
