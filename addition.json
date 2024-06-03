@@ -3,9 +3,7 @@
     {
       "title": "Sum of Two Numbers",
       "description": "Given two integers, output their sum.",
-      "input": "Two integers a and b (1 <= a, b <= 1000).",
-      "output": "A single integer, the sum of a and b.",
-      "test_cases": [
+      "public_tests": [
         {
           "input": "2 3",
           "output": "5"
