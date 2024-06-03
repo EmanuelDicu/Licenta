@@ -1,18 +1,25 @@
 {
-  "problems": [
+
+  "title": "Sum of Two Numbers",
+  "description": "Given two integers, output their sum.",
+  "public_test": [
     {
-      "title": "Sum of Two Numbers",
-      "description": "Given two integers, output their sum.",
-      "public_tests": [
-        {
-          "input": "2 3",
-          "output": "5"
-        },
-        {
-          "input": "10 20",
-          "output": "30"
-        }
-      ]
+      "input": "2 3",
+      "output": "5"
+    },
+    {
+      "input": "10 20",
+      "output": "30"
+    }
+  ],
+  "generated_test": [
+    {
+      "input": "1 2",
+      "output": "3"
+    },
+    {
+      "input": "3 4",
+      "output": "7"
     }
   ]
 }
