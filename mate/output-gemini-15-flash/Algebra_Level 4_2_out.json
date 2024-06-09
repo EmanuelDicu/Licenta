@@ -1,0 +1,17 @@
+{
+    "Algebra_Level 4_2.json": {
+        "category": "Algebra",
+        "difficulty": "Level 4",
+        "problem": "What number must we add to $3-5i$ to get $2+7i$? Here, $i^2 = -1.$",
+        "correct_solution": "We seek the number $z$ such that $3-5i + z = 2+7i$, so $z = 2+7i-3+5i = \\boxed{-1+12i}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Let the number we need to add be $x + yi$. \n\nWe have the equation: \n$(3 - 5i) + (x + yi) = 2 + 7i$\n\nCombining real and imaginary parts separately: \n- Real part: $3 + x = 2$\n- Imaginary part: $-5 + y = 7$\n\nSolving the equations:\n- $x = 2 - 3 = -1$\n- $y = 7 + 5 = 12$\n\nTherefore, the number we need to add is $\\boxed{-1 + 12i}$. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.7926829268292683
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "Prealgebra_Level 4_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 4",
+        "problem": "How many four-character license plates consist of a consonant, followed by a vowel, followed by a consonant, and then a digit? (For this problem, consider Y a vowel.)",
+        "correct_solution": "There are four total characters on the license plate. Each character has no relation to another, therefore, each character is considered an independent event. To count the total number of possibilities of a problem with independent events, we need to multiply the number of possibilities for each event.\n\nThere are a total of 26 letters in the alphabet.  Of these, 6 (A, E, I, O, U, and Y) are vowels and the other 20 are consonants. There are a total of 10 digits, 0 through 9.\n\nThe number of plates then is:  \\begin{align*}\n\\text{\\# of consonants} &\\times \\text{\\# of vowels} \\times \\text{\\# of consonants} \\times \\text{\\# of digits} \\\\\n&=20 \\times 6 \\times 20 \\times 10\\\\\n& = \\boxed{24{,}000}\n\\end{align*}\n\nThere are a total of 24,000 different license plate combinations.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "* **Part 1: Consonants**\n   * There are 21 consonants in the alphabet (excluding Y).\n* **Part 2: Vowels**\n   * There are 5 vowels in the alphabet (A, E, I, O, U, and Y).\n* **Part 3: Digits**\n   * There are 10 possible digits (0 through 9).\n* **Part 4: Combining the Possibilities**\n   * To find the total number of license plates, multiply the number of possibilities for each position: 21 consonants * 5 vowels * 21 consonants * 10 digits = **22,050**\n\n**Therefore, there are 22,050 possible four-character license plates that meet the given criteria.** \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": 0.7316129032258064
+            }
+        }
+    }
+}

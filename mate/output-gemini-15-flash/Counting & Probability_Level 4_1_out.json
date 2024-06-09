@@ -1,0 +1,17 @@
+{
+    "Counting & Probability_Level 4_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 4",
+        "problem": "Ben rolls four fair 10-sided dice, each numbered with numbers from 1 to 10. What is the probability that exactly two of the dice show a prime number?",
+        "correct_solution": "The probability that a 10-sided die rolls a prime number is $\\frac{4}{10}=\\frac{2}{5}$ since the primes it can roll are 2, 3, 5, and 7. We can choose which dice show a prime number in $\\binom{4}{2}=6$ ways. Then, there is a $\\frac{2}{5}\\cdot \\frac{2}{5} \\cdot \\frac{3}{5} \\cdot \\frac{3}{5}=\\frac{36}{625}$ chance that the chosen dice will actually roll a prime number and the other dice won't. Therefore, the total probability that exactly two dice show a prime number is $6 \\cdot \\frac{36}{625}=\\boxed{\\frac{216}{625}}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve the problem:\n\n**1. Determine the total number of outcomes:**\n\n* Each die has 10 possible outcomes.\n* With four dice, the total number of outcomes is 10 * 10 * 10 * 10 = 10,000.\n\n**2. Determine the number of successful outcomes:**\n\n* **Identify prime numbers:** The prime numbers on a 10-sided die are 2, 3, 5, and 7.\n* **Choose two dice for prime numbers:** There are  \u2074C\u2082 = 6 ways to choose two dice out of four.\n* **Assign prime numbers:** Each of the chosen dice has 4 options for a prime number.\n* **Assign non-prime numbers:**  The other two dice each have 6 options for a non-prime number.\n\n**3. Calculate the probability:**\n\n* The number of successful outcomes is 6 * 4 * 4 * 6 * 6 = 3456\n* The probability is (number of successful outcomes) / (total number of outcomes) = 3456 / 10000 = **0.3456** \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": 0.7521160822249093
+            }
+        }
+    }
+}

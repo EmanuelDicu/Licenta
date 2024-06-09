@@ -1,0 +1,17 @@
+{
+    "Geometry_Level 4_1.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "When each edge of a cube is increased by $50\\%$, by what percent is the surface area of the cube increased?",
+        "correct_solution": "Let $s$ represent the length of the edge of a cube. The surface area of the cube is 6 times the area of each face (since there are 6 faces), or $6s^2$. Increasing $s$ by $50\\%$ gives us $1.5s$. The new surface area is $6(1.5s)^2=6s^2(2.25)$. Increasing the surface area by $x\\%$ is $6s^2\\left(1+\\frac{x}{100}\\right)$, so we solve for $x$ when the surface area is $6s^2(2.25)$. $$2.25=1+\\frac{x}{100}\\qquad\\Rightarrow 1.25=\\frac{x}{100}\\qquad\\Rightarrow 125=x$$ The surface area increases by $\\boxed{125\\%}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Part 1: Original and Increased Edge Lengths**\n\n* Let the original edge length of the cube be *s*.\n* Increasing the edge length by 50% gives a new edge length of 1.5*s*.\n\n**Part 2: Original and Increased Surface Areas**\n\n* The original surface area of the cube is 6*s\u00b2 (6 faces, each with area s\u00b2).\n* The increased surface area of the cube is 6*(1.5*s)\u00b2 = 6*2.25*s\u00b2 = 13.5*s\u00b2.\n\n**Part 3: Percentage Increase in Surface Area**\n\n* The increase in surface area is 13.5*s\u00b2 - 6*s\u00b2 = 7.5*s\u00b2\n* The percentage increase is (increase in surface area / original surface area) * 100% \n* This gives (7.5*s\u00b2 / 6*s\u00b2) * 100% = 125%\n\n**Solution:** The surface area of the cube is increased by **125%**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.7107558139534884
+            }
+        }
+    }
+}

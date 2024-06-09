@@ -1,0 +1,17 @@
+{
+    "Geometry_Level 1_1.json": {
+        "category": "Geometry",
+        "difficulty": "Level 1",
+        "problem": "A square and four circles, each with a radius of 5 inches, are arranged as shown. What is the area, in square inches, of the square? [asy]\nunitsize(1mm);\ndefaultpen(linewidth(0.7pt));\n\ndraw((0,0)--(20,0)--(20,20)--(0,20)--cycle);\ndraw(Circle((5,5),5));\ndraw(Circle((15,5),5));\ndraw(Circle((5,15),5));\ndraw(Circle((15,15),5));\n[/asy]",
+        "correct_solution": "The side length of the square is equal to twice the diameter of one of the circles, so the area of the square is $(20\\text{ in})(20\\text{ in})=\\boxed{400}$ square inches.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "1. **Identify the relationship between the square and the circles:**  Each circle touches two sides of the square and another circle. \n2. **Find the side length of the square:**  The diameter of each circle is 10 inches (twice the radius). Since two diameters fit along one side of the square, the side length of the square is 10 inches + 10 inches = 20 inches.\n3. **Calculate the area of the square:** The area of a square is side length squared, so the area of the square is 20 inches * 20 inches = **400 square inches**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.7523809523809524
+            }
+        }
+    }
+}

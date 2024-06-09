@@ -1,0 +1,17 @@
+{
+    "Number Theory_Level 4_1.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 4",
+        "problem": "How many positive three-digit integers with a $5$ in the units place are divisible by $15$?",
+        "correct_solution": "Odd multiples of 5 have a 5 in the units place, while even multiples of 5 have a 0 in the units place. Multiples of 15 are multiples of 5, so we look at how many three-digit multiples of 15 are odd to find how many have a 5 in the units place. The three-digit multiples of 15 range from 105 to 990, or $15\\times7$ to $15\\times 66$. So there are $66-7+1=60$ three-digit multiples of 15. Half of them will be odd, so there are 30 odd, three-digit multiples of 15. There are $\\boxed{30}$ positive, three-digit integers with a 5 in the units place that are divisible by 15.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Part 1:  Understanding Divisibility by 15**\n\nA number is divisible by 15 if it is divisible by both 3 and 5.\n\n**Part 2: Divisibility by 5**\n\nA number is divisible by 5 if its units digit is a 0 or a 5.  Since we are looking for three-digit integers ending in 5, all numbers meet this condition.\n\n**Part 3: Divisibility by 3**\n\nA number is divisible by 3 if the sum of its digits is divisible by 3.\n\n**Part 4: Finding the Possibilities**\n\nWe need to find the possible hundreds and tens digits that, when combined with a units digit of 5, result in a sum divisible by 3.\n\n* **Hundreds digit 1:**  1 _ 5.  To make the sum divisible by 3, the tens digit must be 2 (1+2+5=8, which is not divisible by 3) or 5 (1+5+5=11, which is not divisible by 3).\n* **Hundreds digit 2:**  2 _ 5.  The tens digit must be 1 (2+1+5=8, which is not divisible by 3) or 4 (2+4+5=11, which is not divisible by 3).\n* **Hundreds digit 3:**  3 _ 5.  The tens digit must be 0 (3+0+5=8, which is not divisible by 3) or 3 (3+3+5=11, which is not divisible by 3).\n* **Hundreds digit 4:**  4 _ 5.  The tens digit must be 2 (4+2+5=11, which is not divisible by 3) or 5 (4+5+5=14, which is divisible by 3).\n* **Hundreds digit 5:**  5 _ 5.  The tens digit must be 1 (5+1+5=11, which is not divisible by 3) or 4 (5+4+5=14, which is divisible by 3).\n* **Hundreds digit 6:**  6 _ 5.  The tens digit must be 0 (6+0+5=11, which is not divisible by 3) or 3 (6+3+5=14, which is divisible by 3).\n* **Hundreds digit 7:**  7 _ 5.  The tens digit must be 2 (7+2+5=14, which is divisible by 3) or 5 (7+5+5=17, which is not divisible by 3).\n* **Hundreds digit 8:**  8 _ 5.  The tens digit must be 1 (8+1+5=14, which is divisible by 3) or 4 (8+4+5=17, which is not divisible by 3).\n* **Hundreds digit 9:**  9 _ 5.  The tens digit must be 0 (9+0+5=14, which is divisible by 3) or 3 (9+3+5=17, which is not divisible by 3).\n\n**Part 5:  Counting the Possibilities**\n\nWe have found the following three-digit integers that meet the criteria:\n\n* 455\n* 545\n* 635\n* 725\n* 815\n* 905\n\nTherefore, there are **6** positive three-digit integers with a 5 in the units place that are divisible by 15. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": 0.8152478952291862
+            }
+        }
+    }
+}

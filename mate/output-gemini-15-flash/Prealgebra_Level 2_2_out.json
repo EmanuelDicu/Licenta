@@ -1,0 +1,17 @@
+{
+    "Prealgebra_Level 2_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 2",
+        "problem": "If the price of a stamp is 33 cents, what is the maximum number  of stamps that could be purchased with $\\$32$?",
+        "correct_solution": "$\\$32$ is equal to 3200 cents. Since $n$ stamps cost $33n$ cents, we can buy $n$ stamps only if $33n \\le 3200$. Dividing both sides of this inequality by $33$, we get $$n\\le \\frac{3200}{33}.$$We want to know the largest integer $n$ which satisfies this inequality (since we can only buy an integer number of stamps). We note that \\begin{align*}\n\\frac{3200}{33} &= \\frac{3300}{33} - \\frac{100}{33} \\\\\n&= 100 - 3\\frac{1}{33} \\\\\n&= 96\\frac{32}{33},\n\\end{align*}so the largest number of stamps we can buy is $\\boxed{96}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "1. **Convert the dollar amount to cents:** Since the stamp price is in cents, we need to convert $32 to cents. There are 100 cents in a dollar, so $32 is equal to 32 * 100 = 3200 cents.\n\n2. **Divide the total cents by the price per stamp:** To find the maximum number of stamps, divide the total amount of cents by the price of each stamp: 3200 cents / 33 cents/stamp = 97.0 (approximately).\n\n3. **Round down to the nearest whole number:** Since you can't buy a fraction of a stamp, round the result down to the nearest whole number. Therefore, the maximum number of stamps that can be purchased is **97**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": 0.7302631578947368
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "Counting & Probability_Level 1_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 1",
+        "problem": "Calculate $\\frac{3 \\cdot 5! + 15\\cdot 4!}{6!}$",
+        "correct_solution": "We factor and rearrange the terms in the factorials:\n\n\\begin{align*}\n\\frac{3\\cdot 5! + 15\\cdot 4!}{6!} &= \\frac{3\\cdot 5! + 3\\cdot 5!}{6!} \\\\\n&= \\frac{2\\cdot 3 \\cdot 5!}{6!} \\\\\n&= \\frac{6!}{6!} \\\\\n&= \\boxed{1}\n\\end{align*}",
+        "generated_solutions": {
+            "gemini-1.5-flash": "1. **Calculate the factorials:**\n   *  5! = 5 * 4 * 3 * 2 * 1 = 120\n   *  4! = 4 * 3 * 2 * 1 = 24\n   *  6! = 6 * 5 * 4 * 3 * 2 * 1 = 720\n\n2. **Perform the multiplications:**\n   * 3 * 5! = 3 * 120 = 360\n   * 15 * 4! = 15 * 24 = 360\n\n3. **Add the results:**\n   * 360 + 360 = 720\n\n4. **Divide by 6!:**\n   * 720 / 720 = 1\n\nTherefore, the solution is **1**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.8305084745762712
+            }
+        }
+    }
+}

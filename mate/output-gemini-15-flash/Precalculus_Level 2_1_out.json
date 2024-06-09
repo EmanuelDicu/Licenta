@@ -1,0 +1,17 @@
+{
+    "Precalculus_Level 2_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 2",
+        "problem": "When $1 - i \\sqrt{3}$ is converted to the exponential form $re^{i \\theta}$, what is $\\theta$?",
+        "correct_solution": "We see that\n\\[1 - i \\sqrt{3} = 2 \\left( \\frac{1}{2} - \\frac{\\sqrt{3}}{2} i \\right) = 2e^{5 \\pi i/3},\\]so $\\theta = \\boxed{\\frac{5\\pi}{3}}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "1. **Find the modulus, *r*:**\n   * The modulus of a complex number *z = x + yi* is given by *r = |z| = \u221a(x\u00b2 + y\u00b2)*.\n   * In our case, *x = 1* and *y = -\u221a3*.\n   * Therefore, *r = \u221a(1\u00b2 + (-\u221a3)\u00b2) = \u221a(1 + 3) = 2*.\n\n2. **Find the argument, *\u03b8*:**\n   * The argument is the angle the complex number makes with the positive real axis in the complex plane.\n   * We can find it using the formula *tan(\u03b8) = y/x*.\n   * In this case, *tan(\u03b8) = -\u221a3 / 1 = -\u221a3*.\n   * Since the real part is positive and the imaginary part is negative, the complex number lies in the fourth quadrant.\n   * The angle whose tangent is -\u221a3 in the fourth quadrant is *\u03b8 = -\u03c0/3*.\n\nTherefore, the solution is **\u03b8 = -\u03c0/3**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": 0.9036496350364963
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "Precalculus_Level 4_2.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 4",
+        "problem": "If the matrix $\\mathbf{A}$ has an inverse and $(\\mathbf{A} - 2 \\mathbf{I})(\\mathbf{A} - 4 \\mathbf{I}) = \\mathbf{0},$ then find\n\\[\\mathbf{A} + 8 \\mathbf{A}^{-1}.\\]",
+        "correct_solution": "Expanding $(\\mathbf{A} - 2 \\mathbf{I})(\\mathbf{A} - 4 \\mathbf{I}) = \\mathbf{0},$ we get\n\\[\\mathbf{A}^2 - 6 \\mathbf{A} + 8 \\mathbf{I} = \\mathbf{0}.\\]Multiplying both sides by $\\mathbf{A}^{-1},$ we get\n\\[\\mathbf{A} - 6 \\mathbf{I} + 8 \\mathbf{A}^{-1} = \\mathbf{0}.\\]Then\n\\[\\mathbf{A} + 8 \\mathbf{A}^{-1} = 6 \\mathbf{I} = \\boxed{\\begin{pmatrix} 6 & 0 \\\\ 0 & 6 \\end{pmatrix}}.\\]",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Part 1:  Simplify the given equation.**\n\nSince $\\mathbf{A}$ has an inverse, we can multiply both sides of the equation $(\\mathbf{A} - 2 \\mathbf{I})(\\mathbf{A} - 4 \\mathbf{I}) = \\mathbf{0}$ by $\\mathbf{A}^{-1}$ on the right:\n\n$(\\mathbf{A} - 2 \\mathbf{I})(\\mathbf{A} - 4 \\mathbf{I})\\mathbf{A}^{-1} = \\mathbf{0} \\mathbf{A}^{-1}$\n\nThis simplifies to:\n\n$(\\mathbf{A} - 2 \\mathbf{I})(\\mathbf{A} - 4 \\mathbf{I})\\mathbf{A}^{-1} = \\mathbf{0}$\n\n**Part 2:  Use the distributive property.**\n\nExpanding the left side using the distributive property gives:\n\n$\\mathbf{A}(\\mathbf{A} - 4 \\mathbf{I})\\mathbf{A}^{-1} - 2 \\mathbf{I}(\\mathbf{A} - 4 \\mathbf{I})\\mathbf{A}^{-1} = \\mathbf{0}$\n\n**Part 3:  Simplify using the properties of matrix multiplication.**\n\nWe can simplify this further:\n\n$\\mathbf{A}^2 \\mathbf{A}^{-1} - 4 \\mathbf{A} \\mathbf{A}^{-1} - 2 \\mathbf{I} \\mathbf{A} \\mathbf{A}^{-1} + 8 \\mathbf{I} \\mathbf{A}^{-1} = \\mathbf{0}$\n\nUsing the fact that $\\mathbf{A} \\mathbf{A}^{-1} = \\mathbf{I}$ and $\\mathbf{I} \\mathbf{A} = \\mathbf{A}$, we get:\n\n$\\mathbf{A} - 4 \\mathbf{I} - 2 \\mathbf{I} + 8 \\mathbf{A}^{-1} = \\mathbf{0}$\n\n**Part 4:  Solve for  A + 8A<sup>-1</sup>.**\n\nRearranging the terms, we obtain:\n\n$\\mathbf{A} + 8 \\mathbf{A}^{-1} = 6 \\mathbf{I}$\n\nTherefore, $\\mathbf{A} + 8 \\mathbf{A}^{-1} = \\boxed{6 \\mathbf{I}}$. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.7648854961832061
+            }
+        }
+    }
+}

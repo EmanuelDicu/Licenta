@@ -1,0 +1,17 @@
+{
+    "Prealgebra_Level 3_1.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 3",
+        "problem": "What is the largest prime factor of $3328$?",
+        "correct_solution": "Divide by $2$ over and over again to get the prime factorization $3328=2^8\\cdot13$. The largest prime factor is $\\boxed{13}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "1. **Find the prime factorization of 3328.**  We can do this by repeatedly dividing by prime numbers until we can't divide anymore:\n    * 3328 is divisible by 2:  3328 / 2 = 1664\n    * 1664 is divisible by 2: 1664 / 2 = 832\n    * 832 is divisible by 2: 832 / 2 = 416\n    * 416 is divisible by 2: 416 / 2 = 208\n    * 208 is divisible by 2: 208 / 2 = 104\n    * 104 is divisible by 2: 104 / 2 = 52\n    * 52 is divisible by 2: 52 / 2 = 26\n    * 26 is divisible by 2: 26 / 2 = 13\n    * 13 is a prime number.\n\nTherefore, the prime factorization of 3328 is  2 x 2 x 2 x 2 x 2 x 2 x 2 x 13, or $2^7 \\cdot 13$.\n\n2. **Identify the largest prime factor.**  The largest prime factor in the prime factorization of 3328 is **13**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.8662952646239555
+            }
+        }
+    }
+}

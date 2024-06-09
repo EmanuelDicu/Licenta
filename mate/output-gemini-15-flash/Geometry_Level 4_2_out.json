@@ -1,0 +1,17 @@
+{
+    "Geometry_Level 4_2.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "Two congruent cones with radius 12 cm and height 12 cm are enclosed within a cylinder. The base of each cone is a base of the cylinder, and the height of the cylinder is 24 cm. What is the number of cubic centimeters in the volume of the cylinder not occupied by the cones? Express your answer in terms of $\\pi$.",
+        "correct_solution": "The cylinder has volume $\\pi (12)^2 (24)$ cubic cm.  Each cone has volume $(1/3)\\pi (12)^2(12)$ cubic cm.  Hence the volume of the space in the cylinder not occupied by the cones is  \\begin{align*}\n\\pi (12)^2 (24) - (2)(1/3)\\pi (12)^2(12) &= 12^3\\pi(2-2/3)\\\\\n&=12^3\\pi(4/3)\\\\\n&=\\boxed{2304\\pi} \\text{ cubic cm}.\n\\end{align*}",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Part 1: Find the volume of one cone**\n\n* The formula for the volume of a cone is  (1/3)\u03c0r\u00b2h, where r is the radius and h is the height.\n* Substitute the given values: (1/3)\u03c0(12\u00b2)(12) = 576\u03c0 cubic centimeters.\n\n**Part 2: Find the volume of the cylinder**\n\n* The formula for the volume of a cylinder is \u03c0r\u00b2h, where r is the radius and h is the height.\n* Substitute the given values: \u03c0(12\u00b2)(24) = 3456\u03c0 cubic centimeters.\n\n**Part 3: Find the volume of the cylinder not occupied by the cones**\n\n* Subtract the volume of the two cones from the volume of the cylinder: 3456\u03c0 - 2(576\u03c0) = 2304\u03c0 cubic centimeters.\n\n**Solution:** The volume of the cylinder not occupied by the cones is **2304\u03c0** cubic centimeters. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.7785613540197461
+            }
+        }
+    }
+}

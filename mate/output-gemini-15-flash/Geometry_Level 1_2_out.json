@@ -1,0 +1,17 @@
+{
+    "Geometry_Level 1_2.json": {
+        "category": "Geometry",
+        "difficulty": "Level 1",
+        "problem": "The area of rectangle $ABCD$ with vertices $A$(0, 0), $B$(0, 4), $C$($x$, 4) and $D$($x$, 0) is 28 square units. If $x > 0$, what is the value of $x$?",
+        "correct_solution": "Plotting the points, we see that the dimensions of the rectangle are $x$ and $4$.  The area of the rectangle is $(\\text{length})(\\text{width})=4x$, so $4x=28$ and $x=\\boxed{7}$. [asy]\nsize(5cm);\nimport graph;\ndefaultpen(linewidth(0.7)+fontsize(12));\nreal x = 7;\npair A=(0,0), B=(0,4), C=(x,4), D=(x,0);\npair[] dots = {A,B,C,D};\ndot(dots);\ndraw(A--B--C--D--cycle);\nxaxis(-2,9,Arrows(4));\nyaxis(-2,7,Arrows(4));\nlabel(\"$A$\",A,SW);\nlabel(\"$B$\",B,NW);\nlabel(\"$C$\",C,NE);\nlabel(\"$D$\",D,SE);\nlabel(\"$x$\",(B+C)/2,N);\nlabel(\"$4$\",(C+D)/2,E);[/asy]",
+        "generated_solutions": {
+            "gemini-1.5-flash": "1. **Identify the relevant information:** We are given that the area of rectangle ABCD is 28 square units. We also know the coordinates of three of the vertices: A(0, 0), B(0, 4), and D(x, 0).\n\n2. **Determine the dimensions of the rectangle:** The length of the rectangle is the distance between points A and D, which is simply *x*. The width of the rectangle is the distance between points A and B, which is 4.\n\n3. **Use the area formula:** The area of a rectangle is calculated by multiplying its length and width. We know the area is 28 and we've determined the length is *x* and the width is 4. Therefore, we can write the equation: *x* * 4 = 28.\n\n4. **Solve for x:** Dividing both sides of the equation by 4, we get *x* = 7.\n\n**Solution:** The value of *x* is **7**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.8201811125485123
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "Prealgebra_Level 4_1.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 4",
+        "problem": "How many different three-letter sets of initials are possible using the letters $A$ through $G$?",
+        "correct_solution": "There are seven choices for the first initial, seven for the second, and seven for the third. Thus, there are $7^3 = \\boxed{343}$ combinations possible.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "There are 7 choices for the first initial, 7 choices for the second initial, and 7 choices for the third initial.  This gives us $7\\cdot7\\cdot7 = \\boxed{343}$ possible sets of initials. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.43315508021390375
+            }
+        }
+    }
+}

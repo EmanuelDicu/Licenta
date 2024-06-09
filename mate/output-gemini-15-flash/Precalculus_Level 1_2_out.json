@@ -1,0 +1,17 @@
+{
+    "Precalculus_Level 1_2.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 1",
+        "problem": "Compute\n\\[\\begin{vmatrix} -5 & 3 \\\\ 4 & -4 \\end{vmatrix}.\\]",
+        "correct_solution": "We have that\n\\[\\begin{vmatrix} -5 & 3 \\\\ 4 & -4 \\end{vmatrix} = (-5)(-4) - (3)(4) = \\boxed{8}.\\]",
+        "generated_solutions": {
+            "gemini-1.5-flash": "The determinant of a $2 \\times 2$ matrix $\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$ is $ad - bc.$  Therefore,\n\\[\\begin{vmatrix} -5 & 3 \\\\ 4 & -4 \\end{vmatrix} = (-5)(-4) - (3)(4) = \\boxed{8}.\\]"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.5329949238578681
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "Intermediate Algebra_Level 5_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 5",
+        "problem": "Find all $x$ such that $\\lfloor \\lfloor 2x \\rfloor - 1/2 \\rfloor = \\lfloor x + 2 \\rfloor.$",
+        "correct_solution": "Observe that $\\lfloor 2x \\rfloor$ is an integer, so it follows that $\\lfloor \\lfloor 2x \\rfloor - 1/2 \\rfloor = \\lfloor 2x \\rfloor - 1$. Also, $\\lfloor x + 2 \\rfloor = \\lfloor x \\rfloor + 2$. Thus, our equation becomes $$\\lfloor 2x \\rfloor = \\lfloor x \\rfloor + 3.$$Let $n = \\lfloor x \\rfloor,$ so $n \\le x < n + 1.$\n\nIf $x < n + \\frac{1}{2},$ then $2n \\le x < 2n + 1,$ so $\\lfloor 2x \\rfloor = 2n,$ and\n\\[2n = n + 3,\\]which means $n = 3.$\n\nIf $x \\ge n + \\frac{1}{2},$ then $2n + 1 \\le x < 2n + 2,$ so $\\lfloor 2x \\rfloor = 2n + 1,$ and\n\\[2n + 1 = n + 3,\\]which means $n = 2.$\n\nTherefore, the set of solutions is $x \\in \\boxed{\\left[ \\frac{5}{2}, \\frac{7}{2} \\right)}.$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "We can split the problem into cases based on the values of $\\lfloor 2x \\rfloor$ and $\\lfloor x + 2 \\rfloor$.\n\n**Case 1:** $\\lfloor 2x \\rfloor$ is even.\n\nIf $\\lfloor 2x \\rfloor$ is even, then $\\lfloor 2x \\rfloor - 1/2$ is also even, and hence $\\lfloor \\lfloor 2x \\rfloor - 1/2 \\rfloor = \\lfloor 2x \\rfloor - 1$.  Thus, we want to solve\n\\[\\lfloor 2x \\rfloor - 1 = \\lfloor x + 2 \\rfloor.\\]Since $\\lfloor 2x \\rfloor$ is even, we can write $\\lfloor 2x \\rfloor = 2k$ for some integer $k$.  Then $2k - 1 = \\lfloor x + 2 \\rfloor$.  This means $2k - 1 \\le x + 2 < 2k$.  Solving, we get $2k - 3 \\le x < 2k - 2$.  Thus, the solutions in this case are\n\\[2k - 3 \\le x < 2k - 2\\]for all integers $k$.\n\n**Case 2:** $\\lfloor 2x \\rfloor$ is odd.\n\nIf $\\lfloor 2x \\rfloor$ is odd, then $\\lfloor 2x \\rfloor - 1/2$ is also odd, and hence $\\lfloor \\lfloor 2x \\rfloor - 1/2 \\rfloor = \\lfloor 2x \\rfloor$.  Thus, we want to solve\n\\[\\lfloor 2x \\rfloor = \\lfloor x + 2 \\rfloor.\\]Since $\\lfloor 2x \\rfloor$ is odd, we can write $\\lfloor 2x \\rfloor = 2k + 1$ for some integer $k$.  Then $2k + 1 = \\lfloor x + 2 \\rfloor$.  This means $2k + 1 \\le x + 2 < 2k + 2$.  Solving, we get $2k - 1 \\le x < 2k$.  Thus, the solutions in this case are\n\\[2k - 1 \\le x < 2k\\]for all integers $k$.\n\nTherefore, the solutions to the equation are\n\\[2k - 3 \\le x < 2k - 2\\]and\n\\[2k - 1 \\le x < 2k\\]for all integers $k$.  We can combine these inequalities into the single inequality\n\\[\\boxed{2k - 3 \\le x < 2k}\\]for all integers $k$."
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": 0.6965610249494268
+            }
+        }
+    }
+}

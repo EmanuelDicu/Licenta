@@ -1,0 +1,17 @@
+{
+    "Intermediate Algebra_Level 1_1.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 1",
+        "problem": "The value of\n\\[\\frac{n}{2} + \\frac{18}{n}\\]is smallest for which positive integer $n$?",
+        "correct_solution": "By AM-GM,\n\\[\\frac{n}{2} + \\frac{18}{n} \\ge 2 \\sqrt{\\frac{n}{2} \\cdot \\frac{18}{n}} = 6.\\]Equality occurs when $\\frac{n}{2} = \\frac{18}{n} = 3,$ which leads to $n = \\boxed{6}.$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Part 1:  Arithmetic Mean-Geometric Mean (AM-GM) Inequality**\n\nThe AM-GM inequality states that for non-negative numbers $a$ and $b$,\n\\[\\frac{a + b}{2} \\ge \\sqrt{ab},\\]with equality if and only if $a = b.$\n\n**Part 2: Applying AM-GM**\n\nWe can apply the AM-GM inequality to the terms $\\frac{n}{2}$ and $\\frac{18}{n}$:\n\\[\\frac{\\frac{n}{2} + \\frac{18}{n}}{2} \\ge \\sqrt{\\frac{n}{2} \\cdot \\frac{18}{n}} = 3.\\]This simplifies to\n\\[\\frac{n}{2} + \\frac{18}{n} \\ge 6.\\]\n\n**Part 3: Equality**\n\nEquality occurs when $\\frac{n}{2} = \\frac{18}{n},$ which means $n^2 = 36.$  The positive solution is $n = \\boxed{6}.$\n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.7342192691029901
+            }
+        }
+    }
+}

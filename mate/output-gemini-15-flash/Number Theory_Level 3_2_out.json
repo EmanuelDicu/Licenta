@@ -1,0 +1,17 @@
+{
+    "Number Theory_Level 3_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 3",
+        "problem": "What is the least positive integer that satisfies the following conditions?\n\na) When divided by 2, the remainder is 1.\n\nb) When divided by 3, the remainder is 2.\n\nc) When divided by 4, the remainder is 3.\n\nd) When divided by 5, the remainder is 4.",
+        "correct_solution": "Let the smallest common solution be $a$. The given system of congruences is \\begin{align*}\na\\equiv 1\\equiv -1\\pmod 2,\\\\\na\\equiv 2\\equiv -1\\pmod 3,\\\\\na\\equiv 3\\equiv -1\\pmod 4,\\\\\na\\equiv 4\\equiv -1\\pmod 5.\n\\end{align*} Note that if $a\\equiv-1\\pmod 4$, then $a\\equiv-1\\pmod 2$ as well,  so we need only consider the final three congruences. Since $\\gcd(3,4)=\\gcd(4,5)=\\gcd(3,5)=1$, we have $$a\\equiv -1\\pmod{3\\cdot 4\\cdot 5},$$ that is, $a\\equiv 59\\pmod{60}$.\n\nSo $a$ has a lower bound of $59$, but $59$ also happens to satisfy all of the original congruences. Thus, $a=\\boxed{59}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "We can express the given conditions using modular arithmetic:\n\n*  a)  n \u2261 1 (mod 2)\n*  b)  n \u2261 2 (mod 3)\n*  c)  n \u2261 3 (mod 4)\n*  d)  n \u2261 4 (mod 5)\n\n**Part 1: Finding a pattern**\n\nNotice that the remainders are always one less than the divisor. This suggests we might find a solution by looking at numbers of the form  *divisor - 1*.\n\n**Part 2: Checking the pattern**\n\nLet's try the first few numbers of this form:\n\n* 1 - 1 = 0 (doesn't satisfy any conditions)\n* 2 - 1 = 1  (satisfies condition a)\n* 3 - 1 = 2 (satisfies conditions a and b)\n* 4 - 1 = 3 (satisfies conditions a, b, and c)\n* 5 - 1 = 4 (satisfies all conditions a, b, c, and d)\n\n**Solution:**\n\nThe least positive integer that satisfies all the conditions is **4**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": 0.8106995884773662
+            }
+        }
+    }
+}

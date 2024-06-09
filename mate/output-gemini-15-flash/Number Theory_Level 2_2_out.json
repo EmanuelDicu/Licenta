@@ -1,0 +1,17 @@
+{
+    "Number Theory_Level 2_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 2",
+        "problem": "What is the smallest two-digit integer $n$ such that switching its digits and then adding 3 results in $2n$?",
+        "correct_solution": "Let $10a+b$ represent $n$, where $a$ and $b$ are the tens and units digits, respectively. Switching the digits and adding 3 results in $10b+a+3$, which we set equal to $2n$. \\begin{align*}\n2(10a+b)&=10b+a+3\\quad\\Rightarrow\\\\\n20a+2b&=10b+a+3\\quad\\Rightarrow\\\\\n19a&=8b+3\n\\end{align*}For the smallest $n$, we let the tens digit $a=1$. We have $19=8b+3$, which means $b=2$. So the smallest $n$ is $\\boxed{12}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Let the tens digit of $n$ be $a$ and the units digit be $b$.  Then $n = 10a + b$.  Switching the digits gives us $10b + a$, and adding 3 gives $10b + a + 3$.  We are given that this is equal to $2n$, so $10b + a + 3 = 2(10a + b)$.  Simplifying, we get $8b - 19a = -3$.  Since $a$ and $b$ are digits, we can try small values of $b$ to see if we can find a solution.  If $b = 1$, then $8 - 19a = -3$, so $a = \\frac{11}{19}$, which is not an integer.  If $b = 2$, then $16 - 19a = -3$, so $a = 1$, which works.  Therefore, the smallest such integer is $n = 10a + b = \\boxed{12}$. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.6920415224913494
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "Precalculus_Level 3_2.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 3",
+        "problem": "Below is the graph of $y = a \\sin (bx + c)$ for some positive constants $a,$ $b,$ and $c.$  Find the smallest possible value of $c.$\n\n[asy]import TrigMacros;\n\nsize(300);\n\nreal f(real x)\n{\n\treturn 2*sin(4*x + pi/2);\n}\n\ndraw(graph(f,-pi,pi,n=700,join=operator ..),red);\ntrig_axes(-pi,pi,-3,3,pi/2,1);\nlayer();\nrm_trig_labels(-2,2, 2);\n\nlabel(\"$1$\", (0,1), E);\nlabel(\"$2$\", (0,2), E);\nlabel(\"$-1$\", (0,-1), E);\nlabel(\"$-2$\", (0,-2), E);\n[/asy]",
+        "correct_solution": "We see that the graph reaches a maximum at $x = 0.$  The graph of $y = \\sin x$ first reaches a maximum at $x = \\frac{\\pi}{2}$ for positive values of $x,$ so $c = \\boxed{\\frac{\\pi}{2}}.$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "The graph of $y = a \\sin (bx + c)$ is a transformation of the graph of $y = \\sin x.$\n\n* **Shifting the graph:**  The graph of $y = \\sin (bx + c)$ is obtained by shifting the graph of $y = \\sin x$ to the left by $c/b$ units.\n\n* **Finding the shift:** To find the smallest possible value of $c,$ we need to find the smallest possible leftward shift that will align the graph of $y = a \\sin (bx + c)$ with the given graph.  The given graph intersects the $y$-axis at $(0,2),$ so we want the graph of $y = a \\sin (bx + c)$ to intersect the $y$-axis at $(0,2)$ as well.\n\n* **Solving for c:**  When $x = 0,$ $y = a \\sin c,$ so we want $a \\sin c = 2.$  The smallest positive value of $c$ that satisfies this equation is $c = \\boxed{\\frac{\\pi}{2}}.$ \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.800807537012113
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "Counting & Probability_Level 1_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 1",
+        "problem": "The probability of rain tomorrow is $\\frac{3}{10}$.  What is the probability that it will not rain tomorrow?  Express your answer as a common fraction.",
+        "correct_solution": "We can use complementary probability to determine that the probability of its not raining tomorrow is $1 - \\frac{3}{10} = \\boxed{\\frac{7}{10}}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "The probability of an event happening and the probability of the event not happening must add up to 1.  \n\nSince the probability of rain is $\\frac{3}{10}$, the probability of no rain is $1-\\frac{3}{10} = \\boxed{\\frac{7}{10}}$. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.5286343612334802
+            }
+        }
+    }
+}

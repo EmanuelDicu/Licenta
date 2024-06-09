@@ -1,0 +1,17 @@
+{
+    "Intermediate Algebra_Level 1_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 1",
+        "problem": "Find the real roots of\n\\[x^4 - 2x^3 - x + 2 = 0.\\]",
+        "correct_solution": "We can factor the polynomial as\n\\begin{align*}\nx^4 - 2x^3 - x + 2 &= (x - 2) x^3 - (x - 2) \\\\\n&= (x - 2)(x^3 - 1) \\\\\n&= (x - 2)(x - 1)(x^2 + x + 1).\n\\end{align*}The quadratic factor $x^2 + x + 1$ has no real roots, so the real roots are $\\boxed{1,2}.$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**1. Factor by Grouping:**\n\n* **Notice:** The polynomial can be factored by grouping.  Group the first two terms and the last two terms: \n   \n   (x\u2074 - 2x\u00b3) + (-x + 2) = 0 \n\n* **Factor out common factors:**\n\n   x\u00b3(x - 2) - 1(x - 2) = 0\n\n* **Factor out the common binomial:**\n\n   (x - 2)(x\u00b3 - 1) = 0\n\n**2. Factor the Difference of Cubes:**\n\n* **Recognize:** The expression x\u00b3 - 1 is a difference of cubes.  We can factor it as:\n\n   (x - 1)(x\u00b2 + x + 1) = 0\n\n**3. Solve for x:**\n\n* **Set each factor to zero:**\n\n   (x - 2) = 0  or  (x - 1) = 0  or  (x\u00b2 + x + 1) = 0\n\n* **Solve the linear equations:**\n\n    x = 2  or  x = 1\n\n* **Solve the quadratic equation:** The quadratic equation x\u00b2 + x + 1 = 0 does not factor easily.  We can use the quadratic formula:\n    \n    x = (-b \u00b1 \u221a(b\u00b2 - 4ac)) / 2a  where a = 1, b = 1, and c = 1\n    x = (-1 \u00b1 \u221a(-3)) / 2\n    x = (-1 \u00b1 i\u221a3) / 2  (where 'i' is the imaginary unit)\n\n**Solution:**\n\nThe real roots of the equation x\u2074 - 2x\u00b3 - x + 2 = 0 are:\n* **x = 2**\n* **x = 1** \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.8283433133732535
+            }
+        }
+    }
+}

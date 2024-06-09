@@ -1,0 +1,17 @@
+{
+    "Prealgebra_Level 1_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 1",
+        "problem": "A regular polygon has perimeter 108 cm and each side has length 12 cm.  How many sides does this polygon have?",
+        "correct_solution": "Since the polygon has perimeter 108 cm and each side has length 12 cm, then the polygon has $108 \\div 12 = \\boxed{9}$ sides.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "1. **Understand the problem:** We know the perimeter of a polygon is the total length of all its sides. We also know the length of each side. We need to find the number of sides.\n\n2. **Set up the equation:** Let 'n' be the number of sides. Since each side is 12 cm long, the perimeter is 12n cm. We are given the perimeter is 108 cm. So, 12n = 108.\n\n3. **Solve for 'n':** Divide both sides of the equation by 12: n = 108/12 = 9.\n\n**Solution:** The polygon has **9** sides. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.810126582278481
+            }
+        }
+    }
+}

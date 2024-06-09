@@ -1,0 +1,17 @@
+{
+    "Counting & Probability_Level 2_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 2",
+        "problem": "There are two colors Jessica can use to color this 2 by 2 grid. If non-overlapping regions that share a side cannot be the same color, how many possible ways are there for Jessica to color the grid?\n\n[asy]\nsize(101);\ndraw(unitsquare);\ndraw((0,.5)--(1,.5));\ndraw((.5,0)--(.5,1));\nlabel(\"$A$\",(0,1),NW); label(\"$B$\",(1,1),NE); label(\"$C$\",(1,0),SE); label(\"$D$\",(0,0),SW);\n[/asy]",
+        "correct_solution": "Because non-overlapping regions that share a side cannot be the same color, the only way to color the grid is to have diagonal squares sharing the same color. So, Jessica can either color the top left and bottom right squares with color $1$ and the top right and bottom left squares with color $2$, or color the top left and bottom right squares with color $2$ and the top left and bottom right squares with color $1$. Thus, there are $\\boxed{2}$ ways in which to color the grid.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Part 1:  Coloring the first square**\n\n* Jessica has 2 color choices for the first square.\n\n**Part 2: Coloring the second square**\n\n* Since the second square shares a side with the first, it must be a different color. Jessica only has 1 color choice for the second square.\n\n**Part 3: Coloring the third square**\n\n* The third square shares a side with both the first and second squares. This means it must be a different color than both of them. Jessica has 1 color choice for the third square.\n\n**Part 4: Coloring the fourth square**\n\n* The fourth square shares a side with the third square. Jessica has 1 color choice for the fourth square.\n\n**Solution:**\n\n*  Multiplying the number of choices for each square gives us the total number of possible ways to color the grid: 2 * 1 * 1 * 1 = **2**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.6954887218045113
+            }
+        }
+    }
+}
