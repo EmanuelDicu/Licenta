@@ -1,0 +1,17 @@
+{
+    "Counting & Probability_Level 3_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 3",
+        "problem": "John has five children.  What is the probability that at least half of them are girls? (We can assume a boy is equally likely to be born as is a girl, and vice-versa.)",
+        "correct_solution": "In all cases, at least half of John's kids will be boys or at least half will be girls.  Furthermore, since John has an odd number of children, these conditions are mutually exclusive--that is, they are never true at the same time.  Since a boy is equally likely to be born as is a girl, our answer is therefore $\\boxed{\\frac{1}{2}}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve this problem:\n\n**1.  Possible Outcomes:**\n\n* There are 2 possibilities for each child: boy (B) or girl (G).\n* With 5 children, there are 2 * 2 * 2 * 2 * 2 = 32 possible combinations.\n\n**2.  Favorable Outcomes (At least half are girls):**\n\n* **3 Girls:** We need to count combinations with 3 girls (and 2 boys). This can be done using combinations: 5C3 = 5!/(3!2!) = 10\n* **4 Girls:**  We need to count combinations with 4 girls (and 1 boy): 5C4 = 5!/(4!1!) = 5\n* **5 Girls:** We need to count combinations with 5 girls: 5C5 = 5!/(5!0!) = 1\n\n**3. Calculate the Probability:**\n\n* **Total favorable outcomes:** 10 + 5 + 1 = 16\n* **Probability:** (Favorable Outcomes) / (Total Possible Outcomes) = 16 / 32 = 1/2\n\n**Solution:** The probability of John having at least half girls among his five children is **1/2**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.7966305655836342
+            }
+        }
+    }
+}

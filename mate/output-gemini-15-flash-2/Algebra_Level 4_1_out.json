@@ -1,0 +1,17 @@
+{
+    "Algebra_Level 4_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 4",
+        "problem": "Consider the set of all points $(x,y)$ in the coordinate plane for which one of the coordinates is exactly twice the other.  If we were to plot all such points, into how many regions would the resulting graph split up the plane?",
+        "correct_solution": "Either the $y$ coordinate is twice the $x$ coordinate, in which case we have the line $y=2x$, or the $x$ coordinate is twice the $y$ coordinate, in which case we have the line $y=\\frac{1}{2}x$. The graph of these two lines is shown below:\n\n[asy]\nLabel f;\n\nf.p=fontsize(3);\n\nxaxis(-5,5,Ticks(f, 1.0));\n\nyaxis(-10,10,Ticks(f, 1.0));\n\ndraw((-5,-10)--(5,10),Arrows);\ndraw((-5,-2.5)--(5,2.5),Arrows);\n[/asy]\n\nThe plane is split into $\\boxed{4}$ regions.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "The problem asks us to visualize the points where either  $x=2y$ or $y=2x$.\n\n**Part 1: Analyze the equations**\n\n* **Equation 1:  $x = 2y$** \n   -  This represents a straight line passing through the origin (0,0) with a slope of 1/2.  \n* **Equation 2:  $y = 2x$**\n   - This represents a straight line passing through the origin (0,0) with a slope of 2. \n\n**Part 2: Visualize the lines**\n\nSince both lines pass through the origin and have different slopes, they will intersect at only one point (the origin).  These lines divide the plane into four distinct regions.\n\n**Solution:** The resulting graph splits the plane into **four** regions. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.7691107644305772
+            }
+        }
+    }
+}

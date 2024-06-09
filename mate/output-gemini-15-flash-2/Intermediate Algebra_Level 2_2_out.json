@@ -1,0 +1,17 @@
+{
+    "Intermediate Algebra_Level 2_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 2",
+        "problem": "Solve for $x$ in the equation\n\\[2^{(16^x)} = 16^{(2^x)}.\\]",
+        "correct_solution": "We can write\n\\[16^{(2^x)} = (2^4)^{(2^x)} = 2^{4 \\cdot 2^x}.\\]Then $2^{16^x} = 2^{4 \\cdot 2^x},$ so\n\\[16^x = 4 \\cdot 2^x.\\]In turn, we can write this as\n\\[2^{4x} = 2^{x + 2},\\]so $4x = x + 2.$  Therefore, $x = \\boxed{\\frac{2}{3}}.$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "We can rewrite the equation as \n\\[2^{(16^x)} = (2^4)^{(2^x)}.\\]This simplifies to \n\\[2^{(16^x)} = 2^{(2^{x+2})}.\\]Since the bases are the same, we can equate the exponents: \n\\[16^x = 2^{x+2}.\\]We can rewrite $16$ as $2^4$ and obtain\n\\[(2^4)^x = 2^{x+2}.\\]This simplifies to \n\\[2^{4x} = 2^{x+2}.\\]Again, we can equate the exponents:\n\\[4x = x + 2.\\]Solving for $x$, we get $x = \\boxed{\\frac{2}{3}}$. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.6340852130325815
+            }
+        }
+    }
+}

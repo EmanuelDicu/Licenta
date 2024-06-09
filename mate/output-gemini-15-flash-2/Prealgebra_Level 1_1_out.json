@@ -1,0 +1,17 @@
+{
+    "Prealgebra_Level 1_1.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 1",
+        "problem": "What is $(a^3+b^3)\\div(a^2-ab+b^2)$ when $a=5$ and $b=4$?",
+        "correct_solution": "Let's substitute the given values into the expression. We get  \\begin{align*}\n(a^3+b^3)\\div(a^2-ab+b^2)&=(5^3+4^3)\\div(5^2-5\\cdot4+4^2)\\\\\n&=(125+64)\\div(25-20+16)\\\\\n&=189\\div21\\\\\n&=\\boxed{9}.\n\\end{align*}",
+        "generated_solutions": {
+            "gemini-1.5-flash": "1. **Substitute the values of *a* and *b* into the expression:** \n   (5\u00b3 + 4\u00b3) \u00f7 (5\u00b2 - 5 * 4 + 4\u00b2)\n\n2. **Calculate the powers:**\n   (125 + 64) \u00f7 (25 - 20 + 16)\n\n3. **Simplify the expressions inside the parentheses:**\n   189 \u00f7 21\n\n4. **Calculate the division:**\n   9\n\n**Therefore, the solution is 9.** \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.7913907284768212
+            }
+        }
+    }
+}

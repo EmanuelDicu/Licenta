@@ -1,0 +1,17 @@
+{
+    "Prealgebra_Level 3_1.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 3",
+        "problem": "What is the largest prime factor of $3328$?",
+        "correct_solution": "Divide by $2$ over and over again to get the prime factorization $3328=2^8\\cdot13$. The largest prime factor is $\\boxed{13}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "1. **Factor out the smallest prime factor:**  The smallest prime factor of 3328 is 2, since 3328 is even.  Dividing 3328 by 2, we get 1664.\n2. **Continue factoring:**  1664 is also even, so we can divide by 2 again, getting 832.\n3. **Continue factoring:**  832 is even, so we can divide by 2 again, getting 416.\n4. **Continue factoring:**  416 is even, so we can divide by 2 again, getting 208.\n5. **Continue factoring:**  208 is even, so we can divide by 2 again, getting 104.\n6. **Continue factoring:**  104 is even, so we can divide by 2 again, getting 52.\n7. **Continue factoring:**  52 is even, so we can divide by 2 again, getting 26.\n8. **Continue factoring:**  26 is even, so we can divide by 2 again, getting 13.\n9. **Final prime factor:**  13 is a prime number, since it is only divisible by 1 and itself. \n\nTherefore, the largest prime factor of 3328 is $\\boxed{13}$. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.8784090909090909
+            }
+        }
+    }
+}

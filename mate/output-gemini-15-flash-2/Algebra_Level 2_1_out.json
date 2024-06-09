@@ -1,0 +1,17 @@
+{
+    "Algebra_Level 2_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 2",
+        "problem": "A farmer has a rectangular field with dimensions $2m+7$ and $m-2$. If the field has an area of 51 square units, what is the value of $m$?",
+        "correct_solution": "We use the given information to set up a quadratic that relates the area of the field to $m$: \\begin{align*}\n(2m+7)(m-2)&=51\\\\\n2m^2+3m-14 &= 51\\\\\n2m^2+3m-65 &= 0\\\\\n(2m+13)(m-5)&=0\n\\end{align*}The two possible solutions are $m=-\\frac{13}{2}$ and $m=5$. Of these, only $m = \\boxed{5}$ is valid.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "1. **Formulate the equation:** \nThe area of a rectangle is length times width. We are given that the area is 51, the length is $2m+7$, and the width is $m-2$.  So, the equation is:\n$(2m+7)(m-2) = 51$\n\n2. **Expand the equation:**\nWe expand the left side of the equation by using the distributive property (or FOIL):\n$2m^2 + 3m - 14 = 51$\n\n3. **Move all terms to one side:**\nSubtract 51 from both sides to get a quadratic equation:\n$2m^2 + 3m - 65 = 0$\n\n4. **Solve the quadratic equation:**\nThis quadratic equation can be solved by factoring:\n$(2m+13)(m-5)=0$ \nThis gives us two possible solutions:\n$2m+13 = 0$ or $m-5 = 0$\n\n5. **Solve for m:**\nSolving for m in each equation, we get:\n$m = -\\frac{13}{2}$ or $m = 5$\n\n6. **Choose the valid solution:**\nSince the dimensions of the field cannot be negative, the valid solution is $m = 5$.\n\nTherefore, the value of $m$ is $\\boxed{5}$. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.7840909090909091
+            }
+        }
+    }
+}

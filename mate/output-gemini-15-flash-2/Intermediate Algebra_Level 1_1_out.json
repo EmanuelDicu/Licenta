@@ -1,0 +1,17 @@
+{
+    "Intermediate Algebra_Level 1_1.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 1",
+        "problem": "The value of\n\\[\\frac{n}{2} + \\frac{18}{n}\\]is smallest for which positive integer $n$?",
+        "correct_solution": "By AM-GM,\n\\[\\frac{n}{2} + \\frac{18}{n} \\ge 2 \\sqrt{\\frac{n}{2} \\cdot \\frac{18}{n}} = 6.\\]Equality occurs when $\\frac{n}{2} = \\frac{18}{n} = 3,$ which leads to $n = \\boxed{6}.$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Part 1: Express the given expression as a single fraction.**\n\nTo find the smallest value of the expression, we first need to combine the terms into a single fraction.  We can do this by finding a common denominator:\n\\[\\frac{n}{2} + \\frac{18}{n} = \\frac{n^2}{2n} + \\frac{36}{2n} = \\frac{n^2 + 36}{2n}.\\]\n\n**Part 2:  Analyze the expression and apply AM-GM inequality.**\n\nWe want to minimize the value of $\\frac{n^2 + 36}{2n}$. Notice that the numerator is always positive since $n^2$ is always non-negative. The denominator is also always positive since $n$ is positive.\n\nThe Arithmetic Mean-Geometric Mean (AM-GM) inequality states that for non-negative numbers $a$ and $b$,\n\\[\\frac{a + b}{2} \\ge \\sqrt{ab},\\]with equality if and only if $a = b$.\n\nLet's apply AM-GM to the numerator of our expression, $n^2 + 36$.  We have\n\\[\\frac{n^2 + 36}{2} \\ge \\sqrt{n^2 \\cdot 36} = 6n.\\]Multiplying both sides by 2, we get\n\\[n^2 + 36 \\ge 12n.\\]\n\n**Part 3:  Minimize the expression.**\n\nSince $n^2 + 36 \\ge 12n$, we have\n\\[\\frac{n^2 + 36}{2n} \\ge \\frac{12n}{2n} = 6.\\]Equality occurs when $n^2 = 36$, or $n = 6$ (since $n$ is positive).\n\nTherefore, the smallest value of $\\frac{n}{2} + \\frac{18}{n}$ is $\\boxed{6}$, which occurs when $n = 6$.\n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.8829268292682927
+            }
+        }
+    }
+}

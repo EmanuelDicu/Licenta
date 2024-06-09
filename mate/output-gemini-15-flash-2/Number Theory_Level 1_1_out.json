@@ -1,0 +1,17 @@
+{
+    "Number Theory_Level 1_1.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 1",
+        "problem": "Daniel has exactly $20$ pieces of candy. He has to divide them equally among his $3$ sisters. What is the least number of pieces he should take away so that he could distribute the candy equally?",
+        "correct_solution": "When you divide $20$ by $3$, you get $6$ with a remainder of $2$. Therefore, he should take away $\\boxed{2 \\text{ pieces}}$ so he could give each of his sisters $6$ pieces.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "1. **Find the remainder:** Divide the total number of candies (20) by the number of sisters (3): 20 / 3 = 6 with a remainder of 2.\n2. **The remainder is the answer:** The remainder of 2 represents the number of candies Daniel needs to take away to distribute the rest equally. \n\n**Solution:** Daniel should take away **2** pieces of candy. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.718475073313783
+            }
+        }
+    }
+}

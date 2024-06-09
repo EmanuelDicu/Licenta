@@ -1,0 +1,17 @@
+{
+    "Precalculus_Level 4_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 4",
+        "problem": "Solve $\\arcsin x + \\arcsin (1 - x) = \\arccos x.$",
+        "correct_solution": "Taking the sine of both sides, we get\n\\[\\sin (\\arcsin x + \\arcsin (1 - x)) = \\sin (\\arccos x).\\]Then from the angle addition formula,\n\\[\\sin (\\arcsin x) \\cos (\\arcsin (1 - x)) + \\cos (\\arcsin x) \\sin (\\arcsin (1 - x)) = \\sin (\\arccos x),\\]or\n\\[x \\sqrt{1 - (1 - x)^2} + \\sqrt{1 - x^2} (1 - x) = \\sqrt{1 - x^2}.\\]Then\n\\[x \\sqrt{1 - (1 - x)^2} = x \\sqrt{1 - x^2}.\\]Squaring both sides, we get\n\\[x^2 (1 - (1 - x)^2) = x^2 (1 - x^2).\\]This simplifies to $2x^3 - x^2 = x^2 (2x - 1) = 0.$  Thus, $x = 0$ or $x = \\frac{1}{2}.$\n\nChecking, we find both solutions work, so the solutions are $\\boxed{0, \\frac{1}{2}}.$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Let $\\alpha = \\arcsin x$ and $\\beta = \\arcsin (1 - x)$. Then, $x = \\sin \\alpha$ and $1 - x = \\sin \\beta$.  We are given that $\\alpha + \\beta = \\arccos x$.  Taking the cosine of both sides, we get\n\\[\\cos (\\alpha + \\beta) = \\cos (\\arccos x) = x.\\]By the angle addition formula,\n\\[\\cos \\alpha \\cos \\beta - \\sin \\alpha \\sin \\beta = x.\\]Since $\\sin \\alpha = x$ and $\\sin \\beta = 1 - x,$ $\\cos \\alpha = \\sqrt{1 - x^2}$ and $\\cos \\beta = \\sqrt{1 - (1 - x)^2} = \\sqrt{2x - x^2}.$  Hence,\n\\[\\sqrt{1 - x^2} \\sqrt{2x - x^2} - x(1 - x) = x.\\]Then $\\sqrt{1 - x^2} \\sqrt{2x - x^2} = 2x - x^2.$  Squaring both sides, we get\n\\[(1 - x^2)(2x - x^2) = (2x - x^2)^2.\\]This simplifies to $x^4 - 4x^3 + 4x^2 = 0,$ which factors as $x^2 (x - 2)^2 = 0.$  The solutions are $x = \\boxed{0}$ and $x = \\boxed{2}.$  We must check that these solutions work in the original equation.  We find that $x = 0$ works, but $x = 2$ does not.  Therefore, the only solution is $x = 0.$\n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": 0.6057082452431289
+            }
+        }
+    }
+}

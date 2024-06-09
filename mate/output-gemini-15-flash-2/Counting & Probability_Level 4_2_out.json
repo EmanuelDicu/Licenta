@@ -1,0 +1,17 @@
+{
+    "Counting & Probability_Level 4_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 4",
+        "problem": "A fair coin is tossed six times and the sequence of heads and tails is recorded. What is the probability that the sequence contains exactly two heads? Express your answer as a common fraction.",
+        "correct_solution": "There are a total of $2^6=64$ equally likely sequences of heads and tails we could record from the fair coin, since heads and tails are equally likely for each of the six tosses.  This is the denominator of our probability.  Now, we need the number of sequences that contain exactly two heads.  We can think of this as counting the number of sequences of T and H of length six where H appears exactly twice.  The number of such sequences will be equal to the number of ways to choose the two positions for H, which is $\\dbinom{6}{2}=15$.  Thus, the final probability is $\\boxed{\\frac{15}{64}}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Part 1: Find the total number of possible outcomes.**\n\n* Each coin toss has 2 possible outcomes (heads or tails).\n* Since we toss the coin 6 times, the total number of possible outcomes is 2 * 2 * 2 * 2 * 2 * 2 = 2<sup>6</sup> = 64.\n\n**Part 2: Find the number of outcomes with exactly two heads.**\n\n* We need to choose 2 out of 6 tosses to be heads. This is a combination problem, and we can use the formula:  <sub>n</sub>C<sub>r</sub> = n! / (r! * (n-r)!), where n is the total number of items and r is the number of items chosen.\n* In our case, n = 6 and r = 2, so the number of ways to choose 2 heads is 6! / (2! * 4!) = (6 * 5) / (2 * 1) = 15.\n\n**Part 3: Calculate the probability.**\n\n* The probability of an event is the number of favorable outcomes divided by the total number of possible outcomes.\n* Therefore, the probability of getting exactly two heads is 15 / 64.\n\n**Solution:** The probability is **15/64**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.7226435536294691
+            }
+        }
+    }
+}

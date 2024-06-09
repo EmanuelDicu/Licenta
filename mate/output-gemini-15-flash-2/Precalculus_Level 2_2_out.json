@@ -1,0 +1,17 @@
+{
+    "Precalculus_Level 2_2.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 2",
+        "problem": "Find the inverse of the matrix\n\\[\\begin{pmatrix} 6 & -4 \\\\ -3 & 2 \\end{pmatrix}.\\]If the inverse does not exist, then enter the zero matrix.",
+        "correct_solution": "Since the determinant is $(6)(2) - (-4)(-3) = 0,$ the inverse does not exist, so the answer is the zero matrix $\\boxed{\\begin{pmatrix} 0 & 0 \\\\ 0 & 0 \\end{pmatrix}}.$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**1. Calculate the determinant of the matrix:**\n\nThe determinant of the matrix $\\begin{pmatrix} 6 & -4 \\\\ -3 & 2 \\end{pmatrix}$ is $(6)(2) - (-4)(-3) = 0$.\n\n**2. Determine if the inverse exists:**\n\nSince the determinant is zero, the inverse of the matrix does not exist.\n\n**3. Enter the zero matrix:**\n\nThe zero matrix is $\\begin{pmatrix} 0 & 0 \\\\ 0 & 0 \\end{pmatrix}$.\n\n**Solution:** The inverse of the matrix does not exist. The solution is $\\begin{pmatrix} 0 & 0 \\\\ 0 & 0 \\end{pmatrix}$. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.6971544715447154
+            }
+        }
+    }
+}

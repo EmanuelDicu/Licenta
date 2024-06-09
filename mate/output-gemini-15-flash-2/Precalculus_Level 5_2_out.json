@@ -1,0 +1,17 @@
+{
+    "Precalculus_Level 5_2.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 5",
+        "problem": "There is an angle $\\theta$ in the range $0^\\circ < \\theta < 45^\\circ$ which satisfies\n\\[\\tan \\theta + \\tan 2 \\theta + \\tan 3 \\theta = 0.\\]Calculate $\\tan \\theta$ for this angle.",
+        "correct_solution": "Let $t = \\tan \\theta.$  Then $\\tan 2 \\theta = \\frac{2t}{1 - t^2}$ and $\\tan 3 \\theta = \\frac{3t - t^3}{1 - 3t^2},$ so\n\\[t + \\frac{2t}{1 - t^2} + \\frac{3t - t^3}{1 - 3t^2} = 0.\\]This simplifies to $4t^5 - 14t^3 + 6t = 0.$  This factors as $2t(2t^2 - 1)(t^2 - 3) = 0.$\n\nSince $0^\\circ < \\theta < 45^\\circ,$ $0 < t < 1.$  The only solution in this interval is $t = \\boxed{\\frac{1}{\\sqrt{2}}}.$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "We can use the angle addition formula for tangent to simplify the given equation.  Recall that\n\\[\\tan (A + B) = \\frac{\\tan A + \\tan B}{1 - \\tan A \\tan B}.\\]Then\n\\begin{align*}\n\\tan 3 \\theta &= \\tan (\\theta + 2 \\theta) \\\\\n&= \\frac{\\tan \\theta + \\tan 2 \\theta}{1 - \\tan \\theta \\tan 2 \\theta}.\n\\end{align*}Hence,\n\\[\\frac{\\tan \\theta + \\tan 2 \\theta}{1 - \\tan \\theta \\tan 2 \\theta} + \\tan \\theta + \\tan 2 \\theta = 0.\\]Multiplying both sides by $1 - \\tan \\theta \\tan 2 \\theta,$ we get\n\\[\\tan \\theta + \\tan 2 \\theta + \\tan \\theta (1 - \\tan \\theta \\tan 2 \\theta) + \\tan 2 \\theta (1 - \\tan \\theta \\tan 2 \\theta) = 0.\\]This simplifies to\n\\[\\tan^2 \\theta \\tan 2 \\theta + \\tan \\theta \\tan^2 2 \\theta - 2 \\tan \\theta - 2 \\tan 2 \\theta = 0.\\]We can factor the left-hand side as $(\\tan \\theta + \\tan 2 \\theta)(\\tan \\theta \\tan 2 \\theta - 2) = 0.$  Since $0^\\circ < \\theta < 45^\\circ,$ $\\tan \\theta > 0$ and $\\tan 2 \\theta > 0,$ so $\\tan \\theta + \\tan 2 \\theta > 0.$  Therefore, $\\tan \\theta \\tan 2 \\theta - 2 = 0,$ so $\\tan \\theta \\tan 2 \\theta = 2.$\n\nAgain, using the angle addition formula,\n\\begin{align*}\n\\tan 2 \\theta &= \\tan (\\theta + \\theta) \\\\\n&= \\frac{2 \\tan \\theta}{1 - \\tan^2 \\theta}.\n\\end{align*}Hence,\n\\[\\tan \\theta \\cdot \\frac{2 \\tan \\theta}{1 - \\tan^2 \\theta} = 2.\\]This simplifies to $2 \\tan^2 \\theta = 2 - 2 \\tan^2 \\theta,$ so $\\tan^2 \\theta = \\frac{1}{2}.$  Since $0^\\circ < \\theta < 45^\\circ,$ $\\tan \\theta > 0,$ so $\\tan \\theta = \\boxed{\\frac{\\sqrt{2}}{2}}.$\n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": 0.7978142076502732
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "Precalculus_Level 1_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 1",
+        "problem": "Convert the point $\\left( 5, \\frac{3 \\pi}{2} \\right)$ in polar coordinates to rectangular coordinates.",
+        "correct_solution": "In rectangular coordinates, $\\left( 5, \\frac{3 \\pi}{2} \\right)$ becomes\n\\[\\left( 5 \\cos \\frac{3 \\pi}{2}, 5 \\sin \\frac{3 \\pi}{2} \\right) = \\boxed{(0,-5)}.\\]",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to convert the polar coordinates  $\\left( 5, \\frac{3 \\pi}{2} \\right)$ to rectangular coordinates:\n\n**1. Identify the radius and angle:**\n\n* The radius is $r = 5$.\n* The angle is $\\theta = \\frac{3 \\pi}{2}$.\n\n**2. Use the conversion formulas:**\n\n*  $x = r \\cos \\theta$\n*  $y = r \\sin \\theta$\n\n**3. Substitute the values:**\n\n*  $x = 5 \\cos \\left( \\frac{3 \\pi}{2} \\right)$\n*  $y = 5 \\sin \\left( \\frac{3 \\pi}{2} \\right)$\n\n**4. Evaluate the trigonometric functions:**\n\n*  $\\cos \\left( \\frac{3 \\pi}{2} \\right) = 0$\n*  $\\sin \\left( \\frac{3 \\pi}{2} \\right) = -1$\n\n**5. Calculate the rectangular coordinates:**\n\n*  $x = 5 \\cdot 0 = 0$\n*  $y = 5 \\cdot (-1) = -5$\n\n**Therefore, the rectangular coordinates are (0, -5).** \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.812760055478502
+            }
+        }
+    }
+}

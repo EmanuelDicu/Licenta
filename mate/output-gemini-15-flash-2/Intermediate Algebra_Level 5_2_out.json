@@ -1,0 +1,17 @@
+{
+    "Intermediate Algebra_Level 5_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 5",
+        "problem": "Find all $x$ such that $\\lfloor \\lfloor 2x \\rfloor - 1/2 \\rfloor = \\lfloor x + 2 \\rfloor.$",
+        "correct_solution": "Observe that $\\lfloor 2x \\rfloor$ is an integer, so it follows that $\\lfloor \\lfloor 2x \\rfloor - 1/2 \\rfloor = \\lfloor 2x \\rfloor - 1$. Also, $\\lfloor x + 2 \\rfloor = \\lfloor x \\rfloor + 2$. Thus, our equation becomes $$\\lfloor 2x \\rfloor = \\lfloor x \\rfloor + 3.$$Let $n = \\lfloor x \\rfloor,$ so $n \\le x < n + 1.$\n\nIf $x < n + \\frac{1}{2},$ then $2n \\le x < 2n + 1,$ so $\\lfloor 2x \\rfloor = 2n,$ and\n\\[2n = n + 3,\\]which means $n = 3.$\n\nIf $x \\ge n + \\frac{1}{2},$ then $2n + 1 \\le x < 2n + 2,$ so $\\lfloor 2x \\rfloor = 2n + 1,$ and\n\\[2n + 1 = n + 3,\\]which means $n = 2.$\n\nTherefore, the set of solutions is $x \\in \\boxed{\\left[ \\frac{5}{2}, \\frac{7}{2} \\right)}.$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "We start by analyzing the floor function. For any real number $x$, $\\lfloor x \\rfloor$ represents the greatest integer less than or equal to $x$. \n\n**Part 1: Analyzing the left-hand side**\n\nLet's break down the left-hand side: $\\lfloor \\lfloor 2x \\rfloor - 1/2 \\rfloor$. \n\n*  Let $y = \\lfloor 2x \\rfloor$. Since $y$ is an integer,  $y - 1/2$ will lie between two consecutive integers: $y - 1 < y - 1/2 < y$. \n*  Therefore, $\\lfloor y - 1/2 \\rfloor = y - 1$.\n\n**Part 2: Analyzing the right-hand side**\n\nThe right-hand side is simpler: $\\lfloor x + 2 \\rfloor$. \n\n**Part 3: Combining the results**\n\nNow we can rewrite the original equation: \n\n$\\lfloor \\lfloor 2x \\rfloor - 1/2 \\rfloor = \\lfloor x + 2 \\rfloor$ becomes  $y - 1 = \\lfloor x + 2 \\rfloor$ where $y = \\lfloor 2x \\rfloor$. \n\n**Part 4: Solving the equation**\n\nSince $y = \\lfloor 2x \\rfloor$, we know $y \\leq 2x < y + 1$. This gives us: \n*  $y - 1 \\leq 2x - 1 < y$\n*  $\\frac{y - 1}{2} \\leq x < \\frac{y}{2}$\n\nAlso, from the equation $y - 1 = \\lfloor x + 2 \\rfloor$, we know:\n*  $y - 1 \\leq x + 2 < y$\n*  $y - 3 \\leq x < y - 2$\n\n**Part 5: Finding the solution**\n\nCombining the inequalities from Part 4, we have:\n\n*  $\\frac{y - 1}{2} \\leq x < \\frac{y}{2}$  and \n*  $y - 3 \\leq x < y - 2$.\n\nThese inequalities will only overlap if: \n*  $\\frac{y - 1}{2} \\leq y - 3$ and $\\frac{y}{2} \\geq y - 2$. \n\nSolving these inequalities, we get:\n\n*  $y \\geq \\frac{5}{2}$ and $y \\leq 4$.\n\nSince $y$ is an integer, the only possible value for $y$ is $y = 3$.\n\nSubstituting $y = 3$ back into our inequalities for $x$, we get:\n*  $1 \\leq x < \\frac{3}{2}$  and\n*  $0 \\leq x < 1$.\n\nThe overlapping solution is:  $1 \\leq x < \\frac{3}{2}$.\n\n**Final Solution:** The solution to the equation $\\lfloor \\lfloor 2x \\rfloor - 1/2 \\rfloor = \\lfloor x + 2 \\rfloor$ is $1 \\leq x < \\frac{3}{2}$. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": 0.7396807925151349
+            }
+        }
+    }
+}

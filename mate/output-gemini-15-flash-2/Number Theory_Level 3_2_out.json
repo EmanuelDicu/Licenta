@@ -1,0 +1,17 @@
+{
+    "Number Theory_Level 3_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 3",
+        "problem": "What is the least positive integer that satisfies the following conditions?\n\na) When divided by 2, the remainder is 1.\n\nb) When divided by 3, the remainder is 2.\n\nc) When divided by 4, the remainder is 3.\n\nd) When divided by 5, the remainder is 4.",
+        "correct_solution": "Let the smallest common solution be $a$. The given system of congruences is \\begin{align*}\na\\equiv 1\\equiv -1\\pmod 2,\\\\\na\\equiv 2\\equiv -1\\pmod 3,\\\\\na\\equiv 3\\equiv -1\\pmod 4,\\\\\na\\equiv 4\\equiv -1\\pmod 5.\n\\end{align*} Note that if $a\\equiv-1\\pmod 4$, then $a\\equiv-1\\pmod 2$ as well,  so we need only consider the final three congruences. Since $\\gcd(3,4)=\\gcd(4,5)=\\gcd(3,5)=1$, we have $$a\\equiv -1\\pmod{3\\cdot 4\\cdot 5},$$ that is, $a\\equiv 59\\pmod{60}$.\n\nSo $a$ has a lower bound of $59$, but $59$ also happens to satisfy all of the original congruences. Thus, $a=\\boxed{59}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "We can express the given conditions using modular arithmetic:\n\n* a)  n \u2261 1 (mod 2)\n* b)  n \u2261 2 (mod 3)\n* c)  n \u2261 3 (mod 4)\n* d)  n \u2261 4 (mod 5)\n\nWe can solve this by using the Chinese Remainder Theorem. However, we can also solve this by inspection and a bit of reasoning:\n\n**Understanding the conditions:**\n\n* Condition (a) means the number is odd.\n* Condition (b) means the number leaves a remainder of 2 when divided by 3.\n* Condition (c) means the number leaves a remainder of 3 when divided by 4, meaning it's one less than a multiple of 4.\n* Condition (d) means the number leaves a remainder of 4 when divided by 5, meaning it's one less than a multiple of 5.\n\n**Finding a solution:**\n\n* Start by considering the largest divisor, 5.  Numbers satisfying condition (d) are of the form 5k - 1 (where k is an integer).\n* Let's check if we can find a value for k that also satisfies the other conditions.  \n* Trying k = 1 gives us 5(1) - 1 = 4. This doesn't satisfy any of the other conditions.\n* Trying k = 2 gives us 5(2) - 1 = 9. This doesn't satisfy conditions (a) or (c).\n* Trying k = 3 gives us 5(3) - 1 = 14. This doesn't satisfy any of the other conditions.\n* Trying k = 4 gives us 5(4) - 1 = 19. This doesn't satisfy conditions (a) or (c).\n* Trying k = 5 gives us 5(5) - 1 = 24. This doesn't satisfy condition (b).\n* Trying k = 6 gives us 5(6) - 1 = 29. This satisfies all the conditions!\n\n**Therefore, the least positive integer that satisfies all the conditions is 29.** \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": 0.815913688469319
+            }
+        }
+    }
+}

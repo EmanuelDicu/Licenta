@@ -1,0 +1,17 @@
+{
+    "Algebra_Level 3_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 3",
+        "problem": "If $(x+2)(x-3)=14$, find the product of the possible values of $x$.",
+        "correct_solution": "Expanding the left side of the given equation, we have $x^2-x-6=14 \\Rightarrow x^2-x-20=0$. Since in a quadratic  with equation of the form $ax^2+bx+c=0$ the product of the roots is $c/a$, the product of the roots of the given equation is $-20/1 = \\boxed{-20}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "1. **Expand the left side of the equation:** \n   $(x+2)(x-3) = x^2 -x -6$\n\n2. **Set the equation equal to zero:**\n   $x^2 - x -6 = 14$\n   $x^2 - x -20 = 0$\n\n3. **Factor the quadratic equation:**\n   $(x-5)(x+4) = 0$\n\n4. **Solve for x:**\n   $x = 5$ or $x = -4$\n\n5. **Find the product of the possible values of x:**\n   $5 \\times (-4) = \\boxed{-20}$ \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.6397694524495677
+            }
+        }
+    }
+}

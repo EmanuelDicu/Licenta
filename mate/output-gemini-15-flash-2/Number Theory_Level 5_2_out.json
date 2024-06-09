@@ -1,0 +1,17 @@
+{
+    "Number Theory_Level 5_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 5",
+        "problem": "A $150\\times 324\\times 375$ rectangular solid is made by gluing together $1\\times 1\\times 1$ cubes. An internal diagonal of this solid passes through the interiors of how many of the $1\\times 1\\times 1$ cubes?\n",
+        "correct_solution": "Consider a point travelling across the internal diagonal, and let the internal diagonal have a length of $d$. The point enters a new unit cube in the $x,y,z$ dimensions at multiples of $\\frac{d}{150}, \\frac{d}{324}, \\frac{d}{375}$ respectively. We proceed by using PIE.\nThe point enters a new cube in the $x$ dimension $150$ times, in the $y$ dimension $324$ times and in the $z$ dimension, $375$ times.\nThe point enters a new cube in the $x$ and $y$ dimensions whenever a multiple of $\\frac{d}{150}$ equals a multiple of $\\frac{d}{324}$. This occurs $\\gcd(150, 324)$ times. Similarly, a point enters a new cube in the $y,z$ dimensions $\\gcd(324, 375)$ times and a point enters a new cube in the $z,x$ dimensions $\\gcd(375, 150)$ times.\nThe point enters a new cube in the $x,y$ and $z$ dimensions whenever some multiples of $\\frac{d}{150}, \\frac{d}{324}, \\frac{d}{375}$ are equal. This occurs $\\gcd(150, 324, 375)$ times.\nThe total number of unit cubes entered is then $150+324+375-[\\gcd(150, 324)+\\gcd(324, 375)+\\gcd(375, 150))] + \\gcd(150, 324, 375) = \\boxed{768}$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**1. Find the Greatest Common Divisor (GCD) of the dimensions:**\n\n* The GCD of 150, 324, and 375 is 3.\n\n**2. Divide the dimensions by the GCD:**\n\n*  The dimensions become 50, 108, and 125.\n\n**3. Subtract 1 from each dimension:**\n\n* This gives us 49, 107, and 124.\n\n**4. Multiply these results:**\n\n* 49 * 107 * 124 = **653,908**\n\n**Explanation:**\n\n* **Step 1:** The GCD represents the largest possible cube that can fit within the solid without gaps.\n* **Step 2:** Dividing by the GCD simplifies the problem to a smaller, equivalent rectangular solid.\n* **Step 3:** Subtracting 1 from each dimension is necessary because the diagonal will pass through the interiors of the cubes, not their edges.\n* **Step 4:** Multiplying the results gives us the number of cubes whose interiors are intersected by the internal diagonal.\n\n**Solution:** The internal diagonal of the solid passes through the interiors of **653,908** of the $1 \\times 1 \\times 1$ cubes. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": 0.8020637898686679
+            }
+        }
+    }
+}

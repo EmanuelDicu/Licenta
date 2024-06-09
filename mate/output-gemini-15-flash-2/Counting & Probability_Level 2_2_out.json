@@ -1,0 +1,17 @@
+{
+    "Counting & Probability_Level 2_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 2",
+        "problem": "A bag has 3 red marbles and 5 white marbles.  Two marbles are drawn from the bag and not replaced.  What is the probability that the first marble is red and the second marble is white?",
+        "correct_solution": "The probability that the first is red is $\\dfrac38$.  Now with 7 remaining, the probability that the second is white is $\\dfrac57$. The answer is $\\dfrac38 \\times \\dfrac57 = \\boxed{\\dfrac{15}{56}}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve the problem step-by-step:\n\n**Part 1: Probability of drawing a red marble first**\n\n* There are 3 red marbles and 8 total marbles.\n* The probability of drawing a red marble first is 3/8.\n\n**Part 2: Probability of drawing a white marble second (after taking out a red marble)**\n\n* After removing a red marble, there are only 7 marbles left.\n* There are still 5 white marbles.\n* The probability of drawing a white marble second is 5/7.\n\n**Part 3: Combining the probabilities**\n\n* To get the probability of both events happening, we multiply the individual probabilities.\n* The probability of drawing a red marble first and then a white marble is (3/8) * (5/7) = 15/56.\n\n**Solution:** The probability of drawing a red marble first and then a white marble is **15/56**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.8280254777070064
+            }
+        }
+    }
+}

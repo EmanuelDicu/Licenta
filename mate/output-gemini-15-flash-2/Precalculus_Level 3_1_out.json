@@ -1,0 +1,17 @@
+{
+    "Precalculus_Level 3_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 3",
+        "problem": "For real numbers $t,$ the point of intersection of the lines $x + 2y = 7t + 3$ and $x - y = 2t - 2$ is plotted.  All the plotted points lie on a line.  Find the slope of this line.",
+        "correct_solution": "Solving for $x$ and $y,$ we find\n\\[x = \\frac{11t - 1}{3}, \\quad y = \\frac{5t + 5}{3}.\\]From the first equation,\n\\[t = \\frac{3x + 1}{11}.\\]Then\n\\begin{align*}\ny &= \\frac{5t + 5}{3} \\\\\n&= \\frac{5 \\cdot \\frac{3x + 1}{11} + 5}{3} \\\\\n&= \\frac{5}{11} x + \\frac{20}{11},\n\\end{align*}Thus, the slope of the line is $\\boxed{\\frac{5}{11}}.$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "1. **Solve the system of equations for x and y:**\n   - We can solve for x in the second equation:  $x = y + 2t - 2$.\n   - Substitute this value of x into the first equation: $(y + 2t - 2) + 2y = 7t + 3$.\n   - Simplify and solve for y: $3y = 5t + 5$, so $y = \\frac{5t + 5}{3}$.\n   - Substitute this value of y back into the equation for x: $x = \\frac{5t + 5}{3} + 2t - 2$.\n   - Simplify: $x = \\frac{11t + 1}{3}$.\n\n2. **Express the solution in terms of t:**\n   - We have found that the point of intersection is  $\\left(\\frac{11t + 1}{3}, \\frac{5t + 5}{3}\\right)$.\n\n3. **Find the slope of the line:**\n   - The slope of the line is given by the change in y divided by the change in x.  \n   - As t varies, the point of intersection moves along a line. To find the slope, we can pick two different values of t and calculate the slope using the two corresponding points of intersection.\n   - Let's take t = 0 and t = 1.\n   - For t = 0, the point is $\\left(\\frac{1}{3}, \\frac{5}{3}\\right)$.\n   - For t = 1, the point is $\\left(\\frac{12}{3}, \\frac{10}{3}\\right) = (4, \\frac{10}{3})$.\n   - The slope is then $\\frac{\\frac{10}{3} - \\frac{5}{3}}{4 - \\frac{1}{3}} = \\frac{5/3}{11/3} = \\boxed{\\frac{5}{11}}$. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.8225941422594142
+            }
+        }
+    }
+}

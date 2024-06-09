@@ -1,0 +1,17 @@
+{
+    "Precalculus_Level 4_2.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 4",
+        "problem": "If the matrix $\\mathbf{A}$ has an inverse and $(\\mathbf{A} - 2 \\mathbf{I})(\\mathbf{A} - 4 \\mathbf{I}) = \\mathbf{0},$ then find\n\\[\\mathbf{A} + 8 \\mathbf{A}^{-1}.\\]",
+        "correct_solution": "Expanding $(\\mathbf{A} - 2 \\mathbf{I})(\\mathbf{A} - 4 \\mathbf{I}) = \\mathbf{0},$ we get\n\\[\\mathbf{A}^2 - 6 \\mathbf{A} + 8 \\mathbf{I} = \\mathbf{0}.\\]Multiplying both sides by $\\mathbf{A}^{-1},$ we get\n\\[\\mathbf{A} - 6 \\mathbf{I} + 8 \\mathbf{A}^{-1} = \\mathbf{0}.\\]Then\n\\[\\mathbf{A} + 8 \\mathbf{A}^{-1} = 6 \\mathbf{I} = \\boxed{\\begin{pmatrix} 6 & 0 \\\\ 0 & 6 \\end{pmatrix}}.\\]",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Since $\\mathbf{A}$ has an inverse, we can multiply both sides of the equation $(\\mathbf{A} - 2 \\mathbf{I})(\\mathbf{A} - 4 \\mathbf{I}) = \\mathbf{0}$ by $\\mathbf{A}^{-1}$ on the right:\n\\[(\\mathbf{A} - 2 \\mathbf{I})(\\mathbf{A} - 4 \\mathbf{I}) \\mathbf{A}^{-1} = \\mathbf{0} \\mathbf{A}^{-1}.\\]This simplifies to\n\\[(\\mathbf{A} - 2 \\mathbf{I})(\\mathbf{A} - 4 \\mathbf{I}) \\mathbf{A}^{-1} = \\mathbf{0}.\\]Since matrix multiplication is associative, we can rearrange the factors on the left-hand side:\n\\[\\mathbf{A} (\\mathbf{A} - 4 \\mathbf{I}) \\mathbf{A}^{-1} - 2 \\mathbf{I} (\\mathbf{A} - 4 \\mathbf{I}) \\mathbf{A}^{-1} = \\mathbf{0}.\\]Since $\\mathbf{A} \\mathbf{A}^{-1} = \\mathbf{I},$ this simplifies to\n\\[(\\mathbf{A} - 4 \\mathbf{I}) - 2 \\mathbf{I} (\\mathbf{A} - 4 \\mathbf{I}) \\mathbf{A}^{-1} = \\mathbf{0}.\\]Then $2 \\mathbf{I} (\\mathbf{A} - 4 \\mathbf{I}) \\mathbf{A}^{-1} = (\\mathbf{A} - 4 \\mathbf{I}),$ so\n\\[(\\mathbf{A} - 4 \\mathbf{I}) \\mathbf{A}^{-1} = \\frac{1}{2} \\mathbf{I}.\\]Then $\\mathbf{A} \\mathbf{A}^{-1} - 4 \\mathbf{I} \\mathbf{A}^{-1} = \\frac{1}{2} \\mathbf{I},$ so\n\\[\\mathbf{A}^{-1} - 4 \\mathbf{I} \\mathbf{A}^{-1} = \\frac{1}{2} \\mathbf{I}.\\]Then $-3 \\mathbf{I} \\mathbf{A}^{-1} = \\frac{1}{2} \\mathbf{I},$ so $\\mathbf{A}^{-1} = -\\frac{1}{6} \\mathbf{I}.$  Hence,\n\\[\\mathbf{A} + 8 \\mathbf{A}^{-1} = \\mathbf{A} + 8 \\left( -\\frac{1}{6} \\mathbf{I} \\right) = \\boxed{\\mathbf{A} - \\frac{4}{3} \\mathbf{I}}.\\]"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": 0.7633093525179856
+            }
+        }
+    }
+}

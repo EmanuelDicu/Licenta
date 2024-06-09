@@ -1,0 +1,17 @@
+{
+    "Precalculus_Level 3_2.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 3",
+        "problem": "Below is the graph of $y = a \\sin (bx + c)$ for some positive constants $a,$ $b,$ and $c.$  Find the smallest possible value of $c.$\n\n[asy]import TrigMacros;\n\nsize(300);\n\nreal f(real x)\n{\n\treturn 2*sin(4*x + pi/2);\n}\n\ndraw(graph(f,-pi,pi,n=700,join=operator ..),red);\ntrig_axes(-pi,pi,-3,3,pi/2,1);\nlayer();\nrm_trig_labels(-2,2, 2);\n\nlabel(\"$1$\", (0,1), E);\nlabel(\"$2$\", (0,2), E);\nlabel(\"$-1$\", (0,-1), E);\nlabel(\"$-2$\", (0,-2), E);\n[/asy]",
+        "correct_solution": "We see that the graph reaches a maximum at $x = 0.$  The graph of $y = \\sin x$ first reaches a maximum at $x = \\frac{\\pi}{2}$ for positive values of $x,$ so $c = \\boxed{\\frac{\\pi}{2}}.$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Understanding the Graph:**\n\n* **Amplitude:** The graph oscillates between -2 and 2, meaning the amplitude  $a = 2$.\n* **Period:** The graph completes one full cycle between $x = -\\frac{\\pi}{4}$ and $x = \\frac{3\\pi}{4}$. This means the period is $\\frac{3\\pi}{4} - \\left(-\\frac{\\pi}{4}\\right) = \\pi$.\n\n**Finding b:**\n\n* The period of the function $y = a \\sin(bx + c)$ is $\\frac{2\\pi}{b}$.\n* We know the period is $\\pi$, so $\\frac{2\\pi}{b} = \\pi$. Solving for $b$, we get $b = 2$.\n\n**Finding c:**\n\n* The graph of $y = a \\sin(bx + c)$ is shifted to the left by $\\frac{c}{b}$ units.\n* The graph is shifted to the left by $\\frac{\\pi}{4}$ units.\n* Therefore, $\\frac{c}{b} = \\frac{\\pi}{4}$. Substituting $b = 2$, we get $\\frac{c}{2} = \\frac{\\pi}{4}$, and solving for $c$ gives us $c = \\boxed{\\frac{\\pi}{2}}$. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.8146766169154229
+            }
+        }
+    }
+}

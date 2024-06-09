@@ -1,0 +1,17 @@
+{
+    "Intermediate Algebra_Level 1_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 1",
+        "problem": "Find the real roots of\n\\[x^4 - 2x^3 - x + 2 = 0.\\]",
+        "correct_solution": "We can factor the polynomial as\n\\begin{align*}\nx^4 - 2x^3 - x + 2 &= (x - 2) x^3 - (x - 2) \\\\\n&= (x - 2)(x^3 - 1) \\\\\n&= (x - 2)(x - 1)(x^2 + x + 1).\n\\end{align*}The quadratic factor $x^2 + x + 1$ has no real roots, so the real roots are $\\boxed{1,2}.$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "We can try to factor by grouping.  We can group the terms as follows:\n\\[(x^4 - 2x^3) + (-x + 2) = 0.\\]Factoring out $x^3$ from the first group and $-1$ from the second group, we get\n\\[x^3 (x - 2) - 1(x - 2) = 0.\\]Now, we can factor out $(x - 2)$ to get\n\\[(x - 2)(x^3 - 1) = 0.\\]The first factor gives us the solution $x = 2$.  The second factor factors as a difference of cubes:\n\\[(x - 1)(x^2 + x + 1) = 0.\\]The quadratic factor has no real roots, so the only real root of the equation is $x = \\boxed{2}$.\n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.6699604743083004
+            }
+        }
+    }
+}

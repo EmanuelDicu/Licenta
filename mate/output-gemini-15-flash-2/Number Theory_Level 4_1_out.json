@@ -1,0 +1,17 @@
+{
+    "Number Theory_Level 4_1.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 4",
+        "problem": "How many positive three-digit integers with a $5$ in the units place are divisible by $15$?",
+        "correct_solution": "Odd multiples of 5 have a 5 in the units place, while even multiples of 5 have a 0 in the units place. Multiples of 15 are multiples of 5, so we look at how many three-digit multiples of 15 are odd to find how many have a 5 in the units place. The three-digit multiples of 15 range from 105 to 990, or $15\\times7$ to $15\\times 66$. So there are $66-7+1=60$ three-digit multiples of 15. Half of them will be odd, so there are 30 odd, three-digit multiples of 15. There are $\\boxed{30}$ positive, three-digit integers with a 5 in the units place that are divisible by 15.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Part 1: Understand the divisibility rule for 15.**\n\nA number is divisible by 15 if and only if it is divisible by both 3 and 5.\n\n**Part 2: Numbers divisible by 5**\n\nA number is divisible by 5 if and only if its units digit is a 0 or a 5. Since the units digit is fixed at 5, all the numbers we consider are divisible by 5.\n\n**Part 3: Numbers divisible by 3**\n\nA number is divisible by 3 if and only if the sum of its digits is divisible by 3. \n\n**Part 4: Find the possible hundreds and tens digits**\n\nSince the units digit is 5, the sum of the hundreds and tens digits must leave a remainder of 1 when divided by 3.  This means the sum of the hundreds and tens digits can be 1, 4, 7, 10, 13, 16, and so on.\n\n**Part 5: Count the possibilities**\n\n* If the hundreds digit is 1, the tens digit can be 0, 3, 6, or 9.\n* If the hundreds digit is 2, the tens digit can be 2, 5, or 8.\n* If the hundreds digit is 3, the tens digit can be 1, 4, or 7.\n* If the hundreds digit is 4, the tens digit can be 0, 3, 6, or 9.\n* If the hundreds digit is 5, the tens digit can be 2, 5, or 8.\n* If the hundreds digit is 6, the tens digit can be 1, 4, or 7.\n* If the hundreds digit is 7, the tens digit can be 0, 3, 6, or 9.\n* If the hundreds digit is 8, the tens digit can be 2, 5, or 8.\n* If the hundreds digit is 9, the tens digit can be 1, 4, or 7.\n\nThere are a total of **20** possibilities for the hundreds and tens digits.\n\n**Solution:** There are $\\boxed{20}$ three-digit integers with a 5 in the units place that are divisible by 15. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": 0.7550886408404465
+            }
+        }
+    }
+}

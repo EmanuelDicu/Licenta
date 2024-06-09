@@ -1,0 +1,17 @@
+{
+    "Geometry_Level 5_2.json": {
+        "category": "Geometry",
+        "difficulty": "Level 5",
+        "problem": "The diameter, in inches, of a sphere with twice the volume of a sphere of radius 9 inches can be expressed in the form $a\\sqrt[3]{b}$ where $a$ and $b$ are positive integers and $b$ contains no perfect cube factors.  Compute $a+b$.",
+        "correct_solution": "A sphere with radius 9 inches has volume $\\frac{4}{3}\\pi(9^3)=4\\cdot 9^2 \\cdot 3\\pi$ cubic inches; twice this is $8\\cdot 9^2\\cdot 3 \\pi$ cubic inches.  Let the radius of the larger sphere be $r$, so we have \\[\\frac{4}{3}\\pi r^3= 8\\cdot 9^2\\cdot 3\\pi .\\] Solving for $r$ yields \\[r^3 =2\\cdot 9^3 \\Rightarrow r = 9\\sqrt[3]{2}.\\]  The diameter is twice this value, or $18\\sqrt[3]{2}$ inches.  Hence $a=18$, $b=2$, and $a+b=\\boxed{20}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "1. **Find the volume of the smaller sphere:** The volume of a sphere is given by $\\frac{4}{3}\\pi r^3$.  The smaller sphere has radius 9 inches, so its volume is $\\frac{4}{3}\\pi (9^3) = 972\\pi$ cubic inches.\n\n2. **Find the volume of the larger sphere:** The larger sphere has twice the volume of the smaller sphere, so its volume is $2 \\cdot 972\\pi = 1944\\pi$ cubic inches.\n\n3. **Find the radius of the larger sphere:** Let $R$ be the radius of the larger sphere.  We have the equation $\\frac{4}{3}\\pi R^3 = 1944\\pi$.  Dividing both sides by $\\frac{4}{3}\\pi$ gives $R^3 = 1458$.  Taking the cube root of both sides gives $R = \\sqrt[3]{1458}$.\n\n4. **Find the diameter of the larger sphere:** The diameter is twice the radius, so the diameter is $2\\sqrt[3]{1458} = 2\\sqrt[3]{27 \\cdot 54} = 2 \\cdot 3 \\sqrt[3]{54} = 6\\sqrt[3]{54}$ inches.\n\n5. **Compute a + b:** We have $a=6$ and $b=54$, so $a+b = 6+54 = \\boxed{60}$. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": 0.6688524590163935
+            }
+        }
+    }
+}

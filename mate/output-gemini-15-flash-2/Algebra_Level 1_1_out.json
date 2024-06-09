@@ -1,0 +1,17 @@
+{
+    "Algebra_Level 1_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 1",
+        "problem": "Sixteen is 64$\\%$ of what number?",
+        "correct_solution": "If the number is $x$, we can set up the equation $\\frac{16}{x}=\\frac{64}{100}$. We divide both sides by $4$ to get $\\frac{1}{x}=\\frac{4}{100}=\\frac{1}{25}$, so $x=\\boxed{25}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**1. Understand the Problem:**\n   - We are given that 64% of an unknown number is equal to 16.\n   - We need to find that unknown number.\n\n**2. Set up an Equation:**\n   - Let 'x' represent the unknown number.\n   - We can express the problem as an equation: 64% * x = 16\n\n**3. Convert Percentage to Decimal:**\n   - Divide 64 by 100 to convert the percentage to a decimal: 64/100 = 0.64\n\n**4. Solve for 'x':**\n   - Rewrite the equation: 0.64 * x = 16\n   - Divide both sides of the equation by 0.64: x = 16 / 0.64\n\n**5. Calculate the Solution:**\n   - x = 25\n\n**Answer:** Sixteen is 64% of **25**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.8451178451178452
+            }
+        }
+    }
+}

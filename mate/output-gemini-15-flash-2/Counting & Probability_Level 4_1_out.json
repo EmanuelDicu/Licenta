@@ -1,0 +1,17 @@
+{
+    "Counting & Probability_Level 4_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 4",
+        "problem": "Ben rolls four fair 10-sided dice, each numbered with numbers from 1 to 10. What is the probability that exactly two of the dice show a prime number?",
+        "correct_solution": "The probability that a 10-sided die rolls a prime number is $\\frac{4}{10}=\\frac{2}{5}$ since the primes it can roll are 2, 3, 5, and 7. We can choose which dice show a prime number in $\\binom{4}{2}=6$ ways. Then, there is a $\\frac{2}{5}\\cdot \\frac{2}{5} \\cdot \\frac{3}{5} \\cdot \\frac{3}{5}=\\frac{36}{625}$ chance that the chosen dice will actually roll a prime number and the other dice won't. Therefore, the total probability that exactly two dice show a prime number is $6 \\cdot \\frac{36}{625}=\\boxed{\\frac{216}{625}}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve the problem:\n\n**Part 1: Find the probability of getting a prime number on one die.**\n\n* There are four prime numbers on a 10-sided die: 2, 3, 5, and 7.\n* The probability of getting a prime number on one die is 4/10.\n\n**Part 2: Find the probability of getting a non-prime number on one die.**\n\n* There are six non-prime numbers on a 10-sided die: 1, 4, 6, 8, 9, and 10.\n* The probability of getting a non-prime number on one die is 6/10.\n\n**Part 3: Consider the different ways to get exactly two prime numbers.**\n\n* **Case 1: Prime, Prime, Non-prime, Non-prime**\n    * The probability of this case is (4/10) * (4/10) * (6/10) * (6/10) \n* **Case 2: Prime, Non-prime, Prime, Non-prime**\n    * The probability of this case is (4/10) * (6/10) * (4/10) * (6/10)\n* **Case 3: Prime, Non-prime, Non-prime, Prime**\n    * The probability of this case is (4/10) * (6/10) * (6/10) * (4/10)\n* **Case 4: Non-prime, Prime, Prime, Non-prime**\n    * The probability of this case is (6/10) * (4/10) * (4/10) * (6/10)\n* **Case 5: Non-prime, Prime, Non-prime, Prime**\n    * The probability of this case is (6/10) * (4/10) * (6/10) * (4/10)\n* **Case 6: Non-prime, Non-prime, Prime, Prime**\n    * The probability of this case is (6/10) * (6/10) * (4/10) * (4/10)\n\n**Part 4: Calculate the total probability.**\n\n* Since each case is equally likely, we add the probabilities of all the cases to get the total probability.\n* Total probability = 6 * [(4/10) * (4/10) * (6/10) * (6/10)] = 6 * (144/10000) = 864/10000\n\n**Solution:** The probability that exactly two of the dice show a prime number is **864/10000** or **0.0864**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": 0.8285009253547193
+            }
+        }
+    }
+}

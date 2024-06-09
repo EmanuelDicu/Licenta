@@ -1,0 +1,17 @@
+{
+    "Number Theory_Level 1_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 1",
+        "problem": "What is the greatest three-digit number which is a multiple of 13?",
+        "correct_solution": "Since 1001 is $7\\cdot11\\cdot13$, we know that 1001 is a multiple of 13.  The greatest 3-digit multiple of 13 is therefore \\[1001-13=\\boxed{988}.\\]",
+        "generated_solutions": {
+            "gemini-1.5-flash": "1. **Find the largest three-digit number:** The largest three-digit number is 999.\n2. **Divide the largest three-digit number by 13:** 999 / 13 = 76 remainder 11.\n3. **Subtract the remainder from the largest three-digit number:** 999 - 11 = 988.\n4. **Therefore, the greatest three-digit number which is a multiple of 13 is 988.** \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.7945619335347432
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "Counting & Probability_Level 5_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 5",
+        "problem": "8 coins are simultaneously flipped.  What is the probability that heads are showing on at most 2 of them?",
+        "correct_solution": "The number of ways for the outcome to have exactly 0, 1, or 2 heads are $\\binom{8}{0}=1$, $\\binom{8}{1}=8$, or $\\binom{8}{2}=28$, respectively.  There are $2^8$ total possible outcomes (2 possibilities for each coin, and 8 coins). So the answer is $\\dfrac{1+8+28}{2^8}=\\boxed{\\dfrac{37}{256}}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "The problem asks for the probability of getting at most 2 heads.  This means we need to find the probability of getting 0 heads, 1 head, or 2 heads.  \n\n* **Probability of 0 heads:** All 8 coins need to be tails.  The probability of one coin being tails is 1/2.  Since the flips are independent, the probability of all 8 being tails is (1/2)^8.\n\n* **Probability of 1 head:**  We need to choose one coin out of eight to be heads.  There are 8 ways to do this (the first coin, the second coin, etc.).  The probability of that chosen coin being heads is 1/2.  The other 7 coins need to be tails, which has probability (1/2)^7.  So the probability of getting exactly one head is 8 * (1/2) * (1/2)^7 = 8 * (1/2)^8.\n\n* **Probability of 2 heads:** We need to choose two coins out of eight to be heads.  There are 8 choose 2 ways to do this, which is 8!/(2!6!) = 28.  The probability of those two coins being heads is (1/2)^2.  The other 6 coins need to be tails, which has probability (1/2)^6.  So the probability of getting exactly two heads is 28 * (1/2)^2 * (1/2)^6 = 28 * (1/2)^8.\n\nNow, we add the probabilities of each of these cases:\n\n(1/2)^8 + 8 * (1/2)^8 + 28 * (1/2)^8 = 37 * (1/2)^8 = 37/256.\n\nTherefore, the probability of getting at most 2 heads is **37/256**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.8522906793048973
+            }
+        }
+    }
+}

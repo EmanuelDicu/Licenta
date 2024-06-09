@@ -1,0 +1,17 @@
+{
+    "Counting & Probability_Level 3_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 3",
+        "problem": "Alice and Bob play a game with a baseball. On each turn, if Alice has the ball, there is a 1/2 chance that she will toss it to Bob and a 1/2 chance that she will keep the ball. If Bob has the ball, there is a 2/5 chance that he will toss it to Alice, and if he doesn't toss it to Alice, he keeps it. Alice starts with the ball. What is the probability that Alice has the ball again after two turns?",
+        "correct_solution": "We can solve this problem by dividing it into cases. If Alice tosses the baseball to Bob on the first turn, there is a 2/5 chance that Bob will toss it back to her on the next turn. On the other hand, if Alice keeps the baseball on the first turn, there is a 1/2 chance that she will also keep it on the second turn. The total probability is then $\\frac{1}{2}\\cdot\\frac{2}{5} + \\frac{1}{2}\\cdot\\frac{1}{2}=\\boxed{\\frac{9}{20}}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Part 1: Alice keeps the ball on the first turn**\n\n* Probability of Alice keeping the ball on the first turn: 1/2\n\n**Part 2: Alice gets the ball back on the second turn (after keeping it on the first turn)**\n\n* Probability of Bob tossing the ball to Alice on the second turn: 2/5\n\n**Part 3: Alice loses the ball on the first turn, but gets it back on the second turn**\n\n* Probability of Alice losing the ball on the first turn: 1/2\n* Probability of Bob keeping the ball on the first turn: 3/5 (1 - 2/5)\n* Probability of Bob tossing the ball to Alice on the second turn: 2/5\n\n**Part 4: Combining all possibilities**\n\n* The two scenarios above are the only ways Alice can have the ball after two turns.\n* To get the total probability, we add the probabilities of each scenario: (1/2) * (2/5) + (1/2) * (3/5) * (2/5) = 1/5 + 3/25 = 8/25\n\n**Solution:** The probability that Alice has the ball again after two turns is **8/25**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": 0.7386609071274298
+            }
+        }
+    }
+}

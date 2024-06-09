@@ -1,0 +1,17 @@
+{
+    "Algebra_Level 2_2.json": {
+        "category": "Algebra",
+        "difficulty": "Level 2",
+        "problem": "Let $f(x) = 3x + 3$ and $g(x) = 4x + 3.$ What is $f(g(f(2)))$?",
+        "correct_solution": "We first find that $f(2) = 9.$ Therefore, $g(f(2)) = g(9) = 39.$ Finally, $f(g(f(2))) = f(39) = \\boxed{120}.$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "1. **Solve for the innermost function,  $f(2)$:**\n   - Substitute $x = 2$ into the expression for $f(x)$:\n   - $f(2) = 3(2) + 3 = 9$\n\n2. **Solve for the next function, $g(f(2))$, which is $g(9)$:**\n   - Substitute $x = 9$ into the expression for $g(x)$:\n   - $g(9) = 4(9) + 3 = 39$\n\n3. **Solve for the outermost function, $f(g(f(2)))$, which is $f(39)$:**\n   - Substitute $x = 39$ into the expression for $f(x)$:\n   - $f(39) = 3(39) + 3 = 120$\n\nTherefore, $f(g(f(2))) = \\boxed{120}$. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.8123711340206186
+            }
+        }
+    }
+}

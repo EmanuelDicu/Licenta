@@ -1,0 +1,17 @@
+{
+    "Algebra_Level 1_2.json": {
+        "category": "Algebra",
+        "difficulty": "Level 1",
+        "problem": "Solve the equation $27 = 3(9)^{x-1}$ for $x.$",
+        "correct_solution": "Dividing both sides by 3, we quickly note that $ 9 = 9^{x-1} \\rightarrow 1 = x-1 \\rightarrow x = \\boxed{2}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "1. **Divide both sides by 3:** \n   \n   The equation becomes: $9 = (9)^{x-1}$.\n\n2. **Express both sides with the same base:**\n\n   Since both sides are powers of 9, we can write: $9^1 = (9)^{x-1}$.\n\n3. **Equate the exponents:**\n\n   Since the bases are the same, the exponents must be equal: $1 = x-1$.\n\n4. **Solve for x:**\n\n   Adding 1 to both sides gives: $x = 2$.\n\n**Therefore, the solution to the equation is x = 2.** \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.819047619047619
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "Prealgebra_Level 2_1.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 2",
+        "problem": "Calculate $6 \\cdot 8\\frac{1}{3}$.",
+        "correct_solution": "We can use the distributive property to avoid having to convert our mixed number to a fraction: \\begin{align*}\n6 \\cdot 8\\frac{1}{3} &= 6 \\cdot \\left(8 + \\frac{1}{3}\\right)\\\\\n&= 48 + 6 \\cdot\\frac{1}{3}\\\\\n&= 48 + \\frac{6}{3}\\\\\n&= 48 + 2\\\\\n&= \\boxed{50}.\n\\end{align*}",
+        "generated_solutions": {
+            "gemini-1.5-flash": "1. **Convert the mixed number to a fraction:**  $8 \\frac{1}{3} = \\frac{8\\cdot 3 + 1}{3} = \\frac{25}{3}$\n2. **Multiply the fractions:** $6 \\cdot \\frac{25}{3} = \\frac{6}{1} \\cdot \\frac{25}{3} = \\frac{6 \\cdot 25}{1 \\cdot 3}$\n3. **Simplify the fraction:** $\\frac{6 \\cdot 25}{1 \\cdot 3} = \\frac{150}{3} = 50$\n\nTherefore, the solution is $6 \\cdot 8\\frac{1}{3} = \\boxed{50}$. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.7108108108108108
+            }
+        }
+    }
+}

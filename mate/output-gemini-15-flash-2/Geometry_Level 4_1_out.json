@@ -1,0 +1,17 @@
+{
+    "Geometry_Level 4_1.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "When each edge of a cube is increased by $50\\%$, by what percent is the surface area of the cube increased?",
+        "correct_solution": "Let $s$ represent the length of the edge of a cube. The surface area of the cube is 6 times the area of each face (since there are 6 faces), or $6s^2$. Increasing $s$ by $50\\%$ gives us $1.5s$. The new surface area is $6(1.5s)^2=6s^2(2.25)$. Increasing the surface area by $x\\%$ is $6s^2\\left(1+\\frac{x}{100}\\right)$, so we solve for $x$ when the surface area is $6s^2(2.25)$. $$2.25=1+\\frac{x}{100}\\qquad\\Rightarrow 1.25=\\frac{x}{100}\\qquad\\Rightarrow 125=x$$ The surface area increases by $\\boxed{125\\%}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve the problem:\n\n**1.  Understand the Problem:**\n\n* We need to find the percentage increase in the surface area of a cube when each edge is increased by 50%.\n\n**2.  Set Up the Cube:**\n\n* Let the original edge length of the cube be  's'. \n\n**3. Calculate the Original Surface Area:**\n\n* The surface area of a cube is 6 times the area of one face: 6 * s\u00b2\n\n**4. Calculate the New Edge Length:**\n\n* Increasing the edge length by 50% means the new edge length is s + (50/100)s = (3/2)s\n\n**5. Calculate the New Surface Area:**\n\n* The new surface area is 6 * [(3/2)s]\u00b2 = 6 * (9/4)s\u00b2 = (27/2)s\u00b2\n\n**6. Calculate the Increase in Surface Area:**\n\n* The increase in surface area is (27/2)s\u00b2 - 6s\u00b2 = (15/2)s\u00b2\n\n**7. Calculate the Percentage Increase:**\n\n* The percentage increase is [(Increase in surface area) / (Original surface area)] * 100%\n* This is [(15/2)s\u00b2 / 6s\u00b2] * 100% = (5/4) * 100% = **125%**\n\n**Therefore, the surface area of the cube increases by 125%.** \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": 0.7338129496402878
+            }
+        }
+    }
+}

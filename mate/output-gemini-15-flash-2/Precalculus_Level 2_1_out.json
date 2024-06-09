@@ -1,0 +1,17 @@
+{
+    "Precalculus_Level 2_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 2",
+        "problem": "When $1 - i \\sqrt{3}$ is converted to the exponential form $re^{i \\theta}$, what is $\\theta$?",
+        "correct_solution": "We see that\n\\[1 - i \\sqrt{3} = 2 \\left( \\frac{1}{2} - \\frac{\\sqrt{3}}{2} i \\right) = 2e^{5 \\pi i/3},\\]so $\\theta = \\boxed{\\frac{5\\pi}{3}}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "1. **Find the modulus, r:**\n   * The modulus of a complex number $a + bi$ is given by  $|a + bi| = \\sqrt{a^2 + b^2}$. \n   * In this case, $a = 1$ and $b = -\\sqrt{3}$.\n   * Therefore, $r = |1 - i\\sqrt{3}| = \\sqrt{1^2 + (-\\sqrt{3})^2} = \\sqrt{4} = 2$.\n\n2. **Find the argument, \u03b8:**\n   * The argument of a complex number is the angle it makes with the positive real axis in the complex plane.\n   * We can use the formula $\\tan(\\theta) = \\frac{b}{a}$.\n   * In this case, $\\tan(\\theta) = \\frac{-\\sqrt{3}}{1} = -\\sqrt{3}$.\n   * Since the complex number is in the fourth quadrant (real part is positive, imaginary part is negative), the angle \u03b8 must be in the interval  $- \\frac{\\pi}{2} < \\theta < 0$.\n   * The angle whose tangent is $-\\sqrt{3}$ in this interval is $\\theta = -\\frac{\\pi}{3}$.\n\nTherefore, the exponential form of $1 - i\\sqrt{3}$ is $2e^{-i\\frac{\\pi}{3}}$, and $\\theta = \\boxed{-\\frac{\\pi}{3}}$. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": 0.8685082872928177
+            }
+        }
+    }
+}

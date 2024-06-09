@@ -1,0 +1,17 @@
+{
+    "Number Theory_Level 2_1.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 2",
+        "problem": "The number $839$ can be written as $19q+r$ where $q$ and $r$ are positive integers. What is the greatest possible value of $q-r$?",
+        "correct_solution": "In order to get the greatest possible $q-r$, we want to maximize $q$ and minimize $r$. We divide 839 by 19 to find the maximum $q$. The quotient $q$ is 44 and the remainder $r$ is 3, and we can check that $839=19(44)+3$. So the greatest possible value of $q-r=44-3=\\boxed{41}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "We want to maximize $q-r$. Since $r$ is a remainder, it must be smaller than the divisor, 19. So, we want to find the largest possible value of $q$.\n\nTo maximize $q$, we want to minimize $r$.  The smallest possible value for $r$ is 0.\n\nIf $r=0$, then $839 = 19q$.  Solving for $q$, we get $q = 839/19 = 44\\frac{3}{19}$. Since $q$ must be an integer, the largest possible value of $q$ is 44.\n\nTherefore, the largest possible value of $q-r$ is $44-0 = \\boxed{44}$. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": 0.646551724137931
+            }
+        }
+    }
+}

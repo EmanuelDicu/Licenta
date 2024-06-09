@@ -1,0 +1,17 @@
+{
+    "Intermediate Algebra_Level 4_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 4",
+        "problem": "Find the minimum value of\n\\[2 \\cos \\theta + \\frac{1}{\\sin \\theta} + \\sqrt{2} \\tan \\theta\\]for $0 < \\theta < \\frac{\\pi}{2}.$",
+        "correct_solution": "By AM-GM,\n\\[2 \\cos \\theta + \\frac{1}{\\sin \\theta} + \\sqrt{2} \\tan \\theta \\ge 3 \\sqrt[3]{2 \\cos \\theta \\cdot \\frac{1}{\\sin \\theta} \\cdot \\sqrt{2} \\tan \\theta} = 3 \\sqrt{2}.\\]Equality occurs when $\\theta = \\frac{\\pi}{4},$ so the minimum value is $\\boxed{3 \\sqrt{2}}.$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "By AM-GM,\n\\[2 \\cos \\theta + \\frac{1}{\\sin \\theta} \\ge 2 \\sqrt{2 \\cos \\theta \\cdot \\frac{1}{\\sin \\theta}} = 2 \\sqrt{\\frac{2 \\cos \\theta}{\\sin \\theta}} = 2 \\sqrt{2 \\cot \\theta}.\\]Also, by AM-GM,\n\\[2 \\sqrt{2 \\cot \\theta} + \\sqrt{2} \\tan \\theta \\ge 2 \\sqrt{2 \\sqrt{2 \\cot \\theta} \\cdot \\sqrt{2} \\tan \\theta} = 4.\\]Equality occurs when $2 \\cos \\theta = \\frac{1}{\\sin \\theta}$ and $\\sqrt{2 \\cot \\theta} = \\sqrt{2} \\tan \\theta,$ or $\\sin 2 \\theta = 1$ and $\\cot^2 \\theta = 1.$  The solution in the interval $0 < \\theta < \\frac{\\pi}{2}$ is $\\theta = \\frac{\\pi}{4},$ so the minimum value is $\\boxed{4}.$\n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": 0.6352941176470588
+            }
+        }
+    }
+}
