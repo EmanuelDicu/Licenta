@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 1_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 1",
+        "problem": "Compute $\\dbinom{15}{2}$.",
+        "correct_solution": "\\begin{align*}\n\\dbinom{15}{2} &= \\dfrac{15!}{13!2!} \\\\\n&= \\dfrac{15\\times 14}{2\\times 1} \\\\\n&= 15 \\times \\dfrac{14}{2} \\\\\n&= 15 \\times 7 \\\\\n&= \\boxed{105}.\n\\end{align*}",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Step 1: Understand the Binomial Coefficient**\n\nThe binomial coefficient $\\binom{n}{k}$ represents the number of ways to choose $k$ objects from a set of $n$ distinct objects, without regard to order. It can be calculated using the formula:\n\n$$\\binom{n}{k} = \\frac{n!}{k!(n-k)!}$$\n\nwhere \"!\" denotes the factorial operation (e.g., 5! = 5 * 4 * 3 * 2 * 1).\n\n**Step 2: Apply the Formula**\n\nIn our case, we need to compute $\\binom{15}{2}$.  Plugging in the values into the formula:\n\n$$\\binom{15}{2} = \\frac{15!}{2!(15-2)!}$$\n\n**Step 3: Simplify the Factorials**\n\n$$\\binom{15}{2} = \\frac{15!}{2!13!}$$\n\n$$\\binom{15}{2} = \\frac{15 \\times 14 \\times 13!}{2 \\times 1 \\times 13!}$$\n\n**Step 4: Cancel Common Factors**\n\n$$\\binom{15}{2} = \\frac{15 \\times 14}{2}$$\n\n**Step 5: Calculate the Final Result**\n\n$$\\binom{15}{2} = 105$$\n\n**Final Answer:** $\\boxed{105}$"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8611764705882353
+            }
+        }
+    }
+}

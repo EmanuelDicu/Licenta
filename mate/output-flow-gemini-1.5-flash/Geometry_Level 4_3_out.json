@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 4_3.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "What is the area, in square units, of the square with the four vertices at $(-2, 2), (2, -2), (-2, -6)$, and $(-6, -2)$?",
+        "correct_solution": "The length of the square is $\\sqrt{4^2 + 4^2} = 4\\sqrt{2}$. Therefore, the area of the square is $(4\\sqrt{2})^2 = \\boxed{32}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "## Step-by-Step Solution:\n\n1. **Visualize the Square:**  Plot the given points on a coordinate plane. This will help you visualize the square. \n\n2. **Find the Side Length:** Notice that the square is tilted.  We can find the side length by calculating the distance between two adjacent vertices. Let's take the vertices (-2, 2) and (2, -2). \n\n* **Use the Distance Formula:** The distance formula is \u221a((x2 - x1)\u00b2 + (y2 - y1)\u00b2).\n* **Plug in the coordinates:** \u221a((2 - (-2))\u00b2 + (-2 - 2)\u00b2) \n* **Simplify:** \u221a((4)\u00b2 + (-4)\u00b2) = \u221a(16 + 16) = \u221a32 = 4\u221a2 \n\n3. **Calculate the Area:** The area of a square is side length squared.\n* **Area = (side length)\u00b2 = (4\u221a2)\u00b2 = 16 * 2 = 32**\n\n**Therefore, the area of the square is  \\boxed{32} square units.**"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8775510204081632
+            }
+        }
+    }
+}

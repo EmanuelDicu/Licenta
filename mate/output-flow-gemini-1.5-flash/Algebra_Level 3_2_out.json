@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 3_2.json": {
+        "category": "Algebra",
+        "difficulty": "Level 3",
+        "problem": "Find the positive difference between the solutions to the equation $6t^2 + 30 = 41t$.",
+        "correct_solution": "Rearranging the equation gives $6t^2 -41t + 30 = 0$.  Factoring gives $(t-6)(6t-5)= 0$, so the solutions to the equation are $t=6$ and $t=\\frac{5}{6}$.  The positive difference between these solutions is $6 - \\frac56 = \\boxed{\\frac{31}{6}}.$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Step 1: Rewrite the equation in standard quadratic form.**\n\nSubtract $41t$ from both sides to get: \n$$6t^2 - 41t + 30 = 0$$\n\n**Step 2: Factor the quadratic equation.**\n\nWe need to find two numbers that add up to $-41$ and multiply to $6 \\cdot 30 = 180$. These numbers are $-36$ and $-5$.  So, we can factor the equation as:\n\n$$(6t - 5)(t - 6) = 0$$\n\n**Step 3: Solve for the roots (solutions) of the equation.**\n\nFor the product of two factors to be zero, at least one of them must be zero.  Therefore, we have:\n\n* $6t - 5 = 0  \\Rightarrow t = \\frac{5}{6}$\n* $t - 6 = 0  \\Rightarrow t = 6$\n\n**Step 4: Calculate the difference between the solutions.**\n\nThe difference between the solutions is $6 - \\frac{5}{6} = \\frac{31}{6}$.\n\n**Step 5: Find the positive difference.**\n\nSince the difference is already positive, we don't need to change anything.\n\n**Final Answer:** The positive difference between the solutions is $\\boxed{\\frac{31}{6}}$."
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7825159914712153
+            }
+        }
+    }
+}

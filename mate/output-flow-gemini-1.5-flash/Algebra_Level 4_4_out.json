@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 4_4.json": {
+        "category": "Algebra",
+        "difficulty": "Level 4",
+        "problem": "For what ordered pair $(a,b)$ are there infinite solutions $(x,y)$ to the system \\begin{align*}\n2ax+2y&=b,\\\\\n5x+y&=-3?\n\\end{align*}",
+        "correct_solution": "For there to be infinite solutions, the first equation needs to be consistent with the second and yet add no new information, which means it must be a multiple of the second. Since the coefficient of $y$ in the first equation is twice that of $y$ in the second equation, the multiplier is 2. This implies that the first equation must be $2(5x+y)=2(-3)$. After equating coefficients, this gives $2a=2\\cdot5$ and $b=2\\cdot-3$, or $(a,b)=\\boxed{(5,-6)}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "## Solution:\n\nA system of equations has infinite solutions when the equations are dependent, meaning one equation is a multiple of the other.  Let's try to make the second equation a multiple of the first.\n\nTo make the coefficients of $y$ match, we can multiply the second equation by 2: \n$$10x + 2y = -6.$$\n\nNow we want to find values for $a$ and $b$ that make the first equation a multiple of this new equation.  This means we need $2a = 10$ and $b=-6$. Solving for $a$, we get $a=5$.\n\nTherefore, the ordered pair $(a, b) = \\boxed{(5,-6)}$ satisfies the condition of having infinite solutions for the given system of equations."
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": false,
+                "Same result": true,
+                "Levenshtein distance value": 0.6756756756756757
+            }
+        }
+    }
+}

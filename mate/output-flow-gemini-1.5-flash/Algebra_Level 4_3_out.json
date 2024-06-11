@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 4_3.json": {
+        "category": "Algebra",
+        "difficulty": "Level 4",
+        "problem": "The product of $3t^2+5t+a$ and $4t^2+bt-2$ is $12t^4+26t^3-8t^2-16t+6$. What is $a+b$?",
+        "correct_solution": "The constant term of the product of two polynomials is just the product of the two constant terms. Therefore we know that $6=-2a$, so $a=-3$. We now consider the linear term of the product of our polynomials. It's given by $-16t=(5t\\cdot-2)+a\\cdot bt\\Longrightarrow-16t=-10t+(-3)bt\\Longrightarrow b=2$. Therefore our answer is $a+b=\\boxed{-1}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Step 1: Expand the product**\n\nWe are given that $(3t^2 + 5t + a)(4t^2 + bt - 2) = 12t^4 + 26t^3 - 8t^2 - 16t + 6$. Let's expand the left-hand side using the distributive property (or FOIL method):\n\n```\n(3t^2 + 5t + a)(4t^2 + bt - 2) = \n    3t^2(4t^2 + bt - 2) + 5t(4t^2 + bt - 2) + a(4t^2 + bt - 2) =\n    12t^4 + 3bt^3 - 6t^2 + 20t^3 + 5bt^2 - 10t + 4at^2 + abt - 2a \n```\n\n**Step 2: Combine like terms**\n\nNow, let's combine the terms with the same powers of $t$:\n\n```\n12t^4 + (3b + 20)t^3 + (-6 + 5b + 4a)t^2 + (-10 + ab)t - 2a\n```\n\n**Step 3:  Match coefficients**\n\nWe are given that this expanded expression is equal to $12t^4 + 26t^3 - 8t^2 - 16t + 6$.  For these two polynomials to be equal, the coefficients of each power of $t$ must match.  This gives us the following system of equations:\n\n*  $12 = 12$ (This is already true)\n*  $3b + 20 = 26$\n*  $-6 + 5b + 4a = -8$\n*  $-10 + ab = -16$\n*  $-2a = 6$\n\n**Step 4: Solve the system of equations**\n\nLet's solve this system:\n\n*  From the equation $-2a = 6$, we get $a = -3$.\n*  Substituting $a = -3$ into $-10 + ab = -16$, we get $-10 - 3b = -16$, so $b = 2$.\n\n**Step 5: Find a + b**\n\nFinally, we have $a + b = -3 + 2 = \\boxed{-1}$."
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8420608108108109
+            }
+        }
+    }
+}

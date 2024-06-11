@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 5_4.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 5",
+        "problem": "Notice that  \\[31\\cdot37=1147.\\]Find some integer $n$ with $0\\leq n<2293$ such that  \\[31n\\equiv 3\\pmod{2293}.\\]",
+        "correct_solution": "Doubling the given equation tells us  \\[31\\cdot74=2294.\\]Specifically  \\[31\\cdot74\\equiv1\\pmod{2293}\\]and 74 is the multiplicative inverse of 31 modulo 2293.\n\nIf we triple the congruence we just found we get  \\[31\\cdot222\\equiv3\\pmod{2293}.\\]Therefore $n=\\boxed{222}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Step 1: Find the modular inverse of 31 modulo 2293**\n\nSince 31 and 2293 are relatively prime (they have no common divisors other than 1), the modular inverse of 31 modulo 2293 exists. We can use the Extended Euclidean Algorithm to find it.\n\nRecall that the Extended Euclidean Algorithm finds integers  *x* and *y* such that:\n\n```\nax + by = gcd(a, b)\n```\n\nwhere *a* and *b* are integers, and *gcd(a, b)* is their greatest common divisor.\n\nIn our case, we want to find *x* and *y* such that:\n\n```\n31x + 2293y = 1\n```\n\nApplying the Extended Euclidean Algorithm:\n\n```\n2293 = 74 * 31 + 9 \n31 = 3 * 9 + 4\n9 = 2 * 4 + 1\n```\n\nNow, working our way back up:\n\n```\n1 = 9 - 2 * 4\n  = 9 - 2 * (31 - 3 * 9)\n  = 7 * 9 - 2 * 31\n  = 7 * (2293 - 74 * 31) - 2 * 31\n  = 7 * 2293 - 520 * 31\n```\n\nTherefore, the modular inverse of 31 modulo 2293 is -520. Since we want a positive inverse, we can add 2293 to get:\n\n```\n-520 + 2293 = 1773\n```\n\n**Step 2: Multiply both sides of the congruence by the inverse**\n\nWe have the congruence:\n\n```\n31n \u2261 3 (mod 2293)\n```\n\nMultiplying both sides by the modular inverse of 31, which is 1773, we get:\n\n```\n1773 * 31n \u2261 1773 * 3 (mod 2293)\n```\n\nSince 1773 * 31 is congruent to 1 modulo 2293, this simplifies to:\n\n```\nn \u2261 5319 (mod 2293)\n```\n\n**Step 3: Find the smallest positive solution**\n\nTo find the smallest positive integer *n* that satisfies the congruence, we reduce 5319 modulo 2293:\n\n```\n5319 \u2261 1026 (mod 2293)\n```\n\n**Solution:**\n\nTherefore, the integer *n* that satisfies the given constraints is **n = 1026**.\n\n**Final Answer:** \\boxed{1026}"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8831417624521073
+            }
+        }
+    }
+}

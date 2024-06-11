@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 1_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 1",
+        "problem": "If $3m+4n=47$, and $m+n=15$, what is $m$?",
+        "correct_solution": "Because the question only asks for the value of $m$, we can begin by eliminating $n$. In order to do this, we multiply the second equation by 4, giving us a system of two equations where both coefficients of $n$ are 4: \\begin{align*} 3m+4n=47\n\\\\ 4m+4n=60\n\\end{align*}From here, we can just subtract the second equation from the first. This gives us $(3m+4n)-(4m+4n)=47-60$, which simplifies to $-m=-13$ or $m=\\boxed{13}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "## Step-by-Step Solution:\n\n1. **Solve for one variable in terms of the other:**  We can use the second equation to solve for *n* in terms of *m*.\n   * Subtract *m* from both sides of the equation:  *n = 15 - m*\n\n2. **Substitute the expression for *n* into the first equation:**\n   * Substitute (15 - *m*) for *n* in the equation *3m + 4n = 47*:\n      * 3*m* + 4(15 - *m*) = 47\n\n3. **Simplify and solve for *m*:**\n   * Distribute the 4: 3*m* + 60 - 4*m* = 47\n   * Combine like terms: -*m* + 60 = 47\n   * Subtract 60 from both sides: -*m* = -13\n   * Multiply both sides by -1: *m* = 13\n\nTherefore, the value of *m* is:  **\\boxed{13}**"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.740506329113924
+            }
+        }
+    }
+}

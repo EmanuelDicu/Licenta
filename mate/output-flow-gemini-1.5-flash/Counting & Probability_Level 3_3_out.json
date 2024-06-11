@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 3_3.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 3",
+        "problem": "A target consists of four concentric circles with radii 4 inches, 6 inches, 8 inches and 10 inches as shown. Given that a dart is thrown that hits the target at a random point, what is the probability that it hits a shaded region? Express your answer as a common fraction.\n\n[asy]size(100); import graph; fill(Circle((0,0),5),gray(.6));\n\nclip(Circle((0,0),2) ^^ Circle((0,0),3) ^^ Circle((0,0),4),fillrule(1));\ndraw(Circle((0,0),2) ^^ Circle((0,0),3) ^^ Circle((0,0),4) ^^ Circle((0,0),5));[/asy]",
+        "correct_solution": "The total area of the target is $\\pi\\cdot 10^2=100\\pi$.  The area of the inner shaded region is the area of a circle with radius 4, and that is equal to $\\pi\\cdot 4^2=16\\pi$.  We can calculate the area of the shaded ring as the difference in areas of a circle with radius 8 and with radius 6.  This gives an area of $\\pi \\cdot 8^2 - \\pi \\cdot 6^2 = 28\\pi$.  The total shaded area is $16\\pi+28\\pi=44\\pi$.  The probability a dart will hit a shaded region is equal to $\\frac{44\\pi}{100\\pi}=\\boxed{\\frac{11}{25}}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's a step-by-step solution to the problem:\n\n**1. Calculate the area of each circle:**\n\n* **Circle 1 (radius 4 inches):**  Area = \u03c0(4\u00b2)= 16\u03c0 square inches\n* **Circle 2 (radius 6 inches):**  Area = \u03c0(6\u00b2) = 36\u03c0 square inches\n* **Circle 3 (radius 8 inches):**  Area = \u03c0(8\u00b2) = 64\u03c0 square inches\n* **Circle 4 (radius 10 inches):** Area = \u03c0(10\u00b2) = 100\u03c0 square inches\n\n**2. Calculate the area of each shaded region:**\n\n* **Region 1 (between circles 1 & 2):**  Area = 36\u03c0 - 16\u03c0 = 20\u03c0 square inches\n* **Region 2 (between circles 2 & 3):**  Area = 64\u03c0 - 36\u03c0 = 28\u03c0 square inches\n* **Region 3 (between circles 3 & 4):**  Area = 100\u03c0 - 64\u03c0 = 36\u03c0 square inches\n\n**3. Calculate the total area of the shaded regions:**\n\nTotal shaded area = 20\u03c0 + 28\u03c0 + 36\u03c0 = 84\u03c0 square inches\n\n**4. Calculate the total area of the target:**\n\nTotal area = 100\u03c0 square inches\n\n**5. Calculate the probability of hitting a shaded region:**\n\nProbability = (Area of shaded regions) / (Total area of target)\nProbability = (84\u03c0) / (100\u03c0) = **21/25**\n\n**Therefore, the probability that the dart hits a shaded region is  \\boxed{\\frac{21}{25}}. **"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7414104882459313
+            }
+        }
+    }
+}

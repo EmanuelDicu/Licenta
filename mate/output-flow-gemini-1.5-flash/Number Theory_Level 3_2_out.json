@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 3_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 3",
+        "problem": "Find an integer $n$ such that $0\\leq n<398$ and $n$ is a multiplicative inverse to 7 modulo 398.",
+        "correct_solution": "We notice that 399 is a multiple of 7: \\[399=57\\cdot7.\\]Considering this equation modulo 398 gives \\[1\\equiv57\\cdot7\\pmod{398}\\]so the answer is $\\boxed{57}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "## Step-by-Step Solution:\n\n1. **Understanding the problem:** We need to find an integer *n* that, when multiplied by 7, leaves a remainder of 1 when divided by 398. This is the definition of a multiplicative inverse modulo 398.\n\n2. **Using the Extended Euclidean Algorithm:** The Extended Euclidean Algorithm helps us find the multiplicative inverse. We start by finding the greatest common divisor (GCD) of 7 and 398:\n\n    * 398 = 56 * 7 + 6 \n    * 7 = 1 * 6 + 1 \n\n    Working backwards, we can express the GCD (1) as a linear combination of 7 and 398:\n\n    * 1 = 7 - 1 * 6 \n    * 1 = 7 - 1 * (398 - 56 * 7)\n    * 1 = 57 * 7 - 1 * 398\n\n3. **Identifying the inverse:**  Notice that the coefficient of 7 in the above equation is 57.  This means: \n    * 57 * 7 \u2261 1 (mod 398) \n\n4. **Finding the smallest positive inverse:** Since 57 is greater than 398, we need to find a smaller equivalent solution. We can do this by reducing 57 modulo 398:\n\n    * 57 \u2261 -341 (mod 398)\n\n5. **The solution:** Therefore, the multiplicative inverse of 7 modulo 398 is **-341**.  Since we need a value between 0 and 398, we add 398 to get our final answer:\n\n    * -341 + 398 = **57**\n\n**Final Answer:**  $\\boxed{57}$"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8952221290863369
+            }
+        }
+    }
+}

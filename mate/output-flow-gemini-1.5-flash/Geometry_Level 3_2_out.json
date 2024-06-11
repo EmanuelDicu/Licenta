@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 3_2.json": {
+        "category": "Geometry",
+        "difficulty": "Level 3",
+        "problem": "We have a triangle $\\triangle ABC$ and a point $K$ on segment $\\overline{BC}$ such that $AK$ is an altitude to $\\triangle ABC$. If $AK = 6,$ $BK = 8$, and $CK = 6,$ then what is the perimeter of the triangle?",
+        "correct_solution": "Time to draw! [asy]\npair A, B, C, K;\nA = (0, 6);\nB = (-8, 0);\nC = (6, 0);\nK = (0, 0);\ndraw(A--B--C--cycle);\ndraw(A--K);\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$K$\", K, S);\nlabel(\"6\", A--K, E);\nlabel(\"8\", B--K, S);\nlabel(\"6\", C--K, S);\ndraw(rightanglemark(A,K,B,10));\n[/asy] To find the perimeter, we need $AB$ and $AC.$ We recognize $\\triangle ABK$ as a $3:4:5$ triangle and and $\\triangle ACK$ as a $45^\\circ-45^\\circ-90^\\circ$ triangle, which means that $AB = 10$ and $AC = 6\\sqrt{2}.$ As for $BC,$ we have $BC = BK + CK = 14.$ Therefore, our answer is $AB + AC + BC = \\boxed{24 + 6\\sqrt{2}}.$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "## Step-by-step solution:\n\n1. **Visualize the problem:** Draw a triangle $\\triangle ABC$ with point $K$ on segment $\\overline{BC}$ such that $AK$ is an altitude. Label the lengths as given: $AK = 6$, $BK = 8$, and $CK = 6$.\n\n2. **Recognize right triangles:** Notice that $\\triangle AKB$ and $\\triangle AKC$ are right triangles with right angles at $K$.\n\n3. **Apply the Pythagorean theorem:** \n    *  In $\\triangle AKB$, we have $AB^2 = AK^2 + BK^2 = 6^2 + 8^2 = 100$. Therefore, $AB = \\sqrt{100} = 10$.\n    *  In $\\triangle AKC$, we have $AC^2 = AK^2 + CK^2 = 6^2 + 6^2 = 72$. Therefore, $AC = \\sqrt{72} = 6\\sqrt{2}$.\n\n4. **Calculate the perimeter:** The perimeter of $\\triangle ABC$ is $AB + BC + AC = 10 + (8 + 6) + 6\\sqrt{2} = \\boxed{24 + 6\\sqrt{2}}$."
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7679045092838196
+            }
+        }
+    }
+}

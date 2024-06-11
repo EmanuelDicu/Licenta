@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 5_3.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 5",
+        "problem": "The complex numbers $z$ and $w$ satisfy the system\n\\begin{align*}\nz + \\frac{20i}w &= 5+i, \\\\\nw+\\frac{12i}z &= -4+10i.\n\\end{align*}Find the smallest possible value of $\\vert zw\\vert^2$.",
+        "correct_solution": "Multiplying the two equations, we have \\[zw + 12i + 20i - \\frac{240}{zw} = (5+i) (-4+10i) = -30 + 46i.\\]Letting $t = zw,$ this simplifies to \\[t^2 + (30-14i)t - 240 = 0.\\]By the quadratic formula, \\[t = \\frac{-(30-14i) \\pm \\sqrt{(30-14i)^2 + 4\\cdot240}}{2} = -(15-7i) \\pm \\sqrt{416-210i}.\\]We hope that we can write $416 - 210i = (a+bi)^2,$ for some integers $a$ and $b.$ Upon expansion, we get the equations $416 = a^2-b^2$ and $-210=2ab$. The smallest perfect square greater than $416$ is $21^2 = 441$, so we try $a = 21$; then $416 = 441 - b^2$, so $b^2 = 25$ and $b = \\pm 5$. Indeed, we get the solution $(a, b) = (21, -5)$.\n\nTherefore, \\[t = -(15-7i) \\pm (21-5i) = 6+2i \\; \\text{or} \\; -36+12i.\\]The choice of $t=zw$ with smallest magnitude is $t = 6+2i,$ giving \\[|t|^2 = 6^2 + 2^2 = \\boxed{40}.\\]",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Let $z = a + bi$ and $w = c + di$, where $a$, $b$, $c$, and $d$ are real numbers.  Substituting into the given equations, we get\n\\begin{align*}\na + bi + \\frac{20i}{c + di} &= 5 + i, \\\\\nc + di + \\frac{12i}{a + bi} &= -4 + 10i.\n\\end{align*}Multiplying the first equation by $c + di$ and the second equation by $a + bi$, we get\n\\begin{align*}\n(a + bi)(c + di) + 20i &= (5 + i)(c + di), \\\\\n(c + di)(a + bi) + 12i &= (-4 + 10i)(a + bi).\n\\end{align*}Expanding, we get\n\\begin{align*}\nac + (ad + bc)i - bd &= 5c + (5d + c)i - d, \\\\\nac + (ad + bc)i - bd &= -4a + (10a - 4b)i - 10b.\n\\end{align*}Equating real and imaginary parts, we get the system of equations\n\\begin{align*}\nac - bd &= 5c - d, \\\\\nad + bc &= 5d + c, \\\\\nac - bd &= -4a - 10b, \\\\\nad + bc &= 10a - 4b.\n\\end{align*}From the first and third equations, $5c - d = -4a - 10b$.  From the second and fourth equations, $5d + c = 10a - 4b$.  Solving, we find $a = -2$ and $b = 1$.  Then the first two equations become\n\\begin{align*}\n-2c - d &= 5c - d, \\\\\n-2d + c &= 5d + c.\n\\end{align*}Solving, we find $c = 0$ and $d = -\\frac{1}{3}$.  Hence, $z = -2 + i$ and $w = -\\frac{1}{3}i$, so\n\\[|zw|^2 = \\left| (-2 + i) \\left( -\\frac{1}{3}i \\right) \\right|^2 = \\left| \\frac{1}{3} + \\frac{2}{3}i \\right|^2 = \\frac{1}{9} + \\frac{4}{9} = \\boxed{\\frac{5}{9}}.\\]"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7587006960556845
+            }
+        }
+    }
+}

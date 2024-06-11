@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 2_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 2",
+        "problem": "Find the measure, in degrees, of the smallest positive angle $\\theta$ for which $\\sin 3 \\theta = \\cos 7 \\theta.$",
+        "correct_solution": "Note that $\\cos 7 \\theta = \\sin (90^\\circ - 7 \\theta),$ so\n\\[\\sin 3 \\theta = \\sin (90^\\circ - 7 \\theta).\\]If $3 \\theta = 90^\\circ - 7 \\theta,$ then $\\theta = 9^\\circ.$\n\nIf $0^\\circ < \\theta < 9^\\circ,$ then $\\sin 3 \\theta < \\sin 27^\\circ$ and $\\sin (90^\\circ - 7 \\theta) > \\sin 27^\\circ,$ so the smallest positive solution is $\\boxed{9^\\circ}.$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Step 1: Use the cofunction identity**\n\nWe know that $\\cos (90^\\circ - x) = \\sin x$ for any angle $x$.  Therefore, we can rewrite the given equation as:\n\n$$\\sin 3\\theta = \\sin (90^\\circ - 7\\theta)$$\n\n**Step 2: Solve for the angle**\n\nSince the sine function is periodic, the equation holds whenever $3\\theta$ and $90^\\circ - 7\\theta$ differ by a multiple of $180^\\circ$.  This means:\n\n$$3\\theta = 90^\\circ - 7\\theta + 180^\\circ k$$\n\nwhere $k$ is an integer.\n\n**Step 3: Simplify and solve for $\\theta$**\n\nCombining like terms, we get:\n\n$$10\\theta = 90^\\circ + 180^\\circ k$$\n\nDividing both sides by 10, we find:\n\n$$\\theta = 9^\\circ + 18^\\circ k$$\n\n**Step 4: Find the smallest positive solution**\n\nTo find the smallest positive angle $\\theta$, we need to find the smallest non-negative value of $k$ that makes $\\theta$ positive.  Setting $k = 0$, we get $\\theta = 9^\\circ$.  \n\n**Final Answer:**\n\nThe smallest positive angle $\\theta$ that satisfies the given equation is $\\boxed{9^\\circ}$."
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7390862944162436
+            }
+        }
+    }
+}

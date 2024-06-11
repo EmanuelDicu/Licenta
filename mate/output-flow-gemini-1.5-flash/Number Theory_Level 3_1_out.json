@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 3_1.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 3",
+        "problem": "Solve the congruence $3n \\equiv 2 \\pmod{11}$, as a residue modulo 11.  (Give an answer between 0 and 10.)",
+        "correct_solution": "Note that $2 \\equiv -9 \\pmod{11}$, so we can write the given congruence as $3n \\equiv -9 \\pmod{11}$.  Since 3 is relatively prime to 11, we can divide both sides by 3, to get $n \\equiv -3 \\equiv \\boxed{8} \\pmod{11}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Step 1: Find the modular inverse of 3 modulo 11.**\n\nTo find the modular inverse, we need to find a number *x* such that:\n\n3 * x  \u2261 1 (mod 11)\n\nWe can see that 3 * 4 = 12 \u2261 1 (mod 11).  Therefore, the modular inverse of 3 modulo 11 is 4.\n\n**Step 2: Multiply both sides of the congruence by the modular inverse.**\n\nMultiplying both sides of the congruence  $3n \\equiv 2 \\pmod{11}$ by 4, we get:\n\n4 * (3n)  \u2261 4 * 2  (mod 11)\n\n**Step 3: Simplify the congruence.**\n\nSimplifying, we have:\n\n12n \u2261 8 (mod 11)\n\nSince 12 \u2261 1 (mod 11), we can further simplify:\n\nn \u2261 8 (mod 11)\n\n**Step 4: Express the solution as a residue modulo 11.**\n\nThe solution is n \u2261 8 (mod 11).  This means that n can be any integer of the form 8 + 11k, where k is an integer. Since we need a solution between 0 and 10, the solution is **n = 8**.\n\nTherefore, the solution to the congruence $3n \\equiv 2 \\pmod{11}$ as a residue modulo 11 is:\n\n$$\\boxed{8}$$"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8291621327529923
+            }
+        }
+    }
+}

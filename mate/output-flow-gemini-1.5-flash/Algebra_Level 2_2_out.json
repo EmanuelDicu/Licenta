@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 2_2.json": {
+        "category": "Algebra",
+        "difficulty": "Level 2",
+        "problem": "If $f(x) = x^2-2x+1$ and $g(x) = \\sqrt{2x+1}$ what is the value of $f(g(4)) - g(f(3))$ ?",
+        "correct_solution": "We have $g(4) = \\sqrt{2(4) + 1} = \\sqrt{9} = 3$, so $f(g(4)) = f(3) = 3^2 -2(3) +1 = 4$.  Since $f(3) = 4$, we have $g(f(3)) = g(4) = \\sqrt{2(4) + 1} = 3$.  Therefore, $f(g(4)) -g(f(3)) = 4-3 = \\boxed{1}$.\n\n\nNotice that $f(g(4)) = 4$ and $g(f(3)) = 3$.  Is that a coincidence?",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Step 1: Find the value of g(4)**\n\nSubstitute $x = 4$ into the expression for $g(x)$:\n\n$g(4) = \\sqrt{2(4) + 1} = \\sqrt{9} = 3$\n\n**Step 2: Find the value of f(g(4))**\n\nSince $g(4) = 3$, we need to find $f(3)$:\n\n$f(3) = 3^2 - 2(3) + 1 = 9 - 6 + 1 = 4$\n\n**Step 3: Find the value of f(3)**\n\nSubstitute $x = 3$ into the expression for $f(x)$:\n\n$f(3) = 3^2 - 2(3) + 1 = 9 - 6 + 1 = 4$\n\n**Step 4: Find the value of g(f(3))**\n\nSince $f(3) = 4$, we need to find $g(4)$:\n\n$g(4) = \\sqrt{2(4) + 1} = \\sqrt{9} = 3$\n\n**Step 5: Calculate f(g(4)) - g(f(3))**\n\nWe found that $f(g(4)) = 4$ and $g(f(3)) = 3$.  Therefore,\n\n$f(g(4)) - g(f(3)) = 4 - 3 = \\boxed{1}$"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7003105590062112
+            }
+        }
+    }
+}

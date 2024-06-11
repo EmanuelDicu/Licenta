@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 1_2.json": {
+        "category": "Algebra",
+        "difficulty": "Level 1",
+        "problem": "Hillary has eleven coins, all dimes and nickels. In total, the coins are worth 75 cents. How many nickels does she have?",
+        "correct_solution": "Let the number of dimes Hillary has be $d$ and the number of nickels she has be $n$. We have the two equations \\begin{align*}\nd+n&=11\\\\\n10d+5n&=75\n\\end{align*} (The last equation is in terms of cents.) To make the second equation nicer, we divide both sides by 5 to get $2d+n=15$. From the first given equation, we have $d=11-n$. Substituting this into the simplified second given equation to eliminate $d$, we get $2(11-n)+n=15\\Rightarrow n=7$. Thus, Hillary has $\\boxed{7}$ nickels.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "## Step-by-Step Solution:\n\n1. **Define variables:**\n    * Let `d` represent the number of dimes.\n    * Let `n` represent the number of nickels.\n\n2. **Set up equations based on the given information:**\n    * **Equation 1 (Total coins):**  d + n = 11 \n    * **Equation 2 (Total value):** 10d + 5n = 75 (Since a dime is worth 10 cents and a nickel is worth 5 cents)\n\n3. **Solve for one variable in terms of the other:**\n    * From Equation 1, we can express `d` as: d = 11 - n\n\n4. **Substitute the value of 'd' into Equation 2:**\n    * 10(11 - n) + 5n = 75\n\n5. **Simplify and solve for 'n':**\n    * 110 - 10n + 5n = 75\n    * -5n = -35\n    * n = 7\n\n**Therefore, Hillary has 7 nickels.**\n\n**Final answer:** \\boxed{7}"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7158931082981715
+            }
+        }
+    }
+}

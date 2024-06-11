@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 5_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 5",
+        "problem": "In a certain isosceles right triangle, the altitude to the hypotenuse has length $6$.  What is the area of the triangle?",
+        "correct_solution": "In isosceles right triangle $\\triangle ABC$ below, $\\overline{AD}$ is the altitude to the hypotenuse.\n\n[asy]\nimport olympiad;\nunitsize(0.8inch);\npair A,B,C,D;\nA = (0,1);\nB= (1,0);\nC = -B;\nD = (0,0);\ndraw(A--B--C--A,linewidth(1));\ndraw(A--D,linewidth(0.8));\ndraw(rightanglemark(C,A,B,s=5));\ndraw(rightanglemark(C,D,A,s=5));\nlabel(\"$A$\",A,N);\nlabel(\"$B$\",B,S);\nlabel(\"$C$\",C,S);\nlabel(\"$D$\",D,S);\n[/asy]\n\nBecause $\\triangle ABC$ is an isosceles right triangle, $\\angle ABC = 45^\\circ$.  Since $\\angle ADB = 90^\\circ$, we know that $\\angle DAB = 45^\\circ$, so $\\triangle ABD$ is also a 45-45-90 triangle.  Similarly, $\\triangle ACD$ is a 45-45-90 triangle.  Therefore, $DB=DC = DA = 6$, so $BC = BD+DC = 12$, and  \\[[ABC] = \\frac{(AD)(BC)}{2} = \\frac{(6)({12})}{2} = \\boxed{36}.\\]",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Solution:**\n\nLet the triangle be $ABC$, with right angle at $C$, and let $D$ be the foot of the altitude from $C$ to hypotenuse $\\overline{AB}$.\n\n[asy]\nunitsize(1 cm);\n\npair A, B, C, D;\n\nA = (0,0);\nB = (2,0);\nC = (0,1);\nD = (A + B)/2;\n\ndraw(A--B--C--cycle);\ndraw(C--D);\n\nlabel(\"$A$\", A, SW);\nlabel(\"$B$\", B, SE);\nlabel(\"$C$\", C, N);\nlabel(\"$D$\", D, S);\nlabel(\"$6$\", (C + D)/2, W);\n[/asy]\n\nSince $\\triangle ABC$ is isosceles, $AD=DB$.  Since $\\triangle ACD$ and $\\triangle BCD$ are both right triangles, we have $\\tan \\angle CAD = \\frac{CD}{AD} = \\frac{CD}{DB} = \\tan \\angle CBD$.  Since $\\angle CAD$ and $\\angle CBD$ are acute angles in the same triangle, they are equal.  This means $\\triangle ACD \\cong \\triangle BCD$ by AAS.\n\nTherefore, $AC = BC$.  Since $\\triangle ABC$ is a right triangle, $AC = BC = \\sqrt{2} \\cdot CD = 6\\sqrt{2}$.\n\nThe area of $\\triangle ABC$ is then \\[\\frac{1}{2} \\cdot AC \\cdot BC = \\frac{1}{2} \\cdot 6\\sqrt{2} \\cdot 6\\sqrt{2} = \\boxed{36}.\\]"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": false,
+                "Same result": true,
+                "Levenshtein distance value": 0.6247422680412371
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 5_1.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 5",
+        "problem": "How many positive perfect cube factors does $3^65^{10}$ have?",
+        "correct_solution": "Any factor of $3^6\\cdot5^{10}$ is in the form $3^a\\cdot5^b$ for $0\\le a\\le6$ and $0\\le b\\le{10}$. To count the number of perfect cube factors, we must count the factors of $3^6\\cdot5^{10}$ that have $a=0$, $3$, or $6$ and $b=0$, $3$, $6$, or $9$. This gives $3\\cdot4=\\boxed{12}$ perfect cube factors.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Step 1: Understand perfect cubes.**\n\nA perfect cube is a number that can be obtained by cubing an integer. For example, 8 is a perfect cube because $2^3 = 8$.\n\n**Step 2: Analyze the prime factorization.**\n\nThe given number is $3^65^{10}$. To find its perfect cube factors, we need to consider the exponents of each prime factor. \n\n**Step 3: Find the exponents divisible by 3.**\n\nWe need to find the largest exponents of 3 and 5 that are divisible by 3.  \n\n* For 3, the largest exponent divisible by 3 is 6 (since 6 is divisible by 3).\n* For 5, the largest exponent divisible by 3 is 9 (since 9 is divisible by 3, and 10 is not).\n\n**Step 4: Determine the possible combinations.**\n\nTo form a perfect cube factor, we can use any power of 3 from 0 to 6 (inclusive) that is divisible by 3.  Similarly, we can use any power of 5 from 0 to 9 (inclusive) that is divisible by 3. This gives us the following combinations:\n\n* **For 3:** 0, 3, 6\n* **For 5:** 0, 3, 6, 9\n\n**Step 5: Calculate the total number of combinations.**\n\nWe have 3 choices for the power of 3 and 4 choices for the power of 5. To find the total number of combinations, we multiply the number of choices for each prime factor: 3 choices * 4 choices = **12**\n\n**Answer:** There are $\\boxed{12}$ positive perfect cube factors of $3^65^{10}$."
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8424289008455035
+            }
+        }
+    }
+}

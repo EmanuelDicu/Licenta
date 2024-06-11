@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 4_4.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "We have a triangle $\\triangle ABC$ where $AC = 17,$ $BC = 15,$ and $AB = 8.$ Let $M$ be the midpoint of $AB.$ What is the length of $CM$?",
+        "correct_solution": "First, we notice that $8:15:17$ is a Pythagorean triple, so we have a right triangle. Let's draw a sketch: [asy]\npair A, B, C, M;\nA = (0, 8);\nB = (0, 0);\nC = (15, 0);\nM = 0.5 * A + 0.5 * B;\ndraw(A--B--C--cycle);\ndraw(C--M);\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$M$\", M, NE);\nlabel(\"$8$\", A--B, W);\nlabel(\"$15$\", B--C, S);\nlabel(\"$17$\", A--C, NE);\ndraw(rightanglemark(A,B,C,20));\n[/asy] Since we know that $BM = \\frac{1}{2} \\cdot AB = 4,$ we simply apply the Pythagorean theorem to right triangle $\\triangle MBC.$ \\begin{align*}\nCM^2 &= BM^2 + BC^2\\\\\nCM^2 &= 4^2 + 15^2 = 241\\\\\nCM &= \\boxed{\\sqrt{241}}.\n\\end{align*}",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Solution:**\n\nWe can use the Law of Cosines on triangle $ABC$ to find $\\cos A$:\n\n$$BC^2 = AB^2 + AC^2 - 2(AB)(AC)\\cos A$$\n\nSubstituting the given values:\n\n$$15^2 = 8^2 + 17^2 - 2(8)(17)\\cos A$$\n\n$$225 = 353 - 272\\cos A$$\n\n$$\\cos A = \\frac{128}{272} = \\frac{16}{34} = \\frac{8}{17}$$\n\nNow, consider triangle $ACM$.  Since $M$ is the midpoint of $AB$, $AM = MB = 4$.  We can use the Law of Cosines on triangle $ACM$ to find $CM$:\n\n$$CM^2 = AM^2 + AC^2 - 2(AM)(AC)\\cos A$$\n\nSubstituting the known values:\n\n$$CM^2 = 4^2 + 17^2 - 2(4)(17)\\left(\\frac{8}{17}\\right)$$\n\n$$CM^2 = 16 + 289 - 64$$\n\n$$CM^2 = 241$$\n\n$$CM = \\sqrt{241}$$\n\nTherefore, the length of $CM$ is $\\boxed{\\sqrt{241}}$."
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8630338733431517
+            }
+        }
+    }
+}

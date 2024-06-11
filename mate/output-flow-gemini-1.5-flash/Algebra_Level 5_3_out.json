@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 5_3.json": {
+        "category": "Algebra",
+        "difficulty": "Level 5",
+        "problem": "Billy shoots an arrow from 10 feet above the ground. The height of this arrow can be expressed by the equation $h=10-23t-10t^2$, where $t$ is time in seconds since the arrow was shot. If the center of a target is raised 5 feet off the ground, in how many seconds must the arrow reach the target in order for Billy to hit the bulls eye?",
+        "correct_solution": "Since the center of the target is 5 feet above the ground, $h=5$. So we get the quadratic: \\begin{align*}5& =10-23t-10t^{2}\n\\\\ \\Rightarrow\\qquad 0& =10t^{2}+23t-5\n\\\\ \\Rightarrow\\qquad 0&=(2t+5)(5t-1).\n\\end{align*}Thus, the values of $t$ that satisfy the equation are $-\\frac52$ and $\\frac15$. However, since time can never be a negative number, the answer must be $\\boxed{\\dfrac{1}{5}}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "## Step-by-Step Solution:\n\n1. **Set up the equation:**  We want to find the time when the arrow reaches a height of 5 feet.  So, we set the height equation equal to 5:\n   \n   $h = 10 - 23t - 10t^2 = 5$\n\n2. **Rearrange the equation:** To solve for 't', we need to rearrange the equation into a quadratic form:\n\n   $10t^2 + 23t - 5 = 0$\n\n3. **Solve the quadratic equation:** We can solve this equation using the quadratic formula:\n\n   $t = \\dfrac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$\n\n   Where, a = 10, b = 23, and c = -5.\n\n   Substituting the values:\n\n   $t = \\dfrac{-23 \\pm \\sqrt{23^2 - 4 \\cdot 10 \\cdot -5}}{2 \\cdot 10}$\n\n   $t = \\dfrac{-23 \\pm \\sqrt{729}}{20}$\n\n   $t = \\dfrac{-23 \\pm 27}{20}$\n\n4. **Find the possible solutions:**\n\n   This gives us two possible solutions:\n\n   $t_1 = \\dfrac{-23 + 27}{20} = \\dfrac{1}{5} = 0.2$ seconds\n\n   $t_2 = \\dfrac{-23 - 27}{20} = -2.5$ seconds\n\n5. **Choose the valid solution:** Since time cannot be negative, we discard the solution $t_2 = -2.5$ seconds. \n\nTherefore, the arrow will reach the target in **$\\boxed{0.2}$ seconds**."
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7857142857142857
+            }
+        }
+    }
+}

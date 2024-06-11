@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 5_3.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 5",
+        "problem": "In Mathopolis, an adult is a person 21 years of age or older and a child is a person under 21 years of age.  Exactly half of the  adults in Mathopolis are female, and exactly half of the female  adults have exactly one biological child.  Nobody else has a  child, and there are no other children.  What percent of the  people of Mathopolis are children?",
+        "correct_solution": "Let the percentage of people in Mathopolis who are children be $x$. The percentage of adults is then $1-x$. Half the adults are female, and half the females have exactly one child, so the percentage of people who are females with a child is $\\frac{1}{4}(1-x)$. This percentage is equal to the percentage of children, since there is a correspondence between a mother and a child. So we have the equation $x=\\frac{1}{4}(1-x)$. Solving for $x$ yields $x=1/5$, or $\\boxed{20}$ percent.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Let's break down this problem step by step:\n\n1. **Define the Key Groups:**\n   - **Adults:** People 21 years or older.\n   - **Females:** Half of the adults.\n   - **Mothers:** Half of the female adults.\n   - **Children:**  All children are the biological children of the mothers. \n\n2. **Establish the Relationship:**\n    - Each mother has exactly one child. \n    - No other adults have children.\n\n3. **Analyze the Proportions:**\n    - **Mothers are half of the female adults:** This means that the number of mothers is half the number of female adults.\n    - **Female adults are half of the total adults:**  This means the number of female adults is half the number of all adults.\n\n4. **Connect the Dots:**\n    - Since each mother has one child, the number of children is equal to the number of mothers.\n    - Because mothers are half of the female adults, and female adults are half of all adults, the number of children is one-fourth (1/2 * 1/2 = 1/4) of the total adult population.\n\n5. **Calculate the Percentage of Children:**\n    - The children make up 1/4 of the adult population. \n    - Since children are the only non-adults, they also make up 1/4 of the total population of Mathopolis.\n    - To express this as a percentage, multiply the fraction by 100: (1/4) * 100 = 25%.\n\n**Final Answer:**  \\boxed{25\\%} of the people in Mathopolis are children."
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7726937269372693
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 1_2.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 1",
+        "problem": "Let $a = 5 - 8i$ and $b = 30 + 48i$. Find $|ab|$.",
+        "correct_solution": "Note that $b = 6(5 + 8i) = 6\\overline{a}$. So $|ab| = |a(6\\overline{a})| = 6 |a\\overline{a}| = 6|a|^2$. We have $|a|^2 = 5^2 + 8^2 = 89$, so $|ab| = 6 \\cdot 89 = \\boxed{534}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "## Step-by-step solution:\n\n1. **Calculate the product of the complex numbers:**\n   * $ab = (5-8i)(30+48i)$\n   *  Expand using the distributive property (FOIL):\n      * $ab = 5 \\cdot 30 + 5 \\cdot 48i - 8i \\cdot 30 - 8i \\cdot 48i$\n      * $ab = 150 + 240i - 240i - 384i^2$\n   * Since $i^2 = -1$:\n      * $ab = 150 + 384 = 534$\n\n2. **Find the magnitude of the product:**\n   *  The magnitude of a complex number of the form $c + di$ is given by $|c + di| = \\sqrt{c^2 + d^2}$\n   *  Therefore, $|ab| = |534| = \\sqrt{534^2} = 534$\n\n## Final Answer: \n$\\boxed{534}$"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8255395683453237
+            }
+        }
+    }
+}

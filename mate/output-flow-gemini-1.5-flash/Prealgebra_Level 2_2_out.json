@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 2_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 2",
+        "problem": "Fifty students were surveyed about their participation in hockey and baseball. The results of the survey were:\n\n$\\bullet$ $33$ students played hockey\n\n$\\bullet$ $24$ students played baseball\n\n$\\bullet$ $8$ students played neither hockey nor baseball\n\nHow many of the students surveyed played both hockey and baseball?",
+        "correct_solution": "Since there were $50$ students surveyed in total and $8$ played neither hockey nor baseball, then $42$ students in total played one game or the other.\n\nSince $33$ students played hockey and $24$ students played baseball, and this totals $33+24=57$ students, then there must be $\\boxed{15}$ students who are \"double-counted\", that is who play both sports.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "## Step-by-Step Solution:\n\n1. **Start with the total number of students:** We know 50 students were surveyed.\n\n2. **Subtract those who played neither sport:** 8 students played neither hockey nor baseball, so 50 - 8 = 42 students played at least one sport.\n\n3. **Add the number who played hockey and baseball:**  33 students played hockey + 24 students played baseball = 57. \n\n4. **Account for the overlap:**  We've counted the students who play both sports twice. The difference between the number of students who played at least one sport (42) and the sum of those who played hockey and baseball (57) represents the number of students counted twice: 57 - 42 = 15.\n\n**Therefore, 15 students played both hockey and baseball.** \n\n**Final Answer:** \\boxed{15}"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": false,
+                "Same result": true,
+                "Levenshtein distance value": 0.6882430647291942
+            }
+        }
+    }
+}

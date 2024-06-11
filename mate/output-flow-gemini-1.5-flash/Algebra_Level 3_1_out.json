@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 3_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 3",
+        "problem": "Solve $(2x+1)(3x+2) = (x-3)(6x-5)$. Express your answer as a simplified fraction.",
+        "correct_solution": "Multiplying the terms, we obtain $6x^{2}+7x+2 = 6x^{2}-23x+15$, which simplifies to $30x = 13$, so $x=\\boxed{\\frac{13}{30}}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "1. **Expand both sides of the equation:**\n\n   *  $(2x+1)(3x+2) = 6x^2 + 7x + 2$\n   *  $(x-3)(6x-5) = 6x^2 - 23x + 15$\n\n2. **Set the expanded expressions equal to each other:**\n\n   *  $6x^2 + 7x + 2 = 6x^2 - 23x + 15$\n\n3. **Simplify by subtracting $6x^2$ from both sides:**\n\n   *  $7x + 2 = -23x + 15$\n\n4. **Combine like terms by adding $23x$ to both sides:**\n\n   *  $30x + 2 = 15$\n\n5. **Isolate *x* by subtracting 2 from both sides:**\n\n   *  $30x = 13$\n\n6. **Solve for *x* by dividing both sides by 30:**\n\n   *  $x = \\frac{13}{30}$\n\nTherefore, the solution to the equation is $\\boxed{\\frac{13}{30}}$."
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.84
+            }
+        }
+    }
+}

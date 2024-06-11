@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 4_4.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 4",
+        "problem": "In a certain polynomial, all the coefficients are integers, and the constant coefficient is 42.  All the roots are integers, and distinct.  Find the largest possible number of integer roots.",
+        "correct_solution": "By the Integer Root Theorem, any integer root must be a factor of 42.  The prime factorization of 42 is $2 \\cdot 3 \\cdot 7.$  Furthermore, the product of the roots is $(-1)^n \\cdot \\frac{42}{a_0},$ where $n$ is the degree of the polynomial, and $a_0$ is the leading coefficient.\n\nTo maximize the number of integer roots, which must be distinct, we can take the integer roots to be 2, 3, 7, 1, and $-1.$  This gives us a maximum of $\\boxed{5}$ integer roots.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Step 1: Factor 42**\n\nThe constant term of a polynomial is the product of its roots.  Since the constant term is 42, we need to find all the factors of 42.  These are:\n\n1, 2, 3, 6, 7, 14, 21, and 42\n\n**Step 2: Consider the Number of Roots**\n\nThe problem asks for the *largest possible* number of integer roots.  To maximize the number of roots, we want to find the factorization of 42 that yields the most distinct factors.\n\n**Step 3: Find the Optimal Factorization**\n\nThe factorization that gives us the most distinct factors is:\n\n42 = 2 * 3 * 7\n\n**Step 4: Determine the Largest Possible Number of Roots**\n\nSince we have three distinct prime factors, the largest possible number of integer roots is **3**.\n\n**Final Answer:** \\boxed{3}"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7282608695652174
+            }
+        }
+    }
+}

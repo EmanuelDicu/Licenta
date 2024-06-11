@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 2_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 2",
+        "problem": "Determine the number of ways to arrange the letters of the word THAT.",
+        "correct_solution": "First we count the arrangements if the two T's are unique, which is $4!$. Then since the T's are not unique, we divide by $2!$ for the arrangements of T, for an answer of $\\dfrac{4!}{2!} = \\boxed{12}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Step 1: Identify the number of distinct letters**\n\nThe word \"THAT\" has 4 letters: T, H, A, and T. Note that the letter 'T' appears twice.\n\n**Step 2:  Calculate the factorial of the total number of letters**\n\nThe total number of letters is 4. The factorial of 4 (denoted as 4!) is 4 * 3 * 2 * 1 = 24.\n\n**Step 3:  Account for repeated letters**\n\nSince the letter 'T' repeats twice, we need to divide the result from step 2 by the factorial of the number of times it repeats.  The factorial of 2 (denoted as 2!) is 2 * 1 = 2.\n\n**Step 4: Calculate the final number of arrangements**\n\nDivide the result from step 2 by the result from step 3: 24 / 2 = 12\n\n**Final Answer:** There are **\\boxed{12}** ways to arrange the letters of the word \"THAT\"."
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8247978436657682
+            }
+        }
+    }
+}

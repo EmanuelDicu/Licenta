@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 5_2.json": {
+        "category": "Algebra",
+        "difficulty": "Level 5",
+        "problem": "Solve the inequality $$-13(r+5) + 25 > 4(r-10)$$for $r$. Express your answer in interval notation.",
+        "correct_solution": "First, we use the distributive property to expand the left-hand side of the inequality: $$-13r - 65 + 25 > 4r - 40$$The constants on the left side add up to $-40$, so adding $40$ to both sides cancels all the constant terms: $$-13r > 4r$$Adding $13r$ to both sides yields $$0 > 17r$$and dividing both sides by $17$ gives $0>r$, or in interval notation, $r\\in\\boxed{(-\\infty,0)}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**1. Distribute:**\n\n   Begin by distributing the constants on both sides of the inequality:\n   \n   -13(r + 5) + 25 > 4(r - 10) \n   -13r - 65 + 25 > 4r - 40\n\n**2. Combine Like Terms:**\n\n   Combine the constant terms on the left side:\n\n   -13r - 40 > 4r - 40\n\n**3. Isolate the Variable:**\n\n   Add 13r to both sides of the inequality:\n\n   -40 > 17r - 40\n\n   Add 40 to both sides:\n\n   0 > 17r\n\n**4. Solve for r:**\n\n   Divide both sides by 17 (remembering to flip the inequality sign since we are dividing by a negative number):\n\n   0/17 < r \n\n   This simplifies to:\n\n   0 < r\n\n**5. Express in Interval Notation:**\n\n   The solution is all values of r greater than 0.  In interval notation, this is expressed as:\n\n   **(0, \u221e)**\n\n**Final Answer:**  \\boxed{(0, \\infty)}"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.709592641261498
+            }
+        }
+    }
+}

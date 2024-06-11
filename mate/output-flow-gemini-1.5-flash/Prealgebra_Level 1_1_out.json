@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 1_1.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 1",
+        "problem": "Compute $(2^3)(5^5)$ in your head.",
+        "correct_solution": "Using the associative property, we can rearrange the terms to get $(2^35^3)(5^2)=(10^3)(5^2)=(1000)(25)=\\boxed{25,\\!000}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Step 1: Calculate the powers.**\n\n*  $2^3 = 2 \\times 2 \\times 2 = 8$\n*  $5^5 = 5 \\times 5 \\times 5 \\times 5 \\times 5 = 3125$\n\n**Step 2: Multiply the results.**\n\n* $(2^3)(5^5) = 8 \\times 3125 = 25000$\n\n**Answer:** $\\boxed{25000}$"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7729257641921398
+            }
+        }
+    }
+}

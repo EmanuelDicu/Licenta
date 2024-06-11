@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 1_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 1",
+        "problem": "Let $a,$ $b,$ and $c$ be the roots of $x^3 + 7x^2 - 11x - 2 = 0.$  Find $a + b + c.$",
+        "correct_solution": "By Vieta's formulas, $a + b + c = \\boxed{-7}.$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Step 1: Recall Vieta's formulas**\n\nVieta's formulas relate the coefficients of a polynomial to the sums and products of its roots.  For a cubic polynomial of the form $ax^3 + bx^2 + cx + d = 0$, the following relationships hold:\n\n* **Sum of roots:**  $-b/a$\n* **Sum of pairwise products of roots:**  $c/a$\n* **Product of roots:**  $-d/a$\n\n**Step 2: Apply Vieta's formulas to the given polynomial**\n\nIn our case, the polynomial is $x^3 + 7x^2 - 11x - 2 = 0$.  Therefore:\n\n* $a = 1$\n* $b = 7$\n* $c = -11$\n* $d = -2$\n\n**Step 3: Calculate the sum of the roots**\n\nUsing Vieta's formula for the sum of roots, we have:\n\n$a + b + c = -b/a = -7/1 = \\boxed{-7}$"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.9341500765696784
+            }
+        }
+    }
+}

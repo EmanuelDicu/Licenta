@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 1_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 1",
+        "problem": "What digit must be placed in the blank to make the four-digit integer $20\\_7$ a multiple of 11?",
+        "correct_solution": "A number will be divisible by 11 if you get a multiple of 11 by alternately adding and then subtracting its digits.  If we name the blank integer $A$, then the alternating sum is $2 - 0 + A - 7 = A -5$.  This value can only be equal to 0 (as 11, 22, etc all yield $A$ that are too large), so $A = \\boxed{5}$ is the only digit that will work.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "## Step-by-Step Solution:\n\n**1. Divisibility Rule of 11:**\n\nA number is divisible by 11 if the difference between the sum of the digits at odd places and the sum of the digits at even places is either 0 or a multiple of 11.\n\n**2. Applying the Rule:**\n\n*  Let the missing digit be $x$.\n*  Sum of digits at odd places: 2 + $x$\n*  Sum of digits at even places: 0 + 7 = 7\n*  Difference: (2 + $x$) - 7 = $x$ - 5\n\n**3. Finding the Missing Digit:**\n\nFor the number to be divisible by 11, the difference ($x$ - 5) must be either 0 or a multiple of 11.  The only digit that satisfies this condition is $x = 5$.\n\n**4. Final Answer:**\n\nTherefore, the digit that must be placed in the blank is **5**. \n\nThe four-digit integer is $\\boxed{2057}$."
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.75
+            }
+        }
+    }
+}

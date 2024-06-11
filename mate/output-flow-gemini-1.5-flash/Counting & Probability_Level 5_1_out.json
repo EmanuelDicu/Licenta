@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 5_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 5",
+        "problem": "How many different positive integers divisible by 4 can be formed using each of the digits 1, 2, 3, and 4 at most once, and no other digits? For example, 12 counts, but 512 does not.",
+        "correct_solution": "The only one-digit integer divisible by $4$ that we can construct is $4$.\n\nWe can construct $3$ two-digit integers divisible by $4$: $12$, $32$, and $24$.\n\nAn integer is divisible by $4$ if its rightmost two digits are divisible by $4$.  Thus we can append either or both of the remaining two digits to any of these two-digit integers and preserve divisibility by $4$.  For each, there are $2$ ways to choose one digit to append, and $2$ ways to order the digits if we append both of them.  Thus we get $4$ more integers for each, or $12$ total.\n\nThe full number is $12+3+1=\\boxed{16}$ integers.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "## Step-by-Step Solution:\n\n1. **Divisibility Rule of 4:** A number is divisible by 4 if the number formed by its last two digits is divisible by 4. \n\n2. **Possible Last Two Digits:**  We need to find the combinations of the digits 1, 2, 3, and 4 that form a number divisible by 4. These are:\n    * **12:**  12 is divisible by 4.\n    * **24:** 24 is divisible by 4.\n    * **32:** 32 is divisible by 4.\n    * **44:** This combination is not allowed since we can't use a digit more than once.\n\n3. **Possible Integers:** Now, for each of the possible last two digits, we can place the remaining digits in the hundreds place to form a valid integer. For example, if the last two digits are 12, we can have 312 or 412.\n\n4. **Counting the Integers:**\n    * **12:**  We have two choices for the hundreds digit (3 or 4). So there are 2 integers possible with 12 as the last two digits.\n    * **24:**  We have two choices for the hundreds digit (1 or 3). So there are 2 integers possible with 24 as the last two digits.\n    * **32:** We have two choices for the hundreds digit (1 or 4). So there are 2 integers possible with 32 as the last two digits.\n\n5. **Total Integers:** Adding the possibilities for each case, we have a total of 2 + 2 + 2 = 6 different integers.\n\n**Final Answer:** There are **\\boxed{6}** different positive integers divisible by 4 that can be formed using the digits 1, 2, 3, and 4 at most once."
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7466288147622427
+            }
+        }
+    }
+}
