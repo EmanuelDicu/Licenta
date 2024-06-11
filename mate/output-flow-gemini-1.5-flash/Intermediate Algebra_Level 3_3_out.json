@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 3_3.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 3",
+        "problem": "There is a complex number $z$ with imaginary part $164$ and a positive integer $n$ such that\n$$\\frac {z}{z + n} = 4i.$$Find $n$.",
+        "correct_solution": "Multiplying by $z+n$, we have $z = 4i(z+n)$, or $z(1-4i) = 4ni$. Thus \\[z = \\frac{4ni}{1-4i} = \\frac{4ni(1+4i)}{17} = \\frac{4ni - 16n}{17}.\\]Since $z$ has imaginary part $164$, we have $4n/17 = 164$, so $n = 17/4 \\cdot 164 = \\boxed{697}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Let $z = a + 164i,$ where $a$ is a real number.  Then\n\\[\\frac{a + 164i}{a + 164i + n} = 4i.\\]Multiplying both sides by $a + 164i + n,$ we get\n\\[a + 164i = 4i(a + 164i + n).\\]Expanding, we get\n\\[a + 164i = 4ai - 656 + 4ni.\\]Matching real and imaginary components, we get\n\\begin{align*}\na &= -656, \\\\\n164 &= 4a + 4n.\n\\end{align*}Substituting $a = -656$ into the second equation, we get\n\\[164 = -2624 + 4n.\\]Then $4n = 2788,$ so $n = \\boxed{697}.$"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7680180180180181
+            }
+        }
+    }
+}

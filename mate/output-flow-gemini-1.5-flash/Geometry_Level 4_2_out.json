@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 4_2.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "A circle is circumscribed about an equilateral triangle with side lengths of $6$ units each.  What is the area of the circle, in square units? Express your answer in terms of $\\pi$.",
+        "correct_solution": "[asy]\nsize(100);\ndefaultpen(linewidth(.8));\ndraw((0,0)--(4.5,7.794)--(9,0)--cycle);\ndraw(Circle((4.5,2.598),5.196));\ndraw((4.5,7.794)--(4.5,0));\ndot((4.5,2.598));\nlabel(\"$O$\",(4.5,2.598),W);\nlabel(\"$A$\",(4.5,7.794),N);\nlabel(\"$B$\",(9,0),E);\nlabel(\"$M$\",(4.5,0),S);\n[/asy]\n\nAbove is the diagram implied by the problem, with some added lines ($O$ is the center of the circle). Since $\\triangle AMB$ is a 30-60-90 triangle and $AB=6$, $AM=3\\sqrt{3}$. Since $AO$ is $2/3$ of $AM$, we have $AO=2\\sqrt{3}$. Thus, the area of the circle is $\\pi(2\\sqrt{3})^2=\\boxed{12\\pi}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "## Solution:\n\n1. **Draw a diagram:** Draw an equilateral triangle ABC inscribed in a circle with center O. Draw the radius from the center O to a vertex of the triangle, say A.\n\n2. **Identify key relationships:**  The radius of the circle is also the altitude of the equilateral triangle.  Since the triangle is equilateral, this altitude bisects the base, creating a 30-60-90 right triangle.\n\n3. **Use the properties of 30-60-90 triangles:** In a 30-60-90 triangle, the hypotenuse is twice the length of the shorter leg, and the longer leg is $\\sqrt{3}$ times the length of the shorter leg.  \n\n4. **Apply the properties to our triangle:**  The shorter leg of our 30-60-90 triangle is half the side of the equilateral triangle, which is 3 units. The hypotenuse, which is the radius of the circle, is twice the shorter leg, or 6 units.\n\n5. **Calculate the area of the circle:** The area of a circle is given by $\\pi r^2$, where $r$ is the radius.  Since the radius is 6, the area of the circle is $\\pi (6)^2 = \\boxed{36\\pi}$ square units."
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7868852459016393
+            }
+        }
+    }
+}
