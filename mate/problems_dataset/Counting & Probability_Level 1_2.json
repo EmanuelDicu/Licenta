@@ -1,6 +1,6 @@
 {
-    "problem": "The probability of rain tomorrow is $\\frac{3}{10}$.  What is the probability that it will not rain tomorrow?  Express your answer as a common fraction.",
+    "problem": "Ben flips a fair nickel four times. What is the probability that Ben flips Head, Tail, Head, Tail, in that order? Express your answer as a common fraction.",
     "category": "Counting & Probability",
     "level": "Level 1",
-    "solution": "We can use complementary probability to determine that the probability of its not raining tomorrow is $1 - \\frac{3}{10} = \\boxed{\\frac{7}{10}}$."
+    "solution": "Since any given flip has equal probability of $\\frac{1}{2}$ of being a Head or a Tail, and all outcomes are equally likely, the precise sequence given is equal to $\\frac{1}{2^4} = \\boxed{\\frac{1}{16}}$."
 }

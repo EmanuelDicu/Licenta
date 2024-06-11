@@ -1,6 +1,6 @@
 {
-    "problem": "Below is the graph of $y = a \\sin (bx + c)$ for some positive constants $a,$ $b,$ and $c.$  Find the smallest possible value of $c.$\n\n[asy]import TrigMacros;\n\nsize(300);\n\nreal f(real x)\n{\n\treturn 2*sin(4*x + pi/2);\n}\n\ndraw(graph(f,-pi,pi,n=700,join=operator ..),red);\ntrig_axes(-pi,pi,-3,3,pi/2,1);\nlayer();\nrm_trig_labels(-2,2, 2);\n\nlabel(\"$1$\", (0,1), E);\nlabel(\"$2$\", (0,2), E);\nlabel(\"$-1$\", (0,-1), E);\nlabel(\"$-2$\", (0,-2), E);\n[/asy]",
+    "problem": "Three vertices of a cube are $P=(7,12,10)$, $Q=(8,8,1)$, and $R=(11,3,9)$. What is the side length of the cube?",
     "category": "Precalculus",
     "level": "Level 3",
-    "solution": "We see that the graph reaches a maximum at $x = 0.$  The graph of $y = \\sin x$ first reaches a maximum at $x = \\frac{\\pi}{2}$ for positive values of $x,$ so $c = \\boxed{\\frac{\\pi}{2}}.$"
+    "solution": "We compute \\[\\begin{aligned} PQ &= \\sqrt{(7-8)^2 + (12-8)^2 + (10-1)^2} = 7\\sqrt{2}, \\\\ QR &= \\sqrt{(8-11)^2 + (8-3)^2 + (1-9)^2} = 7\\sqrt{2}, \\\\ PR &= \\sqrt{(7-11)^2 + (12-3)^2 + (10-9)^2} = 7\\sqrt{2}. \\end{aligned}\\]Thus, $PQR$ is an equilateral triangle made from three vertices of a cube. It follows that each side of $PQR$ must be a face diagonal of the cube, so the side length of the cube is $\\boxed{7}.$\n[asy]\nimport three;\ntriple A=(0,0,0),B=(0,0,1),C=(0,1,1),D=(0,1,0),E=A+(1,0,0),F=B+(1,0,0),G=C+(1,0,0),H=D+(1,0,0);\ndraw(A--B--C--D--A^^E--F--G--H--E^^A--E^^B--F^^C--G^^D--H);\ndraw(B--D--E--B,dashed);\nlabel(\"$P$\",B,N);\nlabel(\"$Q$\",D,SE);\nlabel(\"$R$\",E,SW);\n[/asy]"
 }

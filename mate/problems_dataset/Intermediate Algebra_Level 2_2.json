@@ -1,6 +1,6 @@
 {
-    "problem": "Solve for $x$ in the equation\n\\[2^{(16^x)} = 16^{(2^x)}.\\]",
+    "problem": "The complex numbers $a$ and $b$ satisfy\n\\[a + \\overline{b} = 2 - 7i.\\]Find $\\overline{a} + b.$",
     "category": "Intermediate Algebra",
     "level": "Level 2",
-    "solution": "We can write\n\\[16^{(2^x)} = (2^4)^{(2^x)} = 2^{4 \\cdot 2^x}.\\]Then $2^{16^x} = 2^{4 \\cdot 2^x},$ so\n\\[16^x = 4 \\cdot 2^x.\\]In turn, we can write this as\n\\[2^{4x} = 2^{x + 2},\\]so $4x = x + 2.$  Therefore, $x = \\boxed{\\frac{2}{3}}.$"
+    "solution": "Taking the conjugate of both sides, we get\n\\[\\overline{a + \\overline{b}} = \\overline{2 - 7i} = 2 + 7i.\\]But $\\overline{a + \\overline{b}} = \\overline{a} + \\overline{\\overline{b}} = \\overline{a} + b,$ so\n\\[\\overline{a} + b = \\boxed{2 + 7i}.\\]"
 }

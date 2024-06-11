@@ -1,6 +1,6 @@
 {
-    "problem": "If $AAA_4$ can be expressed as $33_b$, where $A$ is a digit in base 4 and $b$ is a base greater than 5, what is the smallest possible sum $A+b$?",
+    "problem": "What integer $n$ satisfies $0\\le n<18$ and $$n\\equiv -11213141\\pmod{18}~?$$",
     "category": "Number Theory",
     "level": "Level 4",
-    "solution": "We can rewrite $AAA_4$ and $33_b$ to get \\begin{align*}\n16A+4A+A&=3b+3\\quad\\Rightarrow\\\\\n21A&=3b+3.\n\\end{align*}The smallest possible value for $A$ is 1, which gives us $21=3b+3$ and $b=6$. So the smallest sum $A+b=\\boxed{7}$. While there are other values for $A$ and $b$ that work, increasing $A$ will increase $b$, resulting in a larger sum."
+    "solution": "An integer is divisible by $18$ if and only if the sum of its digits is divisible by $9$ and the last digit is even (meaning it is divisible by both 9 and 2).  The sum of the digits of $-11213141$ is 14.  Since $-11213141$ is negative, this number is 5 $\\textit{less than}$ a multiple of 9.  The number is 4 $\\textit{more than}$ a multiple of 9.  Subtracting 4 gives  \\[-11213141 = -11213145+4.\\]Since $-11213145$ has a digit sum of 18, this number is a multiple of 9.  However this is not a multiple of 18 so we need to subtract 9 again: \\[-11213141 = -11213154+13.\\]Now the number $-11213154$ is a multiple of 18, so the answer is $\\boxed{13}$. $$-11213141\\equiv 13\\pmod {18}.$$"
 }

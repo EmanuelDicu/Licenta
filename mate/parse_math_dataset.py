@@ -7,9 +7,15 @@ math_directory = 'MATH'
 
 categories = ['Algebra', 'Counting & Probability', 'Geometry', 'Number Theory', 'Intermediate Algebra', 'Prealgebra', 'Precalculus']
 levels = ['Level 1', 'Level 2', 'Level 3', 'Level 4', 'Level 5']
-number_of_problems = {category: {level: 0 for level in levels} for category in categories}
-max_number_of_problems_per_level = 2
 
+# Dictionary to keep track of the number of problems for each category and level
+# For level 1: 2 problems
+# For level 2: 4 problems
+# For level 3: 4 problems
+# For level 4: 8 problems
+# For level 5: 8 problems
+problems_per_level = [2, 4, 4, 8, 8]
+number_of_problems = {category: {level: 0 for level in levels} for category in categories}
 
 # Function to parse the math dataset
 def parse_math_dataset(base_directory):
@@ -33,7 +39,7 @@ def parse_math_dataset(base_directory):
                     continue
 
                 # Check if the number of problems for the category and level is less than the maximum
-                if number_of_problems[category][level] < max_number_of_problems_per_level:
+                if number_of_problems[category][level] < problems_per_level[levels.index(level)]:
                     # Add file to dataset_directory with the problem, category, level, and solution
                     json_data = {
                         'problem': problem,
@@ -50,7 +56,7 @@ def parse_math_dataset(base_directory):
                     # Increment the number of problems for the category and level
                     number_of_problems[category][level] += 1
             
-            if all(number_of_problems[category][level] == max_number_of_problems_per_level for category in categories for level in levels):
+            if all(number_of_problems[category][level] == problems_per_level[levels.index(level)] for category in categories for level in levels):
                 return
 
 # Parse the math dataset

@@ -1,6 +1,6 @@
 {
-    "problem": "A polynomial with integer coefficients is of the form\n\\[x^3 + a_2 x^2 + a_1 x - 11 = 0.\\]Enter all the possible integer roots of this polynomial, separated by commas.",
+    "problem": "Two reals $x$ and $y$ are such that $x-y=4$ and $x^3-y^3=28$. Compute $xy$.",
     "category": "Intermediate Algebra",
     "level": "Level 2",
-    "solution": "By the Integer Root Theorem, the possible integer roots are all the divisors of 11 (including negative divisors), so they are $\\boxed{-11, -1, 1, 11}.$"
+    "solution": "We have $28=x^3-y^3=(x-y)(x^2+xy+y^2)=(x-y)((x-y)^2+3xy)=4\\cdot (16+3xy)$, from which $xy=\\boxed{-3}$."
 }
