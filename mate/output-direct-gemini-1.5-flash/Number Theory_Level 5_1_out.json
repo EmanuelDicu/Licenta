@@ -1,0 +1,18 @@
+{
+    "Number Theory_Level 5_1.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 5",
+        "problem": "How many positive perfect cube factors does $3^65^{10}$ have?",
+        "correct_solution": "Any factor of $3^6\\cdot5^{10}$ is in the form $3^a\\cdot5^b$ for $0\\le a\\le6$ and $0\\le b\\le{10}$. To count the number of perfect cube factors, we must count the factors of $3^6\\cdot5^{10}$ that have $a=0$, $3$, or $6$ and $b=0$, $3$, $6$, or $9$. This gives $3\\cdot4=\\boxed{12}$ perfect cube factors.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve the problem, breaking it down into smaller steps:\n\n**Understanding Perfect Cubes**\n\n* A perfect cube is a number that can be obtained by cubing an integer. For example, 8 is a perfect cube because 8 = 2\u00b3. \n* To be a factor of a number, a perfect cube must divide evenly into that number.\n\n**Prime Factorization and Perfect Cubes**\n\n* **Key Idea:**  Every perfect cube factor of a number must have exponents that are multiples of 3.  This is because to form a perfect cube, you need to multiply three identical factors together.\n\n**Analyzing the Number**\n\n* We are given the number $3^65^{10}$. Let's look at each prime factor separately:\n    * **3<sup>6</sup>:** The exponent 6 is already a multiple of 3, so we can immediately form a perfect cube factor: (3\u00b2)\u00b3 = 9\u00b3\n    * **5<sup>10</sup>:** The exponent 10 is not a multiple of 3.  The largest multiple of 3 less than 10 is 9.  This means we can form a perfect cube factor: (5\u00b3)\u00b3 = 125\u00b3\n\n**Finding All the Possibilities**\n\n* **3<sup>6</sup>:**  We can form a perfect cube factor using the full exponent of 6 (9\u00b3).  We can also use the exponent 0 (1\u00b3), which is also a multiple of 3. \n* **5<sup>10</sup>:** We can form a perfect cube factor using the exponent 9 (125\u00b3).  We can also use the exponent 6 (5\u00b2)\u00b3, and finally, the exponent 3 (5)\u00b3.  We can also use the exponent 0 (1\u00b3).\n\n**Counting the Possibilities**\n\n* For the factor 3, we have 2 choices for the exponent (0 or 6).\n* For the factor 5, we have 4 choices for the exponent (0, 3, 6, or 9).\n\n**Total Number of Perfect Cube Factors**\n\nTo get the total number of perfect cube factors, we multiply the number of choices for each prime factor: 2 choices * 4 choices = **8**\n\n**Solution:**  There are **8** positive perfect cube factors of $3^65^{10}$. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8870786516853932
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 5_4.json": {
+        "category": "Geometry",
+        "difficulty": "Level 5",
+        "problem": "Suppose $PABCD$ is a right square pyramid with apex $P$ and base $ABCD$.  If $PBD$ is an equilateral triangle with side length 6, then what is the volume of $PABCD$?",
+        "correct_solution": "[asy]\n\nimport three;\n\ntriple A = (0,0,0);\n\ntriple B = (1,0,0);\n\ntriple C = (1,1,0);\n\ntriple D = (0,1,0);\n\ntriple P = (0.5,0.5,1);\n\ndraw(B--C--D--P--B);\n\ndraw(P--C);\n\ndraw(B--A--D,dashed);\n\ndraw(P--A,dashed);\n\nlabel(\"$A$\",A,NW);\n\nlabel(\"$B$\",B,W);\n\nlabel(\"$C$\",C,S);\n\nlabel(\"$D$\",D,E);\n\nlabel(\"$P$\",P,N);\n\ntriple F= (0.5,0.5,0);\n\nlabel(\"$F$\",F,S);\n\ntriple M=(B+C)/2;\n\ndraw(D--B,dashed);\n\ndraw(P--F,dashed);\n\n[/asy]\n\nLet $F$ be the center of the square base.  Since the pyramid is a right pyramid, segment $\\overline{PF}$ is an altitude of triangle $PBD$.  Since $PBD$ is an equilateral triangle with side length 6, $PFB$ is a 30-60-90 triangle with $FB = BD/2 =3$ and $PF = 3\\sqrt{3}$.  Finally, $\\overline{BD}$ is a diagonal of square base $ABCD$, so we have $BC = BD/\\sqrt{2} = 6/\\sqrt{2} = 3\\sqrt{2}$.  Therefore, the volume of the pyramid is \\[\\frac{[ABCD](PF)}{3} = \\frac{(3\\sqrt{2})^2 (3\\sqrt{3})}{3} = \\boxed{18\\sqrt{3}}.\\]",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how we can solve this problem step-by-step:\n\n**1. Visualize the Pyramid**\n\nImagine a square pyramid. The apex (top point) is P, and the square base is ABCD. We are told that triangle PBD is equilateral with side length 6.\n\n**2. Find the Height of the Pyramid**\n\n* **Draw an altitude:**  Draw a line segment from P perpendicular to the base ABCD. Let the point where this altitude intersects the base be O.  \n* **Focus on triangle PBO:** Triangle PBO is a right triangle (because PO is the altitude). Since PBD is equilateral, BO is the median and altitude of triangle PBD, dividing it into two 30-60-90 right triangles.\n* **30-60-90 Triangle Ratios:** In a 30-60-90 triangle, the sides are in the ratio 1:\u221a3:2.  Since BD = 6, BO (the shorter leg) is 6/2 = 3, and PO (the longer leg) is 3\u221a3.\n\n**3. Find the Side Length of the Square Base**\n\n* **Focus on triangle BDO:**  Again, this is a 30-60-90 triangle. Since BO = 3, BD = 6, and DO (the hypotenuse) is 3\u221a3.\n* **The Diagonal of the Square:** The diagonal of the square ABCD is BD = 6.\n* **Relating Diagonal to Side:**  The diagonal of a square is \u221a2 times the side length.  Let the side length of the square be 's'. So, we have \u221a2 * s = 6.\n* **Solve for side length:** s = 6/\u221a2 = 3\u221a2.\n\n**4. Calculate the Volume**\n\n* **Volume Formula:** The volume of a pyramid is (1/3) * (area of the base) * (height)\n* **Area of the Base:**  The area of a square is side\u00b2 = (3\u221a2)\u00b2 = 18\n* **Volume:** (1/3) * 18 * 3\u221a3 = **18\u221a3**\n\n**Therefore, the volume of the pyramid PABCD is 18\u221a3 cubic units.** \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7931258106355382
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Number Theory_Level 1_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 1",
+        "problem": "What digit must be placed in the blank to make the four-digit integer $20\\_7$ a multiple of 11?",
+        "correct_solution": "A number will be divisible by 11 if you get a multiple of 11 by alternately adding and then subtracting its digits.  If we name the blank integer $A$, then the alternating sum is $2 - 0 + A - 7 = A -5$.  This value can only be equal to 0 (as 11, 22, etc all yield $A$ that are too large), so $A = \\boxed{5}$ is the only digit that will work.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve the problem:\n\n**Understanding the Divisibility Rule of 11**\n\n* A number is divisible by 11 if the difference between the sum of the digits at odd places and the sum of the digits at even places is either 0 or a multiple of 11.\n\n**Applying the Rule to the Problem**\n\n1. **Identify the odd and even places:** In the number 20_7, the digits at the odd places are 2 and 7, and the digit at the even place is the blank.\n2. **Calculate the sum of the digits at odd places:** 2 + 7 = 9\n3. **Let the unknown digit be 'x'.**  The sum of the digits at even places is simply 'x'.\n4. **Apply the divisibility rule:**  The difference between the sums (9 - x) must be either 0 or a multiple of 11.\n\n**Finding the Solution**\n\n* **Consider the difference:** 9 - x = 0  or  9 - x = 11 or 9 - x = -11\n* **Solve for x:**\n    * If 9 - x = 0, then x = 9\n    * If 9 - x = 11, then x = -2 (not a valid digit)\n    * If 9 - x = -11, then x = 20 (not a valid digit)\n\n**Therefore, the digit that must be placed in the blank to make the number a multiple of 11 is 9.**\n\n**The complete number is 2097.** \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8047445255474452
+            }
+        }
+    }
+}

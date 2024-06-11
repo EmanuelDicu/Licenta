@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 3_3.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 3",
+        "problem": "In the diagram, the area of rectangle $ABCD$ is $40$. What is the area of $MBCN$? [asy]\nimport olympiad;\npair a = (0, 0); pair m = (4, 0); pair b = (8, 0); pair c = (8, -5); pair n = (6, -5); pair d = (0, -5);\ndraw(m--n);\ndraw(a--b--c--d--cycle);\nlabel(\"$A$\", a, NW); label(\"$B$\", b, NE); label(\"$C$\", c, SE); label(\"$D$\", d, SW);\nlabel(\"$M$\", m, N); label(\"$N$\", n, S);\nlabel(\"$4$\", midpoint(a--m), N); label(\"$4$\", midpoint(m--b), N);\nlabel(\"$2$\", midpoint(n--c), S);\n[/asy]",
+        "correct_solution": "Since the area of rectangle $ABCD$ is 40 and $AB=8$, then $BC=5$.\n\nTherefore, $MBCN$ is a trapezoid with height 5 and parallel bases of lengths 4 and 2, so has area $$\\frac{1}{2}(5)(4+2)=\\boxed{15}.$$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve the problem:\n\n**1.  Find the dimensions of rectangle ABCD:**\n\n* We know the area of rectangle ABCD is 40.\n* We can see that the length of AD (or BC) is 5 units (since the height of the rectangle is 5).\n* To find the length of AB (or CD), we can use the area formula:  Area = length * width.\n* 40 = AB * 5\n* AB = 40/5 = 8\n\n**2. Find the dimensions of rectangle MBCN:**\n\n*  We know the length of MB (or CN) is 4 units (given in the diagram).\n*  We know the length of BC (or AD) is 5 units.\n*  Therefore, the length of MC (or BN) is 5 - 2 = 3 units (since NC is 2 units long).\n\n**3. Calculate the area of rectangle MBCN:**\n\n*  Area of rectangle MBCN = length * width \n*  Area of rectangle MBCN = 4 * 3 = 12\n\n**Solution:** The area of rectangle MBCN is **12**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8393316195372751
+            }
+        }
+    }
+}

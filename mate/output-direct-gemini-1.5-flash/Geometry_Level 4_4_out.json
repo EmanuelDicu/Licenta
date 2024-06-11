@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 4_4.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "We have a triangle $\\triangle ABC$ where $AC = 17,$ $BC = 15,$ and $AB = 8.$ Let $M$ be the midpoint of $AB.$ What is the length of $CM$?",
+        "correct_solution": "First, we notice that $8:15:17$ is a Pythagorean triple, so we have a right triangle. Let's draw a sketch: [asy]\npair A, B, C, M;\nA = (0, 8);\nB = (0, 0);\nC = (15, 0);\nM = 0.5 * A + 0.5 * B;\ndraw(A--B--C--cycle);\ndraw(C--M);\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$M$\", M, NE);\nlabel(\"$8$\", A--B, W);\nlabel(\"$15$\", B--C, S);\nlabel(\"$17$\", A--C, NE);\ndraw(rightanglemark(A,B,C,20));\n[/asy] Since we know that $BM = \\frac{1}{2} \\cdot AB = 4,$ we simply apply the Pythagorean theorem to right triangle $\\triangle MBC.$ \\begin{align*}\nCM^2 &= BM^2 + BC^2\\\\\nCM^2 &= 4^2 + 15^2 = 241\\\\\nCM &= \\boxed{\\sqrt{241}}.\n\\end{align*}",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve the problem, breaking it down into manageable steps:\n\n**1. Visualize the problem**\n\nFirst, draw a triangle  $\\triangle ABC$ with the given side lengths:  $AC = 17,$ $BC = 15,$ and $AB = 8$.  Mark the midpoint of $AB$ as $M$.  We want to find the length of $CM$.\n\n**2. Recognize the key relationship**\n\nNotice that  $CM$ is a median of the triangle. A median of a triangle is a line segment drawn from a vertex to the midpoint of the opposite side. \n\n**3.  Apply the Median Formula**\n\nThe key to solving this problem is using the Median Formula.  It states that the square of the length of a median is equal to half the sum of the squares of the two sides that form the median's endpoint plus twice the square of half the side opposite the median's endpoint.\n\n**4.  Apply the formula to our triangle**\n\nLet's apply the Median Formula to our triangle:\n\n*  Median: $CM$\n*  Endpoint of the median: $C$\n*  Sides forming the endpoint: $AC = 17$ and $BC = 15$\n*  Side opposite the median: $AB = 8$\n\nThe Median Formula gives us:\n\n  $CM^2 = \\frac{1}{2}(AC^2 + BC^2) + 2 \\left(\\frac{1}{2}AB\\right)^2$\n\n**5. Substitute and solve**\n\nSubstitute the known values:\n\n$CM^2 = \\frac{1}{2}(17^2 + 15^2) + 2 (4)^2$\n$CM^2 = \\frac{1}{2}(289 + 225) + 32$\n$CM^2 = \\frac{1}{2}(514) + 32$\n$CM^2 = 257 + 32$\n$CM^2 = 289$\n\nTake the square root of both sides to find $CM$:\n\n$CM = \\sqrt{289}$\n$CM = 17$\n\n**Solution:** The length of $CM$ is **17**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8214037526059764
+            }
+        }
+    }
+}

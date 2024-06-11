@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 4_3.json": {
+        "category": "Algebra",
+        "difficulty": "Level 4",
+        "problem": "The product of $3t^2+5t+a$ and $4t^2+bt-2$ is $12t^4+26t^3-8t^2-16t+6$. What is $a+b$?",
+        "correct_solution": "The constant term of the product of two polynomials is just the product of the two constant terms. Therefore we know that $6=-2a$, so $a=-3$. We now consider the linear term of the product of our polynomials. It's given by $-16t=(5t\\cdot-2)+a\\cdot bt\\Longrightarrow-16t=-10t+(-3)bt\\Longrightarrow b=2$. Therefore our answer is $a+b=\\boxed{-1}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve this problem step-by-step:\n\n**1. Understand the Problem**\n\nWe're given a multiplication problem involving two quadratic expressions:\n\n*  $(3t^2 + 5t + a)(4t^2 + bt - 2) = 12t^4 + 26t^3 - 8t^2 - 16t + 6$\n\nWe need to find the values of  'a' and 'b' that make this equation true.  Then, we'll calculate a + b.\n\n**2. Expand the Left Side**\n\nTo find the values of 'a' and 'b', we need to multiply out the left side of the equation. We can use the distributive property (or FOIL method) for this:\n\n* **First:** $(3t^2)(4t^2) = 12t^4$\n* **Outer:** $(3t^2)(-2) = -6t^2$\n* **Inner:** $(5t)(4t^2) = 20t^3$\n* **Last:** $(5t)(bt) = 5bt^2$\n* **Inner:** $(5t)(-2) = -10t$\n* **Last:** $(a)(4t^2) = 4at^2$\n* **Last:** $(a)(bt) = abt$\n* **Last:** $(a)(-2) = -2a$\n\nCombining these terms, we get:\n\n$12t^4 + 20t^3 - 6t^2 + 5bt^2 + 4at^2 + abt - 10t - 2a = 12t^4 + 26t^3 - 8t^2 - 16t + 6$\n\n**3. Match Coefficients**\n\nNow, we need to match the coefficients of the corresponding terms on both sides of the equation.  This will give us a system of equations:\n\n* **t\u2074 terms:**  12 = 12 (This is already true)\n* **t\u00b3 terms:** 20 = 26 \n* **t\u00b2 terms:** -6 + 5b + 4a = -8\n* **t\u00b9 terms:**  -10 + ab = -16\n* **Constant terms:**  -2a = 6\n\n**4. Solve the System of Equations**\n\nLet's solve the system of equations:\n\n* **From t\u00b3 terms:** 20 = 26 is not true.  This means we made an error in our expansion. Let's double-check:\n    * The outer term should be: $(3t^2)(-2) = -6t^2$ (We had this correctly)\n    * The inner term should be: $(5t)(4t^2) = 20t^3$ (We had this correctly)\n    * **The error was in the inner terms:** $(5t)(bt) = 5bt^2$ (We had this correctly)\n    * **We missed the inner term:** $(a)(4t^2) = 4at^2$ (This is missing!) \n    * **Let's add this term to our expanded expression.**\n\n* **Corrected t\u00b2 terms:** -6 + 5b + 4a + 4at\u00b2 = -8\n* **Corrected t\u00b9 terms:** -10 + ab = -16 \n* **Constant terms:** -2a = 6\n\nNow, we can solve:\n\n* **From the constant term:** -2a = 6  =>  a = -3\n* **Substitute a into the t\u00b2 terms:** -6 + 5b + 4(-3) = -8  => 5b = 10 => b = 2\n* **Substitute a and b into the t\u00b9 terms:** -10 + (-3)(2) = -16  =>  -16 = -16 (This is true!)\n\n**5. Calculate a + b**\n\nFinally, we have a = -3 and b = 2. \n\nTherefore, a + b = -3 + 2 = **-1** \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8957871396895787
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Number Theory_Level 3_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 3",
+        "problem": "Find an integer $n$ such that $0\\leq n<398$ and $n$ is a multiplicative inverse to 7 modulo 398.",
+        "correct_solution": "We notice that 399 is a multiple of 7: \\[399=57\\cdot7.\\]Considering this equation modulo 398 gives \\[1\\equiv57\\cdot7\\pmod{398}\\]so the answer is $\\boxed{57}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "## Solving the Problem:\n\nWe need to find an integer 'n' that satisfies the following conditions:\n\n1. **0 \u2264 n < 398:** This means 'n' must be within the range of 0 to 397 (inclusive).\n2. **'n' is a multiplicative inverse to 7 modulo 398:** This means  7 * n \u2261 1 (mod 398).  In other words, when 7*n is divided by 398, the remainder is 1.\n\n**Let's break down the problem into smaller parts:**\n\n**Part 1: Understanding Multiplicative Inverses**\n\n* In modular arithmetic, the multiplicative inverse of a number 'a' modulo 'm' is a number 'b' such that a * b \u2261 1 (mod m).\n* This means that the product of 'a' and 'b' leaves a remainder of 1 when divided by 'm'.\n\n**Part 2: Finding the Multiplicative Inverse**\n\nTo find the multiplicative inverse of 7 modulo 398, we can use the Extended Euclidean Algorithm:\n\n1. **Apply the Euclidean Algorithm to find the greatest common divisor (GCD) of 7 and 398:**\n    * 398 = 56 * 7 + 6\n    * 7 = 1 * 6 + 1 \n    * Since the remainder is 1, we know that the GCD of 7 and 398 is 1. This is essential because for a multiplicative inverse to exist, the number and the modulus must be relatively prime (their GCD must be 1).\n\n2. **Use the equations from the Euclidean Algorithm to express the GCD (1) as a linear combination of 7 and 398:**\n    * Starting from the last equation: 1 = 7 - 1 * 6\n    * Substitute the value of 6 from the previous equation: 1 = 7 - 1 * (398 - 56 * 7)\n    * Simplify: 1 = 57 * 7 - 1 * 398\n\n3. **The coefficient of 7 in the linear combination represents the multiplicative inverse of 7 modulo 398:**\n    * Therefore, the multiplicative inverse of 7 modulo 398 is 57.\n\n**Part 3: Checking the Solution**\n\n* Let's verify that 57 is indeed the multiplicative inverse of 7 modulo 398:\n    * 7 * 57 = 399 \n    * 399 divided by 398 leaves a remainder of 1. \n    * Hence, 7 * 57 \u2261 1 (mod 398).\n\n**Solution:**\n\nThe integer 'n' that satisfies the given conditions is **n = 57**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9340602284527518
+            }
+        }
+    }
+}

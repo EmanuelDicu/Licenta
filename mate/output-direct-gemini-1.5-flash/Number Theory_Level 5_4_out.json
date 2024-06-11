@@ -1,0 +1,18 @@
+{
+    "Number Theory_Level 5_4.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 5",
+        "problem": "Notice that  \\[31\\cdot37=1147.\\]Find some integer $n$ with $0\\leq n<2293$ such that  \\[31n\\equiv 3\\pmod{2293}.\\]",
+        "correct_solution": "Doubling the given equation tells us  \\[31\\cdot74=2294.\\]Specifically  \\[31\\cdot74\\equiv1\\pmod{2293}\\]and 74 is the multiplicative inverse of 31 modulo 2293.\n\nIf we triple the congruence we just found we get  \\[31\\cdot222\\equiv3\\pmod{2293}.\\]Therefore $n=\\boxed{222}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "## Solving the Problem:\n\n**Understanding the Problem:**\n\nThe problem asks us to find an integer 'n' within a specific range (0 to 2292) that satisfies the given congruence equation: 31n \u2261 3 (mod 2293). \n\n**Breaking down the problem:**\n\n1. **Understanding modular arithmetic:**  The notation \"a \u2261 b (mod m)\" means that 'a' and 'b' have the same remainder when divided by 'm'. In this case, we need to find 'n' such that the remainder of dividing 31n by 2293 is 3.\n2. **Using the given information:**  We are given that 31 * 37 = 1147. This information can be useful in finding the modular inverse of 31 (mod 2293).\n\n**Steps to solve:**\n\n1. **Finding the modular inverse of 31 (mod 2293):**\n   - We know that 31 * 37 = 1147.  We can rewrite this as 31 * 37 \u2261 0 (mod 2293). \n   - This implies that 31 * 37 + 2293 * k = 0, where 'k' is an integer.\n   - Rearranging, we get 31 * (37 + 2293k/31) = 0.\n   - Since 2293 and 31 are relatively prime, there exists an integer 'k' such that 37 + 2293k/31 is divisible by 31. \n   - This means (37 + 2293k/31) is the modular inverse of 31 (mod 2293). \n   - To find the specific value, we can iterate through values of 'k' until we find a value that makes (37 + 2293k/31) divisible by 31.\n   - For k = 1, we get (37 + 2293/31) = 108, which is divisible by 31. Therefore, the modular inverse of 31 (mod 2293) is 108.\n\n2. **Multiplying both sides of the congruence by the inverse:**\n   - We have 31n \u2261 3 (mod 2293). \n   - Multiplying both sides by the inverse of 31 (which is 108), we get: \n   - 108 * 31n \u2261 108 * 3 (mod 2293).\n   - This simplifies to n \u2261 324 (mod 2293).\n\n3. **Finding a solution within the given range:**\n   - We need to find a value of 'n' between 0 and 2292 that satisfies n \u2261 324 (mod 2293).\n   - The smallest such value is n = 324.\n\n**Solution:**\n\nThe solution to the problem is n = 324. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8952794357026587
+            }
+        }
+    }
+}

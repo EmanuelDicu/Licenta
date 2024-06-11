@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 5_3.json": {
+        "category": "Algebra",
+        "difficulty": "Level 5",
+        "problem": "Billy shoots an arrow from 10 feet above the ground. The height of this arrow can be expressed by the equation $h=10-23t-10t^2$, where $t$ is time in seconds since the arrow was shot. If the center of a target is raised 5 feet off the ground, in how many seconds must the arrow reach the target in order for Billy to hit the bulls eye?",
+        "correct_solution": "Since the center of the target is 5 feet above the ground, $h=5$. So we get the quadratic: \\begin{align*}5& =10-23t-10t^{2}\n\\\\ \\Rightarrow\\qquad 0& =10t^{2}+23t-5\n\\\\ \\Rightarrow\\qquad 0&=(2t+5)(5t-1).\n\\end{align*}Thus, the values of $t$ that satisfy the equation are $-\\frac52$ and $\\frac15$. However, since time can never be a negative number, the answer must be $\\boxed{\\dfrac{1}{5}}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how we can solve this problem step-by-step:\n\n**1. Understand the problem:**\n\n* We are given an equation that describes the height (h) of the arrow at any given time (t).\n* We know the arrow starts at 10 feet above the ground.\n* The target is 5 feet above the ground.\n* We need to find the time (t) when the arrow reaches the height of the target.\n\n**2. Set up an equation:**\n\n* We want to find the time when the height of the arrow (h) is equal to the height of the target (5 feet). \n* So, we set the equation equal to 5: \n   $5 = 10 - 23t - 10t^2$\n\n**3. Rearrange the equation:**\n\n* To solve for *t*, we need to rearrange the equation into a standard quadratic form:\n   $10t^2 + 23t - 5 = 0$\n\n**4. Solve the quadratic equation:**\n\n*  We can use the quadratic formula to solve for *t*:\n   \n   $t = \\dfrac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$\n\n   Where *a* = 10, *b* = 23, and *c* = -5.\n\n   Let's plug in the values:\n\n   $t = \\dfrac{-23 \\pm \\sqrt{23^2 - 4 \\cdot 10 \\cdot -5}}{2 \\cdot 10}$\n\n   $t = \\dfrac{-23 \\pm \\sqrt{729}}{20}$\n\n   $t = \\dfrac{-23 \\pm 27}{20}$\n\n   This gives us two possible solutions:\n\n   *  $t_1 = \\dfrac{-23 + 27}{20} = \\dfrac{1}{5}$ seconds\n   *  $t_2 = \\dfrac{-23 - 27}{20} = -2.5$ seconds\n\n**5. Choose the valid solution:**\n\n*  Time cannot be negative, so we discard the solution $t_2 = -2.5$ seconds.\n\n**Solution:**\n\n* The arrow will hit the bulls-eye after **0.2 seconds** (or 1/5 of a second). \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8270042194092827
+            }
+        }
+    }
+}

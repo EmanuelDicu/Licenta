@@ -1,0 +1,18 @@
+{
+    "Number Theory_Level 5_3.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 5",
+        "problem": "How many digits are in the value of the following expression: $2^{2001}\\times 5^{1950}\\div 4^{27}$?",
+        "correct_solution": "We have \\begin{align*}\n2^{2001}\\times5^{1950}\\div4^{27}&= 2^{2001}\\div2^{54}\\times5^{1950} \\\\\n&= 2^{1947}\\times5^{1950}\\\\\n&= (2\\times5)^{1947}\\times5^3 \\\\\n&= 125\\times10^{1947}\n\\end{align*}Since $125\\times10^{1947}$ has three non-zero digits followed by 1947 zeros, it has a total of $\\boxed{1950}$ digits.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve the problem, breaking it down into manageable steps:\n\n**1. Simplify the Expression**\n\n* **Exponent Rule:**  Recall that  a^(m+n) = a^m * a^n and a^(m-n) = a^m / a^n\n* **Rewrite 4 as 2^2:**  We can express 4 as 2 squared.  \n* **Simplify:**\n   *  2^(2001) * 5^(1950) / 4^(27)  \n   *  = 2^(2001) * 5^(1950) / (2^2)^(27)\n   *  = 2^(2001) * 5^(1950) / 2^(54)\n   *  = 2^(2001 - 54) * 5^(1950) \n   *  = 2^(1947) * 5^(1950)\n\n**2. Understand the Relationship Between Powers of 2 and 5**\n\n* **Base 10:** Any number can be expressed as a product of powers of 10. For example, 1234 = 1 * 10^3 + 2 * 10^2 + 3 * 10^1 + 4 * 10^0.\n* **2 and 5:** Notice that 2 * 5 = 10. This means:\n    *  2^(1947) * 5^(1950) = 2^(1947) * 5^(1947) * 5^3 \n    *  = 10^(1947) * 125 \n\n**3. Determine the Number of Digits**\n\n* **10^(1947):**  The number 10^(1947) has 1947 + 1 = 1948 digits (the leading 1 followed by 1947 zeroes). \n* **125:** This number has three digits.\n* **Combining:** Since multiplying by 125 shifts the decimal point three places to the right, the final result will have 1948 + 3 = **1951 digits**.\n\n**Therefore, the value of the expression 2^(2001) * 5^(1950) / 4^(27) has 1951 digits.** \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8521303258145363
+            }
+        }
+    }
+}

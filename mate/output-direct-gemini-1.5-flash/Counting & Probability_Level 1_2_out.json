@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 1_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 1",
+        "problem": "Ben flips a fair nickel four times. What is the probability that Ben flips Head, Tail, Head, Tail, in that order? Express your answer as a common fraction.",
+        "correct_solution": "Since any given flip has equal probability of $\\frac{1}{2}$ of being a Head or a Tail, and all outcomes are equally likely, the precise sequence given is equal to $\\frac{1}{2^4} = \\boxed{\\frac{1}{16}}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve the problem step-by-step:\n\n**1. Understand the Basics**\n\n* **Fair Coin:**  A fair coin has an equal chance of landing on Heads (H) or Tails (T).\n* **Independent Events:** Each coin flip is independent of the others. The outcome of one flip doesn't affect the outcome of the next.\n\n**2. Determine the Total Possible Outcomes**\n\n* For each flip, there are two possibilities: Heads or Tails.\n* With four flips, the total number of possible outcomes is 2 * 2 * 2 * 2 = 2\u2074 = 16\n\n**3. Identify the Favorable Outcome**\n\n* We want the specific sequence: Head, Tail, Head, Tail (HTHT)\n\n**4. Calculate the Probability**\n\n*  **Probability = (Favorable Outcomes) / (Total Possible Outcomes)**\n* In this case, there's only **one** favorable outcome (HTHT).\n* Therefore, the probability is 1/16.\n\n**Solution:** The probability of Ben flipping Head, Tail, Head, Tail in that order is **1/16**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8611111111111112
+            }
+        }
+    }
+}

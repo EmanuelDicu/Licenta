@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 4_3.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 4",
+        "problem": "Suppose 6 wallops = 5 ballops. Also suppose 3 ballops = 11 fallops. How many wallops are equivalent to 110 fallops?",
+        "correct_solution": "Multiply  \\[\n3\\text{ ballops}=11\\text{ fallops}\n\\] by 10 to find that $30$ ballops are equal to $110$ fallops.  Then multiply  \\[\n6\\text{ wallops} = 5\\text{ ballops}\n\\] by 6 to find that $\\boxed{36}$ wallops are equivalent to 30 ballops.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve this problem step-by-step:\n\n**1.  Find the relationship between wallops and fallops.**\n\n* We know 6 wallops = 5 ballops, and 3 ballops = 11 fallops.\n* To find the relationship between wallops and fallops, we need to eliminate ballops.\n* We can do this by finding a common multiple for the number of ballops in both equations: 15.\n*  Multiply the first equation by 3: (6 wallops = 5 ballops) * 3 = 18 wallops = 15 ballops.\n* Multiply the second equation by 5: (3 ballops = 11 fallops) * 5 = 15 ballops = 55 fallops.\n* Now we know 18 wallops = 55 fallops.\n\n**2.  Calculate how many wallops equal 110 fallops.**\n\n* We know 18 wallops = 55 fallops.\n*  Since 110 fallops is double 55 fallops, we can double the number of wallops: 18 wallops * 2 = 36 wallops.\n\n**Solution:**  36 wallops are equivalent to 110 fallops. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.801920768307323
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 4_2.json": {
+        "category": "Algebra",
+        "difficulty": "Level 4",
+        "problem": "Suppose that $\\Join$ is an operation defined by $x \\Join y = (x+2)(y-3)$. What is $((t) \\Join (t+2)) - ((t+1) \\Join (t+1))$?",
+        "correct_solution": "First, we evaluate the first pair of parentheses:\n\n\\begin{align*}\n(t) \\Join (t+2) &= (t + 2)((t+2) - 3) \\\\\n&= (t+2)(t - 1)\\\\\n&= t^2 + 2t - t - 2\\\\\n&= t^2 + t - 2.\n\\end{align*}Next, we evaluate the second pair of parentheses:\n\n\\begin{align*}\n(t + 1) \\Join (t+1) &= ((t+1) + 2)((t+1) - 3) \\\\\n&= (t+3)(t - 2) \\\\\n&= t^2 + 3t - 2t - 6 \\\\\n&= t^2 + t - 6.\n\\end{align*}Subtracting the two expressions and noting that certain terms cancel, we obtain $(t^2 + t - 2) - (t^2 + t - 6) = -2 - (-6) = \\boxed{4}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve the problem step-by-step:\n\n**1.  Break down the problem into smaller parts:**\n\n* **Part A:** Calculate  $(t) \\Join (t+2)$ \n* **Part B:** Calculate $(t+1) \\Join (t+1)$\n* **Part C:** Subtract the result of Part B from the result of Part A.\n\n**2. Solve Part A:**\n\n* Substitute the values into the definition of the operation:\n   *  $(t) \\Join (t+2) = (t + 2)(t+2 - 3)$\n   *  Simplify: $(t + 2)(t - 1)$\n\n**3. Solve Part B:**\n\n* Substitute the values into the definition of the operation:\n   * $(t+1) \\Join (t+1) = (t+1 + 2)(t+1 - 3)$\n   * Simplify: $(t + 3)(t - 2)$\n\n**4. Solve Part C:**\n\n* Subtract the result of Part B from the result of Part A:\n   * $((t) \\Join (t+2)) - ((t+1) \\Join (t+1)) = (t + 2)(t - 1) - (t + 3)(t - 2)$\n\n**5. Expand and simplify:**\n\n*  $(t + 2)(t - 1) - (t + 3)(t - 2) = (t^2 + t - 2) - (t^2 + t - 6)$\n*  Simplify:  $t^2 + t - 2 - t^2 - t + 6 = 4$\n\n**Solution:**\n\nTherefore, $((t) \\Join (t+2)) - ((t+1) \\Join (t+1)) = \\boxed{4}$. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7338129496402878
+            }
+        }
+    }
+}

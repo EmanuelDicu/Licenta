@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 2_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 2",
+        "problem": "The complex numbers $a$ and $b$ satisfy\n\\[a + \\overline{b} = 2 - 7i.\\]Find $\\overline{a} + b.$",
+        "correct_solution": "Taking the conjugate of both sides, we get\n\\[\\overline{a + \\overline{b}} = \\overline{2 - 7i} = 2 + 7i.\\]But $\\overline{a + \\overline{b}} = \\overline{a} + \\overline{\\overline{b}} = \\overline{a} + b,$ so\n\\[\\overline{a} + b = \\boxed{2 + 7i}.\\]",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how we can solve the problem by breaking it down into smaller parts:\n\n**Understanding Complex Conjugates**\n\n* **What is a complex conjugate?** The complex conjugate of a complex number  *a + bi* is *a - bi*.  We denote the conjugate of *z* as  *overline{z}*. \n* **Key property:**  The sum of a complex number and its conjugate is always a real number. \n\n**Solving the Problem**\n\n1. **Isolate the conjugate:**\n   The given equation is  *a + overline{b} = 2 - 7i*.  Let's isolate *overline{b}* by subtracting *a* from both sides:\n   *overline{b} = 2 - 7i - a*\n\n2. **Take the conjugate of both sides:**\n   The conjugate of *overline{b}* is simply *b*.  Taking the conjugate of both sides of the equation gives us:\n   *b = 2 + 7i - overline{a}*\n\n3. **Rearrange to find the desired expression:**\n   We want to find *overline{a} + b*.  Let's rearrange the equation from step 2:\n   *overline{a} + b = 2 + 7i*\n\n**Solution:**\n\nTherefore,  *overline{a} + b = 2 + 7i*. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8146997929606625
+            }
+        }
+    }
+}

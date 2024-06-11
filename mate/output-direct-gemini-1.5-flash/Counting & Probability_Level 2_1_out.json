@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 2_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 2",
+        "problem": "Determine the number of ways to arrange the letters of the word THAT.",
+        "correct_solution": "First we count the arrangements if the two T's are unique, which is $4!$. Then since the T's are not unique, we divide by $2!$ for the arrangements of T, for an answer of $\\dfrac{4!}{2!} = \\boxed{12}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve this problem:\n\n**Understanding the Problem**\n\nWe need to figure out how many different ways we can rearrange the letters in the word \"THAT\".  This is a permutation problem because the order of the letters matters.\n\n**Breaking Down the Problem**\n\n1. **Count the Letters:** The word \"THAT\" has 4 letters.\n\n2. **Consider Repetition:**  There is one repeated letter: \"T\" appears twice.\n\n**Solving the Problem**\n\n* **If there were no repeated letters:** We would have 4 choices for the first letter, 3 choices for the second, 2 choices for the third, and 1 choice for the last. This would give us 4! (4 factorial) = 4 * 3 * 2 * 1 = 24 ways.\n\n* **Accounting for Repetition:** Since we have two \"T\"s, we've overcounted because switching the positions of the two \"T\"s doesn't create a new arrangement.  We need to divide our previous result by 2! (2 factorial) = 2 * 1 = 2.\n\n**Calculation**\n\nThe number of ways to arrange the letters of the word \"THAT\" is:\n\n(4!)/(2!) = 24/2 = 12\n\n**Solution**\n\nThere are **12** ways to arrange the letters of the word \"THAT\". \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8657968313140727
+            }
+        }
+    }
+}

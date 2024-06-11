@@ -1,0 +1,18 @@
+{
+    "Number Theory_Level 3_1.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 3",
+        "problem": "Solve the congruence $3n \\equiv 2 \\pmod{11}$, as a residue modulo 11.  (Give an answer between 0 and 10.)",
+        "correct_solution": "Note that $2 \\equiv -9 \\pmod{11}$, so we can write the given congruence as $3n \\equiv -9 \\pmod{11}$.  Since 3 is relatively prime to 11, we can divide both sides by 3, to get $n \\equiv -3 \\equiv \\boxed{8} \\pmod{11}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how we can solve the congruence $3n \\equiv 2 \\pmod{11}$:\n\n**Understanding the Problem**\n\n* **Congruence:** The notation  \"$a \\equiv b \\pmod{m}$\" means that  *a* and *b* have the same remainder when divided by *m*. \n* **Our Goal:** We want to find a value of *n* that satisfies the given congruence.  Since we want the answer as a residue modulo 11, our solution will be a number between 0 and 10.\n\n**Solving the Congruence**\n\n1. **Find the Modular Inverse of 3 (mod 11):**  \n   To isolate *n*, we need to multiply both sides of the congruence by the modular inverse of 3 (modulo 11).  The modular inverse of 3 is a number *x* such that:\n   3 * x  \u2261 1  (mod 11)\n\n   We can find this by trial and error, checking multiples of 3:\n   * 3 * 4 = 12 \u2261 1 (mod 11)\n\n   Therefore, the modular inverse of 3 (mod 11) is 4.\n\n2. **Multiply Both Sides by the Modular Inverse:** \n   Multiply both sides of the original congruence by 4:\n   4 * (3n) \u2261 4 * 2 (mod 11)\n\n3. **Simplify:**\n   12n \u2261 8 (mod 11)\n   Since 12 \u2261 1 (mod 11), we have:\n   n \u2261 8 (mod 11)\n\n**Solution**\n\nThe solution to the congruence $3n \\equiv 2 \\pmod{11}$ is  **n = 8**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8561341571050309
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 2_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 2",
+        "problem": "In how many ways can a 3-person committee be chosen from a group of 8 people?",
+        "correct_solution": "There are $\\binom{8}{3} = \\frac{8 \\times 7 \\times 6}{3!}=\\boxed{56}$ to choose 3 people from a group of 8 without regard to order.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve the problem, breaking it down into smaller parts:\n\n**Understanding the Problem**\n\n* We need to find the number of different ways to select a group of 3 people from a larger group of 8. \n* The order in which we choose the people doesn't matter (choosing John, then Mary, then Bob is the same as choosing Mary, then Bob, then John). This indicates we're dealing with combinations.\n\n**Part 1:  Understanding Combinations**\n\n* **Combination:** A combination is a way of selecting items from a set where the order doesn't matter.  We use the following formula: \n   *  nCr = n! / (r! * (n-r)!) \n      *  n = the total number of items in the set\n      *  r = the number of items being chosen\n      *  ! means factorial (e.g., 5! = 5 * 4 * 3 * 2 * 1)\n\n**Part 2: Applying the Formula**\n\n* In our problem:\n    * n = 8 (total number of people)\n    * r = 3 (number of people on the committee)\n\n* So, the formula becomes: 8C3 = 8! / (3! * (8-3)!)\n\n**Part 3: Calculating the Factorials**\n\n* 8! = 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1 = 40,320\n* 3! = 3 * 2 * 1 = 6\n* 5! = 5 * 4 * 3 * 2 * 1 = 120\n\n**Part 4:  Putting it Together**\n\n* 8C3 = 40,320 / (6 * 120)\n* 8C3 = 40,320 / 720\n* 8C3 = 56\n\n**Solution**\n\nThere are **56** different ways to choose a 3-person committee from a group of 8 people. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9280185758513931
+            }
+        }
+    }
+}

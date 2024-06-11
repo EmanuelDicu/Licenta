@@ -1,0 +1,18 @@
+{
+    "Precalculus_Level 1_2.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 1",
+        "problem": "Let $a = 5 - 8i$ and $b = 30 + 48i$. Find $|ab|$.",
+        "correct_solution": "Note that $b = 6(5 + 8i) = 6\\overline{a}$. So $|ab| = |a(6\\overline{a})| = 6 |a\\overline{a}| = 6|a|^2$. We have $|a|^2 = 5^2 + 8^2 = 89$, so $|ab| = 6 \\cdot 89 = \\boxed{534}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how we can solve the problem step-by-step:\n\n**Understanding the Problem**\n\n* **Complex Numbers:** We're dealing with complex numbers, which are numbers of the form  *a + bi*, where *a* and *b* are real numbers, and *i* is the imaginary unit (\u221a-1).\n* **Magnitude (Absolute Value):** The problem asks us to find the magnitude (or absolute value) of the product of two complex numbers. The magnitude of a complex number represents its distance from the origin in the complex plane.\n\n**Solving the Problem**\n\n1. **Calculate the product 'ab':**\n   *  Multiply the two complex numbers using the distributive property (FOIL method):\n      * (5 - 8i)(30 + 48i) = (5 * 30) + (5 * 48i) + (-8i * 30) + (-8i * 48i)\n      * = 150 + 240i - 240i - 384i\u00b2 \n      * Remember that i\u00b2 = -1. Substitute this:\n      * = 150 - 384(-1)\n      * = 150 + 384 = 534\n\n2. **Calculate the magnitude of 'ab':**\n   * The magnitude of a complex number *a + bi* is calculated as: |*a + bi*| = \u221a(*a*\u00b2 + *b*\u00b2)\n   * In our case, *ab* = 534 + 0i. Therefore:\n      * |*ab*| = \u221a(534\u00b2 + 0\u00b2) = \u221a(534\u00b2) = 534\n\n**Solution**\n\nThe magnitude of the product of the complex numbers *a* and *b*, denoted as |*ab*|, is **534**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9130067567567568
+            }
+        }
+    }
+}

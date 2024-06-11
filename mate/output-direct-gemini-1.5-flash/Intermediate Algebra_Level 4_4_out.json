@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 4_4.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 4",
+        "problem": "In a certain polynomial, all the coefficients are integers, and the constant coefficient is 42.  All the roots are integers, and distinct.  Find the largest possible number of integer roots.",
+        "correct_solution": "By the Integer Root Theorem, any integer root must be a factor of 42.  The prime factorization of 42 is $2 \\cdot 3 \\cdot 7.$  Furthermore, the product of the roots is $(-1)^n \\cdot \\frac{42}{a_0},$ where $n$ is the degree of the polynomial, and $a_0$ is the leading coefficient.\n\nTo maximize the number of integer roots, which must be distinct, we can take the integer roots to be 2, 3, 7, 1, and $-1.$  This gives us a maximum of $\\boxed{5}$ integer roots.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how we can solve this problem by breaking it down:\n\n**Understanding the Problem**\n\nThe problem describes a polynomial with these characteristics:\n\n* **Integer Coefficients:**  All the numbers in front of the variables (and the constant term) are integers.\n* **Integer Roots:**  The values of 'x' that make the polynomial equal to zero are all integers.\n* **Distinct Roots:**  Each integer root is different.\n* **Constant Coefficient of 42:** The term without any variables is 42.\n\n**Key Idea: The Fundamental Theorem of Algebra**\n\nThis theorem states that a polynomial of degree 'n' (the highest power of 'x') has exactly 'n' roots (including complex roots, which we won't worry about here since we know all the roots are integers).\n\n**Part 1: Factoring the Constant Term**\n\n* **The constant term represents the product of all the roots.**  Think of it like this: if you have a polynomial like (x - 2)(x + 3)(x - 1), the constant term is (-2) * (+3) * (-1) = 6.\n* **Find the factors of 42:**  These represent all the possible combinations of integer roots that could multiply to give 42.  The factors of 42 are: 1, 2, 3, 6, 7, 14, 21, and 42.\n\n**Part 2:  Maximizing the Number of Roots**\n\n* **To maximize the number of integer roots, we need to find the most factors we can use.**  Notice that we can create distinct integer roots by using the factors 1, 2, 3, 6, and 7.\n* **The sign of the factors doesn't matter.** We can have positive or negative factors, as long as they multiply to 42.\n\n**Part 3: Building a Possible Polynomial**\n\n* **Example Polynomial:** To illustrate, we could have a polynomial like this:\n   (x - 1)(x + 2)(x - 3)(x + 6)(x - 7) \n   This polynomial has the factors of 42 we chose, and its constant term is indeed 42.\n\n**Solution**\n\nThe largest possible number of integer roots for a polynomial with integer coefficients, a constant term of 42, and distinct integer roots is **5**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8223615464994776
+            }
+        }
+    }
+}

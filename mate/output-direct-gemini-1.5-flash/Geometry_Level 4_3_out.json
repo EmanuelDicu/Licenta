@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 4_3.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "What is the area, in square units, of the square with the four vertices at $(-2, 2), (2, -2), (-2, -6)$, and $(-6, -2)$?",
+        "correct_solution": "The length of the square is $\\sqrt{4^2 + 4^2} = 4\\sqrt{2}$. Therefore, the area of the square is $(4\\sqrt{2})^2 = \\boxed{32}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve the problem:\n\n**1. Visualize the Situation**\n\n* **Plot the points:** Begin by plotting the given points on a coordinate plane. You'll notice they form a tilted square.\n* **Understanding the Square:** A square has four equal sides and four right angles. We'll use this knowledge to find the area.\n\n**2. Find the Side Length**\n\n* **Choose two adjacent points:** Select any two points that are adjacent (next to each other) on the square, like (-2, 2) and (2, -2).\n* **Use the Distance Formula:** The distance between these two points will be the side length of the square. The distance formula is:\n\n   \u221a[(x\u2082 - x\u2081)\u00b2 + (y\u2082 - y\u2081)\u00b2]\n\n   Let's plug in our points:\n\n   \u221a[(2 - (-2))\u00b2 + (-2 - 2)\u00b2] = \u221a[(4)\u00b2 + (-4)\u00b2] = \u221a(16 + 16) = \u221a32 = 4\u221a2\n\n**3. Calculate the Area**\n\n* **Area of a square:** The area of a square is side length squared (s\u00b2).\n* **Substitute the side length:** Area = (4\u221a2)\u00b2 = 16 * 2 = 32\n\n**Solution:**\n\nThe area of the square is **32 square units**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9080694586312564
+            }
+        }
+    }
+}

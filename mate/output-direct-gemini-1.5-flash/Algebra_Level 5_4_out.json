@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 5_4.json": {
+        "category": "Algebra",
+        "difficulty": "Level 5",
+        "problem": "An infinite geometric series has common ratio $-1/2$ and sum 45.  What is the first term of the series?",
+        "correct_solution": "Let the first term be $a$.  Because the sum of the series is 45, we have $45= a/[1-(-1/2)] = a/(3/2) = 2a/3$.  Therefore, $a=\\boxed{\\frac{135}{2}}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve the problem step-by-step:\n\n**Understanding the Problem**\n\n* **Geometric Series:**  A geometric series is a series where each term is found by multiplying the previous term by a constant factor called the common ratio.\n* **Infinite Geometric Series:**  An infinite geometric series has an infinite number of terms.\n* **Sum of an Infinite Geometric Series:** The sum of an infinite geometric series exists only when the absolute value of the common ratio is less than 1 (|r| < 1). The formula for the sum (S) is:\n   S = a / (1 - r) \n   where 'a' is the first term and 'r' is the common ratio.\n\n**Solving the Problem**\n\n1. **Identify the given information:**\n   *  Common ratio (r) = -1/2\n   *  Sum (S) = 45\n\n2. **Apply the formula for the sum of an infinite geometric series:**\n   *  45 = a / (1 - (-1/2))\n\n3. **Simplify the equation:**\n   *  45 = a / (3/2)\n\n4. **Solve for the first term (a):**\n   *  a = 45 * (3/2) \n   *  a = 67.5\n\n**Solution**\n\nThe first term of the infinite geometric series is **67.5**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8959143968871596
+            }
+        }
+    }
+}

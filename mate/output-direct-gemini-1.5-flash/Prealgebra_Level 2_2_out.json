@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 2_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 2",
+        "problem": "Fifty students were surveyed about their participation in hockey and baseball. The results of the survey were:\n\n$\\bullet$ $33$ students played hockey\n\n$\\bullet$ $24$ students played baseball\n\n$\\bullet$ $8$ students played neither hockey nor baseball\n\nHow many of the students surveyed played both hockey and baseball?",
+        "correct_solution": "Since there were $50$ students surveyed in total and $8$ played neither hockey nor baseball, then $42$ students in total played one game or the other.\n\nSince $33$ students played hockey and $24$ students played baseball, and this totals $33+24=57$ students, then there must be $\\boxed{15}$ students who are \"double-counted\", that is who play both sports.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve this problem step-by-step:\n\n**1. Understand the Problem:**\n\n* We know the total number of students surveyed (50).\n* We know how many played hockey (33), how many played baseball (24), and how many played neither (8).\n* We need to find out how many played **both** hockey and baseball.\n\n**2.  Visualize with a Venn Diagram:**\n\nA Venn diagram helps us visualize this problem:\n\n* Draw two overlapping circles. Label one \"Hockey\" and the other \"Baseball.\"\n* The overlapping section represents students who play both sports.\n* The areas outside the circles represent students who play neither sport.\n\n**3. Find the Total Number of Students Who Played at Least One Sport:**\n\n* Since 8 students played neither sport,  the remaining 42 students (50 - 8) played at least one sport: \n   * Total students - Students who played neither = Students who played at least one sport\n   * 50 - 8 = 42\n\n**4. Calculate the Sum of Students Playing Hockey and Baseball (Ignoring the Overlap):**\n\n* Add the number of students who played hockey and the number who played baseball:\n   * 33 + 24 = 57\n\n**5. Account for the Overlap:**\n\n*  The sum in step 4 (57) is larger than the total number of students who played at least one sport (42).  This is because we've counted the students who play both sports twice.  \n*  To find the number of students who played both sports, subtract the number of students who played at least one sport from the sum of students playing each sport:\n   * 57 - 42 = 15\n\n**Solution:** 15 students played both hockey and baseball. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8195876288659794
+            }
+        }
+    }
+}

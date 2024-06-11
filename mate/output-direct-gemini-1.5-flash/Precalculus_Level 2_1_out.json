@@ -1,0 +1,18 @@
+{
+    "Precalculus_Level 2_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 2",
+        "problem": "Find the measure, in degrees, of the smallest positive angle $\\theta$ for which $\\sin 3 \\theta = \\cos 7 \\theta.$",
+        "correct_solution": "Note that $\\cos 7 \\theta = \\sin (90^\\circ - 7 \\theta),$ so\n\\[\\sin 3 \\theta = \\sin (90^\\circ - 7 \\theta).\\]If $3 \\theta = 90^\\circ - 7 \\theta,$ then $\\theta = 9^\\circ.$\n\nIf $0^\\circ < \\theta < 9^\\circ,$ then $\\sin 3 \\theta < \\sin 27^\\circ$ and $\\sin (90^\\circ - 7 \\theta) > \\sin 27^\\circ,$ so the smallest positive solution is $\\boxed{9^\\circ}.$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how we can solve the problem, breaking it down into smaller parts:\n\n**Part 1: Understanding the Relationship Between Sine and Cosine**\n\n* **Key Identity:** We know that  \n   cos(90\u00b0 - \u03b8) = sin \u03b8 \n   This is a fundamental trigonometric identity.\n\n**Part 2: Applying the Identity to the Problem**\n\n* **Rewrite the Equation:** We want to use the identity to rewrite the equation  sin 3\u03b8 = cos 7\u03b8 in a form that lets us solve for \u03b8.\n* **Substitute:**  Since cos(90\u00b0 - \u03b8) = sin \u03b8, we can rewrite cos 7\u03b8 as sin(90\u00b0 - 7\u03b8). \n    Our equation now becomes: sin 3\u03b8 = sin(90\u00b0 - 7\u03b8)\n\n**Part 3: Solving for \u03b8**\n\n* **General Solution:**  If sin a = sin b, then  a = b + 360\u00b0k  or  a = 180\u00b0 - b + 360\u00b0k, where k is an integer.  This comes from the fact that sine is a periodic function with a period of 360\u00b0.\n* **Apply to our Equation:**  Applying this to our equation, we have:\n   * 3\u03b8 = (90\u00b0 - 7\u03b8) + 360\u00b0k   OR   3\u03b8 = 180\u00b0 - (90\u00b0 - 7\u03b8) + 360\u00b0k\n* **Simplify and Solve:** \n    * From the first equation: 10\u03b8 = 90\u00b0 + 360\u00b0k  =>  \u03b8 = 9\u00b0 + 36\u00b0k\n    * From the second equation:  -4\u03b8 = 90\u00b0 + 360\u00b0k  =>  \u03b8 = -22.5\u00b0 - 90\u00b0k\n\n**Part 4: Finding the Smallest Positive Angle**\n\n* **Smallest Positive Value:**  To find the smallest positive value of \u03b8, we need to consider the values of k that give us positive angles.  \n* **For the first solution:**  The smallest positive angle occurs when k = 0, giving \u03b8 = 9\u00b0.\n* **For the second solution:** There are no values of k that would give us a positive angle.\n\n**Solution:**\n\nThe smallest positive angle \u03b8 for which sin 3\u03b8 = cos 7\u03b8 is **9 degrees**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8679365079365079
+            }
+        }
+    }
+}

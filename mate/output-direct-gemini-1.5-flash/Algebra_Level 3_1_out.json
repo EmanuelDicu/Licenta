@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 3_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 3",
+        "problem": "Solve $(2x+1)(3x+2) = (x-3)(6x-5)$. Express your answer as a simplified fraction.",
+        "correct_solution": "Multiplying the terms, we obtain $6x^{2}+7x+2 = 6x^{2}-23x+15$, which simplifies to $30x = 13$, so $x=\\boxed{\\frac{13}{30}}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve the problem step-by-step:\n\n**1. Expand both sides of the equation**\n\n* **Left side:**  \n   (2x + 1)(3x + 2) = 6x\u00b2 + 4x + 3x + 2 = 6x\u00b2 + 7x + 2 \n* **Right side:**\n   (x - 3)(6x - 5) = 6x\u00b2 - 5x - 18x + 15 = 6x\u00b2 - 23x + 15\n\n**2. Simplify the equation**\n\nNow our equation looks like this:\n6x\u00b2 + 7x + 2 = 6x\u00b2 - 23x + 15\n\n**3. Combine like terms**\n\nSince both sides have a 6x\u00b2 term, we can subtract it from both sides to eliminate it:\n7x + 2 = -23x + 15\n\n**4. Isolate the x term**\n\nAdd 23x to both sides:\n30x + 2 = 15\n\n**5. Isolate the x term**\n\nSubtract 2 from both sides:\n30x = 13\n\n**6. Solve for x**\n\nDivide both sides by 30:\nx = 13/30\n\n**Therefore, the solution to the problem is x = 13/30.** \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8890449438202247
+            }
+        }
+    }
+}

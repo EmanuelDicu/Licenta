@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 5_3.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 5",
+        "problem": "In Mathopolis, an adult is a person 21 years of age or older and a child is a person under 21 years of age.  Exactly half of the  adults in Mathopolis are female, and exactly half of the female  adults have exactly one biological child.  Nobody else has a  child, and there are no other children.  What percent of the  people of Mathopolis are children?",
+        "correct_solution": "Let the percentage of people in Mathopolis who are children be $x$. The percentage of adults is then $1-x$. Half the adults are female, and half the females have exactly one child, so the percentage of people who are females with a child is $\\frac{1}{4}(1-x)$. This percentage is equal to the percentage of children, since there is a correspondence between a mother and a child. So we have the equation $x=\\frac{1}{4}(1-x)$. Solving for $x$ yields $x=1/5$, or $\\boxed{20}$ percent.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how we can break down the problem and solve it:\n\n**Part 1: Understanding the Relationships**\n\n* **Adults:**  Anyone 21 years or older.\n* **Children:**  Anyone under 21 years old.\n* **Gender:** We are told half the adults are female.\n* **Children and Adults:**  The only people with children are female adults, and each of these females has exactly one child.\n\n**Part 2:  Focus on the Key Information**\n\n* We are asked to find the percentage of the population that is children. \n* To do this, we need to figure out the ratio of children to the total population.\n* We know that each female adult has one child, but this doesn't tell us the total number of children or the total population.\n\n**Part 3:  Thinking in Terms of Ratios**\n\n* **Let's assume there are 100 adult females in Mathopolis.**\n* This means there are 100 adult males (since half the adults are female).\n* These 100 adult females have 100 children (one child each).\n* **Total population:** 100 adult females + 100 adult males + 100 children = 300 people\n\n**Part 4: Calculating the Percentage**\n\n* **Children make up 100 out of 300 people.**\n* To express this as a percentage, we divide the number of children by the total population and multiply by 100: (100/300) * 100 = 33.33%\n\n**Solution:**  33.33% of the people in Mathopolis are children. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7727963525835866
+            }
+        }
+    }
+}

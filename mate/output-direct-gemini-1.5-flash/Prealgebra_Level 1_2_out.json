@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 1_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 1",
+        "problem": "If $PQ$ is a straight line, what is the value of $x$? [asy]\n\nsize(150);\n\ndraw((-1,0)--(1,0));\n\ndraw((-0.809,.588)--(0,0)--(0.809,.588));\n\ndraw((-.309,.951)--(0,0)--(.309,.951));\n\nlabel(\"$P$\",(-1,0),W);\n\nlabel(\"$Q$\",(1,0),E);\n\nlabel(\"$x^\\circ$\",(0.5,0),NW);\n\nlabel(\"$x^\\circ$\",(-0.5,0),NE);\n\nlabel(\"$x^\\circ$\",(0,0.4));\n\nlabel(\"$x^\\circ$\",(0.27,0.2),N);\n\nlabel(\"$x^\\circ$\",(-0.27,0.2),N);\n\n[/asy]",
+        "correct_solution": "Since $PQ$ is a straight line, then $x^\\circ+x^\\circ+x^\\circ+x^\\circ+x^\\circ = 180^\\circ$ or $5x=180$ or $x=\\boxed{36}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve the problem:\n\n**Understanding the Problem**\n\n* **Straight Line:**  A straight line has a total angle measure of 180 degrees.\n* **Angles Around a Point:** The angles around a single point always add up to 360 degrees.\n\n**Breaking Down the Problem**\n\n1. **Focus on the Point P:**  The angles around point P form a full circle, adding up to 360 degrees. \n\n2. **Identify the Angles:** There are four angles around point P, each labeled with 'x'.\n\n**Solving the Problem**\n\n1. **Set up an equation:** Since each angle is 'x' degrees, and they add up to 360 degrees, we have the equation: \n   x + x + x + x = 360\n\n2. **Simplify:** Combine the 'x' terms: 4x = 360\n\n3. **Solve for x:** Divide both sides of the equation by 4: x = 90\n\n**Solution**\n\nThe value of x is **90**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9173027989821882
+            }
+        }
+    }
+}

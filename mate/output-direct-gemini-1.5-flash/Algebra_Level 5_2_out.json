@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 5_2.json": {
+        "category": "Algebra",
+        "difficulty": "Level 5",
+        "problem": "Solve the inequality $$-13(r+5) + 25 > 4(r-10)$$for $r$. Express your answer in interval notation.",
+        "correct_solution": "First, we use the distributive property to expand the left-hand side of the inequality: $$-13r - 65 + 25 > 4r - 40$$The constants on the left side add up to $-40$, so adding $40$ to both sides cancels all the constant terms: $$-13r > 4r$$Adding $13r$ to both sides yields $$0 > 17r$$and dividing both sides by $17$ gives $0>r$, or in interval notation, $r\\in\\boxed{(-\\infty,0)}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "## Solving the Inequality:\n\nWe're given the inequality: \n$$-13(r+5) + 25 > 4(r-10)$$\n\nLet's break it down step-by-step:\n\n**1. Distribute:**\n\n* Expand both sides of the inequality by distributing the constants:\n\n   - Left side:  -13(r+5) + 25 = -13r - 65 + 25 = -13r - 40\n   - Right side: 4(r-10) = 4r - 40\n\n   This simplifies our inequality to:\n   $$-13r - 40 > 4r - 40$$\n\n**2. Combine like terms:**\n\n* Move all terms with 'r' to one side and constant terms to the other side:\n\n   - Add 13r to both sides: -40 > 17r - 40\n   - Add 40 to both sides: 0 > 17r\n\n**3. Isolate 'r':**\n\n* Divide both sides by 17 (remembering that dividing by a positive number doesn't change the inequality sign):\n\n   - 0/17 > r\n   - This simplifies to: 0 > r\n\n**4. Express in interval notation:**\n\n*  The solution is all values of 'r' less than 0. This can be expressed in interval notation as:\n\n   -  **(-\u221e, 0)** \n\n## Solution:\n\nThe solution to the inequality  -13(r+5) + 25 > 4(r-10) is **r \u2208 (-\u221e, 0)**. This means all values of 'r' less than 0 satisfy the original inequality. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7757805108798487
+            }
+        }
+    }
+}

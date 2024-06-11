@@ -1,0 +1,18 @@
+{
+    "Precalculus_Level 3_3.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 3",
+        "problem": "If $\\mathbf{a} = \\begin{pmatrix} 1 \\\\ 1 \\\\ 1 \\end{pmatrix},$ then find the vector $\\mathbf{v}$ such that $\\mathbf{a} \\cdot \\mathbf{v} = 2$ and $\\mathbf{a} \\times \\mathbf{v} = \\begin{pmatrix} 1 \\\\ -2 \\\\ 1 \\end{pmatrix}.$",
+        "correct_solution": "Let $\\mathbf{v} = \\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix}.$  Then from the equation $\\mathbf{a} \\cdot \\mathbf{v} = 2,$ $x + y + z = 2.$\n\nAlso,\n\\[\\mathbf{a} \\times \\mathbf{v} = \\begin{pmatrix} 1 \\\\ 1 \\\\ 1 \\end{pmatrix} \\times \\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix} = \\begin{pmatrix} -y + z \\\\ x - z \\\\ -x + y \\end{pmatrix}.\\]Hence,\n\\begin{align*}\n-y + z &= 1, \\\\\nx - z &= -2, \\\\\n-x + y &= 1.\n\\end{align*}Solving this system, along with the equation $x + y + z = 2,$ we find $x = -\\frac{1}{3},$ $y = \\frac{2}{3},$ and $z = \\frac{5}{3}.$  Thus, $\\mathbf{v} = \\boxed{\\begin{pmatrix} -1/3 \\\\ 2/3 \\\\ 5/3 \\end{pmatrix}}.$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Let's break down the problem and solve it step-by-step.\n\n**Understanding the Problem**\n\nWe are given a vector **a** and we need to find another vector **v**. We're provided with two conditions:\n\n1. **Dot Product:** The dot product of **a** and **v** is 2:  **a** \u22c5 **v** = 2.\n2. **Cross Product:** The cross product of **a** and **v** is a specific vector: **a** \u00d7 **v** =  (1, -2, 1).\n\n**Solving for v**\n\n1. **Dot Product Equation:**\n   * Let **v** = (x, y, z). \n   * The dot product is calculated as: (1, 1, 1) \u22c5 (x, y, z) = x + y + z = 2.\n\n2. **Cross Product Equation:**\n   * The cross product of two vectors is a bit more complex, but we can use the following formula:\n\n      **a** \u00d7 **v** =  \n      (a\u2082v\u2083 - a\u2083v\u2082, a\u2083v\u2081 - a\u2081v\u2083, a\u2081v\u2082 - a\u2082v\u2081)\n\n   * Substituting our values:\n      (1, 1, 1) \u00d7 (x, y, z) = (y - z, z - x, x - y) = (1, -2, 1)\n\n3. **System of Equations:**\n   * Now we have three equations from our two conditions:\n      * x + y + z = 2\n      * y - z = 1\n      * z - x = -2\n      * x - y = 1\n\n4. **Solving the System:**\n   * We can use various methods to solve this system of equations, like substitution or elimination. Here's a straightforward approach:\n      * From the second equation (y - z = 1), we get y = z + 1.\n      * Substitute this into the first equation: x + (z + 1) + z = 2. This simplifies to x + 2z = 1.\n      * From the third equation (z - x = -2), we get x = z + 2.\n      * Substitute this value of x into the equation x + 2z = 1: (z + 2) + 2z = 1. This simplifies to 3z = -1, so z = -1/3.\n      * Now, substitute z back into the equation x = z + 2: x = (-1/3) + 2 = 5/3.\n      * Finally, substitute z back into y = z + 1: y = (-1/3) + 1 = 2/3.\n\n**Solution:**\n\nThe vector **v** that satisfies the given conditions is: **v** = (5/3, 2/3, -1/3). \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8355855855855856
+            }
+        }
+    }
+}

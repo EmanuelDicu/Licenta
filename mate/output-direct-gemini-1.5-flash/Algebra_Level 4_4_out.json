@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 4_4.json": {
+        "category": "Algebra",
+        "difficulty": "Level 4",
+        "problem": "For what ordered pair $(a,b)$ are there infinite solutions $(x,y)$ to the system \\begin{align*}\n2ax+2y&=b,\\\\\n5x+y&=-3?\n\\end{align*}",
+        "correct_solution": "For there to be infinite solutions, the first equation needs to be consistent with the second and yet add no new information, which means it must be a multiple of the second. Since the coefficient of $y$ in the first equation is twice that of $y$ in the second equation, the multiplier is 2. This implies that the first equation must be $2(5x+y)=2(-3)$. After equating coefficients, this gives $2a=2\\cdot5$ and $b=2\\cdot-3$, or $(a,b)=\\boxed{(5,-6)}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve the problem step-by-step:\n\n**Understanding the Problem**\n\nThe problem asks us to find values for *a* and *b* that would make the system of equations have infinitely many solutions.  This means the two equations must represent the *same line*.\n\n**Part 1:  Identifying Conditions for the Same Line**\n\nTwo lines are the same if they have the same slope and the same y-intercept.  Let's analyze our system to find those conditions:\n\n* **Slope:**  \n    * The slope of the first equation (2ax + 2y = b) is -a (after rearranging to slope-intercept form: y = -ax + b/2).\n    * The slope of the second equation (5x + y = -3) is -5 (after rearranging: y = -5x - 3).\n    * For the lines to be the same, the slopes must be equal: -a = -5\n\n* **Y-intercept:**\n    * The y-intercept of the first equation is b/2.\n    * The y-intercept of the second equation is -3.\n    * For the lines to be the same, the y-intercepts must be equal: b/2 = -3\n\n**Part 2: Solving for a and b**\n\nNow we have two simple equations:\n\n* -a = -5\n* b/2 = -3\n\nSolving for *a* and *b* is straightforward:\n\n* **a = 5**\n* **b = -6**\n\n**Solution**\n\nTherefore, the ordered pair (a, b) that makes the system of equations have infinitely many solutions is **(5, -6)**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.774375503626108
+            }
+        }
+    }
+}

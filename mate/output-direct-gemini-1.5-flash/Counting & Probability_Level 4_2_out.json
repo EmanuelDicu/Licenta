@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 4_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 4",
+        "problem": "A 6-sided die is weighted so that the probability of any number being rolled is proportional to the value of the roll.  (So, for example, the probability of a 2 being rolled is twice that of a 1 being rolled.)  What is the expected value of a roll of this weighted die?  Express your answer as a common fraction.",
+        "correct_solution": "Let $x$ be the probability that a 1 is rolled.  Then the probability that a 2 is rolled is $2x$, the probability that a 3 is rolled is $3x$, and so on.  Since the sum of all these probabilities must be 1, we have that $x + 2x + \\cdots + 6x = 1$, which means that $21x = 1$, so $x = \\frac{1}{21}$.  Therefore \\[ E = \\frac{1}{21}(1) + \\frac{2}{21}(2) + \\cdots + \\frac{6}{21}(6) = \\frac{1^2 + 2^2 + \\cdots 6^2}{21} = \\boxed{\\frac{13}{3}}. \\]",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how we can break down the problem and solve it:\n\n**Part 1: Understanding Weighted Probability**\n\n* **Standard Die:** A fair, 6-sided die has an equal probability of landing on each face (1/6).\n* **Weighted Die:** In this case, the probability of rolling a number is directly related to the number itself.  This means:\n    * Rolling a 1 has the lowest probability.\n    * Rolling a 6 has the highest probability.\n\n**Part 2: Finding the Probabilities**\n\n1. **Total \"Weight\":**  The total \"weight\" of the die is 1 + 2 + 3 + 4 + 5 + 6 = 21. This represents the sum of the probabilities across all faces.\n\n2. **Individual Probabilities:** To find the probability of rolling any specific number, we divide its value by the total weight:\n    * P(1) = 1/21\n    * P(2) = 2/21\n    * P(3) = 3/21 = 1/7\n    * P(4) = 4/21\n    * P(5) = 5/21\n    * P(6) = 6/21 = 2/7\n\n**Part 3: Calculating Expected Value**\n\n* **Definition:** The expected value of a random event is the average value you'd expect to get over many trials.  We calculate it by multiplying each possible outcome by its probability and summing the results.\n\n* **Formula:**  Expected Value = (Outcome 1 * Probability 1) + (Outcome 2 * Probability 2) + ... + (Outcome N * Probability N)\n\n* **Applying it to our problem:**\n    Expected Value = (1 * 1/21) + (2 * 2/21) + (3 * 1/7) + (4 * 4/21) + (5 * 5/21) + (6 * 2/7)\n\n* **Simplifying:**\n    Expected Value = 1/21 + 4/21 + 9/21 + 16/21 + 25/21 + 36/21 = 91/21\n\n**Solution:**\n\nThe expected value of a roll of this weighted die is **91/21**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8234912394548994
+            }
+        }
+    }
+}

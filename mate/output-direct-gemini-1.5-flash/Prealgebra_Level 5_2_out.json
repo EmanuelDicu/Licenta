@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 5_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 5",
+        "problem": "In a certain isosceles right triangle, the altitude to the hypotenuse has length $6$.  What is the area of the triangle?",
+        "correct_solution": "In isosceles right triangle $\\triangle ABC$ below, $\\overline{AD}$ is the altitude to the hypotenuse.\n\n[asy]\nimport olympiad;\nunitsize(0.8inch);\npair A,B,C,D;\nA = (0,1);\nB= (1,0);\nC = -B;\nD = (0,0);\ndraw(A--B--C--A,linewidth(1));\ndraw(A--D,linewidth(0.8));\ndraw(rightanglemark(C,A,B,s=5));\ndraw(rightanglemark(C,D,A,s=5));\nlabel(\"$A$\",A,N);\nlabel(\"$B$\",B,S);\nlabel(\"$C$\",C,S);\nlabel(\"$D$\",D,S);\n[/asy]\n\nBecause $\\triangle ABC$ is an isosceles right triangle, $\\angle ABC = 45^\\circ$.  Since $\\angle ADB = 90^\\circ$, we know that $\\angle DAB = 45^\\circ$, so $\\triangle ABD$ is also a 45-45-90 triangle.  Similarly, $\\triangle ACD$ is a 45-45-90 triangle.  Therefore, $DB=DC = DA = 6$, so $BC = BD+DC = 12$, and  \\[[ABC] = \\frac{(AD)(BC)}{2} = \\frac{(6)({12})}{2} = \\boxed{36}.\\]",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve the problem step-by-step:\n\n**Understanding the Problem**\n\n* **Isosceles Right Triangle:**  This means the triangle has two equal sides and two equal angles (each 45 degrees).\n* **Altitude to the Hypotenuse:** This is a line segment drawn from the right angle vertex perpendicular to the hypotenuse.  It divides the triangle into two smaller congruent triangles.\n\n**Breaking Down the Problem**\n\n1. **Find the length of the legs:**  Since the altitude divides the triangle into two congruent right triangles, each of these smaller triangles is also a 45-45-90 triangle.  The altitude is one leg of these smaller triangles, and the hypotenuse of the smaller triangle is half the hypotenuse of the original triangle. \n\n   * In a 45-45-90 triangle, the hypotenuse is \u221a2 times the length of a leg.  So, if the altitude (leg) has length 6, the hypotenuse of the smaller triangle is 6\u221a2. \n   * The hypotenuse of the original triangle is twice this length, which is 12\u221a2.\n\n2. **Find the length of the legs of the original triangle:** Since the original triangle is isosceles, both legs have the same length.  We can use the Pythagorean theorem to find the length of each leg:\n\n   *  a\u00b2 + b\u00b2 = c\u00b2  (where a and b are the legs, and c is the hypotenuse)\n   *  a\u00b2 + a\u00b2 = (12\u221a2)\u00b2\n   *  2a\u00b2 = 288\n   *  a\u00b2 = 144\n   *  a = 12  (since length cannot be negative)\n\n3. **Calculate the Area:**  The area of a triangle is given by:\n\n   *  Area = (1/2) * base * height\n   *  Area = (1/2) * 12 * 12 = 72\n\n**Solution:** The area of the triangle is **72 square units**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.802555910543131
+            }
+        }
+    }
+}

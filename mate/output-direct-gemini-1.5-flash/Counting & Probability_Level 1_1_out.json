@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 1_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 1",
+        "problem": "Compute $\\dbinom{15}{2}$.",
+        "correct_solution": "\\begin{align*}\n\\dbinom{15}{2} &= \\dfrac{15!}{13!2!} \\\\\n&= \\dfrac{15\\times 14}{2\\times 1} \\\\\n&= 15 \\times \\dfrac{14}{2} \\\\\n&= 15 \\times 7 \\\\\n&= \\boxed{105}.\n\\end{align*}",
+        "generated_solutions": {
+            "gemini-1.5-flash": "The problem asks us to compute $\\binom{15}{2}$, which is a binomial coefficient. Let's break it down:\n\n**Part 1: Understanding Binomial Coefficients**\n\n* **Definition:**  $\\binom{n}{k}$ (read as \"n choose k\") represents the number of ways to choose a group of *k* items from a set of *n* distinct items, where order doesn't matter.\n* **Formula:**  $\\binom{n}{k} = \\frac{n!}{k!(n-k)!}$, where \"!\" denotes the factorial (e.g., 5! = 5 * 4 * 3 * 2 * 1).\n\n**Part 2: Applying the Formula**\n\nIn our problem, we have:\n*  n = 15 (the total number of items)\n*  k = 2 (the number of items we want to choose)\n\nPlugging these values into the formula:\n\n$\\binom{15}{2} = \\frac{15!}{2!(15-2)!}$\n\n**Part 3: Simplifying the Factorials**\n\n* 15! = 15 * 14 * 13 * 12 * 11 * 10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1\n* 2! = 2 * 1 = 2\n* 13! = 13 * 12 * 11 * 10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1\n\nNotice that 13! appears in both the numerator and denominator, so we can cancel them out:\n\n$\\binom{15}{2} = \\frac{15 * 14}{2 * 1}$\n\n**Part 4: Final Calculation**\n\n$\\binom{15}{2} = \\frac{210}{2} = 105$\n\n**Solution:**  Therefore, $\\binom{15}{2} = 105$. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9092526690391459
+            }
+        }
+    }
+}

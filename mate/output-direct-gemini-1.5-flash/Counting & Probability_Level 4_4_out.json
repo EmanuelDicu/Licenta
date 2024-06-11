@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 4_4.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 4",
+        "problem": "In how many ways can I place 5 different beads on a bracelet if rotations and flips of the bracelet are not treated as different arrangements?",
+        "correct_solution": "There are $5!$ ways to arrange 5 beads in a line.  Since there are 5 rotations in a circle for each of these arrangements, we must divide by 5, and since there are two matching reflections for each arrangement, we must divide by 2.  So there are $\\dfrac{5!}{5 \\times 2} = \\boxed{12}$ ways.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve this problem, breaking it down into manageable parts:\n\n**Understanding the Problem**\n\n* **Beads:** We have 5 distinct beads, meaning each is unique (e.g., red, blue, green, yellow, purple).\n* **Bracelet:**  The beads are arranged in a circle, forming a bracelet.\n* **Rotations & Flips:**  Rotating the bracelet or flipping it over doesn't create a new arrangement.  We only count distinct arrangements where the beads themselves are in different positions.\n\n**Solution Strategy**\n\n1. **Linear Arrangements:**  Start by thinking about how many ways you could arrange the 5 beads in a straight line. This is a basic permutation problem.\n2. **Circular Arrangements:**  Now, we need to adjust for the fact that the bracelet is circular.  Rotations are the same arrangement. We'll divide our initial count by something to account for this.\n3. **Flip Adjustments:**  Finally, we need to address that flipping the bracelet doesn't change the arrangement.  We'll divide our count again to correct for this.\n\n**Step-by-Step Solution**\n\n1. **Linear Arrangements:**\n    * For the first position in the line, we have 5 bead choices.\n    * For the second position, we have 4 beads left, and so on.\n    * Therefore, there are 5! (5 factorial) ways to arrange the beads in a line: 5 * 4 * 3 * 2 * 1 = 120.\n\n2. **Circular Arrangements:**\n    * In a circle, each arrangement can be rotated 5 times to produce the same pattern.  For example, if you have beads in order A, B, C, D, E, rotating it gives you the same arrangement.\n    * So, we divide the linear count by 5: 120 / 5 = 24.\n\n3. **Flip Adjustments:**\n    * Flipping the bracelet creates a mirrored image.  If the original arrangement is not symmetrical, the flipped version is a distinct arrangement.  Since the bracelet has an odd number of beads, each arrangement has a unique mirrored version.\n    * We need to divide our count by 2 to account for these mirrored duplicates: 24 / 2 = 12.\n\n**Answer**\n\nThere are **12** distinct ways to place 5 different beads on a bracelet, considering rotations and flips. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.88374336710082
+            }
+        }
+    }
+}

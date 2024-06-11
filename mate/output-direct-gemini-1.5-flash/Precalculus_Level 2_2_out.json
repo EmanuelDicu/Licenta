@@ -1,0 +1,18 @@
+{
+    "Precalculus_Level 2_2.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 2",
+        "problem": "If $\\tan \\theta = 7,$ then find $\\tan 2 \\theta.$",
+        "correct_solution": "From the double angle formula,\n\\[\\tan 2 \\theta = \\frac{2 \\tan \\theta}{1 - \\tan^2 \\theta} = \\boxed{-\\frac{7}{24}}.\\]",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve the problem:\n\n**Understanding the Problem**\n\n* **Double Angle Formula:** We need to use the double angle formula for tangent, which is:\n   \n   ```\n   tan 2\u03b8 = (2 tan \u03b8) / (1 - tan\u00b2 \u03b8)\n   ```\n\n* **Given Information:** We know the value of `tan \u03b8` (which is 7).\n\n**Breaking Down the Solution**\n\n1. **Substitute:** We substitute the value of `tan \u03b8` into the double angle formula:\n\n   ```\n   tan 2\u03b8 = (2 * 7) / (1 - 7\u00b2)\n   ```\n\n2. **Simplify:**  Simplify the expression:\n\n   ```\n   tan 2\u03b8 = 14 / (-48)\n   ```\n\n3. **Final Result:** Reduce the fraction to its simplest form:\n\n   ```\n   tan 2\u03b8 = -7/24 \n   ```\n\n**Therefore, the solution to the problem is:  tan 2\u03b8 = -7/24** \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.888243831640058
+            }
+        }
+    }
+}
