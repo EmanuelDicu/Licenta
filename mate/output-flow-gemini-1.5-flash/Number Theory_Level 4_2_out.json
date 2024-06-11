@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 4_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 4",
+        "problem": "What integer $n$ satisfies $0\\le n<18$ and $$n\\equiv -11213141\\pmod{18}~?$$",
+        "correct_solution": "An integer is divisible by $18$ if and only if the sum of its digits is divisible by $9$ and the last digit is even (meaning it is divisible by both 9 and 2).  The sum of the digits of $-11213141$ is 14.  Since $-11213141$ is negative, this number is 5 $\\textit{less than}$ a multiple of 9.  The number is 4 $\\textit{more than}$ a multiple of 9.  Subtracting 4 gives  \\[-11213141 = -11213145+4.\\]Since $-11213145$ has a digit sum of 18, this number is a multiple of 9.  However this is not a multiple of 18 so we need to subtract 9 again: \\[-11213141 = -11213154+13.\\]Now the number $-11213154$ is a multiple of 18, so the answer is $\\boxed{13}$. $$-11213141\\equiv 13\\pmod {18}.$$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Step 1: Simplify the congruence**\n\nWe can simplify the given congruence by finding the remainder when $-11213141$ is divided by 18.  Since $-11213141 = -18(623452) - 13$, we have \n\\[-11213141 \\equiv -13 \\equiv 5 \\pmod{18}.\\]Therefore, the congruence becomes\n\\[n \\equiv 5 \\pmod{18}.\\]\n\n**Step 2: Find the solution within the specified range**\n\nThe congruence $n \\equiv 5 \\pmod{18}$ means $n$ leaves a remainder of 5 when divided by 18.  Since $0 \\le n < 18$, the only possible value of $n$ is $\\boxed{5}$."
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7544117647058823
+            }
+        }
+    }
+}

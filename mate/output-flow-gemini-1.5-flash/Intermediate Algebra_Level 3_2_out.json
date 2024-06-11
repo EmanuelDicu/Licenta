@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 3_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 3",
+        "problem": "Find the complex number $z$ so that $z + |z| = 2 + 8i.$",
+        "correct_solution": "Let $z = a + bi.$  Then\n\\[a + bi + \\sqrt{a^2 + b^2} = 2 + 8i.\\]Equating the imaginary parts, we get $b = 8.$  Equating the real parts, we get $a + \\sqrt{a^2 + 64} = 2.$  Then\n\\[\\sqrt{a^2 + 64} = 2 - a.\\]Squaring both sides, we get $a^2 + 64 = (2 - a)^2 = a^2 - 4a + 4.$  Solving, we find $a = -15.$  Therefore, $z = \\boxed{-15 + 8i}.$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Let $z = a + bi$, where $a$ and $b$ are real numbers.  Then $|z| = \\sqrt{a^2 + b^2}$, so\n\\[a + bi + \\sqrt{a^2 + b^2} = 2 + 8i.\\]Equating real and imaginary parts, we get\n\\begin{align*}\na + \\sqrt{a^2 + b^2} &= 2, \\\\\nb &= 8.\n\\end{align*}From the first equation, $\\sqrt{a^2 + b^2} = 2 - a$.  Squaring both sides, we get\n\\[a^2 + b^2 = 4 - 4a + a^2.\\]Then $b^2 = 4 - 4a$, so $64 = 4 - 4a$.  Hence, $a = -15$.  Therefore, $z = \\boxed{-15 + 8i}$."
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": false,
+                "Same result": true,
+                "Levenshtein distance value": 0.4783599088838269
+            }
+        }
+    }
+}

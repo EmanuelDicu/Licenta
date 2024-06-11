@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 5_4.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 5",
+        "problem": "On a number line, the coordinates of $P$ and $Q$ are 8 and 48, respectively. The midpoint of $\\overline{PQ}$ is $B$, the midpoint of $\\overline{BQ}$ is $C$, and the midpoint of $\\overline{PC}$ is $D$. What is the coordinate of $D$?",
+        "correct_solution": "Since $B$ is midpoint of $\\overline{PQ}$, the coordinate of $B$ is $(8+48)/2 = 4+24 = 28$.  Since $C$ is the midpoint of $\\overline{BQ}$, the coordinate of $C$ is $(28+48)/2 = 14+24=38$.  Since $D$ is the midpoint of $\\overline{PC}$, the coordinate of $D$ is $(8+38)/2 = 4 + 19 = \\boxed{23}$.\n\n[asy]\npair P, Q, B, C, D;\n\nP = (8,0);\nQ = (48,0);\nB = (P+Q)/2;\nC = (B+Q)/2;\nD = (P+C)/2;\n\ndot(P);\ndot(Q);\ndot(B);\ndot(C);\ndot(D);\n\ndraw(P--Q);\nlabel(\"$P$\",P,S);\nlabel(\"$Q$\",Q,S);\nlabel(\"$B$\",B,S);\nlabel(\"$C$\",C,S);\nlabel(\"$D$\",D,S);\n[/asy]",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**1. Find the coordinate of point B:**\n\nSince B is the midpoint of PQ, its coordinate is the average of the coordinates of P and Q:\n\nCoordinate of B = (Coordinate of P + Coordinate of Q) / 2 = (8 + 48) / 2 = 28\n\n**2. Find the coordinate of point C:**\n\nSimilarly, C is the midpoint of BQ, so its coordinate is the average of the coordinates of B and Q:\n\nCoordinate of C = (Coordinate of B + Coordinate of Q) / 2 = (28 + 48) / 2 = 38\n\n**3. Find the coordinate of point D:**\n\nFinally, D is the midpoint of PC, so its coordinate is the average of the coordinates of P and C:\n\nCoordinate of D = (Coordinate of P + Coordinate of C) / 2 = (8 + 38) / 2 = 23\n\n**Therefore, the coordinate of point D is  \\boxed{23}.**"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7595473833097596
+            }
+        }
+    }
+}

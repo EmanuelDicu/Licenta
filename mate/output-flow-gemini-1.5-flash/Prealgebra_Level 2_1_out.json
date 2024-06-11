@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 2_1.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 2",
+        "problem": "Sarah, James, and Matthew are on a team in a game show. In the game, Sarah always earns 5 points, Matthew always earns -2 points, and James always earns 3 points. To calculate their team's score, they multiply the first person's score by the second person's score, then subtract the third person's score. If they can choose the order in which they play the game, what is the maximum possible score that their team can earn?",
+        "correct_solution": "If we let the first, second, and third persons' score equal $a$, $b$, and $c$ respectively, then their team's score is $((a \\cdot b)-c)$.  We may test all six possible orderings:\n$a = 5$, $b = -2$, $c = 3 \\rightarrow ((5 \\cdot (-2)) - 3) = -13$\n$a = -2$, $b = 5$, $c = 3 \\rightarrow (((-2) \\cdot 5) - 3) = -13$\n$a = 5$, $b = 3$, $c = -2 \\rightarrow ((5 \\cdot 3) - (-2)) = 17$\n$a = 3$, $b = 5$, $c = -2 \\rightarrow ((3 \\cdot 5) - (-2)) = 17$\n$a = 3$, $b = -2$, $c = 5 \\rightarrow ((3 \\cdot (-2)) - 5) = -11$\n$a = -2$, $b = 3$, $c = 5 \\rightarrow (((-2) \\cdot 3) - 5) = -11$\nThus, our total answer is $\\boxed{17}$\nAdditionally, we may note that the only way to obtain a positive answer is to multiply the two positive scores together and subtract the negative score.  Because multiplication is commutative, the order of $a$ and $b$ does not matter, and we need only compute the single case $(3 \\cdot 5) - (-2) = \\boxed{17}$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "## Step-by-Step Solution:\n\n1. **Identify the possible orders:** There are 3! (3 factorial) ways to arrange the three players, which is 3 * 2 * 1 = 6. \n    * Sarah-James-Matthew\n    * Sarah-Matthew-James\n    * James-Sarah-Matthew\n    * James-Matthew-Sarah\n    * Matthew-Sarah-James\n    * Matthew-James-Sarah\n\n2. **Calculate the score for each order:** \n    * **Sarah-James-Matthew:** (5 * 3) - (-2) = 15 + 2 = 17\n    * **Sarah-Matthew-James:** (5 * -2) - 3 = -10 - 3 = -13\n    * **James-Sarah-Matthew:** (3 * 5) - (-2) = 15 + 2 = 17\n    * **James-Matthew-Sarah:** (3 * -2) - 5 = -6 - 5 = -11\n    * **Matthew-Sarah-James:** (-2 * 5) - 3 = -10 - 3 = -13\n    * **Matthew-James-Sarah:** (-2 * 3) - 5 = -6 - 5 = -11\n\n3. **Compare the scores:** The highest score achieved is 17, which occurs in two orders: Sarah-James-Matthew and James-Sarah-Matthew.\n\n4. **Conclusion:** The maximum possible score the team can earn is **17**.\n\n**Final Answer:** \\boxed{17}"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7957894736842105
+            }
+        }
+    }
+}

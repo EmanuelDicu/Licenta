@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 3_2.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 3",
+        "problem": "Three vertices of a cube are $P=(7,12,10)$, $Q=(8,8,1)$, and $R=(11,3,9)$. What is the side length of the cube?",
+        "correct_solution": "We compute \\[\\begin{aligned} PQ &= \\sqrt{(7-8)^2 + (12-8)^2 + (10-1)^2} = 7\\sqrt{2}, \\\\ QR &= \\sqrt{(8-11)^2 + (8-3)^2 + (1-9)^2} = 7\\sqrt{2}, \\\\ PR &= \\sqrt{(7-11)^2 + (12-3)^2 + (10-9)^2} = 7\\sqrt{2}. \\end{aligned}\\]Thus, $PQR$ is an equilateral triangle made from three vertices of a cube. It follows that each side of $PQR$ must be a face diagonal of the cube, so the side length of the cube is $\\boxed{7}.$\n[asy]\nimport three;\ntriple A=(0,0,0),B=(0,0,1),C=(0,1,1),D=(0,1,0),E=A+(1,0,0),F=B+(1,0,0),G=C+(1,0,0),H=D+(1,0,0);\ndraw(A--B--C--D--A^^E--F--G--H--E^^A--E^^B--F^^C--G^^D--H);\ndraw(B--D--E--B,dashed);\nlabel(\"$P$\",B,N);\nlabel(\"$Q$\",D,SE);\nlabel(\"$R$\",E,SW);\n[/asy]",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Solution:**\n\nSince $P$, $Q$, and $R$ are vertices of a cube, we know that $\\overline{PQ}$, $\\overline{QR}$, and $\\overline{RP}$ are face diagonals of the cube.  Let $s$ be the side length of the cube.  Then by the Pythagorean Theorem on the right triangle formed by two adjacent edges of the cube and a face diagonal, we have $s^2 + s^2 = (\\overline{PQ})^2$.  Similarly, $(\\overline{QR})^2 = s^2 + s^2$ and $(\\overline{RP})^2 = s^2 + s^2$.\n\nWe have $\\overline{PQ} = \\sqrt{(8-7)^2 + (8-12)^2 + (1-10)^2} = \\sqrt{1 + 16 + 81} = \\sqrt{98}$.  Thus, $2s^2 = 98$, so $s^2 = 49$ and $s = \\boxed{7}$.\n\n[asy]\nimport three;\n\nsize(180);\ncurrentprojection = perspective(6,3,2);\n\ntriple I = (1,0,0), J = (0,1,0), K = (0,0,1);\ntriple P = (7,12,10), Q = (8,8,1), R = (11,3,9);\n\ndraw(surface((P + 2*I + 2*J)--(P + 2*I + 2*K)--(P + 2*K)--(P + 2*J)--cycle),paleyellow,nolight);\ndraw((P + 2*I + 2*J)--(P + 2*I + 2*K)--(P + 2*K)--(P + 2*J)--cycle);\ndraw(surface((P + 2*I)--(P + 2*I + 2*J)--(P + 2*J)--(P)--cycle),paleyellow,nolight);\ndraw((P + 2*I)--(P + 2*I + 2*J)--(P + 2*J)--(P)--cycle);\ndraw(surface((P + 2*J)--(P + 2*J + 2*K)--(P + 2*K)--(P)--cycle),paleyellow,nolight);\ndraw((P + 2*J)--(P + 2*J + 2*K)--(P + 2*K)--(P)--cycle);\ndraw((P)--(P + 2*I)--(P + 2*I + 2*J)--(P + 2*J)--cycle);\ndraw((P + 2*I)--(P + 2*I + 2*K)--(P + 2*K)--(P)--cycle);\ndraw((P + 2*J)--(P + 2*J + 2*K)--(P + 2*K)--(P)--cycle);\ndraw((P + 2*I)--(P + 2*I + 2*J)--(P + 2*J)--(P + 2*I + 2*K)--(P + 2*K)--cycle);\n\ndraw(P--Q,Arrow3(6));\ndraw(Q--R,Arrow3(6));\ndraw(R--P,Arrow3(6));\n\nlabel(\"$P$\", P, N);\nlabel(\"$Q$\", Q, W);\nlabel(\"$R$\", R, E);\n[/asy]"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.81125
+            }
+        }
+    }
+}

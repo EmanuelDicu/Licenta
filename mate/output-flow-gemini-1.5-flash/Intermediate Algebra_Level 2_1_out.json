@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 2_1.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 2",
+        "problem": "Two reals $x$ and $y$ are such that $x-y=4$ and $x^3-y^3=28$. Compute $xy$.",
+        "correct_solution": "We have $28=x^3-y^3=(x-y)(x^2+xy+y^2)=(x-y)((x-y)^2+3xy)=4\\cdot (16+3xy)$, from which $xy=\\boxed{-3}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "## Solution:\n\nWe can factor the difference of cubes: $x^3 - y^3 = (x-y)(x^2 + xy + y^2)$.  Substituting the given values, we have:\n\n$28 = 4(x^2 + xy + y^2)$\n\nDividing both sides by 4, we get:\n\n$7 = x^2 + xy + y^2$\n\nNow, we can square the equation $x-y=4$:\n\n$(x-y)^2 = 4^2$\n\nExpanding the left side gives:\n\n$x^2 - 2xy + y^2 = 16$\n\nWe can now add $2xy$ to both sides of this equation and substitute the value of $x^2 + y^2$ from the previous equation:\n\n$x^2 + y^2 = 16 + 2xy$\n\n$7 = 16 + 2xy$\n\nSolving for $xy$, we get:\n\n$2xy = -9$\n\nTherefore, $xy = \\boxed{-\\frac{9}{2}}$."
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8611599297012302
+            }
+        }
+    }
+}

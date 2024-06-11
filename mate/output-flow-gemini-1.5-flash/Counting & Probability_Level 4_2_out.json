@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 4_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 4",
+        "problem": "A 6-sided die is weighted so that the probability of any number being rolled is proportional to the value of the roll.  (So, for example, the probability of a 2 being rolled is twice that of a 1 being rolled.)  What is the expected value of a roll of this weighted die?  Express your answer as a common fraction.",
+        "correct_solution": "Let $x$ be the probability that a 1 is rolled.  Then the probability that a 2 is rolled is $2x$, the probability that a 3 is rolled is $3x$, and so on.  Since the sum of all these probabilities must be 1, we have that $x + 2x + \\cdots + 6x = 1$, which means that $21x = 1$, so $x = \\frac{1}{21}$.  Therefore \\[ E = \\frac{1}{21}(1) + \\frac{2}{21}(2) + \\cdots + \\frac{6}{21}(6) = \\frac{1^2 + 2^2 + \\cdots 6^2}{21} = \\boxed{\\frac{13}{3}}. \\]",
+        "generated_solutions": {
+            "gemini-1.5-flash": "## Step-by-Step Solution:\n\n**1.  Define Probabilities:**\n\n* Let the probability of rolling a 1 be *p*.\n* Since the probabilities are proportional to the numbers, the probability of rolling a 2 is *2p*, the probability of rolling a 3 is *3p*, and so on.\n\n**2.  Sum of Probabilities:**\n\n* The sum of the probabilities of all possible outcomes must equal 1. \n* This gives us the equation:  *p + 2p + 3p + 4p + 5p + 6p = 1*\n\n**3.  Solve for *p***:\n\n* Combine like terms: *21p = 1*\n* Divide both sides by 21: *p = 1/21*\n\n**4.  Calculate Expected Value:**\n\n* The expected value of a roll is the sum of the products of each outcome and its probability.\n* Expected value = (1 * (1/21)) + (2 * (2/21)) + (3 * (3/21)) + (4 * (4/21)) + (5 * (5/21)) + (6 * (6/21))\n\n**5.  Simplify:**\n\n* Expected value = (1 + 4 + 9 + 16 + 25 + 36)/21\n* Expected value = 91/21\n\n**6.  Reduce to Simplest Form:**\n\n* Expected value = **\\boxed{\\frac{13}{3}}**"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7243243243243244
+            }
+        }
+    }
+}

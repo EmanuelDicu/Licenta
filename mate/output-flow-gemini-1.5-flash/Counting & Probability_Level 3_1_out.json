@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 3_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 3",
+        "problem": "What is the tens digit in the sum $7! + 8! + 9! + \\cdots + 2006!$?",
+        "correct_solution": "Since $n!$ contains the product $2\\cdot5\\cdot10= 100$ whenever $n\\ge 10$,  it suffices to determine the tens digit of \\[\n7! + 8! + 9! = 7!(1 + 8 + 8\\cdot9) = 5040(1 + 8 + 72)= 5040\\cdot81.\n\\]This  is the same as the units digit of $4\\cdot 1$, which is $\\boxed{4}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Solution:**\n\nNotice that for any $n\\ge 10$, the factorial $n!$ is divisible by 100. This is because $n!$ contains the factors 10 and 2, and therefore contains the factor 20. \n\nTherefore, $10!, 11!, 12!, \\ldots, 2006!$ all leave a remainder of 0 when divided by 100.  \n\nNow we just need to consider $7! + 8! + 9!$.  \n\nWe can calculate these directly:\n\n\\begin{align*}\n7! &= 7\\cdot6\\cdot5\\cdot4\\cdot3\\cdot2\\cdot1 = 5040 \\\\\n8! &= 8\\cdot7\\cdot6\\cdot5\\cdot4\\cdot3\\cdot2\\cdot1 = 40320 \\\\\n9! &= 9\\cdot8\\cdot7\\cdot6\\cdot5\\cdot4\\cdot3\\cdot2\\cdot1 = 362880 \n\\end{align*}\n\nAdding these gives us $7! + 8! + 9! = 408240$.  The tens digit of this sum is $\\boxed{4}$."
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7718223583460949
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 5_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 5",
+        "problem": "Suppose that $a$ is a positive integer for which the least common multiple of $a+1$ and $a-5$ is $10508$. What is $a^2 - 4a + 1$?",
+        "correct_solution": "Notice that $(a+1)(a-5) = a^2 - 4a - 5$, so $a^2 - 4a + 1 = (a+1)(a-5) + 6$.\n\nAlso, we know that by the Euclidean algorithm, the greatest common divisor of $a+1$ and $a-5$ divides $6$: \\begin{align*}\n\\text{gcd}\\,(a+1, a-5) &= \\text{gcd}\\,(a+1-(a-5),a-5)\\\\\n&= \\text{gcd}\\,(6,a-5).\n\\end{align*}As $10508$ is even but not divisible by $3$, for the sum of the digits of $10508$ is $1 + 5 + 8 = 14$, it follows that the greatest common divisor of $a+1$ and $a-5$ must be $2$.\n\nFrom the identity $xy = \\text{lcm}\\,(x,y) \\cdot \\text{gcd}\\,(x,y)$ (consider the exponents of the prime numbers in the prime factorization of $x$ and $y$), it follows that \\begin{align*}\n(a+1)(a-5) &= \\text{lcm}\\,(a+1,a-5) \\cdot \\text{gcd}\\,(a+1, a-5) \\\\\n&= 2 \\cdot 10508.\n\\end{align*}Thus, the desired answer is $2 \\cdot 10508 + 6 = \\boxed{21022}.$\n\nWith a bit more work, we can find that $a = 147$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "## Step-by-step solution:\n\n1. **Prime factorize the LCM:** \n   The least common multiple (LCM) of $(a+1)$ and $(a-5)$ is 10508. Let's find its prime factorization: \n   \n   10508 = 2\u00b2 * 3 * 11 * 79\n\n2. **Relate factors to (a+1) and (a-5):** \n   Since the LCM is the product of the highest powers of all prime factors present in both (a+1) and (a-5), we can infer the following:\n   \n   *  At least one of (a+1) and (a-5) must be divisible by 2\u00b2.\n   *  At least one of (a+1) and (a-5) must be divisible by 3.\n   *  At least one of (a+1) and (a-5) must be divisible by 11.\n   *  At least one of (a+1) and (a-5) must be divisible by 79.\n\n3. **Analyze divisibility:**\n   * Notice that (a+1) and (a-5) differ by 6. \n   * If one of them is divisible by 3, the other must also be divisible by 3.\n   * However, only one of them can be divisible by 2\u00b2 (4), because otherwise, their difference would be divisible by 4, which is not the case (6 is not divisible by 4).\n   * Similarly, only one of them can be divisible by 11, and only one of them can be divisible by 79.\n\n4. **Find possible values of a:** \n   *  Let's try different combinations of prime factors for (a+1) and (a-5), keeping in mind the above observations. \n   *  Since (a+1) and (a-5) differ by 6, we need to find pairs of factors of 10508 that differ by 6.\n   * The only pair of factors that satisfies this condition is 79 and 85.\n   * Therefore, either (a+1) = 79 and (a-5) = 85, or (a+1) = 85 and (a-5) = 79.\n   * Solving both cases, we get a = 78 or a = 84.\n\n5. **Calculate a\u00b2 - 4a + 1:**\n   * For a = 78:  a\u00b2 - 4a + 1 = 78\u00b2 - 4 * 78 + 1 = 6084 - 312 + 1 = 5773\n   * For a = 84:  a\u00b2 - 4a + 1 = 84\u00b2 - 4 * 84 + 1 = 7056 - 336 + 1 = 6721\n\n6. **Final Answer:**\n   Therefore, the possible values for  $a^2 - 4a + 1$ are $\\boxed{5773}$ and $\\boxed{6721}$."
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7782079646017699
+            }
+        }
+    }
+}

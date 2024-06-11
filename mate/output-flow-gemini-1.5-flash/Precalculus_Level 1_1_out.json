@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 1_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 1",
+        "problem": "Compute $\\arccos \\left( -\\frac{1}{2} \\right).$  Express your answer in radians.",
+        "correct_solution": "Since $\\cos \\frac{2 \\pi}{3} = -\\frac{1}{2},$ $\\arccos \\left( -\\frac{1}{2} \\right) = \\boxed{\\frac{2 \\pi}{3}}.$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Solution:**\n\nWe know that $\\cos 60^\\circ = \\frac{1}{2}.$  Since the cosine function is even, $\\cos (-60^\\circ) = \\frac{1}{2}$ as well.  The angle $-60^\\circ$ is in the fourth quadrant, so its cosine is positive.  The angle in the second quadrant with cosine $-\\frac{1}{2}$ is $-60^\\circ + 180^\\circ = 120^\\circ.$  In radians, this is $120^\\circ \\cdot \\frac{\\pi}{180^\\circ} = \\boxed{\\frac{2 \\pi}{3}}.$\n\n[asy]\nunitsize(1 cm);\n\npair A, B, C, O;\n\nO = (0,0);\nA = dir(120);\nB = dir(240);\nC = dir(0);\n\ndraw(Circle(O,1));\ndraw(O--A);\ndraw(O--B);\ndraw(O--C);\n\nlabel(\"$\\frac{2 \\pi}{3}$\", (O + A)/2, N);\nlabel(\"$-\\frac{1}{2}$\", (O + B)/2, SW);\nlabel(\"$\\frac{1}{2}$\", (O + C)/2, SE);\n[/asy]"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8632352941176471
+            }
+        }
+    }
+}

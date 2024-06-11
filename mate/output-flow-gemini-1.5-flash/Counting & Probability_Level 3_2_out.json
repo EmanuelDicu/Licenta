@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 3_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 3",
+        "problem": "There are 30 men and 40 women in the Town Library Club.  They wish to form a 7-person steering committee with 3 men and 4 women.  In how many ways can they form the committee?",
+        "correct_solution": "In this problem, we're really selecting two separate committees.  We can choose 3 men from the 30 men total in $$ \\binom{30}{3} = \\frac{30 \\times 29 \\times 28}{3 \\times 2 \\times 1} = 4,\\!060 $$ways, and 4 women from the 40 women total in $$ \\binom{40}{4} = \\frac{40 \\times 39 \\times 38 \\times 37}{4 \\times 3 \\times 2 \\times 1} = 91,\\!390 $$ways.  Since these two selections are independent (since for each of the $4,\\!060$ ways to pick the men, there are $91,\\!390$ ways to pick the women), we multiply them together to get the number of ways that we can form the 7-member overall committee: $$ \\binom{30}{3}\\binom{40}{4} = (4,\\!060)(91,\\!390) = \\boxed{371,\\!043,\\!400}. $$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Step 1: Choosing the men**\n\nWe need to choose 3 men out of 30. This is a combination problem, as the order in which we choose the men doesn't matter. The number of ways to choose 3 men out of 30 is:\n\n\u00b3\u2070C\u2083 = (30!)/(3! * 27!) = (30 * 29 * 28) / (3 * 2 * 1) = 4060\n\n**Step 2: Choosing the women**\n\nSimilarly, we need to choose 4 women out of 40. The number of ways to do this is:\n\n\u2074\u2070C\u2084 = (40!)/(4! * 36!) = (40 * 39 * 38 * 37) / (4 * 3 * 2 * 1) = 91390\n\n**Step 3: Combining the choices**\n\nFor each way we can choose the men, we have a corresponding way to choose the women. To get the total number of ways to form the committee, we multiply the number of ways to choose the men by the number of ways to choose the women:\n\n4060 * 91390 = **370,263,400**\n\n**Therefore, there are 370,263,400 ways to form the committee.** \n\n**Answer:**  \\boxed{370,263,400}"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7147887323943662
+            }
+        }
+    }
+}

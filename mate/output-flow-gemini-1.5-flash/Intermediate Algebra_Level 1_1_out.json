@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 1_1.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 1",
+        "problem": "Let $a,$ $b,$ and $c$ be the roots of $x^3 - 3x - 5 = 0.$  Find $abc.$",
+        "correct_solution": "By Vieta's formulas, $abc = \\boxed{5}.$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Step 1: Recall Vieta's Formulas**\n\nVieta's formulas relate the coefficients of a polynomial to the sums and products of its roots. For a cubic polynomial of the form $ax^3 + bx^2 + cx + d = 0$, the following relationships hold:\n\n* **Sum of roots:**  $a + b + c = -\\frac{b}{a}$\n* **Sum of pairwise products of roots:** $ab + ac + bc = \\frac{c}{a}$\n* **Product of roots:** $abc = -\\frac{d}{a}$\n\n**Step 2: Apply Vieta's Formulas to the Given Equation**\n\nOur equation is $x^3 - 3x - 5 = 0$.  Comparing this to the general form, we have $a = 1$, $b = 0$, $c = -3$, and $d = -5$.\n\n**Step 3: Find the Product of the Roots**\n\nUsing Vieta's formula for the product of roots, we have:\n\n$abc = -\\frac{d}{a} = -\\frac{-5}{1} = \\boxed{5}$."
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.9504814305364512
+            }
+        }
+    }
+}

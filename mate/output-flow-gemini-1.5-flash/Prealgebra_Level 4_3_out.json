@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 4_3.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 4",
+        "problem": "Suppose 6 wallops = 5 ballops. Also suppose 3 ballops = 11 fallops. How many wallops are equivalent to 110 fallops?",
+        "correct_solution": "Multiply  \\[\n3\\text{ ballops}=11\\text{ fallops}\n\\] by 10 to find that $30$ ballops are equal to $110$ fallops.  Then multiply  \\[\n6\\text{ wallops} = 5\\text{ ballops}\n\\] by 6 to find that $\\boxed{36}$ wallops are equivalent to 30 ballops.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "**Step 1: Find the equivalence between wallops and fallops.**\n\nWe know that 6 wallops = 5 ballops and 3 ballops = 11 fallops. To find the equivalence between wallops and fallops, we need to find a common unit. We can do this by finding how many fallops are equivalent to one ballop:\n\n* 3 ballops = 11 fallops\n* 1 ballop = 11 fallops / 3 = 3.67 fallops (approximately)\n\nNow we can find how many fallops are equivalent to one wallop:\n\n* 6 wallops = 5 ballops\n* 1 wallop = 5 ballops / 6 = 0.83 ballops (approximately)\n* 1 wallop = 0.83 ballops * 3.67 fallops/ballops = 3.05 fallops (approximately)\n\n**Step 2: Calculate how many wallops are equivalent to 110 fallops.**\n\nWe know that 1 wallop is equivalent to approximately 3.05 fallops.  To find how many wallops are equivalent to 110 fallops, we can divide:\n\n* 110 fallops / 3.05 fallops/wallop = **36.07 wallops (approximately)**\n\n**Final Answer:**  \\boxed{36.07} wallops are equivalent to 110 fallops."
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8138801261829653
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 4_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 4",
+        "problem": "What is the value of $x$ for which $$\\sqrt{x + \\sqrt{x + \\sqrt{x + \\ldots}}} = 5?$$",
+        "correct_solution": "Squaring both sides of the given equation yields $$x + \\sqrt{x + \\sqrt{x + \\ldots}} = 25,$$ so $$\\sqrt{x + \\sqrt{x + \\ldots}} = 25-x.$$ We already know the value of the left-hand side to be equal to $5$. Thus, $5 = 25-x$, and $x = \\boxed{20}.$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "## Step-by-Step Solution:\n\n1. **Understanding the Infinite Nested Radical:**\n   The given expression represents an infinite nested radical, which means the pattern of taking the square root of *x* plus the square root of *x* plus... continues indefinitely. \n\n2. **Setting Up an Equation:**\n   Let's represent the entire infinite nested radical as *y*.  Then we have:\n   $$y = \\sqrt{x + \\sqrt{x + \\sqrt{x + \\ldots}}}$$\n\n3. **Recognizing the Pattern:**\n   Notice that the expression inside the outermost square root is also equal to *y*. Therefore, we can rewrite the equation as:\n   $$y = \\sqrt{x + y}$$\n\n4. **Solving for *y*:**\n   To solve for *y*, we'll square both sides of the equation:\n   $$y^2 = x + y$$\n   Rearranging the terms, we get a quadratic equation:\n   $$y^2 - y - x = 0$$\n\n5. **Solving the Quadratic Equation:**\n   Using the quadratic formula, we can find the solutions for *y*:\n   $$y = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$$\n   where *a* = 1, *b* = -1, and *c* = -*x*.\n\n   Substituting the values, we get:\n   $$y = \\frac{1 \\pm \\sqrt{1 + 4x}}{2}$$\n\n6. **Considering the Context:**\n   Since the problem involves a square root, we need to consider only the positive value of *y*.  Therefore, we have:\n   $$y = \\frac{1 + \\sqrt{1 + 4x}}{2}$$\n\n7. **Relating *y* to the Original Problem:**\n   Remember that we initially defined *y* as the infinite nested radical, which we know is equal to 5. So, we can set *y* = 5 and solve for *x*:\n   $$5 = \\frac{1 + \\sqrt{1 + 4x}}{2}$$\n\n8. **Solving for *x*:**\n   Multiply both sides by 2:\n   $$10 = 1 + \\sqrt{1 + 4x}$$\n   Subtract 1 from both sides:\n   $$9 = \\sqrt{1 + 4x}$$\n   Square both sides:\n   $$81 = 1 + 4x$$\n   Subtract 1 from both sides:\n   $$80 = 4x$$\n   Divide both sides by 4:\n   $$x = 20$$\n\nTherefore, the value of *x* that satisfies the equation is  \\boxed{20}."
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.889132821075741
+            }
+        }
+    }
+}

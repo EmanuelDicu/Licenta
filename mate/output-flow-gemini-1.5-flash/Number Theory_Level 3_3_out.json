@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 3_3.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 3",
+        "problem": "What is the smallest whole number $b$ such that 47 can be expressed in base $b$ using only two digits?",
+        "correct_solution": "For 47 to be expressed in two digits in base $b$, $47 < 100_b = 1 \\cdot b^2$.  So $\\! \\sqrt{47} < b$, which means the smallest whole number $b$ can be is $\\boxed{7}$.  We can check to be sure: $47 = 65_7 = 115_6$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "## Solution:\n\nSince we need to represent 47 using only two digits in base *b*, let's assume these digits are *x* and *y*, where *x* is the digit in the units place and *y* is the digit in the *b*s place.\n\nTherefore, we can write:\n\n47 = *x* + *y* *b*\n\nNow, since we are dealing with base *b*, both *x* and *y* must be less than *b*. This implies:\n\n0 \u2264 *x* < *b* and 0 \u2264 *y* < *b*\n\nWe can now try to find the smallest possible value of *b* that satisfies the above conditions.  We can start by trying different values for *y*, keeping in mind that *y* must be less than *b*.\n\nIf *y* = 0, then we have 47 = *x*, which is not possible as *x* must be less than *b*.\n\nIf *y* = 1, then we have 47 = *x* + *b*.  The smallest possible value of *b* in this case would be 46, making *x* = 1. \n\nHowever, we need to find the smallest possible value of *b* that satisfies the conditions.  We can continue trying different values for *y* and see if we can find a smaller value for *b*.\n\nIf *y* = 2, then we have 47 = *x* + 2 * b*. The smallest possible value of *b* in this case would be 23, making *x* = 1.\n\nThis solution satisfies all the given conditions.  Therefore, the smallest whole number *b* such that 47 can be expressed in base *b* using only two digits is:\n\n**\\boxed{23}.**"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8850393700787401
+            }
+        }
+    }
+}
