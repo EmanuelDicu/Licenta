@@ -147,10 +147,32 @@ Answer:
 # Prompt to generate a step-by-step solution for a math problem
 generate_solution_prompt = """
 Help me generate a step-by-step solution for a math problem.
+You MUST not give any additional text that is not part of the solution or relevant to it.
+You MUST provide a single solution, not multiple variations.
 You MUST provide a detailed solution with all the necessary steps.
-You MUST provide the final answer of the problem with \\boxed tag, if it exists.
+You MUST explain  the reasoning behind each step, based only on the provided constraints and the problem text.
+You MUST provide the final answer of the problem with \\\\boxed\{\} tag, if it exists.
 
-Here is the probelma and all the constraints needed to solve it:
+Here is an example:
+Problem:
+A car travels 120 miles in 2 hours. What is the average speed of the car?
+Main constraints:
+*# The car travels a distance of 120 miles
+*# The car travels for 2 hours
+*# The average speed is calculated by dividing the distance traveled by the time taken
+Goal:
+Calculate the average speed of the car based on the distance traveled and the time taken.
+Solution:
+Step 1: 
+The distance traveled by the car is 120 miles.
+Step 2:
+The time taken by the car is 2 hours.
+Step 3:
+Because by dividing the distance by the time, we get the average speed, we have 120 miles / 2 hours = 60 mph.
+Step 4:
+Therefore, the average speed of the car is \\boxed{60 \\text{ mph}}
+
+Here is the probelm and all the constraints needed to solve it:
 Problem:
 {Problem}
 Main constraints:
