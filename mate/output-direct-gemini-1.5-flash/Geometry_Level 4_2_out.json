@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 4_2.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "A circle is circumscribed about an equilateral triangle with side lengths of $6$ units each.  What is the area of the circle, in square units? Express your answer in terms of $\\pi$.",
+        "correct_solution": "[asy]\nsize(100);\ndefaultpen(linewidth(.8));\ndraw((0,0)--(4.5,7.794)--(9,0)--cycle);\ndraw(Circle((4.5,2.598),5.196));\ndraw((4.5,7.794)--(4.5,0));\ndot((4.5,2.598));\nlabel(\"$O$\",(4.5,2.598),W);\nlabel(\"$A$\",(4.5,7.794),N);\nlabel(\"$B$\",(9,0),E);\nlabel(\"$M$\",(4.5,0),S);\n[/asy]\n\nAbove is the diagram implied by the problem, with some added lines ($O$ is the center of the circle). Since $\\triangle AMB$ is a 30-60-90 triangle and $AB=6$, $AM=3\\sqrt{3}$. Since $AO$ is $2/3$ of $AM$, we have $AO=2\\sqrt{3}$. Thus, the area of the circle is $\\pi(2\\sqrt{3})^2=\\boxed{12\\pi}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve the problem step-by-step:\n\n**Part 1: Visualize the problem**\n\n* Draw an equilateral triangle. \n* Imagine a circle drawn around the triangle so that all three vertices of the triangle touch the circle's circumference. This is what it means for a circle to be \"circumscribed\" about a figure.\n\n**Part 2:  Identify key relationships**\n\n* **Radius:** The radius of the circle is the distance from the center of the circle to any of the vertices of the triangle.\n* **Equilateral triangle properties:**  All angles in an equilateral triangle are 60 degrees.  The triangle can be divided into 6 congruent 30-60-90 right triangles. \n* **30-60-90 triangle ratios:** In a 30-60-90 right triangle, the sides are in the ratio 1:\u221a3:2.\n\n**Part 3:  Break down the problem**\n\n1. **Find the height of the equilateral triangle:** \n    * Draw an altitude (a perpendicular line from one vertex to the opposite side) from the top vertex of the triangle to the base. This altitude bisects the base of the triangle, creating two 30-60-90 right triangles.\n    * The base of each 30-60-90 triangle is half the length of the original triangle's side (3 units).\n    * The longer leg of the 30-60-90 triangle is \u221a3 times the shorter leg, so the height of the equilateral triangle is 3\u221a3 units.\n\n2. **Find the radius of the circle:**\n    * The radius of the circle is the hypotenuse of the 30-60-90 triangle.\n    * Since the hypotenuse is twice the length of the shorter leg, the radius is 2 * 3 = 6 units.\n\n**Part 4: Calculate the area of the circle**\n\n* **Area formula:**  The area of a circle is given by  \u03c0 * radius\u00b2\n* **Substitute:**  Area = \u03c0 * (6)\u00b2 = 36\u03c0 square units\n\n**Solution:** The area of the circle is **36\u03c0** square units. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8559861191440139
+            }
+        }
+    }
+}

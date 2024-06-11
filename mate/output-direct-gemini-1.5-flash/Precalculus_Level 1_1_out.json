@@ -1,0 +1,18 @@
+{
+    "Precalculus_Level 1_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 1",
+        "problem": "Compute $\\arccos \\left( -\\frac{1}{2} \\right).$  Express your answer in radians.",
+        "correct_solution": "Since $\\cos \\frac{2 \\pi}{3} = -\\frac{1}{2},$ $\\arccos \\left( -\\frac{1}{2} \\right) = \\boxed{\\frac{2 \\pi}{3}}.$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve the problem:\n\n**Understanding the Problem**\n\n* **Arccosine (arccos):**  The arccosine function (also called inverse cosine) finds the angle whose cosine is a given value.  In other words, if  cos(\u03b8) = x, then arccos(x) = \u03b8.\n* **Radians:** Radians are a unit of measurement for angles.  One radian is the angle subtended at the center of a circle by an arc whose length is equal to the radius of the circle.\n\n**Breaking Down the Problem**\n\n1. **Identify the Angle:** We need to find the angle \u03b8 such that cos(\u03b8) = -1/2.\n2. **Recall the Unit Circle:** The unit circle is a helpful tool for visualizing trigonometric values. It's a circle with radius 1, where angles are measured counterclockwise from the positive x-axis. \n3. **Locate the Angle:**\n    *  The cosine of an angle is represented by the x-coordinate of the point where the angle intersects the unit circle. \n    *  We need to find the point on the unit circle where the x-coordinate is -1/2.\n\n**Solving the Problem**\n\n1. **Unit Circle:** Looking at the unit circle, there are two angles where the x-coordinate is -1/2: \n   *  120\u00b0 (which is equivalent to 2\u03c0/3 radians)\n   *  240\u00b0 (which is equivalent to 4\u03c0/3 radians)\n\n2. **Choosing the Correct Angle:** The arccosine function (arccos) has a restricted range of outputs: 0 \u2264 arccos(x) \u2264 \u03c0.  This means we need to choose the angle between 0 and \u03c0. \n\n3. **Solution:**  Therefore, the angle that satisfies the problem is **2\u03c0/3 radians**.\n\n**Answer:**  arccos(-1/2) = **2\u03c0/3 radians** \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9564068692206077
+            }
+        }
+    }
+}

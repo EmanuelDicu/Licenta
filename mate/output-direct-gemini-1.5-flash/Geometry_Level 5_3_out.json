@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 5_3.json": {
+        "category": "Geometry",
+        "difficulty": "Level 5",
+        "problem": "Four circles of radius 1 are each tangent to two sides of a square and externally tangent to a circle of radius 2, as shown.  What is the area of the square?\n\n[asy]\nunitsize(1cm);draw(Circle((0,0),2));\nfor(int i=0; i<4; ++i) {\n\tdraw(Circle(scale(3)*dir(45+90*i),1));\n\tdraw((3+sqrt(2))*dir(45+90*i)--(3+sqrt(2))*dir(-45+90*i));  \n}\ndraw((0,0)--(2,0));\nlabel(\"2\",(1,0),N);\ndraw(scale(3)*dir(45+90*1)--shift((1,0))*scale(3)*dir(45+90*1));\nlabel(\"1\",point(scale(3)*dir(45+90*1)--shift((1,0))*scale(3)*dir(45+90*1),.5),S);\n[/asy]",
+        "correct_solution": "Let $s$ be the length of a side of the square. Consider an isosceles right triangle with vertices at the centers of the circle of radius 2 and two of the circles of radius 1. This triangle has legs of length 3, so its hypotenuse has length $3\\sqrt{2}$.\n\n[asy]\nunitsize(1cm);\ndraw(Circle((0,0),2));\nfor(int i=0; i<4; ++i) {\n\tdraw(Circle(scale(3)*dir(45+90*i),1));\n\tdraw((3+sqrt(2))*dir(45+90*i)--(3+sqrt(2))*dir(-45+90*i));  \n}\npair A = scale(3)*dir(45), B = scale(3)*dir(45+90);\ndraw(A--B--origin--cycle);\nlabel(\"$1$\", A, SE);\nlabel(\"$1$\", B, SW);\nlabel(\"$2$\", point(origin--A,.3), SE);\nlabel(\"$2$\", point(origin--B,.3), SW);\ndraw(rightanglemark(A,origin,B,5));\n[/asy]\n\nThe length of a side of the square is 2 more than the length of this hypotenuse, so  $s=2 + 3\\sqrt{2}$. Hence the area of the square is \\[\ns^{2}=(2+3\\sqrt{2})^{2}=\\boxed{22+12\\sqrt{2}}.\n\\]",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve the problem step-by-step:\n\n**1. Visualize and Label**\n\n* Draw a diagram if one isn't provided.  Label the center of the large circle as  O and the centers of the smaller circles as A, B, C, and D.  Label a vertex of the square as E.\n\n**2. Focus on a Smaller Shape**\n\n* Consider the right triangle formed by points O, A, and E. This triangle is a key to unlocking the problem.\n\n**3. Use Geometry Relationships**\n\n* **Side Lengths:**  \n    * OA = 2 (radius of the large circle)\n    * AE = 1 + 2 = 3 (radius of a small circle + radius of the large circle)\n\n* **Pythagorean Theorem:**  Since triangle OAE is a right triangle, we can use the Pythagorean theorem:  \n    * OE\u00b2 = OA\u00b2 + AE\u00b2\n    * OE\u00b2 = 2\u00b2 + 3\u00b2 = 13\n\n* **Side of the Square:**  OE is half the diagonal of the square.  The diagonal of the square is 2 * OE = 2\u221a13.  \n\n* **Area of the Square:**  Let s be the side of the square.  We know the diagonal of the square is s\u221a2.  Therefore, \n    * s\u221a2 = 2\u221a13\n    * s = (2\u221a13) / \u221a2 = \u221a26\n\n**4. Calculate the Area**\n\n* The area of the square is s\u00b2 = (\u221a26)\u00b2 = **26**\n\n**Therefore, the area of the square is 26.** \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7617360496014172
+            }
+        }
+    }
+}

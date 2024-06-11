@@ -1,0 +1,18 @@
+{
+    "Number Theory_Level 4_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 4",
+        "problem": "What integer $n$ satisfies $0\\le n<18$ and $$n\\equiv -11213141\\pmod{18}~?$$",
+        "correct_solution": "An integer is divisible by $18$ if and only if the sum of its digits is divisible by $9$ and the last digit is even (meaning it is divisible by both 9 and 2).  The sum of the digits of $-11213141$ is 14.  Since $-11213141$ is negative, this number is 5 $\\textit{less than}$ a multiple of 9.  The number is 4 $\\textit{more than}$ a multiple of 9.  Subtracting 4 gives  \\[-11213141 = -11213145+4.\\]Since $-11213145$ has a digit sum of 18, this number is a multiple of 9.  However this is not a multiple of 18 so we need to subtract 9 again: \\[-11213141 = -11213154+13.\\]Now the number $-11213154$ is a multiple of 18, so the answer is $\\boxed{13}$. $$-11213141\\equiv 13\\pmod {18}.$$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve the problem, breaking it down into smaller parts:\n\n**Understanding Modular Arithmetic**\n\n* **Definition:**  The notation  \"$a \\equiv b \\pmod{m}$\"  means that  \"a is congruent to b modulo m\". This means that  'a' and 'b' leave the same remainder when divided by 'm'. \n* **Example:**  $11 \\equiv 2 \\pmod{3}$ because both 11 and 2 leave a remainder of 2 when divided by 3.\n\n**Solving the Problem**\n\n1. **Simplify the Congruence:**  We want to find a simpler number that's congruent to -11213141 modulo 18.  We can do this by repeatedly adding or subtracting multiples of 18 until we get a number between 0 and 17. \n\n   *  Let's start by adding 18 repeatedly to -11213141 until we get a positive number:\n      -11213141 + 18 = -11213123\n      -11213123 + 18 = -11213105\n      ... and so on.\n   *  We can speed this up by dividing -11213141 by 18 and looking at the remainder:\n      -11213141 \u00f7 18 = -622952  (with a remainder of -5)\n\n   * Since the remainder is negative, we can add 18 to get a positive remainder: -5 + 18 = 13.\n\n   * Therefore,  -11213141  is congruent to  13 modulo 18:  \n      -11213141  \u2261  13  (mod 18)\n\n2. **Finding the Solution:**  We now know that we're looking for an integer 'n' that satisfies:\n   * 0 \u2264 n < 18 \n   * n \u2261 13 (mod 18)\n\n   * The only integer 'n' that meets both conditions is  **n = 13**.\n\n**Solution:**\n\nThe integer  **n = 13** satisfies the given conditions. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.765867418899859
+            }
+        }
+    }
+}

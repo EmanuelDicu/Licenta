@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 4_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 4",
+        "problem": "Ed takes five 100-point tests in his algebra class. He scores 87, 85 and 87 points on the first three tests. If the scores of his last two tests differ by three points and he has a $90\\%$ average on his five tests, what was his highest test score?",
+        "correct_solution": "Instead of adding up scores and figuring out the new averages, a quicker way (useful for the countdown round) is as follows:\n\nSince the average is 90, we first calculate how many points below 90 he already is: he's scored 87, 85, and 87, meaning that he is 3, 5, and 3 points below 90 respectively, making for a total of 11 points below.  We then know that his remaining two tests must be a combined 11 points above 90, and since they differ by 3 points, we know that one test is 4 above 90, and the other is 7 above 90, meaning his highest score was $\\boxed{97}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to break down the problem and solve it:\n\n**1. Calculate the Total Points Needed**\n\n* Ed needs a 90% average on 5 tests, so he needs a total of 5 tests * 90 points/test = 450 points.\n\n**2. Calculate the Points from the First Three Tests**\n\n* Ed scored 87 + 85 + 87 = 259 points on the first three tests.\n\n**3. Calculate the Points Needed on the Last Two Tests**\n\n* To reach his goal of 450 points, Ed needs 450 points - 259 points = 191 points on his last two tests.\n\n**4. Set Up an Equation for the Last Two Tests**\n\n* Let 'x' be the higher score on the last two tests. \n* The lower score is 'x - 3' (since they differ by 3 points).\n* The equation is: x + (x - 3) = 191\n\n**5. Solve for the Higher Score (x)**\n\n* Combine like terms: 2x - 3 = 191\n* Add 3 to both sides: 2x = 194\n* Divide both sides by 2: x = 97\n\n**Solution:** Ed's highest test score was **97**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7079037800687286
+            }
+        }
+    }
+}

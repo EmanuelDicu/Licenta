@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 5_1.json": {
+        "category": "Geometry",
+        "difficulty": "Level 5",
+        "problem": "An arc of $55$ degrees on circle $A$ has the same length as an arc of $40$ degrees on circle $B$.  What is the ratio of the area of circle $A$ to the area of circle $B$? Express your answer as a common fraction.",
+        "correct_solution": "For a circle of radius $r$ and an arc of $\\theta$ degrees, the arc length is $(2\\pi r)\\frac{\\theta}{360}$. Thus, for the same arc length, the arc angle is inversely proportional to the radius, so the ratio of the radius of circle $A$ to the radius of circle $B$ is $40:55$, or $8:11$. Since the ratio of the areas of two circles is the square of the ratio of their radii, the ratio of the area of circle $A$ to the area of circle $B$ is $(8/11)^2=\\boxed{\\frac{64}{121}}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve the problem step-by-step:\n\n**1. Understand the Relationship Between Arc Length, Central Angle, and Radius**\n\n* **Arc Length:**  The length of a curved portion of a circle's circumference.\n* **Central Angle:** The angle formed by two radii that connect the endpoints of the arc to the center of the circle.\n* **Radius:** The distance from the center of the circle to a point on the circle.\n\nThe key relationship is:  The arc length is directly proportional to the central angle and the radius of the circle.\n\n**2. Set Up Proportions**\n\nLet:\n\n*  *r<sub>A</sub>* be the radius of circle A\n*  *r<sub>B</sub>* be the radius of circle B\n\nSince the arc lengths are equal:\n\n*  (55 degrees / 360 degrees) * 2\u03c0 * *r<sub>A</sub>* = (40 degrees / 360 degrees) * 2\u03c0 * *r<sub>B</sub>*\n\n**3. Simplify the Equation**\n\n*  Cancel out the 2\u03c0 and 360 degrees:  55 * *r<sub>A</sub>* = 40 * *r<sub>B</sub>*\n*  Divide both sides by 5:  11 * *r<sub>A</sub>* = 8 * *r<sub>B</sub>*\n\n**4. Find the Ratio of Radii**\n\n*  Divide both sides by 8 * *r<sub>A</sub>*:  *r<sub>B</sub>* / *r<sub>A</sub>* = 11/8 \n\n**5.  Calculate the Ratio of Areas**\n\n* The area of a circle is given by \u03c0*r<sup>2</sup>.\n*  The ratio of the area of circle A to the area of circle B is: \n   (\u03c0 * *r<sub>A</sub><sup>2</sup>) / (\u03c0 * *r<sub>B</sub><sup>2</sup>) = (*r<sub>A</sub><sup>2</sup>*) / (*r<sub>B</sub><sup>2</sup>*) \n* Substitute the ratio we found for *r<sub>B</sub>* / *r<sub>A</sub>*:  (1 / (11/8)<sup>2</sup>) = (8/11)<sup>2</sup> = **64/121**\n\n**Solution:** The ratio of the area of circle A to the area of circle B is **64/121**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7944099378881988
+            }
+        }
+    }
+}

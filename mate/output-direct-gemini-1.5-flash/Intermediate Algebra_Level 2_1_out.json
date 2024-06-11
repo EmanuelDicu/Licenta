@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 2_1.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 2",
+        "problem": "Two reals $x$ and $y$ are such that $x-y=4$ and $x^3-y^3=28$. Compute $xy$.",
+        "correct_solution": "We have $28=x^3-y^3=(x-y)(x^2+xy+y^2)=(x-y)((x-y)^2+3xy)=4\\cdot (16+3xy)$, from which $xy=\\boxed{-3}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how we can solve the problem step-by-step:\n\n**Part 1: Factor the difference of cubes**\n\n* We are given the equation  $x^3 - y^3 = 28$.  This is a difference of cubes, and we can factor it:\n   *  $x^3 - y^3 = (x - y)(x^2 + xy + y^2)$\n\n**Part 2: Substitute and simplify**\n\n* We know that $x - y = 4$. Substitute this into the factored equation:\n   *  $4(x^2 + xy + y^2) = 28$\n* Divide both sides by 4:\n   *  $x^2 + xy + y^2 = 7$\n\n**Part 3: Manipulate the equation to isolate xy**\n\n* We want to find the value of *xy*.  Let's rearrange the equation from Part 2 to isolate *xy*:\n   *  $xy = 7 - x^2 - y^2$\n\n**Part 4: Use the equation x - y = 4 to find x\u00b2 + y\u00b2**\n\n* Square both sides of the equation $x - y = 4$:\n   * $(x - y)^2 = 4^2$\n   * $x^2 - 2xy + y^2 = 16$\n* Rearrange to get $x^2 + y^2$:\n   *  $x^2 + y^2 = 16 + 2xy$\n\n**Part 5: Substitute and solve for xy**\n\n* Substitute the expression for $x^2 + y^2$ from Part 4 into the equation from Part 3:\n   *  $xy = 7 - (16 + 2xy)$\n* Simplify and solve for *xy*:\n   *  $xy = 7 - 16 - 2xy$\n   *  $3xy = -9$\n   *  $xy = -3$\n\n**Solution:**\n\nTherefore, the value of *xy* is **-3**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9292661361626879
+            }
+        }
+    }
+}

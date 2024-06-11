@@ -1,0 +1,18 @@
+{
+    "Precalculus_Level 3_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 3",
+        "problem": "The set of vectors $\\mathbf{v}$ such that\n\\[\\operatorname{proj}_{\\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}} \\mathbf{v} = \\begin{pmatrix} 0 \\\\ 0 \\end{pmatrix}\\]lie on a line.  Enter the equation of this line in the form \"$y = mx + b$\".",
+        "correct_solution": "Let $\\mathbf{v} = \\begin{pmatrix} x \\\\ y \\end{pmatrix}.$\n\nFrom the formula of a projection,\n\\begin{align*}\n\\operatorname{proj}_{\\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}} \\mathbf{v} &= \\frac{\\mathbf{v} \\cdot \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}}{\\left\\| \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} \\right\\|^2} \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} \\\\\n&= \\frac{\\begin{pmatrix} x \\\\ y \\end{pmatrix} \\cdot \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}}{5} \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} \\\\\n&= \\frac{2x + y}{5} \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} \\\\\n&= \\begin{pmatrix} 0 \\\\ 0 \\end{pmatrix}.\n\\end{align*}Then\n\\[\\frac{2x + y}{5} = 0,\\]so $2x + y = 0.$  Thus, the equation of the line is $\\boxed{y = -2x}.$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "## Solving the Problem Step-by-Step\n\n**Understanding the Problem:**\n\nThe problem asks us to find the line formed by all vectors **v** whose projection onto the vector (2,1) is the zero vector.  Let's break this down:\n\n* **Projection:** The projection of a vector **v** onto another vector **u** is the component of **v** that lies in the direction of **u**. \n* **Zero Vector:**  The zero vector is (0,0).\n* **Line:** We are looking for a set of vectors that form a line.\n\n**Part 1: Finding the Formula for Projection**\n\nThe formula for the projection of vector **v** onto vector **u** is:\n\n```\nproj_u(v) = ((v \u00b7 u) / (u \u00b7 u)) * u\n```\n\nWhere:\n\n* **v \u00b7 u** is the dot product of **v** and **u**.\n* **u \u00b7 u** is the dot product of **u** with itself (which is the square of the magnitude of **u**).\n\n**Part 2: Applying the Formula and Setting it Equal to the Zero Vector**\n\nIn our problem, we have **u** = (2, 1) and we want to find all vectors **v** such that:\n\n```\nproj_(2,1)(v) = (0, 0) \n```\n\nLet's represent vector **v** as (x, y). Using the formula from Part 1:\n\n```\n((x, y) \u00b7 (2, 1)) / ((2, 1) \u00b7 (2, 1)) * (2, 1) = (0, 0)\n```\n\nCalculating the dot products:\n\n```\n((2x + y) / 5) * (2, 1) = (0, 0)\n```\n\n**Part 3: Solving for x and y**\n\nFor the left side to equal the zero vector, each component must be zero:\n\n```\n(4x + 2y) / 5 = 0\n(2x + y) / 5 = 0\n```\n\nSimplifying, we get:\n\n```\n4x + 2y = 0\n2x + y = 0\n```\n\nSolving the system of equations, we find that y = -2x.\n\n**Part 4: Representing the Solution as a Line**\n\nWe found that all vectors **v** (x, y) that satisfy the condition have y = -2x. This represents a line with slope -2 and y-intercept 0.\n\n**Solution:**\n\nThe equation of the line is **y = -2x**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8323563892145369
+            }
+        }
+    }
+}

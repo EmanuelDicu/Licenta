@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 3_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 3",
+        "problem": "There are 30 men and 40 women in the Town Library Club.  They wish to form a 7-person steering committee with 3 men and 4 women.  In how many ways can they form the committee?",
+        "correct_solution": "In this problem, we're really selecting two separate committees.  We can choose 3 men from the 30 men total in $$ \\binom{30}{3} = \\frac{30 \\times 29 \\times 28}{3 \\times 2 \\times 1} = 4,\\!060 $$ways, and 4 women from the 40 women total in $$ \\binom{40}{4} = \\frac{40 \\times 39 \\times 38 \\times 37}{4 \\times 3 \\times 2 \\times 1} = 91,\\!390 $$ways.  Since these two selections are independent (since for each of the $4,\\!060$ ways to pick the men, there are $91,\\!390$ ways to pick the women), we multiply them together to get the number of ways that we can form the 7-member overall committee: $$ \\binom{30}{3}\\binom{40}{4} = (4,\\!060)(91,\\!390) = \\boxed{371,\\!043,\\!400}. $$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how we can solve this problem:\n\n**1. Selecting the Men**\n\n* We need to choose 3 men out of 30.  This is a combination problem, as the order we choose them in doesn't matter.\n* The formula for combinations is: nCr = n! / (r! * (n-r)!)  where n is the total number of items and r is the number you're choosing.\n* In our case: 30C3 = 30! / (3! * 27!) = (30 * 29 * 28) / (3 * 2 * 1) = 4060\n\n**2. Selecting the Women**\n\n* We need to choose 4 women out of 40. \n* Using the combination formula: 40C4 = 40! / (4! * 36!) = (40 * 39 * 38 * 37) / (4 * 3 * 2 * 1) = 91390\n\n**3. Combining the Selections**\n\n* For each way we can select the men, there are multiple ways to select the women.  To find the total number of ways to form the committee, we multiply the number of ways to choose the men by the number of ways to choose the women.\n* Total combinations: 4060 * 91390 = 370,261,400\n\n**Solution:** There are **370,261,400** ways to form the 7-person steering committee. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7206185567010309
+            }
+        }
+    }
+}

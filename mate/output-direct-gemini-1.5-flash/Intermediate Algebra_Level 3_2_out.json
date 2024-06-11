@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 3_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 3",
+        "problem": "Find the complex number $z$ so that $z + |z| = 2 + 8i.$",
+        "correct_solution": "Let $z = a + bi.$  Then\n\\[a + bi + \\sqrt{a^2 + b^2} = 2 + 8i.\\]Equating the imaginary parts, we get $b = 8.$  Equating the real parts, we get $a + \\sqrt{a^2 + 64} = 2.$  Then\n\\[\\sqrt{a^2 + 64} = 2 - a.\\]Squaring both sides, we get $a^2 + 64 = (2 - a)^2 = a^2 - 4a + 4.$  Solving, we find $a = -15.$  Therefore, $z = \\boxed{-15 + 8i}.$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve the problem:\n\n**Understanding the Problem**\n\n* **Complex Numbers:** We're dealing with complex numbers, which have the form *a + bi*, where *a* and *b* are real numbers, and *i* is the imaginary unit (\u221a-1).\n* **Magnitude:**  The absolute value or magnitude of a complex number *z = a + bi* is denoted by |*z*| and is calculated as \u221a(a\u00b2 + b\u00b2). It represents the distance of the complex number from the origin in the complex plane.\n\n**Breaking Down the Problem**\n\n1. **Represent *z*:**  Let *z = x + yi*, where *x* and *y* are real numbers. \n\n2. **Calculate |*z*|:**  |z| = \u221a(x\u00b2 + y\u00b2)\n\n3. **Substitute and Separate:** Substitute the expressions for *z* and |*z*| into the given equation:\n   (x + yi) + \u221a(x\u00b2 + y\u00b2) = 2 + 8i\n\n4. **Equate Real and Imaginary Parts:**  Since two complex numbers are equal only if their real and imaginary parts are equal, we can separate the equation into two equations:\n   * x + \u221a(x\u00b2 + y\u00b2) = 2  (Real part equation)\n   * y = 8                 (Imaginary part equation)\n\n**Solving the System of Equations**\n\n1. **Solve for *y*:**  We already have *y = 8* from the imaginary part equation.\n\n2. **Substitute *y*:** Substitute *y = 8* into the real part equation:\n    x + \u221a(x\u00b2 + 8\u00b2) = 2\n\n3. **Simplify and Solve for *x*:**\n    x + \u221a(x\u00b2 + 64) = 2\n    \u221a(x\u00b2 + 64) = 2 - x\n    x\u00b2 + 64 = (2 - x)\u00b2  (Squaring both sides)\n    x\u00b2 + 64 = 4 - 4x + x\u00b2\n    4x = -60\n    x = -15\n\n**Solution**\n\nTherefore, the complex number *z* that satisfies the equation is:\n\n*z = x + yi = -15 + 8i* \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8601583113456465
+            }
+        }
+    }
+}

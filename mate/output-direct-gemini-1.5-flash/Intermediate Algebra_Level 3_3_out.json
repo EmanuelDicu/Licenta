@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 3_3.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 3",
+        "problem": "There is a complex number $z$ with imaginary part $164$ and a positive integer $n$ such that\n$$\\frac {z}{z + n} = 4i.$$Find $n$.",
+        "correct_solution": "Multiplying by $z+n$, we have $z = 4i(z+n)$, or $z(1-4i) = 4ni$. Thus \\[z = \\frac{4ni}{1-4i} = \\frac{4ni(1+4i)}{17} = \\frac{4ni - 16n}{17}.\\]Since $z$ has imaginary part $164$, we have $4n/17 = 164$, so $n = 17/4 \\cdot 164 = \\boxed{697}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to break down the problem and solve it:\n\n**1. Understand the problem:**\n\n* We are given a complex number *z* with an imaginary part of 164.  This means *z* can be written in the form *a + 164i* where *a* is a real number.\n* We are also given that the ratio of *z* to (*z* + *n*) is equal to 4*i*, where *n* is a positive integer.  Our goal is to find the value of *n*.\n\n**2.  Set up the equation:**\n\n* Substitute *z = a + 164i* into the given equation:\n   \n   (a + 164i) / (a + 164i + n) = 4i\n\n**3.  Simplify the equation:**\n\n* To get rid of the complex fraction, multiply both sides of the equation by (a + 164i + n):\n\n   a + 164i = 4i(a + 164i + n)\n\n* Expand the right side of the equation:\n\n   a + 164i = 4ai - 656 + 4ni\n\n**4.  Equate real and imaginary parts:**\n\n* Since the left and right sides are equal, their real parts must be equal, and their imaginary parts must be equal.  This gives us two separate equations:\n\n   * Real part:  a = -656 + 4ni\n   * Imaginary part: 164 = 4a + 4n\n\n**5.  Solve the system of equations:**\n\n* We now have two equations with two unknowns (*a* and *n*).  We can solve this system using substitution or elimination.  Let's use substitution.\n\n* From the real part equation, we can isolate *a*:\n\n    a = -656 + 4ni\n\n* Substitute this expression for *a* into the imaginary part equation:\n\n    164 = 4(-656 + 4ni) + 4n\n\n* Simplify and solve for *n*:\n\n    164 = -2624 + 16ni + 4n\n    2788 = 16ni + 4n\n    697 = 4ni + n\n    697 = n(4i + 1)\n\n* Since *n* is a positive integer, the only way this equation can hold is if (4i + 1) is a divisor of 697.  Check if 697 is divisible by (4i + 1):\n\n    697 / (4i + 1) = 174 - 697i \n\n* Since the result is a complex number, (4i + 1) is not a divisor of 697.  This means there is no solution for *n* that satisfies the given conditions.\n\n**Conclusion:**\n\nThere is **no** positive integer *n* that satisfies the given conditions of the problem.  The given information is inconsistent. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9196337741607324
+            }
+        }
+    }
+}

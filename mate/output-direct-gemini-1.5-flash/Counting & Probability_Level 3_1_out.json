@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 3_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 3",
+        "problem": "What is the tens digit in the sum $7! + 8! + 9! + \\cdots + 2006!$?",
+        "correct_solution": "Since $n!$ contains the product $2\\cdot5\\cdot10= 100$ whenever $n\\ge 10$,  it suffices to determine the tens digit of \\[\n7! + 8! + 9! = 7!(1 + 8 + 8\\cdot9) = 5040(1 + 8 + 72)= 5040\\cdot81.\n\\]This  is the same as the units digit of $4\\cdot 1$, which is $\\boxed{4}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how to solve the problem, breaking it down into smaller parts:\n\n**Understanding Factorials**\n\n* **Definition:** A factorial (denoted by !) means multiplying a number by all the positive integers less than it. For example: 5! = 5 * 4 * 3 * 2 * 1 = 120.\n\n**Key Observation**\n\n* **Trailing Zeros:** Notice that factorials from 10! onwards will have at least one trailing zero. This is because they contain both a 2 and a 5 as factors, which create a 10.  \n\n**Breaking Down the Problem**\n\n1. **Focus on the Tens Digit:** We only care about the tens digit of the sum. \n2. **Ignore the Trailing Zeros:**  Since trailing zeros don't affect the tens digit, we can ignore all the factorials from 10! onwards.\n3. **Calculate the Relevant Factorials:** We need to calculate the tens digit of 7! + 8! + 9!.\n\n**Calculations**\n\n* 7! = 7 * 6 * 5 * 4 * 3 * 2 * 1 = 5040.  The tens digit is 4.\n* 8! = 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1 = 40320. The tens digit is 2.\n* 9! = 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1 = 362880. The tens digit is 8.\n\n**Final Step**\n\n* **Add the Tens Digits:** 4 + 2 + 8 = 14\n\n**Solution**\n\nThe tens digit in the sum 7! + 8! + 9! + ... + 2006! is **4**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.859603789836348
+            }
+        }
+    }
+}

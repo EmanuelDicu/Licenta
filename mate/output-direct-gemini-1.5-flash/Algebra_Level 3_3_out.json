@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 3_3.json": {
+        "category": "Algebra",
+        "difficulty": "Level 3",
+        "problem": "Let $h$ be a polynomial of degree $5$, and suppose that $h(x) = (x^2-7x+10) \\cdot g(x)$, where $g(x)$ is a polynomial of degree $b$.  Find $b$.",
+        "correct_solution": "Recall that for positive integers $a$ and $b$ $x^a x^b = x^{a+b}$.  Thus, if $h(x)$, $f(x)$, and $g(x)$ are polynomials such that $h(x)=f(x) \\cdot g(x)$ and if $ x^a $ and $ x^b $ are the highest degree terms of $f(x)$ and $g(x)$ then the highest degree term of $h(x)$ will be $x^{a+b}$.  In our case $f(x) = x^2-7x+10$, the highest degree term is $x^2$ and $h(x)$ has highest degree term $x^5$.  Thus, solving for $b$ in the equation $x^5 = x^2 x^b = x^{2+b}$, we find $b=\\boxed{3}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how we can solve this problem by breaking it down into smaller parts:\n\n**Part 1: Understand the problem**\n\n* **What do we know?**\n    *  We have a polynomial *h(x)* of degree 5.\n    *  This polynomial is expressed as the product of two factors: \n        *  *x\u00b2 - 7x + 10* (which is a polynomial of degree 2)\n        *  *g(x)* (which is a polynomial of degree *b*)\n\n* **What do we need to find?**\n    * The value of *b*, the degree of the polynomial *g(x)*.\n\n**Part 2: Relate the degrees of the polynomials**\n\n* **Key Idea:** The degree of the product of two polynomials is the sum of their degrees. \n    *  In other words, if you multiply a polynomial of degree *m* by a polynomial of degree *n*, the resulting polynomial will have a degree of *m + n*.\n\n* **Applying the idea:**\n    * We know *h(x)* has a degree of 5.\n    * We know *x\u00b2 - 7x + 10* has a degree of 2.\n    * Therefore, *g(x)* must have a degree of 5 - 2 = 3 to satisfy the degree rule.\n\n**Solution**\n\nThe value of *b*, the degree of the polynomial *g(x)*, is **3**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7709335899903753
+            }
+        }
+    }
+}

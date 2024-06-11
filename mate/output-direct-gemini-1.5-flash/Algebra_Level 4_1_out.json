@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 4_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 4",
+        "problem": "What is the value of $x$ for which $$\\sqrt{x + \\sqrt{x + \\sqrt{x + \\ldots}}} = 5?$$",
+        "correct_solution": "Squaring both sides of the given equation yields $$x + \\sqrt{x + \\sqrt{x + \\ldots}} = 25,$$ so $$\\sqrt{x + \\sqrt{x + \\ldots}} = 25-x.$$ We already know the value of the left-hand side to be equal to $5$. Thus, $5 = 25-x$, and $x = \\boxed{20}.$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how we can solve this problem:\n\n**Understanding the Problem**\n\nThe problem presents an infinite nested radical. This means the square root symbol keeps repeating, embedding itself within itself.  To make sense of it, we need to think about what happens as we go deeper and deeper into the nesting.\n\n**Breaking Down the Problem**\n\n1. **Representing the Infinite Nesting:**\n   Let's represent the entire nested radical as 'y'.  This gives us: \n   \n   y = \u221a(x + \u221a(x + \u221a(x + ...)))\n\n2. **Finding a Recursive Relationship:**\n   Notice that the expression inside the outermost square root is also 'y' (since the nesting continues infinitely). This means we can write:\n\n   y = \u221a(x + y) \n\n3. **Solving for y:**\n   Now we have a simple equation to solve for 'y'.  Let's square both sides:\n\n   y\u00b2 = x + y\n\n   Rearranging:\n\n   y\u00b2 - y - x = 0\n\n   This is a quadratic equation.\n\n**Solving the Quadratic Equation**\n\nWe can use the quadratic formula to find the solutions for 'y':\n\ny = (-b \u00b1 \u221a(b\u00b2 - 4ac)) / 2a\n\nWhere a = 1, b = -1, and c = -x (from our quadratic equation).\n\nSubstituting:\n\ny = (1 \u00b1 \u221a(1 + 4x)) / 2\n\n**The Final Step**\n\nWe are given that the entire nested radical (which we represented as 'y') is equal to 5.  Therefore:\n\n5 = (1 \u00b1 \u221a(1 + 4x)) / 2\n\nSolving for x:\n\n1. Multiply both sides by 2: 10 = 1 \u00b1 \u221a(1 + 4x)\n2. Subtract 1 from both sides: 9 = \u00b1 \u221a(1 + 4x)\n3. Square both sides: 81 = 1 + 4x\n4. Subtract 1 from both sides: 80 = 4x\n5. Divide both sides by 4: x = 20\n\n**Solution**\n\nThe value of x for which \u221a(x + \u221a(x + \u221a(x + ...))) = 5 is **x = 20**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8985228002569043
+            }
+        }
+    }
+}

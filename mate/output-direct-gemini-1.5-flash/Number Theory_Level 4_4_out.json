@@ -1,0 +1,18 @@
+{
+    "Number Theory_Level 4_4.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 4",
+        "problem": "Find the units digit of the sum of the first $21$ positive perfect cubes.",
+        "correct_solution": "Notice that for each integer $n$ satisfying $1 \\le n \\le 19, n \\neq 10$, then using the sum of cubes factorization, $n^3 + (20 - n)^3 = (n + 20 - n)(n^2 + (20-n)n + (20-n)^2)$ $ = 20(n^2 + (20-n)n + (20-n)^2)$. Thus, we can pair each integer with the difference between $20$ and that integer, and the sum of their cubes is divisible by $20$. Hence, the units digit of the sum of the first $19$ cubes, excluding $10$, is equal to $0$. Also, the units digits of $10^3$ and $20^3$ are clearly $0$, so we just need to find the units digit of the cube of $21$, which is $\\boxed{1}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "## Solving the Problem\n\nWe need to find the units digit of the sum of the first 21 positive perfect cubes. Let's break this down into smaller parts:\n\n**Part 1: Cyclicity of Units Digits**\n\n* **Understanding the Problem:**  The units digit of a number is the digit in the ones place. We are interested in finding a pattern in the units digits of perfect cubes.\n* **Finding the Pattern:** Let's look at the units digits of the first few perfect cubes:\n    * 1\u00b3 = 1\n    * 2\u00b3 = 8\n    * 3\u00b3 = 27\n    * 4\u00b3 = 64\n    * 5\u00b3 = 125\n    * 6\u00b3 = 216\n    * 7\u00b3 = 343\n    * 8\u00b3 = 512\n    * 9\u00b3 = 729\n* **The Pattern:** Notice that the units digits of the cubes repeat in a cycle of 4: {1, 8, 7, 4}.\n\n**Part 2: Applying the Pattern**\n\n* **Dividing by 4:** Since the units digits of perfect cubes repeat in a cycle of 4, we divide 21 (the number of cubes we're summing) by 4 to see where we land in the cycle: 21 \u00f7 4 = 5 remainder 1.\n* **Interpreting the Remainder:** The remainder of 1 means that the units digit of the sum of the first 21 perfect cubes will be the same as the units digit of the first cube in the cycle, which is 1.\n\n**Part 3: The Answer**\n\n* **Conclusion:** The units digit of the sum of the first 21 positive perfect cubes is **1**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7597402597402597
+            }
+        }
+    }
+}

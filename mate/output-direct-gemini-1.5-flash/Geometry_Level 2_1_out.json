@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 2_1.json": {
+        "category": "Geometry",
+        "difficulty": "Level 2",
+        "problem": "In the figure below $AB = BC$, $m \\angle ABD = 30^{\\circ}$, $m \\angle C = 50^{\\circ}$ and $m \\angle CBD = 80^{\\circ}$. What is the number of degrees in the measure of angle $A$?\n\n[asy]\ndraw((0,0)--1.5dir(-15)--3.5dir(60)--(0,0),linewidth(2));\ndraw(1.5dir(-15)--1.5dir(-15)+4dir(35)--3.5dir(60),linewidth(2));\nlabel(\"A\",(0,0),W);\nlabel(\"B\",3.5dir(60),N);\nlabel(\"C\",1.5dir(-15)+4dir(35),E);\nlabel(\"D\",1.5dir(-15),S);\n[/asy]",
+        "correct_solution": "We know two of the angles in $\\triangle BCD$: $$m\\angle CBD = 80^\\circ, ~~m\\angle BCD = 50^\\circ.$$ Since the sum of angles in a triangle is $180^\\circ$, we conclude that $m\\angle BDC = 180^\\circ - (50^\\circ+80^\\circ) = 50^\\circ$.\n\nTherefore, $\\triangle BCD$ is isosceles with equal angles at $C$ and $D$, which implies that the sides opposite those angles ($BD$ and $BC$) are equal.\n\nSince we are given $AB=BC$, we now know that $AB=BD$, which means that $\\triangle ABD$ is isosceles with equal angles at $A$ and $D$. Let $x = m\\angle A$. Then the sum of angles in $\\triangle ABD$ is $180^\\circ$, so $$x + x + 30^\\circ = 180^\\circ.$$ We can solve this equation to get $x = 75^\\circ$. So, $m\\angle A = \\boxed{75^\\circ}$.",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how we can solve the problem step-by-step:\n\n**1. Find the measure of angle ABC:**\n\n* We know that  $m \\angle CBD = 80^{\\circ}$ and $m \\angle C = 50^{\\circ}$.\n* Since angles CBD and C form a linear pair (they lie on a straight line), their measures add up to $180^{\\circ}$. \n* Therefore, $m \\angle ABC = 180^{\\circ} - 80^{\\circ} - 50^{\\circ} = 50^{\\circ}$.\n\n**2. Find the measure of angle BAD:**\n\n* We know that $AB = BC$, which means triangle ABC is an isosceles triangle.\n* In an isosceles triangle, the base angles (angles opposite the equal sides) are congruent. \n* So, $m \\angle BAC = m \\angle BCA = 50^{\\circ}$.\n* Since angles BAD and BAC form a linear pair, their measures add up to $180^{\\circ}$.\n* Therefore, $m \\angle BAD = 180^{\\circ} - 50^{\\circ} = 130^{\\circ}$.\n\n**3. Find the measure of angle A:**\n\n* We know that $m \\angle BAD = 130^{\\circ}$ and $m \\angle ABD = 30^{\\circ}$.\n* The angles in a triangle add up to $180^{\\circ}$.\n* Therefore, $m \\angle A = 180^{\\circ} - 130^{\\circ} - 30^{\\circ} = \\boxed{20^{\\circ}}$. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": false,
+                "Levenshtein distance value": 0.6416184971098265
+            }
+        }
+    }
+}

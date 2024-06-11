@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 2_1.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 2",
+        "problem": "Sarah, James, and Matthew are on a team in a game show. In the game, Sarah always earns 5 points, Matthew always earns -2 points, and James always earns 3 points. To calculate their team's score, they multiply the first person's score by the second person's score, then subtract the third person's score. If they can choose the order in which they play the game, what is the maximum possible score that their team can earn?",
+        "correct_solution": "If we let the first, second, and third persons' score equal $a$, $b$, and $c$ respectively, then their team's score is $((a \\cdot b)-c)$.  We may test all six possible orderings:\n$a = 5$, $b = -2$, $c = 3 \\rightarrow ((5 \\cdot (-2)) - 3) = -13$\n$a = -2$, $b = 5$, $c = 3 \\rightarrow (((-2) \\cdot 5) - 3) = -13$\n$a = 5$, $b = 3$, $c = -2 \\rightarrow ((5 \\cdot 3) - (-2)) = 17$\n$a = 3$, $b = 5$, $c = -2 \\rightarrow ((3 \\cdot 5) - (-2)) = 17$\n$a = 3$, $b = -2$, $c = 5 \\rightarrow ((3 \\cdot (-2)) - 5) = -11$\n$a = -2$, $b = 3$, $c = 5 \\rightarrow (((-2) \\cdot 3) - 5) = -11$\nThus, our total answer is $\\boxed{17}$\nAdditionally, we may note that the only way to obtain a positive answer is to multiply the two positive scores together and subtract the negative score.  Because multiplication is commutative, the order of $a$ and $b$ does not matter, and we need only compute the single case $(3 \\cdot 5) - (-2) = \\boxed{17}$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how we can solve this problem:\n\n**1. Identify the possible combinations:**\n\n* We need to figure out all the possible orders in which Sarah (S), James (J), and Matthew (M) can play.  \n* Since we have 3 people, there are 3! (3 factorial) ways to arrange them: 3 * 2 * 1 = 6 combinations. \n* Let's list them out: SJM, SMJ, JSM, JMS, MSJ, MJS\n\n**2. Calculate the score for each combination:**\n\n* **Remember the scoring rule:** (First player's score) * (Second player's score) - (Third player's score)\n\n* **SJM:** (5 * 3) - (-2) = 15 + 2 = 17\n* **SMJ:** (5 * -2) - 3 = -10 - 3 = -13\n* **JSM:** (3 * 5) - (-2) = 15 + 2 = 17\n* **JMS:** (3 * -2) - 5 = -6 - 5 = -11\n* **MSJ:** (-2 * 5) - 3 = -10 - 3 = -13\n* **MJS:** (-2 * 3) - 5 = -6 - 5 = -11\n\n**3. Determine the maximum score:**\n\n* Looking at the scores we calculated, the highest score is **17**. \n\n**Solution:** The maximum possible score the team can earn is **17**. They can achieve this by playing in either the order SJM or JSM. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8034447821681864
+            }
+        }
+    }
+}

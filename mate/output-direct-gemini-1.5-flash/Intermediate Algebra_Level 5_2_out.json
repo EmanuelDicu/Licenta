@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 5_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 5",
+        "problem": "Let $z$ be a complex number such that $|z| = 1.$  Find the maximum value of\n\\[|1 + z| + |1 - z + z^2|.\\]",
+        "correct_solution": "Let $z = x + yi,$ where $x$ and $y$ are real numbers.  Since $|z| = 1,$ $x^2 + y^2 = 1.$  Then\n\\begin{align*}\n|1 + z| + |1 - z + z^2| &= |1 + x + yi| + |1 - x - yi + x^2 + 2xyi - y^2| \\\\\n&= |(1 + x) + yi| + |(1 - x + x^2 - 1 + x^2) + (-y + 2xy)i| \\\\\n&= |(1 + x) + yi| + |(-x + 2x^2) + (-y + 2xy)i| \\\\\n&= \\sqrt{(1 + x)^2 + y^2} + \\sqrt{(-x + 2x^2)^2 + (-y + 2xy)^2} \\\\\n&= \\sqrt{(1 + x)^2 + y^2} + \\sqrt{(-x + 2x^2)^2 + y^2 (1 - 2x)^2} \\\\\n&= \\sqrt{(1 + x)^2 + 1 - x^2} + \\sqrt{(-x + 2x^2)^2 + (1 - x^2) (1 - 2x)^2} \\\\\n&= \\sqrt{2 + 2x} + \\sqrt{1 - 4x + 4x^2} \\\\\n&= \\sqrt{2 + 2x} + |1 - 2x|.\n\\end{align*}Let $u = \\sqrt{2 + 2x}.$  Then $u^2 = 2 + 2x,$ so\n\\[\\sqrt{2 + 2x} + |1 - 2x| = u + |3 - u^2|.\\]Since $-1 \\le x \\le 1,$ $0 \\le u \\le 2.$\n\nIf $0 \\le u \\le \\sqrt{3},$ then\n\\[u + |3 - u^2| = u + 3 - u^2 = \\frac{13}{4} - \\left( u - \\frac{1}{2} \\right)^2 \\le \\frac{13}{4}.\\]Equality occurs when $u = \\frac{1}{2},$ or $x = -\\frac{7}{8}.$\n\nIf $\\sqrt{3} \\le u \\le 2,$ then\n\\[u + u^2 - 3 = \\left( u + \\frac{1}{2} \\right)^2 - \\frac{13}{4} \\le \\left( 2 + \\frac{1}{2} \\right)^2 - \\frac{13}{4} = 3 < \\frac{13}{4}.\\]Therefore, the maximum value is $\\boxed{\\frac{13}{4}}.$",
+        "generated_solutions": {
+            "gemini-1.5-flash": "Here's how we can solve this problem, breaking it down into smaller parts:\n\n**Part 1: Geometric Interpretation**\n\n* **Understanding Complex Numbers:**  Remember that a complex number *z* can be represented as a point in the complex plane.  The magnitude |z| is the distance from the origin to that point. Since |z| = 1, our complex number *z* lies on the unit circle centered at the origin.\n\n* **Visualizing the Expressions:**  Let's visualize the expressions in the problem:\n    * |1 + *z*| represents the distance between the points -1 and *z* in the complex plane.\n    * |1 - *z* + *z*\u00b2| represents the distance between the points 1 - *z* and -*z*\u00b2 in the complex plane.\n\n**Part 2: Using the Triangle Inequality**\n\n* **The Triangle Inequality:** The triangle inequality states that for any two complex numbers *a* and *b*: \n    |a + b| \u2264 |a| + |b|.\n* **Applying the Inequality:** We can apply the triangle inequality to the second term in our expression:\n    |1 - *z* + *z*\u00b2| \u2264 |1 - *z*| + |*z*\u00b2| = |1 - *z*| + |*z*|\u00b2 = |1 - *z*| + 1.\n\n**Part 3: Finding the Maximum Value**\n\n* **Combining Inequalities:** Combining the triangle inequality result with the first term, we have:\n    |1 + *z*| + |1 - *z* + *z*\u00b2| \u2264 |1 + *z*| + |1 - *z*| + 1.\n\n* **Maximizing the Expression:**  Notice that |1 + *z*| and |1 - *z*| represent the distances from *z* to the points -1 and 1, respectively. These distances will be maximized when *z* lies on the unit circle directly opposite the point -1 (i.e., at *z* = 1).  In this case, both |1 + *z*| and |1 - *z*| will equal 2.\n\n* **The Maximum:**  Therefore, the maximum value of the expression is:\n    2 + 2 + 1 = **5**\n\n**Solution:**\n\nThe maximum value of  |1 + *z*| + |1 - *z* + *z*\u00b2| for |*z*| = 1 is **5**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-flash": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7982808022922636
+            }
+        }
+    }
+}
