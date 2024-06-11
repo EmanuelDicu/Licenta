@@ -14,7 +14,7 @@ levels = ['Level 1', 'Level 2', 'Level 3', 'Level 4', 'Level 5']
 # For level 3: 4 problems
 # For level 4: 8 problems
 # For level 5: 8 problems
-problems_per_level = [2, 3, 3, 4, 4]
+problems_per_level = [2, 2, 2, 3, 3]
 number_of_problems = {category: {level: 0 for level in levels} for category in categories}
 
 # Function to parse the math dataset
