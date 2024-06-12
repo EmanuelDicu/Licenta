@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 3_3.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 3",
+        "problem": "There is a complex number $z$ with imaginary part $164$ and a positive integer $n$ such that\n$$\\frac {z}{z + n} = 4i.$$Find $n$.",
+        "correct_solution": "Multiplying by $z+n$, we have $z = 4i(z+n)$, or $z(1-4i) = 4ni$. Thus \\[z = \\frac{4ni}{1-4i} = \\frac{4ni(1+4i)}{17} = \\frac{4ni - 16n}{17}.\\]Since $z$ has imaginary part $164$, we have $4n/17 = 164$, so $n = 17/4 \\cdot 164 = \\boxed{697}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```python\n\"\"\"\nStep 1:\nWe are given that the imaginary part of z is 164. Let the real part of z be x. Therefore, we can write z as:\nz = x + 164i.\n\nStep 2:\nWe are also given that z/(z+n) = 4i. Substituting z = x + 164i in this equation, we get:\n\n(x + 164i) / (x + 164i + n) = 4i\n\nStep 3:\nTo get rid of the complex denominator, we can multiply both sides of the equation by the conjugate of the denominator:\n\n[(x + 164i) / (x + 164i + n)] * [(x - 164i + n) / (x - 164i + n)] = 4i * [(x - 164i + n) / (x - 164i + n)]\n\nStep 4:\nSimplifying both sides of the equation:\n\n[(x + 164i)(x - 164i + n)] / [(x + 164i)(x - 164i + n)] = 4i(x - 164i + n) / [(x + n)^2 - (164i)^2]\n\nStep 5:\nFurther simplification:\n\n(x^2 + 164xn + 164xi - 164xi - 164^2 * i^2) / (x^2 + 2xn + n^2 - 164^2 * i^2) = (4ix - 656i^2 + 4ni) / (x^2 + 2xn + n^2 + 164^2)\n\nStep 6:\nSince i^2 = -1, we can simplify further:\n\n(x^2 + 164xn + 164^2) / (x^2 + 2xn + n^2 + 164^2) = (4ix + 656 + 4ni) / (x^2 + 2xn + n^2 + 164^2)\n\nStep 7:\nSince the denominators on both sides are now the same and non-zero, we can equate the numerators:\n\nx^2 + 164xn + 164^2 = 4ix + 656 + 4ni\n\nStep 8:\nFor two complex numbers to be equal, their real and imaginary parts must be equal. Therefore, we can equate the real and imaginary parts on both sides of the equation:\n\nReal part: x^2 + 164xn + 164^2 = 656\nImaginary part: 164x = 4x + 4n\n\nStep 9:\nFrom the imaginary part equation, we can solve for x:\n\n160x = 4n\nx = n/40\n\nStep 10:\nSubstituting x = n/40 in the real part equation:\n\n(n/40)^2 + 164(n/40)n + 164^2 = 656\n\nStep 11:\nSimplifying the equation:\n\nn^2/1600 + 41n^2/10 + 164^2 = 656\n\nStep 12:\nFurther simplification:\n\nn^2 + 6560n^2 + 42849600 = 1049600\n\n6561n^2 = -41800000\n\nStep 13:\nSolving for n^2:\n\nn^2 = -41800000/6561\n\nStep 14:\nSince n^2 is negative, there is no real solution for n.\n\nFinal answer:\n\\boxed{\\text{No solution}}\n\"\"\"\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.9139957264957265
+            }
+        }
+    }
+}

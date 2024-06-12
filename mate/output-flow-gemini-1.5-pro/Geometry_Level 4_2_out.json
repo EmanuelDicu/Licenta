@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 4_2.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "A circle is circumscribed about an equilateral triangle with side lengths of $6$ units each.  What is the area of the circle, in square units? Express your answer in terms of $\\pi$.",
+        "correct_solution": "[asy]\nsize(100);\ndefaultpen(linewidth(.8));\ndraw((0,0)--(4.5,7.794)--(9,0)--cycle);\ndraw(Circle((4.5,2.598),5.196));\ndraw((4.5,7.794)--(4.5,0));\ndot((4.5,2.598));\nlabel(\"$O$\",(4.5,2.598),W);\nlabel(\"$A$\",(4.5,7.794),N);\nlabel(\"$B$\",(9,0),E);\nlabel(\"$M$\",(4.5,0),S);\n[/asy]\n\nAbove is the diagram implied by the problem, with some added lines ($O$ is the center of the circle). Since $\\triangle AMB$ is a 30-60-90 triangle and $AB=6$, $AM=3\\sqrt{3}$. Since $AO$ is $2/3$ of $AM$, we have $AO=2\\sqrt{3}$. Thus, the area of the circle is $\\pi(2\\sqrt{3})^2=\\boxed{12\\pi}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1:\nThe area of a circle is calculated using the formula $A = \\pi r^2$, where $r$ is the radius of the circle. So, to find the area of the circle, we need to determine its radius.\n\nStep 2:\nAn equilateral triangle has all angles equal to 60 degrees.\n\nStep 3:\nDrawing a radius from the circle's center to each vertex of the triangle divides the triangle into three congruent 30-60-90 right triangles.\n\nStep 4:\nEach of these right triangles has the radius of the circle as its hypotenuse. The shorter leg of each right triangle is half the length of a side of the equilateral triangle, which is $6/2 = 3$ units.\n\nStep 5:\nIn a 30-60-90 right triangle, the hypotenuse is twice the length of the shorter leg. Therefore, the hypotenuse of each of our right triangles, which is also the radius of the circle, has length $2 \\cdot 3 = 6$ units.\n\nStep 6:\nNow that we know the radius of the circle, we can calculate its area:  $A = \\pi r^2 = \\pi (6)^2 = 36\\pi$ square units.\n\nFinal answer:\n\\boxed{36\\pi}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.792694965449161
+            }
+        }
+    }
+}
