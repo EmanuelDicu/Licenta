@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 5_2.json": {
+        "category": "Algebra",
+        "difficulty": "Level 5",
+        "problem": "Solve the inequality $$-13(r+5) + 25 > 4(r-10)$$for $r$. Express your answer in interval notation.",
+        "correct_solution": "First, we use the distributive property to expand the left-hand side of the inequality: $$-13r - 65 + 25 > 4r - 40$$The constants on the left side add up to $-40$, so adding $40$ to both sides cancels all the constant terms: $$-13r > 4r$$Adding $13r$ to both sides yields $$0 > 17r$$and dividing both sides by $17$ gives $0>r$, or in interval notation, $r\\in\\boxed{(-\\infty,0)}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1: Expand both sides of the inequality by applying the distributive property.\n$$-13r - 65 + 25 > 4r - 40$$\nBecause by applying the distributive property we simplify the expressions in both sides of the inequality.\nStep 2: Simplify both sides by combining like terms.\n$$-13r - 40 > 4r - 40$$\nBecause it makes the inequality easier to solve.\nStep 3: Add 13r to both sides of the inequality. \n$$-13r - 40 + 13r > 4r - 40 + 13r$$\n$$-40 > 17r - 40$$\nBecause we want to isolate the 'r' term on one side.\nStep 4: Add 40 to both sides of the inequality.\n$$-40 + 40 > 17r - 40 + 40$$\n$$0 > 17r$$\nBecause we want to isolate the 'r' term on one side.\nStep 5: Divide both sides of the inequality by 17.\n$$0/17 > 17r/17$$\n$$0 > r$$\nBecause we want to isolate 'r'. Also, note that we are dividing by a positive number, so the direction of the inequality sign does not change. \nStep 6: Express the solution in interval notation.\nSince 'r' is less than 0, the solution in interval notation is **(-\u221e, 0)**. \nThis represents all real numbers from negative infinity up to, but not including, 0.\nFinal answer:\n\\boxed{(-\\infty, 0)}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.766107678729038
+            }
+        }
+    }
+}
