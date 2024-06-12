@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 1_1.json": {
+        "category": "Geometry",
+        "difficulty": "Level 1",
+        "problem": "In $\\triangle ABC$, what is the value of $x + y$? [asy]\nimport olympiad;\nsize(7cm);\n\npair a = dir(76);\npair b = (-1, 0);\npair c = (1, 0);\npair o = (0, 0);\n\ndraw(a--b--c--cycle);\ndraw(a--o);\n\nlabel(\"$A$\", a, N); label(\"$B$\", b, SW); label(\"$C$\", c, SE);\nlabel(\"$104^\\circ$\", o, 1.8 * NW + 0.4 * E);\nlabel(\"$x^\\circ$\", b, 3 * E + NE + NE);\nlabel(\"$y^\\circ$\", c, 2 * W + 2 * NW);\n\nadd(pathticks(b--o, s=3));\nadd(pathticks(c--o, s=3));\nadd(pathticks(a--o, s=3));\n\n[/asy]",
+        "correct_solution": "Since $\\triangle BDA$ is isosceles, $\\angle BAD = \\angle ABD = x^\\circ$.\nSince $\\triangle CDA$ is isosceles, $\\angle CAD = \\angle ACD = y^\\circ$. [asy]\nimport olympiad;\nsize(7cm);\n\npair a = dir(76);\npair b = (-1, 0);\npair c = (1, 0);\npair o = (0, 0);\n\ndraw(a--b--c--cycle);\ndraw(a--o);\n\nlabel(\"$A$\", a, N); label(\"$B$\", b, SW); label(\"$C$\", c, SE); label(\"$D$\", o, S);\nlabel(\"$104^\\circ$\", o, 1.8 * NW + 0.4 * E);\nlabel(\"$x^\\circ$\", b, 3 * E + NE + NE);\nlabel(\"$y^\\circ$\", c, 2 * W + 2 * NW);\n\nadd(pathticks(b--o, s=3));\nadd(pathticks(c--o, s=3));\nadd(pathticks(a--o, s=3));\n\nlabel(\"$x^\\circ$\", a, 3 * S + 2 * SW + W); label(\"$y^\\circ$\", a, 3 * S + SE);\n\n[/asy] Therefore, $\\angle BAC = (x + y)^\\circ$.\n\nSince the sum of the angles in $\\triangle ABC$ is $180^\\circ$, we have \\begin{align*}\nx + y + (x + y) &= 180\\\\\n2x + 2y &= 180\\\\\nx + y &= 90.\n\\end{align*}Therefore, $x + y = \\boxed{90}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "**1. Recognize Isosceles Triangles**\n\n* We see that triangle ABO has two sides equal (AO = BO since they are radii of the same circle). \n* This means triangle ABO is an isosceles triangle.\n\n**2. Properties of Isosceles Triangles**\n\n* In an isosceles triangle, the angles opposite the equal sides are also equal. \n* Therefore,  angle BAO is equal to angle ABO, which is *x* degrees.\n\n**3. Angle Sum Property of Triangles**\n\n* The angles inside any triangle always add up to 180 degrees.\n* In triangle ABO, we have:  *x* + *x* + 104 = 180\n\n**4. Solve for *x***\n\n* Combining like terms: 2*x* + 104 = 180\n* Subtracting 104 from both sides: 2*x* = 76\n* Dividing both sides by 2: *x* = 38\n\n**5. Repeat Steps 1-4 for Triangle ACO**\n\n* Triangle ACO is also isosceles (AO = CO).\n* Angle CAO is equal to angle ACO, which is *y* degrees.\n* Angle sum in triangle ACO: *y* + *y* + 104 = 180\n* Solving for *y*: 2*y* = 76, so *y* = 38\n\n**6. Calculate *x* + *y***\n\n* We found that *x* = 38 and *y* = 38\n* Therefore, *x* + *y* = 38 + 38 = 76\n\n**Solution:** The value of *x* + *y* is **76**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7944186046511628
+            }
+        }
+    }
+}

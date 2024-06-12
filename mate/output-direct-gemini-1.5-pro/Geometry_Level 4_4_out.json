@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 4_4.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "We have a triangle $\\triangle ABC$ where $AC = 17,$ $BC = 15,$ and $AB = 8.$ Let $M$ be the midpoint of $AB.$ What is the length of $CM$?",
+        "correct_solution": "First, we notice that $8:15:17$ is a Pythagorean triple, so we have a right triangle. Let's draw a sketch: [asy]\npair A, B, C, M;\nA = (0, 8);\nB = (0, 0);\nC = (15, 0);\nM = 0.5 * A + 0.5 * B;\ndraw(A--B--C--cycle);\ndraw(C--M);\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$M$\", M, NE);\nlabel(\"$8$\", A--B, W);\nlabel(\"$15$\", B--C, S);\nlabel(\"$17$\", A--C, NE);\ndraw(rightanglemark(A,B,C,20));\n[/asy] Since we know that $BM = \\frac{1}{2} \\cdot AB = 4,$ we simply apply the Pythagorean theorem to right triangle $\\triangle MBC.$ \\begin{align*}\nCM^2 &= BM^2 + BC^2\\\\\nCM^2 &= 4^2 + 15^2 = 241\\\\\nCM &= \\boxed{\\sqrt{241}}.\n\\end{align*}",
+        "generated_solutions": {
+            "gemini-1.5-pro": "## Solution\n\nWe can solve this problem by using the concept of medians in a triangle and the Apollonius's Theorem. Let's break it down:\n\n**1. Understanding Medians:**\n\n* A median of a triangle is a line segment joining a vertex to the midpoint of the opposite side. \n* In our problem, CM is a median of triangle ABC because M is the midpoint of AB.\n\n**2. Apollonius's Theorem:**\n\n* This theorem states that \"in any triangle, the sum of the squares of any two sides is equal to twice the square of half the third side, together with twice the square of the median which bisects the third side.\"\n\n**3. Applying the Theorem:**\n\n* We can apply Apollonius's Theorem to triangle ABC, focusing on median CM:\n    *  AC\u00b2 + BC\u00b2 = 2(AM\u00b2 + CM\u00b2) \n\n**4.  Substituting Values:**\n\n* We know AC = 17, BC = 15, and AM = AB/2 = 8/2 = 4. Substituting these values:\n    * 17\u00b2 + 15\u00b2 = 2 (4\u00b2 + CM\u00b2)\n\n**5. Solving for CM:**\n\n* Simplifying the equation:\n    * 289 + 225 = 2(16 + CM\u00b2)\n    * 514 = 32 + 2CM\u00b2\n    * 482 = 2CM\u00b2\n    * 241 = CM\u00b2\n* Taking the square root of both sides:\n    * CM = \u221a241\n\n**Therefore, the length of CM is \u221a241.** \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8149146451033243
+            }
+        }
+    }
+}

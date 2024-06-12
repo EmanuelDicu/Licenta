@@ -1,0 +1,18 @@
+{
+    "Precalculus_Level 1_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 1",
+        "problem": "Compute $\\arccos \\left( -\\frac{1}{2} \\right).$  Express your answer in radians.",
+        "correct_solution": "Since $\\cos \\frac{2 \\pi}{3} = -\\frac{1}{2},$ $\\arccos \\left( -\\frac{1}{2} \\right) = \\boxed{\\frac{2 \\pi}{3}}.$",
+        "generated_solutions": {
+            "gemini-1.5-pro": "**Understanding the Problem**\n\nFirst, let's break down what the problem is asking:\n\n* **arccos:** This is the inverse cosine function, also written as cos\u207b\u00b9.  It asks, \"What angle has a cosine of...?\"\n* **(-1/2):** This is the cosine value we're given. We need to find the angle whose cosine is -1/2. \n* **Radians:** We need to express our answer in radians, not degrees.\n\n**Solving the Problem**\n\n1. **Unit Circle:**  The most reliable way to solve inverse trigonometric problems is to use the unit circle. Recall that on the unit circle:\n    * The x-coordinate of a point on the circle represents the cosine of the corresponding angle.\n    * The y-coordinate represents the sine of the angle.\n\n2. **Finding the Angle:** Look for points on the unit circle where the x-coordinate (cosine) is -1/2.  You'll find two such points:\n\n    * One in the second quadrant.\n    * One in the third quadrant.\n\n3. **Determining the Correct Angle:** Since the cosine function has a range of [-1, 1], it repeats its values.  The arccosine function, however, is defined to have a range of  [0, \u03c0].  This means we only want the angle in the second quadrant.\n\n4. **Radians:** The angle in the second quadrant whose cosine is -1/2 is **2\u03c0/3**.\n\n**Solution**\n\nTherefore, $\\arccos \\left( -\\frac{1}{2} \\right) = \\boxed{\\frac{2\\pi}{3}}$. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9315589353612167
+            }
+        }
+    }
+}

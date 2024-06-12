@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 5_4.json": {
+        "category": "Geometry",
+        "difficulty": "Level 5",
+        "problem": "Suppose $PABCD$ is a right square pyramid with apex $P$ and base $ABCD$.  If $PBD$ is an equilateral triangle with side length 6, then what is the volume of $PABCD$?",
+        "correct_solution": "[asy]\n\nimport three;\n\ntriple A = (0,0,0);\n\ntriple B = (1,0,0);\n\ntriple C = (1,1,0);\n\ntriple D = (0,1,0);\n\ntriple P = (0.5,0.5,1);\n\ndraw(B--C--D--P--B);\n\ndraw(P--C);\n\ndraw(B--A--D,dashed);\n\ndraw(P--A,dashed);\n\nlabel(\"$A$\",A,NW);\n\nlabel(\"$B$\",B,W);\n\nlabel(\"$C$\",C,S);\n\nlabel(\"$D$\",D,E);\n\nlabel(\"$P$\",P,N);\n\ntriple F= (0.5,0.5,0);\n\nlabel(\"$F$\",F,S);\n\ntriple M=(B+C)/2;\n\ndraw(D--B,dashed);\n\ndraw(P--F,dashed);\n\n[/asy]\n\nLet $F$ be the center of the square base.  Since the pyramid is a right pyramid, segment $\\overline{PF}$ is an altitude of triangle $PBD$.  Since $PBD$ is an equilateral triangle with side length 6, $PFB$ is a 30-60-90 triangle with $FB = BD/2 =3$ and $PF = 3\\sqrt{3}$.  Finally, $\\overline{BD}$ is a diagonal of square base $ABCD$, so we have $BC = BD/\\sqrt{2} = 6/\\sqrt{2} = 3\\sqrt{2}$.  Therefore, the volume of the pyramid is \\[\\frac{[ABCD](PF)}{3} = \\frac{(3\\sqrt{2})^2 (3\\sqrt{3})}{3} = \\boxed{18\\sqrt{3}}.\\]",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's a breakdown of the solution process:\n\n**1. Understand the Problem**\n\nWe're given a right square pyramid. Here's what this means:\n\n* **Square Base:** The base $ABCD$ is a square.\n* **Right Pyramid:** The apex (top point) $P$ is directly above the center of the square base. \n\nWe also know that triangle $PBD$ is equilateral with side length 6. Our goal is to find the volume of the pyramid.\n\n**2. Key Idea**\n\nThe volume of a pyramid is given by:\n\n   Volume = (1/3) * (Base Area) * (Height)\n\nWe need to find the area of the square base and the height of the pyramid.\n\n**3. Finding the Base Area**\n\n* **Diagonal of the Square:**  Since $PBD$ is equilateral and  $BD$ is a diagonal of the square base, the diagonal of the square has length 6.\n\n* **Side of the Square:** Let the side length of the square be  's'.  A square's diagonal is \u221a2 times the length of its side.  Therefore: \n   * s\u221a2 = 6\n   * s = 6/\u221a2 = 3\u221a2\n\n* **Area of the Square:** The area of a square is side length squared:\n   * Area = s\u00b2 = (3\u221a2)\u00b2 = 18\n\n**4. Finding the Height**\n\n* **Right Triangle:** Consider right triangle $POB$, where $O$ is the center of the square base. \n    * $PB$ is a side of the equilateral triangle, so $PB = 6$.\n    * $OB$ is half the length of the square's diagonal, so $OB = 6/2 = 3$. \n    * $PO$ is the height (h) of the pyramid, which we need to find.\n\n* **Pythagorean Theorem:**  Apply the Pythagorean theorem to right triangle $POB$:\n    *  $PO\u00b2 + OB\u00b2 = PB\u00b2$\n    *  $h\u00b2 + 3\u00b2 = 6\u00b2$\n    *  $h\u00b2 = 36 - 9 = 27$\n    *  $h = \u221a27 = 3\u221a3$\n\n**5. Calculate the Volume**\n\nNow that we have the base area and the height, we can find the volume:\n\n* Volume = (1/3) * (Base Area) * (Height)\n* Volume = (1/3) * 18 * 3\u221a3 \n* Volume =  18\u221a3\n\n**Solution**\n\nThe volume of the pyramid $PABCD$ is **18\u221a3 cubic units**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8031145717463849
+            }
+        }
+    }
+}

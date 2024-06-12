@@ -1,0 +1,18 @@
+{
+    "Number Theory_Level 3_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 3",
+        "problem": "Find an integer $n$ such that $0\\leq n<398$ and $n$ is a multiplicative inverse to 7 modulo 398.",
+        "correct_solution": "We notice that 399 is a multiple of 7: \\[399=57\\cdot7.\\]Considering this equation modulo 398 gives \\[1\\equiv57\\cdot7\\pmod{398}\\]so the answer is $\\boxed{57}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "## Finding the Multiplicative Inverse\n\nOur goal is to find an integer 'n' within the range 0 \u2264 n < 398, such that 'n' is the multiplicative inverse of 7 modulo 398. This means:\n\n  7 * n \u2261 1 (mod 398)\n\nLet's break down the solution into smaller steps:\n\n**1. Understand Multiplicative Inverses:**\n\nIn modular arithmetic, the multiplicative inverse of a number 'a' modulo 'm' is another number 'b' such that their product is congruent to 1 modulo 'm'. \n\nIn simpler terms, we need to find a number that, when multiplied by 7 and then divided by 398, leaves a remainder of 1.\n\n**2. Apply B\u00e9zout's Identity:**\n\nB\u00e9zout's identity states that for any two integers 'a' and 'b', there exist integers 'x' and 'y' such that:\n\n  ax + by = gcd(a, b)\n\nwhere gcd(a, b) is the greatest common divisor of 'a' and 'b'.\n\n**3. Relate B\u00e9zout's Identity to our Problem:**\n\nIn our case, a = 7 and b = 398. Since 7 is a prime number and doesn't divide 398, their greatest common divisor is 1:\n\n  gcd(7, 398) = 1\n\nTherefore, B\u00e9zout's identity guarantees the existence of integers 'x' and 'y' satisfying:\n\n  7x + 398y = 1\n\n**4. Solve for 'x' using the Extended Euclidean Algorithm:**\n\nThe Extended Euclidean Algorithm helps us find 'x' and 'y' in B\u00e9zout's identity. Applying the algorithm (details omitted for brevity), we get:\n\n  x = 143 \n  y = -2\n\nThis means:\n\n  7 * 143 + 398 * (-2) = 1\n\n**5. Find the Multiplicative Inverse:**\n\nNotice that the equation above looks very similar to our goal: 7 * n \u2261 1 (mod 398).  \n\nTaking the modulo 398 of both sides of the equation from step 4:\n\n  (7 * 143 + 398 * (-2)) mod 398 = 1 mod 398\n\nSince 398 * (-2) is a multiple of 398, it reduces to 0 modulo 398:\n\n  (7 * 143) mod 398 = 1 mod 398\n\nTherefore, we found our multiplicative inverse:\n\n  n = 143\n\n**Solution:** The integer n = 143 satisfies the conditions 0 \u2264 n < 398 and 7 * n \u2261 1 (mod 398). \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9355531686358755
+            }
+        }
+    }
+}

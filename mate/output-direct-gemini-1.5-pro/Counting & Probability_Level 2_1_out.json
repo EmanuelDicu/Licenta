@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 2_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 2",
+        "problem": "Determine the number of ways to arrange the letters of the word THAT.",
+        "correct_solution": "First we count the arrangements if the two T's are unique, which is $4!$. Then since the T's are not unique, we divide by $2!$ for the arrangements of T, for an answer of $\\dfrac{4!}{2!} = \\boxed{12}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how we can break down and solve this problem:\n\n**Understanding the Problem**\n\nWe need to find how many different arrangements (permutations) are possible with the letters in the word \"THAT\".  Notice that the letter 'T' repeats.\n\n**Breaking it Down**\n\n1. **Unique Letters:**  If all the letters were unique, we'd have 4! (4 factorial) ways to arrange them. This is because we have 4 choices for the first letter, then 3 choices left for the second, and so on.\n\n   * 4! = 4 * 3 * 2 * 1 = 24\n\n2. **Accounting for Repetition:** Since the letter 'T' repeats, we're counting some arrangements multiple times. We need to correct for this overcounting.\n\n   * **Identical Arrangements:** Consider the two 'T's. We can swap their positions, and it wouldn't change the arrangement. So, we've counted each arrangement twice (2! ways) because of the repeating 'T'.\n\n**The Solution**\n\nTo get the correct number of arrangements, we divide the number of arrangements with unique letters by the number of ways to arrange the repeating letters:\n\nTotal arrangements = (Arrangements with unique letters) / (Arrangements of repeating letters)\n\nTotal arrangements = 4! / 2! \n                     = 24 / 2\n                     = 12\n\n**Therefore, there are 12 distinct ways to arrange the letters of the word \"THAT\".** \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.874136607828089
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Number Theory_Level 5_1.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 5",
+        "problem": "How many positive perfect cube factors does $3^65^{10}$ have?",
+        "correct_solution": "Any factor of $3^6\\cdot5^{10}$ is in the form $3^a\\cdot5^b$ for $0\\le a\\le6$ and $0\\le b\\le{10}$. To count the number of perfect cube factors, we must count the factors of $3^6\\cdot5^{10}$ that have $a=0$, $3$, or $6$ and $b=0$, $3$, $6$, or $9$. This gives $3\\cdot4=\\boxed{12}$ perfect cube factors.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how we can solve this problem by breaking it down:\n\n**Understanding the Problem**\n\nWe need to find out how many factors of the number  3\u20765\u00b9\u2070 are perfect cubes.  A perfect cube is a number that can be obtained by cubing an integer (like 1, 8, 27, 64, etc.).\n\n**Solution**\n\n1. **Prime Factorization:**\n\n   * Begin by expressing the given number as a product of its prime factors.  We already have it in this form: 3\u20765\u00b9\u2070.\n\n2. **Perfect Cubes and Exponents:**\n\n   * A number is a perfect cube if and only if every exponent in its prime factorization is divisible by 3.  For example, 27 (3\u00b3) is a perfect cube, but 12 (2\u00b23\u00b9) is not.\n\n3. **Finding Suitable Exponents:**\n\n   *  Consider the exponents of our prime factors: 6 for 3 and 10 for 5.\n   *  To form a perfect cube factor, we need to find the exponents divisible by 3 that are less than or equal to the given exponents.\n   *  For 3, the possible exponents are 0, 3, and 6.\n   *  For 5, the possible exponents are 0, 3, 6, and 9.\n\n4. **Counting the Combinations:**\n\n   *  We can choose any of the suitable exponents for 3 and combine it with any of the suitable exponents for 5 to form a perfect cube factor.\n   *  This gives us 3 choices for the exponent of 3 and 4 choices for the exponent of 5.\n\n5. **Total Perfect Cube Factors:**\n\n   *  The total number of perfect cube factors is the product of the number of choices for each prime factor's exponent.\n   *  Therefore, there are 3 * 4 = **12** positive perfect cube factors of 3\u20765\u00b9\u2070.\n\n**Example:**\n\nOne such perfect cube factor is 3\u00b35\u2076 = 27 * 15625 = 421875, which is the cube of 15. \n\n**In conclusion, there are 12 positive perfect cube factors of 3\u20765\u00b9\u2070.** \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8821065230400957
+            }
+        }
+    }
+}

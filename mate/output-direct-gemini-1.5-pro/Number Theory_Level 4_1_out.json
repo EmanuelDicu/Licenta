@@ -1,0 +1,18 @@
+{
+    "Number Theory_Level 4_1.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 4",
+        "problem": "Recall that if $b$ is a residue $\\pmod{m}$, then the modular inverse of $b$ is the residue $c$ for which $bc \\equiv 1\\pmod{m}$. The table below shows the inverses of the first 9 positive residues modulo 47.  \\begin{tabular}{c|ccccccccc}\n$b$ & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\\\ \\hline\ninverse of $\\,b$ & 1 & 24 & 16 & 12 & 19 & 8 & 27 & 6 & 21\n\\end{tabular}Find the modular inverse of $35\\pmod{47}$.\n\nExpress your answer as an integer from $0$ to $46$, inclusive.",
+        "correct_solution": "We want to find the residue $c$ such that $35c \\equiv 1 \\pmod{47}$. Recall that, since 35 is relatively prime to 47, this inverse exists and is unique. To make use of the table we are given, we notice that $35 = 5\\cdot 7$. We can multiply both sides of $35c \\equiv 1\\pmod{47}$ by the inverse of 5 to obtain  \\begin{align*}\n19\\cdot 5 \\cdot 7 \\cdot c &\\equiv 19\\cdot 1 \\pmod{47} \\implies \\\\\n(19\\cdot 5) \\cdot 7 \\cdot c &\\equiv 19 \\pmod{47} \\implies \\\\\n1 \\cdot 7 \\cdot c &\\equiv 19 \\pmod{47}. \\\\\n\\end{align*}Now we can multiply both sides by 27, the inverse of 7, to find  \\begin{align*}\n27\\cdot 7 \\cdot c &\\equiv 27\\cdot 19 \\pmod{47} \\implies \\\\\nc &\\equiv 513 \\pmod{47}.\n\\end{align*}Subtracting 470 from 513 does not change its residue (mod 47), so we have $c\\equiv 43\\pmod{47}$. Since $0\\leq 43 < 47$, $\\boxed{43}$ is the desired residue.\n\nRemark: More generally, the approach above shows that $(ab)^{-1}=b^{-1}a^{-1}$, where $b^{-1}$ denotes the modular inverse of $b$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "## Finding the Modular Inverse of 35 modulo 47\n\nWe are given a table of modular inverses for residues modulo 47 up to 9. We can use this information along with properties of modular arithmetic to find the inverse of 35. Here's a breakdown of the steps:\n\n**1. Break down 35 into smaller factors:**\n\n*  We can write 35 as a product of numbers whose inverses we already know:  35 = 5 * 7.\n\n**2. Utilize the property of modular inverses:**\n\n*  Recall that the modular inverse of a product is the product of the modular inverses. In other words, if  *a* and *b* have inverses *a<sup>-1</sup>* and *b<sup>-1</sup>* modulo *m*, then (a*b)<sup>-1</sup> \u2261 a<sup>-1</sup> * b<sup>-1</sup> (mod *m*).\n\n**3. Find the inverses of the factors from the table:**\n\n*  From the given table, we see that:\n    * The inverse of 5 modulo 47 is 19.\n    * The inverse of 7 modulo 47 is 27.\n\n**4. Calculate the product of the inverses:**\n\n*  Therefore, the inverse of 35 modulo 47 is equivalent to the product of the inverses of 5 and 7 modulo 47: \n    *  35<sup>-1</sup> \u2261 5<sup>-1</sup> * 7<sup>-1</sup> \u2261 19 * 27 (mod 47)\n\n**5. Simplify the result modulo 47:**\n\n*  Calculate 19 * 27 = 513\n*  Reduce 513 modulo 47: 513 divided by 47 equals 10 with a remainder of 43.\n\n**Therefore, the modular inverse of 35 modulo 47 is 43.** \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7607361963190185
+            }
+        }
+    }
+}

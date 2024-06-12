@@ -1,0 +1,18 @@
+{
+    "Precalculus_Level 1_2.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 1",
+        "problem": "Let $a = 5 - 8i$ and $b = 30 + 48i$. Find $|ab|$.",
+        "correct_solution": "Note that $b = 6(5 + 8i) = 6\\overline{a}$. So $|ab| = |a(6\\overline{a})| = 6 |a\\overline{a}| = 6|a|^2$. We have $|a|^2 = 5^2 + 8^2 = 89$, so $|ab| = 6 \\cdot 89 = \\boxed{534}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "## Solution\n\nHere's how we can solve this problem by breaking it down:\n\n**1. Understand the Problem:**\n\n* We are given two complex numbers,  'a' and 'b', in the standard form: a + bi (where 'a' is the real part and 'b' is the imaginary part).\n* We need to find the modulus (or absolute value) of the product of these two complex numbers, represented by |ab|.\n\n**2. Recall Key Concepts:**\n\n* **Modulus of a Complex Number:** The modulus of a complex number z = a + bi is denoted as |z| and is calculated as: \n   |z| = \u221a(a\u00b2 + b\u00b2) \n* **Product of Complex Numbers:** Complex numbers are multiplied like binomials, remembering that i\u00b2 = -1.\n\n**3. Execute the Solution:**\n\n* **Step 1: Find the product 'ab'.**\n   (5 - 8i)(30 + 48i) = 150 + 240i - 240i - 384i\u00b2 \n   Since i\u00b2 = -1, we can simplify:\n   150 + 240i - 240i + 384 = 534 \n   Therefore, ab = 534\n\n* **Step 2: Calculate the modulus of 'ab'.**\n   Since ab = 534, which is a real number, its imaginary part is 0. \n   |ab| = |534| = \u221a(534\u00b2 + 0\u00b2) = 534\n\n**4. State the Answer:**\n\nTherefore,  |ab| = **534**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9023696682464455
+            }
+        }
+    }
+}

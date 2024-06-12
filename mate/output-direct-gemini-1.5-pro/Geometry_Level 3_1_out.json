@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 3_1.json": {
+        "category": "Geometry",
+        "difficulty": "Level 3",
+        "problem": "If the volume of a sphere inscribed in a cube is $\\frac{\\pi}{6}$ cubic inches, what is the number of cubic inches in the volume of the cube?",
+        "correct_solution": "A sphere with radius $r$ has volume $\\frac{4}{3}\\pi r^3$, so here we have \\[\\frac{4}{3}\\pi r^3 = \\frac{\\pi}{6}.\\] Solving for $r$ yields $r^3 = \\frac{1}{8}$ so $r = \\sqrt[3]{\\frac{1}{8}} = \\frac{1}{2}$. [asy]\nsize(60);\ndraw(Circle((6,6),4.5));\ndraw((10.5,6)..(6,6.9)..(1.5,6),linetype(\"2 4\"));\ndraw((10.5,6)..(6,5.1)..(1.5,6));\ndraw((0,0)--(9,0)--(9,9)--(0,9)--cycle);\ndraw((0,9)--(3,12)--(12,12)--(9,9));\ndraw((12,12)--(12,3)--(9,0));\ndraw((0,0)--(3,3)--(12,3),dashed); draw((3,3)--(3,12),dashed);\n[/asy] The diameter of the inscribed sphere is equal to the side length of the cube, so the side length of the cube is 1, and the volume of the cube is $1^3=\\boxed{1}$ cubic inch.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Let's break down this geometry problem step-by-step:\n\n**1. Understanding the Setup**\n\n* **Sphere Inscribed in a Cube:**  Imagine a cube with a sphere perfectly contained inside it, touching all six faces of the cube.\n* **Key Relationship:** The diameter of the sphere is equal to the side length of the cube.\n\n**2. Using the Volume Formula**\n\n* **Volume of a Sphere:**  The volume (V) of a sphere is given by the formula V = (4/3)\u03c0r\u00b3, where r is the radius of the sphere. \n\n**3. Finding the Sphere's Radius**\n\n* **Given Information:** We know the volume of the sphere is \u03c0/6 cubic inches.  Let's plug this into the volume formula and solve for the radius (r):\n   * \u03c0/6 = (4/3)\u03c0r\u00b3\n   * 1/6 = (4/3)r\u00b3 \n   * 1/8 = r\u00b3\n   * r = 1/2 inch\n\n**4. Finding the Cube's Side Length**\n\n* **Diameter = Side Length:** Since the diameter of the sphere is twice the radius, the diameter is 1 inch. This is also the side length (s) of the cube.\n\n**5. Calculating the Cube's Volume**\n\n* **Volume of a Cube:** The volume (V) of a cube is given by the formula V = s\u00b3.\n* **Calculation:** With s = 1 inch, the volume of the cube is:\n   * V = 1\u00b3 = 1 cubic inch\n\n**Solution:** The volume of the cube is **1 cubic inch**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7984949832775919
+            }
+        }
+    }
+}

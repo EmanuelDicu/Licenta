@@ -1,0 +1,18 @@
+{
+    "Number Theory_Level 4_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 4",
+        "problem": "What integer $n$ satisfies $0\\le n<18$ and $$n\\equiv -11213141\\pmod{18}~?$$",
+        "correct_solution": "An integer is divisible by $18$ if and only if the sum of its digits is divisible by $9$ and the last digit is even (meaning it is divisible by both 9 and 2).  The sum of the digits of $-11213141$ is 14.  Since $-11213141$ is negative, this number is 5 $\\textit{less than}$ a multiple of 9.  The number is 4 $\\textit{more than}$ a multiple of 9.  Subtracting 4 gives  \\[-11213141 = -11213145+4.\\]Since $-11213145$ has a digit sum of 18, this number is a multiple of 9.  However this is not a multiple of 18 so we need to subtract 9 again: \\[-11213141 = -11213154+13.\\]Now the number $-11213154$ is a multiple of 18, so the answer is $\\boxed{13}$. $$-11213141\\equiv 13\\pmod {18}.$$",
+        "generated_solutions": {
+            "gemini-1.5-pro": "##  Solving the modular congruence:\n\nHere's how we can solve the problem step-by-step:\n\n**1. Understanding Modular Arithmetic:**\n\nThe expression \"$n \\equiv -11213141 \\pmod{18}$\" means that  *n* and -11213141 have the same remainder when divided by 18.  In other words, the difference  *n - (-11213141)* is divisible by 18.\n\n**2. Simplifying Large Numbers:**\n\nWorking with large numbers like -11213141 in modular arithmetic can be cumbersome.  We can simplify this by finding a smaller number congruent to -11213141 modulo 18. \n\n* **Divide and find the remainder:** Divide -11213141 by 18:\n   -11213141 \u00f7 18 \u2248 -622952 with a remainder of -5\n\n* **Focus on the remainder:** This means: \n   -11213141 \u2261 -5 (mod 18)\n\nNow our problem becomes: find *n* where  $0 \u2264 n < 18$ and $n \\equiv -5 \\pmod{18}$.\n\n**3. Finding the Solution:**\n\nSince -5 is negative, and we need a solution in the range of 0 to 17,  we can add multiples of 18 until we get a number within that range:\n\n-5 + 18 = 13\n\n**Therefore, n = 13 is the solution to the problem.** \n\n**In conclusion:** The integer *n* that satisfies  $0 \u2264 n < 18$ and $n \\equiv -11213141 \\pmod{18}$ is **n = 13**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7445699391833188
+            }
+        }
+    }
+}

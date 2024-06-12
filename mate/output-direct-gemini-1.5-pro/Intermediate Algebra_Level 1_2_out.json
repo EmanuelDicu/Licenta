@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 1_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 1",
+        "problem": "Let $a,$ $b,$ and $c$ be the roots of $x^3 + 7x^2 - 11x - 2 = 0.$  Find $a + b + c.$",
+        "correct_solution": "By Vieta's formulas, $a + b + c = \\boxed{-7}.$",
+        "generated_solutions": {
+            "gemini-1.5-pro": "**Understanding the Problem**\n\nWe are given a cubic equation and told that *a*, *b*, and *c* are its roots. This means if we plug in *a*, *b*, or *c* into the equation for *x*, the equation will hold true.  Our goal is to find the sum of these roots (*a* + *b* + *c*) without actually solving for the roots themselves.\n\n**Key Concept: Vieta's Formulas**\n\nVieta's formulas provide a direct relationship between the coefficients of a polynomial and the sum and products of its roots. For a cubic equation in the form:\n\n*ax*\u00b3 + *bx*\u00b2 + *cx* + *d* = 0 \n\nVieta's formulas tell us:\n\n* **Sum of roots:**  *a* + *b* + *c* = -*b/a*\n* **Sum of pairwise products:** *ab* + *ac* + *bc* = *c/a*\n* **Product of roots:** *abc* = -*d/a*\n\n**Applying Vieta's Formulas to Our Problem**\n\n1. **Identify the coefficients:** \n   Our equation is *x*\u00b3 + 7*x*\u00b2 - 11*x* - 2 = 0. \n   Therefore:\n   * *a* = 1\n   * *b* = 7\n   * *c* = -11\n   * *d* = -2\n\n2. **Apply the formula for the sum of roots:**\n   We need to find *a* + *b* + *c*.  Vieta's formula tells us:\n   *a* + *b* + *c* = -*b/a* = -7/1 = -7\n\n**Solution**\n\nThe sum of the roots of the equation *x*\u00b3 + 7*x*\u00b2 - 11*x* - 2 = 0 is **-7**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9665523156089194
+            }
+        }
+    }
+}

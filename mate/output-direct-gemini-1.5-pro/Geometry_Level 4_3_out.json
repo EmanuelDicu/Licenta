@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 4_3.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "What is the area, in square units, of the square with the four vertices at $(-2, 2), (2, -2), (-2, -6)$, and $(-6, -2)$?",
+        "correct_solution": "The length of the square is $\\sqrt{4^2 + 4^2} = 4\\sqrt{2}$. Therefore, the area of the square is $(4\\sqrt{2})^2 = \\boxed{32}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how to solve the problem step-by-step:\n\n**1. Visualize the Square**\n\nImagine or sketch the points on a coordinate plane.  This will help you see the square and how to approach the problem.\n\n**2. Find the Side Length of the Square**\n\n* **Focus on one side:**  Let's look at the side connecting the points (-2, 2) and (2, -2).  \n* **Use the distance formula (or Pythagorean Theorem):**  Since we have the coordinates of the two endpoints of this side, we can find the length.  The distance formula is:\n\n   \u221a[(x\u2082 - x\u2081)\u00b2 + (y\u2082 - y\u2081)\u00b2]\n\n   Plugging in our points (-2, 2) and (2, -2):\n\n   \u221a[(2 - (-2))\u00b2 + (-2 - 2)\u00b2] \n   = \u221a[4\u00b2 + (-4)\u00b2] \n   = \u221a(16 + 16)\n   = \u221a32\n   = 4\u221a2\n\n   So, the side length of the square is 4\u221a2 units.\n\n**3. Calculate the Area**\n\n* **Area formula:** The area of a square is side length squared (side * side).\n* **Calculate:**  (4\u221a2) * (4\u221a2) = 16 * 2 = 32\n\n**Solution:** The area of the square is **32 square units**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9053191489361702
+            }
+        }
+    }
+}

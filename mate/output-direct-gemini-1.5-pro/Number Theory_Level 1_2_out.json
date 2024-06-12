@@ -1,0 +1,18 @@
+{
+    "Number Theory_Level 1_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 1",
+        "problem": "What digit must be placed in the blank to make the four-digit integer $20\\_7$ a multiple of 11?",
+        "correct_solution": "A number will be divisible by 11 if you get a multiple of 11 by alternately adding and then subtracting its digits.  If we name the blank integer $A$, then the alternating sum is $2 - 0 + A - 7 = A -5$.  This value can only be equal to 0 (as 11, 22, etc all yield $A$ that are too large), so $A = \\boxed{5}$ is the only digit that will work.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how we can solve this problem:\n\n**Understanding Divisibility by 11**\n\nA number is divisible by 11 if the difference between the sum of its alternate digits is either 0 or a multiple of 11.  \n\n**Applying the Rule**\n\n1. **Sum of Odd-Positioned Digits:** In the number 20_7, the odd-positioned digits are 2 and _. Let's represent the blank with the variable 'x'.  So the sum is 2 + x.\n\n2. **Sum of Even-Positioned Digits:** The even-positioned digits are 0 and 7, with a sum of 0 + 7 = 7.\n\n3. **Difference:**  We need to find the difference between the two sums:  (2 + x) - 7 = x - 5\n\n4. **Making it Divisible by 11:** For the number to be divisible by 11, the difference (x - 5) must be either 0 or a multiple of 11.  \n\n   *  If x - 5 = 0, then x = 5.\n\n**Solution**\n\nThe digit that must be placed in the blank to make the four-digit integer 20_7 a multiple of 11 is **5**. \n\n**Check:** 2057 is indeed divisible by 11 (2057 / 11 = 187). \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7749469214437368
+            }
+        }
+    }
+}

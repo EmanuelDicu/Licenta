@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 4_3.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 4",
+        "problem": "Suppose 6 wallops = 5 ballops. Also suppose 3 ballops = 11 fallops. How many wallops are equivalent to 110 fallops?",
+        "correct_solution": "Multiply  \\[\n3\\text{ ballops}=11\\text{ fallops}\n\\] by 10 to find that $30$ ballops are equal to $110$ fallops.  Then multiply  \\[\n6\\text{ wallops} = 5\\text{ ballops}\n\\] by 6 to find that $\\boxed{36}$ wallops are equivalent to 30 ballops.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how to solve the problem step-by-step:\n\n**1. Understand the Relationships**\n\n* We're given two relationships between different units: wallops, ballops, and fallops. \n* Our goal is to figure out how many *wallops* are equal to a certain number of *fallops*.\n\n**2. Find a Connecting Unit**\n\n* Notice that \"ballops\" appears in both given relationships. This will be our connecting unit.\n\n**3. Make the Connecting Unit Match**\n\n* We need to find a way to relate wallops to fallops *through* ballops. \n* To do this, let's make the number of ballops the same in both relationships.\n    * We know 6 wallops = 5 ballops.\n    * We know 3 ballops = 11 fallops. \n    * Let's multiply the second relationship by 5 and the first relationship by 3 so both have 15 ballops:\n\n     (6 wallops = 5 ballops)  * 3  --->  18 wallops = 15 ballops\n     (3 ballops = 11 fallops) * 5  --->  15 ballops = 55 fallops\n\n**4. Combine the Relationships**\n\n* Now we have:\n    * 18 wallops = 15 ballops\n    * 15 ballops = 55 fallops\n* Since 15 ballops is equal in both, we can combine them:\n    * 18 wallops = 55 fallops\n\n**5.  Scale to the Target**\n\n* We want to know how many wallops are equal to *110* fallops.\n* Notice that 110 fallops is double 55 fallops. \n* To keep the equation balanced, we double the number of wallops as well:\n\n    (18 wallops = 55 fallops) * 2  --->  36 wallops = 110 fallops\n\n**Solution:** 36 wallops are equivalent to 110 fallops. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.878133704735376
+            }
+        }
+    }
+}

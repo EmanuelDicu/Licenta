@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 3_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 3",
+        "problem": "What is the tens digit in the sum $7! + 8! + 9! + \\cdots + 2006!$?",
+        "correct_solution": "Since $n!$ contains the product $2\\cdot5\\cdot10= 100$ whenever $n\\ge 10$,  it suffices to determine the tens digit of \\[\n7! + 8! + 9! = 7!(1 + 8 + 8\\cdot9) = 5040(1 + 8 + 72)= 5040\\cdot81.\n\\]This  is the same as the units digit of $4\\cdot 1$, which is $\\boxed{4}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "## Solution:\n\nLet's break down the problem into smaller parts:\n\n**Part 1: Understanding Factorials**\n\nFirst, we need to understand what factorials are. The factorial of a non-negative integer *n*, denoted by *n*!, is the product of all positive integers less than or equal to *n*. \n\nFor example: \n* 5! = 5 * 4 * 3 * 2 * 1 = 120\n\n**Part 2: Finding a Pattern in Factorials**\n\nNotice that for any factorial starting from 5! and beyond, the units digit will always be zero.  This is because the factorial will always include the product of 2 and 5, which is 10.\n\nFor example:\n* 5! = 5 * 4 * 3 * 2 * 1 = 12**0**\n* 6! = 6 * 5 * 4 * 3 * 2 * 1 = 72**0** \n\n**Part 3: Focusing on the Relevant Terms**\n\nSince we are only interested in the tens digit, we can ignore the units digit (which will always be zero for factorials 5! and beyond).  This means we only need to focus on the sum of the tens digits from 7! to 2006!.\n\n**Part 4: Recognizing Cyclicity**\n\nConsider the tens digits of the first few factorials:\n\n* 5! = 120\n* 6! = 720\n* 7! = 5040\n* 8! = 40320\n* 9! = 362880\n\nNotice that the tens digit repeats in a cycle of 2: {2, 4}. \n\n**Part 5: Applying the Cyclicity to the Problem**\n\nSince the cycle of the tens digit has a length of 2, we need to determine how many times this cycle repeats from 7! to 2006!.  There are 2000 terms from 7! to 2006! (2006 - 7 + 1 = 2000).  Therefore, the cycle of {2, 4} will repeat 1000 times (2000 terms / 2 terms per cycle).\n\n**Part 6:  Calculating the Final Sum**\n\nSince the cycle {2, 4} repeats 1000 times, the sum of the tens digits will be:\n\n1000 * (2 + 4) = 6000\n\n**Solution:** The tens digit of the sum 7! + 8! + 9! + ... + 2006! is **0**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8925373134328358
+            }
+        }
+    }
+}

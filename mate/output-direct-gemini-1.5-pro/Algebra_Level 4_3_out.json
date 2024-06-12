@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 4_3.json": {
+        "category": "Algebra",
+        "difficulty": "Level 4",
+        "problem": "The product of $3t^2+5t+a$ and $4t^2+bt-2$ is $12t^4+26t^3-8t^2-16t+6$. What is $a+b$?",
+        "correct_solution": "The constant term of the product of two polynomials is just the product of the two constant terms. Therefore we know that $6=-2a$, so $a=-3$. We now consider the linear term of the product of our polynomials. It's given by $-16t=(5t\\cdot-2)+a\\cdot bt\\Longrightarrow-16t=-10t+(-3)bt\\Longrightarrow b=2$. Therefore our answer is $a+b=\\boxed{-1}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how to solve the problem step-by-step:\n\n**1. Understand the Problem**\n\nWe're given two quadratic expressions (expressions with the highest power of the variable being 2) and told their product equals a fourth-degree polynomial.  Our goal is to find the values of the unknowns 'a' and 'b' and then calculate their sum.\n\n**2. Expand the Product**\n\nTo compare coefficients, we need to expand the product of the two quadratic expressions. Remember how to use the distributive property (sometimes called FOIL):\n\n*  **(3t\u00b2 + 5t + a)(4t\u00b2 + bt - 2) =** \n   *  3t\u00b2(4t\u00b2 + bt - 2) + 5t(4t\u00b2 + bt - 2) + a(4t\u00b2 + bt - 2) \n   *  = 12t\u2074 + 3bt\u00b3 - 6t\u00b2 + 20t\u00b3 + 5bt\u00b2 - 10t + 4at\u00b2 + abt - 2a\n\n**3. Group Like Terms**\n\nNow, let's group the terms based on their powers of 't':\n\n*  12t\u2074 + (3b + 20)t\u00b3 + (4a + 5b - 6)t\u00b2 + (ab - 10)t - 2a\n\n**4. Match Coefficients**\n\nThis expanded form must be equal to the given product, 12t\u2074 + 26t\u00b3 - 8t\u00b2 - 16t + 6. For two polynomials to be equal, the coefficients of the corresponding powers of 't' must be equal. Let's set up equations:\n\n*  **t\u2074 term:** 12 = 12 (This confirms we're on the right track)\n*  **t\u00b3 term:** 3b + 20 = 26 \n*  **t\u00b2 term:** 4a + 5b - 6 = -8\n*  **t term:**  ab - 10 = -16\n*  **Constant term:** -2a = 6\n\n**5. Solve the Equations**\n\nNow we have a system of equations. Let's solve for 'a' and 'b':\n\n*  From the constant term equation: -2a = 6,  so  a = -3\n*  From the t\u00b3 term equation: 3b + 20 = 26, so 3b = 6 and b = 2\n\n**6. Calculate a + b**\n\nFinally,  a + b = (-3) + 2 = **-1**\n\n**Solution:**\n\nTherefore, a + b = -1. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.854673495518566
+            }
+        }
+    }
+}

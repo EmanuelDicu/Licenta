@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 5_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 5",
+        "problem": "How many different positive integers divisible by 4 can be formed using each of the digits 1, 2, 3, and 4 at most once, and no other digits? For example, 12 counts, but 512 does not.",
+        "correct_solution": "The only one-digit integer divisible by $4$ that we can construct is $4$.\n\nWe can construct $3$ two-digit integers divisible by $4$: $12$, $32$, and $24$.\n\nAn integer is divisible by $4$ if its rightmost two digits are divisible by $4$.  Thus we can append either or both of the remaining two digits to any of these two-digit integers and preserve divisibility by $4$.  For each, there are $2$ ways to choose one digit to append, and $2$ ways to order the digits if we append both of them.  Thus we get $4$ more integers for each, or $12$ total.\n\nThe full number is $12+3+1=\\boxed{16}$ integers.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how we can break down this problem:\n\n**Understanding the Problem**\n\nWe need to find all the possible numbers divisible by 4 that we can create using the digits 1, 2, 3, and 4 without repetition.\n\n**Key Concept: Divisibility Rule for 4**\n\nA number is divisible by 4 if the last two digits of the number are divisible by 4.\n\n**Breaking it Down**\n\n1. **Possible Last Two Digits:** Since we're concerned with divisibility by 4, let's first figure out which combinations of the digits 1, 2, 3, and 4, when used as the last two digits, form a number divisible by 4.  These are:\n\n   * 12 \n   * 24\n   * 32\n\n2. **Casework Based on Last Two Digits:** Now, we'll consider each of these combinations separately:\n\n   * **Case 1: Last two digits are 12**\n      *  We have already used digits 1 and 2.\n      *  We have two remaining slots for the thousands and hundreds places. \n      *  We can fill these slots with the digits 3 and 4 in 2! = 2 ways (3412, 4312).\n\n   * **Case 2: Last two digits are 24**\n      * Similar to case 1, we have two remaining slots and two digits (1 and 3).\n      *  We can fill the slots in 2! = 2 ways (1324, 3124).\n\n   * **Case 3: Last two digits are 32**\n      *  Again, we have two remaining slots and two digits (1 and 4).\n      *  We can fill the slots in 2! = 2 ways (1432, 4132).\n\n**Total Possibilities**\n\nAdding the possibilities from all the cases: 2 + 2 + 2 = 6\n\n**Solution**\n\nThere are **6** different positive integers divisible by 4 that can be formed using the digits 1, 2, 3, and 4 at most once. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7563517915309447
+            }
+        }
+    }
+}

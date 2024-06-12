@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 3_3.json": {
+        "category": "Algebra",
+        "difficulty": "Level 3",
+        "problem": "Let $h$ be a polynomial of degree $5$, and suppose that $h(x) = (x^2-7x+10) \\cdot g(x)$, where $g(x)$ is a polynomial of degree $b$.  Find $b$.",
+        "correct_solution": "Recall that for positive integers $a$ and $b$ $x^a x^b = x^{a+b}$.  Thus, if $h(x)$, $f(x)$, and $g(x)$ are polynomials such that $h(x)=f(x) \\cdot g(x)$ and if $ x^a $ and $ x^b $ are the highest degree terms of $f(x)$ and $g(x)$ then the highest degree term of $h(x)$ will be $x^{a+b}$.  In our case $f(x) = x^2-7x+10$, the highest degree term is $x^2$ and $h(x)$ has highest degree term $x^5$.  Thus, solving for $b$ in the equation $x^5 = x^2 x^b = x^{2+b}$, we find $b=\\boxed{3}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "##  Solving for the degree of a polynomial\n\nOur goal is to find the degree of the polynomial $g(x)$. To do this, let's break down the problem:\n\n**1. Understanding Degree**\n\n* **Definition:** The degree of a polynomial is the highest power of the variable in the polynomial. \n* **Example:** The polynomial $3x^4 - 2x + 5$ has a degree of 4.\n\n**2. Polynomial Multiplication and Degree**\n\n* When multiplying polynomials, the degrees add.\n* **Example:** If we multiply a polynomial of degree 3 by a polynomial of degree 2, the resulting polynomial will have a degree of 5 (3 + 2 = 5).\n\n**3. Analyzing the Given Information**\n\n* We are given that $h(x) = (x^2 - 7x + 10) \\cdot g(x)$.\n* We know $h(x)$ has a degree of 5.\n* The polynomial $(x^2 - 7x + 10)$ has a degree of 2.\n\n**4. Determining the Degree of g(x)**\n\n* Let the degree of $g(x)$ be $b$.\n* Using the principle from step 2, the degree of $h(x)$ is the sum of the degrees of $(x^2 - 7x + 10)$ and $g(x)$.\n* This can be represented by the equation: 2 + $b$ = 5\n\n**5. Solving for b**\n\n* Subtracting 2 from both sides of the equation, we get: $b$ = 3\n\n**Solution:**\n\nTherefore, the degree of the polynomial $g(x)$ is **3**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7772108843537415
+            }
+        }
+    }
+}

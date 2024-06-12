@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 5_1.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 5",
+        "problem": "In the diagram, $K$, $O$ and $M$ are the centers of the three semi-circles. Also, $OC = 32$ and $CB = 36$. [asy]\npair A, K, O, C, M, B, X, Y, Z;\nO=(0,0);\nC=(32,0);\nM=(50,0);\nB=(68,0);\nA=(-68,0);\nK=(A+C)/2;\nX=(0,68);\nY=(-18,50);\nZ=(50,18);\npath nom, bigc, middlec, smallc;\nnom=A--B--(100,100)--(-100,100)--cycle;\nbigc=A..X..B--cycle;\nmiddlec=A..Y..C--cycle;\nsmallc=C..Z..B--cycle;\nfill(bigc, gray(.5));\nfill(middlec, white);\nfill(smallc, white);\ndraw(smallc);\ndraw(middlec);\ndraw(bigc);\ndraw(A--B);\nlabel(\"A\", A, S);\nlabel(\"K\", K, S);\nlabel(\"O\", O, S);\nlabel(\"M\", M, S);\nlabel(\"C\", C, S);\nlabel(\"B\", B, S);\ndot(K);\ndot(O);\ndot(M);\n[/asy]\n\n\nWhat is the length of $AC$?",
+        "correct_solution": "We know that $OA$ and $OB$ are each radii of the semi-circle with center $O$.  Thus, $OA=OB=OC+CB=32+36=68$. Therefore, $AC=AO+OC=68+32=\\boxed{100}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "## Solution\n\nLet's break down this problem step-by-step:\n\n**1. Understanding the Diagram**\n\n* We have three semi-circles. \n* The largest semi-circle has diameter AB.\n* The middle semi-circle has diameter AC.\n* The smallest semi-circle has diameter CB.\n* K, O, and M are the centers of the semi-circles, which means they lie on the midpoint of their respective diameters.\n\n**2.  Finding Key Lengths**\n\n* **OC:** Given as 32.  This is the radius of the middle semi-circle.\n* **CB:** Given as 36.  This is the diameter of the smallest semi-circle.\n* **OB:** Since OC is the radius and CB is the diameter of the same semi-circle, OB = CB/2 = 36/2 = 18.\n\n**3. Utilizing Relationships**\n\n* **Diameter and Radius:** The diameter of a circle is twice its radius.\n* **Segment Addition:**  We can add segments together to find the length of a larger segment.\n\n**4.  Solving for AC**\n\n* **Finding OA:**  OA is the radius of the middle semi-circle, so OA = OC = 32.\n* **Applying Segment Addition:**  The diameter AB is made up of segments AO, OB, and BC. Therefore, AB = AO + OB + BC.\n* **Calculating AB:** AB = 32 + 18 + 36 = 86.\n* **Finding AC:** AC is the diameter of the middle semi-circle and also a part of AB. Since K is the midpoint of AB, AC = AB/2 = 86/2 = 43.\n\n**Solution:** The length of AC is **43**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9148119723714505
+            }
+        }
+    }
+}

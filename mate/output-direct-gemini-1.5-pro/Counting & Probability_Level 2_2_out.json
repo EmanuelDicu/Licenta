@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 2_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 2",
+        "problem": "In how many ways can a 3-person committee be chosen from a group of 8 people?",
+        "correct_solution": "There are $\\binom{8}{3} = \\frac{8 \\times 7 \\times 6}{3!}=\\boxed{56}$ to choose 3 people from a group of 8 without regard to order.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how we can break down and solve this combination problem:\n\n**Understanding the Problem**\n\nWe need to find the number of possible unique groups of 3 people that can be formed from a larger group of 8. The order in which we choose the people for the committee doesn't matter (choosing John then Sarah then Bill is the same as choosing Bill then Sarah then John).\n\n**Solution**\n\nHere's how to solve it step-by-step:\n\n1. **Consider the choices for each spot:**\n\n   *  For the first spot on our committee, we have 8 options (any of the 8 people).\n   *  For the second spot, we only have 7 people remaining.\n   *  For the third spot, we have 6 people remaining.\n\n2. **Calculate the total potential combinations:**\n\n   * It seems like we have 8 * 7 * 6 = 336 ways to choose the committee. \n\n3. **Account for overcounting:**\n\n   *  We've overcounted! Why? Because we've counted groups like (John, Sarah, Bill), (John, Bill, Sarah), (Bill, John, Sarah), etc., as different groups when they are actually the same committee. \n\n4. **Correct for overcounting:**\n\n   *  We need to figure out how many times we've overcounted each group.  For any group of 3, there are 3! (3 factorial) ways to order them: 3 * 2 * 1 = 6 ways.\n   *  Therefore, we've counted each unique group 6 times.\n\n5. **Find the final answer:**\n\n   * Divide the initial count by the overcounting factor: 336 / 6 = 56\n\n**Solution Summary**\n\nThere are **56** ways to choose a 3-person committee from a group of 8 people.\n\n**Formula**\n\nThis type of problem is a combination problem, and it can be solved directly using the following formula:\n\n*  nCr = n! / (r! * (n-r)!) \n   * Where n is the total number of items (8 people)\n   * r is the number of items to choose (3 people on the committee)\n\n*  8C3 = 8! / (3! * 5!) = 56 \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.944475602916433
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 3_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 3",
+        "problem": "Find the complex number $z$ so that $z + |z| = 2 + 8i.$",
+        "correct_solution": "Let $z = a + bi.$  Then\n\\[a + bi + \\sqrt{a^2 + b^2} = 2 + 8i.\\]Equating the imaginary parts, we get $b = 8.$  Equating the real parts, we get $a + \\sqrt{a^2 + 64} = 2.$  Then\n\\[\\sqrt{a^2 + 64} = 2 - a.\\]Squaring both sides, we get $a^2 + 64 = (2 - a)^2 = a^2 - 4a + 4.$  Solving, we find $a = -15.$  Therefore, $z = \\boxed{-15 + 8i}.$",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Let's break down this problem to solve for the complex number *z*.\n\n**Understanding Complex Numbers**\n\n* A complex number is of the form  *z = a + bi*, where 'a' is the real part, 'b' is the imaginary part, and 'i' is the imaginary unit (\u221a-1).\n* The modulus (or absolute value) of a complex number *z = a + bi* is denoted as |*z*| and is calculated as |*z*| = \u221a(a\u00b2 + b\u00b2). \n\n**Solving the Problem**\n\n1. **Represent the unknown:**\n   Let's assume *z = a + bi*, where 'a' and 'b' are real numbers that we need to find.\n\n2. **Substitute and expand:**\n   Substitute the assumed form of *z* into the given equation:\n   (a + bi) + |a + bi| = 2 + 8i\n\n3. **Calculate the modulus:**\n   Calculate the modulus of *z*:\n   |a + bi| = \u221a(a\u00b2 + b\u00b2)\n\n4. **Substitute the modulus:**\n   Substitute the calculated modulus back into the equation:\n   (a + bi) + \u221a(a\u00b2 + b\u00b2) = 2 + 8i\n\n5. **Separate real and imaginary parts:**\n   Now, we can separate the equation into real and imaginary parts:\n   * Real part: a + \u221a(a\u00b2 + b\u00b2) = 2 \n   * Imaginary part: b = 8\n\n6. **Solve for 'a':**\n   We already know b = 8. Substitute this into the real part equation:\n   a + \u221a(a\u00b2 + 8\u00b2) = 2\n   \u221a(a\u00b2 + 64) = 2 - a \n   Square both sides: a\u00b2 + 64 = 4 - 4a + a\u00b2\n   Simplify and solve for 'a': 4a = -60  => a = -15\n\n7. **Form the complex number:**\n   We found a = -15 and b = 8.  Therefore:\n   z = a + bi = -15 + 8i\n\n**Solution**\nThe complex number *z* that satisfies the given equation is **z = -15 + 8i**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8480492813141683
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 5_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 5",
+        "problem": "Factor $36-4x^2$ completely.",
+        "correct_solution": "We have $36-4x^2 = 6^2 - (2x)^2 = (6-2x)(6+2x)$.  We can factor a 2 out of each of $6-2x$ and $6+2x$ to give $2\\cdot(3-x)\\cdot 2\\cdot(3+x) = \\boxed{4(3-x)(3+x)}$. (We could also have factored out a 4 at the beginning: $36-4x^2 = 4(9-x^2)=4(3-x)(3+x)$.)",
+        "generated_solutions": {
+            "gemini-1.5-pro": "## Factoring $36 - 4x^2$ completely:\n\nHere's how we can break down the problem and solve it step-by-step:\n\n**1. Find the Greatest Common Factor (GCF):**\n\n*  The GCF is the largest number that divides into both 36 and 4 evenly.  The GCF of 36 and 4 is 4.\n\n**2. Factor out the GCF:**\n\n*  We can rewrite the expression as:  \n   $36 - 4x^2 = \\textbf{4}(9 - x^2)$ \n\n**3. Recognize the Difference of Squares:**\n\n* The expression inside the parentheses, $(9 - x^2)$, fits the pattern of the difference of squares: $a^2 - b^2$\n    *  $a^2 = 9  \\Rightarrow  a = 3$\n    *  $b^2 = x^2  \\Rightarrow b = x$\n\n**4. Apply the Difference of Squares Formula:**\n\n* The difference of squares formula states:  $a^2 - b^2 = (a + b)(a - b)$\n* Applying this to our problem:  $(9 - x^2) = (3 + x)(3 - x)$\n\n**5. Combine for the Complete Solution:**\n\n* Putting everything together, we get the completely factored expression: \n   **$36 - 4x^2 = 4(3 + x)(3 - x)$**\n\n**Therefore, the solution to the problem is 4(3 + x)(3 - x).** \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8491508491508492
+            }
+        }
+    }
+}

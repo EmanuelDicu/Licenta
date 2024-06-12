@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 3_3.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 3",
+        "problem": "In the diagram, the area of rectangle $ABCD$ is $40$. What is the area of $MBCN$? [asy]\nimport olympiad;\npair a = (0, 0); pair m = (4, 0); pair b = (8, 0); pair c = (8, -5); pair n = (6, -5); pair d = (0, -5);\ndraw(m--n);\ndraw(a--b--c--d--cycle);\nlabel(\"$A$\", a, NW); label(\"$B$\", b, NE); label(\"$C$\", c, SE); label(\"$D$\", d, SW);\nlabel(\"$M$\", m, N); label(\"$N$\", n, S);\nlabel(\"$4$\", midpoint(a--m), N); label(\"$4$\", midpoint(m--b), N);\nlabel(\"$2$\", midpoint(n--c), S);\n[/asy]",
+        "correct_solution": "Since the area of rectangle $ABCD$ is 40 and $AB=8$, then $BC=5$.\n\nTherefore, $MBCN$ is a trapezoid with height 5 and parallel bases of lengths 4 and 2, so has area $$\\frac{1}{2}(5)(4+2)=\\boxed{15}.$$",
+        "generated_solutions": {
+            "gemini-1.5-pro": "**1. Understand the Problem**\n\nWe are given a rectangle ABCD with a total area of 40.  Our goal is to find the area of the smaller rectangle MBCN, which is located inside the larger rectangle.\n\n**2. Break Down the Problem**\n\n* **Find the dimensions of ABCD:**  We know the area of a rectangle is length times width (Area = length * width). Since the area of ABCD is 40, we need to figure out what two numbers multiply to give us 40. We are given that AM = MB = 4, meaning AB = 8.  Therefore, the width of ABCD is 8. To find the length (AD), we can divide the total area by the width: 40 / 8 = 5.\n\n* **Find the dimensions of MBCN:**  We know MB = 4. We also know NC = 2.  So we have the length and width of rectangle MBCN.\n\n* **Calculate the area of MBCN:** Now that we know the length (MB = 4) and width (NC = 2) of MBCN, we can find its area: 4 * 2 = 8.\n\n**Solution**\n\nThe area of rectangle MBCN is **8**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8557268722466961
+            }
+        }
+    }
+}

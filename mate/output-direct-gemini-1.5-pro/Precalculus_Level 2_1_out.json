@@ -1,0 +1,18 @@
+{
+    "Precalculus_Level 2_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 2",
+        "problem": "Find the measure, in degrees, of the smallest positive angle $\\theta$ for which $\\sin 3 \\theta = \\cos 7 \\theta.$",
+        "correct_solution": "Note that $\\cos 7 \\theta = \\sin (90^\\circ - 7 \\theta),$ so\n\\[\\sin 3 \\theta = \\sin (90^\\circ - 7 \\theta).\\]If $3 \\theta = 90^\\circ - 7 \\theta,$ then $\\theta = 9^\\circ.$\n\nIf $0^\\circ < \\theta < 9^\\circ,$ then $\\sin 3 \\theta < \\sin 27^\\circ$ and $\\sin (90^\\circ - 7 \\theta) > \\sin 27^\\circ,$ so the smallest positive solution is $\\boxed{9^\\circ}.$",
+        "generated_solutions": {
+            "gemini-1.5-pro": "## Solution:\n\nWe'll solve this problem by breaking it down into smaller steps:\n\n**Step 1: Relate sine and cosine using complementary angles.**\n\nWe know that the sine of an angle is equal to the cosine of its complement.  In other words:\n\n  *  sin(x) = cos(90\u00b0 - x) \n\nWe can use this identity to rewrite our equation in terms of either sine or cosine.\n\n**Step 2: Apply the complementary angle identity.**\n\nLet's rewrite the equation using the identity above:\n\n*  Since we have cos(7\u03b8), we want to find an angle whose cosine is equal to sin(3\u03b8). \n* Using our identity,  sin(3\u03b8) = cos(90\u00b0 - 3\u03b8)\n\nNow we can rewrite our original equation as:\n\n * cos(90\u00b0 - 3\u03b8) = cos(7\u03b8)\n\n**Step 3: Solve for the angles.**\n\nWhen two cosine functions are equal, their arguments (the angles inside the cosine function) must differ by a multiple of 360\u00b0. This means:\n\n * 90\u00b0 - 3\u03b8 = 7\u03b8 + 360\u00b0k  (where k is an integer)\n\n**Step 4: Solve the linear equation.**\n\nNow we have a simple linear equation. Let's solve for \u03b8:\n\n1. Combine like terms: 10\u03b8 = -270\u00b0 + 360\u00b0k\n2. Divide both sides by 10:  \u03b8 = -27\u00b0 + 36\u00b0k\n\n**Step 5: Find the smallest positive solution.**\n\nTo find the smallest positive angle, we'll start with k = 0 and substitute into our equation:\n\n* \u03b8 = -27\u00b0 + 36\u00b0(0) = -27\u00b0\n\nThis is negative, so we'll increase k to 1:\n\n* \u03b8 = -27\u00b0 + 36\u00b0(1) = 9\u00b0\n\n**Solution:**\n\nThe smallest positive angle \u03b8 for which sin 3\u03b8 = cos 7\u03b8 is **9\u00b0**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8565340909090909
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 3_3.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 3",
+        "problem": "There is a complex number $z$ with imaginary part $164$ and a positive integer $n$ such that\n$$\\frac {z}{z + n} = 4i.$$Find $n$.",
+        "correct_solution": "Multiplying by $z+n$, we have $z = 4i(z+n)$, or $z(1-4i) = 4ni$. Thus \\[z = \\frac{4ni}{1-4i} = \\frac{4ni(1+4i)}{17} = \\frac{4ni - 16n}{17}.\\]Since $z$ has imaginary part $164$, we have $4n/17 = 164$, so $n = 17/4 \\cdot 164 = \\boxed{697}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's a breakdown of the solution, approached step-by-step:\n\n**1. Understand the Problem**\n\nWe're given a complex number *z*.  We know its imaginary part is 164, but we don't know its real part.  Our goal is to find a positive integer *n* that satisfies the given equation.\n\n**2. Represent the Complex Number**\n\nSince we don't know the real part of *z*, let's represent it with the variable *a*. So, we can write *z* as:\n\n*  z =  *a* + 164*i* \n\n**3. Substitute into the Equation**\n\nSubstitute this representation of *z* into the given equation:\n\n*  ( *a* + 164*i* ) / ( *a* + 164*i*  + *n* ) = 4*i*\n\n**4. Simplify the Equation**\n\nOur goal is to isolate *n*.  To do this, let's simplify the equation:\n\n*  Multiply both sides by the denominator of the left side: \n   *a* + 164*i* = 4*i*( *a* + 164*i* + *n* )\n\n*  Expand the right side:\n   *a* + 164*i* = 4*a*i* - 656 + 4*n*i* \n\n**5. Equate Real and Imaginary Parts**\n\nRemember that two complex numbers are equal if and only if their real parts and imaginary parts are equal.  Let's group the terms on the right side:\n\n*  *a* + 164*i*  = (-656) + (4*a* + 4*n*)*i*\n\nNow, equate the real and imaginary parts:\n\n*  Real parts: *a* = -656 \n*  Imaginary parts: 164 = 4*a* + 4*n*\n\n**6. Solve for *n***\n\nWe've already found the value of *a*. Substitute *a* = -656 into the imaginary parts equation:\n\n* 164 = 4*(-656) + 4*n*\n\n* Simplify and solve for *n*:\n* 164 = -2624 + 4*n*\n* 2788 = 4*n*\n* *n* = 697\n\n**Solution**\n\nThe value of *n* is **697**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9018157363819771
+            }
+        }
+    }
+}

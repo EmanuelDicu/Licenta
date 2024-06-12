@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 1_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 1",
+        "problem": "If $PQ$ is a straight line, what is the value of $x$? [asy]\n\nsize(150);\n\ndraw((-1,0)--(1,0));\n\ndraw((-0.809,.588)--(0,0)--(0.809,.588));\n\ndraw((-.309,.951)--(0,0)--(.309,.951));\n\nlabel(\"$P$\",(-1,0),W);\n\nlabel(\"$Q$\",(1,0),E);\n\nlabel(\"$x^\\circ$\",(0.5,0),NW);\n\nlabel(\"$x^\\circ$\",(-0.5,0),NE);\n\nlabel(\"$x^\\circ$\",(0,0.4));\n\nlabel(\"$x^\\circ$\",(0.27,0.2),N);\n\nlabel(\"$x^\\circ$\",(-0.27,0.2),N);\n\n[/asy]",
+        "correct_solution": "Since $PQ$ is a straight line, then $x^\\circ+x^\\circ+x^\\circ+x^\\circ+x^\\circ = 180^\\circ$ or $5x=180$ or $x=\\boxed{36}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "## Splitting the Problem:\n\n1. **Identify the key geometric concept:** The problem involves angles formed on a straight line.  \n2. **Recall the relevant property:** Angles on a straight line add up to 180 degrees.\n3. **Set up an equation:**  Express the sum of the angles in the diagram as an equation.\n4. **Solve for x:** Isolate 'x' in the equation to find its value.\n\n## Solution:\n\n1. **Key Concept:**  We know that the angles formed on a straight line are called supplementary angles.\n\n2. **Property:** The key property of supplementary angles is that their measures add up to 180 degrees.\n\n3. **Equation:** Looking at the diagram, we can see that the angles marked as *x* degrees, when all added together, form a straight angle (angle PQ).  This can be written as the equation:\n\n   *x* + *x* + *x* + *x* + *x* = 180\u00b0\n\n4. **Solving for x:**\n\n   * Combining like terms: 5*x* = 180\u00b0\n   * Dividing both sides by 5: *x* = 36\u00b0\n\n## Answer:\n\nThe value of *x* is **36 degrees**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9230769230769231
+            }
+        }
+    }
+}

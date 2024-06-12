@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 4_4.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 4",
+        "problem": "Three concentric circles are shown. The two largest circles have radii of $12$ and $13.$ If the area of the ring between the two largest circles equals the area of the smallest circle, determine the radius of the smallest circle.\n\n[asy]\nimport graph;\nfilldraw(circle((0,0),12), lightgray, black+linewidth(1));\nfilldraw(circle((0,0),10), white, black+linewidth(1));\nfilldraw(circle((0,0),6), gray, black+linewidth(1));\ndot((0,0));\n[/asy]",
+        "correct_solution": "The area of the ring between the two largest circles is $$\\pi\\cdot 13^2-\\pi\\cdot 12^2=169\\pi - 144\\pi=25\\pi.$$Suppose that the radius of the smallest circle is $r.$ Thus, the area of the smallest circle is $\\pi r^2.$ Since the area of the smallest circle is equal to the area of the ring between the two largest circles, then $\\pi r^2 = 25\\pi$ so $r^2 = 25$ and so $r=5$ since $r>0.$\n\nTherefore, the radius of the smallest circle is $\\boxed{5}.$",
+        "generated_solutions": {
+            "gemini-1.5-pro": "## Solution:\n\nHere's how we can break down the problem and solve it:\n\n**1. Understand the Problem:**\n\n* We have three circles, one inside the other (concentric).\n* We know the radii of the two larger circles (12 and 13).\n* The area of the ring (the donut-shaped area between the two larger circles) is the same as the area of the smallest circle.\n* We need to find the radius of the smallest circle.\n\n**2. Key Formulas:**\n\n* **Area of a circle:**  Area = \u03c0 * radius\u00b2 \n\n**3. Solve for the Ring's Area:**\n\n* **Area of larger circle:** \u03c0 * 13\u00b2 = 169\u03c0\n* **Area of smaller circle:** \u03c0 * 12\u00b2 = 144\u03c0\n* **Area of the ring:** 169\u03c0 - 144\u03c0 = 25\u03c0\n\n**4. Solve for the Smallest Circle's Radius:**\n\n* We know the area of the smallest circle is also 25\u03c0.\n* **Let 'r' be the radius of the smallest circle.**\n* Using the area formula:  \u03c0 * r\u00b2 = 25\u03c0\n* Divide both sides by \u03c0:  r\u00b2 = 25\n* Take the square root of both sides:  r = 5\n\n**Therefore, the radius of the smallest circle is 5.** \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7045454545454546
+            }
+        }
+    }
+}

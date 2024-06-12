@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 1_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 1",
+        "problem": "Ben flips a fair nickel four times. What is the probability that Ben flips Head, Tail, Head, Tail, in that order? Express your answer as a common fraction.",
+        "correct_solution": "Since any given flip has equal probability of $\\frac{1}{2}$ of being a Head or a Tail, and all outcomes are equally likely, the precise sequence given is equal to $\\frac{1}{2^4} = \\boxed{\\frac{1}{16}}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how we can break down this probability problem:\n\n**1. Probability of a Single Flip**\n\n*   A nickel has two sides: Heads (H) and Tails (T).\n*   The probability of flipping a Head is 1/2.\n*   The probability of flipping a Tail is also 1/2.\n\n**2.  Probability of Consecutive Flips**\n\n*   Each flip is independent of the others. This means the outcome of one flip doesn't affect the outcome of any other flip.\n*   To find the probability of multiple events happening in a row, we multiply the probabilities of each individual event together.\n\n**3. Applying it to the Problem**\n\n*   We want the probability of this sequence: HTHT\n*   Let's break it down:\n    *   Probability of H: 1/2\n    *   Probability of T: 1/2\n    *   Probability of H: 1/2\n    *   Probability of T: 1/2\n\n*   To get the probability of the entire sequence, we multiply: (1/2) * (1/2) * (1/2) * (1/2) = 1/16\n\n**Solution:** The probability of Ben flipping Head, Tail, Head, Tail in that order is **1/16**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8628454452405322
+            }
+        }
+    }
+}

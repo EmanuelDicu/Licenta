@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 2_1.json": {
+        "category": "Geometry",
+        "difficulty": "Level 2",
+        "problem": "In the figure below $AB = BC$, $m \\angle ABD = 30^{\\circ}$, $m \\angle C = 50^{\\circ}$ and $m \\angle CBD = 80^{\\circ}$. What is the number of degrees in the measure of angle $A$?\n\n[asy]\ndraw((0,0)--1.5dir(-15)--3.5dir(60)--(0,0),linewidth(2));\ndraw(1.5dir(-15)--1.5dir(-15)+4dir(35)--3.5dir(60),linewidth(2));\nlabel(\"A\",(0,0),W);\nlabel(\"B\",3.5dir(60),N);\nlabel(\"C\",1.5dir(-15)+4dir(35),E);\nlabel(\"D\",1.5dir(-15),S);\n[/asy]",
+        "correct_solution": "We know two of the angles in $\\triangle BCD$: $$m\\angle CBD = 80^\\circ, ~~m\\angle BCD = 50^\\circ.$$ Since the sum of angles in a triangle is $180^\\circ$, we conclude that $m\\angle BDC = 180^\\circ - (50^\\circ+80^\\circ) = 50^\\circ$.\n\nTherefore, $\\triangle BCD$ is isosceles with equal angles at $C$ and $D$, which implies that the sides opposite those angles ($BD$ and $BC$) are equal.\n\nSince we are given $AB=BC$, we now know that $AB=BD$, which means that $\\triangle ABD$ is isosceles with equal angles at $A$ and $D$. Let $x = m\\angle A$. Then the sum of angles in $\\triangle ABD$ is $180^\\circ$, so $$x + x + 30^\\circ = 180^\\circ.$$ We can solve this equation to get $x = 75^\\circ$. So, $m\\angle A = \\boxed{75^\\circ}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "## Splitting the problem and solving:\n\n**Part 1: Finding angle ABC**\n\n* We know triangle ABC is isosceles because AB = BC. \n* In an isosceles triangle, the base angles are equal. Therefore,  m\u2220ABC = m\u2220C = 50\u00b0.\n\n**Part 2: Finding angle ABD**\n\n* We are given that m\u2220ABD = 30\u00b0.\n\n**Part 3: Finding angle DBC**\n\n* We are given that m\u2220CBD = 80\u00b0.\n\n**Part 4: Finding angle ADB**\n\n* The angles inside triangle ABD must add up to 180\u00b0.\n* Therefore, m\u2220ADB = 180\u00b0 - m\u2220ABD - m\u2220ABC = 180\u00b0 - 30\u00b0 - 50\u00b0 = 100\u00b0.\n\n**Part 5: Finding angle A**\n\n* The angles inside triangle ADB must add up to 180\u00b0.\n* Therefore, m\u2220A = 180\u00b0 - m\u2220ADB - m\u2220ABD = 180\u00b0 - 100\u00b0 - 30\u00b0 = 50\u00b0.\n\n## Solution:\n\nThe measure of angle A is **50 degrees**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7861111111111111
+            }
+        }
+    }
+}

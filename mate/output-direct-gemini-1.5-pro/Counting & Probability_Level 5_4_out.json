@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 5_4.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 5",
+        "problem": "The letters of the word `SIXTEEN' are randomly arranged.  What is the probability that the two E's are not next to each other?",
+        "correct_solution": "The best way to do this is to find the probability that the two E's are next to each other.  There are $\\dfrac{7!}{2}$ arrangements of the word SIXTEEN.  If we want to find the number of arrangements such that the E's are next to each other, we find the number of arrangements of the six-letter word SIXT(EE)N (where we treat the two E's as a block), which is $6!$.  So the probability that an arrangement of the word SIXTEEN has the two E's next to each other is $\\dfrac{6!}{\\frac{7!}{2}} = \\dfrac{2}{7}$.  So the probability that the two E's aren't next to each other is $1 - \\dfrac{2}{7} = \\boxed{\\dfrac{5}{7}}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "**1. Find the total number of arrangements.**\n\n* There are 7 letters in the word \"SIXTEEN\". \n* If all the letters were unique, there would be 7! (7 factorial) ways to arrange them. \n* However, we have two E's, so we're double-counting arrangements. \n* To correct for this, we divide by 2!:  7!/2! = 5040/2 = 2520 total arrangements.\n\n**2. Find the number of arrangements where the E's ARE together.**\n\n* Treat the two E's as a single unit (\"EE\").\n* Now we have 6 units to arrange: \"S\", \"I\", \"X\", \"T\", \"N\", \"EE\".\n* There are 6! ways to arrange these units: 6! = 720\n* Since the E's can switch places within their unit, we multiply by 2: 720 * 2 = 1440 arrangements where the E's are together.\n\n**3. Find the number of arrangements where the E's are NOT together.**\n\n* Subtract the arrangements where the E's are together from the total number of arrangements: 2520 - 1440 = 1080 arrangements.\n\n**4. Calculate the probability.**\n\n* The probability of the E's not being together is the number of favorable arrangements (E's not together) divided by the total number of arrangements: 1080 / 2520 = **3/7**. \n\n**Therefore, the probability that the two E's are not next to each other in a random arrangement of the letters in \"SIXTEEN\" is 3/7.** \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7107171635777598
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Precalculus_Level 3_2.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 3",
+        "problem": "Three vertices of a cube are $P=(7,12,10)$, $Q=(8,8,1)$, and $R=(11,3,9)$. What is the side length of the cube?",
+        "correct_solution": "We compute \\[\\begin{aligned} PQ &= \\sqrt{(7-8)^2 + (12-8)^2 + (10-1)^2} = 7\\sqrt{2}, \\\\ QR &= \\sqrt{(8-11)^2 + (8-3)^2 + (1-9)^2} = 7\\sqrt{2}, \\\\ PR &= \\sqrt{(7-11)^2 + (12-3)^2 + (10-9)^2} = 7\\sqrt{2}. \\end{aligned}\\]Thus, $PQR$ is an equilateral triangle made from three vertices of a cube. It follows that each side of $PQR$ must be a face diagonal of the cube, so the side length of the cube is $\\boxed{7}.$\n[asy]\nimport three;\ntriple A=(0,0,0),B=(0,0,1),C=(0,1,1),D=(0,1,0),E=A+(1,0,0),F=B+(1,0,0),G=C+(1,0,0),H=D+(1,0,0);\ndraw(A--B--C--D--A^^E--F--G--H--E^^A--E^^B--F^^C--G^^D--H);\ndraw(B--D--E--B,dashed);\nlabel(\"$P$\",B,N);\nlabel(\"$Q$\",D,SE);\nlabel(\"$R$\",E,SW);\n[/asy]",
+        "generated_solutions": {
+            "gemini-1.5-pro": "**1. Understand the Problem**\n\nWe are given three points in 3D space that represent vertices of a cube. Our goal is to find the length of one side of this cube.\n\n**2. Key Idea**\n\nAll edges of a cube have the same length.  Therefore, we can find the side length by calculating the distance between any two adjacent vertices (vertices connected by an edge).\n\n**3. Strategy**\n\n* **Step 1: Determine Adjacent Vertices**  We need to figure out which of the given points P, Q, and R are adjacent. We can do this by looking at their coordinates. Adjacent vertices of a cube will differ in only one coordinate.\n* **Step 2: Calculate Distance** Once we identify two adjacent vertices, we can use the distance formula to find the distance between them, which represents the side length of the cube.\n\n**4. Execution**\n\n* **Step 1: Determine Adjacent Vertices**\n    * Comparing P and Q, we see they differ in all three coordinates (x, y, and z). So, P and Q are not adjacent.\n    * Comparing P and R, they also differ in all three coordinates.  Therefore, P and R are not adjacent.\n    * Comparing Q and R, we see they differ only in their x-coordinate. This means Q and R are adjacent vertices of the cube.\n\n* **Step 2: Calculate Distance**\n    * Now we'll use the distance formula to find the distance between Q (8, 8, 1) and R (11, 3, 9):\n\n     Distance (QR) =  \u221a[(11 - 8)^2 + (3 - 8)^2 + (9 - 1)^2] \n                    = \u221a[3^2 + (-5)^2 + 8^2]\n                    = \u221a(9 + 25 + 64)\n                    = \u221a98\n                    = 7\u221a2\n\n**5. Solution**\n\nThe side length of the cube is **7\u221a2**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8478535353535354
+            }
+        }
+    }
+}

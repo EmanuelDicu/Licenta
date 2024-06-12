@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 2_2.json": {
+        "category": "Geometry",
+        "difficulty": "Level 2",
+        "problem": "The points $A(2,5), B(6,5), C(5,2)$ and $D(1,2)$ are the vertices of a parallelogram. If the parallelogram is translated down 2 units and right three units, what will be the coordinates of the final image of point $B$?",
+        "correct_solution": "When an image is translated to the right we just add the number of units it is being translated to the original $x$-coordinate. When an image is translated down we just subtract that number of units from the $y$-coordinate. In this case we'll subtract 2 from the $y$-coordinates and add 3 to the   $x$-coordinates. This will make point $B(6, 5)$ move to $B'(6 + 3, 5 - 2) = \\boxed{(9, 3)}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how to solve the problem step-by-step:\n\n**1. Understand Translations**\n\n* **Rightward Translation:** Adding to the x-coordinate shifts a point to the right.\n* **Downward Translation:** Subtracting from the y-coordinate shifts a point down.\n\n**2. Apply the Translation to Point B**\n\n* **Original Coordinates of B:** (6, 5)\n* **Translation:** 3 units right and 2 units down.\n* **New x-coordinate:** 6 + 3 = 9\n* **New y-coordinate:** 5 - 2 = 3\n\n**3. The Final Image**\n\nThe final image of point B after the translation is **(9, 3)**. \n\n**Important Note:**  Even though the problem mentions a parallelogram, we only need to focus on point B's translation. The shape of the figure doesn't affect how individual points are translated. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7527173913043478
+            }
+        }
+    }
+}

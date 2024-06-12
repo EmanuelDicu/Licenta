@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 5_1.json": {
+        "category": "Geometry",
+        "difficulty": "Level 5",
+        "problem": "An arc of $55$ degrees on circle $A$ has the same length as an arc of $40$ degrees on circle $B$.  What is the ratio of the area of circle $A$ to the area of circle $B$? Express your answer as a common fraction.",
+        "correct_solution": "For a circle of radius $r$ and an arc of $\\theta$ degrees, the arc length is $(2\\pi r)\\frac{\\theta}{360}$. Thus, for the same arc length, the arc angle is inversely proportional to the radius, so the ratio of the radius of circle $A$ to the radius of circle $B$ is $40:55$, or $8:11$. Since the ratio of the areas of two circles is the square of the ratio of their radii, the ratio of the area of circle $A$ to the area of circle $B$ is $(8/11)^2=\\boxed{\\frac{64}{121}}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how we can break down this challenging geometry problem:\n\n**1. Understanding the Problem**\n\nWe have two circles, and we know that arcs of different degrees on these circles have the same length. Our goal is to find the relationship between the areas of the two circles.  The key connection lies in the fact that the arc length is a fraction of the circle's circumference, and the circumference is directly related to the radius (and therefore the area).\n\n**2. Setting Up the Relationships**\n\n* **Arc Length and Circumference:**  The length of an arc is a fraction of the circle's circumference.  That fraction is determined by the arc's central angle:\n\n   *  Arc Length = (Central Angle / 360 degrees) * Circumference\n\n* **Circumference and Radius:** The circumference of a circle is directly proportional to its radius:\n\n   * Circumference = 2\u03c0 * Radius\n\n* **Area and Radius:** The area of a circle is proportional to the square of its radius:\n\n    * Area = \u03c0 * Radius\u00b2\n\n**3. Using the Given Information**\n\nLet... \n*  *r* be the radius of circle A\n*  *R* be the radius of circle B\n\nWe're given that a 55-degree arc on circle A has the same length as a 40-degree arc on circle B.  Let's express this mathematically:\n\n* (55/360) * 2\u03c0*r = (40/360) * 2\u03c0*R \n\n**4. Simplifying and Finding the Ratio of Radii**\n\nNotice we can cancel out the 2\u03c0 and 1/360 from both sides of the equation:\n\n* 55*r = 40*R\n\nNow, let's find the ratio of the radii (r/R):\n\n* r/R = 40/55 \n* r/R = 8/11\n\n**5. Finding the Ratio of Areas**\n\nWe want the ratio of the area of circle A to the area of circle B:\n\n(\u03c0 * r\u00b2) / (\u03c0 * R\u00b2)\n\nThis simplifies to (r/R)\u00b2, and we already know r/R = 8/11.  Therefore:\n\n(r/R)\u00b2 = (8/11)\u00b2 = 64/121\n\n**Solution**\n\nThe ratio of the area of circle A to the area of circle B is **64/121**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7962032384142937
+            }
+        }
+    }
+}

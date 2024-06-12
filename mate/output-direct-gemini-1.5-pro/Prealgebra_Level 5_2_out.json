@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 5_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 5",
+        "problem": "In a certain isosceles right triangle, the altitude to the hypotenuse has length $6$.  What is the area of the triangle?",
+        "correct_solution": "In isosceles right triangle $\\triangle ABC$ below, $\\overline{AD}$ is the altitude to the hypotenuse.\n\n[asy]\nimport olympiad;\nunitsize(0.8inch);\npair A,B,C,D;\nA = (0,1);\nB= (1,0);\nC = -B;\nD = (0,0);\ndraw(A--B--C--A,linewidth(1));\ndraw(A--D,linewidth(0.8));\ndraw(rightanglemark(C,A,B,s=5));\ndraw(rightanglemark(C,D,A,s=5));\nlabel(\"$A$\",A,N);\nlabel(\"$B$\",B,S);\nlabel(\"$C$\",C,S);\nlabel(\"$D$\",D,S);\n[/asy]\n\nBecause $\\triangle ABC$ is an isosceles right triangle, $\\angle ABC = 45^\\circ$.  Since $\\angle ADB = 90^\\circ$, we know that $\\angle DAB = 45^\\circ$, so $\\triangle ABD$ is also a 45-45-90 triangle.  Similarly, $\\triangle ACD$ is a 45-45-90 triangle.  Therefore, $DB=DC = DA = 6$, so $BC = BD+DC = 12$, and  \\[[ABC] = \\frac{(AD)(BC)}{2} = \\frac{(6)({12})}{2} = \\boxed{36}.\\]",
+        "generated_solutions": {
+            "gemini-1.5-pro": "**Understanding the Problem**\n\n* **Isosceles Right Triangle:** This means the triangle has a right angle (90 degrees) and two sides of equal length.\n* **Altitude to the Hypotenuse:** This is a line segment drawn from the right angle vertex perpendicular to the hypotenuse, dividing the hypotenuse into two segments.\n\n**Visualizing the Problem**\n\nDraw an isosceles right triangle. Label the right angle as C. Label the endpoints of the hypotenuse as A and B. Draw the altitude from C to the hypotenuse and label the point of intersection D.\n\n[asy]\npair A,B,C,D;\nA=(0,0);\nB=(2,0);\nC=(0,2);\nD=(0,0);\ndraw(A--B--C--cycle);\ndraw(C--D);\ndraw(rightanglemark(B,C,A,3));\ndraw(rightanglemark(C,D,A,3));\nlabel(\"$A$\",A,SW);\nlabel(\"$B$\",B,SE);\nlabel(\"$C$\",C,N);\nlabel(\"$D$\",D,S);\nlabel(\"$6$\",(C+D)/2,W);\n[/asy]\n\n**Splitting the Problem into Smaller Parts**\n\n1. **Finding the Lengths of the Segments on the Hypotenuse:** Since we have an isosceles right triangle, the altitude to the hypotenuse not only bisects the hypotenuse but also divides the triangle into two smaller congruent isosceles right triangles (ACD and BCD).  Therefore, AD = CD = BD = 6.\n\n2. **Finding the Length of the Hypotenuse:** The hypotenuse AB is the sum of AD and BD, so AB = 6 + 6 = 12.\n\n3. **Finding the Area of the Triangle:** \n   * We know the base of the triangle (AB = 12) and the height (CD = 6). \n   * The area of a triangle is given by (1/2) * base * height.\n\n**Solution**\n\nThe area of the triangle is (1/2) * 12 * 6 = **36 square units**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7142857142857143
+            }
+        }
+    }
+}

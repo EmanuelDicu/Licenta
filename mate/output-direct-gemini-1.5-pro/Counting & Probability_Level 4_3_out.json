@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 4_3.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 4",
+        "problem": "Beginning at point $A$ in the diagram below, Dora selects one of the four possible directions with equal probability. Each time she comes to an intersection, she again randomly selects one of the possible directions. What is the probability that, in her first four steps, she will walk completely around the gray square? Express your answer as a common fraction. [asy]size(100);\nfill((1,1)--(1,2)--(2,2)--(2,1)--cycle, gray(.6));\ndraw((0,0)--(0,3)--(3,3)--(3,0)--cycle, linewidth(1.5));\ndraw((0,1)--(3,1), linewidth(1.5));\ndraw((0,2)--(3,2), linewidth(1.5));\ndraw((1,0)--(1,3), linewidth(1.5));\ndraw((2,0)--(2,3), linewidth(1.5));\ndot(MP(\"A\", (1,2), NW));\n[/asy]",
+        "correct_solution": "The only way for the Dora to end up at her starting point in four steps is for her to traverse the four sides of the gray square.  She can do this in two ways: clockwise and counterclockwise. The probability of each of these two paths is $\\left(\\frac{1}{4}\\right)^4=\\frac{1}{256}$.  Therefore, the probability that she ends up where she started is $\\dfrac{1}{256}+\\dfrac{1}{256}=\\boxed{\\dfrac{1}{128}}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's a step-by-step solution to the problem:\n\n**1. Possible Starting Directions**\n\nDora has 4 equally likely directions she can choose at the beginning (North, East, South, West). \n\n**2. Favorable Paths**\n\nLet's analyze which paths will lead her to walk around the gray square in four steps. \n\n* **Clockwise Path:** If she starts by going East, she needs to continue South, then West, then North to complete the square.\n* **Counter-Clockwise Path:** If she starts by going North, she needs to continue West, then South, then East to complete the square.\n\nThese are the only two paths that satisfy the condition.\n\n**3. Probability of Each Path**\n\nLet's calculate the probability of Dora taking one of these paths:\n\n* At each intersection, she has 4 choices.\n* To follow a specific path (either clockwise or counter-clockwise), she needs to choose the correct direction at each of the four intersections.\n\nTherefore, the probability of her taking one specific path is: \n(1/4) * (1/4) * (1/4) * (1/4) = 1/256\n\n**4. Total Probability**\n\nSince there are two favorable paths (clockwise and counter-clockwise), we add their probabilities to find the total probability of Dora walking around the square:\n\n(1/256) + (1/256) = **1/128**\n\n**Therefore, the probability of Dora walking completely around the gray square in her first four steps is 1/128.** \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8105497771173849
+            }
+        }
+    }
+}

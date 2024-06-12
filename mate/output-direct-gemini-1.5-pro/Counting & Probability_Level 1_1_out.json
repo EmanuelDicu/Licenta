@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 1_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 1",
+        "problem": "Compute $\\dbinom{15}{2}$.",
+        "correct_solution": "\\begin{align*}\n\\dbinom{15}{2} &= \\dfrac{15!}{13!2!} \\\\\n&= \\dfrac{15\\times 14}{2\\times 1} \\\\\n&= 15 \\times \\dfrac{14}{2} \\\\\n&= 15 \\times 7 \\\\\n&= \\boxed{105}.\n\\end{align*}",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how to solve the problem $\\binom{15}{2}$:\n\n**Understanding the Problem**\n\nThe notation $\\binom{15}{2}$ represents a combination, also known as a \"choose.\" It asks: \"How many ways are there to choose a group of 2 objects out of a set of 15 distinct objects, where the order of selection doesn't matter?\"\n\n**Solution**\n\nHere's how we break down the solution:\n\n1. **The Formula:** Combinations are calculated using the following formula:\n\n   $$\\binom{n}{k} = \\dfrac{n!}{k!(n-k)!}$$\n\n   Where:\n   *  'n' is the total number of objects.\n   *  'k' is the number of objects we are choosing.\n   *  '!' denotes the factorial (e.g., 5! = 5 * 4 * 3 * 2 * 1)\n\n2. **Applying the Formula:** In our case, n = 15 (total objects) and k = 2 (objects to choose). Let's plug these values into the formula:\n\n   $$\\binom{15}{2} = \\dfrac{15!}{2!(15-2)!}$$\n\n3. **Simplifying the Factorials:**  Let's expand the factorials and simplify:\n\n   $$\\binom{15}{2} = \\dfrac{15 \\times 14 \\times 13!}{2 \\times 1 \\times 13!}$$\n\n   Notice that 13! appears in both the numerator and denominator, so we can cancel them:\n\n   $$\\binom{15}{2} = \\dfrac{15 \\times 14}{2 \\times 1}$$\n\n4. **Calculating the Result:** Finally, perform the multiplication:\n\n   $$\\binom{15}{2} = \\dfrac{210}{2} = 105$$\n\n**Answer**\n\nThere are **105** ways to choose a group of 2 objects from a set of 15 distinct objects. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9074889867841409
+            }
+        }
+    }
+}

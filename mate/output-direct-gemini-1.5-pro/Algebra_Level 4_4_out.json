@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 4_4.json": {
+        "category": "Algebra",
+        "difficulty": "Level 4",
+        "problem": "For what ordered pair $(a,b)$ are there infinite solutions $(x,y)$ to the system \\begin{align*}\n2ax+2y&=b,\\\\\n5x+y&=-3?\n\\end{align*}",
+        "correct_solution": "For there to be infinite solutions, the first equation needs to be consistent with the second and yet add no new information, which means it must be a multiple of the second. Since the coefficient of $y$ in the first equation is twice that of $y$ in the second equation, the multiplier is 2. This implies that the first equation must be $2(5x+y)=2(-3)$. After equating coefficients, this gives $2a=2\\cdot5$ and $b=2\\cdot-3$, or $(a,b)=\\boxed{(5,-6)}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "## Solving for Infinite Solutions in a System of Linear Equations\n\nWe are given the following system of equations:\n\n\\begin{align*}\n2ax+2y&=b, \\tag{1}\\\\\n5x+y&=-3. \\tag{2}\n\\end{align*}\n\nOur goal is to find the values of $(a,b)$ that will result in infinitely many solutions $(x,y)$. Here's a breakdown of how we can solve this:\n\n**Understanding the Problem:**\n\n* **Infinite solutions** in a system of linear equations mean that the two lines represented by the equations coincide.  They are essentially the same line, just written in different forms.\n* For two lines to be the same, they must have the same **slope** and the same **y-intercept**.\n\n**Solving the Problem:**\n\n1. **Express both equations in slope-intercept form (y = mx + c):**\n\n   * **Equation (1):**\n     \n     2y = -2ax + b \n     y = -ax + b/2 \n   \n   * **Equation (2):**\n\n     y = -5x - 3\n\n2. **Compare the slopes:**\n\n    * The slope of Equation (1) is **-a**.\n    * The slope of Equation (2) is **-5**.\n    \n    For the lines to coincide, the slopes must be equal:\n    \n    -a = -5 \n    **a = 5**\n\n3. **Compare the y-intercepts:**\n\n    * The y-intercept of Equation (1) is **b/2**.\n    * The y-intercept of Equation (2) is **-3**.\n\n    For the lines to coincide, the y-intercepts must be equal:\n\n    b/2 = -3\n    **b = -6**\n\n**Solution:**\n\nTherefore, for the ordered pair **(a, b) = (5, -6)**, there are infinite solutions (x, y) to the given system of equations. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8072625698324022
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 4_4.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 4",
+        "problem": "In a certain polynomial, all the coefficients are integers, and the constant coefficient is 42.  All the roots are integers, and distinct.  Find the largest possible number of integer roots.",
+        "correct_solution": "By the Integer Root Theorem, any integer root must be a factor of 42.  The prime factorization of 42 is $2 \\cdot 3 \\cdot 7.$  Furthermore, the product of the roots is $(-1)^n \\cdot \\frac{42}{a_0},$ where $n$ is the degree of the polynomial, and $a_0$ is the leading coefficient.\n\nTo maximize the number of integer roots, which must be distinct, we can take the integer roots to be 2, 3, 7, 1, and $-1.$  This gives us a maximum of $\\boxed{5}$ integer roots.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how we can solve this problem:\n\n**Understanding the Problem**\n\n* **Polynomial:**  A polynomial is an expression with variables and coefficients, involving only addition, subtraction, multiplication, and non-negative integer exponents of variables. \n* **Coefficients:** These are the numbers multiplying the variables in a polynomial.\n* **Constant Coefficient:** This is the term in a polynomial without a variable.\n* **Roots:**  A root of a polynomial is a value that, when substituted for the variable, makes the polynomial equal to zero.\n\n**Key Idea**\n\nThe key to solving this problem lies in the relationship between the roots of a polynomial and its constant term.  For a polynomial with integer coefficients, any integer root must be a divisor (factor) of the constant term.\n\n**Solution**\n\n1. **Factor the constant term:** Find all the divisors (factors) of 42. These are: \u00b11, \u00b12, \u00b13, \u00b16, \u00b17, \u00b114, \u00b121, \u00b142.\n\n2. **Distinct Roots:**  The problem specifies that all roots must be distinct (different).\n\n3. **Maximize the Number of Roots:** To find the largest possible number of integer roots, we simply count how many distinct divisors of 42 we have. \n\n**Therefore, the largest possible number of integer roots for this polynomial is 16.** \n\n**Explanation**\n\nEach divisor of 42 (and its negative) could potentially be a root of the polynomial. For example, if (x - 2) is a factor of the polynomial, then 2 is a root. Since we have 16 distinct divisors of 42, the maximum number of integer roots the polynomial could have is 16. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8012987012987013
+            }
+        }
+    }
+}

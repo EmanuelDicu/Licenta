@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 4_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 4",
+        "problem": "What is the value of $x$ for which $$\\sqrt{x + \\sqrt{x + \\sqrt{x + \\ldots}}} = 5?$$",
+        "correct_solution": "Squaring both sides of the given equation yields $$x + \\sqrt{x + \\sqrt{x + \\ldots}} = 25,$$ so $$\\sqrt{x + \\sqrt{x + \\ldots}} = 25-x.$$ We already know the value of the left-hand side to be equal to $5$. Thus, $5 = 25-x$, and $x = \\boxed{20}.$",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how to solve this problem by breaking it down:\n\n**1. Recognize the Pattern**\n\nThe problem features an infinite nested radical.  Notice that the expression under the first radical appears again and again:\n\n \u221a( *x + \u221a(x + \u221a(x + ...))* ) \n\nThis repeating pattern is the key to solving the problem.\n\n**2. Substitute for the Infinite Expression**\n\nLet's represent the entire infinite expression with a single variable:\n\nLet  *y* = \u221a( *x + \u221a(x + \u221a(x + ...))* )\n\nSince the expression is infinite, we can substitute the part under the first radical with *y* itself:\n\n *y* = \u221a( *x + y* ) \n\n**3. Solve the Equation**\n\nNow we have a much simpler equation to solve.  Let's do it:\n\n1. **Square both sides:**  *y*\u00b2 = *x + y*\n2. **Rearrange into a quadratic:**  *y*\u00b2 - *y* - *x* = 0\n3. **We know y = 5 (from the problem statement), so substitute:** 5\u00b2 - 5 - *x* = 0\n4. **Simplify and solve for x:** 25 - 5 - *x* = 0  -->  20 - *x* = 0  -->  *x* = 20\n\n**Solution**\nThe value of *x* for which the given expression equals 5 is **x = 20**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8639455782312925
+            }
+        }
+    }
+}

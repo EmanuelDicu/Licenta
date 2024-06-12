@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 2_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 2",
+        "problem": "The complex numbers $a$ and $b$ satisfy\n\\[a + \\overline{b} = 2 - 7i.\\]Find $\\overline{a} + b.$",
+        "correct_solution": "Taking the conjugate of both sides, we get\n\\[\\overline{a + \\overline{b}} = \\overline{2 - 7i} = 2 + 7i.\\]But $\\overline{a + \\overline{b}} = \\overline{a} + \\overline{\\overline{b}} = \\overline{a} + b,$ so\n\\[\\overline{a} + b = \\boxed{2 + 7i}.\\]",
+        "generated_solutions": {
+            "gemini-1.5-pro": "## Solution\n\nHere's how we can break down the problem and solve it:\n\n**Understanding the Problem**\n\n* **Complex Numbers:**  Recall that a complex number is of the form $z = x + yi$, where $x$ and $y$ are real numbers, and $i$ is the imaginary unit ($i^2 = -1$). \n* **Complex Conjugates:** The conjugate of a complex number $z = x + yi$ is denoted by $\\overline{z}$ and is defined as $\\overline{z} = x - yi$. Essentially, we just change the sign of the imaginary part.\n\n**Solution Breakdown**\n\n1. **Isolate the conjugates:** Our goal is to find $\\overline{a} + b$.  Notice that the given equation almost has the terms we need, just with the conjugates in the wrong places.\n\n2. **Take the conjugate of the equation:** A key property of conjugates is that the conjugate of a sum (or difference) is the sum (or difference) of the conjugates.  Therefore, taking the conjugate of both sides of the given equation, we get:\n   \\[\\overline{a + \\overline{b}} = \\overline{2 - 7i}\\]\n   \\[\\overline{a} + \\overline{\\overline{b}} = 2 + 7i\\]Since the conjugate of a conjugate is the original number ($\\overline{\\overline{b}} = b$), this simplifies to:\n   \\[\\overline{a} + b = 2 + 7i.\\]\n\n**The Solution**\n\nTherefore, $\\overline{a} + b = \\boxed{2 + 7i}$. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8311793214862682
+            }
+        }
+    }
+}

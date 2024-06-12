@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 4_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 4",
+        "problem": "Ed takes five 100-point tests in his algebra class. He scores 87, 85 and 87 points on the first three tests. If the scores of his last two tests differ by three points and he has a $90\\%$ average on his five tests, what was his highest test score?",
+        "correct_solution": "Instead of adding up scores and figuring out the new averages, a quicker way (useful for the countdown round) is as follows:\n\nSince the average is 90, we first calculate how many points below 90 he already is: he's scored 87, 85, and 87, meaning that he is 3, 5, and 3 points below 90 respectively, making for a total of 11 points below.  We then know that his remaining two tests must be a combined 11 points above 90, and since they differ by 3 points, we know that one test is 4 above 90, and the other is 7 above 90, meaning his highest score was $\\boxed{97}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how to solve the problem step-by-step:\n\n**1. Calculate the total points needed:**\n\n* Ed wants a 90% average on his five tests, which is a total of 90/100 * 500 = 450 points.\n\n**2. Calculate the total points earned on the first three tests:**\n\n* Ed scored 87 + 85 + 87 = 259 points on his first three tests.\n\n**3.  Calculate the total points needed on the last two tests:**\n\n* To achieve his desired average, Ed needs 450 - 259 = 191 points on his last two tests.\n\n**4. Set up an equation to represent the last two test scores:**\n\n* Let 'x' represent the lower score on the last two tests.\n* The higher score is then 'x + 3'.\n* The total points on the last two tests can be represented as: x + (x + 3) = 191\n\n**5. Solve for x:**\n\n* Combine like terms: 2x + 3 = 191\n* Subtract 3 from both sides: 2x = 188\n* Divide both sides by 2: x = 94\n\n**6. Determine the highest test score:**\n\n* The lower score of the last two tests is 94.\n* The highest score is 94 + 3 = 97\n\n**Solution:** Ed's highest test score was 97. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7362204724409449
+            }
+        }
+    }
+}

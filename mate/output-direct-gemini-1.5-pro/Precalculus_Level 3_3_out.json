@@ -1,0 +1,18 @@
+{
+    "Precalculus_Level 3_3.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 3",
+        "problem": "If $\\mathbf{a} = \\begin{pmatrix} 1 \\\\ 1 \\\\ 1 \\end{pmatrix},$ then find the vector $\\mathbf{v}$ such that $\\mathbf{a} \\cdot \\mathbf{v} = 2$ and $\\mathbf{a} \\times \\mathbf{v} = \\begin{pmatrix} 1 \\\\ -2 \\\\ 1 \\end{pmatrix}.$",
+        "correct_solution": "Let $\\mathbf{v} = \\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix}.$  Then from the equation $\\mathbf{a} \\cdot \\mathbf{v} = 2,$ $x + y + z = 2.$\n\nAlso,\n\\[\\mathbf{a} \\times \\mathbf{v} = \\begin{pmatrix} 1 \\\\ 1 \\\\ 1 \\end{pmatrix} \\times \\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix} = \\begin{pmatrix} -y + z \\\\ x - z \\\\ -x + y \\end{pmatrix}.\\]Hence,\n\\begin{align*}\n-y + z &= 1, \\\\\nx - z &= -2, \\\\\n-x + y &= 1.\n\\end{align*}Solving this system, along with the equation $x + y + z = 2,$ we find $x = -\\frac{1}{3},$ $y = \\frac{2}{3},$ and $z = \\frac{5}{3}.$  Thus, $\\mathbf{v} = \\boxed{\\begin{pmatrix} -1/3 \\\\ 2/3 \\\\ 5/3 \\end{pmatrix}}.$",
+        "generated_solutions": {
+            "gemini-1.5-pro": "## Solution\n\nHere's how we can solve this problem by breaking it down:\n\n**Understanding the Problem**\n\nWe're given a specific vector 'a' and need to find another vector 'v' that satisfies two conditions involving dot product and cross product. \n\n* **Dot Product:**  The dot product of 'a' and 'v' should equal 2. This tells us something about the projection of 'v' onto 'a'.\n* **Cross Product:** The cross product of 'a' and 'v' should result in a specific vector. This tells us something about the direction of 'v' relative to 'a'.\n\n**Part 1: Using the Dot Product**\n\nLet's represent the unknown vector  'v' as: \n  \n  $\\mathbf{v} = \\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix}$\n\nThe dot product condition gives us:\n\n  $\\mathbf{a} \\cdot \\mathbf{v} = (1)(x) + (1)(y) + (1)(z) = x + y + z = 2$ \n\nThis simplifies to our first equation:\n\n  **Equation 1:**  x + y + z = 2\n\n**Part 2: Using the Cross Product**\n\nCalculating the cross product:\n\n  $\\mathbf{a} \\times \\mathbf{v} =  \\begin{pmatrix} i & j & k \\\\ 1 & 1 & 1 \\\\ x & y & z \\end{pmatrix} = \\begin{pmatrix} (z-y) \\\\ (x-z) \\\\ (y-x) \\end{pmatrix} = \\begin{pmatrix} 1 \\\\ -2 \\\\ 1 \\end{pmatrix}$\n\nThis gives us three more equations:\n\n  **Equation 2:** z - y = 1\n  **Equation 3:** x - z = -2\n  **Equation 4:** y - x = 1\n\n**Part 3: Solving the System of Equations**\n\nNow we have a system of four equations with three unknowns. We can solve this using various methods like substitution or elimination.  Here's one approach:\n\n1. **From Equation 4:** We get  y = x + 1.\n2. **Substitute y in Equation 1:**  x + (x+1) + z = 2. This simplifies to 2x + z = 1.\n3. **Substitute y in Equation 2:** z - (x+1) = 1. This simplifies to z - x = 2.\n4. **Solve for x and z:** Solving the system of equations 2x + z = 1 and z - x = 2, we get x = -1 and z = 1.\n5. **Solve for y:** Substituting x = -1 in y = x + 1, we get y = 0.\n\n**Solution:**\n\nTherefore, the vector **v** that satisfies the given conditions is:\n\n  $\\mathbf{v} = \\begin{pmatrix} -1 \\\\ 0 \\\\ 1 \\end{pmatrix}$ \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7879699248120301
+            }
+        }
+    }
+}

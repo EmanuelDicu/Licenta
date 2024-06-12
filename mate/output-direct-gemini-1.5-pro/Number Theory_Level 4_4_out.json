@@ -1,0 +1,18 @@
+{
+    "Number Theory_Level 4_4.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 4",
+        "problem": "Find the units digit of the sum of the first $21$ positive perfect cubes.",
+        "correct_solution": "Notice that for each integer $n$ satisfying $1 \\le n \\le 19, n \\neq 10$, then using the sum of cubes factorization, $n^3 + (20 - n)^3 = (n + 20 - n)(n^2 + (20-n)n + (20-n)^2)$ $ = 20(n^2 + (20-n)n + (20-n)^2)$. Thus, we can pair each integer with the difference between $20$ and that integer, and the sum of their cubes is divisible by $20$. Hence, the units digit of the sum of the first $19$ cubes, excluding $10$, is equal to $0$. Also, the units digits of $10^3$ and $20^3$ are clearly $0$, so we just need to find the units digit of the cube of $21$, which is $\\boxed{1}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how we can solve this problem by breaking it down:\n\n**Understanding the Problem**\n\nWe need to find the units digit of the sum: 1\u00b3 + 2\u00b3 + 3\u00b3 + ... + 21\u00b3.  \n\n**Strategy**\n\nNotice that the units digit of a sum is only affected by the units digits of the numbers being added.  Therefore, we'll focus on finding a pattern in the units digits of the cubes of the first few natural numbers.\n\n**Part 1: Identifying the Pattern**\n\nLet's calculate the cubes of the first ten natural numbers and observe their units digits:\n\n* 1\u00b3 = 1  (Units digit: 1)\n* 2\u00b3 = 8  (Units digit: 8)\n* 3\u00b3 = 27 (Units digit: 7)\n* 4\u00b3 = 64 (Units digit: 4)\n* 5\u00b3 = 125 (Units digit: 5)\n* 6\u00b3 = 216 (Units digit: 6)\n* 7\u00b3 = 343 (Units digit: 3)\n* 8\u00b3 = 512 (Units digit: 2)\n* 9\u00b3 = 729 (Units digit: 9)\n* 10\u00b3 = 1000 (Units digit: 0)\n\nNotice that the units digits form a repeating cycle: 1, 8, 7, 4, 5, 6, 3, 2, 9, 0. \n\n**Part 2: Applying the Pattern to the Sum**\n\n* The cycle of units digits has a length of 10. \n* Since we are summing the cubes of the first 21 numbers, the cycle of units digits will repeat twice (20 numbers) and then we'll have one extra number.\n* The sum of the units digits in one full cycle is 1 + 8 + 7 + 4 + 5 + 6 + 3 + 2 + 9 + 0 = 45.\n\n**Part 3: Calculating the Final Units Digit**\n\n* The sum of the units digits for the first 20 cubes will be a multiple of 10 (since each cycle sums to 45, and 2 x 45 = 90).  Therefore, the units digit of this sum is 0.\n* The 21st number is 21, and its cube (21\u00b3) has a units digit of 1. \n* Therefore, the units digit of the entire sum is 0 + 1 = **1**.\n\n**Solution**\n\nThe units digit of the sum of the first 21 positive perfect cubes is **1**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7872086072922893
+            }
+        }
+    }
+}

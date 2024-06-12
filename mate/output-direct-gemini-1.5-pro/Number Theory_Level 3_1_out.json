@@ -1,0 +1,18 @@
+{
+    "Number Theory_Level 3_1.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 3",
+        "problem": "Solve the congruence $3n \\equiv 2 \\pmod{11}$, as a residue modulo 11.  (Give an answer between 0 and 10.)",
+        "correct_solution": "Note that $2 \\equiv -9 \\pmod{11}$, so we can write the given congruence as $3n \\equiv -9 \\pmod{11}$.  Since 3 is relatively prime to 11, we can divide both sides by 3, to get $n \\equiv -3 \\equiv \\boxed{8} \\pmod{11}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "## Solving the congruence $3n \\equiv 2 \\pmod{11}$\n\nHere's how we can break down the problem and solve it:\n\n**1. Understanding the Problem**\n\nThe problem asks us to find a value for 'n' that satisfies the given congruence. In simpler terms, we need to find a number 'n' such that when 3 times 'n' is divided by 11, the remainder is 2. The answer should be between 0 and 10.\n\n**2. Finding the Modular Inverse**\n\n* To isolate 'n', we need to multiply both sides of the congruence by the modular inverse of 3 (modulo 11).  \n* The modular inverse of 3 (modulo 11) is a number 'a' such that  (3 * a) leaves a remainder of 1 when divided by 11.\n* We can find this by checking numbers from 1 to 10. We see that 3 * 4 = 12, which leaves a remainder of 1 when divided by 11. \n* Therefore, the modular inverse of 3 (modulo 11) is 4.\n\n**3. Multiplying by the Inverse**\n\n* Multiply both sides of the congruence by 4:\n   \n   ```\n   3n  \u2261  2  (mod 11)\n   4 * (3n)  \u2261  4 * 2  (mod 11) \n   ```\n\n* This simplifies to:\n\n   ```\n   12n  \u2261  8  (mod 11)\n   ```\n\n**4. Simplifying to Find 'n'**\n\n* Since 12 is congruent to 1 modulo 11 (12 leaves a remainder of 1 when divided by 11), we have:\n\n   ```\n   n  \u2261  8  (mod 11)\n   ```\n\n**Solution:**\n\nTherefore, the solution to the congruence  3n \u2261 2 (mod 11) is **n \u2261 8 (mod 11)**. This means any number that leaves a remainder of 8 when divided by 11 will satisfy the original congruence. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8816442239546421
+            }
+        }
+    }
+}

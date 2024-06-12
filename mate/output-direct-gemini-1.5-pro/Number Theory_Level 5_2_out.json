@@ -1,0 +1,18 @@
+{
+    "Number Theory_Level 5_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 5",
+        "problem": "Suppose that $a$ is a positive integer for which the least common multiple of $a+1$ and $a-5$ is $10508$. What is $a^2 - 4a + 1$?",
+        "correct_solution": "Notice that $(a+1)(a-5) = a^2 - 4a - 5$, so $a^2 - 4a + 1 = (a+1)(a-5) + 6$.\n\nAlso, we know that by the Euclidean algorithm, the greatest common divisor of $a+1$ and $a-5$ divides $6$: \\begin{align*}\n\\text{gcd}\\,(a+1, a-5) &= \\text{gcd}\\,(a+1-(a-5),a-5)\\\\\n&= \\text{gcd}\\,(6,a-5).\n\\end{align*}As $10508$ is even but not divisible by $3$, for the sum of the digits of $10508$ is $1 + 5 + 8 = 14$, it follows that the greatest common divisor of $a+1$ and $a-5$ must be $2$.\n\nFrom the identity $xy = \\text{lcm}\\,(x,y) \\cdot \\text{gcd}\\,(x,y)$ (consider the exponents of the prime numbers in the prime factorization of $x$ and $y$), it follows that \\begin{align*}\n(a+1)(a-5) &= \\text{lcm}\\,(a+1,a-5) \\cdot \\text{gcd}\\,(a+1, a-5) \\\\\n&= 2 \\cdot 10508.\n\\end{align*}Thus, the desired answer is $2 \\cdot 10508 + 6 = \\boxed{21022}.$\n\nWith a bit more work, we can find that $a = 147$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's a step-by-step solution to the problem:\n\n**Understanding the Problem**\n\nWe are given that the least common multiple (LCM) of two consecutive even numbers,  `a + 1` and `a - 5`, is 10508. Our goal is to find the value of the expression `a\u00b2 - 4a + 1`.\n\n**Solution**\n\n**Part 1: Prime Factorization of the LCM**\n\n* First, find the prime factorization of 10508:\n   10508 = 2\u00b2 \u00d7 2627 \n   2627 is a prime number.\n\n* This tells us that the LCM of  `a + 1` and `a - 5` is divisible by 2\u00b2 and 2627.\n\n**Part 2: Analyzing the Factors**\n\n* Since `a + 1` and `a - 5` are consecutive even numbers, one of them must be divisible by 2, and the other must be divisible by 4 (2\u00b2).\n* Since 2627 is a prime number, one of the numbers (`a + 1` or `a - 5`) must be divisible by 2627.\n\n**Part 3: Determining 'a'**\n\n*  Let's consider the possibilities:\n    * **Case 1:** If `a + 1` is divisible by 2627, then `a - 5` would be divisible by 4. However,  `2627 - 6` is not divisible by 4, so this case is not possible.\n    * **Case 2:** If `a - 5` is divisible by 2627, then `a + 1` would be divisible by 4. This is a possibility.\n\n* Since `a - 5` is divisible by 2627, let's assume `a - 5 = 2627`. \n* Solving for `a`, we get `a = 2627 + 5 = 2632`.\n\n**Part 4: Calculating the Expression**\n\n* Now that we know `a = 2632`, we can calculate `a\u00b2 - 4a + 1`:\n   (2632)\u00b2 - 4(2632) + 1 \n   = 6927424 - 10528 + 1\n   = 6916897\n\n**Solution**\n\nTherefore, the value of `a\u00b2 - 4a + 1` is **6916897**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7878581173260573
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 4_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 4",
+        "problem": "A 6-sided die is weighted so that the probability of any number being rolled is proportional to the value of the roll.  (So, for example, the probability of a 2 being rolled is twice that of a 1 being rolled.)  What is the expected value of a roll of this weighted die?  Express your answer as a common fraction.",
+        "correct_solution": "Let $x$ be the probability that a 1 is rolled.  Then the probability that a 2 is rolled is $2x$, the probability that a 3 is rolled is $3x$, and so on.  Since the sum of all these probabilities must be 1, we have that $x + 2x + \\cdots + 6x = 1$, which means that $21x = 1$, so $x = \\frac{1}{21}$.  Therefore \\[ E = \\frac{1}{21}(1) + \\frac{2}{21}(2) + \\cdots + \\frac{6}{21}(6) = \\frac{1^2 + 2^2 + \\cdots 6^2}{21} = \\boxed{\\frac{13}{3}}. \\]",
+        "generated_solutions": {
+            "gemini-1.5-pro": "## Solution Breakdown:\n\nHere's how to solve this problem step-by-step:\n\n**1. Define Proportionality Constant:**\n\n* Let  'x' be the probability of rolling a 1. \n* Since the probability of each number is proportional to its value:\n    * Probability of rolling a 2 = 2x\n    * Probability of rolling a 3 = 3x\n    * ...\n    * Probability of rolling a 6 = 6x\n\n**2. Total Probability:**\n\n* The sum of probabilities of all possible outcomes must equal 1:\n    * x + 2x + 3x + 4x + 5x + 6x = 1\n\n**3. Solve for 'x':**\n\n* Combine like terms: 21x = 1\n* Divide both sides by 21: x = 1/21\n\n**4. Calculate Individual Probabilities:**\n\n* Now we know x, we can find the probability of each outcome:\n    * P(1) = x = 1/21\n    * P(2) = 2x = 2/21\n    * P(3) = 3x = 3/21\n    * P(4) = 4x = 4/21\n    * P(5) = 5x = 5/21\n    * P(6) = 6x = 6/21\n\n**5. Calculate Expected Value:**\n\n* The expected value (E) is calculated as the sum of each outcome multiplied by its probability:\n    * E = (1 * P(1)) + (2 * P(2)) + (3 * P(3)) + (4 * P(4)) + (5 * P(5)) + (6 * P(6))\n    * E = (1 * 1/21) + (2 * 2/21) + (3 * 3/21) + (4 * 4/21) + (5 * 5/21) + (6 * 6/21)\n    * E = (1 + 4 + 9 + 16 + 25 + 36) / 21\n    * E = 91/21\n\n**6. Simplify the Answer:**\n\n* The expected value can be simplified to: E = **13/3**\n\n**Therefore, the expected value of a roll of this weighted die is 13/3.** \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8152011922503726
+            }
+        }
+    }
+}

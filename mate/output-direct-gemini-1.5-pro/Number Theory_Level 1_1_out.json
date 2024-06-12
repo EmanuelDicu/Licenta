@@ -1,0 +1,18 @@
+{
+    "Number Theory_Level 1_1.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 1",
+        "problem": "What is the greatest possible product of any two distinct prime numbers less than 40?",
+        "correct_solution": "We look for the two largest prime numbers less than 40 and find that they are 37 and 31. The product of these two numbers is $37\\times31=\\boxed{1147}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how to solve the problem step-by-step:\n\n**1. Understand Prime Numbers**\n\n* **Definition:** A prime number is a whole number greater than 1 that has only two divisors: 1 and itself. \n* **Examples:** 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37 are all prime numbers less than 40.\n\n**2.  Reasoning for Maximizing the Product**\n\n* To get the greatest product, we want the two prime numbers to be as large as possible. \n\n**3. Identifying the Largest Primes**\n\n* The largest prime number less than 40 is 37.\n* The next largest prime number less than 40 is 31.\n\n**4. Calculating the Product**\n\n* Multiply the two largest prime numbers: 37 * 31 = 1147\n\n**Solution:**\n\nThe greatest possible product of any two distinct prime numbers less than 40 is **1147**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8414795244385733
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Precalculus_Level 3_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 3",
+        "problem": "The set of vectors $\\mathbf{v}$ such that\n\\[\\operatorname{proj}_{\\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}} \\mathbf{v} = \\begin{pmatrix} 0 \\\\ 0 \\end{pmatrix}\\]lie on a line.  Enter the equation of this line in the form \"$y = mx + b$\".",
+        "correct_solution": "Let $\\mathbf{v} = \\begin{pmatrix} x \\\\ y \\end{pmatrix}.$\n\nFrom the formula of a projection,\n\\begin{align*}\n\\operatorname{proj}_{\\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}} \\mathbf{v} &= \\frac{\\mathbf{v} \\cdot \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}}{\\left\\| \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} \\right\\|^2} \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} \\\\\n&= \\frac{\\begin{pmatrix} x \\\\ y \\end{pmatrix} \\cdot \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}}{5} \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} \\\\\n&= \\frac{2x + y}{5} \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} \\\\\n&= \\begin{pmatrix} 0 \\\\ 0 \\end{pmatrix}.\n\\end{align*}Then\n\\[\\frac{2x + y}{5} = 0,\\]so $2x + y = 0.$  Thus, the equation of the line is $\\boxed{y = -2x}.$",
+        "generated_solutions": {
+            "gemini-1.5-pro": "**Understanding Projections**\n\n* **What is a vector projection?**  The projection of a vector $\\mathbf{u}$ onto a nonzero vector $\\mathbf{v}$ is the component of $\\mathbf{u}$ that points in the same (or opposite) direction as $\\mathbf{v}$.\n\n* **Formula:** The projection of $\\mathbf{u}$ onto $\\mathbf{v}$ is given by:\n   \\[\\operatorname{proj}_{\\mathbf{v}} \\mathbf{u} = \\frac{\\mathbf{u} \\cdot \\mathbf{v}}{\\|\\mathbf{v}\\|^2} \\mathbf{v}\\]\n\n**Analyzing the Problem**\n\nWe're given that the projection of some vector $\\mathbf{v}$ onto the vector  $\\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}$ is the zero vector.  This means:\n\n1. **Geometric Interpretation:** The vector $\\mathbf{v}$ is orthogonal (perpendicular) to the vector $\\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}$.\n\n2. **Using the Formula:**  Since the projection is the zero vector, we have:\n   \\[\\frac{\\mathbf{v} \\cdot \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}}{\\left\\| \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} \\right\\|^2} \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 0 \\end{pmatrix}\\]\n\n**Finding the Equation of the Line**\n\nLet $\\mathbf{v} = \\begin{pmatrix} x \\\\ y \\end{pmatrix}$.  Using the dot product, our equation becomes:\n\n\\[\\frac{\\begin{pmatrix} x \\\\ y \\end{pmatrix} \\cdot \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}}{(2^2 + 1^2)} \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 0 \\end{pmatrix}\\]\n\nSimplifying, we get:\n\n\\[\\frac{2x + y}{5} \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 0 \\end{pmatrix}\\]\n\nFor this to be true, the scalar multiple must be zero:\n\n\\[2x + y = 0\\]\n\n**Solution**\n\nSolving for $y$, we get the equation of the line: \n\\[y = -2x\\] \n\n**In conclusion, the set of all vectors whose projection onto the vector (2, 1) is the zero vector lie on the line with equation y = -2x.** \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": false,
+                "Levenshtein distance value": 0.6749576031656302
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 3_2.json": {
+        "category": "Geometry",
+        "difficulty": "Level 3",
+        "problem": "We have a triangle $\\triangle ABC$ and a point $K$ on segment $\\overline{BC}$ such that $AK$ is an altitude to $\\triangle ABC$. If $AK = 6,$ $BK = 8$, and $CK = 6,$ then what is the perimeter of the triangle?",
+        "correct_solution": "Time to draw! [asy]\npair A, B, C, K;\nA = (0, 6);\nB = (-8, 0);\nC = (6, 0);\nK = (0, 0);\ndraw(A--B--C--cycle);\ndraw(A--K);\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$K$\", K, S);\nlabel(\"6\", A--K, E);\nlabel(\"8\", B--K, S);\nlabel(\"6\", C--K, S);\ndraw(rightanglemark(A,K,B,10));\n[/asy] To find the perimeter, we need $AB$ and $AC.$ We recognize $\\triangle ABK$ as a $3:4:5$ triangle and and $\\triangle ACK$ as a $45^\\circ-45^\\circ-90^\\circ$ triangle, which means that $AB = 10$ and $AC = 6\\sqrt{2}.$ As for $BC,$ we have $BC = BK + CK = 14.$ Therefore, our answer is $AB + AC + BC = \\boxed{24 + 6\\sqrt{2}}.$",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how to solve the problem step-by-step:\n\n**Understanding the Problem**\n\nWe are given a triangle with a special line segment called an altitude.  An altitude is a line segment drawn from a vertex of a triangle perpendicular to the opposite side.  We need to find the perimeter, which is the total length of all the sides of the triangle.\n\n**Solution**\n\n**Part 1: Recognizing Right Triangles**\n\n* Since AK is an altitude, we know that \u2220AKB and \u2220AKC are right angles.\n* This means we have two right triangles within our larger triangle: \u0394AKB and \u0394AKC.\n\n**Part 2: Using the Pythagorean Theorem**\n\nWe can use the Pythagorean Theorem to find the missing side lengths in each of our right triangles:\n\n* **In \u0394AKB:**\n    *  AB\u00b2 = AK\u00b2 + BK\u00b2\n    *  AB\u00b2 = 6\u00b2 + 8\u00b2 \n    *  AB\u00b2 = 100\n    *  AB = 10 \n* **In \u0394AKC:**\n    * AC\u00b2 = AK\u00b2 + CK\u00b2\n    * AC\u00b2 = 6\u00b2 + 6\u00b2\n    * AC\u00b2 = 72\n    * AC = \u221a72 = 6\u221a2\n\n**Part 3: Calculating the Perimeter**\n\n* Now we have all the sides of \u0394ABC: AB = 10, BC = BK + CK = 8 + 6 = 14, and AC = 6\u221a2. \n* Perimeter = AB + BC + AC = 10 + 14 + 6\u221a2 = 24 + 6\u221a2\n\n**Answer**\n\nThe perimeter of the triangle is **24 + 6\u221a2**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.804251550044287
+            }
+        }
+    }
+}

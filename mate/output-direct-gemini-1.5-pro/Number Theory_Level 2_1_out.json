@@ -1,0 +1,18 @@
+{
+    "Number Theory_Level 2_1.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 2",
+        "problem": "What is the tens digit of $5^{2005}$?",
+        "correct_solution": "Note that for $n\\geq 2$, the last two digits of $5^n$ are 25.  To prove this, note that $5^2\\equiv 25 \\pmod{100}$, and whenever $5^{n-1}\\equiv 25\\pmod{100}$, we also have $5^n=5\\cdot 5^{n-1}\\equiv 5\\cdot 25 \\equiv 125 \\equiv 25 \\pmod{100}$. Thus the tens digit of $5^{2005}$ is $\\boxed{2}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how we can break down this problem and solve it:\n\n**Understanding the Problem**\n\nWe need to find the tens digit of 5 raised to the 2005th power.  Calculating this directly would result in a huge number, making it impractical. Instead, we'll use patterns and modular arithmetic.\n\n**Solution**\n\n1. **Cyclicity of Units Digits:**\n\n   * Observe the units digits of the first few powers of 5:\n      *  5\u00b9 = 5\n      *  5\u00b2 = 25\n      *  5\u00b3 = 125\n      *  5\u2074 = 625 \n      *  5\u2075 = 3125 \n\n   * Notice that the units digit repeats in a cycle of 4: {5, 5, 5, 5}. This means we only need to find the remainder when the exponent (2005 in this case) is divided by 4.\n\n2. **Finding the Remainder:**\n\n   * 2005 divided by 4 leaves a remainder of 1 (2005 = 501 * 4 + 1).\n\n3. **Relating Remainder to Units Digit:**\n\n   * Since the remainder is 1, the units digit of 5\u00b2\u2070\u2070\u2075 will be the same as the units digit of 5\u00b9, which is 5.\n\n4. **Tens Digit:**\n\n   *  Since any power of 5 greater than 5\u00b9 will have a units digit of 5 and be greater than 10, the tens digit of 5\u00b2\u2070\u2070\u2075 will be **2**.  This is because any number ending in ...25 will be a result of 5 multiplied by another number ending in 5.\n\n**Therefore, the tens digit of 5\u00b2\u2070\u2070\u2075 is 2.** \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8686786296900489
+            }
+        }
+    }
+}

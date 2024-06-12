@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 1_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 1",
+        "problem": "If $3m+4n=47$, and $m+n=15$, what is $m$?",
+        "correct_solution": "Because the question only asks for the value of $m$, we can begin by eliminating $n$. In order to do this, we multiply the second equation by 4, giving us a system of two equations where both coefficients of $n$ are 4: \\begin{align*} 3m+4n=47\n\\\\ 4m+4n=60\n\\end{align*}From here, we can just subtract the second equation from the first. This gives us $(3m+4n)-(4m+4n)=47-60$, which simplifies to $-m=-13$ or $m=\\boxed{13}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how to solve the problem step-by-step:\n\n**1. Understand the Goal**\n\nWe are given two equations with two unknowns (m and n). Our goal is to find the value of 'm'.\n\n**2. Choose a Strategy: Elimination**\n\nWe can use the elimination method to solve this system of equations. The idea is to eliminate one variable, leaving us with a single equation and a single unknown.\n\n**3. Execute the Strategy**\n\n* **Step 3a:  Manipulate the Second Equation** \n   We want to eliminate 'n'.  Notice that if we multiply the second equation (m + n = 15) by -4, we get:\n   -4(m + n) = -4(15)  \n   Which simplifies to:\n   -4m - 4n = -60\n\n* **Step 3b:  Add the Equations**\n    Now, add the modified second equation to the first equation:\n    (3m + 4n) + (-4m - 4n) = 47 + (-60)\n\n* **Step 3c:  Simplify and Solve for 'm'**\n    Notice that the 'n' terms cancel out:\n    -m = -13 \n    Dividing both sides by -1, we get:\n    m = 13\n\n**4. Solution**\n\nTherefore, the value of 'm' is **13**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7525773195876289
+            }
+        }
+    }
+}

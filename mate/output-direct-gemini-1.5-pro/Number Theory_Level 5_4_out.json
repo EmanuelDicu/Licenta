@@ -1,0 +1,18 @@
+{
+    "Number Theory_Level 5_4.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 5",
+        "problem": "Notice that  \\[31\\cdot37=1147.\\]Find some integer $n$ with $0\\leq n<2293$ such that  \\[31n\\equiv 3\\pmod{2293}.\\]",
+        "correct_solution": "Doubling the given equation tells us  \\[31\\cdot74=2294.\\]Specifically  \\[31\\cdot74\\equiv1\\pmod{2293}\\]and 74 is the multiplicative inverse of 31 modulo 2293.\n\nIf we triple the congruence we just found we get  \\[31\\cdot222\\equiv3\\pmod{2293}.\\]Therefore $n=\\boxed{222}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "## Breaking Down the Problem:\n\nWe are asked to solve a modular congruence.  Here's how we can approach it:\n\n**Understanding the Problem**\n\n* **Modular Congruence:**  The notation  $a \\equiv b \\pmod{m}$  means that $a$ and $b$ leave the same remainder when divided by $m$. Another way to think about it is that  $(a-b)$ is divisible by $m$.\n\n* **Goal:**  We need to find a value for 'n' that satisfies the given congruence.\n\n**Solution Strategy**\n\n1. **Simplify the Congruence:** Our goal is to isolate 'n'.  To do this, we need to find the modular inverse of 31 modulo 2293.\n\n2. **Finding the Modular Inverse:**  The modular inverse of 31 (modulo 2293), denoted as $31^{-1} \\pmod{2293}$, is an integer 'x' such that: \n   \\[31x \\equiv 1 \\pmod{2293}.\\] We can use the Extended Euclidean Algorithm to efficiently find this inverse.\n\n3. **Calculating 'n':** Once we have the inverse, we can multiply both sides of the congruence by the inverse to solve for 'n'.\n\n## Solving the Problem\n\n**1. Simplifying the Congruence**\n\nWe begin with: \n $$31n \\equiv 3 \\pmod{2293}$$\n\n**2. Finding the Modular Inverse**\n\nLet's use the Extended Euclidean Algorithm to find the inverse of 31 modulo 2293. \n\n* **Step 1:** Divide the larger number (2293) by the smaller number (31) and note the quotient and remainder:\n   $$2293 = 74 \\cdot 31 + 1$$\n\n* **Step 2:**  Replace the larger number with the smaller number from the previous step, and the smaller number with the remainder:\n   $$31 = 31 \\cdot 1 + 0$$\n\n* **Step 3:** Since we reached a remainder of 0, we stop. The previous remainder (which is 1 in this case) is the greatest common divisor (GCD) of 2293 and 31.  Since the GCD is 1, the inverse exists.\n\n* **Step 4:**  Now, work backwards through the equations from the previous steps to express the GCD (1) as a linear combination of 2293 and 31:\n\n   From the first equation ($2293 = 74 \\cdot 31 + 1$), we can write: \n   $$1 = 2293 - 74 \\cdot 31$$\n\n* **Step 5:** This last equation tells us that $-74 \\cdot 31$ is congruent to 1 modulo 2293.  Therefore, the modular inverse of 31 modulo 2293 is -74.  To get a positive representative, we can add 2293:\n   $$-74 + 2293 = 2219$$\n\nSo, $31^{-1} \\equiv 2219 \\pmod{2293}$.\n\n**3. Calculating 'n'**\n\nNow multiply both sides of the original congruence by 2219:\n\n$$31n  \\equiv  3 \\pmod{2293}$$\n$$2219 \\cdot 31n  \\equiv 2219 \\cdot 3 \\pmod{2293}$$\n$$n \\equiv 6657 \\pmod{2293}$$\n\nTo find 'n' within the desired range ($0 \\le n < 2293$),  reduce 6657 modulo 2293:\n\n$$n \\equiv 6657 \\equiv  \\boxed{1771} \\pmod{2293}$$ \n\n## Solution\n\nThe integer $n = \\boxed{1771}$ satisfies the given congruence. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9139908256880734
+            }
+        }
+    }
+}

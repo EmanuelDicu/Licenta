@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 2_1.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 2",
+        "problem": "Two reals $x$ and $y$ are such that $x-y=4$ and $x^3-y^3=28$. Compute $xy$.",
+        "correct_solution": "We have $28=x^3-y^3=(x-y)(x^2+xy+y^2)=(x-y)((x-y)^2+3xy)=4\\cdot (16+3xy)$, from which $xy=\\boxed{-3}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "## Solution\n\nWe are given:\n\n*  x - y = 4 \n*  x\u00b3 - y\u00b3 = 28\n\nOur goal is to find the value of xy.\n\n**Part 1: Factoring and Substitution**\n\nWe can utilize the difference of cubes factorization to simplify the second equation:\n\n*  x\u00b3 - y\u00b3 = (x - y)(x\u00b2 + xy + y\u00b2) \n\nNow we can substitute the first equation (x - y = 4) into this factored equation:\n\n*  4(x\u00b2 + xy + y\u00b2) = 28\n\nDividing both sides by 4, we get:\n\n*  x\u00b2 + xy + y\u00b2 = 7\n\n**Part 2: Squaring and Simplifying**\n\nLet's square the first equation (x - y = 4):\n\n* (x - y)\u00b2 = 4\u00b2\n* x\u00b2 - 2xy + y\u00b2 = 16\n\n**Part 3: Eliminating and Solving for xy**\n\nNow we have two equations:\n\n* x\u00b2 + xy + y\u00b2 = 7\n* x\u00b2 - 2xy + y\u00b2 = 16\n\nSubtracting the second equation from the first equation, we eliminate x\u00b2 and y\u00b2, leaving:\n\n* 3xy = -9\n\nDividing both sides by 3, we isolate xy:\n\n* xy = -3\n\n**Solution:**\n\nTherefore, the value of xy is **-3**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9241379310344827
+            }
+        }
+    }
+}

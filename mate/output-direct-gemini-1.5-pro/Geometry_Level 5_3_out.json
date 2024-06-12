@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 5_3.json": {
+        "category": "Geometry",
+        "difficulty": "Level 5",
+        "problem": "Four circles of radius 1 are each tangent to two sides of a square and externally tangent to a circle of radius 2, as shown.  What is the area of the square?\n\n[asy]\nunitsize(1cm);draw(Circle((0,0),2));\nfor(int i=0; i<4; ++i) {\n\tdraw(Circle(scale(3)*dir(45+90*i),1));\n\tdraw((3+sqrt(2))*dir(45+90*i)--(3+sqrt(2))*dir(-45+90*i));  \n}\ndraw((0,0)--(2,0));\nlabel(\"2\",(1,0),N);\ndraw(scale(3)*dir(45+90*1)--shift((1,0))*scale(3)*dir(45+90*1));\nlabel(\"1\",point(scale(3)*dir(45+90*1)--shift((1,0))*scale(3)*dir(45+90*1),.5),S);\n[/asy]",
+        "correct_solution": "Let $s$ be the length of a side of the square. Consider an isosceles right triangle with vertices at the centers of the circle of radius 2 and two of the circles of radius 1. This triangle has legs of length 3, so its hypotenuse has length $3\\sqrt{2}$.\n\n[asy]\nunitsize(1cm);\ndraw(Circle((0,0),2));\nfor(int i=0; i<4; ++i) {\n\tdraw(Circle(scale(3)*dir(45+90*i),1));\n\tdraw((3+sqrt(2))*dir(45+90*i)--(3+sqrt(2))*dir(-45+90*i));  \n}\npair A = scale(3)*dir(45), B = scale(3)*dir(45+90);\ndraw(A--B--origin--cycle);\nlabel(\"$1$\", A, SE);\nlabel(\"$1$\", B, SW);\nlabel(\"$2$\", point(origin--A,.3), SE);\nlabel(\"$2$\", point(origin--B,.3), SW);\ndraw(rightanglemark(A,origin,B,5));\n[/asy]\n\nThe length of a side of the square is 2 more than the length of this hypotenuse, so  $s=2 + 3\\sqrt{2}$. Hence the area of the square is \\[\ns^{2}=(2+3\\sqrt{2})^{2}=\\boxed{22+12\\sqrt{2}}.\n\\]",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how we can solve this geometry problem by breaking it down:\n\n**1. Focus on the Diagonals**\n\n* Draw a diagonal of the square.  Notice that this diagonal passes through the centers of two of the smaller circles and the center of the larger circle.\n\n[asy]\nunitsize(1cm);draw(Circle((0,0),2));\nfor(int i=0; i<4; ++i) {\n\tdraw(Circle(scale(3)*dir(45+90*i),1));\n\tdraw((3+sqrt(2))*dir(45+90*i)--(3+sqrt(2))*dir(-45+90*i));  \n}\ndraw((0,0)--(2,0));\nlabel(\"2\",(1,0),N);\ndraw(scale(3)*dir(45+90*1)--shift((1,0))*scale(3)*dir(45+90*1));\nlabel(\"1\",point(scale(3)*dir(45+90*1)--shift((1,0))*scale(3)*dir(45+90*1),.5),S);\ndraw((-3-sqrt(2),-3-sqrt(2))--(3+sqrt(2),3+sqrt(2)),dashed); \n[/asy]\n\n**2. Segment Lengths**\n\n* **Radius of the larger circle:** 2 \n* **Diameter of a smaller circle:** 2 (since the radius is 1)\n* **Consider the diagonal:** It consists of a radius of a small circle, then a diameter of the large circle, and then another radius of a small circle.\n\n**3. Calculate the Diagonal**\n\n* The length of the diagonal is 1 + 2 + 1 = 4.\n\n**4. Relationship between Diagonal and Side of a Square**\n\n* Recall that the diagonal of a square is \u221a2 times the length of its side.  Let 's' be the side length of the square.  We have the equation:  s\u221a2 = 4\n\n**5. Solve for the Side Length**\n\n* Divide both sides of the equation by \u221a2: s = 4/\u221a2\n* Rationalize the denominator by multiplying the top and bottom by \u221a2: s = (4\u221a2)/2 = 2\u221a2\n\n**6. Calculate the Area**\n\n* The area of a square is side length squared: Area = s\u00b2 = (2\u221a2)\u00b2 = 8\n\n**Solution:** The area of the square is **8**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7161043921069382
+            }
+        }
+    }
+}

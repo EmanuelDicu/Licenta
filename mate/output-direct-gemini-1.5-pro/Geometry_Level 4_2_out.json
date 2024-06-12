@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 4_2.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "A circle is circumscribed about an equilateral triangle with side lengths of $6$ units each.  What is the area of the circle, in square units? Express your answer in terms of $\\pi$.",
+        "correct_solution": "[asy]\nsize(100);\ndefaultpen(linewidth(.8));\ndraw((0,0)--(4.5,7.794)--(9,0)--cycle);\ndraw(Circle((4.5,2.598),5.196));\ndraw((4.5,7.794)--(4.5,0));\ndot((4.5,2.598));\nlabel(\"$O$\",(4.5,2.598),W);\nlabel(\"$A$\",(4.5,7.794),N);\nlabel(\"$B$\",(9,0),E);\nlabel(\"$M$\",(4.5,0),S);\n[/asy]\n\nAbove is the diagram implied by the problem, with some added lines ($O$ is the center of the circle). Since $\\triangle AMB$ is a 30-60-90 triangle and $AB=6$, $AM=3\\sqrt{3}$. Since $AO$ is $2/3$ of $AM$, we have $AO=2\\sqrt{3}$. Thus, the area of the circle is $\\pi(2\\sqrt{3})^2=\\boxed{12\\pi}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's a breakdown of the solution, splitting the problem into smaller, manageable parts:\n\n**Part 1: Visualize and Draw**\n\n* **Sketch the scenario:** Draw an equilateral triangle and a circle perfectly containing it (circumscribed). \n* **Mark key elements:** Label the triangle's vertices as A, B, and C.  Since it's equilateral, each side is 6 units long.\n\n**Part 2: Connect to the Center**\n\n* **Find the circle's center:** Draw lines that bisect each angle of the triangle (angle bisectors). These lines will intersect at a single point, which is the center (O) of the circle.\n* **Key observation:** The angle bisectors also act as perpendicular bisectors of the triangle's sides, and they pass through the center of the circle.\n\n**Part 3:  Form Smaller Triangles**\n\n* **Focus on one small triangle:** The circle's center (O) and two vertices of the equilateral triangle (say A and B) form a smaller triangle (AOB). \n* **Triangle type:** Triangle AOB is a 30-60-90 triangle. This is because angle AOB is 120 degrees (360 degrees of the circle divided by 3), and it's split into two equal angles of 60 degrees by the angle bisector.\n\n**Part 4: Utilize 30-60-90 Triangle Properties**\n\n* **Recall the ratios:** In a 30-60-90 triangle, the sides are in the ratio  1 : \u221a3 : 2. The hypotenuse (AO, which is also the circle's radius) is twice the length of the shorter leg.\n* **Find the shorter leg:** The shorter leg is half the length of the equilateral triangle's side, so it's 6/2 = 3 units.\n* **Calculate the radius:** The radius (AO) is twice the shorter leg, making it 3 * 2 = 6 units.\n\n**Part 5: Calculate the Circle's Area**\n\n* **Formula:** The area of a circle is given by  \u03c0r\u00b2, where r is the radius.\n* **Substitute and solve:**  Area = \u03c0 * (6)\u00b2 = 36\u03c0 square units.\n\n**Solution:** The area of the circle circumscribed about the equilateral triangle is **36\u03c0 square units**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8697501329080276
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 1_1.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 1",
+        "problem": "Compute $(2^3)(5^5)$ in your head.",
+        "correct_solution": "Using the associative property, we can rearrange the terms to get $(2^35^3)(5^2)=(10^3)(5^2)=(1000)(25)=\\boxed{25,\\!000}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how to break down the problem $(2^3)(5^5)$ and solve it mentally:\n\n**1. Understand Exponents:**\n\n*  $2^3$ means 2 multiplied by itself three times:  2 * 2 * 2 \n*  $5^5$ means 5 multiplied by itself five times: 5 * 5 * 5 * 5 * 5\n\n**2. Calculate the Powers:**\n\n*  $2^3 = 2 * 2 * 2 = 8$\n*  $5^5$ is a bit trickier to do mentally.  Let's break it down:\n    * $5 * 5 = 25$\n    * $25 * 5 = 125$\n    * $125 * 5 = 625$\n    * $625 * 5 = 3125$ \n\n**3. Multiply the Results:**\n\n* Now we have:  8 * 3125\n\n* This multiplication is large for mental math.  It's easier to think of 8 as (2 * 4):  (2 * 4) * 3125\n\n* Rearrange for easier calculation: 2 * (4 * 3125)\n\n*  Calculate 4 * 3125 = 12500\n\n* Finally: 2 * 12500 = 25000\n\n**Solution:**\n$(2^3)(5^5) = 25000$ \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9082446808510638
+            }
+        }
+    }
+}

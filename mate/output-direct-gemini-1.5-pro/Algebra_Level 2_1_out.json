@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 2_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 2",
+        "problem": "If \\begin{align*}\n5x-2y&=7,\\\\\n3x+y&=2,\n\\end{align*}compute $24x-14y$.",
+        "correct_solution": "Note that $6(5x-2y)-2(3x+y)=24x-14y$.  Thus, $24x-14y=6(7)-2(2)=\\boxed{38}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "## Solving the System of Equations:\n\nOur goal is to find the value of the expression $24x - 14y$.  We can do this by first solving the given system of equations to find the values of  'x' and 'y'.\n\n**Step 1: Eliminate one variable**\n\nWe can use the elimination method to get rid of one variable. Notice that the 'y' term in the second equation has a coefficient of +1, while the 'y' term in the first equation has a coefficient of -2. This is helpful, as we can multiply the second equation by 2 to make the coefficients of 'y' opposites.\n\n* Multiply the second equation by 2: \n   (3x + y) * 2 = 2 * 2 \n   This simplifies to: 6x + 2y = 4\n\n**Step 2: Add the equations together**\n\nNow we have:\n\n* Equation 1: 5x - 2y = 7\n* Modified Equation 2: 6x + 2y = 4\n\nAdding these equations together eliminates 'y':\n\n(5x - 2y) + (6x + 2y) = 7 + 4\n\nThis simplifies to: 11x = 11\n\n**Step 3: Solve for 'x'**\n\nDivide both sides of the equation by 11:\n\n11x / 11 = 11 / 11\n\nThis gives us: x = 1\n\n**Step 4: Substitute to find 'y'**\n\nNow that we know x = 1, we can substitute this value back into either of the original equations to solve for 'y'. Let's use the second equation (3x + y = 2):\n\n3 * (1) + y = 2\n\nSimplifying: 3 + y = 2\n\nSubtract 3 from both sides: \ny = 2 - 3\n\nTherefore: y = -1\n\n## Calculating the Expression:\n\nNow that we have the values of 'x' and 'y', we can substitute them into the expression we need to calculate: 24x - 14y\n\n**Step 5: Substitute and simplify**\n\nSubstitute x = 1 and y = -1 into the expression:\n\n24 * (1) - 14 * (-1)\n\nSimplifying: 24 + 14 = 38\n\n## Solution:\n\nTherefore, the value of the expression 24x - 14y, given the system of equations, is **38**. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9651860744297719
+            }
+        }
+    }
+}

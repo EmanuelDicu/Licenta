@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 5_4.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 5",
+        "problem": "On a number line, the coordinates of $P$ and $Q$ are 8 and 48, respectively. The midpoint of $\\overline{PQ}$ is $B$, the midpoint of $\\overline{BQ}$ is $C$, and the midpoint of $\\overline{PC}$ is $D$. What is the coordinate of $D$?",
+        "correct_solution": "Since $B$ is midpoint of $\\overline{PQ}$, the coordinate of $B$ is $(8+48)/2 = 4+24 = 28$.  Since $C$ is the midpoint of $\\overline{BQ}$, the coordinate of $C$ is $(28+48)/2 = 14+24=38$.  Since $D$ is the midpoint of $\\overline{PC}$, the coordinate of $D$ is $(8+38)/2 = 4 + 19 = \\boxed{23}$.\n\n[asy]\npair P, Q, B, C, D;\n\nP = (8,0);\nQ = (48,0);\nB = (P+Q)/2;\nC = (B+Q)/2;\nD = (P+C)/2;\n\ndot(P);\ndot(Q);\ndot(B);\ndot(C);\ndot(D);\n\ndraw(P--Q);\nlabel(\"$P$\",P,S);\nlabel(\"$Q$\",Q,S);\nlabel(\"$B$\",B,S);\nlabel(\"$C$\",C,S);\nlabel(\"$D$\",D,S);\n[/asy]",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how to solve the problem step-by-step:\n\n**1. Find the coordinate of B (midpoint of PQ):**\n\n* The midpoint of a segment is found by averaging the coordinates of its endpoints.\n* Coordinate of B = (Coordinate of P + Coordinate of Q) / 2\n* Coordinate of B = (8 + 48) / 2 = 56 / 2 = 28\n\n**2. Find the coordinate of C (midpoint of BQ):**\n\n* Coordinate of C = (Coordinate of B + Coordinate of Q) / 2\n* Coordinate of C = (28 + 48) / 2 = 76 / 2 = 38\n\n**3. Find the coordinate of D (midpoint of PC):**\n\n* Coordinate of D = (Coordinate of P + Coordinate of C) / 2\n* Coordinate of D = (8 + 38) / 2 = 46 / 2 = 23\n\n**Therefore, the coordinate of D is 23.** \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7730061349693251
+            }
+        }
+    }
+}
