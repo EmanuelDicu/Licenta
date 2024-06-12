@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 1_1.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 1",
+        "problem": "Let $a,$ $b,$ and $c$ be the roots of $x^3 - 3x - 5 = 0.$  Find $abc.$",
+        "correct_solution": "By Vieta's formulas, $abc = \\boxed{5}.$",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve it in a logical order.\n\n**Part 1: Understanding the problem**\n\nWe are given a cubic equation $x^3 - 3x - 5 = 0$ and told that $a, b,$ and $c$ are its roots. Our task is to find the product $abc$.\n\n**Part 2: Recall the relationship between roots and coefficients**\n\nIn a polynomial equation, the product of the roots is equal to the constant term divided by the leading coefficient (the coefficient of the highest-degree term). In this case, the leading coefficient is 1, and the constant term is -5.\n\n**Part 3: Apply the relationship**\n\nUsing the relationship mentioned above, we can write:\n\n$$abc = \\frac{-5}{1} = -5$$\n\n**Part 4: Verify the answer**\n\nLet's double-check our answer. Since $a, b,$ and $c$ are the roots of the equation, we know that:\n\n$$(x - a)(x - b)(x - c) = x^3 - 3x - 5$$\n\nExpanding the left-hand side, we get:\n\n$$x^3 - (a + b + c)x^2 + (ab + ac + bc)x - abc = x^3 - 3x - 5$$\n\nComparing the constant terms, we see that:\n\n$$-abc = -5 \\Rightarrow abc = -5$$\n\nwhich confirms our previous answer.\n\n**Solution**\n\nThe solution to the problem is $abc = \\boxed{-5}.$"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9683098591549296
+            }
+        }
+    }
+}

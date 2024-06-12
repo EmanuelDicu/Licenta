@@ -1,0 +1,18 @@
+{
+    "Number Theory_Level 4_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 4",
+        "problem": "What integer $n$ satisfies $0\\le n<18$ and $$n\\equiv -11213141\\pmod{18}~?$$",
+        "correct_solution": "An integer is divisible by $18$ if and only if the sum of its digits is divisible by $9$ and the last digit is even (meaning it is divisible by both 9 and 2).  The sum of the digits of $-11213141$ is 14.  Since $-11213141$ is negative, this number is 5 $\\textit{less than}$ a multiple of 9.  The number is 4 $\\textit{more than}$ a multiple of 9.  Subtracting 4 gives  \\[-11213141 = -11213145+4.\\]Since $-11213145$ has a digit sum of 18, this number is a multiple of 9.  However this is not a multiple of 18 so we need to subtract 9 again: \\[-11213141 = -11213154+13.\\]Now the number $-11213154$ is a multiple of 18, so the answer is $\\boxed{13}$. $$-11213141\\equiv 13\\pmod {18}.$$",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them logically.\n\n**Part 1: Understand the congruence relation**\n\nThe given equation is:\n\n$$n\\equiv -11213141\\pmod{18}$$\n\nThis means that we need to find an integer $n$ such that $n - (-11213141)$ is a multiple of 18.\n\n**Part 2: Simplify the congruence relation**\n\nFirst, let's simplify the given number by adding 11213141 to both sides of the congruence relation:\n\n$$n+11213141\\equiv 0\\pmod{18}$$\n\nThis is equivalent to finding an integer $n$ such that $n + 11213141$ is a multiple of 18.\n\n**Part 3: Reduce the given number modulo 18**\n\nTo make the problem more manageable, let's reduce the given number modulo 18. We can do this by taking the remainder of 11213141 when divided by 18.\n\nUsing the division algorithm, we get:\n\n$$11213141 = 6224180 \\times 18 + 1$$\n\nSo, the remainder is 1. Therefore, we can rewrite the congruence relation as:\n\n$$n+1\\equiv 0\\pmod{18}$$\n\n**Part 4: Solve for n**\n\nNow, we need to find an integer $n$ such that $n + 1$ is a multiple of 18. This is equivalent to finding an integer $n$ such that $n$ is 1 less than a multiple of 18.\n\nThe smallest multiple of 18 is 18, so we have:\n\n$$n + 1 = 18$$\n\nSubtracting 1 from both sides, we get:\n\n$$n = 17$$\n\nSince $0 \\le n < 18$, we can conclude that:\n\n$$n \\equiv 17\\pmod{18}$$\n\n**Solution:**\n\nThe solution to the problem is $n = \\boxed{17}$."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7496350364963503
+            }
+        }
+    }
+}

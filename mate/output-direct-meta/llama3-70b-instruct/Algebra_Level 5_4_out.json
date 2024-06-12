@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 5_4.json": {
+        "category": "Algebra",
+        "difficulty": "Level 5",
+        "problem": "An infinite geometric series has common ratio $-1/2$ and sum 45.  What is the first term of the series?",
+        "correct_solution": "Let the first term be $a$.  Because the sum of the series is 45, we have $45= a/[1-(-1/2)] = a/(3/2) = 2a/3$.  Therefore, $a=\\boxed{\\frac{135}{2}}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve it in a logical order.\n\n**Part 1: Understanding the problem**\n\nWe are given an infinite geometric series with a common ratio of -1/2 and a sum of 45. We need to find the first term of the series.\n\n**Part 2: Formula for the sum of an infinite geometric series**\n\nThe formula for the sum of an infinite geometric series is:\n\nS = a / (1 - r)\n\nwhere S is the sum, a is the first term, and r is the common ratio.\n\nIn this problem, we are given S = 45 and r = -1/2. We need to find a.\n\n**Part 3: Plug in the values and simplify**\n\nPlug in the values into the formula:\n\n45 = a / (1 - (-1/2))\n\nSimplify the denominator:\n\n45 = a / (1 + 1/2)\n45 = a / (3/2)\n\n**Part 4: Solve for a**\n\nMultiply both sides by the denominator to get:\n\n45 \u00d7 (3/2) = a\n\nSimplify:\n\n135/2 = a\n\n**Part 5: Write the final answer**\n\nThe first term of the series is:\n\na = 135/2\na = 67.5\n\nSo, the solution to the problem is that the first term of the series is 67.5.\n\nNote: Since the problem states that the series has a common ratio of -1/2, we know that the series is convergent, and the formula for the sum of an infinite geometric series is applicable."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9003407155025553
+            }
+        }
+    }
+}

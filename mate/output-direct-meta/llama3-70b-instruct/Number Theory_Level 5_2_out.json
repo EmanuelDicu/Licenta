@@ -1,0 +1,18 @@
+{
+    "Number Theory_Level 5_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 5",
+        "problem": "Suppose that $a$ is a positive integer for which the least common multiple of $a+1$ and $a-5$ is $10508$. What is $a^2 - 4a + 1$?",
+        "correct_solution": "Notice that $(a+1)(a-5) = a^2 - 4a - 5$, so $a^2 - 4a + 1 = (a+1)(a-5) + 6$.\n\nAlso, we know that by the Euclidean algorithm, the greatest common divisor of $a+1$ and $a-5$ divides $6$: \\begin{align*}\n\\text{gcd}\\,(a+1, a-5) &= \\text{gcd}\\,(a+1-(a-5),a-5)\\\\\n&= \\text{gcd}\\,(6,a-5).\n\\end{align*}As $10508$ is even but not divisible by $3$, for the sum of the digits of $10508$ is $1 + 5 + 8 = 14$, it follows that the greatest common divisor of $a+1$ and $a-5$ must be $2$.\n\nFrom the identity $xy = \\text{lcm}\\,(x,y) \\cdot \\text{gcd}\\,(x,y)$ (consider the exponents of the prime numbers in the prime factorization of $x$ and $y$), it follows that \\begin{align*}\n(a+1)(a-5) &= \\text{lcm}\\,(a+1,a-5) \\cdot \\text{gcd}\\,(a+1, a-5) \\\\\n&= 2 \\cdot 10508.\n\\end{align*}Thus, the desired answer is $2 \\cdot 10508 + 6 = \\boxed{21022}.$\n\nWith a bit more work, we can find that $a = 147$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve it in a logical order.\n\n**Part 1: Factorizing 10508**\nThe first step is to factorize 10508, which is the least common multiple (LCM) of $a+1$ and $a-5$. We can do this using prime factorization:\n\n$$10508 = 2^3 \\times 13 \\times 101$$\n\n**Part 2: Identifying the factors of a+1 and a-5**\nSince $a+1$ and $a-5$ are both integers, their LCM must be a product of their prime factors. Let's consider the possible prime factors of $a+1$ and $a-5$:\n\n* $a+1$ has a factor of 2 (since $a$ is a positive integer, $a+1$ is even)\n* $a-5$ has a factor of 2 (since $a-5$ is an integer, it must be even or odd; if it's even, it has a factor of 2; if it's odd, $a+1$ must have a factor of 2 to make the LCM even)\n* $a+1$ and/or $a-5$ must have factors of 13 and 101 (since these are prime factors of 10508)\n\n**Part 3: Analyzing the possible values of a**\nFrom Part 2, we know that $a+1$ and/or $a-5$ must have factors of 2, 13, and 101. Let's analyze the possible values of $a$:\n\n* If $a+1$ has a factor of 13, then $a \\equiv -1 \\pmod{13} \\Rightarrow a = 12, 25, 38, \\ldots$ (but we know that $a$ is a positive integer, so we only consider $a = 12$)\n* If $a-5$ has a factor of 13, then $a \\equiv 5 \\pmod{13} \\Rightarrow a = 5, 18, 31, \\ldots$ (but we know that $a$ is a positive integer, so we only consider $a = 18$)\n* If $a+1$ has a factor of 101, then $a \\equiv -1 \\pmod{101} \\Rightarrow a = 100$ (but this doesn't satisfy the condition $a-5 > 0$)\n* If $a-5$ has a factor of 101, then $a \\equiv 5 \\pmod{101} \\Rightarrow a = 106$ (but this doesn't satisfy the condition $a-5 > 0$)\n\nSo, the possible values of $a$ are $a = 12$ or $a = 18$.\n\n**Part 4: Computing a^2 - 4a + 1**\nNow, we can compute $a^2 - 4a + 1$ for each possible value of $a$:\n\n* If $a = 12$, then $a^2 - 4a + 1 = 144 - 48 + 1 = 97$\n* If $a = 18$, then $a^2 - 4a + 1 = 324 - 72 + 1 = 253$\n\n**The Solution**\nThe solution to the problem is $a^2 - 4a + 1 = \\boxed{97}$.\nFinal Answer: The final answer is 97."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7986076578816509
+            }
+        }
+    }
+}

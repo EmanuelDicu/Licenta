@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 1_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 1",
+        "problem": "Ben flips a fair nickel four times. What is the probability that Ben flips Head, Tail, Head, Tail, in that order? Express your answer as a common fraction.",
+        "correct_solution": "Since any given flip has equal probability of $\\frac{1}{2}$ of being a Head or a Tail, and all outcomes are equally likely, the precise sequence given is equal to $\\frac{1}{2^4} = \\boxed{\\frac{1}{16}}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem step by step.\n\n**Step 1: Understand the problem**\nWe are asked to find the probability that Ben flips a fair nickel four times and gets the sequence Head, Tail, Head, Tail, in that order.\n\n**Step 2: Identify the sample space**\nThe sample space is the set of all possible outcomes when Ben flips the nickel four times. Since each flip has two possible outcomes (Head or Tail), the total number of outcomes is:\n\n2 (outcomes for the first flip) \u00d7 2 (outcomes for the second flip) \u00d7 2 (outcomes for the third flip) \u00d7 2 (outcomes for the fourth flip) = 2^4 = 16\n\nSo, there are 16 possible outcomes in the sample space.\n\n**Step 3: Identify the favorable outcomes**\nWe are interested in the specific sequence Head, Tail, Head, Tail. There is only one way to get this sequence, so there is only one favorable outcome.\n\n**Step 4: Calculate the probability**\nThe probability of an event is the number of favorable outcomes divided by the total number of outcomes in the sample space. In this case:\n\nProbability = (Number of favorable outcomes) / (Total number of outcomes)\n= 1 (favorable outcome) / 16 (total outcomes)\n= 1/16\n\n**Step 5: Express the answer as a common fraction**\nThe probability is already expressed as a common fraction: 1/16.\n\nTherefore, the solution to the problem is:\n\nThe probability that Ben flips Head, Tail, Head, Tail, in that order, is 1/16."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8946608946608947
+            }
+        }
+    }
+}

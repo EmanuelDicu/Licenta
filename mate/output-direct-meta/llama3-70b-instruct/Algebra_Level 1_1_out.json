@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 1_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 1",
+        "problem": "If $3m+4n=47$, and $m+n=15$, what is $m$?",
+        "correct_solution": "Because the question only asks for the value of $m$, we can begin by eliminating $n$. In order to do this, we multiply the second equation by 4, giving us a system of two equations where both coefficients of $n$ are 4: \\begin{align*} 3m+4n=47\n\\\\ 4m+4n=60\n\\end{align*}From here, we can just subtract the second equation from the first. This gives us $(3m+4n)-(4m+4n)=47-60$, which simplifies to $-m=-13$ or $m=\\boxed{13}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve it step by step.\n\n**Part 1: Identify the variables and equations**\n\nWe are given two equations:\n\n1. 3m + 4n = 47\n2. m + n = 15\n\nWe need to solve for m.\n\n**Part 2: Simplify the second equation**\n\nLet's simplify the second equation by solving for n:\n\nm + n = 15\n\nSubtract m from both sides:\n\nn = 15 - m\n\n**Part 3: Substitute the expression for n into the first equation**\n\nSubstitute n = 15 - m into the first equation:\n\n3m + 4(15 - m) = 47\n\n**Part 4: Expand and simplify the equation**\n\nExpand the equation by multiplying 4 with the expression inside the parentheses:\n\n3m + 60 - 4m = 47\n\nCombine like terms:\n\n-1m + 60 = 47\n\n**Part 5: Solve for m**\n\nSubtract 60 from both sides:\n\n-1m = -13\n\nDivide both sides by -1:\n\nm = 13\n\n**Solution:**\n\nThe value of m is 13.\n\nWe can verify our solution by plugging m = 13 into one of the original equations, say m + n = 15. We get:\n\n13 + n = 15\n\nSubtracting 13 from both sides gives:\n\nn = 2\n\nWe can then plug m = 13 and n = 2 into the other original equation, 3m + 4n = 47, to verify that it holds true:\n\n3(13) + 4(2) = 39 + 8 = 47\n\nYes, it does! Therefore, our solution m = 13 is correct."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7978003384094755
+            }
+        }
+    }
+}

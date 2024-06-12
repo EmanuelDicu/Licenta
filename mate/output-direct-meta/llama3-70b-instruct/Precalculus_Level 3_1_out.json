@@ -1,0 +1,18 @@
+{
+    "Precalculus_Level 3_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 3",
+        "problem": "The set of vectors $\\mathbf{v}$ such that\n\\[\\operatorname{proj}_{\\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}} \\mathbf{v} = \\begin{pmatrix} 0 \\\\ 0 \\end{pmatrix}\\]lie on a line.  Enter the equation of this line in the form \"$y = mx + b$\".",
+        "correct_solution": "Let $\\mathbf{v} = \\begin{pmatrix} x \\\\ y \\end{pmatrix}.$\n\nFrom the formula of a projection,\n\\begin{align*}\n\\operatorname{proj}_{\\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}} \\mathbf{v} &= \\frac{\\mathbf{v} \\cdot \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}}{\\left\\| \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} \\right\\|^2} \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} \\\\\n&= \\frac{\\begin{pmatrix} x \\\\ y \\end{pmatrix} \\cdot \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}}{5} \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} \\\\\n&= \\frac{2x + y}{5} \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} \\\\\n&= \\begin{pmatrix} 0 \\\\ 0 \\end{pmatrix}.\n\\end{align*}Then\n\\[\\frac{2x + y}{5} = 0,\\]so $2x + y = 0.$  Thus, the equation of the line is $\\boxed{y = -2x}.$",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them step by step.\n\n**Part 1: Understanding the given equation**\n\nThe equation $\\operatorname{proj}_{\\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}} \\mathbf{v} = \\begin{pmatrix} 0 \\\\ 0 \\end{pmatrix}$ means that the projection of vector $\\mathbf{v}$ onto the vector $\\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}$ is zero. In other words, $\\mathbf{v}$ is perpendicular to $\\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}$.\n\n**Part 2: Finding the slope of the line**\n\nSince $\\mathbf{v}$ is perpendicular to $\\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}$, we can find the slope of the line on which $\\mathbf{v}$ lies. Let's call the slope $m$. Then, we can say that the slope of $\\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}$ is the negative reciprocal of $m$.\n\nThe slope of $\\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}$ is $\\frac{1}{2}$, so we have:\n\n$$m = -\\frac{1}{1/2} = -2$$\n\n**Part 3: Finding the direction vector of the line**\n\nSince $\\mathbf{v}$ lies on a line, we can find a direction vector for the line. We know that $\\mathbf{v}$ is perpendicular to $\\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}$, so a direction vector for the line is given by:\n\n$$\\mathbf{d} = \\begin{pmatrix} 1 \\\\ -2 \\end{pmatrix}$$\n\n**Part 4: Finding the equation of the line**\n\nNow that we have the slope $m$ and the direction vector $\\mathbf{d}$, we can find the equation of the line. We can write the equation in the form $y = mx + b$, where $b$ is the y-intercept.\n\nWe know that the line passes through the origin (0, 0), since the projection of $\\mathbf{v}$ onto $\\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}$ is zero. Therefore, $b = 0$.\n\nSubstituting $m = -2$ and $b = 0$, we get:\n\n$$y = -2x + 0$$\n\n$$y = -2x$$\n\nThis is the equation of the line on which $\\mathbf{v}$ lies.\n\nTherefore, the solution to the problem is:\n\n$$y = -2x$$"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7160288408208542
+            }
+        }
+    }
+}

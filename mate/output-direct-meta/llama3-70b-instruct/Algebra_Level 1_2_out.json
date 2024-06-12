@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 1_2.json": {
+        "category": "Algebra",
+        "difficulty": "Level 1",
+        "problem": "Hillary has eleven coins, all dimes and nickels. In total, the coins are worth 75 cents. How many nickels does she have?",
+        "correct_solution": "Let the number of dimes Hillary has be $d$ and the number of nickels she has be $n$. We have the two equations \\begin{align*}\nd+n&=11\\\\\n10d+5n&=75\n\\end{align*} (The last equation is in terms of cents.) To make the second equation nicer, we divide both sides by 5 to get $2d+n=15$. From the first given equation, we have $d=11-n$. Substituting this into the simplified second given equation to eliminate $d$, we get $2(11-n)+n=15\\Rightarrow n=7$. Thus, Hillary has $\\boxed{7}$ nickels.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem step by step to solve it.\n\n**Step 1: Understand the problem**\n\nWe are given that Hillary has 11 coins, all of which are either dimes or nickels. The total value of these coins is 75 cents. We need to find the number of nickels she has.\n\n**Step 2: Identify the values of each coin**\n\nA dime is worth 10 cents, and a nickel is worth 5 cents. We'll use these values to help us solve the problem.\n\n**Step 3: Let's use variables**\n\nLet's say the number of dimes Hillary has is x. Since she has 11 coins in total, the number of nickels she has is 11 - x.\n\n**Step 4: Set up an equation**\n\nWe know that the total value of the coins is 75 cents. We can set up an equation to represent this:\n\n10x + 5(11 - x) = 75\n\nHere, 10x represents the total value of the dimes (10 cents each), and 5(11 - x) represents the total value of the nickels (5 cents each).\n\n**Step 5: Simplify the equation**\n\nLet's simplify the equation by combining like terms:\n\n10x + 55 - 5x = 75\n\nCombine like terms:\n\n5x + 55 = 75\n\nSubtract 55 from both sides:\n\n5x = 20\n\n**Step 6: Solve for x**\n\nDivide both sides by 5:\n\nx = 20/5\nx = 4\n\n**Step 7: Find the number of nickels**\n\nWe found that x = 4, which means Hillary has 4 dimes. Since she has 11 coins in total, the number of nickels she has is:\n\n11 - x = 11 - 4\n= 7\n\n**Conclusion**\n\nHillary has 7 nickels.\n\nThe solution to the problem is 7."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7969543147208121
+            }
+        }
+    }
+}

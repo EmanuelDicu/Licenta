@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 4_4.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 4",
+        "problem": "Three concentric circles are shown. The two largest circles have radii of $12$ and $13.$ If the area of the ring between the two largest circles equals the area of the smallest circle, determine the radius of the smallest circle.\n\n[asy]\nimport graph;\nfilldraw(circle((0,0),12), lightgray, black+linewidth(1));\nfilldraw(circle((0,0),10), white, black+linewidth(1));\nfilldraw(circle((0,0),6), gray, black+linewidth(1));\ndot((0,0));\n[/asy]",
+        "correct_solution": "The area of the ring between the two largest circles is $$\\pi\\cdot 13^2-\\pi\\cdot 12^2=169\\pi - 144\\pi=25\\pi.$$Suppose that the radius of the smallest circle is $r.$ Thus, the area of the smallest circle is $\\pi r^2.$ Since the area of the smallest circle is equal to the area of the ring between the two largest circles, then $\\pi r^2 = 25\\pi$ so $r^2 = 25$ and so $r=5$ since $r>0.$\n\nTherefore, the radius of the smallest circle is $\\boxed{5}.$",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them step by step.\n\n**Part 1: Find the area of the ring between the two largest circles**\n\nThe area of the ring is the difference between the area of the larger circle and the area of the smaller circle.\n\nLet's calculate the area of the larger circle:\n\nArea of larger circle = \u03c0 \u00d7 (radius)^2\n= \u03c0 \u00d7 (13)^2\n= 169\u03c0\n\nNow, let's calculate the area of the smaller circle:\n\nArea of smaller circle = \u03c0 \u00d7 (radius)^2\n= \u03c0 \u00d7 (12)^2\n= 144\u03c0\n\nThe area of the ring is:\n\nArea of ring = Area of larger circle - Area of smaller circle\n= 169\u03c0 - 144\u03c0\n= 25\u03c0\n\n**Part 2: Set up an equation using the given information**\n\nThe problem states that the area of the ring equals the area of the smallest circle. Let the radius of the smallest circle be r. Then, the area of the smallest circle is:\n\nArea of smallest circle = \u03c0 \u00d7 (radius)^2\n= \u03c0 \u00d7 r^2\n\nWe can set up an equation using the given information:\n\n25\u03c0 = \u03c0 \u00d7 r^2\n\n**Part 3: Simplify and solve the equation**\n\nWe can simplify the equation by canceling out \u03c0 on both sides:\n\n25 = r^2\n\nNow, we can take the square root of both sides to get:\n\nr = \u221a25\n= 5\n\nTherefore, the radius of the smallest circle is 5.\n\n**Solution:**\n\nThe radius of the smallest circle is 5."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.747588424437299
+            }
+        }
+    }
+}

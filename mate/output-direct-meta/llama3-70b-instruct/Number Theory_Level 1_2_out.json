@@ -1,0 +1,18 @@
+{
+    "Number Theory_Level 1_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 1",
+        "problem": "What digit must be placed in the blank to make the four-digit integer $20\\_7$ a multiple of 11?",
+        "correct_solution": "A number will be divisible by 11 if you get a multiple of 11 by alternately adding and then subtracting its digits.  If we name the blank integer $A$, then the alternating sum is $2 - 0 + A - 7 = A -5$.  This value can only be equal to 0 (as 11, 22, etc all yield $A$ that are too large), so $A = \\boxed{5}$ is the only digit that will work.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "I'd be happy to help you solve this Number Theory problem! Let's break it down into smaller parts and solve them in a logical order.\n\n**Part 1: Understand the problem**\nWe are given a four-digit integer `20_x_7`, where `x` is a blank to be filled with a digit (0-9). We need to find the value of `x` that makes this integer a multiple of 11.\n\n**Part 2: Recall the divisibility rule for 11**\nA number is a multiple of 11 if the alternating sum of its digits is divisible by 11. This means we need to calculate the alternating sum of the digits of `20_x_7` and ensure it's a multiple of 11.\n\n**Part 3: Calculate the alternating sum of digits**\nLet's calculate the alternating sum of digits for `20_x_7`:\n\n`20_x_7` = 2 - 0 + `x` - 7\n\nSimplify the expression:\n= 2 + `x` - 7\n\n**Part 4: Set up an equation**\nWe want the alternating sum to be a multiple of 11, so let's set up an equation:\n\n2 + `x` - 7 \u2261 0 (mod 11)\n\nSimplify the equation:\n`x` - 5 \u2261 0 (mod 11)\n\n**Part 5: Solve for `x`**\nAdd 5 to both sides of the equation to get:\n`x` \u2261 5 (mod 11)\n\nSince `x` is a single digit, we know that `x` = 5 or `x` = 16 (since 16 \u2261 5 (mod 11), but we can't have a two-digit number in the blank). Therefore, the value of `x` is:\n\n`x` = 5\n\n**Solution**:\nThe digit that must be placed in the blank to make the four-digit integer `20_x_7` a multiple of 11 is **5**. The resulting integer is `2057`, which is indeed a multiple of 11."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8251946213729653
+            }
+        }
+    }
+}

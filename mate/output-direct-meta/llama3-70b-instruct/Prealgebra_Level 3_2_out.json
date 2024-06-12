@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 3_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 3",
+        "problem": "In how many ways can a President, Vice-President, and Treasurer be chosen from a group of 8 people if no one can serve two roles at the same time?",
+        "correct_solution": "We have 8 choices for the President, 7 choices for the Vice-President, and 6 choices for the Treasurer, for a total of $8\\times 7\\times 6=\\boxed{336}$ choices.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve it in a logical order.\n\n**Part 1: Choosing the President**\n\nWe need to choose a President from a group of 8 people. Since no one can serve two roles at the same time, we have 8 options for the President.\n\n**Number of ways to choose the President:** 8\n\n**Part 2: Choosing the Vice-President**\n\nAfter choosing the President, we need to choose a Vice-President from the remaining people. Since one person is already chosen as the President, we have 7 people left to choose from.\n\n**Number of ways to choose the Vice-President:** 7\n\n**Part 3: Choosing the Treasurer**\n\nAfter choosing the President and Vice-President, we need to choose a Treasurer from the remaining people. Since two people are already chosen as the President and Vice-President, we have 6 people left to choose from.\n\n**Number of ways to choose the Treasurer:** 6\n\n**Part 4: Combining the choices**\n\nNow, we need to combine the choices we made in each part to find the total number of ways to choose a President, Vice-President, and Treasurer.\n\nTo do this, we multiply the number of ways to choose each role:\n\n**Total number of ways = 8 (ways to choose President) \u00d7 7 (ways to choose Vice-President) \u00d7 6 (ways to choose Treasurer)**\n= 336\n\n**Solution:** There are 336 ways to choose a President, Vice-President, and Treasurer from a group of 8 people if no one can serve two roles at the same time.\n\nIn essence, we used the fundamental counting principle, which states that if we have multiple choices to make, and each choice is independent of the others, we multiply the number of options for each choice to get the total number of possibilities."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9144225014961102
+            }
+        }
+    }
+}

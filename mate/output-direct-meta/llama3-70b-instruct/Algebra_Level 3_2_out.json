@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 3_2.json": {
+        "category": "Algebra",
+        "difficulty": "Level 3",
+        "problem": "Find the positive difference between the solutions to the equation $6t^2 + 30 = 41t$.",
+        "correct_solution": "Rearranging the equation gives $6t^2 -41t + 30 = 0$.  Factoring gives $(t-6)(6t-5)= 0$, so the solutions to the equation are $t=6$ and $t=\\frac{5}{6}$.  The positive difference between these solutions is $6 - \\frac56 = \\boxed{\\frac{31}{6}}.$",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "I'd be happy to help you solve this Algebra problem. Here's the step-by-step solution:\n\n**Problem:** Find the positive difference between the solutions to the equation $6t^2 + 30 = 41t$.\n\n**Step 1: Rearrange the equation to form a quadratic equation**\n\nTo start, I'll rearrange the given equation to form a quadratic equation, which is a polynomial equation of degree two. I'll do this by moving all terms to the left-hand side of the equation:\n\n$$6t^2 - 41t + 30 = 0$$\n\nThis is now a quadratic equation in the form of $at^2 + bt + c = 0$, where $a = 6$, $b = -41$, and $c = 30$.\n\n**Step 2: Factor the quadratic equation (if possible)**\n\nNext, I'll try to factor the quadratic equation. However, in this case, I can see that the equation cannot be easily factored. Therefore, I'll need to use a different method to find the solutions.\n\n**Step 3: Use the Quadratic Formula**\n\nThe Quadratic Formula is a general method for solving quadratic equations of the form $at^2 + bt + c = 0$. The formula is:\n\n$$t = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$$\n\nIn this case, I'll plug in the values $a = 6$, $b = -41$, and $c = 30$:\n\n$$t = \\frac{-(-41) \\pm \\sqrt{(-41)^2 - 4(6)(30)}}{2(6)}$$\n\nSimplifying the expression, I get:\n\n$$t = \\frac{41 \\pm \\sqrt{841 - 720}}{12}$$\n\n**Step 4: Simplify the expression under the square root**\n\nNow, I'll simplify the expression under the square root:\n\n$$t = \\frac{41 \\pm \\sqrt{121}}{12}$$\n\n**Step 5: Calculate the solutions**\n\nNext, I'll calculate the solutions by evaluating the expression:\n\n$$t = \\frac{41 \\pm 11}{12}$$\n\nThis gives me two possible solutions:\n\n$$t_1 = \\frac{41 + 11}{12} = \\frac{52}{12} = \\frac{13}{3}$$\n\n$$t_2 = \\frac{41 - 11}{12} = \\frac{30}{12} = \\frac{5}{2}$$\n\n**Step 6: Find the positive difference between the solutions**\n\nFinally, I'll find the positive difference between the two solutions:\n\n$$\\text{Positive difference} = |t_1 - t_2| = \\left|\\frac{13}{3} - \\frac{5}{2}\\right| = \\left|\\frac{26 - 15}{6}\\right| = \\left|\\frac{11}{6}\\right| = \\frac{11}{6}$$\n\n**Solution:** The positive difference between the solutions to the equation $6t^2 + 30 = 41t$ is $\\boxed{\\frac{11}{6}}$.\n\nI hope this step-by-step solution helps! Let me know if you have any questions or need further clarification."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9001343484102104
+            }
+        }
+    }
+}

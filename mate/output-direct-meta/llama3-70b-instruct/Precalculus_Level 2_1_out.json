@@ -1,0 +1,18 @@
+{
+    "Precalculus_Level 2_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 2",
+        "problem": "Find the measure, in degrees, of the smallest positive angle $\\theta$ for which $\\sin 3 \\theta = \\cos 7 \\theta.$",
+        "correct_solution": "Note that $\\cos 7 \\theta = \\sin (90^\\circ - 7 \\theta),$ so\n\\[\\sin 3 \\theta = \\sin (90^\\circ - 7 \\theta).\\]If $3 \\theta = 90^\\circ - 7 \\theta,$ then $\\theta = 9^\\circ.$\n\nIf $0^\\circ < \\theta < 9^\\circ,$ then $\\sin 3 \\theta < \\sin 27^\\circ$ and $\\sin (90^\\circ - 7 \\theta) > \\sin 27^\\circ,$ so the smallest positive solution is $\\boxed{9^\\circ}.$",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve it in a logical order.\n\n**Part 1: Understanding the problem**\n\nWe are given the equation $\\sin 3 \\theta = \\cos 7 \\theta$ and asked to find the smallest positive angle $\\theta$ that satisfies this equation. To do this, we need to find a way to relate the sine and cosine functions.\n\n**Part 2: Using the co-function identity**\n\nOne way to relate the sine and cosine functions is to use the co-function identity:\n\n$\\cos x = \\sin(\\frac{\\pi}{2} - x)$\n\nWe can rewrite the given equation using this identity:\n\n$\\sin 3 \\theta = \\cos 7 \\theta$\n$\\Rightarrow \\sin 3 \\theta = \\sin(\\frac{\\pi}{2} - 7 \\theta)$\n\n**Part 3: Equating the arguments**\n\nNow we have two sine functions with different arguments. Since the sine function is equal for both expressions, we can equate the arguments:\n\n$3 \\theta = \\frac{\\pi}{2} - 7 \\theta$\n\n**Part 4: Solving for $\\theta$**\n\nNext, we can solve for $\\theta$ by adding $7 \\theta$ to both sides of the equation:\n\n$10 \\theta = \\frac{\\pi}{2}$\n$\\theta = \\frac{\\pi}{20}$\n\n**Part 5: Converting to degrees**\n\nThe problem asks for the measure of the angle in degrees. We can convert the angle from radians to degrees using the conversion factor:\n\n$1 \\text{ radian} = \\frac{180}{\\pi} \\text{ degrees}$\n\n$\\theta = \\frac{\\pi}{20} \\text{ radians} = \\frac{\\pi}{20} \\cdot \\frac{180}{\\pi} \\text{ degrees} = 9 \\text{ degrees}$\n\n**Solution**\n\nThe smallest positive angle $\\theta$ that satisfies the equation $\\sin 3 \\theta = \\cos 7 \\theta$ is $\\theta = 9^{\\circ}$."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8406557377049181
+            }
+        }
+    }
+}

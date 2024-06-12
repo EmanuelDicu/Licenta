@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 4_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 4",
+        "problem": "Liz has 11 marbles of different colors. In how many ways can she choose 3 of the marbles, if she refuses to choose the green one and the purple one at the same time?",
+        "correct_solution": "We can divide this into cases:\n\nCase 1: Liz chooses the green marble, and not the purple marble. In this case, Liz must choose 2 more marbles from the remaining 9 marbles (since she won't choose the purple marble). So, there are $\\binom{9}{2}=36$ choices in this case.\n\nCase 2: Liz chooses the purple marble, and not the green marble. As in Case 1, Liz must choose 2 more marbles from the remaining 9 marbles. So, there are $\\binom{9}{2}$ choices in this case.\n\nCase 3: Liz chooses neither the green marble nor the purple marble. In this case, Liz must choose three marbles from the nine remaining marbles, and there are $\\binom{9}{3}=84$ choices in this case.\n\nThe total number of possible choices is $36+36+84=\\boxed{156}$.\n\nAlternatively, there are $\\binom{11}{3}=165$ ways to select three marbles. Of those, $\\binom{9}{1}=9$ ways contain both the purple marble and the green marble. Therefore, there are $165-9=\\boxed{156}$ ways to select three marbles such that purple and green marbles are not both chosen.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them logically.\n\n**Part 1: Counting the total number of ways to choose 3 marbles**\n\nLiz has 11 marbles of different colors. If she were to choose 3 marbles without any restrictions, the total number of ways to do so would be:\n\n11C3 = 165 (using the combination formula: nCk = n! / (k!(n-k)!)\n\n**Part 2: Counting the number of ways to choose the green and purple marbles together**\n\nWe need to find the number of ways Liz can choose the green and purple marbles together, along with one other marble. This means we have 9 marbles left to choose from (11 - 2 = 9).\n\nThe number of ways to choose 1 marble from the remaining 9 marbles is:\n\n9C1 = 9\n\nNow, we have the green and purple marbles together, and 1 other marble. The total number of ways to choose 3 marbles in this scenario is:\n\n9C1 = 9\n\n**Part 3: Counting the number of ways to choose 3 marbles without the green and purple together**\n\nWe want to find the total number of ways Liz can choose 3 marbles without the green and purple marbles together. To do this, we subtract the number of ways she can choose the green and purple marbles together (found in Part 2) from the total number of ways to choose 3 marbles (found in Part 1):\n\n165 (total ways) - 9 (ways with green and purple together) = 156\n\nSo, the total number of ways Liz can choose 3 marbles without the green and purple marbles together is 156.\n\nTherefore, the solution to the problem is:\n\nLiz can choose 3 marbles without the green and purple at the same time in **156 ways**."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": false,
+                "Levenshtein distance value": 0.6851255634256278
+            }
+        }
+    }
+}

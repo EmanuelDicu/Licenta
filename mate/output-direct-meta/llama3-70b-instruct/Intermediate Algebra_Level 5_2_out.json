@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 5_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 5",
+        "problem": "Let $z$ be a complex number such that $|z| = 1.$  Find the maximum value of\n\\[|1 + z| + |1 - z + z^2|.\\]",
+        "correct_solution": "Let $z = x + yi,$ where $x$ and $y$ are real numbers.  Since $|z| = 1,$ $x^2 + y^2 = 1.$  Then\n\\begin{align*}\n|1 + z| + |1 - z + z^2| &= |1 + x + yi| + |1 - x - yi + x^2 + 2xyi - y^2| \\\\\n&= |(1 + x) + yi| + |(1 - x + x^2 - 1 + x^2) + (-y + 2xy)i| \\\\\n&= |(1 + x) + yi| + |(-x + 2x^2) + (-y + 2xy)i| \\\\\n&= \\sqrt{(1 + x)^2 + y^2} + \\sqrt{(-x + 2x^2)^2 + (-y + 2xy)^2} \\\\\n&= \\sqrt{(1 + x)^2 + y^2} + \\sqrt{(-x + 2x^2)^2 + y^2 (1 - 2x)^2} \\\\\n&= \\sqrt{(1 + x)^2 + 1 - x^2} + \\sqrt{(-x + 2x^2)^2 + (1 - x^2) (1 - 2x)^2} \\\\\n&= \\sqrt{2 + 2x} + \\sqrt{1 - 4x + 4x^2} \\\\\n&= \\sqrt{2 + 2x} + |1 - 2x|.\n\\end{align*}Let $u = \\sqrt{2 + 2x}.$  Then $u^2 = 2 + 2x,$ so\n\\[\\sqrt{2 + 2x} + |1 - 2x| = u + |3 - u^2|.\\]Since $-1 \\le x \\le 1,$ $0 \\le u \\le 2.$\n\nIf $0 \\le u \\le \\sqrt{3},$ then\n\\[u + |3 - u^2| = u + 3 - u^2 = \\frac{13}{4} - \\left( u - \\frac{1}{2} \\right)^2 \\le \\frac{13}{4}.\\]Equality occurs when $u = \\frac{1}{2},$ or $x = -\\frac{7}{8}.$\n\nIf $\\sqrt{3} \\le u \\le 2,$ then\n\\[u + u^2 - 3 = \\left( u + \\frac{1}{2} \\right)^2 - \\frac{13}{4} \\le \\left( 2 + \\frac{1}{2} \\right)^2 - \\frac{13}{4} = 3 < \\frac{13}{4}.\\]Therefore, the maximum value is $\\boxed{\\frac{13}{4}}.$",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them logically.\n\n**Part 1: Understanding the given information**\n\nWe are given that $z$ is a complex number with a modulus (or magnitude) of 1, i.e., $|z| = 1$. This implies that $z$ lies on the unit circle in the complex plane.\n\n**Part 2: Simplifying the expression**\n\nWe need to find the maximum value of $|1 + z| + |1 - z + z^2|$. To simplify this expression, let's focus on each term separately.\n\n**Term 1: $|1 + z|$**\n\nUsing the triangle inequality, we can write:\n\n$$|1 + z| \\leq |1| + |z| = 1 + 1 = 2$$\n\nSince $|z| = 1$, the maximum value of $|1 + z|$ is attained when $z = 1$, in which case $|1 + z| = 2$.\n\n**Term 2: $|1 - z + z^2|$**\n\nWe can rewrite this term as:\n\n$$|1 - z + z^2| = |1 - z||1 + z|$$\n\nUsing the property $|ab| = |a||b|$, we get:\n\n$$|1 - z + z^2| = |1 - z||1 + z| \\leq |1 - z|\\cdot 2$$\n\nNow, let's find the maximum value of $|1 - z|$.\n\n**Part 3: Finding the maximum value of $|1 - z|$**\n\nUsing the triangle inequality again, we can write:\n\n$$|1 - z| \\leq |1| + |z| = 1 + 1 = 2$$\n\nSince $|z| = 1$, the maximum value of $|1 - z|$ is attained when $z = -1$, in which case $|1 - z| = 2$.\n\n**Part 4: Combining the results**\n\nNow, let's combine the results from Parts 2 and 3:\n\n$$|1 + z| + |1 - z + z^2| \\leq 2 + |1 - z|\\cdot 2 \\leq 2 + 2\\cdot 2 = 6$$\n\nTherefore, the maximum value of $|1 + z| + |1 - z + z^2|$ is $\\boxed{6}$."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7822983583154889
+            }
+        }
+    }
+}

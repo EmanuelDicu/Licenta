@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 4_2.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "A circle is circumscribed about an equilateral triangle with side lengths of $6$ units each.  What is the area of the circle, in square units? Express your answer in terms of $\\pi$.",
+        "correct_solution": "[asy]\nsize(100);\ndefaultpen(linewidth(.8));\ndraw((0,0)--(4.5,7.794)--(9,0)--cycle);\ndraw(Circle((4.5,2.598),5.196));\ndraw((4.5,7.794)--(4.5,0));\ndot((4.5,2.598));\nlabel(\"$O$\",(4.5,2.598),W);\nlabel(\"$A$\",(4.5,7.794),N);\nlabel(\"$B$\",(9,0),E);\nlabel(\"$M$\",(4.5,0),S);\n[/asy]\n\nAbove is the diagram implied by the problem, with some added lines ($O$ is the center of the circle). Since $\\triangle AMB$ is a 30-60-90 triangle and $AB=6$, $AM=3\\sqrt{3}$. Since $AO$ is $2/3$ of $AM$, we have $AO=2\\sqrt{3}$. Thus, the area of the circle is $\\pi(2\\sqrt{3})^2=\\boxed{12\\pi}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them step by step.\n\n**Part 1: Find the radius of the circle**\n\nSince the circle is circumscribed about an equilateral triangle, the center of the circle is also the centroid of the triangle. Let's draw an altitude from one vertex of the triangle to the opposite side. This altitude will also be the radius of the circle.\n\nIn an equilateral triangle, the altitude bisects the opposite side, so the altitude will have a length of 6/2 = 3 units. Let's call the point where the altitude intersects the circle O.\n\nNow, we can use the Pythagorean theorem to find the length of the radius (which is also the length of the altitude from O to the vertex). Let's call the midpoint of the opposite side M.\n\n\u0394OMA is a right triangle with OM = 3 (since M is the midpoint) and MA = 6 (since it's a side of the equilateral triangle).\n\nUsing the Pythagorean theorem:\n\nr^2 = OM^2 + MA^2\nr^2 = 3^2 + 6^2\nr^2 = 9 + 36\nr^2 = 45\nr = \u221a45 (which is approximately 6.71 units)\n\n**Part 2: Find the area of the circle**\n\nNow that we have the radius, we can find the area of the circle using the formula:\n\nA = \u03c0r^2\nA = \u03c0(\u221a45)^2\nA = 45\u03c0\n\n**Solution**\n\nThe area of the circle is 45\u03c0 square units.\n\nNote: Since the problem asks us to express the answer in terms of \u03c0, we don't need to approximate the value of \u03c0. The exact answer is 45\u03c0 square units."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8416848220769789
+            }
+        }
+    }
+}

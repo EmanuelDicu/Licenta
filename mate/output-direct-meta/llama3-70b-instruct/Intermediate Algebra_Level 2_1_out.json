@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 2_1.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 2",
+        "problem": "Two reals $x$ and $y$ are such that $x-y=4$ and $x^3-y^3=28$. Compute $xy$.",
+        "correct_solution": "We have $28=x^3-y^3=(x-y)(x^2+xy+y^2)=(x-y)((x-y)^2+3xy)=4\\cdot (16+3xy)$, from which $xy=\\boxed{-3}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them logically.\n\n**Part 1: Manipulate the given equations**\n\nWe are given two equations:\n\n1) $x - y = 4$ ... (Equation 1)\n2) $x^3 - y^3 = 28$ ... (Equation 2)\n\n**Part 2: Factorize the cubic difference**\n\nNotice that Equation 2 is a difference of cubes. We can factorize it using the formula:\n\n$a^3 - b^3 = (a - b)(a^2 + ab + b^2)$\n\nApplying this formula to Equation 2, we get:\n\n$x^3 - y^3 = (x - y)(x^2 + xy + y^2) = 28$ ... (Equation 2.1)\n\n**Part 3: Substitute Equation 1 into Equation 2.1**\n\nSubstitute $x - y = 4$ from Equation 1 into Equation 2.1:\n\n$(x - y)(x^2 + xy + y^2) = 28$\n$(4)(x^2 + xy + y^2) = 28$\n\n**Part 4: Simplify and solve for xy**\n\nNow, divide both sides by 4:\n\n$x^2 + xy + y^2 = 7$ ... (Equation 3)\n\nNotice that we want to find $xy$. Let's try to isolate it.\n\nRearrange Equation 3 to get:\n\n$xy = 7 - x^2 - y^2$ ... (Equation 4)\n\n**Part 5: Express y in terms of x using Equation 1**\n\nRearrange Equation 1 to get:\n\n$y = x - 4$ ... (Equation 5)\n\n**Part 6: Substitute Equation 5 into Equation 4**\n\nSubstitute $y = x - 4$ into Equation 4:\n\n$xy = x(x - 4) = 7 - x^2 - (x - 4)^2$\n\nExpand and simplify:\n\n$xy = x^2 - 4x = 7 - x^2 - (x^2 - 8x + 16)$\n\nCombine like terms:\n\n$xy = -16 + 8x - 2x^2$\n\n**Part 7: Find xy using the quadratic formula**\n\nSince $xy$ is a quadratic expression in terms of $x$, we can find $x$ using the quadratic formula. However, notice that we are asked to find $xy$, not $x$. Let's proceed.\n\nWe have:\n\n$xy = -16 + 8x - 2x^2$\n\nRearrange to get a quadratic equation in terms of $x$:\n\n$2x^2 - 8x + 16 = 0$\n\nDivide by 2:\n\n$x^2 - 4x + 8 = 0$\n\nThis quadratic equation has no real roots (try using the quadratic formula to verify). However, we can still find $xy$.\n\n**Part 8: Find xy**\n\nSubstitute $x = y + 4$ (from Equation 1) into the quadratic equation:\n\n$(y + 4)^2 - 4(y + 4) + 8 = 0$\n\nExpand and simplify:\n\n$y^2 - 4 = 0$\n\nSolve for $y$:\n\n$y = \u00b12\n\nNow, substitute $y = \u00b12$ into Equation 1 to find $x$:\n\n$x = y + 4 = \u00b12 + 4 = \u00b12 + 4\n\nFinally, find $xy$:\n\n$xy = x(y) = (\u00b12 + 4)(\u00b12) = \u00b18 + 8 = \u00b18 + 8 = 4$\n\nTherefore, the solution to the problem is:\n\n$xy = \\boxed{4}$"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.958217270194986
+            }
+        }
+    }
+}

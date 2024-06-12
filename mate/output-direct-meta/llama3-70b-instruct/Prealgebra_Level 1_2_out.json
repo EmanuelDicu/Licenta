@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 1_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 1",
+        "problem": "If $PQ$ is a straight line, what is the value of $x$? [asy]\n\nsize(150);\n\ndraw((-1,0)--(1,0));\n\ndraw((-0.809,.588)--(0,0)--(0.809,.588));\n\ndraw((-.309,.951)--(0,0)--(.309,.951));\n\nlabel(\"$P$\",(-1,0),W);\n\nlabel(\"$Q$\",(1,0),E);\n\nlabel(\"$x^\\circ$\",(0.5,0),NW);\n\nlabel(\"$x^\\circ$\",(-0.5,0),NE);\n\nlabel(\"$x^\\circ$\",(0,0.4));\n\nlabel(\"$x^\\circ$\",(0.27,0.2),N);\n\nlabel(\"$x^\\circ$\",(-0.27,0.2),N);\n\n[/asy]",
+        "correct_solution": "Since $PQ$ is a straight line, then $x^\\circ+x^\\circ+x^\\circ+x^\\circ+x^\\circ = 180^\\circ$ or $5x=180$ or $x=\\boxed{36}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem step by step.\n\n**Step 1: Understand the problem**\n\nThe problem is asking for the value of $x$ in a straight line $PQ$ with multiple angles labeled as $x^\\circ$. We need to find the value of $x$ by analyzing the given diagram.\n\n**Step 2: Identify the angles**\n\nThe diagram shows multiple angles, but we can identify three main angles:\n\n* The angle formed by the two rays $\\overline{PQ}$ and $\\overleftrightarrow{PX}$ (where $X$ is the point where the ray intersects the horizontal line) is $x^\\circ$.\n* The angle formed by the two rays $\\overline{PQ}$ and $\\overleftrightarrow{PY}$ (where $Y$ is the point where the ray intersects the horizontal line) is also $x^\\circ$.\n* The angle formed by the two rays $\\overline{PX}$ and $\\overline{PY}$ is also $x^\\circ$.\n\n**Step 3: Recognize the properties of straight lines and angles**\n\nWe know that the sum of the angles formed by two intersecting lines is $180^\\circ$. Since $PQ$ is a straight line, the sum of the angles formed by the rays $\\overline{PX}$, $\\overline{PY}$, and $\\overline{PQ}$ is $180^\\circ$.\n\n**Step 4: Set up the equation**\n\nWe can set up an equation using the properties of straight lines and angles:\n\n$$x + x + x = 180$$\n\n**Step 5: Solve for $x$**\n\nCombine like terms:\n\n$$3x = 180$$\n\nDivide both sides by 3:\n\n$$x = 60$$\n\n**Solution**\n\nThe value of $x$ is $60^\\circ$."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.924264705882353
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 3_3.json": {
+        "category": "Geometry",
+        "difficulty": "Level 3",
+        "problem": "A rectangle with perimeter 176 is divided into five congruent rectangles as shown in the diagram.  What is the perimeter of one of the five congruent rectangles?\n\n[asy]\nunitsize(0.6 cm);\n\ndraw((0,0)--(6,0)--(6,5)--(0,5)--cycle);\ndraw((0,2)--(6,2));\ndraw((3,0)--(3,2));\ndraw((2,2)--(2,5));\ndraw((4,2)--(4,5));\n[/asy]",
+        "correct_solution": "Let $x$ and $y$ be the width and length of one of the five rectangles, respectively.\n\n[asy]\nunitsize(0.6 cm);\n\ndraw((0,0)--(6,0)--(6,5)--(0,5)--cycle);\ndraw((0,2)--(6,2));\ndraw((3,0)--(3,2));\ndraw((2,2)--(2,5));\ndraw((4,2)--(4,5));\n\nlabel(\"$x$\", (1,5), N);\nlabel(\"$x$\", (3,5), N);\nlabel(\"$x$\", (5,5), N);\nlabel(\"$y$\", (6,7/2), E);\nlabel(\"$x$\", (6,1), E);\nlabel(\"$y$\", (0,7/2), W);\nlabel(\"$x$\", (0,1), W);\nlabel(\"$y$\", (3/2,0), S);\nlabel(\"$y$\", (9/2,0), S);\n[/asy]\n\nThen $3x = 2y$ and $5x + 4y = 176$.  Solving for $x$ and $y$, we find $x = 16$ and $y = 24$.  Hence, the perimeter of one of the five congruent rectangles is $2x + 2y = \\boxed{80}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them step by step.\n\n**Part 1: Understand the Problem**\n\nWe are given a large rectangle with a perimeter of 176, which is divided into 5 smaller congruent rectangles. We need to find the perimeter of one of these smaller rectangles.\n\n**Part 2: Find the Length and Width of the Large Rectangle**\n\nSince the perimeter of the large rectangle is 176, we can set up an equation using the formula for the perimeter of a rectangle:\n\nPerimeter = 2(Length + Width)\n176 = 2(L + W)\n\nDivide both sides by 2:\n88 = L + W\n\nNow, we need to find the length and width of the large rectangle. Let's call the length \"L\" and the width \"W\". We can use the diagram to find a relationship between L and W.\n\n**Part 3: Find a Relationship between L and W**\n\nFrom the diagram, we can see that the width of the large rectangle is divided into 3 parts: W/3, W/3, and W - 2(W/3) = W/3. Similarly, the length is divided into 2 parts: L/2 and L/2.\n\nNotice that the width and length of each small rectangle are equal. This means that W/3 = L/2. We can use this relationship to express W in terms of L:\n\nW = (3/2)L\n\n**Part 4: Find the Length and Width of the Large Rectangle**\n\nNow, substitute the expression for W into the equation we found in Part 2:\n\n88 = L + (3/2)L\n\nCombine like terms:\n88 = (5/2)L\n\nMultiply both sides by 2/5:\nL = 88 \u00d7 (2/5) = 35.2\n\nNow, find the width:\nW = (3/2) \u00d7 35.2 = 52.8\n\n**Part 5: Find the Perimeter of One Small Rectangle**\n\nThe length and width of each small rectangle are L/2 and W/3, respectively. We can find the perimeter of one small rectangle using the formula:\n\nPerimeter = 2(Length + Width)\n= 2(L/2 + W/3)\n= 2((35.2/2) + (52.8/3))\n= 2(17.6 + 17.6)\n= 2 \u00d7 35.2\n= 70.4\n\n**Solution:**\n\nThe perimeter of one of the five congruent rectangles is 70.4."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8533480907581626
+            }
+        }
+    }
+}

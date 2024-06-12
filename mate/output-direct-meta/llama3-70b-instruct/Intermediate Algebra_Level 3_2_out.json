@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 3_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 3",
+        "problem": "Find the complex number $z$ so that $z + |z| = 2 + 8i.$",
+        "correct_solution": "Let $z = a + bi.$  Then\n\\[a + bi + \\sqrt{a^2 + b^2} = 2 + 8i.\\]Equating the imaginary parts, we get $b = 8.$  Equating the real parts, we get $a + \\sqrt{a^2 + 64} = 2.$  Then\n\\[\\sqrt{a^2 + 64} = 2 - a.\\]Squaring both sides, we get $a^2 + 64 = (2 - a)^2 = a^2 - 4a + 4.$  Solving, we find $a = -15.$  Therefore, $z = \\boxed{-15 + 8i}.$",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them logically.\n\n**Part 1: Represent the complex number**\n\nLet's represent the complex number $z$ in its rectangular form: $z = a + bi$, where $a$ and $b$ are real numbers.\n\n**Part 2: Express the absolute value of $z$**\n\nThe absolute value of $z$, denoted by $|z|$, is the distance of $z$ from the origin in the complex plane. It can be expressed as:\n\n$$|z| = \\sqrt{a^2 + b^2}$$\n\n**Part 3: Write the given equation**\n\nWe are given the equation:\n\n$$z + |z| = 2 + 8i$$\n\nSubstituting $z = a + bi$ and $|z| = \\sqrt{a^2 + b^2}$, we get:\n\n$$(a + bi) + \\sqrt{a^2 + b^2} = 2 + 8i$$\n\n**Part 4: Equate the real and imaginary parts**\n\nSince the equation involves complex numbers, we can equate the real and imaginary parts separately.\n\nReal part: $a + \\sqrt{a^2 + b^2} = 2$\n\nImaginary part: $b = 8$\n\n**Part 5: Solve for $a$ and $b$**\n\nFrom the imaginary part, we have $b = 8$. Substituting this into the real part, we get:\n\n$$a + \\sqrt{a^2 + 8^2} = 2$$\n\nSimplifying, we get:\n\n$$a + \\sqrt{a^2 + 64} = 2$$\n\nNow, let's isolate the radical:\n\n$$\\sqrt{a^2 + 64} = 2 - a$$\n\nSquaring both sides, we get:\n\n$$a^2 + 64 = (2 - a)^2$$\n\nExpanding and simplifying, we get:\n\n$$a^2 + 64 = 4 - 4a + a^2$$\n\nSolving for $a$, we get:\n\n$$4a = 60 \\Rightarrow a = 15$$\n\n**Part 6: Write the final solution**\n\nNow that we have $a = 15$ and $b = 8$, we can write the complex number $z$:\n\n$$z = a + bi = 15 + 8i$$\n\nTherefore, the solution to the problem is $z = 15 + 8i$."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8060402684563759
+            }
+        }
+    }
+}

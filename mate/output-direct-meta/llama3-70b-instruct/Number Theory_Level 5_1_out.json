@@ -1,0 +1,18 @@
+{
+    "Number Theory_Level 5_1.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 5",
+        "problem": "How many positive perfect cube factors does $3^65^{10}$ have?",
+        "correct_solution": "Any factor of $3^6\\cdot5^{10}$ is in the form $3^a\\cdot5^b$ for $0\\le a\\le6$ and $0\\le b\\le{10}$. To count the number of perfect cube factors, we must count the factors of $3^6\\cdot5^{10}$ that have $a=0$, $3$, or $6$ and $b=0$, $3$, $6$, or $9$. This gives $3\\cdot4=\\boxed{12}$ perfect cube factors.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "I'd be happy to help you with this Number Theory problem.\n\n**Step 1: Understand the problem**\n\nThe problem asks us to find the number of positive perfect cube factors of the given number $3^65^{10}$. A perfect cube factor is a factor that is a perfect cube, i.e., it can be expressed as $n^3$ for some integer $n$.\n\n**Step 2: Factorize the given number**\n\nLet's start by factorizing the given number $3^65^{10}$ into its prime factors:\n\n$$3^65^{10} = (3^6)(5^{10}) = (3^2)^3(5^2)^5 = (3^2)^3(5^2)^3(5^2)^2$$\n\n**Step 3: Identify the perfect cube factors**\n\nA perfect cube factor of $3^65^{10}$ must be of the form $3^{3a}5^{3b}$, where $a$ and $b$ are non-negative integers.\n\nFrom the factorization above, we can see that the maximum power of 3 that is a multiple of 3 is 3, so $a$ can take values 0, 1, or 2. Similarly, the maximum power of 5 that is a multiple of 3 is 3, so $b$ can take values 0, 1, or 2.\n\n**Step 4: Count the perfect cube factors**\n\nNow, we need to count the number of perfect cube factors of the form $3^{3a}5^{3b}$, where $a$ and $b$ are non-negative integers with values 0, 1, or 2.\n\nFor each value of $a$, we have three possible values of $b$, so we have a total of 3 choices for $b$. Similarly, for each value of $b$, we have three possible values of $a$, so we have a total of 3 choices for $a$.\n\nBy the fundamental counting principle, the total number of perfect cube factors is:\n\n$$3 \\times 3 = \\boxed{9}$$\n\nTherefore, the number of positive perfect cube factors of $3^65^{10}$ is 9.\n\nI hope this solution is clear and helpful! Let me know if you have any questions."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8594730238393977
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 2_1.json": {
+        "category": "Geometry",
+        "difficulty": "Level 2",
+        "problem": "In the figure below $AB = BC$, $m \\angle ABD = 30^{\\circ}$, $m \\angle C = 50^{\\circ}$ and $m \\angle CBD = 80^{\\circ}$. What is the number of degrees in the measure of angle $A$?\n\n[asy]\ndraw((0,0)--1.5dir(-15)--3.5dir(60)--(0,0),linewidth(2));\ndraw(1.5dir(-15)--1.5dir(-15)+4dir(35)--3.5dir(60),linewidth(2));\nlabel(\"A\",(0,0),W);\nlabel(\"B\",3.5dir(60),N);\nlabel(\"C\",1.5dir(-15)+4dir(35),E);\nlabel(\"D\",1.5dir(-15),S);\n[/asy]",
+        "correct_solution": "We know two of the angles in $\\triangle BCD$: $$m\\angle CBD = 80^\\circ, ~~m\\angle BCD = 50^\\circ.$$ Since the sum of angles in a triangle is $180^\\circ$, we conclude that $m\\angle BDC = 180^\\circ - (50^\\circ+80^\\circ) = 50^\\circ$.\n\nTherefore, $\\triangle BCD$ is isosceles with equal angles at $C$ and $D$, which implies that the sides opposite those angles ($BD$ and $BC$) are equal.\n\nSince we are given $AB=BC$, we now know that $AB=BD$, which means that $\\triangle ABD$ is isosceles with equal angles at $A$ and $D$. Let $x = m\\angle A$. Then the sum of angles in $\\triangle ABD$ is $180^\\circ$, so $$x + x + 30^\\circ = 180^\\circ.$$ We can solve this equation to get $x = 75^\\circ$. So, $m\\angle A = \\boxed{75^\\circ}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them step by step.\n\n**Part 1: Understanding the problem**\n\nWe are given a quadrilateral ABCD with specific angle measures and side lengths. We need to find the measure of angle A.\n\n**Part 2: Identifying Angle Relationships**\n\nSince AB = BC, we can conclude that triangle ABC is isosceles. This means that the base angles of the triangle are equal, i.e., m\u2220BAC = m\u2220BCA.\n\n**Part 3: Using Angle Sum Property**\n\nIn triangle ABC, we can apply the angle sum property:\n\nm\u2220A + m\u2220BAC + m\u2220BCA = 180\u00b0\n\nSince m\u2220BCA = m\u2220BAC (isosceles triangle), we can set them equal to x:\n\nm\u2220A + x + x = 180\u00b0\n\nm\u2220A + 2x = 180\u00b0 ... (Equation 1)\n\n**Part 4: Finding x using given angles**\n\nWe are given that m\u2220CBD = 80\u00b0. Since CB and BD are sides of triangle CBD, we can apply the angle sum property again:\n\nm\u2220CBD + m\u2220BCD + m\u2220DBC = 180\u00b0\n\n80\u00b0 + m\u2220BCD + 30\u00b0 = 180\u00b0 (since m\u2220ABD = 30\u00b0)\n\nm\u2220BCD = 70\u00b0\n\nNow, we can see that x = m\u2220BAC = m\u2220BCA = 70\u00b0 (since m\u2220BCD + m\u2220BCA = 90\u00b0, using the fact that m\u2220C = 50\u00b0).\n\n**Part 5: Solving for m\u2220A**\n\nSubstituting x = 70\u00b0 into Equation 1, we get:\n\nm\u2220A + 2(70\u00b0) = 180\u00b0\n\nm\u2220A + 140\u00b0 = 180\u00b0\n\nm\u2220A = 180\u00b0 - 140\u00b0\n\nm\u2220A = 40\u00b0\n\nTherefore, the measure of angle A is 40\u00b0.\n\nThe solution to the problem is: m\u2220A = 40\u00b0."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7642857142857142
+            }
+        }
+    }
+}

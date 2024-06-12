@@ -1,0 +1,18 @@
+{
+    "Precalculus_Level 1_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 1",
+        "problem": "Compute $\\arccos \\left( -\\frac{1}{2} \\right).$  Express your answer in radians.",
+        "correct_solution": "Since $\\cos \\frac{2 \\pi}{3} = -\\frac{1}{2},$ $\\arccos \\left( -\\frac{1}{2} \\right) = \\boxed{\\frac{2 \\pi}{3}}.$",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve it in a logical order.\n\n**Part 1: Understand the problem**\nWe are asked to compute the inverse cosine of -1/2, denoted as arccos(-1/2), and express the answer in radians.\n\n**Part 2: Recall the definition of arccos**\nThe arccos function, also known as the inverse cosine function, returns the angle \u03b8 (in radians) such that cos(\u03b8) = x, where x is the input value.\n\n**Part 3: Identify the reference angle**\nTo find the arccos of -1/2, we need to find the angle \u03b8 such that cos(\u03b8) = -1/2. Since cosine is negative in the second and third quadrants, we know that \u03b8 lies in either the second or third quadrant.\n\n**Part 4: Find the reference angle**\nWe can find the reference angle by considering the unit circle. The cosine of an angle is the x-coordinate of the point on the unit circle corresponding to that angle. Since cos(\u03c0/3) = 1/2, we know that cos(-\u03c0/3) = -1/2, so the reference angle is \u03c0/3.\n\n**Part 5: Find the angle in the correct quadrant**\nSince \u03b8 lies in either the second or third quadrant, we need to find the angle in the correct quadrant that has a cosine of -1/2. We can do this by using the fact that the cosine is negative in the second and third quadrants.\n\nIn the second quadrant, \u03b8 = \u03c0 - \u03c0/3 = 2\u03c0/3.\n\nIn the third quadrant, \u03b8 = -\u03c0 + \u03c0/3 = -2\u03c0/3.\n\nSince arccos is defined to return an angle in [0, \u03c0], we choose \u03b8 = 2\u03c0/3 as the correct answer.\n\n**Conclusion**\nTherefore, the solution to the problem is arccos(-1/2) = 2\u03c0/3 radians.\n\nI hope this step-by-step solution helps!"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9560723514211886
+            }
+        }
+    }
+}

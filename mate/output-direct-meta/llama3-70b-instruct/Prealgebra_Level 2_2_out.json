@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 2_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 2",
+        "problem": "Fifty students were surveyed about their participation in hockey and baseball. The results of the survey were:\n\n$\\bullet$ $33$ students played hockey\n\n$\\bullet$ $24$ students played baseball\n\n$\\bullet$ $8$ students played neither hockey nor baseball\n\nHow many of the students surveyed played both hockey and baseball?",
+        "correct_solution": "Since there were $50$ students surveyed in total and $8$ played neither hockey nor baseball, then $42$ students in total played one game or the other.\n\nSince $33$ students played hockey and $24$ students played baseball, and this totals $33+24=57$ students, then there must be $\\boxed{15}$ students who are \"double-counted\", that is who play both sports.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them step by step.\n\n**Part 1: Total number of students who played either hockey or baseball**\n\nWe know that 50 students were surveyed in total. Out of these, 8 students played neither hockey nor baseball. This means that the remaining students played either hockey or baseball or both.\n\nLet's find the number of students who played either hockey or baseball:\n\n50 (total students) - 8 (students who played neither) = 42 students\n\nSo, 42 students played either hockey or baseball or both.\n\n**Part 2: Number of students who played only hockey or only baseball**\n\nWe know that 33 students played hockey and 24 students played baseball. Some of these students might have played both hockey and baseball. Let's assume that x students played both hockey and baseball.\n\nThe number of students who played only hockey is the total number of students who played hockey minus the number of students who played both hockey and baseball:\n\n33 (students who played hockey) - x (students who played both) = number of students who played only hockey\n\nSimilarly, the number of students who played only baseball is the total number of students who played baseball minus the number of students who played both hockey and baseball:\n\n24 (students who played baseball) - x (students who played both) = number of students who played only baseball\n\n**Part 3: Total number of students who played either hockey or baseball**\n\nWe already know that 42 students played either hockey or baseball or both. We can set up an equation using the information from Part 2:\n\n(number of students who played only hockey) + (number of students who played only baseball) + (number of students who played both) = 42\n\nSubstituting the expressions from Part 2, we get:\n\n(33 - x) + (24 - x) + x = 42\n\nSimplifying the equation:\n\n33 - x + 24 - x + x = 42\n\nCombine like terms:\n\n57 - x = 42\n\nSubtract 57 from both sides:\n\n-x = -15\n\nDivide both sides by -1:\n\nx = 15\n\n**Solution:**\n\n15 students played both hockey and baseball.\n\nBy breaking down the problem into smaller parts and solving them step by step, we were able to find the number of students who played both hockey and baseball."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8604014598540146
+            }
+        }
+    }
+}

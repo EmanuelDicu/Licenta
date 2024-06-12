@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 1_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 1",
+        "problem": "Compute $\\dbinom{15}{2}$.",
+        "correct_solution": "\\begin{align*}\n\\dbinom{15}{2} &= \\dfrac{15!}{13!2!} \\\\\n&= \\dfrac{15\\times 14}{2\\times 1} \\\\\n&= 15 \\times \\dfrac{14}{2} \\\\\n&= 15 \\times 7 \\\\\n&= \\boxed{105}.\n\\end{align*}",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve it in a logical order.\n\n**Problem:** Compute $\\dbinom{15}{2}$.\n\n**Step 1: Understand the notation**\n\nThe notation $\\dbinom{15}{2}$ is a binomial coefficient, which can be read as \"15 choose 2\". It represents the number of ways to choose 2 items from a set of 15 items, without regard to order.\n\n**Step 2: Recall the formula for binomial coefficients**\n\nThe formula for binomial coefficients is:\n\n$$\\dbinom{n}{k} = \\frac{n!}{k!(n-k)!}$$\n\nwhere $n$ is the total number of items, and $k$ is the number of items to choose.\n\n**Step 3: Plug in the values**\n\nIn our problem, $n = 15$ and $k = 2$. We can plug these values into the formula:\n\n$$\\dbinom{15}{2} = \\frac{15!}{2!(15-2)!}$$\n\n**Step 4: Simplify the expression**\n\nFirst, let's simplify the factorial expressions:\n\n$$15! = 15 \\times 14 \\times 13 \\times ... \\times 3 \\times 2 \\times 1$$\n\n$$2! = 2 \\times 1$$\n\n$$(15-2)! = 13! = 13 \\times 12 \\times 11 \\times ... \\times 3 \\times 2 \\times 1$$\n\nNow, we can plug these expressions back into the formula:\n\n$$\\dbinom{15}{2} = \\frac{15 \\times 14 \\times 13 \\times ... \\times 3 \\times 2 \\times 1}{2 \\times 1 \\times 13 \\times 12 \\times 11 \\times ... \\times 3 \\times 2 \\times 1}$$\n\n**Step 5: Cancel out common factors**\n\nWe can cancel out the common factors in the numerator and denominator:\n\n$$\\dbinom{15}{2} = \\frac{15 \\times 14}{2 \\times 1}$$\n\n**Step 6: Simplify the fraction**\n\nFinally, we can simplify the fraction:\n\n$$\\dbinom{15}{2} = \\frac{15 \\times 14}{2} = \\frac{15 \\times 7}{1} = 105$$\n\n**Solution:** The solution to the problem is $\\dbinom{15}{2} = 105$.\n\nTherefore, there are 105 ways to choose 2 items from a set of 15 items, without regard to order."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9192037470725996
+            }
+        }
+    }
+}

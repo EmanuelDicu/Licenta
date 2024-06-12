@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 2_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 2",
+        "problem": "In how many ways can a 3-person committee be chosen from a group of 8 people?",
+        "correct_solution": "There are $\\binom{8}{3} = \\frac{8 \\times 7 \\times 6}{3!}=\\boxed{56}$ to choose 3 people from a group of 8 without regard to order.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve it in a logical order.\n\n**Part 1: Understanding the problem**\n\nWe need to find the number of ways to choose a 3-person committee from a group of 8 people. This is a classic problem of choosing a subset from a larger set.\n\n**Part 2: Identifying the type of problem**\n\nThis is a combination problem, not a permutation problem. We don't care about the order of the committee members, we just need to choose 3 people from the group of 8.\n\n**Part 3: Using the combination formula**\n\nThe formula for combinations is:\n\nC(n, k) = n! / (k!(n-k)!)\n\nwhere:\n- C(n, k) is the number of combinations of choosing k items from a set of n items\n- n is the total number of items (in this case, 8 people)\n- k is the number of items to choose (in this case, 3 people)\n- ! denotes the factorial function (e.g., 5! = 5 \u00d7 4 \u00d7 3 \u00d7 2 \u00d7 1)\n\n**Part 4: Plugging in the values**\n\nLet's plug in the values into the formula:\n\nC(8, 3) = 8! / (3!(8-3)!)\n\nC(8, 3) = 8! / (3!5!)\n\n**Part 5: Evaluating the factorials**\n\nNow, let's evaluate the factorials:\n\n8! = 8 \u00d7 7 \u00d7 6 \u00d7 5 \u00d7 4 \u00d7 3 \u00d7 2 \u00d7 1 = 40320\n3! = 3 \u00d7 2 \u00d7 1 = 6\n5! = 5 \u00d7 4 \u00d7 3 \u00d7 2 \u00d7 1 = 120\n\n**Part 6: Simplifying the expression**\n\nNow, simplify the expression:\n\nC(8, 3) = 40320 / (6 \u00d7 120)\nC(8, 3) = 40320 / 720\nC(8, 3) = 56\n\n**Part 7: Conclusion**\n\nTherefore, there are 56 ways to choose a 3-person committee from a group of 8 people.\n\nThe solution to the problem is: **56**."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9347527472527473
+            }
+        }
+    }
+}

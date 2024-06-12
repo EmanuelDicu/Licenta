@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 5_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 5",
+        "problem": "How many different positive integers divisible by 4 can be formed using each of the digits 1, 2, 3, and 4 at most once, and no other digits? For example, 12 counts, but 512 does not.",
+        "correct_solution": "The only one-digit integer divisible by $4$ that we can construct is $4$.\n\nWe can construct $3$ two-digit integers divisible by $4$: $12$, $32$, and $24$.\n\nAn integer is divisible by $4$ if its rightmost two digits are divisible by $4$.  Thus we can append either or both of the remaining two digits to any of these two-digit integers and preserve divisibility by $4$.  For each, there are $2$ ways to choose one digit to append, and $2$ ways to order the digits if we append both of them.  Thus we get $4$ more integers for each, or $12$ total.\n\nThe full number is $12+3+1=\\boxed{16}$ integers.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them logically.\n\n**Part 1: Understand the constraints**\n\nThe problem states that we need to form positive integers divisible by 4 using each of the digits 1, 2, 3, and 4 at most once, and no other digits. This means:\n\n* We can use each digit at most once.\n* We cannot use any digits other than 1, 2, 3, and 4.\n* The formed integer must be divisible by 4.\n\n**Part 2: Analyze the divisibility by 4**\n\nA number is divisible by 4 if its last two digits form a number divisible by 4. For example, 124 is divisible by 4 because 24 is divisible by 4. Since we are using digits 1, 2, 3, and 4, we can form the following two-digit numbers divisible by 4:\n\n* 12 (divisible by 4)\n* 24 (divisible by 4)\n* 32 (divisible by 4)\n* 44 (not possible since we can use each digit at most once)\n\nThe other possibilities like 13, 14, 21, 23, 31, 32, 41, 42, and 43 are not divisible by 4.\n\n**Part 3: Form three-digit numbers**\n\nNow, we need to form three-digit numbers divisible by 4 using the two-digit numbers found in Part 2. We can do this by adding a digit to the beginning of each two-digit number:\n\n* From 12: 112, 212, 312, 412 (only 112 and 212 are valid since we can use each digit at most once)\n* From 24: 124, 224 (only 124 is valid)\n* From 32: 132, 232 (none are valid since we cannot reuse digits)\n\n**Part 4: Combine the results**\n\nWe have found the following numbers divisible by 4:\n\n* Two-digit numbers: 12, 24, 32\n* Three-digit numbers: 112, 124, 212\n\n**Part 5: Count the total numbers**\n\nThere are 5 numbers in total: 3 two-digit numbers and 2 three-digit numbers.\n\nTherefore, the solution to the problem is:\n\n**There are 5 different positive integers divisible by 4 that can be formed using each of the digits 1, 2, 3, and 4 at most once, and no other digits.**"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7863436123348018
+            }
+        }
+    }
+}

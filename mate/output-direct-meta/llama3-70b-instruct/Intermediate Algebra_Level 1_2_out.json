@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 1_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 1",
+        "problem": "Let $a,$ $b,$ and $c$ be the roots of $x^3 + 7x^2 - 11x - 2 = 0.$  Find $a + b + c.$",
+        "correct_solution": "By Vieta's formulas, $a + b + c = \\boxed{-7}.$",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve it in a logical order.\n\n**Part 1: Understanding the problem**\n\nWe are given a cubic equation $x^3 + 7x^2 - 11x - 2 = 0$ and told that $a,$ $b,$ and $c$ are its roots. We need to find the sum of these roots, which is $a + b + c$.\n\n**Part 2: Recalling a relevant theorem**\n\nThere is a theorem in algebra that relates the roots of a polynomial equation to its coefficients. Specifically, Vieta's formulas state that for a polynomial equation of the form $x^n + a_{n-1}x^{n-1} + ... + a_1x + a_0 = 0$ with roots $r_1, r_2, ..., r_n$, the following formulas hold:\n\n$$r_1 + r_2 + ... + r_n = -a_{n-1}$$\n\nIn our case, we have a cubic equation, so $n=3$. We can use Vieta's formulas to find the sum of the roots.\n\n**Part 3: Applying Vieta's formulas**\n\nOur equation is $x^3 + 7x^2 - 11x - 2 = 0$, so we can match the coefficients to the formula:\n\n$$a_2 = 7, a_1 = -11, a_0 = -2$$\n\nNow, we can apply Vieta's formulas to find the sum of the roots:\n\n$$a + b + c = -a_2 = -7$$\n\n**Solution**\n\nTherefore, the solution to the problem is $a + b + c = \\boxed{-7}$.\n\nIn summary, we broke down the problem by understanding the given information, recalling a relevant theorem (Vieta's formulas), and applying that theorem to find the sum of the roots. The final answer is -7."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9664889565879665
+            }
+        }
+    }
+}

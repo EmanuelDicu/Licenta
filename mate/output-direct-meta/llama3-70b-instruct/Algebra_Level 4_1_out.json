@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 4_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 4",
+        "problem": "What is the value of $x$ for which $$\\sqrt{x + \\sqrt{x + \\sqrt{x + \\ldots}}} = 5?$$",
+        "correct_solution": "Squaring both sides of the given equation yields $$x + \\sqrt{x + \\sqrt{x + \\ldots}} = 25,$$ so $$\\sqrt{x + \\sqrt{x + \\ldots}} = 25-x.$$ We already know the value of the left-hand side to be equal to $5$. Thus, $5 = 25-x$, and $x = \\boxed{20}.$",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "I'd be happy to help you solve this problem.\n\n**Breaking down the problem**\n\nLet's denote the given expression as $E$:\n\n$$E = \\sqrt{x + \\sqrt{x + \\sqrt{x + \\ldots}}}$$\n\nNotice that the expression inside the square root is recursive, meaning it's defined in terms of itself. To tackle this, let's try to simplify the expression by noticing that the inner square root is the same as the outer square root:\n\n$$\\sqrt{x + E} = E$$\n\nThis step is crucial, as it allows us to get rid of the infinite recursion.\n\n**Simplifying the equation**\n\nNow, let's square both sides of the equation to get rid of the square root:\n\n$$x + E = E^2$$\n\nSubtract $E$ from both sides to isolate the term with $x$:\n\n$$x = E^2 - E$$\n\n**Substituting the given value**\n\nWe are given that $E = 5$, so let's substitute this value into our equation:\n\n$$x = 5^2 - 5$$\n\n**Simplifying and solving for x**\n\nNow, it's just a matter of simplifying the right-hand side:\n\n$$x = 25 - 5 = 20$$\n\n**The solution**\n\nTherefore, the value of $x$ for which $\\sqrt{x + \\sqrt{x + \\sqrt{x + \\ldots}}} = 5$ is $\\boxed{20}$.\n\nI hope this step-by-step solution helps you understand how to approach this problem!"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8476190476190476
+            }
+        }
+    }
+}

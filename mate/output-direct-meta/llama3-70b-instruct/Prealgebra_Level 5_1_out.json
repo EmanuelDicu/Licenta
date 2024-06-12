@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 5_1.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 5",
+        "problem": "In the diagram, $K$, $O$ and $M$ are the centers of the three semi-circles. Also, $OC = 32$ and $CB = 36$. [asy]\npair A, K, O, C, M, B, X, Y, Z;\nO=(0,0);\nC=(32,0);\nM=(50,0);\nB=(68,0);\nA=(-68,0);\nK=(A+C)/2;\nX=(0,68);\nY=(-18,50);\nZ=(50,18);\npath nom, bigc, middlec, smallc;\nnom=A--B--(100,100)--(-100,100)--cycle;\nbigc=A..X..B--cycle;\nmiddlec=A..Y..C--cycle;\nsmallc=C..Z..B--cycle;\nfill(bigc, gray(.5));\nfill(middlec, white);\nfill(smallc, white);\ndraw(smallc);\ndraw(middlec);\ndraw(bigc);\ndraw(A--B);\nlabel(\"A\", A, S);\nlabel(\"K\", K, S);\nlabel(\"O\", O, S);\nlabel(\"M\", M, S);\nlabel(\"C\", C, S);\nlabel(\"B\", B, S);\ndot(K);\ndot(O);\ndot(M);\n[/asy]\n\n\nWhat is the length of $AC$?",
+        "correct_solution": "We know that $OA$ and $OB$ are each radii of the semi-circle with center $O$.  Thus, $OA=OB=OC+CB=32+36=68$. Therefore, $AC=AO+OC=68+32=\\boxed{100}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them step by step.\n\n**Part 1: Understanding the problem**\n\nWe are given a diagram with three semi-circles, and we need to find the length of the line segment $AC$. The diagram shows that $K$, $O$, and $M$ are the centers of the three semi-circles.\n\n**Part 2: Identifying the given information**\n\nWe are given two lengths: $OC = 32$ and $CB = 36$. We can use these lengths to help us find the length of $AC$.\n\n**Part 3: Finding the length of $AK$**\n\nSince $K$ is the midpoint of $AC$, we can find the length of $AK$ by dividing the length of $AC$ by 2. However, we don't know the length of $AC$ yet. Let's call it $x$ for now. Then, we can write:\n\n$AK = \\frac{x}{2}$\n\n**Part 4: Finding the length of $OK$**\n\nSince $O$ and $K$ are the centers of two adjacent semi-circles, we can create a right triangle with $OK$ as the hypotenuse. The other two sides of the right triangle are $AK$ and $AO$. We know that $AO = OC - AC = 32 - x$. Using the Pythagorean theorem, we can write:\n\n$OK^2 = AK^2 + (32 - x)^2$\n\nSubstituting $AK = \\frac{x}{2}$, we get:\n\n$OK^2 = \\frac{x^2}{4} + (32 - x)^2$\n\n**Part 5: Finding the length of $KM$**\n\nSince $K$ and $M$ are the centers of two adjacent semi-circles, we can create another right triangle with $KM$ as the hypotenuse. The other two sides of the right triangle are $KM$ and $OM$. We know that $OM = OC + CB = 32 + 36 = 68$. Using the Pythagorean theorem again, we can write:\n\n$KM^2 = OK^2 + (68 - OK)^2$\n\n**Part 6: Equating the two expressions for $KM^2$**\n\nWe can equate the two expressions for $KM^2$ obtained in Parts 4 and 5:\n\n$\\frac{x^2}{4} + (32 - x)^2 = KM^2 = OK^2 + (68 - OK)^2$\n\nSimplifying the equation, we get:\n\n$x^2 + (32 - x)^2 = (32 + x)^2 + (68 - \\sqrt{x^2 + (32 - x)^2})^2$\n\n**Part 7: Solving for $x$**\n\nSimplifying the equation further, we get a quadratic equation in $x$. Solving for $x$, we get:\n\n$x = 40$\n\n**Part 8: Finding the length of $AC$**\n\nNow that we have found $x$, we can find the length of $AC$:\n\n$AC = x = 40$\n\nTherefore, the length of $AC$ is 40 units.\n\nThe solution to the problem is $\\boxed{AC = 40}$."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9370300751879699
+            }
+        }
+    }
+}

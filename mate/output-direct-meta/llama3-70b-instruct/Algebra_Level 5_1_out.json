@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 5_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 5",
+        "problem": "Factor $36-4x^2$ completely.",
+        "correct_solution": "We have $36-4x^2 = 6^2 - (2x)^2 = (6-2x)(6+2x)$.  We can factor a 2 out of each of $6-2x$ and $6+2x$ to give $2\\cdot(3-x)\\cdot 2\\cdot(3+x) = \\boxed{4(3-x)(3+x)}$. (We could also have factored out a 4 at the beginning: $36-4x^2 = 4(9-x^2)=4(3-x)(3+x)$.)",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve it in a logical order.\n\n**Step 1: Recognize the form of the expression**\nThe given expression is a difference of two squares: $36 - 4x^2$. This is a well-known algebraic form that can be factored easily.\n\n**Step 2: Factor out the greatest common factor (GCF)**\nThe GCF of 36 and 4 is 4. So, we can start by factoring out 4:\n\n$$36 - 4x^2 = 4(9 - x^2)$$\n\n**Step 3: Factor the difference of squares**\nNow, we have a difference of squares inside the parentheses: $9 - x^2$. This can be factored further using the formula:\n\n$$a^2 - b^2 = (a - b)(a + b)$$\n\nIn this case, $a = 3$ and $b = x$. So, we get:\n\n$$9 - x^2 = (3 - x)(3 + x)$$\n\n**Step 4: Combine the results**\nNow, we can combine the results of Steps 2 and 3 to get the final factored form:\n\n$$36 - 4x^2 = 4(3 - x)(3 + x)$$\n\nTherefore, the solution to the problem is:\n\n$$36 - 4x^2 = \\boxed{4(3 - x)(3 + x)}$$\n\nThis is the completely factored form of the original expression."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8413021363173957
+            }
+        }
+    }
+}

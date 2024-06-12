@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 4_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 4",
+        "problem": "A 6-sided die is weighted so that the probability of any number being rolled is proportional to the value of the roll.  (So, for example, the probability of a 2 being rolled is twice that of a 1 being rolled.)  What is the expected value of a roll of this weighted die?  Express your answer as a common fraction.",
+        "correct_solution": "Let $x$ be the probability that a 1 is rolled.  Then the probability that a 2 is rolled is $2x$, the probability that a 3 is rolled is $3x$, and so on.  Since the sum of all these probabilities must be 1, we have that $x + 2x + \\cdots + 6x = 1$, which means that $21x = 1$, so $x = \\frac{1}{21}$.  Therefore \\[ E = \\frac{1}{21}(1) + \\frac{2}{21}(2) + \\cdots + \\frac{6}{21}(6) = \\frac{1^2 + 2^2 + \\cdots 6^2}{21} = \\boxed{\\frac{13}{3}}. \\]",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them step by step.\n\n**Part 1: Determine the probabilities of each outcome**\n\nWe know that the probability of each outcome is proportional to the value of the roll. Let's denote the probability of rolling a 1 as p. Then, the probability of rolling a 2 is 2p, the probability of rolling a 3 is 3p, and so on.\n\nWe can write the probabilities as:\n\nP(1) = p\nP(2) = 2p\nP(3) = 3p\nP(4) = 4p\nP(5) = 5p\nP(6) = 6p\n\n**Part 2: Normalize the probabilities**\n\nThe probabilities must add up to 1, since the die must land on one of the six faces. We can set up the following equation:\n\np + 2p + 3p + 4p + 5p + 6p = 1\n\nCombine like terms:\n\n21p = 1\n\nDivide both sides by 21:\n\np = 1/21\n\nNow we can find the individual probabilities:\n\nP(1) = 1/21\nP(2) = 2/21\nP(3) = 3/21\nP(4) = 4/21\nP(5) = 5/21\nP(6) = 6/21\n\n**Part 3: Calculate the expected value**\n\nThe expected value is the sum of each outcome multiplied by its probability:\n\nE(X) = 1 \u00d7 P(1) + 2 \u00d7 P(2) + 3 \u00d7 P(3) + 4 \u00d7 P(4) + 5 \u00d7 P(5) + 6 \u00d7 P(6)\n\nSubstitute the probabilities:\n\nE(X) = 1 \u00d7 1/21 + 2 \u00d7 2/21 + 3 \u00d7 3/21 + 4 \u00d7 4/21 + 5 \u00d7 5/21 + 6 \u00d7 6/21\n\nSimplify the expression:\n\nE(X) = (1 + 4 + 9 + 16 + 25 + 36) / 21\n\nE(X) = 91 / 21\n\nE(X) = 7/2\n\nSo, the expected value of a roll of this weighted die is 7/2, or 3.5.\n\nTherefore, the solution to the problem is **E(X) = 7/2**."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7966226138032305
+            }
+        }
+    }
+}

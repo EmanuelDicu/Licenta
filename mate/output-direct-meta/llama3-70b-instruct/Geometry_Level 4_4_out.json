@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 4_4.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "We have a triangle $\\triangle ABC$ where $AC = 17,$ $BC = 15,$ and $AB = 8.$ Let $M$ be the midpoint of $AB.$ What is the length of $CM$?",
+        "correct_solution": "First, we notice that $8:15:17$ is a Pythagorean triple, so we have a right triangle. Let's draw a sketch: [asy]\npair A, B, C, M;\nA = (0, 8);\nB = (0, 0);\nC = (15, 0);\nM = 0.5 * A + 0.5 * B;\ndraw(A--B--C--cycle);\ndraw(C--M);\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$M$\", M, NE);\nlabel(\"$8$\", A--B, W);\nlabel(\"$15$\", B--C, S);\nlabel(\"$17$\", A--C, NE);\ndraw(rightanglemark(A,B,C,20));\n[/asy] Since we know that $BM = \\frac{1}{2} \\cdot AB = 4,$ we simply apply the Pythagorean theorem to right triangle $\\triangle MBC.$ \\begin{align*}\nCM^2 &= BM^2 + BC^2\\\\\nCM^2 &= 4^2 + 15^2 = 241\\\\\nCM &= \\boxed{\\sqrt{241}}.\n\\end{align*}",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "I'd be happy to help you solve this Level 4 Geometry problem! Let's break it down into smaller parts and solve them in a logical order.\n\n**Part 1: Understand the problem and identify the given information**\n\nWe are given a triangle $\\triangle ABC$ with the following side lengths:\n\n* $AC = 17$\n* $BC = 15$\n* $AB = 8$\n\nWe are also told that $M$ is the midpoint of $AB$. Our goal is to find the length of $CM$.\n\n**Part 2: Find the length of $AM$ and $BM$ using the midpoint property**\n\nSince $M$ is the midpoint of $AB$, we can use the midpoint property to find the lengths of $AM$ and $BM$:\n\n* $AM = BM = \\frac{1}{2}AB = \\frac{1}{2}(8) = 4$\n\nSo, $AM = BM = 4$.\n\n**Part 3: Apply the Law of Cosines to find the cosine of angle $ACB$**\n\nWe can apply the Law of Cosines to $\\triangle ABC$ to find the cosine of angle $ACB$:\n\n* $BC^2 = AC^2 + AB^2 - 2AC \\cdot AB \\cdot \\cos(\\angle ACB)$\n\nSubstituting the given values, we get:\n\n* $15^2 = 17^2 + 8^2 - 2(17)(8) \\cos(\\angle ACB)$\n* $225 = 289 + 64 - 272 \\cos(\\angle ACB)$\n* $\\cos(\\angle ACB) = \\frac{289 + 64 - 225}{272} = \\frac{128}{272} = \\frac{4}{17}$\n\n**Part 4: Apply the Law of Cosines again to find the length of $CM$**\n\nWe can apply the Law of Cosines to $\\triangle AMC$ to find the length of $CM$:\n\n* $CM^2 = AC^2 + AM^2 - 2AC \\cdot AM \\cdot \\cos(\\angle AMC)$\n\nWe know that $\\angle AMC = \\angle ACB$ (since $M$ is the midpoint of $AB$), so:\n\n* $CM^2 = 17^2 + 4^2 - 2(17)(4) \\cos(\\angle ACB)$\n* $CM^2 = 289 + 16 - 136 \\cdot \\frac{4}{17}$\n* $CM^2 = 305 - \\frac{544}{17}$\n* $CM^2 = \\frac{4917}{17}$\n* $CM = \\sqrt{\\frac{4917}{17}} = \\frac{\\sqrt{4917}}{\\sqrt{17}}$\n\n**Part 5: Simplify the expression for $CM$**\n\nWe can simplify the expression for $CM$ by finding the prime factorization of $4917$:\n\n* $4917 = 17 \\cdot 17 \\cdot 17$\n* $CM = \\frac{\\sqrt{17^3}}{\\sqrt{17}} = \\sqrt{17^2} = 17$\n\nSo, the length of $CM$ is $\\boxed{17}$.\n\nThat's the solution to the problem!"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8383045525902669
+            }
+        }
+    }
+}

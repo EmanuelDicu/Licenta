@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 4_4.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 4",
+        "problem": "In a certain polynomial, all the coefficients are integers, and the constant coefficient is 42.  All the roots are integers, and distinct.  Find the largest possible number of integer roots.",
+        "correct_solution": "By the Integer Root Theorem, any integer root must be a factor of 42.  The prime factorization of 42 is $2 \\cdot 3 \\cdot 7.$  Furthermore, the product of the roots is $(-1)^n \\cdot \\frac{42}{a_0},$ where $n$ is the degree of the polynomial, and $a_0$ is the leading coefficient.\n\nTo maximize the number of integer roots, which must be distinct, we can take the integer roots to be 2, 3, 7, 1, and $-1.$  This gives us a maximum of $\\boxed{5}$ integer roots.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them logically.\n\n**Part 1: Understand the given information**\n\nWe are given that:\n\n* The polynomial has integer coefficients.\n* The constant coefficient is 42.\n* All the roots are integers and distinct.\n\n**Part 2: Relationship between roots and coefficients**\n\nRecall the Factor Theorem, which states that if a polynomial f(x) has a root r, then (x - r) is a factor of f(x). Since all the roots are integers, we can write the polynomial in factored form:\n\nf(x) = (x - r1)(x - r2)...(x - rn)\n\nwhere ri are the distinct integer roots.\n\n**Part 3: Constant coefficient and roots**\n\nThe constant coefficient of f(x) is 42, which means that the product of the roots (with their respective multiplicities) is equal to 42. Since the roots are distinct, we can write:\n\n(-1)^n \\* r1 \\* r2 \\* ... \\* rn = 42\n\nwhere n is the number of roots.\n\n**Part 4: Prime factorization of 42**\n\nTo find the possible combinations of roots, we need to find the prime factorization of 42:\n\n42 = 2 \\* 3 \\* 7\n\n**Part 5: Possible combinations of roots**\n\nNow, we can find the possible combinations of roots that satisfy the equation:\n\n(-1)^n \\* r1 \\* r2 \\* ... \\* rn = 2 \\* 3 \\* 7\n\nSince the roots are distinct integers, we can try different combinations of roots:\n\n* 1 root: \u00b142 (not possible, since 42 is not a prime number)\n* 2 roots: \u00b12, \u00b121 or \u00b13, \u00b114 or \u00b16, \u00b17 (not possible, since the roots must be distinct)\n* 3 roots: \u00b11, \u00b12, \u00b121 or \u00b11, \u00b13, \u00b114 or \u00b11, \u00b16, \u00b17\n* 4 roots: \u00b11, \u00b11, \u00b12, \u00b121 or \u00b11, \u00b11, \u00b13, \u00b114 or \u00b11, \u00b11, \u00b16, \u00b17\n* 5 roots: \u00b11, \u00b11, \u00b11, \u00b12, \u00b142 (not possible, since 42 is already accounted for)\n* 6 roots and above: not possible, since the product of the roots would exceed 42.\n\n**Part 6: Largest possible number of integer roots**\n\nFrom the possible combinations, we can see that the largest possible number of integer roots is 4. This occurs when the roots are \u00b11, \u00b11, \u00b12, and \u00b121.\n\nTherefore, the solution to the problem is:\n\nThe largest possible number of integer roots is 4."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8374505928853755
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 5_4.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 5",
+        "problem": "The letters of the word `SIXTEEN' are randomly arranged.  What is the probability that the two E's are not next to each other?",
+        "correct_solution": "The best way to do this is to find the probability that the two E's are next to each other.  There are $\\dfrac{7!}{2}$ arrangements of the word SIXTEEN.  If we want to find the number of arrangements such that the E's are next to each other, we find the number of arrangements of the six-letter word SIXT(EE)N (where we treat the two E's as a block), which is $6!$.  So the probability that an arrangement of the word SIXTEEN has the two E's next to each other is $\\dfrac{6!}{\\frac{7!}{2}} = \\dfrac{2}{7}$.  So the probability that the two E's aren't next to each other is $1 - \\dfrac{2}{7} = \\boxed{\\dfrac{5}{7}}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "I'd be happy to help you solve this problem!\n\n**Problem:** The letters of the word `SIXTEEN' are randomly arranged.  What is the probability that the two E's are not next to each other?\n\n**Step 1: Find the total number of possible arrangements of the letters**\n\nWe have 8 letters in the word `SIXTEEN': S-I-X-T-E-E-N. We can arrange these letters in 8! (8 factorial) ways, which is:\n\n8! = 8 \u00d7 7 \u00d7 6 \u00d7 5 \u00d7 4 \u00d7 3 \u00d7 2 \u00d7 1 = 40,320\n\nSo, there are 40,320 possible arrangements of the letters.\n\n**Step 2: Find the number of arrangements where the two E's are next to each other**\n\nLet's consider the two E's as a single unit, which we'll call `EE'. We can arrange the remaining 6 letters (S-I-X-T-N) in 7! (7 factorial) ways, which is:\n\n7! = 7 \u00d7 6 \u00d7 5 \u00d7 4 \u00d7 3 \u00d7 2 \u00d7 1 = 5,040\n\nFor each of these arrangements, we can insert the `EE' unit in 7 possible positions (between the existing letters or at the beginning/end of the arrangement). This gives us a total of:\n\n5,040 \u00d7 7 = 35,280\n\narrangements where the two E's are next to each other.\n\n**Step 3: Find the number of arrangements where the two E's are not next to each other**\n\nWe can find this by subtracting the number of arrangements where the two E's are next to each other from the total number of possible arrangements:\n\n40,320 - 35,280 = 5,040\n\nSo, there are 5,040 arrangements where the two E's are not next to each other.\n\n**Step 4: Calculate the probability**\n\nFinally, we can calculate the probability that the two E's are not next to each other by dividing the number of favorable arrangements (where the two E's are not next to each other) by the total number of possible arrangements:\n\nProbability = 5,040 / 40,320 = 1/8\n\nTherefore, the probability that the two E's are not next to each other when the letters of the word `SIXTEEN' are randomly arranged is 1/8 or 0.125."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7550574084199015
+            }
+        }
+    }
+}

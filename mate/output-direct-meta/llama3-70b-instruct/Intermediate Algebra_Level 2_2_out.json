@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 2_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 2",
+        "problem": "The complex numbers $a$ and $b$ satisfy\n\\[a + \\overline{b} = 2 - 7i.\\]Find $\\overline{a} + b.$",
+        "correct_solution": "Taking the conjugate of both sides, we get\n\\[\\overline{a + \\overline{b}} = \\overline{2 - 7i} = 2 + 7i.\\]But $\\overline{a + \\overline{b}} = \\overline{a} + \\overline{\\overline{b}} = \\overline{a} + b,$ so\n\\[\\overline{a} + b = \\boxed{2 + 7i}.\\]",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them step by step.\n\n**Step 1: Understand the given equation**\n\nThe equation is:\n\n\\[a + \\overline{b} = 2 - 7i.\\]\n\nWe are given that $a$ and $b$ are complex numbers, and we need to find the value of $\\overline{a} + b$.\n\n**Step 2: Recall the properties of complex conjugates**\n\nRecall that if $z = x + yi$ is a complex number, then its complex conjugate is $\\overline{z} = x - yi$. Also, we know that $\\overline{\\overline{z}} = z$ and $\\overline{z_1 + z_2} = \\overline{z_1} + \\overline{z_2}$.\n\n**Step 3: Take the complex conjugate of both sides of the given equation**\n\nTake the complex conjugate of both sides of the given equation:\n\n\\[\\overline{a + \\overline{b}} = \\overline{2 - 7i}.\\]\n\nUsing the properties of complex conjugates, we can simplify this equation:\n\n\\[\\overline{a} + b = 2 + 7i.\\]\n\n**Step 4: Identify the desired expression**\n\nThe desired expression is $\\overline{a} + b$, which we have just found to be equal to:\n\n\\[\\boxed{\\overline{a} + b = 2 + 7i.}\\]\n\nTherefore, the solution to the problem is $\\overline{a} + b = 2 + 7i$."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8164383561643835
+            }
+        }
+    }
+}

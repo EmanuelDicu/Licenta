@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 2_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 2",
+        "problem": "If \\begin{align*}\n5x-2y&=7,\\\\\n3x+y&=2,\n\\end{align*}compute $24x-14y$.",
+        "correct_solution": "Note that $6(5x-2y)-2(3x+y)=24x-14y$.  Thus, $24x-14y=6(7)-2(2)=\\boxed{38}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve it step by step.\n\n**Part 1: Identify the system of linear equations**\nWe are given a system of two linear equations:\n\n1) 5x - 2y = 7\n2) 3x + y = 2\n\nOur goal is to compute the value of 24x - 14y.\n\n**Part 2: Solve the system of linear equations**\nTo solve the system, we can use the method of substitution or elimination. Let's use elimination. We can eliminate the variable y by multiplying equation (1) by 1 and equation (2) by 2, and then adding the two equations.\n\n Multiply equation (1) by 1:\n5x - 2y = 7\n\nMultiply equation (2) by 2:\n6x + 2y = 4\n\nAdd the two equations to eliminate y:\n(5x - 2y) + (6x + 2y) = 7 + 4\n5x + 6x = 11\n11x = 11\n\nNow, divide by 11 to solve for x:\nx = 11/11\nx = 1\n\n**Part 3: Find the value of y**\nNow that we have the value of x, we can substitute it into one of the original equations to find the value of y. Let's use equation (2):\n3x + y = 2\n3(1) + y = 2\n3 + y = 2\ny = -1\n\n**Part 4: Compute 24x - 14y**\nNow that we have the values of x and y, we can compute the value of 24x - 14y:\n24x - 14y = 24(1) - 14(-1)\n= 24 + 14\n= 38\n\nTherefore, the solution to the problem is **38**. The value of 24x - 14y is 38."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9513422818791947
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 2_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 2",
+        "problem": "Determine the number of ways to arrange the letters of the word THAT.",
+        "correct_solution": "First we count the arrangements if the two T's are unique, which is $4!$. Then since the T's are not unique, we divide by $2!$ for the arrangements of T, for an answer of $\\dfrac{4!}{2!} = \\boxed{12}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve it in a logical order.\n\n**Part 1: Identify the number of letters in the word THAT**\n\nThe word THAT has 5 letters: T-H-A-T.\n\n**Part 2: Determine the number of arrangements without considering repetition**\n\nIf we didn't have any repeated letters, we could arrange the 5 letters in 5! (5 factorial) ways. This is because we have 5 choices for the first letter, 4 choices for the second letter, 3 choices for the third letter, 2 choices for the fourth letter, and 1 choice for the fifth letter.\n\n5! = 5 \u00d7 4 \u00d7 3 \u00d7 2 \u00d7 1 = 120\n\nSo, without considering repetition, we have 120 possible arrangements.\n\n**Part 3: Consider the repetition of the letter T**\n\nHowever, we have two T's in the word THAT. This means that if we were to swap the two T's, we wouldn't get a new arrangement. Therefore, we need to divide our initial 120 arrangements by the number of ways we can arrange the two T's.\n\nThe number of ways to arrange the two T's is 2! (2 factorial), which is:\n\n2! = 2 \u00d7 1 = 2\n\nSo, we divide our initial 120 arrangements by 2 to account for the repetition of the letter T:\n\n120 \u00f7 2 = 60\n\n**Final Answer**\n\nThe number of ways to arrange the letters of the word THAT is 60.\n\nThis solution takes into account the fact that we have two identical T's, which reduces the total number of arrangements. If we didn't have any repeated letters, the answer would be 120, but due to the repetition of the letter T, we get 60 arrangements."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8924221921515562
+            }
+        }
+    }
+}

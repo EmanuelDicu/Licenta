@@ -1,0 +1,18 @@
+{
+    "Number Theory_Level 3_1.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 3",
+        "problem": "Solve the congruence $3n \\equiv 2 \\pmod{11}$, as a residue modulo 11.  (Give an answer between 0 and 10.)",
+        "correct_solution": "Note that $2 \\equiv -9 \\pmod{11}$, so we can write the given congruence as $3n \\equiv -9 \\pmod{11}$.  Since 3 is relatively prime to 11, we can divide both sides by 3, to get $n \\equiv -3 \\equiv \\boxed{8} \\pmod{11}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "I'd be happy to help you solve this Number Theory problem!\n\n**Step 1: Understand the problem**\n\nThe problem asks us to solve the congruence $3n \\equiv 2 \\pmod{11}$. This means we need to find an integer $n$ such that $3n$ leaves a remainder of 2 when divided by 11.\n\n**Step 2: Identify the key concept**\n\nThe key concept here is the modular arithmetic property, which states that $a \\equiv b \\pmod{m}$ if and only if $a = b + km$ for some integer $k$. In our case, we want to find $n$ such that $3n = 2 + 11k$ for some integer $k$.\n\n**Step 3: Find the inverse of 3 modulo 11**\n\nTo solve for $n$, we need to find the inverse of 3 modulo 11. The inverse of 3 modulo 11 is an integer $x$ such that $3x \\equiv 1 \\pmod{11}$. To find $x$, we can use the Extended Euclidean Algorithm or simply try out possible values of $x$ until we find one that works.\n\nAfter some trial and error, we find that $3 \\cdot 4 \\equiv 1 \\pmod{11}$. Therefore, the inverse of 3 modulo 11 is 4.\n\n**Step 4: Multiply both sides by the inverse**\n\nNow, we can multiply both sides of the original congruence by the inverse of 3 modulo 11, which is 4:\n\n$$3n \\equiv 2 \\pmod{11} \\Rightarrow 4(3n) \\equiv 4(2) \\pmod{11} \\Rightarrow 12n \\equiv 8 \\pmod{11}$$\n\n**Step 5: Simplify the resulting congruence**\n\nWe can simplify the resulting congruence by replacing 12 with 1 (since $12 \\equiv 1 \\pmod{11}$):\n\n$$12n \\equiv 8 \\pmod{11} \\Rightarrow n \\equiv 8 \\pmod{11}$$\n\n**The solution**\n\nTherefore, the solution to the problem is $n \\equiv 8 \\pmod{11}$. As a residue modulo 11, the answer is 8.\n\nSo, the solution to the problem is 8."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.881686595342983
+            }
+        }
+    }
+}

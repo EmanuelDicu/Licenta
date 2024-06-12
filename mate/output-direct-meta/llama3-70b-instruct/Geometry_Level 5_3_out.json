@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 5_3.json": {
+        "category": "Geometry",
+        "difficulty": "Level 5",
+        "problem": "Four circles of radius 1 are each tangent to two sides of a square and externally tangent to a circle of radius 2, as shown.  What is the area of the square?\n\n[asy]\nunitsize(1cm);draw(Circle((0,0),2));\nfor(int i=0; i<4; ++i) {\n\tdraw(Circle(scale(3)*dir(45+90*i),1));\n\tdraw((3+sqrt(2))*dir(45+90*i)--(3+sqrt(2))*dir(-45+90*i));  \n}\ndraw((0,0)--(2,0));\nlabel(\"2\",(1,0),N);\ndraw(scale(3)*dir(45+90*1)--shift((1,0))*scale(3)*dir(45+90*1));\nlabel(\"1\",point(scale(3)*dir(45+90*1)--shift((1,0))*scale(3)*dir(45+90*1),.5),S);\n[/asy]",
+        "correct_solution": "Let $s$ be the length of a side of the square. Consider an isosceles right triangle with vertices at the centers of the circle of radius 2 and two of the circles of radius 1. This triangle has legs of length 3, so its hypotenuse has length $3\\sqrt{2}$.\n\n[asy]\nunitsize(1cm);\ndraw(Circle((0,0),2));\nfor(int i=0; i<4; ++i) {\n\tdraw(Circle(scale(3)*dir(45+90*i),1));\n\tdraw((3+sqrt(2))*dir(45+90*i)--(3+sqrt(2))*dir(-45+90*i));  \n}\npair A = scale(3)*dir(45), B = scale(3)*dir(45+90);\ndraw(A--B--origin--cycle);\nlabel(\"$1$\", A, SE);\nlabel(\"$1$\", B, SW);\nlabel(\"$2$\", point(origin--A,.3), SE);\nlabel(\"$2$\", point(origin--B,.3), SW);\ndraw(rightanglemark(A,origin,B,5));\n[/asy]\n\nThe length of a side of the square is 2 more than the length of this hypotenuse, so  $s=2 + 3\\sqrt{2}$. Hence the area of the square is \\[\ns^{2}=(2+3\\sqrt{2})^{2}=\\boxed{22+12\\sqrt{2}}.\n\\]",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them logically.\n\n**Part 1: Identifying the key lengths**\n\nFrom the given diagram, we can identify the following key lengths:\n\n* Radius of the large circle = 2\n* Radius of each small circle = 1\n* Side length of the square (which we need to find)\n\n**Part 2: Finding the distance between the centers of adjacent small circles**\n\nLet's focus on one quarter of the diagram. Since the small circles are tangent to the large circle and two sides of the square, we can draw a right triangle with the center of a small circle, the center of the large circle, and one of the vertices of the square.\n\n[asy]\nunitsize(1cm);\ndraw(Circle((0,0),2));\ndraw(Circle((3*sqrt(2),0),1));\ndraw((3+sqrt(2),0)--(3+sqrt(2),3-sqrt(2)));\ndraw((3+sqrt(2),0)--(3,3));\ndraw((3,3)--(0,0));\nlabel(\"2\",(1,0),N);\nlabel(\"1\",(2.5,.5),NW);\nlabel(\"x\",(3.5,1.5),E);\n[/asy]\n\nUsing the Pythagorean theorem, we can find the distance x between the centers of adjacent small circles:\n\nx^2 + 1^2 = 2^2\nx^2 + 1 = 4\nx^2 = 3\nx = \u221a3\n\n**Part 3: Finding the side length of the square**\n\nNow, let's focus on the whole square. Since there are four small circles, each with a center-to-center distance of \u221a3, the side length of the square is:\n\nSide length = 2 + 2(\u221a3)\n= 2 + 2\u221a3\n\n**Part 4: Finding the area of the square**\n\nThe area of the square is:\n\nArea = (Side length)^2\n= (2 + 2\u221a3)^2\n= 16 + 24\u221a3\n\n**Solution:**\n\nThe area of the square is 16 + 24\u221a3.\n\nThis solution involves breaking down the problem into smaller parts, using the Pythagorean theorem to find key lengths, and finally, finding the side length and area of the square."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.758557457212714
+            }
+        }
+    }
+}

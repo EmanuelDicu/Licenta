@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 4_3.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 4",
+        "problem": "Suppose 6 wallops = 5 ballops. Also suppose 3 ballops = 11 fallops. How many wallops are equivalent to 110 fallops?",
+        "correct_solution": "Multiply  \\[\n3\\text{ ballops}=11\\text{ fallops}\n\\] by 10 to find that $30$ ballops are equal to $110$ fallops.  Then multiply  \\[\n6\\text{ wallops} = 5\\text{ ballops}\n\\] by 6 to find that $\\boxed{36}$ wallops are equivalent to 30 ballops.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them step by step.\n\n**Part 1: Finding the ratio of wallops to fallops**\n\nWe are given two equations:\n\n1. 6 wallops = 5 ballops\n2. 3 ballops = 11 fallops\n\nOur goal is to find the ratio of wallops to fallops. Let's start by finding the ratio of ballops to fallops using equation (2):\n\n3 ballops = 11 fallops\n1 ballop = 11/3 fallops\n\nNow, we can use equation (1) to find the ratio of wallops to ballops:\n\n6 wallops = 5 ballops\n1 wallops = 5/6 ballops\n\n**Part 2: Finding the ratio of wallops to fallops**\n\nWe can now use the ratio of ballops to fallops (1 ballop = 11/3 fallops) and the ratio of wallops to ballops (1 wallops = 5/6 ballops) to find the ratio of wallops to fallops:\n\n1 wallops = (5/6) ballops = (5/6) \u00d7 (11/3) fallops\n1 wallops = 55/18 fallops\n\n**Part 3: Finding the number of wallops equivalent to 110 fallops**\n\nNow that we have the ratio of wallops to fallops, we can set up an equation to find the number of wallops equivalent to 110 fallops:\n\nx wallops = 110 fallops\n\nWe can use the ratio of wallops to fallops to solve for x:\n\nx wallops = 110 fallops\nx = 110 fallops \u00d7 (18/55)\nx = 36\n\n**Solution**\n\nTherefore, 36 wallops are equivalent to 110 fallops.\n\nIn this solution, we:\n\n1. Found the ratio of ballops to fallops using equation (2).\n2. Used the ratio of ballops to fallops to find the ratio of wallops to fallops.\n3. Set up an equation to find the number of wallops equivalent to 110 fallops using the ratio of wallops to fallops.\n4. Solved for x to find the final answer."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.884020618556701
+            }
+        }
+    }
+}

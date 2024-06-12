@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 3_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 3",
+        "problem": "What is the tens digit in the sum $7! + 8! + 9! + \\cdots + 2006!$?",
+        "correct_solution": "Since $n!$ contains the product $2\\cdot5\\cdot10= 100$ whenever $n\\ge 10$,  it suffices to determine the tens digit of \\[\n7! + 8! + 9! = 7!(1 + 8 + 8\\cdot9) = 5040(1 + 8 + 72)= 5040\\cdot81.\n\\]This  is the same as the units digit of $4\\cdot 1$, which is $\\boxed{4}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve it in a logical order.\n\n**Part 1: Understanding the problem**\n\nThe problem asks us to find the tens digit in the sum of factorials from 7! to 2006!. We need to find a way to simplify the calculation and focus on the tens digit.\n\n**Part 2: Observing the pattern of factorials**\n\nNotice that as we increase the factorial, the number of trailing zeros increases. For example:\n\n* 7! = 5040 (ends with 40)\n* 8! = 40320 (ends with 20)\n* 9! = 362880 (ends with 80)\n* 10! = 3628800 (ends with 00)\n\nWe can see that from 10! onwards, the factorials will always end with 00. This means that the tens digit of all factorials from 10! to 2006! will be 0.\n\n**Part 3: Focus on the sum of 7!, 8!, and 9!**\n\nWe need to find the tens digit of the sum of 7!, 8!, and 9!. Let's calculate these factorials:\n\n* 7! = 5040\n* 8! = 40320\n* 9! = 362880\n\nAdd these numbers, focusing only on the tens digit:\n\n* 40 + 20 + 80 = 140\n\nThe tens digit of the sum is 4.\n\n**Part 4: Combine the results**\n\nWe have shown that the tens digit of the sum of 7!, 8!, and 9! is 4. Since all factorials from 10! to 2006! end with 00, their sum will not affect the tens digit. Therefore, the tens digit of the sum $7! + 8! + 9! + \\cdots + 2006!$ is **4**.\n\nThat's the solution to the problem!"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8627300613496932
+            }
+        }
+    }
+}

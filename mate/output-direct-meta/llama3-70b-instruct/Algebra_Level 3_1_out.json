@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 3_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 3",
+        "problem": "Solve $(2x+1)(3x+2) = (x-3)(6x-5)$. Express your answer as a simplified fraction.",
+        "correct_solution": "Multiplying the terms, we obtain $6x^{2}+7x+2 = 6x^{2}-23x+15$, which simplifies to $30x = 13$, so $x=\\boxed{\\frac{13}{30}}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "I'd be happy to help solve this Algebra problem! Let's break it down into smaller parts and solve them in logical order.\n\n**Step 1: Expand both sides of the equation**\n\nWe are given the equation $(2x+1)(3x+2) = (x-3)(6x-5)$. Our first step is to expand both sides of the equation using the distributive property.\n\nLeft side: $(2x+1)(3x+2) = 2x(3x) + 2x(2) + 1(3x) + 1(2)$\n$= 6x^2 + 4x + 3x + 2$\n$= 6x^2 + 7x + 2$\n\nRight side: $(x-3)(6x-5) = x(6x) - x(5) - 3(6x) + 3(5)$\n$= 6x^2 - 5x - 18x + 15$\n$= 6x^2 - 23x + 15$\n\nNow our equation looks like this:\n\n$6x^2 + 7x + 2 = 6x^2 - 23x + 15$\n\n**Step 2: Simplify the equation**\n\nOur next step is to simplify the equation by combining like terms. Since both sides have the same $6x^2$ term, we can subtract it from both sides:\n\n$6x^2 + 7x + 2 = 6x^2 - 23x + 15$\n\nSubtracting $6x^2$ from both sides gives:\n\n$7x + 2 = -23x + 15$\n\n**Step 3: Add 23x to both sides**\n\nOur goal is to isolate the variable $x$. Let's add 23x to both sides of the equation to get all the $x$ terms on one side:\n\n$7x + 2 = -23x + 15$\n$7x + 23x + 2 = 15$\n\nCombine like terms:\n\n$30x + 2 = 15$\n\n**Step 4: Subtract 2 from both sides**\n\nNow, let's subtract 2 from both sides to isolate the $x$ term:\n\n$30x + 2 = 15$\n$30x = 13$\n\n**Step 5: Divide by 30**\n\nFinally, let's divide both sides by 30 to solve for $x$:\n\n$30x = 13$\n$x = 13/30$\n\n$x = 13/30$ is the solution to the problem.\n\nSo, the answer is a simplified fraction: **x = 13/30**."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9301521438450899
+            }
+        }
+    }
+}

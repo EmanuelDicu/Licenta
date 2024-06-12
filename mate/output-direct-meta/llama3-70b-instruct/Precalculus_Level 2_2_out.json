@@ -1,0 +1,18 @@
+{
+    "Precalculus_Level 2_2.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 2",
+        "problem": "If $\\tan \\theta = 7,$ then find $\\tan 2 \\theta.$",
+        "correct_solution": "From the double angle formula,\n\\[\\tan 2 \\theta = \\frac{2 \\tan \\theta}{1 - \\tan^2 \\theta} = \\boxed{-\\frac{7}{24}}.\\]",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them step by step.\n\n**Part 1: Understand the given information**\n\nWe are given that $\\tan \\theta = 7$. This means we have a tangent function with an angle $\\theta$ that has a value of 7. Our goal is to find the tangent of $2\\theta$.\n\n**Part 2: Recall the double-angle formula for tangent**\n\nTo find $\\tan 2\\theta$, we need to use the double-angle formula for tangent, which is:\n\n$$\\tan 2\\theta = \\frac{2\\tan \\theta}{1 - \\tan^2 \\theta}$$\n\nThis formula allows us to express the tangent of a double angle in terms of the tangent of the original angle.\n\n**Part 3: Plug in the given value of $\\tan \\theta$**\n\nNow, we can plug in the given value of $\\tan \\theta = 7$ into the double-angle formula:\n\n$$\\tan 2\\theta = \\frac{2(7)}{1 - (7)^2}$$\n\n**Part 4: Simplify the expression**\n\nNext, we need to simplify the expression by calculating the exponent and then performing the arithmetic operations:\n\n$$\\tan 2\\theta = \\frac{14}{1 - 49} = \\frac{14}{-48} = -\\frac{7}{24}$$\n\n**Solution**\n\nTherefore, the solution to the problem is $\\tan 2\\theta = -\\frac{7}{24}$."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9059674502712477
+            }
+        }
+    }
+}

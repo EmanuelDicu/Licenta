@@ -1,0 +1,18 @@
+{
+    "Number Theory_Level 2_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 2",
+        "problem": "There are many two-digit multiples of 7, but only two of the multiples have digit sum of 10. The sum of these two multiples of 7 is what?",
+        "correct_solution": "The two-digit multiples of 7 are $$14, 21, \\underline{28}, 35, 42, 49, 56, 63, 70, 77, 84, \\underline{91}\\text{, and } 98.$$Only 28 and 91 have digit sums of 10. The sum of 28 and 91 is $\\boxed{119}.$",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them logically.\n\n**Part 1: Identify the constraints**\n\n* The problem states that we are looking for two-digit multiples of 7.\n* The digit sum of these multiples should be 10.\n\n**Part 2: Find the range of two-digit multiples of 7**\n\n* The smallest two-digit multiple of 7 is 14 (7 \u00d7 2).\n* The largest two-digit multiple of 7 is 98 (7 \u00d7 14).\n\n**Part 3: Analyze the digit sum constraint**\n\n* The digit sum of a two-digit number can be calculated by adding the tens digit and the units digit.\n* Since the digit sum should be 10, we can write an equation: tens digit + units digit = 10.\n* This implies that the tens digit and the units digit should add up to 10.\n\n**Part 4: Find the possible combinations of digits**\n\n* Let's list out the possible combinations of digits that add up to 10:\n\t+ 1 + 9 = 10\n\t+ 2 + 8 = 10\n\t+ 3 + 7 = 10\n\t+ 4 + 6 = 10\n\t+ 5 + 5 = 10 (but this would be a single-digit combination, so we exclude it)\n\n**Part 5: Check the multiples of 7**\n\n* Now, let's check which of these combinations form a multiple of 7:\n\t+ 19: not a multiple of 7\n\t+ 28: multiple of 7\n\t+ 37: multiple of 7\n\t+ 46: not a multiple of 7\n\t+ (We've already excluded 55)\n\n**Part 6: Calculate the sum of the two multiples**\n\n* We've found two multiples of 7 with digit sum 10: 28 and 37.\n* The sum of these two multiples is: 28 + 37 = 65.\n\nTherefore, the solution to the problem is: **65**."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.909853249475891
+            }
+        }
+    }
+}

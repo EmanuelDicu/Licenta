@@ -1,0 +1,18 @@
+{
+    "Precalculus_Level 3_2.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 3",
+        "problem": "Three vertices of a cube are $P=(7,12,10)$, $Q=(8,8,1)$, and $R=(11,3,9)$. What is the side length of the cube?",
+        "correct_solution": "We compute \\[\\begin{aligned} PQ &= \\sqrt{(7-8)^2 + (12-8)^2 + (10-1)^2} = 7\\sqrt{2}, \\\\ QR &= \\sqrt{(8-11)^2 + (8-3)^2 + (1-9)^2} = 7\\sqrt{2}, \\\\ PR &= \\sqrt{(7-11)^2 + (12-3)^2 + (10-9)^2} = 7\\sqrt{2}. \\end{aligned}\\]Thus, $PQR$ is an equilateral triangle made from three vertices of a cube. It follows that each side of $PQR$ must be a face diagonal of the cube, so the side length of the cube is $\\boxed{7}.$\n[asy]\nimport three;\ntriple A=(0,0,0),B=(0,0,1),C=(0,1,1),D=(0,1,0),E=A+(1,0,0),F=B+(1,0,0),G=C+(1,0,0),H=D+(1,0,0);\ndraw(A--B--C--D--A^^E--F--G--H--E^^A--E^^B--F^^C--G^^D--H);\ndraw(B--D--E--B,dashed);\nlabel(\"$P$\",B,N);\nlabel(\"$Q$\",D,SE);\nlabel(\"$R$\",E,SW);\n[/asy]",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them step by step.\n\n**Part 1: Find the midpoint of PR**\n\nWe are given three vertices of a cube: P, Q, and R. Since we want to find the side length of the cube, we need to find the distance between two vertices that form an edge of the cube. Let's find the midpoint of PR, which will help us in the next step.\n\nThe midpoint of PR is given by:\n\nM = ((7+11)/2, (12+3)/2, (10+9)/2)\n= (9, 15/2, 19/2)\n\n**Part 2: Find the direction vector from M to Q**\n\nSince Q is also a vertex of the cube, the direction vector from M to Q will be parallel to one of the edges of the cube. Let's find this direction vector:\n\nMQ = Q - M\n= (8, 8, 1) - (9, 15/2, 19/2)\n= (-1, 1/2, -9/2)\n\n**Part 3: Find the magnitude of MQ (which is the side length of the cube)**\n\nThe magnitude of MQ is given by:\n\n|MQ| = \u221a((-1)^2 + (1/2)^2 + (-9/2)^2)\n= \u221a(1 + 1/4 + 81/4)\n= \u221a(86/4)\n= \u221a21.5\n\n**Part 4: Simplify the side length**\n\nThe side length of the cube is |MQ|. We can simplify this expression:\n\n|MQ| = \u221a21.5\n\u2248 4.65 (approximately)\n\nTherefore, the side length of the cube is approximately 4.65 units.\n\nNote: We could have also found the distance between any two of the given vertices (e.g., |PQ| or |QR|) to get the side length of the cube. However, using the midpoint M and the direction vector MQ simplified the calculation."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8361749444032617
+            }
+        }
+    }
+}

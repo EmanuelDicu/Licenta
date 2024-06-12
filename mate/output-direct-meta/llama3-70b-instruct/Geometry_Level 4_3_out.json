@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 4_3.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "What is the area, in square units, of the square with the four vertices at $(-2, 2), (2, -2), (-2, -6)$, and $(-6, -2)$?",
+        "correct_solution": "The length of the square is $\\sqrt{4^2 + 4^2} = 4\\sqrt{2}$. Therefore, the area of the square is $(4\\sqrt{2})^2 = \\boxed{32}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "I'd be happy to help you solve this Level 4 geometry problem! Let's break it down into smaller parts and solve them in a logical order.\n\n**Part 1: Understand the problem and visualize the square**\n\nWe are given four vertices of a square: $(-2, 2), (2, -2), (-2, -6)$, and $(-6, -2)$. We need to find the area of this square. To start, let's visualize the square by plotting these points on a coordinate plane:\n\n```\n  (-2, 2)      |      (2, -2)\n  ------------  |  ------------\n  |          |  |          |\n  |          |  |          |\n  ------------  |  ------------\n  (-2, -6)     |      (-6, -2)\n```\n\n**Part 2: Find the length of one side of the square**\n\nTo find the area of the square, we need to find the length of one side. Let's find the distance between two adjacent vertices, say $(-2, 2)$ and $(2, -2)$. We can use the distance formula:\n\n$$d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$\n\nwhere $(x_1, y_1) = (-2, 2)$ and $(x_2, y_2) = (2, -2)$.\n\n$$d = \\sqrt{(2 - (-2))^2 + (-2 - 2)^2}$$\n$$d = \\sqrt{(4)^2 + (-4)^2}$$\n$$d = \\sqrt{16 + 16}$$\n$$d = \\sqrt{32}$$\n$$d = 4\\sqrt{2}$$\n\nSo, the length of one side of the square is $4\\sqrt{2}$ units.\n\n**Part 3: Find the area of the square**\n\nNow that we have the length of one side, we can find the area of the square. The formula for the area of a square is:\n\n$$A = s^2$$\n\nwhere $s$ is the length of one side.\n\n$$A = (4\\sqrt{2})^2$$\n$$A = 16 \\cdot 2$$\n$$A = \\boxed{32}$$\n\nTherefore, the area of the square with the given vertices is 32 square units.\n\nI hope this step-by-step solution helps! Let me know if you have any questions."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9213696892834495
+            }
+        }
+    }
+}

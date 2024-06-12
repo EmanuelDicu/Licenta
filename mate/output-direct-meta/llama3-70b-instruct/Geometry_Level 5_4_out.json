@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 5_4.json": {
+        "category": "Geometry",
+        "difficulty": "Level 5",
+        "problem": "Suppose $PABCD$ is a right square pyramid with apex $P$ and base $ABCD$.  If $PBD$ is an equilateral triangle with side length 6, then what is the volume of $PABCD$?",
+        "correct_solution": "[asy]\n\nimport three;\n\ntriple A = (0,0,0);\n\ntriple B = (1,0,0);\n\ntriple C = (1,1,0);\n\ntriple D = (0,1,0);\n\ntriple P = (0.5,0.5,1);\n\ndraw(B--C--D--P--B);\n\ndraw(P--C);\n\ndraw(B--A--D,dashed);\n\ndraw(P--A,dashed);\n\nlabel(\"$A$\",A,NW);\n\nlabel(\"$B$\",B,W);\n\nlabel(\"$C$\",C,S);\n\nlabel(\"$D$\",D,E);\n\nlabel(\"$P$\",P,N);\n\ntriple F= (0.5,0.5,0);\n\nlabel(\"$F$\",F,S);\n\ntriple M=(B+C)/2;\n\ndraw(D--B,dashed);\n\ndraw(P--F,dashed);\n\n[/asy]\n\nLet $F$ be the center of the square base.  Since the pyramid is a right pyramid, segment $\\overline{PF}$ is an altitude of triangle $PBD$.  Since $PBD$ is an equilateral triangle with side length 6, $PFB$ is a 30-60-90 triangle with $FB = BD/2 =3$ and $PF = 3\\sqrt{3}$.  Finally, $\\overline{BD}$ is a diagonal of square base $ABCD$, so we have $BC = BD/\\sqrt{2} = 6/\\sqrt{2} = 3\\sqrt{2}$.  Therefore, the volume of the pyramid is \\[\\frac{[ABCD](PF)}{3} = \\frac{(3\\sqrt{2})^2 (3\\sqrt{3})}{3} = \\boxed{18\\sqrt{3}}.\\]",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "I'd be happy to help you solve this Level 5 Geometry problem! Let's break it down into smaller parts and solve them in logical order.\n\n**Part 1: Understand the problem and identify the given information**\n\nThe problem states that we have a right square pyramid with apex $P$ and base $ABCD$. We are also given that $PBD$ is an equilateral triangle with side length 6.\n\n**Part 2: Find the height of the equilateral triangle $PBD$**\n\nSince $PBD$ is an equilateral triangle, we can use the Pythagorean theorem to find its height. Let's call the height $h$. Then, we can draw an altitude from $P$ to $BD$, which bisects $BD$ into two equal parts. This creates two right triangles, each with a hypotenuse of 6 and a leg of 3.\n\nUsing the Pythagorean theorem, we get:\n\n$$h^2 + 3^2 = 6^2$$\n$$h^2 + 9 = 36$$\n$$h^2 = 27$$\n$$h = \\sqrt{27} = 3\\sqrt{3}$$\n\n**Part 3: Find the slant height of the pyramid**\n\nThe slant height of the pyramid is the distance from the apex $P$ to the midpoint of one of the sides of the base. Let's call this distance $s$. Since the triangle $PBD$ is equilateral, the slant height $s$ is also the distance from $P$ to the midpoint of $BD$.\n\nUsing the Pythagorean theorem again, we get:\n\n$$s^2 = h^2 + 3^2$$\n$$s^2 = (3\\sqrt{3})^2 + 3^2$$\n$$s^2 = 27 + 9$$\n$$s^2 = 36$$\n$$s = 6$$\n\n**Part 4: Find the volume of the pyramid**\n\nThe formula for the volume of a pyramid is:\n\n$$V = \\frac{1}{3} \\times \\text{(base area)} \\times \\text{(height)}$$\n\nIn this case, the base is a square with side length 6, so its area is:\n\n$$\\text{(base area)} = 6^2 = 36$$\n\nThe height of the pyramid is the slant height $s$, which we found to be 6. So, the volume of the pyramid is:\n\n$$V = \\frac{1}{3} \\times 36 \\times 6$$\n$$V = 72$$\n\nTherefore, the solution to the problem is that the volume of the pyramid $PABCD$ is **72 cubic units**."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7931980252331322
+            }
+        }
+    }
+}

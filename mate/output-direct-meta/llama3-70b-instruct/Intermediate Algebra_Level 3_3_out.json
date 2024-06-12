@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 3_3.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 3",
+        "problem": "There is a complex number $z$ with imaginary part $164$ and a positive integer $n$ such that\n$$\\frac {z}{z + n} = 4i.$$Find $n$.",
+        "correct_solution": "Multiplying by $z+n$, we have $z = 4i(z+n)$, or $z(1-4i) = 4ni$. Thus \\[z = \\frac{4ni}{1-4i} = \\frac{4ni(1+4i)}{17} = \\frac{4ni - 16n}{17}.\\]Since $z$ has imaginary part $164$, we have $4n/17 = 164$, so $n = 17/4 \\cdot 164 = \\boxed{697}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them step by step.\n\n**Part 1: Understand the given information**\n\nWe are given a complex number $z$ with an imaginary part of $164$, and a positive integer $n$. We are also given an equation:\n\n$$\\frac{z}{z+n} = 4i$$\n\nOur goal is to find the value of $n$.\n\n**Part 2: Express the complex number $z$ in terms of its real and imaginary parts**\n\nSince $z$ has an imaginary part of $164$, we can write $z$ in the form:\n\n$$z = a + 164i$$\n\nwhere $a$ is the real part of $z$.\n\n**Part 3: Substitute the expression for $z$ into the given equation**\n\nSubstitute $z = a + 164i$ into the equation:\n\n$$\\frac{a + 164i}{a + 164i + n} = 4i$$\n\n**Part 4: Multiply both sides of the equation by the denominator**\n\nTo simplify the equation, multiply both sides by $a + 164i + n$, which is the denominator:\n\n$$a + 164i = 4i(a + 164i + n)$$\n\n**Part 5: Expand and simplify the right-hand side of the equation**\n\nExpand the right-hand side of the equation:\n\n$$a + 164i = 4ia + (4i)^2(164) + 4in$$\n\nSimplify the right-hand side:\n\n$$a + 164i = -256a + 4in$$\n\n**Part 6: Equate the real and imaginary parts**\n\nEquate the real and imaginary parts of the equation:\n\nReal part: $a = -256a$\nImaginary part: $164 = 4n$\n\n**Part 7: Solve for $a$ and $n$**\n\nSolve the real part equation:\n$a = -256a$ implies $a = 0$ (since $a$ cannot be infinite)\n\nSolve the imaginary part equation:\n$164 = 4n$ implies $n = \\boxed{41}$\n\nTherefore, the value of $n$ is 41.\n\nThe final solution is $n = 41$."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8911745189117452
+            }
+        }
+    }
+}
