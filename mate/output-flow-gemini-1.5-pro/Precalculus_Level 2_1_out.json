@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 2_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 2",
+        "problem": "Find the measure, in degrees, of the smallest positive angle $\\theta$ for which $\\sin 3 \\theta = \\cos 7 \\theta.$",
+        "correct_solution": "Note that $\\cos 7 \\theta = \\sin (90^\\circ - 7 \\theta),$ so\n\\[\\sin 3 \\theta = \\sin (90^\\circ - 7 \\theta).\\]If $3 \\theta = 90^\\circ - 7 \\theta,$ then $\\theta = 9^\\circ.$\n\nIf $0^\\circ < \\theta < 9^\\circ,$ then $\\sin 3 \\theta < \\sin 27^\\circ$ and $\\sin (90^\\circ - 7 \\theta) > \\sin 27^\\circ,$ so the smallest positive solution is $\\boxed{9^\\circ}.$",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```python\n\"\"\"\nStep 1:\nWe use the cofunction identity $\\cos x = \\sin (90^\\circ - x)$ to rewrite the equation $\\sin 3 \\theta = \\cos 7 \\theta$ as $\\sin 3 \\theta = \\sin (90^\\circ - 7 \\theta).$\nBecause we are looking for the smallest positive angle and sine is positive in Quadrant I and II, we know our angle measure must be between 0\u00b0 and 90\u00b0.\n\nStep 2:\nTwo angles have the same sine if and only if they are congruent or supplementary.  Therefore, either $3 \\theta = 90^\\circ - 7 \\theta$ or $3 \\theta + (90^\\circ - 7 \\theta) = 180^\\circ.$\n\nStep 3:\nSolving the equation $3 \\theta = 90^\\circ - 7 \\theta,$ we find $\\theta = 9^\\circ.$\n\nStep 4:\nSolving the equation $3 \\theta + (90^\\circ - 7 \\theta) = 180^\\circ,$ we find $\\theta = 22.5^\\circ.$ \n\nStep 5:\nTherefore, the smallest such positive angle $\\theta$ is $\\boxed{9^\\circ}.$\n\"\"\"\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": false,
+                "Same result": true,
+                "Levenshtein distance value": 0.6739130434782609
+            }
+        }
+    }
+}

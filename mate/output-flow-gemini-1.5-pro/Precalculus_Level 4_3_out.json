@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 4_3.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 4",
+        "problem": "For some matrix $\\mathbf{P} = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$ with nonzero integer entries,\n\\[\\begin{pmatrix} 4 & 3 \\\\ -1 & 0 \\end{pmatrix} = \\mathbf{P}^{-1} \\begin{pmatrix} 1 & 0 \\\\ 0 & 3 \\end{pmatrix} \\mathbf{P}.\\]Find the smallest possible value of $|a| + |b| + |c| + |d|.$",
+        "correct_solution": "From the equation $\\begin{pmatrix} 4 & 3 \\\\ -1 & 0 \\end{pmatrix} = \\mathbf{P}^{-1} \\begin{pmatrix} 1 & 0 \\\\ 0 & 3 \\end{pmatrix} \\mathbf{P},$ we can multiply both sides by $\\mathbf{P}$ on the left, to get\n\\[\\mathbf{P} \\begin{pmatrix} 4 & 3 \\\\ -1 & 0 \\end{pmatrix} = \\begin{pmatrix} 1 & 0 \\\\ 0 & 3 \\end{pmatrix} \\mathbf{P}.\\]Then\n\\[\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} \\begin{pmatrix} 4 & 3 \\\\ -1 & 0 \\end{pmatrix} = \\begin{pmatrix} 1 & 0 \\\\ 0 & 3 \\end{pmatrix} \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix},\\]so\n\\[\\begin{pmatrix} 4a - b & 3a \\\\ 4c - d & 3c \\end{pmatrix} = \\begin{pmatrix} a & b \\\\ 3c & 3d \\end{pmatrix}.\\]Comparing entries, we get $4a - b = a,$ $3a = b,$ $4c - d = 3c,$ and $3c = 3d.$  These reduce to $b = 3a$ and $c = d,$ so\n\\[|a| + |b| + |c| + |d| = |a| + |3a| + |c| + |d| = 4|a| + 2|d|.\\]Since $a,$ $b,$ $c,$ and $d$ are all nonzero integers, we minimize this by taking $a = \\pm 1$ and $d = \\pm 1,$ in which case $4|a| + 2|d| = \\boxed{6}.$",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1:\nWe start by getting rid of the inverse sign. To do so, we multiply both sides of the equation by $\\mathbf{P}$ on the left and by  $\\\\mathbf{P}^{-1}$ on the right:\n$\\\\mathbf{P} \\\\begin{pmatrix} 4 & 3 \\\\\\\\ -1 & 0 \\\\end{pmatrix} \\\\mathbf{P}^{-1} = \\\\mathbf{P} \\\\mathbf{P}^{-1} \\\\begin{pmatrix} 1 & 0 \\\\\\\\ 0 & 3 \\\\end{pmatrix} \\\\mathbf{P} \\\\mathbf{P}^{-1}$. \nThis simplifies to:\n$\\\\mathbf{P} \\\\begin{pmatrix} 4 & 3 \\\\\\\\ -1 & 0 \\\\end{pmatrix} \\\\mathbf{P}^{-1} = \\\\begin{pmatrix} 1 & 0 \\\\\\\\ 0 & 3 \\\\end{pmatrix}$.\nStep 2:\nWe multiply both sides of the equation by $\\mathbf{P}$ on the right:\n$\\\\mathbf{P} \\\\begin{pmatrix} 4 & 3 \\\\\\\\ -1 & 0 \\\\end{pmatrix} \\\\mathbf{P}^{-1} \\\\mathbf{P} = \\\\begin{pmatrix} 1 & 0 \\\\\\\\ 0 & 3 \\\\end{pmatrix} \\\\mathbf{P}$.\nThis simplifies to:\n$\\\\mathbf{P} \\\\begin{pmatrix} 4 & 3 \\\\\\\\ -1 & 0 \\\\end{pmatrix} = \\\\begin{pmatrix} 1 & 0 \\\\\\\\ 0 & 3 \\\\end{pmatrix} \\\\mathbf{P}$.\nStep 3:\nWe simplify both sides of the equation:\n$\\\\begin{pmatrix} a & b \\\\\\\\ c & d \\\\end{pmatrix} \\\\begin{pmatrix} 4 & 3 \\\\\\\\ -1 & 0 \\\\end{pmatrix} = \\\\begin{pmatrix} 1 & 0 \\\\\\\\ 0 & 3 \\\\end{pmatrix} \\\\begin{pmatrix} a & b \\\\\\\\ c & d \\\\end{pmatrix}$.\n$\\\\begin{pmatrix} 4a-b & 3a \\\\\\\\ 4c-d & 3c \\\\end{pmatrix} = \\\\begin{pmatrix} a & b \\\\\\\\ 3c & 3d \\\\end{pmatrix}$.\nStep 4:\nWe obtain a system of equations:\n$\\\\begin{cases}\n4a - b = a, \\\\\\\\\n3a = b, \\\\\\\\\n4c - d = 3c, \\\\\\\\\n3c = 3d. \n\\\\end{cases}$\nStep 5:\nWe solve the system of equations:\n$\\\\begin{cases}\na = b/3, \\\\\\\\\nb = b, \\\\\\\\\nc = d, \\\\\\\\\nd = d.\n\\\\end{cases}$\nWe can see that to minimize the sum $|a| + |b| + |c| + |d|$, we should take $b = 3$ and $c = 1$ (taking smaller integers that satisfy the equations). That gives us $a = 1$ and  $d = 1$.\nStep 6:\nFinally, we calculate the smallest possible value of the expression:\n$|a| + |b| + |c| + |d| = |1| + |3| + |1| + |1| = \\boxed{6}$.\nFinal answer:\n\\boxed{6}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": false,
+                "Same result": true,
+                "Levenshtein distance value": 0.5876068376068376
+            }
+        }
+    }
+}

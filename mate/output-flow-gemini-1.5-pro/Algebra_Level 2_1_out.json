@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 2_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 2",
+        "problem": "If \\begin{align*}\n5x-2y&=7,\\\\\n3x+y&=2,\n\\end{align*}compute $24x-14y$.",
+        "correct_solution": "Note that $6(5x-2y)-2(3x+y)=24x-14y$.  Thus, $24x-14y=6(7)-2(2)=\\boxed{38}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1: We need to solve the system of equations to find the values of *x* and *y*.\nStep 2: Multiply the second equation by 2 to make the *y* coefficients have opposite signs:\n```\n6x + 2y = 4 \n```\nStep 3: Add the first equation to the modified second equation to eliminate *y*:\n```\n(5x - 2y) + (6x + 2y) = 7 + 4\n```\nStep 4: Simplify and solve for *x*:\n```\n11x = 11\nx = 1\n```\nStep 5: Substitute the value of *x* (1) into either of the original equations to solve for *y*. Let's use the second equation:\n```\n3(1) + y = 2\n```\nStep 6: Simplify and solve for *y*:\n```\n3 + y = 2\ny = -1\n```\nStep 7: Now that we know *x = 1* and *y = -1*, substitute these values into the expression 24*x* - 14*y*:\n```\n24(1) - 14(-1)\n```\nStep 8: Simplify the expression to get the final answer:\n```\n24 + 14 = 38\n```\nFinal answer:\n\\boxed{38}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.9303721488595438
+            }
+        }
+    }
+}

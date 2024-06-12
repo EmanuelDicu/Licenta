@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 5_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 5",
+        "problem": "In a certain isosceles right triangle, the altitude to the hypotenuse has length $6$.  What is the area of the triangle?",
+        "correct_solution": "In isosceles right triangle $\\triangle ABC$ below, $\\overline{AD}$ is the altitude to the hypotenuse.\n\n[asy]\nimport olympiad;\nunitsize(0.8inch);\npair A,B,C,D;\nA = (0,1);\nB= (1,0);\nC = -B;\nD = (0,0);\ndraw(A--B--C--A,linewidth(1));\ndraw(A--D,linewidth(0.8));\ndraw(rightanglemark(C,A,B,s=5));\ndraw(rightanglemark(C,D,A,s=5));\nlabel(\"$A$\",A,N);\nlabel(\"$B$\",B,S);\nlabel(\"$C$\",C,S);\nlabel(\"$D$\",D,S);\n[/asy]\n\nBecause $\\triangle ABC$ is an isosceles right triangle, $\\angle ABC = 45^\\circ$.  Since $\\angle ADB = 90^\\circ$, we know that $\\angle DAB = 45^\\circ$, so $\\triangle ABD$ is also a 45-45-90 triangle.  Similarly, $\\triangle ACD$ is a 45-45-90 triangle.  Therefore, $DB=DC = DA = 6$, so $BC = BD+DC = 12$, and  \\[[ABC] = \\frac{(AD)(BC)}{2} = \\frac{(6)({12})}{2} = \\boxed{36}.\\]",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nStep 1:\nWe know that the triangle is isosceles and right. This means that the two legs of the triangle are congruent and the altitude to the hypotenuse bisects the hypotenuse. \n\nStep 2:\nLet's denote the length of each leg of the triangle as  's'. Since the altitude to the hypotenuse bisects the hypotenuse, we now have two smaller congruent right triangles with legs of length 's/2' and '6'.\n\nStep 3:\nApplying the Pythagorean theorem to one of these smaller triangles, we get: (s/2)^2 + 6^2 = s^2\n\nStep 4:\nExpanding the equation we get: s^2/4 + 36 = s^2\n\nStep 5:\nCombining like terms we get: 3/4 * s^2 = 36\n\nStep 6:\nSolving for 's^2' gives us: s^2 = 48\n\nStep 7:\nThe area of the triangle is: (1/2) * base * height = (1/2) * s * s = (1/2) * s^2 = (1/2) * 48 = 24\n\nFinal answer:\n\\boxed{24}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8452830188679246
+            }
+        }
+    }
+}

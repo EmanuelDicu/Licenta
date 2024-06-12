@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 5_3.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 5",
+        "problem": "How many digits are in the value of the following expression: $2^{2001}\\times 5^{1950}\\div 4^{27}$?",
+        "correct_solution": "We have \\begin{align*}\n2^{2001}\\times5^{1950}\\div4^{27}&= 2^{2001}\\div2^{54}\\times5^{1950} \\\\\n&= 2^{1947}\\times5^{1950}\\\\\n&= (2\\times5)^{1947}\\times5^3 \\\\\n&= 125\\times10^{1947}\n\\end{align*}Since $125\\times10^{1947}$ has three non-zero digits followed by 1947 zeros, it has a total of $\\boxed{1950}$ digits.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1: We can express  4^27 as (2^2)^27 = 2^54.\nStep 2: The expression becomes 2^2001 \u00d7 5^1950 \u00f7 2^54.\nStep 3: Using the properties of exponents, we simplify this to 2^(2001-54) \u00d7 5^1950 = 2^1947 \u00d7 5^1950.\nStep 4: Further simplification leads to 2^(1947) \u00d7 5^(1947) \u00d7 5^3 = 10^1947 \u00d7 125.\nStep 5: 10^1947 is a 1 followed by 1947 zeros, resulting in 1948 digits.\nStep 6: Multiplying by 125 adds another 3 digits.\nStep 7: Therefore, the total number of digits is 1948 + 3 = 1951.\n\nFinal answer:\n\\boxed{1951} \n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7904761904761904
+            }
+        }
+    }
+}

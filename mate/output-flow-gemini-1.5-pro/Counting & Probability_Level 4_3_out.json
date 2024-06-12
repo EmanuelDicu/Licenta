@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 4_3.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 4",
+        "problem": "Beginning at point $A$ in the diagram below, Dora selects one of the four possible directions with equal probability. Each time she comes to an intersection, she again randomly selects one of the possible directions. What is the probability that, in her first four steps, she will walk completely around the gray square? Express your answer as a common fraction. [asy]size(100);\nfill((1,1)--(1,2)--(2,2)--(2,1)--cycle, gray(.6));\ndraw((0,0)--(0,3)--(3,3)--(3,0)--cycle, linewidth(1.5));\ndraw((0,1)--(3,1), linewidth(1.5));\ndraw((0,2)--(3,2), linewidth(1.5));\ndraw((1,0)--(1,3), linewidth(1.5));\ndraw((2,0)--(2,3), linewidth(1.5));\ndot(MP(\"A\", (1,2), NW));\n[/asy]",
+        "correct_solution": "The only way for the Dora to end up at her starting point in four steps is for her to traverse the four sides of the gray square.  She can do this in two ways: clockwise and counterclockwise. The probability of each of these two paths is $\\left(\\frac{1}{4}\\right)^4=\\frac{1}{256}$.  Therefore, the probability that she ends up where she started is $\\dfrac{1}{256}+\\dfrac{1}{256}=\\boxed{\\dfrac{1}{128}}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1:\nDora has 4 choices for her first move. \nStep 2:\nTwo of these choices, moving up or to the right, will keep her on track to go completely around the square. \nStep 3:\nFor her second move, she has only one good choice: to move in the direction that completes the circuit around the square.\nStep 4:\nSimilarly, for her third and fourth moves, she has only one good choice each: the direction that completes the circuit around the square.\nStep 5:\nTherefore, there are $2$ successful paths (up-right-down-left and right-down-left-up) out of the $4\\cdot4\\cdot4\\cdot4=256$ possible paths. \nStep 6:\nThe probability of Dora taking a successful path is $\\frac{2}{256}$.\nStep 7:\nThis probability simplifies to $\\boxed{\\frac{1}{128}}$.\nFinal answer:\n\\boxed{\\frac{1}{128}}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.719029374201788
+            }
+        }
+    }
+}

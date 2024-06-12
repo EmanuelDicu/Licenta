@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 5_3.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 5",
+        "problem": "How many subsets of the set of divisors of $72$ contain only composite numbers? For example, $\\{8,9\\}$ and $\\{4,8,12\\}$ are two such sets. Include the empty set in your count.",
+        "correct_solution": "We know that the number of subsets of any given set is equal to $2^n,$ where $n$ is the number of elements in the set. First, then, we need to find the number of composite divisors. The prime factorization of $72$ is $72=2^3 \\cdot 3^2,$ so there are $(3+1)(2+1)=12$ total divisors. (To see this, note that we can form a divisor of the form $2^a 3^b$ by freely choosing $a=0,1,2,3$ and $b=0,1,2$). Of these, $1$ is neither prime nor composite, and $2$ and $3$ are prime, for a total of $9$ composite divisors. Therefore there are $2^9=\\boxed{512}$ subsets of the divisors of $72$ with only composite divisors.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1: \nWe need to find all the divisors of 72.\nStep 2:\nThe divisors of 72 are 1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, and 72.\nStep 3:\nWe need to identify the composite numbers among the divisors. A composite number has more than two factors (including 1 and itself).\nStep 4:\nThe composite divisors of 72 are 4, 6, 8, 9, 12, 18, 24, 36, and 72.\nStep 5:\nWe need to find the number of subsets that can be formed using these composite divisors. \nStep 6:\nSince each of these 9 composite divisors can either be included or not included in a subset, there are 2 options for each divisor.\nStep 7:\nTherefore, there are a total of 2^9 = 512 subsets that can be formed using only composite divisors. However, this includes the case where we don't include any of the composite divisors, which is the empty set.\nStep 8:\nSince we want to include the empty set in our count, our final answer is 512.\nFinal answer:\n\\boxed{512} \n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7198275862068966
+            }
+        }
+    }
+}

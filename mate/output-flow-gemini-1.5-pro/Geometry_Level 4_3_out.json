@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 4_3.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "What is the area, in square units, of the square with the four vertices at $(-2, 2), (2, -2), (-2, -6)$, and $(-6, -2)$?",
+        "correct_solution": "The length of the square is $\\sqrt{4^2 + 4^2} = 4\\sqrt{2}$. Therefore, the area of the square is $(4\\sqrt{2})^2 = \\boxed{32}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1:\nWe need to find the side length of the square. Since all sides of a square are equal, we can calculate the distance between any two adjacent vertices. \n\nStep 2:\nLet's find the distance between the vertices (-2, 2) and (-2, -6) using the distance formula:\n\n\u221a((-2 - (-2))^2 + ((-6) - 2)^2) = \u221a(0^2 + (-8)^2) = \u221a64 = 8\n\nStep 3:\nNow that we have the side length, we can calculate the area of the square by squaring the side length: 8^2 = 64.\n\nFinal answer:\n\\boxed{64}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8159509202453987
+            }
+        }
+    }
+}

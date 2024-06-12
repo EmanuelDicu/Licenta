@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 3_3.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 3",
+        "problem": "A target consists of four concentric circles with radii 4 inches, 6 inches, 8 inches and 10 inches as shown. Given that a dart is thrown that hits the target at a random point, what is the probability that it hits a shaded region? Express your answer as a common fraction.\n\n[asy]size(100); import graph; fill(Circle((0,0),5),gray(.6));\n\nclip(Circle((0,0),2) ^^ Circle((0,0),3) ^^ Circle((0,0),4),fillrule(1));\ndraw(Circle((0,0),2) ^^ Circle((0,0),3) ^^ Circle((0,0),4) ^^ Circle((0,0),5));[/asy]",
+        "correct_solution": "The total area of the target is $\\pi\\cdot 10^2=100\\pi$.  The area of the inner shaded region is the area of a circle with radius 4, and that is equal to $\\pi\\cdot 4^2=16\\pi$.  We can calculate the area of the shaded ring as the difference in areas of a circle with radius 8 and with radius 6.  This gives an area of $\\pi \\cdot 8^2 - \\pi \\cdot 6^2 = 28\\pi$.  The total shaded area is $16\\pi+28\\pi=44\\pi$.  The probability a dart will hit a shaded region is equal to $\\frac{44\\pi}{100\\pi}=\\boxed{\\frac{11}{25}}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nThe ratio of shaded area to the total area is  equal to the ratio of the square of radii of shaded circles to the square of radii of all the circles.\nThe probability is then  (6\u00b2+8\u00b2+10\u00b2)/(4\u00b2+6\u00b2+8\u00b2+10\u00b2) = (36+64+100)/(16+36+64+100) = 200/216 = 25/27\nFinal answer:\n\\boxed{\\frac{25}{27}}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7333333333333333
+            }
+        }
+    }
+}

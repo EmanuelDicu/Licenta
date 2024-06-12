@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 3_1.json": {
+        "category": "Geometry",
+        "difficulty": "Level 3",
+        "problem": "If the volume of a sphere inscribed in a cube is $\\frac{\\pi}{6}$ cubic inches, what is the number of cubic inches in the volume of the cube?",
+        "correct_solution": "A sphere with radius $r$ has volume $\\frac{4}{3}\\pi r^3$, so here we have \\[\\frac{4}{3}\\pi r^3 = \\frac{\\pi}{6}.\\] Solving for $r$ yields $r^3 = \\frac{1}{8}$ so $r = \\sqrt[3]{\\frac{1}{8}} = \\frac{1}{2}$. [asy]\nsize(60);\ndraw(Circle((6,6),4.5));\ndraw((10.5,6)..(6,6.9)..(1.5,6),linetype(\"2 4\"));\ndraw((10.5,6)..(6,5.1)..(1.5,6));\ndraw((0,0)--(9,0)--(9,9)--(0,9)--cycle);\ndraw((0,9)--(3,12)--(12,12)--(9,9));\ndraw((12,12)--(12,3)--(9,0));\ndraw((0,0)--(3,3)--(12,3),dashed); draw((3,3)--(3,12),dashed);\n[/asy] The diameter of the inscribed sphere is equal to the side length of the cube, so the side length of the cube is 1, and the volume of the cube is $1^3=\\boxed{1}$ cubic inch.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nStep 1: The volume of a sphere is given by the formula (4/3)\u03c0r\u00b3, where r is the radius of the sphere. We are given that the volume of the sphere is \u03c0/6 cubic inches. So we can set up the equation: (4/3)\u03c0r\u00b3 = \u03c0/6.\n\nStep 2: To find the radius of the sphere, we can solve the equation from Step 1 for r. \nDividing both sides by \u03c0 gives us: (4/3)r\u00b3 = 1/6.\nMultiplying both sides by 3/4 gives us: r\u00b3 = 1/8.\nTaking the cube root of both sides gives us: r = 1/2.\n\nStep 3: Since the sphere is inscribed in the cube, the diameter of the sphere is equal to the side length of the cube. The diameter is twice the radius, so the side length of the cube is 2 * (1/2) = 1 inch.\n\nStep 4: The volume of a cube is given by the formula s\u00b3, where s is the side length of the cube.  Therefore, the volume of the cube is 1\u00b3 = 1 cubic inch.\n\nFinal answer:\n\\boxed{1}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7884841363102233
+            }
+        }
+    }
+}

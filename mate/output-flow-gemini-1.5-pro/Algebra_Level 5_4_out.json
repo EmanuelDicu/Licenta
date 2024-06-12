@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 5_4.json": {
+        "category": "Algebra",
+        "difficulty": "Level 5",
+        "problem": "An infinite geometric series has common ratio $-1/2$ and sum 45.  What is the first term of the series?",
+        "correct_solution": "Let the first term be $a$.  Because the sum of the series is 45, we have $45= a/[1-(-1/2)] = a/(3/2) = 2a/3$.  Therefore, $a=\\boxed{\\frac{135}{2}}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1:\nThe sum $S$ of an infinite geometric series with first term $a$ and common ratio $r$ is given by $S = \\frac{a}{1-r}$, provided $|r| < 1$. \nBecause the absolute value of $-1/2$ is less than 1, we can use the formula.\n\nStep 2:\nWe are given that $r=-\\frac{1}{2}$ and $S=45$. \n\nStep 3:\nSubstituting these values into the formula $S = \\frac{a}{1-r}$, we get $45 = \\frac{a}{1-(-\\frac{1}{2})}$.\n\nStep 4:\nSimplifying the right side gives  $45 = \\frac{a}{\\frac{3}{2}}$.\n\nStep 5:\nMultiplying both sides by $\\frac{3}{2}$ gives $a = 45\\cdot \\frac{2}{3} = \\boxed{30}$.\nFinal answer:\n\\boxed{30}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8250825082508251
+            }
+        }
+    }
+}

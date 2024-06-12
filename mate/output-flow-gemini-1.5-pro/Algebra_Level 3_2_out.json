@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 3_2.json": {
+        "category": "Algebra",
+        "difficulty": "Level 3",
+        "problem": "Find the positive difference between the solutions to the equation $6t^2 + 30 = 41t$.",
+        "correct_solution": "Rearranging the equation gives $6t^2 -41t + 30 = 0$.  Factoring gives $(t-6)(6t-5)= 0$, so the solutions to the equation are $t=6$ and $t=\\frac{5}{6}$.  The positive difference between these solutions is $6 - \\frac56 = \\boxed{\\frac{31}{6}}.$",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1: \nWe need to find the solutions to the quadratic equation $6t^2 + 30 = 41t$. To do this, we'll first rearrange the equation into standard quadratic form.\nStep 2:\nSubtracting $41t$ from both sides of the equation gives us: $6t^2 - 41t + 30 = 0$.\nStep 3:\nNow we can use the quadratic formula to find the solutions for 't'. The quadratic formula states that for an equation in the form $ax^2 + bx + c = 0$, the solutions are given by: \n$x = \\dfrac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$\nStep 4:\nIn our equation, $a = 6$, $b = -41$, and $c = 30$. Substituting these values into the quadratic formula gives us:\n$t = \\dfrac{-(-41) \\pm \\sqrt{(-41)^2 - 4 \\cdot 6 \\cdot 30}}{2 \\cdot 6}$\nStep 5:\nSimplifying the expression under the radical and the denominator:\n$t = \\dfrac{41 \\pm \\sqrt{1681 - 720}}{12}$\nStep 6:\nFurther simplification:\n$t = \\dfrac{41 \\pm \\sqrt{961}}{12}$\n$t = \\dfrac{41 \\pm 31}{12}$\nStep 7:\nThis gives us two possible solutions:\n$t_1 = \\dfrac{41 + 31}{12} = \\dfrac{72}{12} = 6$\n$t_2 = \\dfrac{41 - 31}{12} = \\dfrac{10}{12} = \\dfrac{5}{6}$\nStep 8:\nFinally, we need to find the positive difference between these two solutions:\n$6 - \\dfrac{5}{6} = \\dfrac{36}{6} - \\dfrac{5}{6} = \\dfrac{31}{6}$\nFinal answer:\n\\boxed{\\dfrac{31}{6}}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8262610088070457
+            }
+        }
+    }
+}

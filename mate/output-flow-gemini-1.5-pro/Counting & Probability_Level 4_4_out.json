@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 4_4.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 4",
+        "problem": "In how many ways can I place 5 different beads on a bracelet if rotations and flips of the bracelet are not treated as different arrangements?",
+        "correct_solution": "There are $5!$ ways to arrange 5 beads in a line.  Since there are 5 rotations in a circle for each of these arrangements, we must divide by 5, and since there are two matching reflections for each arrangement, we must divide by 2.  So there are $\\dfrac{5!}{5 \\times 2} = \\boxed{12}$ ways.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```python\nSolution:\nStep 1:\nWe start by considering the case if rotations *did* matter.  There are 5 choices for the first bead, 4 choices for the second, and so on. \n\nStep 2:\nThis gives us 5*4*3*2*1 = 120 possible arrangements if rotations are considered different.  This is also known as 5!, or 5 factorial.\n\nStep 3:\nHowever, we must divide by the number of ways to rotate the bracelet. Since there are 5 beads, there are 5 rotations that lead to the same arrangement.\n\nStep 4:\nThis gives us 120 / 5 = 24 distinct arrangements after accounting for rotations.\n\nStep 5:\nFinally, because flips are also considered the same arrangement, we must divide by 2.  However, we need to be careful not to overcount. We've already accounted for flips that are also rotations (e.g., flipping a bracelet 180 degrees is the same as rotating it twice).  Therefore, we only need to divide by 2 if the number of beads is even.\n\nStep 6:\nTherefore, there are 24  distinct ways to arrange the beads.\n\nFinal answer:\n\\boxed{24}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7908820614469773
+            }
+        }
+    }
+}

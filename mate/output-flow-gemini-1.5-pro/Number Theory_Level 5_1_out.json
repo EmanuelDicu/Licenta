@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 5_1.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 5",
+        "problem": "How many positive perfect cube factors does $3^65^{10}$ have?",
+        "correct_solution": "Any factor of $3^6\\cdot5^{10}$ is in the form $3^a\\cdot5^b$ for $0\\le a\\le6$ and $0\\le b\\le{10}$. To count the number of perfect cube factors, we must count the factors of $3^6\\cdot5^{10}$ that have $a=0$, $3$, or $6$ and $b=0$, $3$, $6$, or $9$. This gives $3\\cdot4=\\boxed{12}$ perfect cube factors.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1:\nThe number $3^6 5^{10}$ is already factored into primes.\nStep 2:\nFor a number to be a factor of $3^6 5^{10}$, its prime factorization must be of the form $3^a 5^b$, where $0 \u2264 a \u2264 6$ and $0 \u2264 b \u2264 10$.\nStep 3: \nFor a number to be a perfect cube, all exponents in its prime factorization must be divisible by 3.\nStep 4:\nTherefore, we need to find all pairs of nonnegative integers (a, b) such that a is one of 0, 3, or 6 and b is one of 0, 3, 6, or 9.\nStep 5:\nThere are 3 choices for a and 4 choices for b, for a total of 3 \u22c5 4 = $\\boxed{12}$ pairs.\nStep 6:\nThus, there are 12 positive perfect cube factors of  $3^6 5^{10}$.\n```\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7208588957055214
+            }
+        }
+    }
+}
