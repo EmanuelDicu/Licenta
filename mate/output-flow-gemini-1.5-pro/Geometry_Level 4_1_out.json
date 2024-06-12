@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 4_1.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "The right pyramid shown has a square base and all eight of its edges are the same length. What is the degree measure of angle $ABD$?[asy]size(100);\nimport three; defaultpen(linewidth(0.7)); currentprojection = orthographic(0.8,-1,0.15);\npen sm = fontsize(8); triple A = (.5,.5,1), B = (0,0,0), C = (1,0,0), D = (1,1,0), E = (0,1,0); /* should be A = (.5,.5,1/2^.5) */\ndraw(A--B--C--D--A--C); draw(A--E--D,linewidth(0.7)+linetype(\"3 3\")); draw(B--E,linewidth(0.7)+linetype(\"2 2\"));\nlabel(\"A\",A,N,sm); label(\"B\",B,S,sm); label(\"C\",C,S,sm);label(\"D\",D,(1,0),sm);label(\"E\",E,NW,sm);\n[/asy]",
+        "correct_solution": "Let $x$ represent the length of each of the edges. If we draw the diagonal $\\overline{BD}$, we create the right triangle $BCD$. Since $\\overline{BC}\\cong\\overline{DC}$, $\\triangle BCD$ is a 45-45-90 right triangle, which means the hypotenuse has a length of $\\sqrt{2}$ times the length of each leg. So $BD=x\\sqrt{2}$. Since $\\triangle ABD$ is an isosceles triangle, we know that drawing a segment from $A$ to the midpoint of $\\overline{BD}$ splits the triangles into two congruent right triangles. Each right triangle has a hypotenuse of length $x$ and a leg of length $\\frac{BD}{2}=\\frac{x\\sqrt{2}}{2}=\\frac{x}{\\sqrt{2}}$. Notice that the hypotenuse has a length of $\\sqrt{2}$ times the length of the bottom leg, which means the triangle is another 45-45-90 right triangle. That means the degree measure of angle $ABD$ is $\\boxed{45^\\circ}$.\n\n[asy]size(170);\nimport three; defaultpen(linewidth(0.7)); currentprojection = orthographic(0.8,-1,0.15);\npen sm = fontsize(8); triple A = (.5,.5,1), B = (0,0,0), C = (1,0,0), D = (1,1,0), E = (0,1,0); /* should be A = (.5,.5,1/2^.5) */\ndraw(A--B--C--D--A--C); draw(A--E--D,linewidth(0.7)+linetype(\"3 3\")); draw(B--E,linewidth(0.7)+linetype(\"2 2\"));\nlabel(\"A\",A,N,sm); label(\"B\",B,S,sm); label(\"C\",C,S,sm);label(\"D\",D,(1,0),sm);label(\"E\",E,NW,sm); draw(B--D); label(\"$x$\", (B+C)/2, SW); label(\"$x$\", (C+D)/2, SE); label(\"$x\\sqrt{2}$\", (B+D)/2, N, sm); label(\"$\\frac{x}{\\sqrt{2}}$\", (B+(B+D)/2)/2, N, sm); label(\"$x$\",(A+B)/2, NW); draw(A--(B+D)/2);\n\n[/asy]",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1:\nLet's denote the side length of the square base as 's'. Since all edges of the pyramid have the same length, each edge also has length 's'.\n\nStep 2:\nTriangle ABD is an isosceles triangle because AB = AD = s.\n\nStep 3:\nTo find the measure of angle ABD, we can draw an altitude from A to BD, and let's call the midpoint of BD point F.\n\nStep 4:\nTriangle AFB is now a right triangle, with AF as the altitude, BF as half the length of BD, and AB as the hypotenuse.\n\nStep 5:\nSince triangle BCD is a 45-45-90 triangle (because it's an isosceles right triangle), BD = s\u221a2, and BF = (s\u221a2)/2.\n\nStep 6:\nNow, in right triangle AFB, we can use the Pythagorean theorem to find AF:\nAF^2 + BF^2 = AB^2\nAF^2 + ((s\u221a2)/2)^2 = s^2\nAF^2 + s^2/2 = s^2\nAF^2 = s^2/2\nAF = s/\u221a2\n\nStep 7:\nNow we can use the tangent function to find the measure of angle ABD:\ntan(ABD) = opposite/adjacent = AF/BF = (s/\u221a2)/((s\u221a2)/2) = 1\n\nStep 8:\nThe angle whose tangent is 1 is 45 degrees.\n\nStep 9:\nTherefore, the degree measure of angle ABD is 45 degrees.\n\nFinal answer:\n\\boxed{45}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7705136757838559
+            }
+        }
+    }
+}

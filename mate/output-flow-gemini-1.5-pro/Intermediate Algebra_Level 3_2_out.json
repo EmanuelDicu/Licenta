@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 3_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 3",
+        "problem": "Find the complex number $z$ so that $z + |z| = 2 + 8i.$",
+        "correct_solution": "Let $z = a + bi.$  Then\n\\[a + bi + \\sqrt{a^2 + b^2} = 2 + 8i.\\]Equating the imaginary parts, we get $b = 8.$  Equating the real parts, we get $a + \\sqrt{a^2 + 64} = 2.$  Then\n\\[\\sqrt{a^2 + 64} = 2 - a.\\]Squaring both sides, we get $a^2 + 64 = (2 - a)^2 = a^2 - 4a + 4.$  Solving, we find $a = -15.$  Therefore, $z = \\boxed{-15 + 8i}.$",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```python\n\"\"\"\nStep 1: \nLet's assume that  z = x + yi, where x and y are real numbers and i is the imaginary unit.\n\nStep 2:\nThe magnitude of z, denoted as |z|, is calculated as |z| = \u221a(x\u00b2 + y\u00b2).\n\nStep 3: \nSubstitute the assumption from Step 1 and calculation from Step 2 in the given equation: x + yi + \u221a(x\u00b2 + y\u00b2) = 2 + 8i\n\nStep 4:\nEquate the real and imaginary parts separately:\n* Real parts: x + \u221a(x\u00b2 + y\u00b2) = 2 \n* Imaginary parts: y = 8\n\nStep 5: \nWe now know that y = 8. Substitute this value into the equation for the real parts: x + \u221a(x\u00b2 + 8\u00b2) = 2\n\nStep 6:\nSimplify and solve for x: \nx + \u221a(x\u00b2 + 64) = 2 \n\u221a(x\u00b2 + 64) = 2 - x \nx\u00b2 + 64 = 4 - 4x + x\u00b2\n4x = -60\nx = -15\n\nStep 7:\nHowever, we need to check if this solution is valid. Substituting x = -15 and y = 8 back into the equation x + \u221a(x\u00b2 + y\u00b2) = 2, we get -15 + \u221a((-15)\u00b2 + 8\u00b2) = -15 + 17 = 2. This is consistent with the equation.\n\nTherefore, the complex number z is x + yi = -15 + 8i.\n\nFinal answer:\n\\boxed{-15 + 8i} \n\"\"\"\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7885597548518897
+            }
+        }
+    }
+}

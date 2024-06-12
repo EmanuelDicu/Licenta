@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 3_3.json": {
+        "category": "Algebra",
+        "difficulty": "Level 3",
+        "problem": "Let $h$ be a polynomial of degree $5$, and suppose that $h(x) = (x^2-7x+10) \\cdot g(x)$, where $g(x)$ is a polynomial of degree $b$.  Find $b$.",
+        "correct_solution": "Recall that for positive integers $a$ and $b$ $x^a x^b = x^{a+b}$.  Thus, if $h(x)$, $f(x)$, and $g(x)$ are polynomials such that $h(x)=f(x) \\cdot g(x)$ and if $ x^a $ and $ x^b $ are the highest degree terms of $f(x)$ and $g(x)$ then the highest degree term of $h(x)$ will be $x^{a+b}$.  In our case $f(x) = x^2-7x+10$, the highest degree term is $x^2$ and $h(x)$ has highest degree term $x^5$.  Thus, solving for $b$ in the equation $x^5 = x^2 x^b = x^{2+b}$, we find $b=\\boxed{3}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\n```python\nStep 1: \nThe degree of a polynomial is the highest power of the variable in the polynomial.\nStep 2:\nThe polynomial  $(x^2 -7x + 10)$ is of degree 2. \nStep 3:\nThe product of a polynomial of degree 2 and a polynomial of degree $b$  will have a degree of $2+b$.\nStep 4:\nWe are given that the polynomial $h(x)$ is of degree 5.  \nStep 5:\nTherefore, $2 + b = 5$.\nStep 6:\nSolving for $b$, we get $b = 3$. \nFinal answer:\n\\boxed{3}\n```\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7665289256198347
+            }
+        }
+    }
+}

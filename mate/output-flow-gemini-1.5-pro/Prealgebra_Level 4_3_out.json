@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 4_3.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 4",
+        "problem": "Suppose 6 wallops = 5 ballops. Also suppose 3 ballops = 11 fallops. How many wallops are equivalent to 110 fallops?",
+        "correct_solution": "Multiply  \\[\n3\\text{ ballops}=11\\text{ fallops}\n\\] by 10 to find that $30$ ballops are equal to $110$ fallops.  Then multiply  \\[\n6\\text{ wallops} = 5\\text{ ballops}\n\\] by 6 to find that $\\boxed{36}$ wallops are equivalent to 30 ballops.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```python\nStep 1: \nWe know that 3 ballops are equivalent to 11 fallops.\nStep 2:\nTo find out how many ballops are equivalent to 110 fallops, we can set up a proportion: 3 ballops / 11 fallops = x ballops / 110 fallops.\nStep 3:\nSolving for x, we get x = (110 fallops * 3 ballops) / 11 fallops = 30 ballops. Therefore, 110 fallops are equivalent to 30 ballops.\nStep 4:\nWe also know that 6 wallops are equivalent to 5 ballops.\nStep 5:\nTo find out how many wallops are equivalent to 30 ballops, we can set up another proportion: 6 wallops / 5 ballops = y wallops / 30 ballops.\nStep 6:\nSolving for y, we get y = (30 ballops * 6 wallops) / 5 ballops = 36 wallops. Therefore, 30 ballops are equivalent to 36 wallops.\nStep 7:\nTherefore, 110 fallops are equivalent to 36 wallops.\nFinal answer:\n\\boxed{36}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7969924812030075
+            }
+        }
+    }
+}

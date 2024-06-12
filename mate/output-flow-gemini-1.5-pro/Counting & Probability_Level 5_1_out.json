@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 5_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 5",
+        "problem": "How many different positive integers divisible by 4 can be formed using each of the digits 1, 2, 3, and 4 at most once, and no other digits? For example, 12 counts, but 512 does not.",
+        "correct_solution": "The only one-digit integer divisible by $4$ that we can construct is $4$.\n\nWe can construct $3$ two-digit integers divisible by $4$: $12$, $32$, and $24$.\n\nAn integer is divisible by $4$ if its rightmost two digits are divisible by $4$.  Thus we can append either or both of the remaining two digits to any of these two-digit integers and preserve divisibility by $4$.  For each, there are $2$ ways to choose one digit to append, and $2$ ways to order the digits if we append both of them.  Thus we get $4$ more integers for each, or $12$ total.\n\nThe full number is $12+3+1=\\boxed{16}$ integers.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1: We know that a number is divisible by 4 if the last two digits are divisible by 4. \nStep 2: Using the digits 1, 2, 3, and 4, we can form the following two-digit numbers divisible by 4: 12, 24, and 32.\nStep 3: We can use each of these two-digit numbers as the last two digits of our desired integers. \nStep 4: If the last two digits are 12, we have two remaining digits (3 and 4) that can be used to form two-digit numbers (34 and 43) to precede 12. This gives us two possibilities: 3412 and 4312.\nStep 5:  Similarly, if the last two digits are 24, we can form two-digit numbers using 1 and 3 (13 and 31), giving us two more possibilities: 1324 and 3124.\nStep 6: If the last two digits are 32, we can form two-digit numbers using 1 and 4 (14 and 41), giving us two more possibilities: 1432 and 4132.\nStep 7: We also need to consider the two-digit numbers themselves: 12, 24, and 32.\nStep 8: In total, we have 2 + 2 + 2 + 3 = 9 different positive integers that meet the given criteria.\nFinal answer:\n\\boxed{9}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7028073572120038
+            }
+        }
+    }
+}

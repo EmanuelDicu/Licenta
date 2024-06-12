@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 4_1.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 4",
+        "problem": "Recall that if $b$ is a residue $\\pmod{m}$, then the modular inverse of $b$ is the residue $c$ for which $bc \\equiv 1\\pmod{m}$. The table below shows the inverses of the first 9 positive residues modulo 47.  \\begin{tabular}{c|ccccccccc}\n$b$ & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\\\ \\hline\ninverse of $\\,b$ & 1 & 24 & 16 & 12 & 19 & 8 & 27 & 6 & 21\n\\end{tabular}Find the modular inverse of $35\\pmod{47}$.\n\nExpress your answer as an integer from $0$ to $46$, inclusive.",
+        "correct_solution": "We want to find the residue $c$ such that $35c \\equiv 1 \\pmod{47}$. Recall that, since 35 is relatively prime to 47, this inverse exists and is unique. To make use of the table we are given, we notice that $35 = 5\\cdot 7$. We can multiply both sides of $35c \\equiv 1\\pmod{47}$ by the inverse of 5 to obtain  \\begin{align*}\n19\\cdot 5 \\cdot 7 \\cdot c &\\equiv 19\\cdot 1 \\pmod{47} \\implies \\\\\n(19\\cdot 5) \\cdot 7 \\cdot c &\\equiv 19 \\pmod{47} \\implies \\\\\n1 \\cdot 7 \\cdot c &\\equiv 19 \\pmod{47}. \\\\\n\\end{align*}Now we can multiply both sides by 27, the inverse of 7, to find  \\begin{align*}\n27\\cdot 7 \\cdot c &\\equiv 27\\cdot 19 \\pmod{47} \\implies \\\\\nc &\\equiv 513 \\pmod{47}.\n\\end{align*}Subtracting 470 from 513 does not change its residue (mod 47), so we have $c\\equiv 43\\pmod{47}$. Since $0\\leq 43 < 47$, $\\boxed{43}$ is the desired residue.\n\nRemark: More generally, the approach above shows that $(ab)^{-1}=b^{-1}a^{-1}$, where $b^{-1}$ denotes the modular inverse of $b$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1: \nWe are working modulo 47, and we want to find the inverse of 35 modulo 47. This means we want to find an integer c such that 35c \u2261 1 (mod 47).\n\nStep 2:\nNotice that 35 is congruent to -12 modulo 47, since 35 + 12 = 47.  Therefore, the inverse of 35 modulo 47 is the same as the inverse of -12 modulo 47.\n\nStep 3: \nFurthermore, -12 is equal to 4 * -3.  We can find the inverses of 4 and -3 from the table.\n\nStep 4:\nFrom the table, the inverse of 4 modulo 47 is 12.  To find the inverse of -3 modulo 47, we can first find the inverse of 3, which is 16 from the table.  Then the inverse of -3 is -16, which is congruent to 31 modulo 47.\n\nStep 5:\nSince the inverse of a product is the product of the inverses (modulo 47), the inverse of -12 = 4 * (-3) is congruent to 12 * 31 modulo 47. \n\nStep 6:\nWe see that 12 * 31 = 372.  To reduce 372 modulo 47, we divide 372 by 47 to get a quotient of 7 with a remainder of 43.\n\nStep 7:\nTherefore, the modular inverse of 35 modulo 47 is 43.\n\nFinal answer:\n\\boxed{43}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7877312560856865
+            }
+        }
+    }
+}

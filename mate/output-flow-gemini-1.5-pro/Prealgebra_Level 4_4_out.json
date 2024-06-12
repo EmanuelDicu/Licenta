@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 4_4.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 4",
+        "problem": "Three concentric circles are shown. The two largest circles have radii of $12$ and $13.$ If the area of the ring between the two largest circles equals the area of the smallest circle, determine the radius of the smallest circle.\n\n[asy]\nimport graph;\nfilldraw(circle((0,0),12), lightgray, black+linewidth(1));\nfilldraw(circle((0,0),10), white, black+linewidth(1));\nfilldraw(circle((0,0),6), gray, black+linewidth(1));\ndot((0,0));\n[/asy]",
+        "correct_solution": "The area of the ring between the two largest circles is $$\\pi\\cdot 13^2-\\pi\\cdot 12^2=169\\pi - 144\\pi=25\\pi.$$Suppose that the radius of the smallest circle is $r.$ Thus, the area of the smallest circle is $\\pi r^2.$ Since the area of the smallest circle is equal to the area of the ring between the two largest circles, then $\\pi r^2 = 25\\pi$ so $r^2 = 25$ and so $r=5$ since $r>0.$\n\nTherefore, the radius of the smallest circle is $\\boxed{5}.$",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1: We know the area of a circle is calculated using the formula:  area = \u03c0 * radius\u00b2.\nStep 2:  The ring's area is the difference between the area of the larger circle and the area of the smaller circle: \u03c0 * 13\u00b2 - \u03c0 * 12\u00b2.\nStep 3: Let the radius of the smallest circle be represented by 'r'. Therefore, the area of the smallest circle is \u03c0 * r\u00b2.\nStep 4: We are told that the area of the ring equals the area of the smallest circle. So we can set up the equation: \u03c0 * 13\u00b2 - \u03c0 * 12\u00b2 = \u03c0 * r\u00b2.\nStep 5: Simplify the equation: 169\u03c0 - 144\u03c0 = \u03c0r\u00b2.\nStep 6: Further simplification: 25\u03c0 = \u03c0r\u00b2.\nStep 7: Divide both sides of the equation by \u03c0: 25 = r\u00b2.\nStep 8: Take the square root of both sides to solve for r: \u221a25 = r.\nStep 9: Therefore, the radius of the smallest circle is 5.\n\nFinal answer:\n\\boxed{5}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": false,
+                "Same result": true,
+                "Levenshtein distance value": 0.644963144963145
+            }
+        }
+    }
+}

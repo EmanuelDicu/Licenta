@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 2_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 2",
+        "problem": "There are many two-digit multiples of 7, but only two of the multiples have digit sum of 10. The sum of these two multiples of 7 is what?",
+        "correct_solution": "The two-digit multiples of 7 are $$14, 21, \\underline{28}, 35, 42, 49, 56, 63, 70, 77, 84, \\underline{91}\\text{, and } 98.$$Only 28 and 91 have digit sums of 10. The sum of 28 and 91 is $\\boxed{119}.$",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```python\nSolution:\nStep 1:\nWe need to find all the two-digit multiples of 7.\nWe know that 7*10 = 70 and 7*14 = 98, so we need to check the numbers from 70 to 98.\nStep 2:\nLet's list all multiples of 7, which are between 70 and 98: 70, 77, 84, 91, 98.\nStep 3:\nNow, from the numbers in the previous step, we need to select only the numbers which have a digit sum of 10.\nStep 4:\nLet's check each number:\n70: 7 + 0 = 7\n77: 7 + 7 = 14\n84: 8 + 4 = 12\n91: 9 + 1 = 10\n98: 9 + 8 = 17\nWe see that only the number 91 satisfies the constraint: It is a two-digit multiple of 7 and the sum of its digits is 10.\nStep 5:\nThe problem asks us to find the sum of the two-digit multiples of 7, which have a digit sum of 10.\nWe made a mistake in the previous step. We missed the number 35, which is also a two-digit multiple of 7 and its digit sum is 10 (3 + 5 = 8).\nThe numbers which satisfy the given constraints are 35 and 91.\nTherefore the sum of 35 and 91 is 126.\nFinal answer:\n\\boxed{126}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8526100307062436
+            }
+        }
+    }
+}

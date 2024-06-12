@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 3_3.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 3",
+        "problem": "What is the smallest whole number $b$ such that 47 can be expressed in base $b$ using only two digits?",
+        "correct_solution": "For 47 to be expressed in two digits in base $b$, $47 < 100_b = 1 \\cdot b^2$.  So $\\! \\sqrt{47} < b$, which means the smallest whole number $b$ can be is $\\boxed{7}$.  We can check to be sure: $47 = 65_7 = 115_6$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1:\nWe need to find a base 'b' such that 47 (in decimal) can be represented using two digits in base 'b'. \n\nStep 2:\nA two-digit number in base 'b' can be generally represented as  'xy' (base b) which translates to  x*b^1 + y*b^0 = xb + y in decimal, where 'x' and 'y' are digits in base 'b'.\n\nStep 3:\nSince 47 needs to be represented using two digits in base 'b', we need to find digits 'x' and 'y' and a base 'b' such that xb + y = 47.\n\nStep 4:\nLet's start by finding the smallest possible value for 'b'.  If b = 7, then the largest two-digit number we can form is 66 (base 7), which is equal to 48 in decimal.  This is too large.\n\nStep 5:\nIf b = 6, then the largest two-digit number we can form is 55 (base 6), which is equal to 35 in decimal.  This is too small.\n\nStep 6:\nTherefore, the smallest possible value for 'b' is 8.  We can check that 47 (decimal) is equal to 57 (base 8).\n\nFinal answer:\n\\boxed{8}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8464017185821697
+            }
+        }
+    }
+}

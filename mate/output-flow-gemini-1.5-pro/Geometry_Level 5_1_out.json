@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 5_1.json": {
+        "category": "Geometry",
+        "difficulty": "Level 5",
+        "problem": "An arc of $55$ degrees on circle $A$ has the same length as an arc of $40$ degrees on circle $B$.  What is the ratio of the area of circle $A$ to the area of circle $B$? Express your answer as a common fraction.",
+        "correct_solution": "For a circle of radius $r$ and an arc of $\\theta$ degrees, the arc length is $(2\\pi r)\\frac{\\theta}{360}$. Thus, for the same arc length, the arc angle is inversely proportional to the radius, so the ratio of the radius of circle $A$ to the radius of circle $B$ is $40:55$, or $8:11$. Since the ratio of the areas of two circles is the square of the ratio of their radii, the ratio of the area of circle $A$ to the area of circle $B$ is $(8/11)^2=\\boxed{\\frac{64}{121}}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1: The ratio of the arc lengths is equal to the ratio of the radii.  Let $r_A$ be the radius of circle $A$ and $r_B$ be the radius of circle $B$.  Then $\\frac{55^\\circ}{360^\\circ} \\cdot 2\\pi r_A = \\frac{40^\\circ}{360^\\circ} \\cdot 2\\pi r_B$.\nStep 2: Simplifying the equation from Step 1, we have $\\frac{11}{72} \\cdot 2\\pi r_A = \\frac{8}{72} \\cdot 2\\pi r_B$.\nStep 3: Further simplification leads to $\\frac{11}{8} r_A = r_B$, so $\\frac{r_A}{r_B} = \\frac{8}{11}$.\nStep 4: The ratio of the areas is the square of the ratio of the radii, or $\\left(\\frac{8}{11}\\right)^2 = \\boxed{\\frac{64}{121}}$. \nFinal answer:\n\\boxed{\\frac{64}{121}}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": false,
+                "Same result": true,
+                "Levenshtein distance value": 0.6989247311827957
+            }
+        }
+    }
+}

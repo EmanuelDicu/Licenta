@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 4_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 4",
+        "problem": "Let $f(x)$ be a polynomial of degree $4$ with rational coefficients which has $1+2\\sqrt{3}$ and $3-\\sqrt{2}$ as roots, and such that $f(0) = -154.$ Find $f(1).$",
+        "correct_solution": "Since $f$ has rational coefficients, $1-2\\sqrt{3}$ and $3+\\sqrt{2}$ must also be roots of $f(x).$ Therefore, $f$ must be divisible by the two polynomials \\[(x-(1+2\\sqrt3))(x-(1-2\\sqrt3)) = x^2 - 2x - 11\\]and \\[(x-(3-\\sqrt2))(x-(3+\\sqrt2))=x^2-6x+7,\\]so we have \\[f(x) = A(x^2-2x-11)(x^2-6x+7)\\]for some constant $A.$ Setting $x=0,$ we get \\[f(0)=A(-11)(7) = -77A,\\]so $-77A = -154,$ and $A=2.$ Thus, \\[f(x) = 2(x^2-2x-11)(x^2-6x+7)\\]and so $f(1) = 2(-12)(2) = \\boxed{-48}.$",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1: \nBecause the polynomial $f(x)$ has rational coefficients, any irrational roots must come in conjugate pairs. This means that if $1 + 2\\sqrt{3}$ is a root, then so is its conjugate, $1 - 2\\sqrt{3}$.\n\nStep 2: \nFor the same reason as above, if $3-\\sqrt{2}$ is a root of $f(x)$, then so is $3 + \\sqrt{2}$.\n\nStep 3:\nWe know that a polynomial of degree 4 can be factored into the product of four linear terms. So far we know all four roots of the polynomial, which means that we can write $f(x)$ as: \n$f(x) = a(x - 1 - 2\\sqrt{3})(x - 1 + 2\\sqrt{3})(x - 3 + \\sqrt{2})(x - 3 - \\sqrt{2})$, where $a$ is a constant.\n\nStep 4:\nWe can determine the value of $a$ by using the fact that $f(0) = -154$. Plugging in $x = 0$ into the equation from Step 3 we get:\n $f(0) = a(-1 - 2\\sqrt{3})(-1 + 2\\sqrt{3})(-3 + \\sqrt{2})(-3 - \\sqrt{2})$.\n\nStep 5:\nSimplifying the expression from Step 4 we get:\n$f(0) = a((-1)^2 - (2\\sqrt{3})^2)((-3)^2 - (\\sqrt{2})^2) = a(1 - 12)(9 - 2) = -77a$.\n\nStep 6:\nBecause we know that $f(0) = -154$ and we found that $f(0) = -77a$, we can conclude that $-77a = -154$. Solving for $a$, we get $a = 2$.\n\nStep 7:\nWe can now write the full expression for the polynomial $f(x)$:\n$f(x) = 2(x - 1 - 2\\sqrt{3})(x - 1 + 2\\sqrt{3})(x - 3 + \\sqrt{2})(x - 3 - \\sqrt{2})$.\n\nStep 8: \nTo find $f(1)$, we simply plug in $x=1$ into the equation from Step 7:\n$f(1) = 2(1 - 1 - 2\\sqrt{3})(1 - 1 + 2\\sqrt{3})(1 - 3 + \\sqrt{2})(1 - 3 - \\sqrt{2})$.\n\nStep 9:\nSimplifying the expression from Step 8 we get:\n$f(1) = 2(-2\\sqrt{3})(2\\sqrt{3})(-2 + \\sqrt{2})(-2 - \\sqrt{2}) = 2 \\cdot 12 \\cdot (4 - 2) = \\boxed{48}$.\n\nFinal answer:\n\\boxed{48}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8091185410334346
+            }
+        }
+    }
+}

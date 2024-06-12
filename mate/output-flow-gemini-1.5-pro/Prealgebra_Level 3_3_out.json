@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 3_3.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 3",
+        "problem": "In the diagram, the area of rectangle $ABCD$ is $40$. What is the area of $MBCN$? [asy]\nimport olympiad;\npair a = (0, 0); pair m = (4, 0); pair b = (8, 0); pair c = (8, -5); pair n = (6, -5); pair d = (0, -5);\ndraw(m--n);\ndraw(a--b--c--d--cycle);\nlabel(\"$A$\", a, NW); label(\"$B$\", b, NE); label(\"$C$\", c, SE); label(\"$D$\", d, SW);\nlabel(\"$M$\", m, N); label(\"$N$\", n, S);\nlabel(\"$4$\", midpoint(a--m), N); label(\"$4$\", midpoint(m--b), N);\nlabel(\"$2$\", midpoint(n--c), S);\n[/asy]",
+        "correct_solution": "Since the area of rectangle $ABCD$ is 40 and $AB=8$, then $BC=5$.\n\nTherefore, $MBCN$ is a trapezoid with height 5 and parallel bases of lengths 4 and 2, so has area $$\\frac{1}{2}(5)(4+2)=\\boxed{15}.$$",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```python\nSolution:\nStep 1: \nWe are given that $ABCD$ is a rectangle and that $AM=MB=4$. \n\nStep 2:\nTherefore, $AB = AM + MB = 4 + 4 = 8$.\n\nStep 3:\nSince $ABCD$ is a rectangle, we know that $AB = CD = 8$.\n\nStep 4:\nWe are also given that $NC = 2$, so we can find $DN$: $DN = DC - NC = 8 - 2 = 6$.\n\nStep 5:\nWe can now find the area of rectangle $ABCD$: $[ABCD] = AB \\cdot AD = 8 \\cdot AD = 40$.\n\nStep 6:\nDividing both sides of the equation by 8, we find that $AD = 5$.\n\nStep 7:\nNow we can find the area of triangle $AMD$: $[AMD] = \\frac{1}{2} \\cdot AM \\cdot AD = \\frac{1}{2} \\cdot 4 \\cdot 5 = 10$.\n\nStep 8:\nWe can also find the area of triangle $BCN$: $[BCN] = \\frac{1}{2} \\cdot BC \\cdot CN = \\frac{1}{2} \\cdot 8 \\cdot 2 = 8$.\n\nStep 9:\nFinally, we can find the area of quadrilateral $MBCN$ by subtracting the areas of triangles $AMD$ and $BCN$ from the area of rectangle $ABCD$:\n$[MBCN] = [ABCD] - [AMD] - [BCN] = 40 - 10 - 8 = 22$.\n\nFinal answer:\n\\boxed{22}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8519290928050052
+            }
+        }
+    }
+}
