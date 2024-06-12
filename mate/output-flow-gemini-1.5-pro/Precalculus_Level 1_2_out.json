@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 1_2.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 1",
+        "problem": "Let $a = 5 - 8i$ and $b = 30 + 48i$. Find $|ab|$.",
+        "correct_solution": "Note that $b = 6(5 + 8i) = 6\\overline{a}$. So $|ab| = |a(6\\overline{a})| = 6 |a\\overline{a}| = 6|a|^2$. We have $|a|^2 = 5^2 + 8^2 = 89$, so $|ab| = 6 \\cdot 89 = \\boxed{534}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1: We begin by finding the product of the two complex numbers: \n $$ab = (5 - 8i)(30 + 48i).$$\nStep 2: Expanding the product we get\n $$ ab = 150 + 240i - 240i - 384i^2.$$\nStep 3: Since $i^2=-1$, we can simplify the expression to\n $$ ab = 150 + 384 = 534.$$\nStep 4: The modulus of a complex number of the form $z=x+iy$ is calculated by\n $$|z|=\\sqrt{x^2+y^2}.$$\nStep 5: Since our number has $y=0$, the modulus is simply\n $$|ab| = \\sqrt{534^2}=534.$$\nFinal answer: \n\\boxed{534}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8145161290322581
+            }
+        }
+    }
+}

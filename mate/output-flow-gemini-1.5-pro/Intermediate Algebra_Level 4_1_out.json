@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 4_1.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 4",
+        "problem": "The equation of the hyperbola shown below can be written as\n\\[\\frac{(y - k)^2}{a^2} - \\frac{(x - h)^2}{b^2} = 1.\\]Find $h + k + a + b.$\n\n[asy]\nunitsize(0.3 cm);\n\nreal upperhyper (real x) {\n  return (2*sqrt((x - 6)^2/16 + 1) - 5);\n}\n\nreal lowerhyper (real x) {\n  return (-2*sqrt((x - 6)^2/16 + 1) - 5);\n}\n\nint i, n = 10;\n\nfor (i = -n; i <= n; ++i) {\n  draw((i,-n)--(i,n),gray(0.7));\n  draw((-n,i)--(n,i),gray(0.7));\n}\n\ndraw((0,-n)--(0,n));\ndraw((-n,0)--(n,0));\n\ndraw(graph(upperhyper,-10,10),red);\ndraw(graph(lowerhyper,-3,10),red);\ndraw(extension((-10,-10),(10,-10),(6,-5),(6,-5) + (4,2))--extension((10,10),(10,-10),(6,-5),(6,-5) + (4,2)),dashed);\ndraw(extension((-10,-10),(-10,10),(6,-5),(6,-5) + (4,-2))--extension((10,10),(10,-10),(6,-5),(6,-5) + (4,-2)),dashed);\n\ndot((6,-5));\n[/asy]",
+        "correct_solution": "The center of the hyperbola is $(6,-5).$  The distance from the center to a vertex is $a = 2.$  The slopes of the asymptotes are $\\pm \\frac{1}{2},$ so $b = 4.$  Thus, $h + k + a + b = 6 + (-5) + 2 + 4 = \\boxed{7}.$",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1: \nThe provided graph is a hyperbola, and we are given its equation in standard form:\n\\[\\frac{(y - k)^2}{a^2} - \\frac{(x - h)^2}{b^2} = 1.\\]\nStep 2:\nWe can find the center of the hyperbola by looking at the graph. The center is the point $(h,k)$, which is $(6,-5)$ in this case.\nStep 3:\nThe distance from the center of the hyperbola to a vertex is $a$. In this case, $a = 2$.\nStep 4:\nThe distance from the center of the hyperbola to a co-vertex is $b$.  In this case, $b = 4$.\nStep 5:\nTherefore, $h + k + a + b = 6 + (-5) + 2 + 4 = \\boxed{7}$.\nFinal answer:\n\\boxed{7}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7072758037225042
+            }
+        }
+    }
+}

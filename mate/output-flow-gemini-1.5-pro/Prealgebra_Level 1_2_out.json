@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 1_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 1",
+        "problem": "If $PQ$ is a straight line, what is the value of $x$? [asy]\n\nsize(150);\n\ndraw((-1,0)--(1,0));\n\ndraw((-0.809,.588)--(0,0)--(0.809,.588));\n\ndraw((-.309,.951)--(0,0)--(.309,.951));\n\nlabel(\"$P$\",(-1,0),W);\n\nlabel(\"$Q$\",(1,0),E);\n\nlabel(\"$x^\\circ$\",(0.5,0),NW);\n\nlabel(\"$x^\\circ$\",(-0.5,0),NE);\n\nlabel(\"$x^\\circ$\",(0,0.4));\n\nlabel(\"$x^\\circ$\",(0.27,0.2),N);\n\nlabel(\"$x^\\circ$\",(-0.27,0.2),N);\n\n[/asy]",
+        "correct_solution": "Since $PQ$ is a straight line, then $x^\\circ+x^\\circ+x^\\circ+x^\\circ+x^\\circ = 180^\\circ$ or $5x=180$ or $x=\\boxed{36}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1: \nAngles on a straight line add up to 180\u00b0.\nStep 2:\nWe can see there are six equal angles labeled as  \ud835\udc65\u00b0 on the straight line PQ.\nStep 3:\nTherefore, 6 *  \ud835\udc65\u00b0 = 180\u00b0.\nStep 4:\nDividing both sides of the equation by 6, we get  \ud835\udc65 = 30\u00b0. \nFinal answer:\n\\boxed{30}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8049645390070922
+            }
+        }
+    }
+}

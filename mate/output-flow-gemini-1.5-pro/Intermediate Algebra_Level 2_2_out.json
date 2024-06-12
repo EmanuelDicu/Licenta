@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 2_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 2",
+        "problem": "The complex numbers $a$ and $b$ satisfy\n\\[a + \\overline{b} = 2 - 7i.\\]Find $\\overline{a} + b.$",
+        "correct_solution": "Taking the conjugate of both sides, we get\n\\[\\overline{a + \\overline{b}} = \\overline{2 - 7i} = 2 + 7i.\\]But $\\overline{a + \\overline{b}} = \\overline{a} + \\overline{\\overline{b}} = \\overline{a} + b,$ so\n\\[\\overline{a} + b = \\boxed{2 + 7i}.\\]",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1:\nLet's represent the complex numbers $a$ and $b$ in standard form. Let  $a = x + yi$ and $b = u + vi$, where $x$, $y$, $u$, and $v$ are real numbers. \nStep 2:\nThen, $\\overline{a} = x - yi$ and $\\overline{b} = u - vi$. \nStep 3:\nSubstituting these into the given equation $a + \\overline{b} = 2 - 7i$, we get $(x + yi) + (u - vi) = 2 - 7i$. \nStep 4:\nThis simplifies to $(x + u) + (y - v)i = 2 - 7i$. \nStep 5:\nBecause two complex numbers are equal if and only if their real and imaginary parts are equal, $x + u = 2$ and $y - v = -7$. \nStep 6:\nWe want to find $\\overline{a} + b$, which is equal to $(x - yi) + (u + vi) = (x + u) + (-y + v)i$.\nStep 7:\nFrom our previous equations, we know that $x+u=2$ and $-y+v=-(y-v)=7$. \nStep 8:\nTherefore, $\\overline{a} + b = \\boxed{2 + 7i}$.\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7872340425531915
+            }
+        }
+    }
+}

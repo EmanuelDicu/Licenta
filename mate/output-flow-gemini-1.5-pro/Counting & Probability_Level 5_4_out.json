@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 5_4.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 5",
+        "problem": "The letters of the word `SIXTEEN' are randomly arranged.  What is the probability that the two E's are not next to each other?",
+        "correct_solution": "The best way to do this is to find the probability that the two E's are next to each other.  There are $\\dfrac{7!}{2}$ arrangements of the word SIXTEEN.  If we want to find the number of arrangements such that the E's are next to each other, we find the number of arrangements of the six-letter word SIXT(EE)N (where we treat the two E's as a block), which is $6!$.  So the probability that an arrangement of the word SIXTEEN has the two E's next to each other is $\\dfrac{6!}{\\frac{7!}{2}} = \\dfrac{2}{7}$.  So the probability that the two E's aren't next to each other is $1 - \\dfrac{2}{7} = \\boxed{\\dfrac{5}{7}}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1:\nThere are a total of $\\dfrac{7!}{2!}=2520$ ways to arrange the letters of the word `SIXTEEN,' since there are 7 letters with 2 letters repeating.\n\nStep 2:\nWe can count the number of arrangements where the two E's are next to each other by treating the two E's as one entity. \n\nStep 3:\nThere are 6! = 720 ways to arrange the 6 letters (treating the two E's as one). Since the two E's are identical, we don't need to consider their order within the single entity.\n\nStep 4:\nThe probability that the two E's are next to each other is  $\\dfrac{720}{2520}=\\dfrac{2}{7}$.\n\nStep 5:\nTherefore, the probability that the two E's are not next to each other is $1-\\dfrac{2}{7}=\\boxed{\\dfrac{5}{7}}$.\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": false,
+                "Same result": true,
+                "Levenshtein distance value": 0.5435393258426966
+            }
+        }
+    }
+}
