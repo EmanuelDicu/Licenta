@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 4_4.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "We have a triangle $\\triangle ABC$ where $AC = 17,$ $BC = 15,$ and $AB = 8.$ Let $M$ be the midpoint of $AB.$ What is the length of $CM$?",
+        "correct_solution": "First, we notice that $8:15:17$ is a Pythagorean triple, so we have a right triangle. Let's draw a sketch: [asy]\npair A, B, C, M;\nA = (0, 8);\nB = (0, 0);\nC = (15, 0);\nM = 0.5 * A + 0.5 * B;\ndraw(A--B--C--cycle);\ndraw(C--M);\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$M$\", M, NE);\nlabel(\"$8$\", A--B, W);\nlabel(\"$15$\", B--C, S);\nlabel(\"$17$\", A--C, NE);\ndraw(rightanglemark(A,B,C,20));\n[/asy] Since we know that $BM = \\frac{1}{2} \\cdot AB = 4,$ we simply apply the Pythagorean theorem to right triangle $\\triangle MBC.$ \\begin{align*}\nCM^2 &= BM^2 + BC^2\\\\\nCM^2 &= 4^2 + 15^2 = 241\\\\\nCM &= \\boxed{\\sqrt{241}}.\n\\end{align*}",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "\"\"\"\nStep 1: \nBecause M is the midpoint of AB, we know that AM = BM = 8 / 2 = 4.\nStep 2: \nBy the Pythagorean Theorem, in a right triangle with legs a and b, and hypotenuse c, we have a^2 + b^2 = c^2.\nStep 3: \nWe can draw a right triangle with legs CM and BM, and hypotenuse BC, since $\\angle CMB$ is a right angle because CM is the altitude from vertex C to side AB.\nStep 4: \nApplying the Pythagorean Theorem to this right triangle, we have CM^2 + BM^2 = BC^2, which gives CM^2 + 4^2 = 15^2.\nStep 5: \nSimplifying, we get CM^2 + 16 = 225, so CM^2 = 209.\nStep 6: \nTaking the square root of both sides, we get CM = \\sqrt{209}.\nStep 7: \nWe can rationalize the denominator to get CM = \\sqrt{209} = \\sqrt{(13)^2 * 16} / 13 = 13 \\sqrt{16} / 13 = \\boxed{4\\sqrt{13}}.\nFinal answer:\n\\boxed{4\\sqrt{13}}\n\"\"\""
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7896725440806045
+            }
+        }
+    }
+}

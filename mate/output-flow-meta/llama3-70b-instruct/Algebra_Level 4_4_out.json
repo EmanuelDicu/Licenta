@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 4_4.json": {
+        "category": "Algebra",
+        "difficulty": "Level 4",
+        "problem": "For what ordered pair $(a,b)$ are there infinite solutions $(x,y)$ to the system \\begin{align*}\n2ax+2y&=b,\\\\\n5x+y&=-3?\n\\end{align*}",
+        "correct_solution": "For there to be infinite solutions, the first equation needs to be consistent with the second and yet add no new information, which means it must be a multiple of the second. Since the coefficient of $y$ in the first equation is twice that of $y$ in the second equation, the multiplier is 2. This implies that the first equation must be $2(5x+y)=2(-3)$. After equating coefficients, this gives $2a=2\\cdot5$ and $b=2\\cdot-3$, or $(a,b)=\\boxed{(5,-6)}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nWe have a system of equations: \n2ax + 2y = b, \n5x + y = -3\n\nStep 2:\nFor there to be infinite solutions, the two equations must be equivalent, meaning they represent the same line.\n\nStep 3:\nTo find the condition for equivalence, we can solve the first equation for y: \n2y = -2ax + b \ny = -ax + (b/2)\n\nStep 4:\nSubstitute this expression for y into the second equation: \n5x + (-ax + (b/2)) = -3 \n5x - ax + (b/2) = -3 \n\nStep 5:\nRearrange to isolate the terms with variables: \n(5 - a)x = -3 - (b/2) \n\nStep 6:\nFor this equation to be equivalent to the original second equation, the coefficients of x and the constants must be equal: \n5 - a = 5 \n-3 - (b/2) = -3 \n\nStep 7:\nSolve the resulting equations: \na = 5 - 5 = 0 \n(b/2) = 0 \nb = 0 \n\nStep 8:\nTherefore, the ordered pair (a, b) that makes the system of equations have infinite solutions is (0, 0).\n\nFinal answer:\n\\boxed{(0,0)}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7331118493909191
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 3_3.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 3",
+        "problem": "A target consists of four concentric circles with radii 4 inches, 6 inches, 8 inches and 10 inches as shown. Given that a dart is thrown that hits the target at a random point, what is the probability that it hits a shaded region? Express your answer as a common fraction.\n\n[asy]size(100); import graph; fill(Circle((0,0),5),gray(.6));\n\nclip(Circle((0,0),2) ^^ Circle((0,0),3) ^^ Circle((0,0),4),fillrule(1));\ndraw(Circle((0,0),2) ^^ Circle((0,0),3) ^^ Circle((0,0),4) ^^ Circle((0,0),5));[/asy]",
+        "correct_solution": "The total area of the target is $\\pi\\cdot 10^2=100\\pi$.  The area of the inner shaded region is the area of a circle with radius 4, and that is equal to $\\pi\\cdot 4^2=16\\pi$.  We can calculate the area of the shaded ring as the difference in areas of a circle with radius 8 and with radius 6.  This gives an area of $\\pi \\cdot 8^2 - \\pi \\cdot 6^2 = 28\\pi$.  The total shaded area is $16\\pi+28\\pi=44\\pi$.  The probability a dart will hit a shaded region is equal to $\\frac{44\\pi}{100\\pi}=\\boxed{\\frac{11}{25}}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nSolution:\nStep 1: \nLet's find the area of the shaded region.\nStep 2: \nThe area of the shaded region is equal to the area of the outer circle minus the areas of the inner circles.\nStep 3: \nThe area of a circle is given by A = \u03c0r^2, where r is the radius of the circle.\nStep 4: \nThe area of the outer circle is A1 = \u03c0(10)^2 = 100\u03c0.\nStep 5: \nThe area of the inner circle with radius 8 inches is A2 = \u03c0(8)^2 = 64\u03c0.\nStep 6: \nThe area of the inner circle with radius 6 inches is A3 = \u03c0(6)^2 = 36\u03c0.\nStep 7: \nThe area of the inner circle with radius 4 inches is A4 = \u03c0(4)^2 = 16\u03c0.\nStep 8: \nThe area of the shaded region is A_shaded = A1 - A2 - A3 + A4 = 100\u03c0 - 64\u03c0 - 36\u03c0 + 16\u03c0 = 16\u03c0.\nStep 9: \nThe probability of hitting a shaded region is equal to the ratio of the area of the shaded region to the area of the entire target.\nStep 10: \nThe area of the entire target is A_total = A1 = 100\u03c0.\nStep 11: \nThe probability of hitting a shaded region is P = A_shaded / A_total = (16\u03c0) / (100\u03c0) = 16/100 = 4/25.\nStep 12: \nTherefore, the probability that the dart hits a shaded region is 4/25.\nFinal answer:\n\\boxed{\\frac{4}{25}}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7314487632508834
+            }
+        }
+    }
+}

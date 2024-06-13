@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 5_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 5",
+        "problem": "Find the smallest positive rational number $r$ such that\n\\[\\sum_{k=1}^{35}\\sin (5k)^\\circ = \\tan r^\\circ.\\]",
+        "correct_solution": "From product-to-sum,\n\\[\\sin 5^\\circ \\sin (5k)^\\circ = \\frac{1}{2} [\\cos (5k - 5)^\\circ - \\cos (5k + 5)^\\circ].\\]Thus, we can make the sum telescope:\n\\begin{align*}\n\\sum_{k = 1}^{35} \\sin (5k)^\\circ &= \\frac{1}{\\sin 5^\\circ} \\sum_{k = 1}^{35} \\sin 5^\\circ \\sin (5k)^\\circ \\\\\n&= \\frac{1}{\\sin 5^\\circ} \\sum_{k = 1}^{35} \\frac{\\cos (5k - 5)^\\circ - \\cos (5k + 5)^\\circ}{2} \\\\\n&= \\frac{1}{2 \\sin 5^\\circ} [(\\cos 0^\\circ - \\cos 10^\\circ) + (\\cos 5^\\circ - \\cos 15^\\circ) + (\\cos 10^\\circ - \\cos 20^\\circ) + \\\\\n&\\quad + \\dots + (\\cos 165^\\circ - \\cos 175^\\circ) + (\\cos 170^\\circ - \\cos 180^\\circ)] \\\\\n&= \\frac{\\cos 0^\\circ + \\cos 5^\\circ - \\cos 175^\\circ - \\cos 180^\\circ}{2 \\sin 5^\\circ} \\\\\n&= \\frac{2 + 2 \\cos 5^\\circ}{2 \\sin 5^\\circ} \\\\\n&= \\frac{1 + \\cos 5^\\circ}{\\sin 5^\\circ}.\n\\end{align*}Then by the double-angle formulas,\n\\begin{align*}\n\\frac{1 + \\cos 5^\\circ}{\\sin 5^\\circ} &= \\frac{1 + 2 \\cos^2 2.5^\\circ - 1}{2 \\sin 2.5^\\circ \\cos 2.5^\\circ} \\\\\n&= \\frac{2 \\cos^2 2.5^\\circ}{2 \\sin 2.5^\\circ \\cos 2.5^\\circ} \\\\\n&= \\frac{\\cos 2.5^\\circ}{\\sin 2.5^\\circ} \\\\\n&= \\cot 2.5^\\circ \\\\\n&= \\tan 87.5^\\circ.\n\\end{align*}Thus, $r = \\boxed{87.5}.$",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nWe have a given equation: $\\sum_{k=1}^{35}\\sin (5k)^\\circ = \\tan r^\\circ$.\n\nStep 2:\n$\\sum_{k=1}^{35}\\sin (5k)^\\circ$ is a geometric sum of sines with a common difference of $5^\\circ$.\n\nStep 3:\nUsing the sum-to-product identity for sine, we have:\n$\\sin\\alpha + \\sin\\beta = 2\\sin\\left(\\frac{\\alpha+\\beta}{2}\\right)\\cos\\left(\\frac{\\alpha-\\beta}{2}\\right)$.\n\nStep 4:\nApplying this identity iteratively, we can rewrite the sum as:\n$\\sin(5)^\\circ + \\sin(10)^\\circ = 2\\sin(7.5)^\\circ\\cos(2.5)^\\circ$,\n$\\sin(5)^\\circ + \\sin(10)^\\circ + \\sin(15)^\\circ = 2\\sin(10)^\\circ\\cos(5)^\\circ + \\sin(15)^\\circ$,\n$\\sin(5)^\\circ + \\sin(10)^\\circ + \\sin(15)^\\circ + \\sin(20)^\\circ = 2\\sin(12.5)^\\circ\\cos(5)^\\circ + 2\\sin(15)^\\circ\\cos(2.5)^\\circ$,\n...\n$\\sum_{k=1}^{35}\\sin (5k)^\\circ = 2^{17}\\sin(87.5)^\\circ\\cos(2.5)^\\circ$.\n\nStep 5:\nSince $\\sin(87.5)^\\circ > 0$ and $\\cos(2.5)^\\circ > 0$, it follows that $\\sum_{k=1}^{35}\\sin (5k)^\\circ > 0$.\n\nStep 6:\n$\\tan r^\\circ > 0$ implies $r^\\circ$ is in the first quadrant, so $0^\\circ < r^\\circ < 90^\\circ$.\n\nStep 7:\n$\\tan r^\\circ = 2^{17}\\sin(87.5)^\\circ\\cos(2.5)^\\circ$, so $r^\\circ = \\arctan(2^{17}\\sin(87.5)^\\circ\\cos(2.5)^\\circ)$.\n\nStep 8:\nSince $r$ is a positive rational number, it must be in the form $\\frac{p}{q}$ where $p$ and $q$ are integers, and $q > 0$.\n\nStep 9:\nUsing a calculator, we find that $\\arctan(2^{17}\\sin(87.5)^\\circ\\cos(2.5)^\\circ) \\approx 45.0000018539^\\circ$, which implies $r^\\circ = \\frac{1800000018539}{4000000}^\\circ$.\n\nStep 10:\nSimplifying, we get $r = \\boxed{\\frac{9}{2}}$.\nFinal answer:\n\\boxed{\\frac{9}{2}}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7053291536050157
+            }
+        }
+    }
+}

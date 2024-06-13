@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 4_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 4",
+        "problem": "What integer $n$ satisfies $0\\le n<18$ and $$n\\equiv -11213141\\pmod{18}~?$$",
+        "correct_solution": "An integer is divisible by $18$ if and only if the sum of its digits is divisible by $9$ and the last digit is even (meaning it is divisible by both 9 and 2).  The sum of the digits of $-11213141$ is 14.  Since $-11213141$ is negative, this number is 5 $\\textit{less than}$ a multiple of 9.  The number is 4 $\\textit{more than}$ a multiple of 9.  Subtracting 4 gives  \\[-11213141 = -11213145+4.\\]Since $-11213145$ has a digit sum of 18, this number is a multiple of 9.  However this is not a multiple of 18 so we need to subtract 9 again: \\[-11213141 = -11213154+13.\\]Now the number $-11213154$ is a multiple of 18, so the answer is $\\boxed{13}$. $$-11213141\\equiv 13\\pmod {18}.$$",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nWe are given the modular congruence n \u2261 -11213141 (mod 18).\n\nStep 2:\nWe know that -11213141 \u2261 -1 \u2261 17 (mod 18), because 18 divides 11213142 - 1 = 11213141.\n\nStep 3:\nSo, we have n \u2261 17 (mod 18).\n\nStep 4:\nBecause 0 \u2264 n < 18, we know that n is the least positive residue of 17 modulo 18.\n\nStep 5:\nTherefore, the integer n that satisfies the given modular congruence and integer bounds is 17.\n\nFinal answer:\n\\boxed{17}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7705882352941177
+            }
+        }
+    }
+}

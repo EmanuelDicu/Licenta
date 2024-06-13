@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 4_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 4",
+        "problem": "Liz has 11 marbles of different colors. In how many ways can she choose 3 of the marbles, if she refuses to choose the green one and the purple one at the same time?",
+        "correct_solution": "We can divide this into cases:\n\nCase 1: Liz chooses the green marble, and not the purple marble. In this case, Liz must choose 2 more marbles from the remaining 9 marbles (since she won't choose the purple marble). So, there are $\\binom{9}{2}=36$ choices in this case.\n\nCase 2: Liz chooses the purple marble, and not the green marble. As in Case 1, Liz must choose 2 more marbles from the remaining 9 marbles. So, there are $\\binom{9}{2}$ choices in this case.\n\nCase 3: Liz chooses neither the green marble nor the purple marble. In this case, Liz must choose three marbles from the nine remaining marbles, and there are $\\binom{9}{3}=84$ choices in this case.\n\nThe total number of possible choices is $36+36+84=\\boxed{156}$.\n\nAlternatively, there are $\\binom{11}{3}=165$ ways to select three marbles. Of those, $\\binom{9}{1}=9$ ways contain both the purple marble and the green marble. Therefore, there are $165-9=\\boxed{156}$ ways to select three marbles such that purple and green marbles are not both chosen.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nLiz has 11 marbles of different colors. \nStep 2:\nShe refuses to choose the green one and the purple one at the same time. \nStep 3:\nThis means she can choose the green one without the purple one or the purple one without the green one or neither of them. \nStep 4:\nLet's count the number of ways she can choose 3 marbles in each of these cases and then add them up. \nStep 5:\nIf she chooses the green one, she has 9 marbles left to choose from, so she can choose 2 more in 9C2 = 36 ways. \nStep 6:\nIf she chooses the purple one, she has 9 marbles left to choose from, so she can choose 2 more in 9C2 = 36 ways. \nStep 7:\nIf she chooses neither, she has 9 marbles to choose from, so she can choose 3 in 9C3 = 84 ways. \nStep 8:\nIn total, she can choose 3 marbles in 36 + 36 + 84 = 156 ways. \nFinal answer:\n\\boxed{156}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7104743083003953
+            }
+        }
+    }
+}

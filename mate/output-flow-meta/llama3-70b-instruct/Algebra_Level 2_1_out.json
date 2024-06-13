@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 2_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 2",
+        "problem": "If \\begin{align*}\n5x-2y&=7,\\\\\n3x+y&=2,\n\\end{align*}compute $24x-14y$.",
+        "correct_solution": "Note that $6(5x-2y)-2(3x+y)=24x-14y$.  Thus, $24x-14y=6(7)-2(2)=\\boxed{38}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nWe are given the equation 5x - 2y = 7.\nStep 2:\nWe are given the equation 3x + y = 2.\nStep 3:\nWe can multiply the first equation by 6 to get 30x - 12y = 42.\nStep 4:\nWe can multiply the second equation by 14 to get 42x + 14y = 28.\nStep 5:\nAdding the two resulting equations, we get 72x - 12y + 42x + 14y = 42 + 28.\nStep 6:\nSimplifying, we get 72x + 42x - 12y + 14y = 70.\nStep 7:\nCombining like terms, we get 114x + 2y = 70.\nStep 8:\nMultiplying both sides by 2, we get 228x + 4y = 140.\nStep 9:\nSubtracting 4y from both sides, we get 228x = 140 - 4y.\nStep 10:\nSubstituting y from the second equation (y = 2 - 3x), we get 228x = 140 - 4(2 - 3x).\nStep 11:\nExpanding and simplifying, we get 228x = 140 - 8 + 12x.\nStep 12:\nCombining like terms, we get 216x = 132.\nStep 13:\nDividing both sides by 216, we get x = 132/216 = 11/18.\nStep 14:\nSubstituting x into the second equation, we get y = 2 - 3(11/18) = 2 - 33/18 = (36 - 33)/18 = 3/18.\nStep 15:\nComputing 24x - 14y, we get 24(11/18) - 14(3/18) = 264/18 - 42/18 = 222/18 = 37.\nFinal answer:\n\\boxed{37}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.946046511627907
+            }
+        }
+    }
+}

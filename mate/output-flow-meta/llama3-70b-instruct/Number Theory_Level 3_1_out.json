@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 3_1.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 3",
+        "problem": "Solve the congruence $3n \\equiv 2 \\pmod{11}$, as a residue modulo 11.  (Give an answer between 0 and 10.)",
+        "correct_solution": "Note that $2 \\equiv -9 \\pmod{11}$, so we can write the given congruence as $3n \\equiv -9 \\pmod{11}$.  Since 3 is relatively prime to 11, we can divide both sides by 3, to get $n \\equiv -3 \\equiv \\boxed{8} \\pmod{11}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nThe given congruence equation is 3n \u2261 2 (mod 11), which means 3n - 2 is a multiple of 11.\n\nStep 2:\nWe need to find the value of n that satisfies the equation. Since 11 is a prime number, we can use the property that if ab \u2261 ac (mod p), then b \u2261 c (mod p), where p is a prime number.\n\nStep 3:\nWe can multiply both sides of the congruence equation by 4, which is the modular inverse of 3 modulo 11, to get 12n \u2261 8 (mod 11).\n\nStep 4:\nSince 12 \u2261 1 (mod 11), the equation simplifies to n \u2261 8 (mod 11).\n\nStep 5:\nTherefore, the value of n that satisfies the congruence equation is 8.\n\nFinal answer:\n\\boxed{8}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8085443037974683
+            }
+        }
+    }
+}

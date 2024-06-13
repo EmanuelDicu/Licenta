@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 5_2.json": {
+        "category": "Algebra",
+        "difficulty": "Level 5",
+        "problem": "Solve the inequality $$-13(r+5) + 25 > 4(r-10)$$for $r$. Express your answer in interval notation.",
+        "correct_solution": "First, we use the distributive property to expand the left-hand side of the inequality: $$-13r - 65 + 25 > 4r - 40$$The constants on the left side add up to $-40$, so adding $40$ to both sides cancels all the constant terms: $$-13r > 4r$$Adding $13r$ to both sides yields $$0 > 17r$$and dividing both sides by $17$ gives $0>r$, or in interval notation, $r\\in\\boxed{(-\\infty,0)}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nDistribute the numbers to the variables in the inequality, -13(r+5) + 25 > 4(r-10).\nStep 2:\nWe get, -13r - 65 + 25 > 4r - 40.\nStep 3:\nCombine like terms, -13r - 40 > 4r - 40.\nStep 4:\nAdd 40 to both sides, -13r > 4r.\nStep 5:\nSubtract 4r from both sides, -17r > 0.\nStep 6:\nDivide both sides by -17, r < 0.\nStep 7:\nExpress the solution in interval notation, (-\\infty, 0).\nFinal answer:\n\\boxed{(-\\infty, 0)}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": false,
+                "Same result": false,
+                "Levenshtein distance value": 0.6474654377880185
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 5_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 5",
+        "problem": "Suppose that $a$ is a positive integer for which the least common multiple of $a+1$ and $a-5$ is $10508$. What is $a^2 - 4a + 1$?",
+        "correct_solution": "Notice that $(a+1)(a-5) = a^2 - 4a - 5$, so $a^2 - 4a + 1 = (a+1)(a-5) + 6$.\n\nAlso, we know that by the Euclidean algorithm, the greatest common divisor of $a+1$ and $a-5$ divides $6$: \\begin{align*}\n\\text{gcd}\\,(a+1, a-5) &= \\text{gcd}\\,(a+1-(a-5),a-5)\\\\\n&= \\text{gcd}\\,(6,a-5).\n\\end{align*}As $10508$ is even but not divisible by $3$, for the sum of the digits of $10508$ is $1 + 5 + 8 = 14$, it follows that the greatest common divisor of $a+1$ and $a-5$ must be $2$.\n\nFrom the identity $xy = \\text{lcm}\\,(x,y) \\cdot \\text{gcd}\\,(x,y)$ (consider the exponents of the prime numbers in the prime factorization of $x$ and $y$), it follows that \\begin{align*}\n(a+1)(a-5) &= \\text{lcm}\\,(a+1,a-5) \\cdot \\text{gcd}\\,(a+1, a-5) \\\\\n&= 2 \\cdot 10508.\n\\end{align*}Thus, the desired answer is $2 \\cdot 10508 + 6 = \\boxed{21022}.$\n\nWith a bit more work, we can find that $a = 147$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nThe least common multiple of $a+1$ and $a-5$ is $10508$. \nStep 2:\nBecause $10508 = 2^3 \\cdot 1317$ and $1317$ is a prime, we know that $a+1$ and $a-5$ have no common factors. \nStep 3:\nHence, one of $a+1$ or $a-5$ must be a multiple of $2^3=8$, and the other must be a multiple of $1317$. \nStep 4:\nBecause $a$ is a positive integer, we know that $a-5 < a+1$. \nStep 5:\nTherefore, $a-5$ is a multiple of $8$, and $a+1$ is a multiple of $1317$. \nStep 6:\nBecause $a-5$ is a multiple of $8$, we know that $a$ is a multiple of $5$ plus $3$. \nStep 7:\nLet $a=5k+3$. \nStep 8:\nThen $a-5=5k-2$, and $a+1=5k+4$. \nStep 9:\nBecause $a-5$ is a multiple of $8$, we know that $5k-2$ is a multiple of $8$. \nStep 10:\nLet $5k-2=8m$. \nStep 11:\nThen $k=2m/5+2/5$. \nStep 12:\nBecause $k$ is an integer, we know that $2m/5+2/5$ is an integer. \nStep 13:\nTherefore, $m$ is a multiple of $5$. \nStep 14:\nLet $m=5n$. \nStep 15:\nThen, $k=2n+2$. \nStep 16:\nFinally, $a=5(2n+2)+3=10n+13$. \nStep 17:\nBecause $a+1$ is a multiple of $1317$, we know that $10n+14$ is a multiple of $1317$. \nStep 18:\nLet $10n+14=1317$. \nStep 19:\nThen, $n=131$. \nStep 20:\nTherefore, $a=10(131)+13=1323$. \nStep 21:\nSo $a^2 - 4a + 1 = 1323^2 - 4(1323) + 1 = 1755625 - 5292 + 1 = 1705334$.\nFinal answer:\n\\boxed{1705334}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7793317793317793
+            }
+        }
+    }
+}

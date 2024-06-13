@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 3_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 3",
+        "problem": "What is the tens digit in the sum $7! + 8! + 9! + \\cdots + 2006!$?",
+        "correct_solution": "Since $n!$ contains the product $2\\cdot5\\cdot10= 100$ whenever $n\\ge 10$,  it suffices to determine the tens digit of \\[\n7! + 8! + 9! = 7!(1 + 8 + 8\\cdot9) = 5040(1 + 8 + 72)= 5040\\cdot81.\n\\]This  is the same as the units digit of $4\\cdot 1$, which is $\\boxed{4}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nThe sum involves factorials from 7! to 2006!.\n\nStep 2:\nObserve that 10! = 10 \u00d7 9 \u00d7 8 \u00d7 7 \u00d7 6 \u00d7 5 \u00d7 4 \u00d7 3 \u00d7 2 \u00d7 1.\n\nStep 3:\nSince 10! is a multiple of 10, all factorials from 10! onwards will have a 0 in the units place.\n\nStep 4:\nThis means that when we add factorials from 10! onwards, the units digit will always be 0.\n\nStep 5:\nThe sum of factorials from 7! to 9! will not affect the tens digit of the overall sum, because the units digit of the sum of 10! onwards will always be 0.\n\nStep 6:\nThus, the tens digit of the sum of factorials from 7! to 2006! is the same as the tens digit of 7! + 8! + 9!.\n\nStep 7:\n7! = 5040, so the tens digit of 7! is 4.\n\nStep 8:\n8! = 40320, so the tens digit of 8! is 2.\n\nStep 9:\n9! = 362880, so the tens digit of 9! is 8.\n\nStep 10:\nThe tens digit of 7! + 8! + 9! is the same as the tens digit of 4 + 2 + 8, which is 4.\n\nFinal answer:\n\\boxed{4}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8072687224669604
+            }
+        }
+    }
+}

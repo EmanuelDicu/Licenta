@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 4_4.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 4",
+        "problem": "In how many ways can I place 5 different beads on a bracelet if rotations and flips of the bracelet are not treated as different arrangements?",
+        "correct_solution": "There are $5!$ ways to arrange 5 beads in a line.  Since there are 5 rotations in a circle for each of these arrangements, we must divide by 5, and since there are two matching reflections for each arrangement, we must divide by 2.  So there are $\\dfrac{5!}{5 \\times 2} = \\boxed{12}$ ways.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nThere are 5 different beads to be placed on the bracelet.\n\nStep 2:\nSince the beads are placed on a bracelet, we can consider the arrangement as a circular permutation.\n\nStep 3:\nThe number of ways to arrange n objects in a circular permutation is (n-1)!.\n\nStep 4:\nIn this case, n = 5, so the number of ways to arrange the 5 different beads on the bracelet is (5-1)! = 4!.\n\nStep 5:\n4! = 4 \u00d7 3 \u00d7 2 \u00d7 1 = 24.\n\nStep 6:\nSince rotations and flips of the bracelet are not treated as different arrangements, the number of ways to arrange the 5 different beads on the bracelet under the given conditions is 24.\n\nFinal answer:\n\\boxed{24}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.745814307458143
+            }
+        }
+    }
+}

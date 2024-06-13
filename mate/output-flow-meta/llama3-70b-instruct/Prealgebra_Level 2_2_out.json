@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 2_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 2",
+        "problem": "Fifty students were surveyed about their participation in hockey and baseball. The results of the survey were:\n\n$\\bullet$ $33$ students played hockey\n\n$\\bullet$ $24$ students played baseball\n\n$\\bullet$ $8$ students played neither hockey nor baseball\n\nHow many of the students surveyed played both hockey and baseball?",
+        "correct_solution": "Since there were $50$ students surveyed in total and $8$ played neither hockey nor baseball, then $42$ students in total played one game or the other.\n\nSince $33$ students played hockey and $24$ students played baseball, and this totals $33+24=57$ students, then there must be $\\boxed{15}$ students who are \"double-counted\", that is who play both sports.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nLet's identify the total number of students surveyed, which is 50.\nStep 2:\nWe know that 8 students played neither hockey nor baseball, which means the number of students who played at least one of the sports is 50 - 8 = 42.\nStep 3:\nThe number of students who played hockey is 33, and the number of students who played baseball is 24. \nStep 4:\nWe want to find the number of students who played both hockey and baseball. \nStep 5:\nWe can use the formula: number of students who played both = number of students who played hockey + number of students who played baseball - total number of students who played at least one of the sports.\nStep 6:\nBy plugging in the values, we get: number of students who played both = 33 + 24 - 42 = 15.\nFinal answer:\n\\boxed{15}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": false,
+                "Same result": true,
+                "Levenshtein distance value": 0.6848792884371029
+            }
+        }
+    }
+}

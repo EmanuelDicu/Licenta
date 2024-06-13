@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 1_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 1",
+        "problem": "What digit must be placed in the blank to make the four-digit integer $20\\_7$ a multiple of 11?",
+        "correct_solution": "A number will be divisible by 11 if you get a multiple of 11 by alternately adding and then subtracting its digits.  If we name the blank integer $A$, then the alternating sum is $2 - 0 + A - 7 = A -5$.  This value can only be equal to 0 (as 11, 22, etc all yield $A$ that are too large), so $A = \\boxed{5}$ is the only digit that will work.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nThe given four-digit integer is $20\\_7$. \nStep 2:\nSince the number must be a multiple of 11, we can use the divisibility rule of 11, which states that a number is divisible by 11 if and only if the difference between the sum of digits at odd places and the sum of digits at even places is either 0 or 11. \nStep 3:\nLet the digit in the blank be $x$. Then, the sum of digits at odd places is $2+x$ and the sum of digits at even places is $7+0=7$. \nStep 4:\nSince the difference between the sum of digits at odd places and the sum of digits at even places must be either 0 or 11, we have $|2+x-7|=0$ or $|2+x-7|=11$. \nStep 5:\nSolving for $|2+x-7|=0$, we get $x=5$. Solving for $|2+x-7|=11$ is not possible, since $x$ must be a single digit. \nStep 6:\nTherefore, the digit that must be placed in the blank to make the four-digit integer $20\\_7$ a multiple of 11 is 5.\nFinal answer:\n\\boxed{5}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.777292576419214
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 2_1.json": {
+        "category": "Geometry",
+        "difficulty": "Level 2",
+        "problem": "In the figure below $AB = BC$, $m \\angle ABD = 30^{\\circ}$, $m \\angle C = 50^{\\circ}$ and $m \\angle CBD = 80^{\\circ}$. What is the number of degrees in the measure of angle $A$?\n\n[asy]\ndraw((0,0)--1.5dir(-15)--3.5dir(60)--(0,0),linewidth(2));\ndraw(1.5dir(-15)--1.5dir(-15)+4dir(35)--3.5dir(60),linewidth(2));\nlabel(\"A\",(0,0),W);\nlabel(\"B\",3.5dir(60),N);\nlabel(\"C\",1.5dir(-15)+4dir(35),E);\nlabel(\"D\",1.5dir(-15),S);\n[/asy]",
+        "correct_solution": "We know two of the angles in $\\triangle BCD$: $$m\\angle CBD = 80^\\circ, ~~m\\angle BCD = 50^\\circ.$$ Since the sum of angles in a triangle is $180^\\circ$, we conclude that $m\\angle BDC = 180^\\circ - (50^\\circ+80^\\circ) = 50^\\circ$.\n\nTherefore, $\\triangle BCD$ is isosceles with equal angles at $C$ and $D$, which implies that the sides opposite those angles ($BD$ and $BC$) are equal.\n\nSince we are given $AB=BC$, we now know that $AB=BD$, which means that $\\triangle ABD$ is isosceles with equal angles at $A$ and $D$. Let $x = m\\angle A$. Then the sum of angles in $\\triangle ABD$ is $180^\\circ$, so $$x + x + 30^\\circ = 180^\\circ.$$ We can solve this equation to get $x = 75^\\circ$. So, $m\\angle A = \\boxed{75^\\circ}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nBecause we are told that $AB = BC$, it means that $\\angle ABC$ is an isosceles triangle, which implies that $m \\angle ABC = m \\angle ACB$.\n\nStep 2:\nFrom the given figure, we can see that $\\angle ABC + \\angle CBD + \\angle ABD = 180^{\\circ}$ (because they form a straight line).\n\nStep 3:\nSubstituting the values, we get $m \\angle ABC + 80^{\\circ} + 30^{\\circ} = 180^{\\circ}$.\n\nStep 4:\nSubtracting $110^{\\circ}$ from both sides, we get $m \\angle ABC = 70^{\\circ}$.\n\nStep 5:\nBecause $m \\angle ABC = m \\angle ACB$ (from Step 1), we have $m \\angle ACB = 70^{\\circ}$.\n\nStep 6:\nThe sum of the interior angles of a triangle is $180^{\\circ}$. Therefore, we can set up the equation $m \\angle A + m \\angle ACB + m \\angle C = 180^{\\circ}$.\n\nStep 7:\nSubstituting the values, we get $m \\angle A + 70^{\\circ} + 50^{\\circ} = 180^{\\circ}$.\n\nStep 8:\nSubtracting $120^{\\circ}$ from both sides, we get $m \\angle A = 60^{\\circ}$.\n\nFinal answer:\n$\\boxed{60}$"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7122153209109731
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 4_3.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 4",
+        "problem": "For some matrix $\\mathbf{P} = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$ with nonzero integer entries,\n\\[\\begin{pmatrix} 4 & 3 \\\\ -1 & 0 \\end{pmatrix} = \\mathbf{P}^{-1} \\begin{pmatrix} 1 & 0 \\\\ 0 & 3 \\end{pmatrix} \\mathbf{P}.\\]Find the smallest possible value of $|a| + |b| + |c| + |d|.$",
+        "correct_solution": "From the equation $\\begin{pmatrix} 4 & 3 \\\\ -1 & 0 \\end{pmatrix} = \\mathbf{P}^{-1} \\begin{pmatrix} 1 & 0 \\\\ 0 & 3 \\end{pmatrix} \\mathbf{P},$ we can multiply both sides by $\\mathbf{P}$ on the left, to get\n\\[\\mathbf{P} \\begin{pmatrix} 4 & 3 \\\\ -1 & 0 \\end{pmatrix} = \\begin{pmatrix} 1 & 0 \\\\ 0 & 3 \\end{pmatrix} \\mathbf{P}.\\]Then\n\\[\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} \\begin{pmatrix} 4 & 3 \\\\ -1 & 0 \\end{pmatrix} = \\begin{pmatrix} 1 & 0 \\\\ 0 & 3 \\end{pmatrix} \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix},\\]so\n\\[\\begin{pmatrix} 4a - b & 3a \\\\ 4c - d & 3c \\end{pmatrix} = \\begin{pmatrix} a & b \\\\ 3c & 3d \\end{pmatrix}.\\]Comparing entries, we get $4a - b = a,$ $3a = b,$ $4c - d = 3c,$ and $3c = 3d.$  These reduce to $b = 3a$ and $c = d,$ so\n\\[|a| + |b| + |c| + |d| = |a| + |3a| + |c| + |d| = 4|a| + 2|d|.\\]Since $a,$ $b,$ $c,$ and $d$ are all nonzero integers, we minimize this by taking $a = \\pm 1$ and $d = \\pm 1,$ in which case $4|a| + 2|d| = \\boxed{6}.$",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nSince $\\mathbf{P}^{-1}$ exists, $\\mathbf{P}$ must be invertible, which means that its determinant is nonzero.\nStep 2:\nTherefore, we can rewrite the given equation as\n$$\\begin{pmatrix} 1 & 0 \\\\ 0 & 3 \\end{pmatrix} \\mathbf{P} = \\mathbf{P} \\begin{pmatrix} 4 & 3 \\\\ -1 & 0 \\end{pmatrix}.$$\nStep 3:\nEquating the corresponding entries of the matrices on both sides, we get the following four equations:\n\\begin{align*}\na+0c&=4a-1b,\\\\\nb+0d&=3a,\\\\\n0a+3c&=-a+4c,\\\\\n0b+3d&=3b.\n\\end{align*}\nStep 4:\nSimplifying these equations, we obtain\n\\begin{align*}\nb&=3a,\\\\\na&=-3c,\\\\\nd&=3b,\\\\\nb&=3b,\n\\end{align*}which implies that $\\boxed{b=0}$.\nStep 5:\nSubstituting $b=0$ into the first equation, we get $a=-a$, which implies that $\\boxed{a=0}$.\nStep 6:\nSubstituting $a=0$ into the second equation, we get $0=0$, which is true, but does not give us any new information.\nStep 7:\nSubstituting $a=0$ into the third equation, we get $3c=-3c$, which implies that $\\boxed{c=0}$.\nStep 8:\nSubstituting $b=0$ into the fourth equation, we get $0=0$, which is true, but does not give us any new information.\nStep 9:\nSince $b=d=0$, the smallest possible value of $|a| + |b| + |c| + |d|$ is $\\boxed{0}$."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7420701168614358
+            }
+        }
+    }
+}

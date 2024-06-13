@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 3_3.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 3",
+        "problem": "What is the smallest whole number $b$ such that 47 can be expressed in base $b$ using only two digits?",
+        "correct_solution": "For 47 to be expressed in two digits in base $b$, $47 < 100_b = 1 \\cdot b^2$.  So $\\! \\sqrt{47} < b$, which means the smallest whole number $b$ can be is $\\boxed{7}$.  We can check to be sure: $47 = 65_7 = 115_6$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nLet $b$ be the base in which 47 can be expressed using only two digits. This means that 47 can be written in the form $xy_b$, where $x$ and $y$ are digits in base $b$ and $0 \\le x, y < b$.\n\nStep 2:\nSince $x$ and $y$ are digits in base $b$, we know that $x, y \\in \\{0, 1, 2, \\ldots, b-1\\}$. Therefore, the maximum value of $xy_b$ is $(b-1)(b-1)_b = b^2 - 2b + 1$.\n\nStep 3:\nSince 47 can be expressed in base $b$ using only two digits, we know that $b^2 - 2b + 1 \\ge 47$. Simplifying this inequality, we get $b^2 - 2b - 46 \\ge 0$.\n\nStep 4:\nFactoring the left-hand side of the inequality, we get $(b-8)(b+6) \\ge 0$. This is true when $b \\le -6$ or $b \\ge 8$.\n\nStep 5:\nSince $b$ is a whole number, the smallest value of $b$ that satisfies the inequality is $b = 8$.\n\nFinal answer:\n$\\boxed{8}$"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8325183374083129
+            }
+        }
+    }
+}

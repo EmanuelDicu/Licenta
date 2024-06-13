@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 4_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 4",
+        "problem": "Ed takes five 100-point tests in his algebra class. He scores 87, 85 and 87 points on the first three tests. If the scores of his last two tests differ by three points and he has a $90\\%$ average on his five tests, what was his highest test score?",
+        "correct_solution": "Instead of adding up scores and figuring out the new averages, a quicker way (useful for the countdown round) is as follows:\n\nSince the average is 90, we first calculate how many points below 90 he already is: he's scored 87, 85, and 87, meaning that he is 3, 5, and 3 points below 90 respectively, making for a total of 11 points below.  We then know that his remaining two tests must be a combined 11 points above 90, and since they differ by 3 points, we know that one test is 4 above 90, and the other is 7 above 90, meaning his highest score was $\\boxed{97}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nLet $x$ be the score of the fourth test and $x + 3$ be the score of the fifth test.\n\nStep 2:\nThe sum of the scores of all five tests is $87 + 85 + 87 + x + (x + 3)$.\n\nStep 3:\nThe average score of the five tests is $90\\%$ of $100$, which is $0.9 \\cdot 100 = 90$.\n\nStep 4:\nSince the average score is $90$, the sum of the scores of all five tests is $5 \\cdot 90 = 450$.\n\nStep 5:\nWe can set up an equation: $87 + 85 + 87 + x + (x + 3) = 450$.\n\nStep 6:\nSimplify the equation: $259 + 2x + 3 = 450$.\n\nStep 7:\nSubtract $259$ and $3$ from both sides: $2x = 188$.\n\nStep 8:\nDivide both sides by $2$: $x = 94$.\n\nStep 9:\nSince the score of the fifth test is $x + 3$, the score of the fifth test is $94 + 3 = 97$.\n\nFinal answer:\n\\boxed{97}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7447089947089947
+            }
+        }
+    }
+}

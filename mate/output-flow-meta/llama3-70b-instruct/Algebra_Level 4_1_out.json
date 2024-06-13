@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 4_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 4",
+        "problem": "What is the value of $x$ for which $$\\sqrt{x + \\sqrt{x + \\sqrt{x + \\ldots}}} = 5?$$",
+        "correct_solution": "Squaring both sides of the given equation yields $$x + \\sqrt{x + \\sqrt{x + \\ldots}} = 25,$$ so $$\\sqrt{x + \\sqrt{x + \\ldots}} = 25-x.$$ We already know the value of the left-hand side to be equal to $5$. Thus, $5 = 25-x$, and $x = \\boxed{20}.$",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nLet $y = \\sqrt{x + \\sqrt{x + \\sqrt{x + \\ldots}}}$.\nStep 2:\nSince $y = \\sqrt{x + \\sqrt{x + \\sqrt{x + \\ldots}}}$, we have $y = \\sqrt{x + y}$.\nStep 3:\nWe are given that $y = 5$, so we can write $5 = \\sqrt{x + 5}$.\nStep 4:\nSquaring both sides, we get $25 = x + 5$.\nStep 5:\nSubtracting 5 from both sides, we get $x = 20$.\nFinal answer:\n\\boxed{20}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": false,
+                "Same result": true,
+                "Levenshtein distance value": 0.6505376344086021
+            }
+        }
+    }
+}

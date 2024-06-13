@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 2_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 2",
+        "problem": "Find the measure, in degrees, of the smallest positive angle $\\theta$ for which $\\sin 3 \\theta = \\cos 7 \\theta.$",
+        "correct_solution": "Note that $\\cos 7 \\theta = \\sin (90^\\circ - 7 \\theta),$ so\n\\[\\sin 3 \\theta = \\sin (90^\\circ - 7 \\theta).\\]If $3 \\theta = 90^\\circ - 7 \\theta,$ then $\\theta = 9^\\circ.$\n\nIf $0^\\circ < \\theta < 9^\\circ,$ then $\\sin 3 \\theta < \\sin 27^\\circ$ and $\\sin (90^\\circ - 7 \\theta) > \\sin 27^\\circ,$ so the smallest positive solution is $\\boxed{9^\\circ}.$",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nWe are given that $\\sin 3 \\theta = \\cos 7 \\theta$ and we need to find the smallest positive angle $\\theta$ that satisfies this equation.\n\nStep 2:\nWe know that $\\cos x = \\sin (90^\\circ - x)$. So, we can rewrite the given equation as $\\sin 3 \\theta = \\sin (90^\\circ - 7 \\theta)$.\n\nStep 3:\nBecause the sine function has a period of $360^\\circ$, we can equate the arguments of the sine functions: $3 \\theta = 90^\\circ - 7 \\theta + 360^\\circ k$, where $k$ is an integer.\n\nStep 4:\nSimplifying the equation from Step 3, we get $10 \\theta = 90^\\circ + 360^\\circ k$, which implies $\\theta = 9^\\circ + 36^\\circ k$.\n\nStep 5:\nWe need to find the smallest positive value of $\\theta$, so we set $k=0$ to get $\\theta = 9^\\circ$.\n\nStep 6:\nTherefore, the measure of the smallest positive angle $\\theta$ is $9^\\circ$.\n\nFinal answer:\n\\boxed{9^\\circ}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": false,
+                "Same result": true,
+                "Levenshtein distance value": 0.6980255516840883
+            }
+        }
+    }
+}

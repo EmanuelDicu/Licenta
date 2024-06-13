@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 5_4.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 5",
+        "problem": "Let $0, a, b, c$ be the vertices of a square in counterclockwise order.  Compute\n\\[\\frac{ac + b^2}{ab}.\\]Enter your answer in rectangular form.",
+        "correct_solution": "Here's a labelled picture of our square, with the vertices connected to the origin:\n[asy]\nimport TrigMacros; \nsize(180); \n\npair O, A, B, C;\n\nrr_cartesian_axes(-2, 8, -5, 7, complexplane = true, usegrid = false); \nO = (0,0); \nA = (3, -1); \nB = scale(sqrt(2))*rotate(45)*A; \nC = rotate(90)*A; \n\ndraw(A--B--C--O--cycle); \ndraw(O--B); \n\ndot(\"$a$\", A, S); \ndot(\"$b$\", B, E); \ndot(\"$c$\", C, N); \ndot(\"$0$\", O, SW); \n[/asy]\n\nWe know $b$ is a rotation of $a$ by $\\pi/4$ around the origin, scaled by a factor of $\\sqrt{2}$. That means that $b = \\sqrt{2}e^{\\pi i/4} a$, which becomes\n\\begin{align*} \nb &= \\sqrt{2}(\\cos (\\pi/4) + i \\sin(\\pi/4))a \\\\\n    &= \\sqrt{2}\\left( \\dfrac{\\sqrt{2}}{2} + \\dfrac{\\sqrt{2}}{2} i\\right)a \\\\\n    &= (1+i)a.\n\\end{align*}Therefore, $\\frac{b}{a} = 1+i.$\n\nSimilarly, $c$ is a rotation of $b$ by $\\pi/4$ around the origin, scaled by a factor of $\\frac{1}{\\sqrt{2}},$  That means $c = \\frac{e^{\\pi i/4}}{\\sqrt{2}} b,$ which becomes\n\\[c = \\frac{\\sqrt{2}/2 + \\sqrt{2}/2 \\cdot i}{\\sqrt{2}} b = \\frac{1 + i}{2} b.\\]Therefore, $\\frac{c}{b} = \\frac{1 + i}{2}.$\n\nThen\n\\[\\frac{ac + b^2}{ab} = \\frac{c}{b} + \\frac{b}{a} = \\frac{1 + i}{2} + 1 + i = \\boxed{\\frac{3}{2} + \\frac{3}{2} i}.\\]",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "\"\"\"\nStep 1:\nSince $0, a, b, c$ are the vertices of a square in counterclockwise order, the side lengths of the square are equal.\nStep 2:\nLet the side length of the square be $s$. Then, we have $|OA| = |OB| = |OC| = s$.\nStep 3:\nSince $a, b, c$ are vertices of a square, they form a right triangle with sides of lengths $s$. Using the Pythagorean theorem, we get $|OC|^2 = |OA|^2 + |AC|^2$, which implies $s^2 = s^2 + |AC|^2$. Therefore, $|AC| = 0$.\nStep 4:\nSince $AC$ is a side of the square, $|AC| = s$. Thus, $s = 0$, which implies $a = b = c = 0$.\nStep 5:\nSubstituting the values of $a, b, c$ into the given expression, we get \\[\\frac{ac + b^2}{ab} = \\frac{0}{0}.\\]\nStep 6:\nHowever, since $a, b, c$ are not distinct points, the problem statement is invalid. Therefore, the expression is undefined.\nFinal answer:\n\\boxed{\\text{Undefined}}\n\"\"\""
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7822445561139029
+            }
+        }
+    }
+}

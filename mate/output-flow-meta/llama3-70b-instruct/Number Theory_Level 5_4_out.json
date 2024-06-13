@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 5_4.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 5",
+        "problem": "Notice that  \\[31\\cdot37=1147.\\]Find some integer $n$ with $0\\leq n<2293$ such that  \\[31n\\equiv 3\\pmod{2293}.\\]",
+        "correct_solution": "Doubling the given equation tells us  \\[31\\cdot74=2294.\\]Specifically  \\[31\\cdot74\\equiv1\\pmod{2293}\\]and 74 is the multiplicative inverse of 31 modulo 2293.\n\nIf we triple the congruence we just found we get  \\[31\\cdot222\\equiv3\\pmod{2293}.\\]Therefore $n=\\boxed{222}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nWe are given a congruence equation: 31n \u2261 3 (mod 2293).\nStep 2:\nTo solve for n, we need to find the modular multiplicative inverse of 31 modulo 2293, denoted as 31^(-1).\nStep 3:\nUsing the Extended Euclidean Algorithm, we find that 31^(-1) \u2261 741 (mod 2293).\nStep 4:\nMultiply both sides of the congruence equation by 31^(-1): 31n \u00d7 31^(-1) \u2261 3 \u00d7 31^(-1) (mod 2293).\nStep 5:\nSimplify the equation: n \u2261 3 \u00d7 741 (mod 2293).\nStep 6:\nCompute the product: n \u2261 2223 (mod 2293).\nStep 7:\nSince 0 \u2264 n < 2293, we have n = 2223.\nFinal answer:\n\\boxed{2223}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7674825174825175
+            }
+        }
+    }
+}

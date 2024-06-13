@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 2_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 2",
+        "problem": "Determine the number of ways to arrange the letters of the word THAT.",
+        "correct_solution": "First we count the arrangements if the two T's are unique, which is $4!$. Then since the T's are not unique, we divide by $2!$ for the arrangements of T, for an answer of $\\dfrac{4!}{2!} = \\boxed{12}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nThe word THAT has 5 letters: T-H-A-T, which can be arranged in a specific order.\nStep 2:\nTo find the total number of possible arrangements, we use the concept of permutations, which is the number of ways to arrange objects in a specific order.\nStep 3:\nSince there are 5 letters, we have 5 choices for the first position, 4 choices for the second position, 3 choices for the third position, 2 choices for the fourth position, and 1 choice for the fifth position.\nStep 4:\nThe total number of possible arrangements is the product of these choices, which is 5 \u00d7 4 \u00d7 3 \u00d7 2 \u00d7 1 = 120.\nStep 5:\nHowever, since the word THAT has two identical letters \"T\" and \"T\", we need to divide the total number of arrangements by 2!, which is the number of permutations of the identical letters.\nStep 6:\nTherefore, the total number of possible arrangements of the letters in the word THAT is 120 / 2! = 60.\nFinal answer:\n\\boxed{60}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8416578108395324
+            }
+        }
+    }
+}

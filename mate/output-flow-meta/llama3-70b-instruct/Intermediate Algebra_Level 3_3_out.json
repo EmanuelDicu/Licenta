@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 3_3.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 3",
+        "problem": "There is a complex number $z$ with imaginary part $164$ and a positive integer $n$ such that\n$$\\frac {z}{z + n} = 4i.$$Find $n$.",
+        "correct_solution": "Multiplying by $z+n$, we have $z = 4i(z+n)$, or $z(1-4i) = 4ni$. Thus \\[z = \\frac{4ni}{1-4i} = \\frac{4ni(1+4i)}{17} = \\frac{4ni - 16n}{17}.\\]Since $z$ has imaginary part $164$, we have $4n/17 = 164$, so $n = 17/4 \\cdot 164 = \\boxed{697}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "\"\"\"\nStep 1:\nSince $\\frac{z}{z+n} = 4i$ and $4i$ is a pure imaginary number, then the imaginary part of $z$ must be equal to the imaginary part of $4i(z+n)$, which means $164 = 4p + 164$ where $p$ is the real part of $z$.\n\nStep 2:\nFrom Step 1, we can see that $4p = 0$, so $p = 0$, which means $z = 0 + 164i = 164i$.\n\nStep 3:\nSubstituting $z = 164i$ into the original equation, we get $\\frac{164i}{164i + n} = 4i$.\n\nStep 4:\nMultiplying both sides by $164i + n$, we get $164i = 4i(164i + n)$.\n\nStep 5:\nDistributing the $4i$ on the right-hand side, we get $164i = 656i + 4in$.\n\nStep 6:\nSubtracting $656i$ from both sides, we get $-492i = 4in$.\n\nStep 7:\nDividing both sides by $-4i$, we get $n = \\frac{-492i}{-4i} = 123$.\n\nStep 8:\nSince $n$ is a positive integer, we conclude that $n = 123$.\n\nFinal answer:\n\\boxed{123}\n\"\"\""
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8276283618581907
+            }
+        }
+    }
+}

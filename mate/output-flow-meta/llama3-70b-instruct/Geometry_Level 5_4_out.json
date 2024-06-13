@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 5_4.json": {
+        "category": "Geometry",
+        "difficulty": "Level 5",
+        "problem": "Suppose $PABCD$ is a right square pyramid with apex $P$ and base $ABCD$.  If $PBD$ is an equilateral triangle with side length 6, then what is the volume of $PABCD$?",
+        "correct_solution": "[asy]\n\nimport three;\n\ntriple A = (0,0,0);\n\ntriple B = (1,0,0);\n\ntriple C = (1,1,0);\n\ntriple D = (0,1,0);\n\ntriple P = (0.5,0.5,1);\n\ndraw(B--C--D--P--B);\n\ndraw(P--C);\n\ndraw(B--A--D,dashed);\n\ndraw(P--A,dashed);\n\nlabel(\"$A$\",A,NW);\n\nlabel(\"$B$\",B,W);\n\nlabel(\"$C$\",C,S);\n\nlabel(\"$D$\",D,E);\n\nlabel(\"$P$\",P,N);\n\ntriple F= (0.5,0.5,0);\n\nlabel(\"$F$\",F,S);\n\ntriple M=(B+C)/2;\n\ndraw(D--B,dashed);\n\ndraw(P--F,dashed);\n\n[/asy]\n\nLet $F$ be the center of the square base.  Since the pyramid is a right pyramid, segment $\\overline{PF}$ is an altitude of triangle $PBD$.  Since $PBD$ is an equilateral triangle with side length 6, $PFB$ is a 30-60-90 triangle with $FB = BD/2 =3$ and $PF = 3\\sqrt{3}$.  Finally, $\\overline{BD}$ is a diagonal of square base $ABCD$, so we have $BC = BD/\\sqrt{2} = 6/\\sqrt{2} = 3\\sqrt{2}$.  Therefore, the volume of the pyramid is \\[\\frac{[ABCD](PF)}{3} = \\frac{(3\\sqrt{2})^2 (3\\sqrt{3})}{3} = \\boxed{18\\sqrt{3}}.\\]",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "\"\"\"\nStep 1:\nThe pyramid PABCD is a right square pyramid, which means the height of the pyramid (the distance from P to the center of the base ABCD) is perpendicular to the base ABCD.\nStep 2:\nThe triangle PBD is an equilateral triangle, which means all its sides have the same length, 6.\nStep 3:\nLet h be the height of the equilateral triangle PBD.  Because PBD is an equilateral triangle, we can use the Pythagorean theorem on it to get h^2 + 3^2 = 6^2.  Solving for h, we get h = \\sqrt{27} = 3\\sqrt{3}.\nStep 4:\nBecause the area of the base ABCD is equal to the square of the height of the equilateral triangle PBD, the area of the base ABCD is (3\\sqrt{3})^2 = 27.\nStep 5:\nThe volume of the pyramid PABCD is (1/3) * (area of the base ABCD) * (height of the pyramid), and the height of the pyramid is also h, because PBD is a height of the pyramid.  Therefore, the volume of the pyramid is (1/3) * 27 * 3\\sqrt{3} = 9\\sqrt{3}.\nStep 6:\nTherefore, the volume of the pyramid PABCD is 9\\sqrt{3}.\nFinal answer:\n\\boxed{9\\sqrt{3}}\n\"\"\""
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.791219512195122
+            }
+        }
+    }
+}

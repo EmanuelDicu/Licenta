@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 3_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 3",
+        "problem": "Find the complex number $z$ so that $z + |z| = 2 + 8i.$",
+        "correct_solution": "Let $z = a + bi.$  Then\n\\[a + bi + \\sqrt{a^2 + b^2} = 2 + 8i.\\]Equating the imaginary parts, we get $b = 8.$  Equating the real parts, we get $a + \\sqrt{a^2 + 64} = 2.$  Then\n\\[\\sqrt{a^2 + 64} = 2 - a.\\]Squaring both sides, we get $a^2 + 64 = (2 - a)^2 = a^2 - 4a + 4.$  Solving, we find $a = -15.$  Therefore, $z = \\boxed{-15 + 8i}.$",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nLet $z = a + bi$, where $a$ and $b$ are real numbers. \nStep 2:\nWe have $|z| = \\sqrt{a^2 + b^2}$. \nStep 3:\nBecause $z + |z| = 2 + 8i$, we have $(a + bi) + \\sqrt{a^2 + b^2} = 2 + 8i$. \nStep 4:\nEquating real parts, we have $a + \\sqrt{a^2 + b^2} = 2$. \nStep 5:\nEquating imaginary parts, we have $b = 8$. \nStep 6:\nSubstituting $b = 8$ into $a + \\sqrt{a^2 + b^2} = 2$, we have $a + \\sqrt{a^2 + 64} = 2$. \nStep 7:\nSquaring both sides of $a + \\sqrt{a^2 + 64} = 2$, we have $a^2 + 2a \\sqrt{a^2 + 64} + a^2 + 64 = 4$, or equivalently, $2a^2 + 2a \\sqrt{a^2 + 64} + 60 = 0$. \nStep 8:\nMoving all terms to the left and factoring, we have $(a + 6)(2a - 10) = 0$, so $a = -6, \\frac{5}{2}$. \nStep 9:\nFrom $a + \\sqrt{a^2 + 64} = 2$, we have $a = -6$ since $a = \\frac{5}{2}$ does not satisfy $a + \\sqrt{a^2 + 64} = 2$. \nStep 10:\nThe complex number $z$ is $-6 + 8i$. \nFinal answer:\n\\boxed{-6 + 8i}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.723568281938326
+            }
+        }
+    }
+}

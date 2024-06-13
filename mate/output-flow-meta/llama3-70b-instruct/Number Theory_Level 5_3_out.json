@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 5_3.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 5",
+        "problem": "How many digits are in the value of the following expression: $2^{2001}\\times 5^{1950}\\div 4^{27}$?",
+        "correct_solution": "We have \\begin{align*}\n2^{2001}\\times5^{1950}\\div4^{27}&= 2^{2001}\\div2^{54}\\times5^{1950} \\\\\n&= 2^{1947}\\times5^{1950}\\\\\n&= (2\\times5)^{1947}\\times5^3 \\\\\n&= 125\\times10^{1947}\n\\end{align*}Since $125\\times10^{1947}$ has three non-zero digits followed by 1947 zeros, it has a total of $\\boxed{1950}$ digits.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nThe expression is given as $2^{2001} \\times 5^{1950} \\div 4^{27}$. \nStep 2:\nWe can rewrite this expression as $\\frac{2^{2001} \\times 5^{1950}}{4^{27}}$. \nStep 3:\nWe can rewrite $4^{27}$ as $(2^2)^{27} = 2^{54}$ to obtain $\\frac{2^{2001} \\times 5^{1950}}{2^{54}}$. \nStep 4:\nWe can cancel out the common factor of $2^{54}$ from the numerator and denominator, leaving $\\frac{2^{1947} \\times 5^{1950}}{1} = 2^{1947} \\times 5^{1950}$. \nStep 5:\nWe can rewrite $2^{1947} \\times 5^{1950}$ as $10^{1950} \\times 2^{947 - 950} = \\frac{10^{1950}}{2^3} = \\frac{10^{1950}}{8}$. \nStep 6:\nThe number of digits in the given expression can be found by calculating the power of 10 in the numerator: $10^{1950}$. \nStep 7:\nThe power of 10 in the numerator is 1950, which indicates that the result has 1950 + 1 = 1951 digits. \nStep 8:\nHowever, since we divided by 8, we need to subtract the number of digits in 8: 1951 - 1 = 1950. \nStep 9:\nSince the result is an integer, the number of digits remains the same. \nFinal answer:\n\\boxed{1950}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7965616045845272
+            }
+        }
+    }
+}

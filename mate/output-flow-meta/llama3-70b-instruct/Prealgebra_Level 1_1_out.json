@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 1_1.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 1",
+        "problem": "Compute $(2^3)(5^5)$ in your head.",
+        "correct_solution": "Using the associative property, we can rearrange the terms to get $(2^35^3)(5^2)=(10^3)(5^2)=(1000)(25)=\\boxed{25,\\!000}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nThe given expression is (2^3)(5^5).\n\nStep 2:\nTo evaluate the expression, we need to compute the value of 2^3 and 5^5 separately.\n\nStep 3:\n2^3 means 2 multiplied by itself 3 times, so 2^3 = 2 \u00d7 2 \u00d7 2 = 8.\n\nStep 4:\n5^5 means 5 multiplied by itself 5 times, so 5^5 = 5 \u00d7 5 \u00d7 5 \u00d7 5 \u00d7 5 = 3125.\n\nStep 5:\nNow, we need to multiply the values of 2^3 and 5^5, so (2^3)(5^5) = 8 \u00d7 3125.\n\nStep 6:\nTo compute 8 \u00d7 3125, we can use the fact that 8 \u00d7 3000 = 24000 and 8 \u00d7 200 = 1600, so 8 \u00d7 3125 = 24000 + 1600 = 25600.\n\nStep 7:\nTherefore, the value of (2^3)(5^5) is 25600.\n\nFinal answer:\n\\boxed{25600}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8705501618122977
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 1_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 1",
+        "problem": "If $PQ$ is a straight line, what is the value of $x$? [asy]\n\nsize(150);\n\ndraw((-1,0)--(1,0));\n\ndraw((-0.809,.588)--(0,0)--(0.809,.588));\n\ndraw((-.309,.951)--(0,0)--(.309,.951));\n\nlabel(\"$P$\",(-1,0),W);\n\nlabel(\"$Q$\",(1,0),E);\n\nlabel(\"$x^\\circ$\",(0.5,0),NW);\n\nlabel(\"$x^\\circ$\",(-0.5,0),NE);\n\nlabel(\"$x^\\circ$\",(0,0.4));\n\nlabel(\"$x^\\circ$\",(0.27,0.2),N);\n\nlabel(\"$x^\\circ$\",(-0.27,0.2),N);\n\n[/asy]",
+        "correct_solution": "Since $PQ$ is a straight line, then $x^\\circ+x^\\circ+x^\\circ+x^\\circ+x^\\circ = 180^\\circ$ or $5x=180$ or $x=\\boxed{36}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nSince PQ is a straight line, the four angles around the intersection point O (not labeled in the figure) sum up to 360 degrees.\n\nStep 2:\nLet's analyze the four angles labeled x degrees. Two are above the horizontal line, and two are below it. They are vertical angles, which means they have the same measure.\n\nStep 3:\nWe can pair the angles above and below the horizontal line. Each pair forms a straight angle, which is 180 degrees. Therefore, we can write two equations: x + x = 180 and x + x = 180.\n\nStep 4:\nSimplifying the equations, we get 2x = 180.\n\nStep 5:\nDividing both sides by 2, we get x = 90.\n\nFinal answer:\n\\boxed{90}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.886535552193646
+            }
+        }
+    }
+}

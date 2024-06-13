@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 3_1.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 3",
+        "problem": "Find the eighth term of the sequence $1440, 1716, 1848, \\ldots$, whose terms are formed by multiplying the corresponding terms of two arithmetic sequences.",
+        "correct_solution": "If $a_n =an + b$ and $b_n = cn + d$ are two arithmetic sequences, then their term-wise product takes the form \\[a_nb_n = (an+b)(cn+d) = An^2 + Bn + C,\\]where $A, B, C$ are constants. Therefore, some sequence $x_n = An^2 + Bn + C$ has $x_0 = 1440,$ $x_1 = 1716,$ and $x_2 = 1848.$ Then we have the equations \\[\\begin{aligned} C &= 1440, \\\\ A+B+C&=1716,\\\\  4A+2B+C&=1848. \\end{aligned}\\]Subtracting $C=1440$ from the second and third equations, we have $A+B=276$ and $4A+2B=408,$ or $2A+B=204.$ Then \\[A = (2A+B) - (A+B) = 204 - 276 = -72,\\]and so $B = 276-A=348.$ We conclude that the given sequence has the general formula \\[x_n = -72n^2 + 348n + 1440.\\]Then the eighth term is \\[\\begin{aligned} x_7 &= -72 \\cdot 7^2 + 348 \\cdot 7 + 1440 = \\boxed{348}. \\end{aligned}\\]",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nLet's denote the two arithmetic sequences as $a_1, a_2, a_3, \\ldots$ and $b_1, b_2, b_3, \\ldots$.\nStep 2:\nSince the terms of the given sequence are formed by multiplying the corresponding terms of these two sequences, we can write the given sequence as $a_1b_1, a_2b_2, a_3b_3, \\ldots$.\nStep 3:\nWe are given the first three terms of the sequence: $a_1b_1 = 1440$, $a_2b_2 = 1716$, and $a_3b_3 = 1848$.\nStep 4:\nSince the sequences are arithmetic, we can find the common differences $d_a$ and $d_b$ of the two sequences using the formula: $d = a_2 - a_1 = a_3 - a_2$.\nStep 5:\nApplying the formula, we get: $d_b = \\frac{1716}{1440} = \\frac{276}{180} = \\frac{23}{15}$ and $d_a = \\frac{1848}{1716} = \\frac{264}{209} = \\frac{12}{10} = \\frac{6}{5}$.\nStep 6:\nSince the sequences are arithmetic, we can find the eighth term of each sequence using the formula: $a_n = a_1 + (n-1)d$.\nStep 7:\nApplying the formula, we get: $a_8 = a_1 + 7d_a = a_1 + 7\\left(\\frac{6}{5}\\right)$ and $b_8 = b_1 + 7d_b = b_1 + 7\\left(\\frac{23}{15}\\right)$.\nStep 8:\nWe can find $a_1$ and $b_1$ by dividing the first term of the given sequence by each other: $a_1 = \\frac{1440}{b_1}$ and $b_1 = \\frac{1440}{a_1}$.\nStep 9:\nSubstituting the values of $a_1$ and $b_1$, we get: $a_8 = \\frac{1440}{b_1} + 7\\left(\\frac{6}{5}\\right)$ and $b_8 = \\frac{1440}{a_1} + 7\\left(\\frac{23}{15}\\right)$.\nStep 10:\nThe eighth term of the given sequence is the product of $a_8$ and $b_8$.\nStep 11:\nMultiplying $a_8$ and $b_8$, we get: $a_8b_8 = \\left(\\frac{1440}{b_1} + 7\\left(\\frac{6}{5}\\right)\\right)\\left(\\frac{1440}{a_1} + 7\\left(\\frac{23}{15}\\right)\\right)$.\nStep 12:\nSimplifying the expression, we get: $a_8b_8 = 3312$.\nFinal answer:\n\\boxed{3312}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7881944444444444
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 4_4.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 4",
+        "problem": "Find the units digit of the sum of the first $21$ positive perfect cubes.",
+        "correct_solution": "Notice that for each integer $n$ satisfying $1 \\le n \\le 19, n \\neq 10$, then using the sum of cubes factorization, $n^3 + (20 - n)^3 = (n + 20 - n)(n^2 + (20-n)n + (20-n)^2)$ $ = 20(n^2 + (20-n)n + (20-n)^2)$. Thus, we can pair each integer with the difference between $20$ and that integer, and the sum of their cubes is divisible by $20$. Hence, the units digit of the sum of the first $19$ cubes, excluding $10$, is equal to $0$. Also, the units digits of $10^3$ and $20^3$ are clearly $0$, so we just need to find the units digit of the cube of $21$, which is $\\boxed{1}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nThe problem asks to find the units digit of the sum of the first 21 positive perfect cubes.\n\nStep 2:\nThe units digit of a perfect cube is determined by the units digit of the base number.\n\nStep 3:\nThe units digits of the first 21 positive perfect cubes are: \n1^3 = 1, 2^3 = 8, 3^3 = 7, 4^3 = 4, 5^3 = 5, 6^3 = 6, 7^3 = 3, 8^3 = 2, 9^3 = 9, 10^3 = 0, \n11^3 = 1, 12^3 = 8, 13^3 = 7, 14^3 = 4, 15^3 = 5, 16^3 = 6, 17^3 = 3, 18^3 = 2, 19^3 = 9, 20^3 = 0, 21^3 = 1.\n\nStep 4:\nTo find the units digit of the sum, we add the units digits: \n1 + 8 + 7 + 4 + 5 + 6 + 3 + 2 + 9 + 0 + 1 + 8 + 7 + 4 + 5 + 6 + 3 + 2 + 9 + 0 + 1 = 82.\n\nStep 5:\nThe units digit of 82 is 2.\n\nStep 6:\nTherefore, the units digit of the sum of the first 21 positive perfect cubes is 2.\n\nFinal answer:\n\\boxed{2}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7425373134328358
+            }
+        }
+    }
+}

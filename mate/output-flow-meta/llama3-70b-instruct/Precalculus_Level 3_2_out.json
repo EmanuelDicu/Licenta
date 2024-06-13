@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 3_2.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 3",
+        "problem": "Three vertices of a cube are $P=(7,12,10)$, $Q=(8,8,1)$, and $R=(11,3,9)$. What is the side length of the cube?",
+        "correct_solution": "We compute \\[\\begin{aligned} PQ &= \\sqrt{(7-8)^2 + (12-8)^2 + (10-1)^2} = 7\\sqrt{2}, \\\\ QR &= \\sqrt{(8-11)^2 + (8-3)^2 + (1-9)^2} = 7\\sqrt{2}, \\\\ PR &= \\sqrt{(7-11)^2 + (12-3)^2 + (10-9)^2} = 7\\sqrt{2}. \\end{aligned}\\]Thus, $PQR$ is an equilateral triangle made from three vertices of a cube. It follows that each side of $PQR$ must be a face diagonal of the cube, so the side length of the cube is $\\boxed{7}.$\n[asy]\nimport three;\ntriple A=(0,0,0),B=(0,0,1),C=(0,1,1),D=(0,1,0),E=A+(1,0,0),F=B+(1,0,0),G=C+(1,0,0),H=D+(1,0,0);\ndraw(A--B--C--D--A^^E--F--G--H--E^^A--E^^B--F^^C--G^^D--H);\ndraw(B--D--E--B,dashed);\nlabel(\"$P$\",B,N);\nlabel(\"$Q$\",D,SE);\nlabel(\"$R$\",E,SW);\n[/asy]",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nThe distance formula is given by $d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2}$, where $(x_1, y_1, z_1)$ and $(x_2, y_2, z_2)$ are two points in 3D space.\n\nStep 2:\nLet's use the distance formula to find the distance between points $P$ and $Q$.\nThe distance between $P$ and $Q$ is given by $d_{PQ} = \\sqrt{(8 - 7)^2 + (8 - 12)^2 + (1 - 10)^2}$.\n\nStep 3:\nSimplify the expression: $d_{PQ} = \\sqrt{1^2 + (-4)^2 + (-9)^2} = \\sqrt{1 + 16 + 81} = \\sqrt{98}$.\n\nStep 4:\nSince the side length of the cube is the distance between any two adjacent vertices, and $P$ and $Q$ are adjacent vertices, we have that the side length of the cube is $\\sqrt{98} = \\boxed{\\sqrt{2 \\cdot 49} = \\sqrt{2} \\cdot 7}$.\n\nFinal answer:\n\\boxed{\\sqrt{2} \\cdot 7}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8495460440985733
+            }
+        }
+    }
+}

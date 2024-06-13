@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 4_3.json": {
+        "category": "Algebra",
+        "difficulty": "Level 4",
+        "problem": "The product of $3t^2+5t+a$ and $4t^2+bt-2$ is $12t^4+26t^3-8t^2-16t+6$. What is $a+b$?",
+        "correct_solution": "The constant term of the product of two polynomials is just the product of the two constant terms. Therefore we know that $6=-2a$, so $a=-3$. We now consider the linear term of the product of our polynomials. It's given by $-16t=(5t\\cdot-2)+a\\cdot bt\\Longrightarrow-16t=-10t+(-3)bt\\Longrightarrow b=2$. Therefore our answer is $a+b=\\boxed{-1}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "\"\"\"\nStep 1:\nWe are given that the product of $(3t^2+5t+a)$ and $(4t^2+bt-2)$ is $12t^4+26t^3-8t^2-16t+6$. \nWe will calculate this product by multiplying each term of the first polynomial with each term of the second polynomial.\n\nStep 2:\nExpanding the product, we get:\n$12t^4 + (3b + 20)t^3 + (15 + 3a - 5b)t^2 + (5b - 10 - 4a)t + (-2a - 10)$.\n\nStep 3:\nWe are given that this product is equal to $12t^4+26t^3-8t^2-16t+6$. \nEquating the coefficients of each power of $t$, we get:\n$3b + 20 = 26$, $15 + 3a - 5b = -8$, $5b - 10 - 4a = -16$, and $-2a - 10 = 6$.\n\nStep 4:\nSimplifying these equations, we get:\n$b = 2$, $-2 - 5b + 3a = -23$, $-4a + 5b = -6$, and $-2a = 16$.\n\nStep 5:\nSolving for $a$, we get $a = -8$.\n\nStep 6:\nTherefore, the value of $a + b$ is $-8 + 2 = -6$.\n\nFinal answer:\n$\\boxed{-6}$\n\"\"\""
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.77375
+            }
+        }
+    }
+}

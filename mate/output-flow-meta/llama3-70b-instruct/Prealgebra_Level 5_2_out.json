@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 5_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 5",
+        "problem": "In a certain isosceles right triangle, the altitude to the hypotenuse has length $6$.  What is the area of the triangle?",
+        "correct_solution": "In isosceles right triangle $\\triangle ABC$ below, $\\overline{AD}$ is the altitude to the hypotenuse.\n\n[asy]\nimport olympiad;\nunitsize(0.8inch);\npair A,B,C,D;\nA = (0,1);\nB= (1,0);\nC = -B;\nD = (0,0);\ndraw(A--B--C--A,linewidth(1));\ndraw(A--D,linewidth(0.8));\ndraw(rightanglemark(C,A,B,s=5));\ndraw(rightanglemark(C,D,A,s=5));\nlabel(\"$A$\",A,N);\nlabel(\"$B$\",B,S);\nlabel(\"$C$\",C,S);\nlabel(\"$D$\",D,S);\n[/asy]\n\nBecause $\\triangle ABC$ is an isosceles right triangle, $\\angle ABC = 45^\\circ$.  Since $\\angle ADB = 90^\\circ$, we know that $\\angle DAB = 45^\\circ$, so $\\triangle ABD$ is also a 45-45-90 triangle.  Similarly, $\\triangle ACD$ is a 45-45-90 triangle.  Therefore, $DB=DC = DA = 6$, so $BC = BD+DC = 12$, and  \\[[ABC] = \\frac{(AD)(BC)}{2} = \\frac{(6)({12})}{2} = \\boxed{36}.\\]",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nThe given triangle is an isosceles right triangle, so it has two 45\u00b0 angles.\nStep 2:\nDraw an altitude to the hypotenuse, which is the given length of 6.\nStep 3:\nSince the altitude bisects the hypotenuse, the two legs of the triangle are equal and have length $x$.\nStep 4:\nUsing the Pythagorean theorem, we can write an equation relating $x$ and the length of the hypotenuse $h$: $x^2 + x^2 = h^2$.\nStep 5:\nSimplify the equation: $2x^2 = h^2$.\nStep 6:\nSince the altitude bisects the hypotenuse, it creates two right triangles with legs of length $6$ and $x$.\nStep 7:\nUsing the Pythagorean theorem again, we can write another equation: $6^2 + x^2 = (h/2)^2$.\nStep 8:\nSimplify the equation: $36 + x^2 = (h/2)^2$.\nStep 9:\nEquating the expressions for $h^2$ from Steps 5 and 8, we get $2x^2 = 4(36 + x^2)$.\nStep 10:\nSimplify the equation: $2x^2 = 144 + 4x^2$.\nStep 11:\nSubtract $4x^2$ from both sides: $-2x^2 = 144$.\nStep 12:\nDivide both sides by $-2$: $x^2 = 72$.\nStep 13:\nTake the square root of both sides: $x = \\sqrt{72} = 6\\sqrt{2}$.\nStep 14:\nThe area of the triangle is given by $(1/2)bh$, where $b$ is the length of the base and $h$ is the height.\nStep 15:\nSince the triangle is isosceles, the base and height are equal, so $b = h = 6\\sqrt{2}$.\nStep 16:\nPlugging in the values, we get: $(1/2)(6\\sqrt{2})(6\\sqrt{2}) = 36$.\nFinal answer:\n\\boxed{36}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7962291515591008
+            }
+        }
+    }
+}

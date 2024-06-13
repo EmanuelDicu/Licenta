@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 3_3.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 3",
+        "problem": "If $\\mathbf{a} = \\begin{pmatrix} 1 \\\\ 1 \\\\ 1 \\end{pmatrix},$ then find the vector $\\mathbf{v}$ such that $\\mathbf{a} \\cdot \\mathbf{v} = 2$ and $\\mathbf{a} \\times \\mathbf{v} = \\begin{pmatrix} 1 \\\\ -2 \\\\ 1 \\end{pmatrix}.$",
+        "correct_solution": "Let $\\mathbf{v} = \\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix}.$  Then from the equation $\\mathbf{a} \\cdot \\mathbf{v} = 2,$ $x + y + z = 2.$\n\nAlso,\n\\[\\mathbf{a} \\times \\mathbf{v} = \\begin{pmatrix} 1 \\\\ 1 \\\\ 1 \\end{pmatrix} \\times \\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix} = \\begin{pmatrix} -y + z \\\\ x - z \\\\ -x + y \\end{pmatrix}.\\]Hence,\n\\begin{align*}\n-y + z &= 1, \\\\\nx - z &= -2, \\\\\n-x + y &= 1.\n\\end{align*}Solving this system, along with the equation $x + y + z = 2,$ we find $x = -\\frac{1}{3},$ $y = \\frac{2}{3},$ and $z = \\frac{5}{3}.$  Thus, $\\mathbf{v} = \\boxed{\\begin{pmatrix} -1/3 \\\\ 2/3 \\\\ 5/3 \\end{pmatrix}}.$",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nLet the vector $\\mathbf{v} = \\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix}$.\n\nStep 2:\nThe dot product $\\mathbf{a} \\cdot \\mathbf{v} = 2$ can be expanded as $1x + 1y + 1z = 2$.\n\nStep 3:\nSimplifying the equation in Step 2, we get $x + y + z = 2$.\n\nStep 4:\nThe cross product $\\mathbf{a} \\times \\mathbf{v} = \\begin{pmatrix} 1 \\\\ -2 \\\\ 1 \\end{pmatrix}$ can be expanded as \n$\\begin{vmatrix} \\mathbf{i} & \\mathbf{j} & \\mathbf{k} \\\\ 1 & 1 & 1 \\\\ x & y & z \\end{vmatrix} = \\begin{pmatrix} 1 \\\\ -2 \\\\ 1 \\end{pmatrix}$.\n\nStep 5:\nExpanding the determinant, we get the system of equations: \n$y - z = 1, z - x = -2, x - y = 1$.\n\nStep 6:\nSolving the system of equations in Step 5, we get $x = 2, y = 1, z = 0$.\n\nStep 7:\nSubstituting the values of $x, y, z$ into the vector $\\mathbf{v}$, we get $\\mathbf{v} = \\begin{pmatrix} 2 \\\\ 1 \\\\ 0 \\end{pmatrix}$.\n\nFinal answer:\n$\\boxed{\\begin{pmatrix} 2 \\\\ 1 \\\\ 0 \\end{pmatrix}}$"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": false,
+                "Same result": false,
+                "Levenshtein distance value": 0.5769644779332616
+            }
+        }
+    }
+}

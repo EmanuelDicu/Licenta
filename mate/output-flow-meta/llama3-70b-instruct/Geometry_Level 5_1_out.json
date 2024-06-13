@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 5_1.json": {
+        "category": "Geometry",
+        "difficulty": "Level 5",
+        "problem": "An arc of $55$ degrees on circle $A$ has the same length as an arc of $40$ degrees on circle $B$.  What is the ratio of the area of circle $A$ to the area of circle $B$? Express your answer as a common fraction.",
+        "correct_solution": "For a circle of radius $r$ and an arc of $\\theta$ degrees, the arc length is $(2\\pi r)\\frac{\\theta}{360}$. Thus, for the same arc length, the arc angle is inversely proportional to the radius, so the ratio of the radius of circle $A$ to the radius of circle $B$ is $40:55$, or $8:11$. Since the ratio of the areas of two circles is the square of the ratio of their radii, the ratio of the area of circle $A$ to the area of circle $B$ is $(8/11)^2=\\boxed{\\frac{64}{121}}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nLet $r_1$ be the radius of circle $A$ and $r_2$ be the radius of circle $B$.\nStep 2:\nThe length of an arc of a circle is given by $r\\theta$, where $r$ is the radius of the circle and $\\theta$ is the measure of the central angle in radians.\nStep 3:\nThe arc of $55$ degrees on circle $A$ has the same length as an arc of $40$ degrees on circle $B$, so we have $r_1\\cdot55\\pi/180=r_2\\cdot40\\pi/180$.\nStep 4:\nSimplify the equation: $r_1\\cdot55\\pi/180=r_2\\cdot40\\pi/180\\Rightarrow r_1/r_2=40/55$.\nStep 5:\nThe area of a circle is given by $A=\\pi r^2$.  Let $A_1$ be the area of circle $A$ and $A_2$ be the area of circle $B$.\nStep 6:\nThe ratio of the area of circle $A$ to the area of circle $B$ is \n\\frac{A_1}{A_2}=\\frac{\\pi r_1^2}{\\pi r_2^2}=\\frac{r_1^2}{r_2^2}=(r_1/r_2)^2=(40/55)^2=1600/3025.\nStep 7:\nTherefore, the ratio of the area of circle $A$ to the area of circle $B$ is $\\boxed{\\frac{1600}{3025}}$."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": false,
+                "Same result": false,
+                "Levenshtein distance value": 0.683083511777302
+            }
+        }
+    }
+}

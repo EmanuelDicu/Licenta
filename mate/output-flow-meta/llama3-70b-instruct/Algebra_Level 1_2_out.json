@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 1_2.json": {
+        "category": "Algebra",
+        "difficulty": "Level 1",
+        "problem": "Hillary has eleven coins, all dimes and nickels. In total, the coins are worth 75 cents. How many nickels does she have?",
+        "correct_solution": "Let the number of dimes Hillary has be $d$ and the number of nickels she has be $n$. We have the two equations \\begin{align*}\nd+n&=11\\\\\n10d+5n&=75\n\\end{align*} (The last equation is in terms of cents.) To make the second equation nicer, we divide both sides by 5 to get $2d+n=15$. From the first given equation, we have $d=11-n$. Substituting this into the simplified second given equation to eliminate $d$, we get $2(11-n)+n=15\\Rightarrow n=7$. Thus, Hillary has $\\boxed{7}$ nickels.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nLet d be the number of dimes and n be the number of nickels. Since Hillary has eleven coins, we can set up the equation d + n = 11.\nStep 2:\nThe total worth of the coins is 75 cents. Since dimes are worth 10 cents each and nickels are worth 5 cents each, we can set up the equation 10d + 5n = 75.\nStep 3:\nWe can solve the system of equations using substitution or elimination. Here, we will use substitution. Solving the first equation for d, we get d = 11 - n.\nStep 4:\nSubstituting this expression for d into the second equation, we get 10(11 - n) + 5n = 75.\nStep 5:\nExpanding and simplifying, we get 110 - 10n + 5n = 75, which simplifies to 110 - 5n = 75.\nStep 6:\nSubtracting 110 from both sides gives us -5n = -35.\nStep 7:\nDividing both sides by -5 gives us n = 7.\nStep 8:\nTherefore, Hillary has 7 nickels.\nFinal answer:\n\\boxed{7}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.712630359212051
+            }
+        }
+    }
+}

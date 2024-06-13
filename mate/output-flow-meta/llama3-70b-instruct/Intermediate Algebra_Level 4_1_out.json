@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 4_1.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 4",
+        "problem": "The equation of the hyperbola shown below can be written as\n\\[\\frac{(y - k)^2}{a^2} - \\frac{(x - h)^2}{b^2} = 1.\\]Find $h + k + a + b.$\n\n[asy]\nunitsize(0.3 cm);\n\nreal upperhyper (real x) {\n  return (2*sqrt((x - 6)^2/16 + 1) - 5);\n}\n\nreal lowerhyper (real x) {\n  return (-2*sqrt((x - 6)^2/16 + 1) - 5);\n}\n\nint i, n = 10;\n\nfor (i = -n; i <= n; ++i) {\n  draw((i,-n)--(i,n),gray(0.7));\n  draw((-n,i)--(n,i),gray(0.7));\n}\n\ndraw((0,-n)--(0,n));\ndraw((-n,0)--(n,0));\n\ndraw(graph(upperhyper,-10,10),red);\ndraw(graph(lowerhyper,-3,10),red);\ndraw(extension((-10,-10),(10,-10),(6,-5),(6,-5) + (4,2))--extension((10,10),(10,-10),(6,-5),(6,-5) + (4,2)),dashed);\ndraw(extension((-10,-10),(-10,10),(6,-5),(6,-5) + (4,-2))--extension((10,10),(10,-10),(6,-5),(6,-5) + (4,-2)),dashed);\n\ndot((6,-5));\n[/asy]",
+        "correct_solution": "The center of the hyperbola is $(6,-5).$  The distance from the center to a vertex is $a = 2.$  The slopes of the asymptotes are $\\pm \\frac{1}{2},$ so $b = 4.$  Thus, $h + k + a + b = 6 + (-5) + 2 + 4 = \\boxed{7}.$",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "'''\nStep 1:\nThe equation of the hyperbola is given as (y - k)^2/a^2 - (x - h)^2/b^2 = 1.\nStep 2:\nFrom the given graph, we can see that the center of the hyperbola is at (h, k) = (6, -5).\nStep 3:\nSubstituting h = 6 and k = -5 into the equation, we get (y + 5)^2/a^2 - (x - 6)^2/b^2 = 1.\nStep 4:\nFrom the graph, we can see that the hyperbola passes through the points (10, 3) and (2, 3).\nStep 5:\nSubstituting x = 10 and y = 3 into the equation, we get (3 + 5)^2/a^2 - (10 - 6)^2/b^2 = 1, which simplifies to 64/a^2 - 16/b^2 = 1.\nStep 6:\nSubstituting x = 2 and y = 3 into the equation, we get (3 + 5)^2/a^2 - (2 - 6)^2/b^2 = 1, which simplifies to 64/a^2 - 16/b^2 = 1.\nStep 7:\nSince both equations are the same, we can solve for a^2 and b^2. Let 64/a^2 = c and 16/b^2 = c, then c - c = 1, which implies c = 4.\nStep 8:\nTherefore, a^2 = 16 and b^2 = 4, so a = 4 and b = 2.\nStep 9:\nFinally, h + k + a + b = 6 + (-5) + 4 + 2 = \\boxed{7}.\n'''"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8179871520342612
+            }
+        }
+    }
+}

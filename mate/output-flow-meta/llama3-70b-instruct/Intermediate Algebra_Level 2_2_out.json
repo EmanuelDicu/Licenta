@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 2_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 2",
+        "problem": "The complex numbers $a$ and $b$ satisfy\n\\[a + \\overline{b} = 2 - 7i.\\]Find $\\overline{a} + b.$",
+        "correct_solution": "Taking the conjugate of both sides, we get\n\\[\\overline{a + \\overline{b}} = \\overline{2 - 7i} = 2 + 7i.\\]But $\\overline{a + \\overline{b}} = \\overline{a} + \\overline{\\overline{b}} = \\overline{a} + b,$ so\n\\[\\overline{a} + b = \\boxed{2 + 7i}.\\]",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nThe complex numbers $a$ and $b$ satisfy the equation $a + \\overline{b} = 2 - 7i$.\n\nStep 2:\nTo find $\\overline{a} + b$, we can take the conjugate of both sides of the given equation, which gives $\\overline{a + \\overline{b}} = \\overline{2 - 7i}$.\n\nStep 3:\nUsing the property that the conjugate of a sum is the sum of the conjugates, we have $\\overline{a + \\overline{b}} = \\overline{a} + b$.\n\nStep 4:\nUsing the property that the conjugate of a complex number is the complex conjugate, we have $\\overline{2 - 7i} = 2 + 7i$.\n\nStep 5:\nEquating the results from Steps 3 and 4, we get $\\overline{a} + b = 2 + 7i$.\n\nFinal answer:\n$\\boxed{2 + 7i}$"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": false,
+                "Same result": true,
+                "Levenshtein distance value": 0.6991017964071856
+            }
+        }
+    }
+}

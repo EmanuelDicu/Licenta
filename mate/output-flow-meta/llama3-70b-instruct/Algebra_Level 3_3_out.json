@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 3_3.json": {
+        "category": "Algebra",
+        "difficulty": "Level 3",
+        "problem": "Let $h$ be a polynomial of degree $5$, and suppose that $h(x) = (x^2-7x+10) \\cdot g(x)$, where $g(x)$ is a polynomial of degree $b$.  Find $b$.",
+        "correct_solution": "Recall that for positive integers $a$ and $b$ $x^a x^b = x^{a+b}$.  Thus, if $h(x)$, $f(x)$, and $g(x)$ are polynomials such that $h(x)=f(x) \\cdot g(x)$ and if $ x^a $ and $ x^b $ are the highest degree terms of $f(x)$ and $g(x)$ then the highest degree term of $h(x)$ will be $x^{a+b}$.  In our case $f(x) = x^2-7x+10$, the highest degree term is $x^2$ and $h(x)$ has highest degree term $x^5$.  Thus, solving for $b$ in the equation $x^5 = x^2 x^b = x^{2+b}$, we find $b=\\boxed{3}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "\"\"\"\nStep 1:\nThe degree of a polynomial is the highest power of the variable in the polynomial.\nStep 2:\nThe degree of the polynomial h(x) is given as 5.\nStep 3:\nThe degree of the polynomial (x^2-7x+10) is 2, since the highest power of x is 2.\nStep 4:\nSince h(x) = (x^2-7x+10) \\* g(x), the degree of h(x) is the sum of the degrees of (x^2-7x+10) and g(x).\nStep 5:\nEquating the degree of h(x) to the sum of the degrees, we get 5 = 2 + b.\nStep 6:\nSubtracting 2 from both sides, we get 3 = b.\nStep 7:\nTherefore, the degree of the polynomial g(x) is 3.\nFinal answer:\n\\boxed{3}\n\"\"\""
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7526132404181185
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 1_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 1",
+        "problem": "Ben flips a fair nickel four times. What is the probability that Ben flips Head, Tail, Head, Tail, in that order? Express your answer as a common fraction.",
+        "correct_solution": "Since any given flip has equal probability of $\\frac{1}{2}$ of being a Head or a Tail, and all outcomes are equally likely, the precise sequence given is equal to $\\frac{1}{2^4} = \\boxed{\\frac{1}{16}}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nBen flips a fair nickel, which means the probability of getting Heads or Tails is equal.\nStep 2:\nThe probability of getting Heads on a single flip is 1/2, and the probability of getting Tails on a single flip is also 1/2.\nStep 3:\nBen flips the nickel four times, and the desired outcome is Head, Tail, Head, Tail, in that order.\nStep 4:\nSince the flips are independent, we multiply the probabilities of each flip to get the probability of the desired outcome: (1/2) \u00d7 (1/2) \u00d7 (1/2) \u00d7 (1/2) = 1/16.\nStep 5:\nTherefore, the probability that Ben flips Head, Tail, Head, Tail, in that order is 1/16.\nFinal answer:\n\\boxed{\\frac{1}{16}}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7893939393939394
+            }
+        }
+    }
+}

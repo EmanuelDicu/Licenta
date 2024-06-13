@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 5_3.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 5",
+        "problem": "In Mathopolis, an adult is a person 21 years of age or older and a child is a person under 21 years of age.  Exactly half of the  adults in Mathopolis are female, and exactly half of the female  adults have exactly one biological child.  Nobody else has a  child, and there are no other children.  What percent of the  people of Mathopolis are children?",
+        "correct_solution": "Let the percentage of people in Mathopolis who are children be $x$. The percentage of adults is then $1-x$. Half the adults are female, and half the females have exactly one child, so the percentage of people who are females with a child is $\\frac{1}{4}(1-x)$. This percentage is equal to the percentage of children, since there is a correspondence between a mother and a child. So we have the equation $x=\\frac{1}{4}(1-x)$. Solving for $x$ yields $x=1/5$, or $\\boxed{20}$ percent.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nLet the total number of people in Mathopolis be x.\nStep 2:\nLet the number of adults in Mathopolis be A. Then, the number of children in Mathopolis is x - A.\nStep 3:\nExactly half of the adults in Mathopolis are female, so the number of female adults is A/2.\nStep 4:\nExactly half of the female adults have exactly one biological child, so the number of female adults with a child is A/4.\nStep 5:\nNobody else has a child, and there are no other children, so the number of children in Mathopolis is equal to the number of female adults with a child, which is A/4.\nStep 6:\nWe can now set up an equation: x - A = A/4.\nStep 7:\nSolve for A in terms of x: A = (4/5)x.\nStep 8:\nNow, we can find the number of children in Mathopolis: x - A = x - (4/5)x = (1/5)x.\nStep 9:\nThe percentage of people in Mathopolis that are children is (number of children / total population) \u00d7 100. This equals ((1/5)x / x) \u00d7 100 = (1/5) \u00d7 100 = 20.\nStep 10:\nTherefore, the percentage of people in Mathopolis that are children is 20%.\nFinal answer:\n\\boxed{20}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7218543046357616
+            }
+        }
+    }
+}

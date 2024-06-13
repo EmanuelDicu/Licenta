@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 1_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 1",
+        "problem": "Compute $\\arccos \\left( -\\frac{1}{2} \\right).$  Express your answer in radians.",
+        "correct_solution": "Since $\\cos \\frac{2 \\pi}{3} = -\\frac{1}{2},$ $\\arccos \\left( -\\frac{1}{2} \\right) = \\boxed{\\frac{2 \\pi}{3}}.$",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nThe input value to the arccos function is -1/2.\n\nStep 2:\nThe arccosine function, denoted by arccos, is the inverse cosine function. It returns the angle in radians whose cosine is the given input value.\n\nStep 3:\nWe know that the cosine of \u03c0/3 radians is 1/2, and since the input value is -1/2, we need to find the angle whose cosine is -1/2.\n\nStep 4:\nThe cosine function is negative in the second and third quadrants. The reference angle for \u03c0/3 radians is \u03c0/3 radians itself, and its cosine is 1/2. Therefore, the angle in the second quadrant whose cosine is -1/2 is \u03c0 - \u03c0/3 = 2\u03c0/3 radians.\n\nStep 5:\nTherefore, the arccosine of -1/2 is 2\u03c0/3 radians.\n\nFinal answer:\n\\boxed{\\frac{2\\pi}{3}}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.9068150208623088
+            }
+        }
+    }
+}

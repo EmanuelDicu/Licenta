@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 5_3.json": {
+        "category": "Geometry",
+        "difficulty": "Level 5",
+        "problem": "Four circles of radius 1 are each tangent to two sides of a square and externally tangent to a circle of radius 2, as shown.  What is the area of the square?\n\n[asy]\nunitsize(1cm);draw(Circle((0,0),2));\nfor(int i=0; i<4; ++i) {\n\tdraw(Circle(scale(3)*dir(45+90*i),1));\n\tdraw((3+sqrt(2))*dir(45+90*i)--(3+sqrt(2))*dir(-45+90*i));  \n}\ndraw((0,0)--(2,0));\nlabel(\"2\",(1,0),N);\ndraw(scale(3)*dir(45+90*1)--shift((1,0))*scale(3)*dir(45+90*1));\nlabel(\"1\",point(scale(3)*dir(45+90*1)--shift((1,0))*scale(3)*dir(45+90*1),.5),S);\n[/asy]",
+        "correct_solution": "Let $s$ be the length of a side of the square. Consider an isosceles right triangle with vertices at the centers of the circle of radius 2 and two of the circles of radius 1. This triangle has legs of length 3, so its hypotenuse has length $3\\sqrt{2}$.\n\n[asy]\nunitsize(1cm);\ndraw(Circle((0,0),2));\nfor(int i=0; i<4; ++i) {\n\tdraw(Circle(scale(3)*dir(45+90*i),1));\n\tdraw((3+sqrt(2))*dir(45+90*i)--(3+sqrt(2))*dir(-45+90*i));  \n}\npair A = scale(3)*dir(45), B = scale(3)*dir(45+90);\ndraw(A--B--origin--cycle);\nlabel(\"$1$\", A, SE);\nlabel(\"$1$\", B, SW);\nlabel(\"$2$\", point(origin--A,.3), SE);\nlabel(\"$2$\", point(origin--B,.3), SW);\ndraw(rightanglemark(A,origin,B,5));\n[/asy]\n\nThe length of a side of the square is 2 more than the length of this hypotenuse, so  $s=2 + 3\\sqrt{2}$. Hence the area of the square is \\[\ns^{2}=(2+3\\sqrt{2})^{2}=\\boxed{22+12\\sqrt{2}}.\n\\]",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nLet the side length of the square be s.\n\nStep 2:\nWe can draw a diagonal of the square, which will split the square into two right triangles.\n\nStep 3:\nBecause the circles are tangent to the sides of the square, and the diagonal of the square intersects the center of the circle of radius 2, we can draw a radius from the center of the circle to the point where the diagonal intersects the circle. \n\nStep 4:\nThis creates a smaller right triangle, which has a hypotenuse of 2 (the radius of the circle), a leg of 1 (the radius of the smaller circle), and another leg of s/\\sqrt{2} (half of the diagonal of the square).\n\nStep 5:\nWe can use the Pythagorean theorem on this smaller triangle to get: (s/\\sqrt{2})^2 + 1^2 = 2^2.\n\nStep 6:\nSimplifying the equation, we get: s^2 / 2 + 1 = 4.\n\nStep 7:\nSolving for s, we get: s^2 = 6, s = \\sqrt{6}.\n\nStep 8:\nThe area of the square is therefore s^2 = (\\sqrt{6})^2 = \\boxed{6}.\n\nFinal answer:\n\\boxed{6}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7696280991735537
+            }
+        }
+    }
+}

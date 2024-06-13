@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 2_1.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 2",
+        "problem": "Two reals $x$ and $y$ are such that $x-y=4$ and $x^3-y^3=28$. Compute $xy$.",
+        "correct_solution": "We have $28=x^3-y^3=(x-y)(x^2+xy+y^2)=(x-y)((x-y)^2+3xy)=4\\cdot (16+3xy)$, from which $xy=\\boxed{-3}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "\"\"\"\nStep 1:\nWe are given the equation x - y = 4, which means y = x - 4.\nStep 2:\nWe are also given the equation x^3 - y^3 = 28. Substituting y = x - 4 into this equation, we get x^3 - (x - 4)^3 = 28.\nStep 3:\nExpanding the cube, we get x^3 - (x^3 - 12x^2 + 48x - 64) = 28.\nStep 4:\nSimplifying the equation, we get 12x^2 - 48x + 36 = 0.\nStep 5:\nDividing both sides by 4, we get 3x^2 - 12x + 9 = 0.\nStep 6:\nFactoring the quadratic equation, we get (3x - 3)(x - 3) = 0.\nStep 7:\nSolving for x, we get x = 1 or x = 3.\nStep 8:\nIf x = 1, then y = -3. If x = 3, then y = -1.\nStep 9:\nIn either case, xy = -3.\nStep 10:\nTherefore, the product of x and y is -3.\nFinal answer:\n\\boxed{-3}\n\"\"\""
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.900887573964497
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 5_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 5",
+        "problem": "How many different positive integers divisible by 4 can be formed using each of the digits 1, 2, 3, and 4 at most once, and no other digits? For example, 12 counts, but 512 does not.",
+        "correct_solution": "The only one-digit integer divisible by $4$ that we can construct is $4$.\n\nWe can construct $3$ two-digit integers divisible by $4$: $12$, $32$, and $24$.\n\nAn integer is divisible by $4$ if its rightmost two digits are divisible by $4$.  Thus we can append either or both of the remaining two digits to any of these two-digit integers and preserve divisibility by $4$.  For each, there are $2$ ways to choose one digit to append, and $2$ ways to order the digits if we append both of them.  Thus we get $4$ more integers for each, or $12$ total.\n\nThe full number is $12+3+1=\\boxed{16}$ integers.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nThe problem requires forming positive integers divisible by 4 using each of the digits 1, 2, 3, and 4 at most once.\n\nStep 2:\nA positive integer is divisible by 4 if its last two digits form a multiple of 4.\n\nStep 3:\nThe possible last two digits are 12, 24, 32, and 44 (since each digit can be used at most once). There are 4 options.\n\nStep 4:\nFor each of these options, we can add a single digit (1, 2, 3, or 4) to the front to form a positive integer. However, not all of these options will result in a positive integer divisible by 4.\n\nStep 5:\nFor example, if the last two digits are 12, we can add 1, 2, 3, or 4 to the front. Only 212 and 412 are divisible by 4.\n\nStep 6:\nBy applying this logic to all 4 options for the last two digits, we find that there are a total of 6 positive integers divisible by 4 that can be formed: 212, 412, 224, 324, 232, and 432.\n\nStep 7:\nTherefore, there are 6 different positive integers divisible by 4 that can be formed using the given digits.\n\nFinal answer:\n\\boxed{6}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7075289575289575
+            }
+        }
+    }
+}

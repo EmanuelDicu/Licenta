@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 4_3.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "What is the area, in square units, of the square with the four vertices at $(-2, 2), (2, -2), (-2, -6)$, and $(-6, -2)$?",
+        "correct_solution": "The length of the square is $\\sqrt{4^2 + 4^2} = 4\\sqrt{2}$. Therefore, the area of the square is $(4\\sqrt{2})^2 = \\boxed{32}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nThe given vertices are $(-2, 2), (2, -2), (-2, -6)$, and $(-6, -2)$. \nStep 2:\nSince it is a square, all sides are equal. So, we can find the length of one side by finding the distance between any two adjacent vertices. \nStep 3:\nLet's find the distance between $(-2, 2)$ and $(2, -2)$. Using the distance formula $\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$, we get $\\sqrt{(2-(-2))^2+(-2-2)^2}=\\sqrt{16+16}=\\sqrt{32}$.\nStep 4:\nSince $\\sqrt{32}=4\\sqrt{2}$, the length of each side of the square is $4\\sqrt{2}$.\nStep 5:\nThe area of a square is the square of the length of its side. So, the area of this square is $(4\\sqrt{2})^2=16\\cdot2=\\boxed{32}$.\n\nFinal answer:\n\\boxed{32}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8321273516642547
+            }
+        }
+    }
+}

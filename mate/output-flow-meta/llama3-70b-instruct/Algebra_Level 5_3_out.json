@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 5_3.json": {
+        "category": "Algebra",
+        "difficulty": "Level 5",
+        "problem": "Billy shoots an arrow from 10 feet above the ground. The height of this arrow can be expressed by the equation $h=10-23t-10t^2$, where $t$ is time in seconds since the arrow was shot. If the center of a target is raised 5 feet off the ground, in how many seconds must the arrow reach the target in order for Billy to hit the bulls eye?",
+        "correct_solution": "Since the center of the target is 5 feet above the ground, $h=5$. So we get the quadratic: \\begin{align*}5& =10-23t-10t^{2}\n\\\\ \\Rightarrow\\qquad 0& =10t^{2}+23t-5\n\\\\ \\Rightarrow\\qquad 0&=(2t+5)(5t-1).\n\\end{align*}Thus, the values of $t$ that satisfy the equation are $-\\frac52$ and $\\frac15$. However, since time can never be a negative number, the answer must be $\\boxed{\\dfrac{1}{5}}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nThe height of the arrow is given by the equation h = 10 - 23t - 10t^2, where t is time in seconds since the arrow was shot.\nStep 2:\nThe target is raised 5 feet off the ground, so the height of the target is 5 feet.\nStep 3:\nTo hit the bulls eye, the arrow must reach the target, so the height of the arrow at that moment must be equal to the height of the target. Thus, we set up the equation 10 - 23t - 10t^2 = 5.\nStep 4:\nSubtract 10 from both sides of the equation to get -23t - 10t^2 = -5.\nStep 5:\nAdd 5 to both sides of the equation to get -23t - 10t^2 + 5 = 0.\nStep 6:\nDivide both sides of the equation by -1 to get 23t + 10t^2 - 5 = 0.\nStep 7:\nRearrange the equation to get 10t^2 + 23t - 5 = 0.\nStep 8:\nFactor the left-hand side of the equation to get (5t - 1)(2t + 5) = 0.\nStep 9:\nSet each factor equal to 0 and solve for t: 5t - 1 = 0 --> 5t = 1 --> t = 1/5, and 2t + 5 = 0 --> 2t = -5 --> t = -5/2.\nStep 10:\nSince time cannot be negative, we reject the solution t = -5/2 and conclude that t = 1/5 is the time it takes for the arrow to reach the target.\nFinal answer: \n\\boxed{\\frac{1}{5}}\n'''"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7884955752212389
+            }
+        }
+    }
+}

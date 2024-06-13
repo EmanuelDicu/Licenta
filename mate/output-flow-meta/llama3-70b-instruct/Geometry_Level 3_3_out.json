@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 3_3.json": {
+        "category": "Geometry",
+        "difficulty": "Level 3",
+        "problem": "A rectangle with perimeter 176 is divided into five congruent rectangles as shown in the diagram.  What is the perimeter of one of the five congruent rectangles?\n\n[asy]\nunitsize(0.6 cm);\n\ndraw((0,0)--(6,0)--(6,5)--(0,5)--cycle);\ndraw((0,2)--(6,2));\ndraw((3,0)--(3,2));\ndraw((2,2)--(2,5));\ndraw((4,2)--(4,5));\n[/asy]",
+        "correct_solution": "Let $x$ and $y$ be the width and length of one of the five rectangles, respectively.\n\n[asy]\nunitsize(0.6 cm);\n\ndraw((0,0)--(6,0)--(6,5)--(0,5)--cycle);\ndraw((0,2)--(6,2));\ndraw((3,0)--(3,2));\ndraw((2,2)--(2,5));\ndraw((4,2)--(4,5));\n\nlabel(\"$x$\", (1,5), N);\nlabel(\"$x$\", (3,5), N);\nlabel(\"$x$\", (5,5), N);\nlabel(\"$y$\", (6,7/2), E);\nlabel(\"$x$\", (6,1), E);\nlabel(\"$y$\", (0,7/2), W);\nlabel(\"$x$\", (0,1), W);\nlabel(\"$y$\", (3/2,0), S);\nlabel(\"$y$\", (9/2,0), S);\n[/asy]\n\nThen $3x = 2y$ and $5x + 4y = 176$.  Solving for $x$ and $y$, we find $x = 16$ and $y = 24$.  Hence, the perimeter of one of the five congruent rectangles is $2x + 2y = \\boxed{80}$.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nThe perimeter of the original rectangle is 176.\nStep 2:\nBecause the perimeter of a rectangle is the sum of the lengths of all its sides, the original rectangle has two sides of length x and two sides of length y, where 2x + 2y = 176.\nStep 3:\nDividing both sides of the equation by 2, we get x + y = 88.\nStep 4:\nBecause the original rectangle is divided into five congruent rectangles, we can divide the original rectangle into two parts horizontally and three parts vertically, as shown in the diagram.\nStep 5:\nThis means that one of the five congruent rectangles has sides of length x/3 and y/2.\nStep 6:\nThe perimeter of one of the five congruent rectangles is 2(x/3) + 2(y/2) = 2x/3 + 2y/2.\nStep 7:\nSimplifying the expression, we get 2x/3 + y = 2x/3 + (88 - x) = 88 - x/3.\nStep 8:\nBecause the original rectangle has a perimeter of 176, we know that x and y are integers such that x + y = 88.\nStep 9:\nTherefore, the only possible values of x are 24, 32, 40, 48, 56, 64, 72, and 80.\nStep 10:\nSubstituting these values of x into the expression 88 - x/3, we find that the perimeter of one of the five congruent rectangles is 44.\n\nFinal answer:\n\\boxed{44}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7996618765849535
+            }
+        }
+    }
+}
