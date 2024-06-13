@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 3_2.json": {
+        "category": "Algebra",
+        "difficulty": "Level 3",
+        "problem": "Find the positive difference between the solutions to the equation $6t^2 + 30 = 41t$.",
+        "correct_solution": "Rearranging the equation gives $6t^2 -41t + 30 = 0$.  Factoring gives $(t-6)(6t-5)= 0$, so the solutions to the equation are $t=6$ and $t=\\frac{5}{6}$.  The positive difference between these solutions is $6 - \\frac56 = \\boxed{\\frac{31}{6}}.$",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To solve this problem, we can follow these steps:\n\nStep 1: Rearrange the equation into standard form\nRearranging the equation $6t^2 + 30 = 41t$ into standard form helps us identify the solutions more easily. We want the equation to be in the form $at^2 + bt + c = 0$. So, rewrite the given equation as follows:\n$6t^2 - 41t + 30 = 0$\n\nStep 2: Find the solutions using the quadratic formula\nTo find the solutions to a quadratic equation in the form $at^2 + bt + c = 0$, we can use the quadratic formula:\n$t = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.\n\nComparing with our equation $6t^2 - 41t + 30 = 0$, we have:\n$a = 6$, $b = -41$, $c = 30$.\n\nNow, substitute these values into the formula and calculate the solutions.\n\nStep 3: Calculate the solutions\nSubstitute the values into the quadratic formula:\n$t = \\frac{41 \\pm \\sqrt{(-41)^2 - 4*6*30}}{2*6}$\n\nSimplify:\n$t = \\frac{41 \\pm \\sqrt{1681 - 720}}{12} = \\frac{41 \\pm \\sqrt{961}}{12}$.\n\nThus, the solutions are $t_1 = \\frac{41 + 31}{12} = \\frac{72}{12} = 6$ and $t_2 = \\frac{41 - 31}{12} = \\frac{10}{12} = \\frac{5}{6}$.\n\nStep 4: Find the positive difference between the solutions\nFinally, to find the positive difference between the solutions, calculate $|t_1 - t_2|$:\n$|6 - \\frac{5}{6}| = |\\frac{36}{6} - \\frac{5}{6}| = |\\frac{31}{6}| = \\frac{31}{6}$.\n\nTherefore, the positive difference between the solutions to the equation $6t^2 + 30 = 41t$ is $\\frac{31}{6}$."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8419928825622776
+            }
+        }
+    }
+}

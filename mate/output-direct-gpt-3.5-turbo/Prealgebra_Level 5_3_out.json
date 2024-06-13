@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 5_3.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 5",
+        "problem": "In Mathopolis, an adult is a person 21 years of age or older and a child is a person under 21 years of age.  Exactly half of the  adults in Mathopolis are female, and exactly half of the female  adults have exactly one biological child.  Nobody else has a  child, and there are no other children.  What percent of the  people of Mathopolis are children?",
+        "correct_solution": "Let the percentage of people in Mathopolis who are children be $x$. The percentage of adults is then $1-x$. Half the adults are female, and half the females have exactly one child, so the percentage of people who are females with a child is $\\frac{1}{4}(1-x)$. This percentage is equal to the percentage of children, since there is a correspondence between a mother and a child. So we have the equation $x=\\frac{1}{4}(1-x)$. Solving for $x$ yields $x=1/5$, or $\\boxed{20}$ percent.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Let's break down the problem into smaller parts:\n\n1. Determine the percentage of people in Mathopolis who are adult females with exactly one biological child:\n   - Since exactly half of the adults are female and half of the female adults have exactly one biological child, then the percentage of adult females with one biological child is \\( \\frac{1}{2} \\times \\frac{1}{2} = \\frac{1}{4} \\).\n   \n2. Determine the percentage of adult females without children:\n   - Since not all adult females have children, the rest (three-fourths) of adult females don't have children. This means the percentage is \\( \\frac{3}{4} \\).\n   \n3. Determine the total percentage of adults in Mathopolis:\n   - Since half of the adults are females, then the percentage of adult males is also half, which makes the total percentage of adults \\( \\frac{1}{2} + \\frac{1}{2} = 1 \\).\n\n4. Determine the percentage of people who are children in Mathopolis:\n   - Since all children are people under 21 years old and the rest of the population are adults who are 21 years or older, the percentage of children is given by \\( 1 - 1 = 0 \\). This is because everyone in Mathopolis is an adult, no one is a child according to the given conditions.\n\nTherefore, the solution to the problem is that 0% of the people in Mathopolis are children, as all individuals in Mathopolis are adults based on the provided conditions."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7465504720406682
+            }
+        }
+    }
+}

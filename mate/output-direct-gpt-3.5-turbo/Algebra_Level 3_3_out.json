@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 3_3.json": {
+        "category": "Algebra",
+        "difficulty": "Level 3",
+        "problem": "Let $h$ be a polynomial of degree $5$, and suppose that $h(x) = (x^2-7x+10) \\cdot g(x)$, where $g(x)$ is a polynomial of degree $b$.  Find $b$.",
+        "correct_solution": "Recall that for positive integers $a$ and $b$ $x^a x^b = x^{a+b}$.  Thus, if $h(x)$, $f(x)$, and $g(x)$ are polynomials such that $h(x)=f(x) \\cdot g(x)$ and if $ x^a $ and $ x^b $ are the highest degree terms of $f(x)$ and $g(x)$ then the highest degree term of $h(x)$ will be $x^{a+b}$.  In our case $f(x) = x^2-7x+10$, the highest degree term is $x^2$ and $h(x)$ has highest degree term $x^5$.  Thus, solving for $b$ in the equation $x^5 = x^2 x^b = x^{2+b}$, we find $b=\\boxed{3}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To solve this problem, we can break it down into smaller parts:\n\n1. **Degree of $h(x)$**:\nGiven that $h(x)$ is a polynomial of degree 5, we can deduce that the leading term of $h(x)$ must be $x^5$. This is because the degree of a polynomial is equal to the highest power of $x$ in the polynomial.\n\n2. **Expansion of $h(x)$**:\nGiven that $h(x) = (x^2 - 7x + 10) \\cdot g(x)$, we can expand this expression to get:\n$h(x) = x^2 \\cdot g(x) - 7x \\cdot g(x) + 10 \\cdot g(x)$\n\n3. **Degree comparison**:\nBased on the expansion of $h(x)$, we can see that the degree of $h(x)$ is the same as the highest degree term in the expansion. Therefore, the degree of $h(x)$ is the degree of the highest degree term in the expansion. From point 1, we know that the degree of $h(x)$ is 5.\n\n4. **Degree of $g(x)$**:\nComparing the terms in the expansion of $h(x)$, we see that the highest degree term is $x^2 \\cdot g(x)$. Since the degree of $h(x)$ is 5 and it comes from multiplying $x^2$ with $g(x)$, we deduce that $b = 3$.\n  \nTherefore, the value of $b$, the degree of the polynomial $g(x)$ is $\\boxed{3}$."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7194112235510579
+            }
+        }
+    }
+}

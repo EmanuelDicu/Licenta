@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 5_3.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 5",
+        "problem": "How many subsets of the set of divisors of $72$ contain only composite numbers? For example, $\\{8,9\\}$ and $\\{4,8,12\\}$ are two such sets. Include the empty set in your count.",
+        "correct_solution": "We know that the number of subsets of any given set is equal to $2^n,$ where $n$ is the number of elements in the set. First, then, we need to find the number of composite divisors. The prime factorization of $72$ is $72=2^3 \\cdot 3^2,$ so there are $(3+1)(2+1)=12$ total divisors. (To see this, note that we can form a divisor of the form $2^a 3^b$ by freely choosing $a=0,1,2,3$ and $b=0,1,2$). Of these, $1$ is neither prime nor composite, and $2$ and $3$ are prime, for a total of $9$ composite divisors. Therefore there are $2^9=\\boxed{512}$ subsets of the divisors of $72$ with only composite divisors.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To solve this problem, we can split it into the following smaller parts:\n\n1. Find the prime factorization of $72$.\n2. Determine the set of divisors of $72$.\n3. Identify which divisors are composite numbers.\n4. Count the number of subsets that contain only composite divisors.\n\nLet's go through each part in detail:\n\n1. Prime factorization of $72$:\n$72 = 2^3 \\times 3^2$\n\n2. Set of divisors of $72$:\nThe set of divisors of $72$ can be found by using the prime factorization. The divisors are obtained by taking different combinations of the prime factors. In this case, the divisors are: $1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, 72$\n\n3. Identify composite divisors:\nWe need to identify which divisors are composite numbers. Any number greater than $1$ that is not a prime number is a composite number. In this case, the composite divisors of $72$ are: $4, 6, 8, 9, 12, 18, 24, 36, 72$\n\n4. Count the number of subsets with only composite divisors:\nTo form a subset containing only composite divisors, we have to choose a combination of the composite divisors. Since we want to include the empty set as well, each element (composite divisor) has two choices - either include it in the subset or exclude it.\n\nThus, the total number of subsets containing only composite divisors is $2^9 = 512$, including the empty set.\n\nTherefore, the solution to the problem is that there are $512$ subsets of the set of divisors of $72$ that contain only composite numbers, including the empty set."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7371273712737128
+            }
+        }
+    }
+}

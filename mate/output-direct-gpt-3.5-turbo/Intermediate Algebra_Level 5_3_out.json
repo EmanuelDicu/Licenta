@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 5_3.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 5",
+        "problem": "The complex numbers $z$ and $w$ satisfy the system\n\\begin{align*}\nz + \\frac{20i}w &= 5+i, \\\\\nw+\\frac{12i}z &= -4+10i.\n\\end{align*}Find the smallest possible value of $\\vert zw\\vert^2$.",
+        "correct_solution": "Multiplying the two equations, we have \\[zw + 12i + 20i - \\frac{240}{zw} = (5+i) (-4+10i) = -30 + 46i.\\]Letting $t = zw,$ this simplifies to \\[t^2 + (30-14i)t - 240 = 0.\\]By the quadratic formula, \\[t = \\frac{-(30-14i) \\pm \\sqrt{(30-14i)^2 + 4\\cdot240}}{2} = -(15-7i) \\pm \\sqrt{416-210i}.\\]We hope that we can write $416 - 210i = (a+bi)^2,$ for some integers $a$ and $b.$ Upon expansion, we get the equations $416 = a^2-b^2$ and $-210=2ab$. The smallest perfect square greater than $416$ is $21^2 = 441$, so we try $a = 21$; then $416 = 441 - b^2$, so $b^2 = 25$ and $b = \\pm 5$. Indeed, we get the solution $(a, b) = (21, -5)$.\n\nTherefore, \\[t = -(15-7i) \\pm (21-5i) = 6+2i \\; \\text{or} \\; -36+12i.\\]The choice of $t=zw$ with smallest magnitude is $t = 6+2i,$ giving \\[|t|^2 = 6^2 + 2^2 = \\boxed{40}.\\]",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To solve this problem, we can follow these steps:\n\nStep 1: Let's first express $z$ and $w$ in terms of their real and imaginary parts. Let $z = a + bi$ and $w = c + di$, where $a, b, c, d$ are real numbers.\n\nStep 2: Substitute the expressions of $z$ and $w$ into the given system of equations. This will give us two equations in terms of $a, b, c, d$.\n\nThe given system of equations is:\n\\begin{align*}\na + bi + \\frac{20i}{c + di} &= 5+i, \\\\\nc + di + \\frac{12i}{a + bi} &= -4+10i.\n\\end{align*}\n\nStep 3: Apply algebraic manipulation to simplify the equations. Multiply by the conjugate of the denominator to clear the fractions.\n\nFor the first equation:\n\\begin{align*}\n(a + bi)(c - di) + 20i &= (5+i)(c - di) \\\\\nac - adi + bci + bd + 20i &= 5c - 5di + ci + di^2 \\\\\n(ac + bd) + (bc - ad - 5)d + (20 - 5c)i &= 5c - 5d - 5i.\n\\end{align*}\n\nSimilarly, for the second equation:\n\\begin{align*}\n(a + bi)(c - di) + 12i &= (-4+10i)(a - bi) \\\\\nac - adi + bci + bd + 12i &= -4a + 4bi + 10ai - 10b \\\\\n(ac + bd) + (-ad + bc + 10a)d + (4 - 10b)i &= -4a - 10b - 4i.\n\\end{align*}\n\nStep 4: Equate the real and imaginary parts of both sides of each equation to obtain a system of equations in terms of $a, b, c, d$.\n\nFor the real parts:\n\\begin{align*}\nac + bd &= 5c - 5d, \\\\\nac + bd &= -4a - 10b + 4.\n\\end{align*}\n\nFor the imaginary parts:\n\\begin{align*}\n20 - 5c &= 0, \\\\\n4 - 10b &= 0.\n\\end{align*}\n\nSolving these equations will give us the values of $a, b, c, d$. \n\nStep 5: Once we find the values of $a, b, c, d$, we can calculate $zw = (a+bi)(c+di)$ and then find $\\vert zw \\vert^2 = |zw|^2 = (a^2 + b^2)(c^2 + d^2)$.\n\nThis will give us the smallest possible value of $\\vert zw\\vert^2$ based on the values obtained for $a, b, c, d$."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7992998833138857
+            }
+        }
+    }
+}

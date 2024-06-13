@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 2_1.json": {
+        "category": "Geometry",
+        "difficulty": "Level 2",
+        "problem": "In the figure below $AB = BC$, $m \\angle ABD = 30^{\\circ}$, $m \\angle C = 50^{\\circ}$ and $m \\angle CBD = 80^{\\circ}$. What is the number of degrees in the measure of angle $A$?\n\n[asy]\ndraw((0,0)--1.5dir(-15)--3.5dir(60)--(0,0),linewidth(2));\ndraw(1.5dir(-15)--1.5dir(-15)+4dir(35)--3.5dir(60),linewidth(2));\nlabel(\"A\",(0,0),W);\nlabel(\"B\",3.5dir(60),N);\nlabel(\"C\",1.5dir(-15)+4dir(35),E);\nlabel(\"D\",1.5dir(-15),S);\n[/asy]",
+        "correct_solution": "We know two of the angles in $\\triangle BCD$: $$m\\angle CBD = 80^\\circ, ~~m\\angle BCD = 50^\\circ.$$ Since the sum of angles in a triangle is $180^\\circ$, we conclude that $m\\angle BDC = 180^\\circ - (50^\\circ+80^\\circ) = 50^\\circ$.\n\nTherefore, $\\triangle BCD$ is isosceles with equal angles at $C$ and $D$, which implies that the sides opposite those angles ($BD$ and $BC$) are equal.\n\nSince we are given $AB=BC$, we now know that $AB=BD$, which means that $\\triangle ABD$ is isosceles with equal angles at $A$ and $D$. Let $x = m\\angle A$. Then the sum of angles in $\\triangle ABD$ is $180^\\circ$, so $$x + x + 30^\\circ = 180^\\circ.$$ We can solve this equation to get $x = 75^\\circ$. So, $m\\angle A = \\boxed{75^\\circ}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To solve this problem, we can first find the measure of angle $DBC$, then use the properties of triangles to find the measure of angle $A$. Let's break down the solution into smaller parts:\n\nPart 1: Finding the measure of angle $DBC$.\nSince $AB = BC$, triangle $ABC$ is isosceles. Therefore, $\\angle ABC = \\angle ACB$. Given that $\\angle C = 50^{\\circ}$ and $\\angle BAC = 30^{\\circ}$ in triangle $ABC$, we have:\n\n$\\angle ABC = \\angle ACB = \\frac{180^{\\circ} - \\angle BAC}{2} = \\frac{180^{\\circ} - 30^{\\circ}}{2} = 75^{\\circ}$.\n\nNow, in triangle $DBC$, we can find the measure of angle $DBC$:\n\n$\\angle DBC = \\angle ABC - \\angle ABD = 75^{\\circ} - 30^{\\circ} = 45^{\\circ}$.\n\nPart 2: Finding the measure of angle $A$.\nTriangle $ABD$ is isosceles since $AB = BD$. Thus, $\\angle ADB = \\angle BAD$. Let $x = \\angle ADB = \\angle BAD$. We can express $x$ in terms of the angles we know:\n\n$x + 30^{\\circ} + 80^{\\circ} = 180^{\\circ}$ (Sum of angles in triangle $BDC$)\n\nSolving for $x$:\n\n$x = 180^{\\circ} - 30^{\\circ} - 80^{\\circ} = 70^{\\circ}$.\n\nTherefore, the measure of angle $A$ is $70^{\\circ}$.\n\nTherefore, the solution to the problem is $\\boxed{70^{\\circ}}$."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": false,
+                "Levenshtein distance value": 0.6851691240242844
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Precalculus_Level 5_4.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 5",
+        "problem": "Let $0, a, b, c$ be the vertices of a square in counterclockwise order.  Compute\n\\[\\frac{ac + b^2}{ab}.\\]Enter your answer in rectangular form.",
+        "correct_solution": "Here's a labelled picture of our square, with the vertices connected to the origin:\n[asy]\nimport TrigMacros; \nsize(180); \n\npair O, A, B, C;\n\nrr_cartesian_axes(-2, 8, -5, 7, complexplane = true, usegrid = false); \nO = (0,0); \nA = (3, -1); \nB = scale(sqrt(2))*rotate(45)*A; \nC = rotate(90)*A; \n\ndraw(A--B--C--O--cycle); \ndraw(O--B); \n\ndot(\"$a$\", A, S); \ndot(\"$b$\", B, E); \ndot(\"$c$\", C, N); \ndot(\"$0$\", O, SW); \n[/asy]\n\nWe know $b$ is a rotation of $a$ by $\\pi/4$ around the origin, scaled by a factor of $\\sqrt{2}$. That means that $b = \\sqrt{2}e^{\\pi i/4} a$, which becomes\n\\begin{align*} \nb &= \\sqrt{2}(\\cos (\\pi/4) + i \\sin(\\pi/4))a \\\\\n    &= \\sqrt{2}\\left( \\dfrac{\\sqrt{2}}{2} + \\dfrac{\\sqrt{2}}{2} i\\right)a \\\\\n    &= (1+i)a.\n\\end{align*}Therefore, $\\frac{b}{a} = 1+i.$\n\nSimilarly, $c$ is a rotation of $b$ by $\\pi/4$ around the origin, scaled by a factor of $\\frac{1}{\\sqrt{2}},$  That means $c = \\frac{e^{\\pi i/4}}{\\sqrt{2}} b,$ which becomes\n\\[c = \\frac{\\sqrt{2}/2 + \\sqrt{2}/2 \\cdot i}{\\sqrt{2}} b = \\frac{1 + i}{2} b.\\]Therefore, $\\frac{c}{b} = \\frac{1 + i}{2}.$\n\nThen\n\\[\\frac{ac + b^2}{ab} = \\frac{c}{b} + \\frac{b}{a} = \\frac{1 + i}{2} + 1 + i = \\boxed{\\frac{3}{2} + \\frac{3}{2} i}.\\]",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To solve this problem, we can break it down into smaller parts:\n\n1. Given that $0, a, b, c$ are vertices of a square in counterclockwise order, we can represent these points as complex numbers. Let $a = x$ and $b = xi$, since they are on the complex plane with $0$ as the origin and $x$ as the real part. Then, $c = x + xi = x(1+i) = x\\sqrt{2}(\\frac{1}{\\sqrt{2}} + \\frac{1}{\\sqrt{2}}i) = x\\sqrt{2}(\\cos(\\frac{\\pi}{4}) + i\\sin(\\frac{\\pi}{4}))$.\n\n2. Next, we need to compute $ac + b^2$. \n\\[ac = x\\sqrt{2}(\\cos(\\frac{\\pi}{4}) + i\\sin(\\frac{\\pi}{4})) \\times x = x^2\\sqrt{2}(\\cos(\\frac{\\pi}{4}) + i\\sin(\\frac{\\pi}{4})).\\]\n\\[b^2 = (xi)^2 = -x^2.\\]\nTherefore, $ac + b^2 = x^2\\sqrt{2}(\\cos(\\frac{\\pi}{4}) + i\\sin(\\frac{\\pi}{4})) - x^2 = x^2(\\sqrt{2}\\cos(\\frac{\\pi}{4}) + i\\sqrt{2}\\sin(\\frac{\\pi}{4}) - 1)$.\n\n3. Finally, we need to compute $\\frac{ac + b^2}{ab}$. \n\\[ab = x \\cdot xi = -x^2.\\]\nTherefore, $\\frac{ac + b^2}{ab} = \\frac{x^2(\\sqrt{2}\\cos(\\frac{\\pi}{4}) + i\\sqrt{2}\\sin(\\frac{\\pi}{4}) - 1)}{-x^2} = -\\sqrt{2}\\cos(\\frac{\\pi}{4}) - i\\sqrt{2}\\sin(\\frac{\\pi}{4}) + \\frac{1}{x^2}$.\n\nTherefore, our final answer when written in rectangular form is $\\boxed{-\\sqrt{2}\\cos(\\frac{\\pi}{4}) + i\\sqrt{2}\\sin(\\frac{\\pi}{4}) + \\frac{1}{x^2}}$."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7811228641171685
+            }
+        }
+    }
+}

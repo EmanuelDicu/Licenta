@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 5_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 5",
+        "problem": "How many squares have all four vertices on the 5 by 5 rectangular grid of dots below? Two such squares are displayed. [asy]\nsize(50);\nfor(int i = 0; i < 5; ++i){\n\nfor(int j = 0; j < 5; ++j){\n\ndot((i,j));\n\n}\n}\ndraw((0,4)--(1,4)--(1,3)--(0,3)--cycle,linewidth(0.7));\ndraw((2,0)--(4,1)--(3,3)--(1,2)--cycle,linewidth(0.7));\n[/asy]",
+        "correct_solution": "Identify all the possible sizes of squares and count the number of squares of each size separately.   \\[\n\\begin{array}{cc}\n\\text{Size} & \\text{number of squares} \\\\ \\hline\n\\rule{0pt}{12pt}1\\times 1 & 16 \\\\\n2 \\times 2 & 9 \\\\\n3 \\times 3 & 4 \\\\\n4 \\times 4 & 1 \\\\\n\\sqrt{2}\\times\\sqrt{2} & 9 \\\\\n\\sqrt{5}\\times\\sqrt{5} & 8 \\\\\n\\sqrt{8}\\times\\sqrt{8} & 1 \\\\\n\\sqrt{10}\\times\\sqrt{10} & 2\n\\end{array}\n\\] The sum of the numbers in the second column is $\\boxed{50}$.\n\nNote: the possible side lengths of a square drawn on a square grid with $n^2$ dots are the real numbers of the form $\\sqrt{x^2+y^2}$ where $x$ and $y$ are nonnegative integers satisfying $x+y\\leq n-1$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To solve this problem, we can break it down into smaller parts and tackle each part step by step. Here's how we can approach the problem:\n\n1. **Understand the Problem**: We need to count the number of squares that have all four vertices on the 5 by 5 rectangular grid of dots.\n\n2. **Analyze the Types of Squares**: We can categorize the squares based on their sizes. The squares can have side lengths of 1 unit, 2 units, 3 units, or 4 units.\n\n3. **Counting Squares of Side Length 1**: On a 5 by 5 grid, there are 4 squares of side length 1 unit for each row and each column. So, there are a total of $4 \\times 4 = 16$ squares of side length 1 unit.\n\n4. **Counting Squares of Side Length 2**: Now, we can count the number of squares of side length 2 units. Consider each dot in the grid as the top-left corner of a 2 by 2 square. There are 16 such positions. For each of these positions, we can form a 2 by 2 square. So, there are 16 squares of side length 2 units.\n\n5. **Counting Squares of Side Length 3**: To count the number of squares of side length 3 units, we can consider each 3 by 3 square on the grid. There are 3 such squares in each row and each column. Therefore, there are $3 \\times 3 = 9$ squares of side length 3 units.\n\n6. **Counting Squares of Side Length 4**: Lastly, we consider the squares of side length 4 units. There is only one such square on the grid.\n\n7. **Summing Up**: Adding up the number of squares of each size, we get:  \n$16$ squares of side length 1 unit  \n$16$ squares of side length 2 units  \n$9$ squares of side length 3 units  \n$1$ square of side length 4 units\n\nTherefore, the total number of squares with all four vertices on the 5 by 5 rectangular grid of dots is $16 + 16 + 9 + 1 = 42$.\n\nSo, the solution to the problem is that there are 42 squares with all four vertices on the 5 by 5 rectangular grid."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7998915401301518
+            }
+        }
+    }
+}

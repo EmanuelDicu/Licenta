@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 1_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 1",
+        "problem": "Compute $\\dbinom{15}{2}$.",
+        "correct_solution": "\\begin{align*}\n\\dbinom{15}{2} &= \\dfrac{15!}{13!2!} \\\\\n&= \\dfrac{15\\times 14}{2\\times 1} \\\\\n&= 15 \\times \\dfrac{14}{2} \\\\\n&= 15 \\times 7 \\\\\n&= \\boxed{105}.\n\\end{align*}",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Sure! Let's break down the problem step by step.\n\nStep 1: Understand the notation\n$\\dbinom{15}{2}$ represents the number of ways to choose 2 items from a set of 15 distinct items. This is also known as a combination.\n\nStep 2: Understand the formula\nThe formula for a combination is $\\dbinom{n}{k} = \\dfrac{n!}{k!(n-k)!}$, where $n!$ represents the factorial of $n$, which is the product of all positive integers up to $n$.\n\nStep 3: Substitute the values\nFor our problem, $n = 15$ and $k = 2$. So, $\\dbinom{15}{2} = \\dfrac{15!}{2!(15-2)!}$.\n\nStep 4: Simplify the expression\nFirst, calculate the factorials:\n$15! = 15 \\times 14 \\times 13 \\times \\ldots \\times 2 \\times 1$\n$2! = 2 \\times 1$\n$13! = 13 \\times 12 \\times \\ldots \\times 2 \\times 1$\n\nNow substitute these values into the formula and simplify:\n$\\dbinom{15}{2} = \\dfrac{15!}{2!(15-2)!} = \\dfrac{15 \\times 14 \\times 13!}{2 \\times 1 \\times 13!} = \\dfrac{15 \\times 14}{2 \\times 1} = \\dfrac{210}{2} = 105$\n\nTherefore, the solution to the problem is $\\dbinom{15}{2} = 105$."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8748778103616813
+            }
+        }
+    }
+}

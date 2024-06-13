@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 5_1.json": {
+        "category": "Geometry",
+        "difficulty": "Level 5",
+        "problem": "An arc of $55$ degrees on circle $A$ has the same length as an arc of $40$ degrees on circle $B$.  What is the ratio of the area of circle $A$ to the area of circle $B$? Express your answer as a common fraction.",
+        "correct_solution": "For a circle of radius $r$ and an arc of $\\theta$ degrees, the arc length is $(2\\pi r)\\frac{\\theta}{360}$. Thus, for the same arc length, the arc angle is inversely proportional to the radius, so the ratio of the radius of circle $A$ to the radius of circle $B$ is $40:55$, or $8:11$. Since the ratio of the areas of two circles is the square of the ratio of their radii, the ratio of the area of circle $A$ to the area of circle $B$ is $(8/11)^2=\\boxed{\\frac{64}{121}}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To solve this problem, we can approach it in the following steps:\n\n1. Find the circumference of circle $A$ and circle $B$ using the arc length given.\n2. Use the circumference to find the radius of each circle.\n3. Use the radius to find the area of each circle.\n4. Find the ratio of the areas of circle $A$ to circle $B$.\n\nLet's go step by step:\n\n1. The formula to find the circumference of a circle is $C = 2\\pi r$, where $C$ is the circumference and $r$ is the radius. Given that the arc of $55$ degrees on circle $A$ has the same length as the arc of $40$ degrees on circle $B$, we can set up the following equation:\n\n$55^\\circ$ on circle $A$: $55^\\circ = \\frac{55}{360} \\times C_A$\n$40^\\circ$ on circle $B$: $40^\\circ = \\frac{40}{360} \\times C_B$\n\nSimplify these equations to find the relationship between the circumferences of the two circles.\n\n$55 = \\frac{55}{360} \\times C_A$\n$40 = \\frac{40}{360} \\times C_B$\n\n2. Solve for $C_A$ and $C_B$:\n$C_A = \\frac{360}{55} \\times 55 = 360$\n$C_B = \\frac{360}{40} \\times 40 = 360$\n\n3. Use the formula $C = 2\\pi r$ to find the radius of each circle:\nFor circle $A$: $360 = 2\\pi r_A \\Rightarrow r_A = \\frac{360}{2\\pi} = 180/\\pi$\nFor circle $B$: $360 = 2\\pi r_B \\Rightarrow r_B = \\frac{360}{2\\pi} = 180/\\pi$\n\n4. Find the area of each circle using the formula $A = \\pi r^2$:\nFor circle $A$: $A_A = \\pi \\left(\\frac{180}{\\pi}\\right)^2 = 180^2/\\pi$\nFor circle $B$: $A_B = \\pi \\left(\\frac{180}{\\pi}\\right)^2 = 180^2/\\pi$\n\n5. Finally, find the ratio of the areas of circle $A$ to circle $B$:\n$\\frac{A_A}{A_B} = \\frac{180^2/\\pi}{180^2/\\pi} = 1$\n\nTherefore, the ratio of the area of circle $A$ to the area of circle $B$ is $\\boxed{1}$."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7990401919616077
+            }
+        }
+    }
+}

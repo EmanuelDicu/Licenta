@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 3_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 3",
+        "problem": "Solve $(2x+1)(3x+2) = (x-3)(6x-5)$. Express your answer as a simplified fraction.",
+        "correct_solution": "Multiplying the terms, we obtain $6x^{2}+7x+2 = 6x^{2}-23x+15$, which simplifies to $30x = 13$, so $x=\\boxed{\\frac{13}{30}}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To solve the given equation $(2x+1)(3x+2) = (x-3)(6x-5)$, we will follow these steps:\n\n### Step 1: Expand both sides of the equation.\n\nExpand the left side of the equation by using the distributive property:\n$(2x+1)(3x+2) = 6x^2 + 4x + 3x + 2$\n\nExpand the right side of the equation using the same property:\n$(x-3)(6x-5) = 6x^2 - 5x - 18x + 15$\n\n### Step 2: Simplify the expanded expressions.\n\nSimplify the expressions obtained from expansion:\n$6x^2 + 4x + 3x + 2 = 6x^2 + 7x + 2$\n$6x^2 - 5x - 18x + 15 = 6x^2 - 23x + 15$\n\n### Step 3: Set the two simplified expressions equal to each other.\n\nNow we have:\n$6x^2 + 7x + 2 = 6x^2 - 23x + 15$\n\n### Step 4: Solve the resulting equation.\n\nSubtract $6x^2$ from both sides:\n$7x + 2 = -23x + 15$\n\nAdd $23x$ to both sides:\n$7x + 23x + 2 = 15$\n\nCombine like terms:\n$30x + 2 = 15$\n\nSubtract 2 from both sides:\n$30x = 13$\n\nDivide by 30 to solve for $x$:\n$x = \\frac{13}{30}$\n\n### Conclusion:\nThe solution to the given equation $(2x+1)(3x+2) = (x-3)(6x-5)$ is $x = \\frac{13}{30}$."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8945812807881773
+            }
+        }
+    }
+}

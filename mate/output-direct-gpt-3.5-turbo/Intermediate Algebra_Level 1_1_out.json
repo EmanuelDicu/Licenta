@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 1_1.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 1",
+        "problem": "Let $a,$ $b,$ and $c$ be the roots of $x^3 - 3x - 5 = 0.$  Find $abc.$",
+        "correct_solution": "By Vieta's formulas, $abc = \\boxed{5}.$",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To find the value of $abc$ given that $a,$ $b,$ and $c$ are the roots of the equation $x^3 - 3x - 5 = 0,$ we will use Vieta's formulas. \n\nVieta's formulas state that for a polynomial $ax^3 + bx^2 + cx + d = 0$ with roots $r,$ $s,$ and $t,$ the following relationships hold:\n1. The sum of the roots is given by $r+s+t = -\\frac{b}{a}$\n2. The sum of all possible products of the roots taken two at a time is given by $rs + rt + st = \\frac{c}{a}$\n3. The product of the roots is given by $rst = -\\frac{d}{a}$\n\nFirst, we identify the coefficients of the given equation $x^3 - 3x - 5 = 0.$\nFrom the equation, we have:\n$a = 1,$\n$b = 0,$\n$c = -3,$\nand $d = -5.$\n\nNext, we can use Vieta's formulas to find the value of $abc$.\n\n1. The sum of the roots $a,$ $b,$ and $c$ is given by:\n$a + b + c = -\\frac{b}{a}$\nSince $b = 0,$ this simplifies to:\n$a + b + c = a + c = 0$\nTherefore, $c = -a.$\n\n2. The sum of all possible products of the roots taken two at a time is given by $ab + ac + bc = \\frac{c}{a}$\nSubstitute $c = -a$:\n$ab + a(-a) + b(-a) = -a$\n$ab - a^2 = -a$\n$ab = a^2 - a$\n\n3. The product of the roots $abc$ is given by:\n$abc = -\\frac{d}{a}$\nSubstitute $d = -5$ and $a = 1$:\n$abc = 5$\n\nTherefore, the value of $abc$ is $\\boxed{5}$."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9706362153344209
+            }
+        }
+    }
+}

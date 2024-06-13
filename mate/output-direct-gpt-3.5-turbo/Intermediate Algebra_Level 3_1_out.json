@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 3_1.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 3",
+        "problem": "Find the eighth term of the sequence $1440, 1716, 1848, \\ldots$, whose terms are formed by multiplying the corresponding terms of two arithmetic sequences.",
+        "correct_solution": "If $a_n =an + b$ and $b_n = cn + d$ are two arithmetic sequences, then their term-wise product takes the form \\[a_nb_n = (an+b)(cn+d) = An^2 + Bn + C,\\]where $A, B, C$ are constants. Therefore, some sequence $x_n = An^2 + Bn + C$ has $x_0 = 1440,$ $x_1 = 1716,$ and $x_2 = 1848.$ Then we have the equations \\[\\begin{aligned} C &= 1440, \\\\ A+B+C&=1716,\\\\  4A+2B+C&=1848. \\end{aligned}\\]Subtracting $C=1440$ from the second and third equations, we have $A+B=276$ and $4A+2B=408,$ or $2A+B=204.$ Then \\[A = (2A+B) - (A+B) = 204 - 276 = -72,\\]and so $B = 276-A=348.$ We conclude that the given sequence has the general formula \\[x_n = -72n^2 + 348n + 1440.\\]Then the eighth term is \\[\\begin{aligned} x_7 &= -72 \\cdot 7^2 + 348 \\cdot 7 + 1440 = \\boxed{348}. \\end{aligned}\\]",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To find the eighth term of the given sequence, which is formed by multiplying the corresponding terms of two arithmetic sequences, we can break down the problem into smaller parts.\n\nStep 1: Identify the two arithmetic sequences.\nLet's name the two arithmetic sequences as Sequence A and Sequence B. Each sequence consists of terms 1440, 1716, 1848, and so on.\n\nStep 2: Find the common difference of each arithmetic sequence.\nTo find the common difference of an arithmetic sequence, we can subtract the second term from the first term.\nCommon difference of Sequence A: $1716 - 1440 = 276$\nCommon difference of Sequence B: $1848 - 1716 = 132$\n\nStep 3: Determine the general terms of Sequence A and Sequence B.\nThe general term of an arithmetic sequence can be written in the form $a_n = a_1 + (n-1)d$, where $a_1$ is the first term, $d$ is the common difference, and $n$ is the term number.\nGeneral term of Sequence A: $a_n = 1440 + (n-1)276 = 1440 + 276n - 276 = 276n + 1164$\nGeneral term of Sequence B: $b_n = 1716 + (n-1)132 = 1716 + 132n - 132 = 132n + 1584$\n\nStep 4: Find the eighth term of the given sequence.\nThe eighth term of the sequence is obtained by multiplying the corresponding eighth terms of Sequence A and Sequence B:\n$8$th term $= a_8 \\times b_8 = (276(8) + 1164)(132(8) + 1584)$\n$= (2208 + 1164)(1056 + 1584)$\n$= 3372 \\times 2640$\n$= 8916480$\n\nTherefore, the eighth term of the sequence $1440, 1716, 1848, \\ldots$ is $8916480$."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7667820069204152
+            }
+        }
+    }
+}

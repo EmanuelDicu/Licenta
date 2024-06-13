@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 2_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 2",
+        "problem": "If \\begin{align*}\n5x-2y&=7,\\\\\n3x+y&=2,\n\\end{align*}compute $24x-14y$.",
+        "correct_solution": "Note that $6(5x-2y)-2(3x+y)=24x-14y$.  Thus, $24x-14y=6(7)-2(2)=\\boxed{38}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To solve this system of equations, we can use the method of substitution or elimination. We'll use substitution in this case.\n\nStep 1: Solve the second equation for $y$.\nFrom equation $3x + y = 2$, we can rearrange it to get $y = 2 - 3x$.\n\nStep 2: Substitute the value of $y$ in the first equation.\nSubstitute $y = 2 - 3x$ into the equation $5x - 2y = 7$:\n\\[5x - 2(2 - 3x) = 7 \\]\n\\[5x - 4 + 6x = 7 \\]\n\\[11x - 4 = 7 \\]\n\\[11x = 11 \\]\n\\[x = 1\\]\n\nStep 3: Substitute the value of $x$ back to find $y$.\nUsing $y = 2 - 3x$:\n\\[y = 2 - 3(1) \\]\n\\[y = 2 - 3 \\]\n\\[y = -1 \\]\n\nStep 4: Find $24x - 14y$.\nSubstitute $x = 1$ and $y = -1$ into the expression $24x - 14y$:\n\\[24(1) - 14(-1) = 24 + 14 = 38\\]\n\nTherefore, the solution to the problem is $24x - 14y = 38$."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9224598930481284
+            }
+        }
+    }
+}

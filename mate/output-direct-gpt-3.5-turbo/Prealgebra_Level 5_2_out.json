@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 5_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 5",
+        "problem": "In a certain isosceles right triangle, the altitude to the hypotenuse has length $6$.  What is the area of the triangle?",
+        "correct_solution": "In isosceles right triangle $\\triangle ABC$ below, $\\overline{AD}$ is the altitude to the hypotenuse.\n\n[asy]\nimport olympiad;\nunitsize(0.8inch);\npair A,B,C,D;\nA = (0,1);\nB= (1,0);\nC = -B;\nD = (0,0);\ndraw(A--B--C--A,linewidth(1));\ndraw(A--D,linewidth(0.8));\ndraw(rightanglemark(C,A,B,s=5));\ndraw(rightanglemark(C,D,A,s=5));\nlabel(\"$A$\",A,N);\nlabel(\"$B$\",B,S);\nlabel(\"$C$\",C,S);\nlabel(\"$D$\",D,S);\n[/asy]\n\nBecause $\\triangle ABC$ is an isosceles right triangle, $\\angle ABC = 45^\\circ$.  Since $\\angle ADB = 90^\\circ$, we know that $\\angle DAB = 45^\\circ$, so $\\triangle ABD$ is also a 45-45-90 triangle.  Similarly, $\\triangle ACD$ is a 45-45-90 triangle.  Therefore, $DB=DC = DA = 6$, so $BC = BD+DC = 12$, and  \\[[ABC] = \\frac{(AD)(BC)}{2} = \\frac{(6)({12})}{2} = \\boxed{36}.\\]",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To solve this problem, we can break it down into smaller parts:\n\n1. **Understand the properties of an isosceles right triangle**: An isosceles right triangle is a triangle with two sides of equal length and one right angle. In this case, the two legs of the right triangle are equal.\n\n2. **Understand the relationship between altitudes and the area of a triangle**: The altitude drawn from the right angle of an isosceles right triangle to the hypotenuse divides the triangle into two smaller congruent triangles. The area of the original triangle is equal to the sum of the areas of the two smaller congruent triangles.\n\n3. **Use Pythagorean theorem**: In an isosceles right triangle, the altitude drawn to the hypotenuse divides the triangle into two smaller right triangles that are also isosceles right triangles, which means they have the same hypotenuse as the original triangle. Therefore, the altitude creates two smaller triangles that are similar to the original triangle.\n\nLet's solve the problem step by step:\n\nGiven that the altitude to the hypotenuse of the isosceles right triangle has a length of 6 units, we can label the sides of the triangle as follows:\n- Let the length of one of the legs of the right triangle be $a$.\n- The hypotenuse will also have length $a$.\n- The altitude to the hypotenuse from the right angle divides the hypotenuse into two segments of length 6 units each.\n\nUsing the Pythagorean theorem in the smaller right triangle formed, we have:\n\\[ (6)^2 + (\\frac{a}{2})^2 = a^2 \\]\nSolving for $a$ gives us $a = 4\\sqrt{5}$.\n\nThe area of the isosceles right triangle can be calculated as the sum of the areas of the two smaller congruent triangles formed by the altitude:\n\\[ \\text{Area of the triangle} = 2 \\times \\frac{1}{2} \\times \\frac{a}{2} \\times 6 = \\frac{1}{2} \\times a \\times 6 \\]\nSubstitute $a = 4\\sqrt{5}$ into the formula:\n\\[ \\text{Area of the triangle} = \\frac{1}{2} \\times 4\\sqrt{5} \\times 6 = 12\\sqrt{5} \\]\n\nTherefore, the area of the isosceles right triangle is $12\\sqrt{5}$ square units."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8236738703339882
+            }
+        }
+    }
+}

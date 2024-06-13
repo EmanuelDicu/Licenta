@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 5_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 5",
+        "problem": "How many different positive integers divisible by 4 can be formed using each of the digits 1, 2, 3, and 4 at most once, and no other digits? For example, 12 counts, but 512 does not.",
+        "correct_solution": "The only one-digit integer divisible by $4$ that we can construct is $4$.\n\nWe can construct $3$ two-digit integers divisible by $4$: $12$, $32$, and $24$.\n\nAn integer is divisible by $4$ if its rightmost two digits are divisible by $4$.  Thus we can append either or both of the remaining two digits to any of these two-digit integers and preserve divisibility by $4$.  For each, there are $2$ ways to choose one digit to append, and $2$ ways to order the digits if we append both of them.  Thus we get $4$ more integers for each, or $12$ total.\n\nThe full number is $12+3+1=\\boxed{16}$ integers.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To solve this problem, we can break it down into smaller steps:\n\nStep 1: Determine the total number of positive integers that can be formed using the digits 1, 2, 3, and 4 at most once. This involves finding the total number of permutations of these 4 digits.\n\nStep 2: Identify the conditions necessary for the positive integers to be divisible by 4. A number is divisible by 4 if the last two digits of the number form a number that is divisible by 4.\n\nStep 3: Count the number of valid combinations that meet the divisibility condition found in Step 2.\n\nLet's solve each step:\n\nStep 1: There are 4 different digits - 1, 2, 3, and 4. Thus, the total number of positive integers that can be formed using these digits at most once is 4! = 24.\n\nStep 2: A number is divisible by 4 if its last two digits form a number divisible by 4. So, let's consider the possible configurations of the last two digits that make the entire number divisible by 4. The two-digit numbers divisible by 4 from the given set are 12, 24, and 32.\n\nStep 3: Based on the divisibility rule, we can consider these 3 two-digit numbers (12, 24, 32) with the remaining two digits (3, 4) to form the final three-digit numbers which will be divisible by 4. Therefore, we can form 3 x 2 x 1 = 6 such three-digit numbers.\n\nThus, the solution to the problem is that there are 6 different positive integers divisible by 4 that can be formed using each of the digits 1, 2, 3, and 4 at most once."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7594501718213058
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Number Theory_Level 5_4.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 5",
+        "problem": "Notice that  \\[31\\cdot37=1147.\\]Find some integer $n$ with $0\\leq n<2293$ such that  \\[31n\\equiv 3\\pmod{2293}.\\]",
+        "correct_solution": "Doubling the given equation tells us  \\[31\\cdot74=2294.\\]Specifically  \\[31\\cdot74\\equiv1\\pmod{2293}\\]and 74 is the multiplicative inverse of 31 modulo 2293.\n\nIf we triple the congruence we just found we get  \\[31\\cdot222\\equiv3\\pmod{2293}.\\]Therefore $n=\\boxed{222}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To solve this problem, we can break it down into smaller parts and solve them in logical order. Here's the step-by-step solution:\n\n1. Find the modular multiplicative inverse of 31 modulo 2293:\nFirst, we need to find the modular multiplicative inverse of 31 modulo 2293. This can be done using the Extended Euclidean Algorithm.\n\nExtended Euclidean Algorithm:\nWe want to find integers $x$ and $y$ such that $31x + 2293y = \\text{gcd}(31, 2293)$.\nUsing the Extended Euclidean Algorithm, we find that $\\text{gcd}(31, 2293) = 1$.\nTherefore, the modular multiplicative inverse of 31 modulo 2293 exists and is the coefficient of 31 in the above equation.\n\n2. Calculate the modular multiplicative inverse:\nNow that we have found the modular multiplicative inverse of 31 modulo 2293, we can use it to solve the congruence equation:\n\n$31n \\equiv 3 \\pmod{2293}$ \n\nMultiplying both sides by the modular multiplicative inverse of 31 (let's denote it as $m$):\n\n$n \\equiv 3m \\pmod{2293}$\n\n3. Find an appropriate value for $m$:\nSince $0 \\leq n < 2293$, we need to find an integer $m$ such that $0 \\leq 3m < 2293$.\nBy trial and error, we can test values of $m$ starting from 0 until we find a suitable value.\n\n4. Calculate the final value of $n$:\nOnce we have found the appropriate value for $m$, we can calculate the final value of $n$ using the equation $n \\equiv 3m \\pmod{2293}$.\n\nThis method allows us to find the integer $n$ that satisfies the congruence equation $31n \\equiv 3 \\pmod{2293}$ within the specified range.\n\nBy following these steps, you can arrive at the solution for the given Number Theory problem."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.870625
+            }
+        }
+    }
+}

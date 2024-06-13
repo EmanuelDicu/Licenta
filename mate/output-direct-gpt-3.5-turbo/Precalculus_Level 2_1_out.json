@@ -1,0 +1,18 @@
+{
+    "Precalculus_Level 2_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 2",
+        "problem": "Find the measure, in degrees, of the smallest positive angle $\\theta$ for which $\\sin 3 \\theta = \\cos 7 \\theta.$",
+        "correct_solution": "Note that $\\cos 7 \\theta = \\sin (90^\\circ - 7 \\theta),$ so\n\\[\\sin 3 \\theta = \\sin (90^\\circ - 7 \\theta).\\]If $3 \\theta = 90^\\circ - 7 \\theta,$ then $\\theta = 9^\\circ.$\n\nIf $0^\\circ < \\theta < 9^\\circ,$ then $\\sin 3 \\theta < \\sin 27^\\circ$ and $\\sin (90^\\circ - 7 \\theta) > \\sin 27^\\circ,$ so the smallest positive solution is $\\boxed{9^\\circ}.$",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To solve this problem, we need to approach it step by step by using the trigonometric identities and properties. Here's the breakdown of the solution into smaller parts:\n\nPart 1: Using the angle addition formula for sine and cosine\nLet's express $\\sin 3\\theta$ and $\\cos 7\\theta$ in terms of smaller angles using the angle addition formulas for sine and cosine.\n\n$\\sin 3\\theta = \\sin(2\\theta + \\theta) = \\sin 2\\theta \\cos \\theta + \\cos 2\\theta \\sin \\theta$\n\n$\\cos 7\\theta = \\cos(4\\theta + 3\\theta) = \\cos 4\\theta \\cos 3\\theta - \\sin 4\\theta \\sin 3\\theta$\n\nNow we substitute these expressions back into the given equation $\\sin 3\\theta = \\cos 7\\theta$.\n\nPart 2: Simplifying the equation\nSubstitute the expressions for $\\sin 3\\theta$ and $\\cos 7\\theta$ into the equation $\\sin 3\\theta = \\cos 7\\theta$ and simplify the equation using trigonometric identities.\n\n$\\sin 2\\theta \\cos \\theta + \\cos 2\\theta \\sin \\theta = \\cos 4\\theta \\cos 3\\theta - \\sin 4\\theta \\sin 3\\theta$\n\nExpand all the terms and simplify using trigonometric identities like $\\sin^2\\theta + \\cos^2\\theta = 1$, $\\sin 2\\theta = 2\\sin \\theta \\cos \\theta$, $\\cos 2\\theta = \\cos^2\\theta - \\sin^2\\theta$, $\\sin 3\\theta = 3\\sin\\theta - 4\\sin^3\\theta$, and $\\cos 3\\theta = 4\\cos^3\\theta - 3\\cos\\theta$.\n\nPart 3: Solving the trigonometric equation\nAfter simplifying the equation, you will get a trigonometric equation in terms of $\\sin\\theta$ and $\\cos\\theta$. Solve this equation for the values of $\\sin\\theta$ and $\\cos\\theta$.\n\nPart 4: Finding the smallest positive angle\nOnce you have found the possible values of $\\sin\\theta$ and $\\cos\\theta$, find the corresponding angles $\\theta$ by taking the inverse trigonometric functions. Then, identify the smallest positive angle among the solutions.\n\nAfter following these steps, you should be able to find the measure, in degrees, of the smallest positive angle $\\theta$ for which $\\sin 3 \\theta = \\cos 7 \\theta$. The solution to the problem will be the value of this smallest positive angle $\\theta$."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.86839481555334
+            }
+        }
+    }
+}

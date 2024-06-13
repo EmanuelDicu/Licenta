@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 3_3.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 3",
+        "problem": "A target consists of four concentric circles with radii 4 inches, 6 inches, 8 inches and 10 inches as shown. Given that a dart is thrown that hits the target at a random point, what is the probability that it hits a shaded region? Express your answer as a common fraction.\n\n[asy]size(100); import graph; fill(Circle((0,0),5),gray(.6));\n\nclip(Circle((0,0),2) ^^ Circle((0,0),3) ^^ Circle((0,0),4),fillrule(1));\ndraw(Circle((0,0),2) ^^ Circle((0,0),3) ^^ Circle((0,0),4) ^^ Circle((0,0),5));[/asy]",
+        "correct_solution": "The total area of the target is $\\pi\\cdot 10^2=100\\pi$.  The area of the inner shaded region is the area of a circle with radius 4, and that is equal to $\\pi\\cdot 4^2=16\\pi$.  We can calculate the area of the shaded ring as the difference in areas of a circle with radius 8 and with radius 6.  This gives an area of $\\pi \\cdot 8^2 - \\pi \\cdot 6^2 = 28\\pi$.  The total shaded area is $16\\pi+28\\pi=44\\pi$.  The probability a dart will hit a shaded region is equal to $\\frac{44\\pi}{100\\pi}=\\boxed{\\frac{11}{25}}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To solve this problem, we can break it down into smaller parts and calculate the probability step by step.\n\nFirst, we need to find the total area of the target. The areas of the concentric circles are:\n\n- Area of the circle with radius 4 inches: \\( \\pi r^2 = \\pi \\times 4^2 = 16\\pi \\) square inches\n- Area of the circle with radius 6 inches: \\( \\pi r^2 = \\pi \\times 6^2 = 36\\pi \\) square inches\n- Area of the circle with radius 8 inches: \\( \\pi r^2 = \\pi \\times 8^2 = 64\\pi \\) square inches\n- Area of the circle with radius 10 inches: \\( \\pi r^2 = \\pi \\times 10^2 = 100\\pi \\) square inches\n\nThe total area of the target is the sum of these areas: \\( 16\\pi + 36\\pi + 64\\pi + 100\\pi = 216\\pi \\) square inches.\n\nNext, we need to find the area of the shaded region. The shaded region is the circle with radius 5 inches, so its area is \\( \\pi \\times 5^2 = 25\\pi \\) square inches.\n\nThe probability of hitting the shaded region is the ratio of the area of the shaded region to the total area of the target:\n\n\\[ \\text{Probability} = \\frac{\\text{Area of shaded region}}{\\text{Total area of target}} = \\frac{25\\pi}{216\\pi} = \\frac{25}{216} \\]\n\nTherefore, the probability that the dart hits the shaded region is \\( \\frac{25}{216} \\) or approximately 0.1157."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7311396468699839
+            }
+        }
+    }
+}

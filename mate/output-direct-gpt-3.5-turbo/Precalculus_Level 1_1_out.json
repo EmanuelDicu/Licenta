@@ -1,0 +1,18 @@
+{
+    "Precalculus_Level 1_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 1",
+        "problem": "Compute $\\arccos \\left( -\\frac{1}{2} \\right).$  Express your answer in radians.",
+        "correct_solution": "Since $\\cos \\frac{2 \\pi}{3} = -\\frac{1}{2},$ $\\arccos \\left( -\\frac{1}{2} \\right) = \\boxed{\\frac{2 \\pi}{3}}.$",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To solve the problem, we can use the definition of the arccosine function, which gives us the angle whose cosine is a given value. \n\nFirst, we need to find the reference angle whose cosine is $\\frac{1}{2}$. We know that $\\cos \\left( \\frac{\\pi}{3} \\right) = \\frac{1}{2}$. \n\nNext, we need to consider the sign of the cosine function in each quadrant. Since the cosine function is negative in the second and third quadrants, the angle we are looking for is in the second quadrant.\n\nThe arccosine function returns the angle in the range $[0, \\pi]$. Therefore, we have $\\arccos \\left( -\\frac{1}{2} \\right) = \\pi - \\frac{\\pi}{3} = \\frac{2\\pi}{3}$.\n\nSo, the solution to the problem is $\\boxed{\\frac{2\\pi}{3}}$ radians."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8593530239099859
+            }
+        }
+    }
+}

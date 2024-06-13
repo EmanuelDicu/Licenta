@@ -1,0 +1,18 @@
+{
+    "Precalculus_Level 1_2.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 1",
+        "problem": "Let $a = 5 - 8i$ and $b = 30 + 48i$. Find $|ab|$.",
+        "correct_solution": "Note that $b = 6(5 + 8i) = 6\\overline{a}$. So $|ab| = |a(6\\overline{a})| = 6 |a\\overline{a}| = 6|a|^2$. We have $|a|^2 = 5^2 + 8^2 = 89$, so $|ab| = 6 \\cdot 89 = \\boxed{534}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To find $|ab|$, we first need to find the product of $a$ and $b$, and then calculate the magnitude of that product. Let's break it down into smaller parts:\n\n1. Find the product of $a$ and $b:\n$a = 5 - 8i$ and $b = 30 + 48i$.\nTo multiply complex numbers, we use the distributive property. So, $ab = (5 - 8i)(30 + 48i)$.\nExpanding this product, we get:\n$ab = 5(30) + 5(48i) - 8i(30) - 8i(48i)$\n$ab = 150 + 240i - 240i - 384i^2$\n$ab = 150 - 384 + (240i - 240i)$ [Using $i^2 = -1$]\n$ab = -234$.\n\n2. Find the magnitude of the product $ab$:\nThe magnitude (absolute value) of a complex number $x + yi$ is given by $|x + yi| = \\sqrt{x^2 + y^2}$.\nHere, for $ab = -234$, the magnitude is $|-234| = \\sqrt{234^2} = 234$.\n\nTherefore, the solution to the problem is $|ab| = 234$."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8666666666666667
+            }
+        }
+    }
+}

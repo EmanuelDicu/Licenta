@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 4_4.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "We have a triangle $\\triangle ABC$ where $AC = 17,$ $BC = 15,$ and $AB = 8.$ Let $M$ be the midpoint of $AB.$ What is the length of $CM$?",
+        "correct_solution": "First, we notice that $8:15:17$ is a Pythagorean triple, so we have a right triangle. Let's draw a sketch: [asy]\npair A, B, C, M;\nA = (0, 8);\nB = (0, 0);\nC = (15, 0);\nM = 0.5 * A + 0.5 * B;\ndraw(A--B--C--cycle);\ndraw(C--M);\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$M$\", M, NE);\nlabel(\"$8$\", A--B, W);\nlabel(\"$15$\", B--C, S);\nlabel(\"$17$\", A--C, NE);\ndraw(rightanglemark(A,B,C,20));\n[/asy] Since we know that $BM = \\frac{1}{2} \\cdot AB = 4,$ we simply apply the Pythagorean theorem to right triangle $\\triangle MBC.$ \\begin{align*}\nCM^2 &= BM^2 + BC^2\\\\\nCM^2 &= 4^2 + 15^2 = 241\\\\\nCM &= \\boxed{\\sqrt{241}}.\n\\end{align*}",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To solve this geometry problem, we will follow these logical steps:\n\nStep 1: Identify the midpoint of side $AB$.\nStep 2: Determine the length of side $AM$ and $BM$ using the distance formula.\nStep 3: Calculate the coordinates of point $M$.\nStep 4: Find the midpoint $M$ of segment $AB$.\nStep 5: Use the distance formula to find the length of segment $CM$.\n\nLet's start with the first step:\n\nStep 1: Identify the midpoint of side $AB$.\nThe midpoint, $M$, of segment $AB$ is the point that divides $AB$ into two equal parts. Let the coordinates of $A$ be $(x_1, y_1)$ and $B$ be $(x_2, y_2)$. The coordinates of $M$ are $(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2})$.\n\nStep 2: Determine the length of side $AM$ and $BM$ using the distance formula.\nThe distance formula for two points $(x_1, y_1)$ and $(x_2, y_2)$ is given by $\\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$. Let $AM = d_1$ and $BM = d_2$.\n\nStep 3: Calculate the coordinates of point $M$.\nGiven that $M$ is the midpoint of $AB$, we can find the coordinates of $M$ using the midpoint formula from Step 1.\n\nStep 4: Find the midpoint $M$ of segment $AB$.\nSince $M$ is the midpoint of $AB$, substitute the coordinates of $A$ and $B$ into the midpoint formula to find the coordinates of $M$.\n\nStep 5: Use the distance formula to find the length of segment $CM$.\nOnce we have the coordinates of point $M$, we can find the length of $CM$ by substituting the coordinates of $C$ and $M$ into the distance formula.\n\nBy following these steps, you will be able to find the length of $CM$ in the given triangle $\\triangle ABC$ where $AC = 17,$ $BC = 15,$ and $AB = 8.$"
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8376865671641791
+            }
+        }
+    }
+}

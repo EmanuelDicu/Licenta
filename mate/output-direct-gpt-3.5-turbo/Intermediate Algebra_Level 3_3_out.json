@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 3_3.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 3",
+        "problem": "There is a complex number $z$ with imaginary part $164$ and a positive integer $n$ such that\n$$\\frac {z}{z + n} = 4i.$$Find $n$.",
+        "correct_solution": "Multiplying by $z+n$, we have $z = 4i(z+n)$, or $z(1-4i) = 4ni$. Thus \\[z = \\frac{4ni}{1-4i} = \\frac{4ni(1+4i)}{17} = \\frac{4ni - 16n}{17}.\\]Since $z$ has imaginary part $164$, we have $4n/17 = 164$, so $n = 17/4 \\cdot 164 = \\boxed{697}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Given the complex number $z$ with imaginary part $164$ and the equation $\\frac {z}{z + n} = 4i$, we need to find the positive integer $n$.\n\nLet's break down the problem into smaller parts and solve them logically:\n\n1. **Identifying the components**:\n    - Let $z = a + 164i$, where $a$ is the real part of the complex number $z$.\n    - From the given equation, we have $\\frac {a + 164i}{a + 164i + n} = 4i$.\n  \n2. **Simplify the equation**:\n    - Now, we simplify the equation by first multiplying both sides by $(a + 164i + n)$ to get:\n    $$a + 164i = 4i(a + 164i + n)$$\n    $$a + 164i = 4ai + 656i^2 + 4ni$$\n    $$a + 164i = 4ai - 656 + 4ni$$\n    $$a + 820 = 4ai + 4ni$$\n  \n3. **Separate the real and imaginary parts**:\n    - Since the real part of the left-hand side equals the real part of the right-hand side, and the imaginary part of the left-hand side equals the imaginary part of the right-hand side, we get two equations:\n    1. $a = 4ni$  (Equation 1)\n    2. $820 = 4ai$ (Equation 2)\n   \n4. **Solve the system of equations**:\n    - From Equation 1, we find $a = 4ni$. Substituting this into Equation 2, we get:\n    $$820 = 4 \\cdot 4ni$$\n    $$820 = 16ni$$\n    $$n = \\frac{820}{16} = 51.25$$\n\n5. **Determine the positive integer**:\n    - Since $n$ must be a positive integer, we need to take the nearest integer value greater than or equal to $51.25$.\n    - So, $n = \\boxed{52}$ is the positive integer value that satisfies the equation.\n\nTherefore, the solution to the problem is $\\boxed{n = 52}$."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8939695162359178
+            }
+        }
+    }
+}

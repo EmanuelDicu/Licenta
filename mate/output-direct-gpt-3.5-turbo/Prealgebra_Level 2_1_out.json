@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 2_1.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 2",
+        "problem": "Sarah, James, and Matthew are on a team in a game show. In the game, Sarah always earns 5 points, Matthew always earns -2 points, and James always earns 3 points. To calculate their team's score, they multiply the first person's score by the second person's score, then subtract the third person's score. If they can choose the order in which they play the game, what is the maximum possible score that their team can earn?",
+        "correct_solution": "If we let the first, second, and third persons' score equal $a$, $b$, and $c$ respectively, then their team's score is $((a \\cdot b)-c)$.  We may test all six possible orderings:\n$a = 5$, $b = -2$, $c = 3 \\rightarrow ((5 \\cdot (-2)) - 3) = -13$\n$a = -2$, $b = 5$, $c = 3 \\rightarrow (((-2) \\cdot 5) - 3) = -13$\n$a = 5$, $b = 3$, $c = -2 \\rightarrow ((5 \\cdot 3) - (-2)) = 17$\n$a = 3$, $b = 5$, $c = -2 \\rightarrow ((3 \\cdot 5) - (-2)) = 17$\n$a = 3$, $b = -2$, $c = 5 \\rightarrow ((3 \\cdot (-2)) - 5) = -11$\n$a = -2$, $b = 3$, $c = 5 \\rightarrow (((-2) \\cdot 3) - 5) = -11$\nThus, our total answer is $\\boxed{17}$\nAdditionally, we may note that the only way to obtain a positive answer is to multiply the two positive scores together and subtract the negative score.  Because multiplication is commutative, the order of $a$ and $b$ does not matter, and we need only compute the single case $(3 \\cdot 5) - (-2) = \\boxed{17}$",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To find the maximum possible score that their team can earn, we need to consider the different combinations of the players' scores and choose the one that gives the highest result. Let's break the problem into smaller parts and solve them step by step.\n\n1. Calculate the possible combinations of the players' scores:\n\na. Sarah * James - Matthew\nb. Sarah * Matthew - James\nc. James * Sarah - Matthew\nd. James * Matthew - Sarah\ne. Matthew * Sarah - James\nf. Matthew * James - Sarah\n\n2. Calculate the result for each combination:\n\na. (5 * 3) - (-2) = 15 + 2 = 17\nb. (5 * -2) - 3 = -10 - 3 = -13\nc. (3 * 5) - (-2) = 15 + 2 = 17\nd. (3 * -2) - 5 = -6 - 5 = -11\ne. (-2 * 5) - 3 = -10 - 3 = -13\nf. (-2 * 3) - 5 = -6 - 5 = -11\n\n3. Determine the maximum possible score:\n\nThe maximum score among the above calculations is 17, which corresponds to the combinations (a) and (c) where either Sarah or James multiplies with 3 and then subtracts -2. Hence, the maximum possible score that their team can earn is 17 points when Sarah multiplies by James and subtracts Matthew, OR James multiplies by Sarah and subtracts Matthew.\n\nTherefore, the solution to the problem is that the maximum possible score that their team can earn is 17 points."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.726530612244898
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 3_1.json": {
+        "category": "Geometry",
+        "difficulty": "Level 3",
+        "problem": "If the volume of a sphere inscribed in a cube is $\\frac{\\pi}{6}$ cubic inches, what is the number of cubic inches in the volume of the cube?",
+        "correct_solution": "A sphere with radius $r$ has volume $\\frac{4}{3}\\pi r^3$, so here we have \\[\\frac{4}{3}\\pi r^3 = \\frac{\\pi}{6}.\\] Solving for $r$ yields $r^3 = \\frac{1}{8}$ so $r = \\sqrt[3]{\\frac{1}{8}} = \\frac{1}{2}$. [asy]\nsize(60);\ndraw(Circle((6,6),4.5));\ndraw((10.5,6)..(6,6.9)..(1.5,6),linetype(\"2 4\"));\ndraw((10.5,6)..(6,5.1)..(1.5,6));\ndraw((0,0)--(9,0)--(9,9)--(0,9)--cycle);\ndraw((0,9)--(3,12)--(12,12)--(9,9));\ndraw((12,12)--(12,3)--(9,0));\ndraw((0,0)--(3,3)--(12,3),dashed); draw((3,3)--(3,12),dashed);\n[/asy] The diameter of the inscribed sphere is equal to the side length of the cube, so the side length of the cube is 1, and the volume of the cube is $1^3=\\boxed{1}$ cubic inch.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Let's break down the problem into smaller parts to solve it in a logical order.\n\nStep 1: Finding the radius of the sphere:\nSince the sphere is inscribed in a cube, the diameter of the sphere is equal to the side length of the cube. Let's denote the radius of the sphere as \\(r\\). Since the diameter of the sphere is equal to the side length of the cube, we can say that \\(2r = s\\), where \\(s\\) is the side length of the cube.\n\nStep 2: Calculating the volume of the sphere:\nThe formula for the volume of a sphere is given by \\(V = \\frac{4}{3}\\pi r^3\\). Given that the volume of the sphere is equal to \\(\\frac{\\pi}{6} \\text{ cubic inches}\\), we have:\n\\[\n\\frac{4}{3}\\pi r^3 = \\frac{\\pi}{6}\n\\]\nSolving for \\(r\\), we get:\n\\[\nr^3 = \\frac{1}{8} \\Rightarrow r = \\frac{1}{2}\n\\]\n\nStep 3: Calculating the side length of the cube:\nSince the side length of the cube is equal to twice the radius of the sphere, we have:\n\\[s = 2r = 2 \\times \\frac{1}{2} = 1\\]\n\nStep 4: Calculating the volume of the cube:\nThe formula for the volume of a cube is given by \\(V = s^3\\). Substituting the side length \\(s = 1\\) into the formula, we get:\n\\[V = 1^3 = 1\\]\n\nTherefore, the number of cubic inches in the volume of the cube is \\(1\\) cubic inch."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8052588331963846
+            }
+        }
+    }
+}

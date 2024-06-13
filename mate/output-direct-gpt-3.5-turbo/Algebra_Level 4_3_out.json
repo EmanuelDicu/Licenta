@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 4_3.json": {
+        "category": "Algebra",
+        "difficulty": "Level 4",
+        "problem": "The product of $3t^2+5t+a$ and $4t^2+bt-2$ is $12t^4+26t^3-8t^2-16t+6$. What is $a+b$?",
+        "correct_solution": "The constant term of the product of two polynomials is just the product of the two constant terms. Therefore we know that $6=-2a$, so $a=-3$. We now consider the linear term of the product of our polynomials. It's given by $-16t=(5t\\cdot-2)+a\\cdot bt\\Longrightarrow-16t=-10t+(-3)bt\\Longrightarrow b=2$. Therefore our answer is $a+b=\\boxed{-1}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Given the problem, we are asked to find the values of $a$ and $b$ so that the product of the two given polynomials equals the given polynomial:\n\n$(3t^2+5t+a)(4t^2+bt-2)=12t^4+26t^3-8t^2-16t+6$\n\nLet's first expand the left-hand side of the equation by multiplying the two polynomials:\n\n$(3t^2+5t+a)(4t^2+bt-2)=12t^4+bt(3t^2)+4t^2(5t)+5t(bt)+3t^2(-2)+5t(-2)+a(4t^2)+a(bt)+a(-2)$\n\nExpanding further, we get:\n\n$12t^4+3bt^3+20t^3+5bt^2-6t^2-10t+4at^2+abt-2a$\n\nNow we need to equate the coefficients of the terms on both sides of the equation:\n\n1. Coefficients of $t^4$ term on both sides:\n   Left Side: coefficient = 12\n   Right Side: coefficient = 12\n   Equation: $3b=0$ (as there is no $t^4$ term on the Right Side)\n   Therefore, $b=0$\n\n2. Coefficients of $t^3$ term on both sides:\n   Left Side: coefficient = 23\n   Right Side: coefficient = 26\n   Equation: $3a+5b=0$\n   Substituting the value of $b=0$, we get: $3a=0$\n   Therefore, $a=0$\n\nThus, $a=0$ and $b=0$.\n\nFinally, we need to find $a+b$:\n$a+b = 0 + 0 = 0$\n\nTherefore, the solution to the problem is $a+b = 0$."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8101503759398496
+            }
+        }
+    }
+}

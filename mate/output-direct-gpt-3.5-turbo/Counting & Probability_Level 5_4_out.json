@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 5_4.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 5",
+        "problem": "The letters of the word `SIXTEEN' are randomly arranged.  What is the probability that the two E's are not next to each other?",
+        "correct_solution": "The best way to do this is to find the probability that the two E's are next to each other.  There are $\\dfrac{7!}{2}$ arrangements of the word SIXTEEN.  If we want to find the number of arrangements such that the E's are next to each other, we find the number of arrangements of the six-letter word SIXT(EE)N (where we treat the two E's as a block), which is $6!$.  So the probability that an arrangement of the word SIXTEEN has the two E's next to each other is $\\dfrac{6!}{\\frac{7!}{2}} = \\dfrac{2}{7}$.  So the probability that the two E's aren't next to each other is $1 - \\dfrac{2}{7} = \\boxed{\\dfrac{5}{7}}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To solve this problem, we can break it down into smaller parts as follows:\n\nPart 1: Find the total number of ways to arrange the letters in the word SIXTEEN.  \nThe word SIXTEEN has 7 letters in total, with 2 E's. The total number of ways to arrange 7 letters is 7!. However, since there are two indistinguishable E's, we need to divide by 2! twice to adjust for the overcounting.  \nTotal ways to arrange = 7! / (2! * 2!) = 1260.\n\nPart 2: Find the number of ways the two E's are next to each other.\nTo calculate this, we can treat the two E's as a single entity. Therefore, we now have 6 entities (S, I, X, T, N, EE) to arrange.  \nNumber of ways E's are together = 6! = 720.\n\nPart 3: Find the number of favorable outcomes where the two E's are not next to each other.\nNow, we can subtract the number of ways the E's are together from the total number of ways to find the favorable outcomes.  \nFavorable outcomes = Total ways - Number of ways E's are together = 1260 - 720 = 540.\n\nPart 4: Find the probability that the two E's are not next to each other.\nFinally, the probability is given by the number of favorable outcomes divided by the total number of ways.  \nProbability = Favorable outcomes / Total ways = 540 / 1260 = 9 / 21 = 3 / 7.\n\nTherefore, the probability that the two E's are not next to each other when randomly arranging the word SIXTEEN is 3/7."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7203826342899191
+            }
+        }
+    }
+}

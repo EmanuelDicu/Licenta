@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 4_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 4",
+        "problem": "Ed takes five 100-point tests in his algebra class. He scores 87, 85 and 87 points on the first three tests. If the scores of his last two tests differ by three points and he has a $90\\%$ average on his five tests, what was his highest test score?",
+        "correct_solution": "Instead of adding up scores and figuring out the new averages, a quicker way (useful for the countdown round) is as follows:\n\nSince the average is 90, we first calculate how many points below 90 he already is: he's scored 87, 85, and 87, meaning that he is 3, 5, and 3 points below 90 respectively, making for a total of 11 points below.  We then know that his remaining two tests must be a combined 11 points above 90, and since they differ by 3 points, we know that one test is 4 above 90, and the other is 7 above 90, meaning his highest score was $\\boxed{97}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Let's break down the problem into smaller parts and solve them step by step:\n\n1. Find the total points Ed scored on the first three tests:\n   Ed scored 87 + 85 + 87 = 259 points on the first three tests.\n\n2. Let's denote the scores of the last two tests as $x$ and $x+3$, where $x$ is the lower score. So, the total points Ed scored on the last two tests are $x + (x + 3) = 2x + 3$ points.\n\n3. Find the total points Ed scored on all five tests:\n   The total points Ed scored on all five tests are 259 (first three tests) + 2x + 3 (last two tests) = 259 + 2x + 3.\n\n4. As Ed has a $90\\%$ average on all five tests, we can calculate the total points he earned out of the 500 possible points:\n   $90\\% \\text{ of } 500 = 0.9 \\times 500 = 450$ points.\n\n5. Set up an equation based on the total points Ed scored on all five tests and the total points needed to achieve a $90\\%$ average:\n   $259 + 2x + 3 = 450$.\n\n6. Solve the equation to find the value of $x:\n   $2x + 262 = 450$\n   $2x = 450 - 262$\n   $2x = 188$\n   $x = 94$.\n\n7. So, the lower score on the last two tests is $94$ points. Therefore, the higher score is $94 + 3 = 97$ points.\n\nTherefore, Ed's highest test score was $\\boxed{97}$ points."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7447698744769874
+            }
+        }
+    }
+}

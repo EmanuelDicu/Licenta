@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 4_4.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 4",
+        "problem": "In how many ways can I place 5 different beads on a bracelet if rotations and flips of the bracelet are not treated as different arrangements?",
+        "correct_solution": "There are $5!$ ways to arrange 5 beads in a line.  Since there are 5 rotations in a circle for each of these arrangements, we must divide by 5, and since there are two matching reflections for each arrangement, we must divide by 2.  So there are $\\dfrac{5!}{5 \\times 2} = \\boxed{12}$ ways.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To solve this problem, we can break it down into the following steps:\n\nStep 1: Calculate the total number of ways to place the 5 different beads on the bracelet without considering rotations and flips.\nStep 2: Adjust the total count to account for the rotations and flips that are not treated as different arrangements.\n\nLet's start with step 1:\n\nStep 1: Calculate the total number of ways to place the 5 different beads on the bracelet without considering rotations and flips.\n\nTo calculate the total number of ways to place the 5 beads on the bracelet without restrictions, we can use the permutation formula.\nThe formula for permutations of arranging \\(n\\) distinct objects in a line is \\(n!\\), where \\(n!\\) denotes the factorial of \\(n\\). \n\nFor our problem, we have 5 different beads, so the total number of ways to arrange these beads without restrictions is \\(5! = 5 \\times 4 \\times 3 \\times 2 \\times 1 = 120\\).\n\nSo, there are 120 ways to place the 5 beads on the bracelet without considering rotations and flips.\n\nStep 2: Adjust the total count to account for the rotations and flips that are not treated as different arrangements.\n\nWhen considering rotations and flips, we need to divide the total count by the number of rotations and flips that preserve the arrangement. \n\nFor a bracelet, there are 5 rotations possible because we can rotate the bracelet to align any of the 5 beads at the starting position. Also, there are 2 flips (clockwise and counterclockwise) that do not change the arrangement of the beads when it is placed on a circular bracelet.\n\nTherefore, to account for rotations and flips, we divide the total count by \\(5 \\times 2 = 10\\) because there are 5 rotations and 2 flips that are not treated as different arrangements.\n\nSo, the number of ways to place the 5 different beads on a bracelet if rotations and flips are not treated as different arrangements is \\(120 / 10 = 12\\).\n\nTherefore, there are 12 unique ways to place the 5 different beads on the bracelet considering rotations and flips not as different arrangements."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8807205452775073
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 3_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 3",
+        "problem": "Find the complex number $z$ so that $z + |z| = 2 + 8i.$",
+        "correct_solution": "Let $z = a + bi.$  Then\n\\[a + bi + \\sqrt{a^2 + b^2} = 2 + 8i.\\]Equating the imaginary parts, we get $b = 8.$  Equating the real parts, we get $a + \\sqrt{a^2 + 64} = 2.$  Then\n\\[\\sqrt{a^2 + 64} = 2 - a.\\]Squaring both sides, we get $a^2 + 64 = (2 - a)^2 = a^2 - 4a + 4.$  Solving, we find $a = -15.$  Therefore, $z = \\boxed{-15 + 8i}.$",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To solve this problem, let's first consider a complex number $z = x + yi$, where $x$ and $y$ are real numbers. \n\nThe first step is to express the modulus of $z$ as $|z| = \\sqrt{x^2 + y^2}$. \n\nThen, the equation given is: \n\n$z + |z| = 2 + 8i$\n\nSubstitute $z = x + yi$ and $|z| = \\sqrt{x^2 + y^2}$ into the equation:\n\n$x + yi + \\sqrt{x^2 + y^2} = 2 + 8i$\n\nNext, split the equation into real and imaginary parts:\n\nThe real part of the equation is: \n\n$x + \\sqrt{x^2 + y^2} = 2$\n\nThe imaginary part of the equation is:\n\n$y = 8$\n\nNow that we have two equations:\n\n\\[\n\\begin{cases} \nx + \\sqrt{x^2 + 64} = 2 \\\\\ny = 8\n\\end{cases}\n\\]\n\nWe can solve the first equation by squaring both sides to simplify it:\n\n$(x + \\sqrt{x^2 + 64})^2 = 2^2$\n\n$x^2 + 2x\\sqrt{x^2 + 64} + x^2 + 64 = 4$\n\n$2x\\sqrt{x^2 + 64} = -x^2 - 60$\n\n$4x^2(x^2 + 64) = x^4 + 120x^2 + 3600$\n\nSolving the above equation will give values for $x$. \n\nGiven $y = 8$, and the solution for $x$, we can find the complex number $z = x + yi$.\n\nTherefore, the solution to the problem is finding the values of $x$, and then finding the complex number $z$ as $z = x + 8i$."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7776777677767777
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 1_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 1",
+        "problem": "Ben flips a fair nickel four times. What is the probability that Ben flips Head, Tail, Head, Tail, in that order? Express your answer as a common fraction.",
+        "correct_solution": "Since any given flip has equal probability of $\\frac{1}{2}$ of being a Head or a Tail, and all outcomes are equally likely, the precise sequence given is equal to $\\frac{1}{2^4} = \\boxed{\\frac{1}{16}}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To solve this problem, we can break it down into smaller parts:\n\n1. Determine the total number of outcomes when flipping a fair nickel four times.\n2. Determine the number of outcomes where Ben flips Head, Tail, Head, Tail in that specific order.\n\nLet's go through each part:\n\n1. Total number of outcomes when flipping a fair nickel four times:\nWhen flipping a coin, there are 2 possible outcomes - heads (H) and tails (T). Since Ben flips the nickel four times, the total number of outcomes is 2^4 = 16. These outcomes can be represented as: {HHHH, HHHT, HHTH, HHTT, HTHH, HTHT, HTTH, HTTT, THHH, THHT, THTH, THTT, TTHH, TTHT, TTTH, TTTT}.\n\n2. Number of outcomes where Ben flips Head, Tail, Head, Tail in that order:\nSince we are looking for the specific order of HTH, the number of outcomes where Ben flips Head, Tail, Head, Tail in that order is 1.\n\nTherefore, the probability that Ben flips Head, Tail, Head, Tail in that order is:\nNumber of successful outcomes / Total number of outcomes = 1 / 16 = 1/16.\n\nSo, the solution to the problem is that the probability that Ben flips Head, Tail, Head, Tail in that specific order is 1/16."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8828193832599119
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 1_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 1",
+        "problem": "If $PQ$ is a straight line, what is the value of $x$? [asy]\n\nsize(150);\n\ndraw((-1,0)--(1,0));\n\ndraw((-0.809,.588)--(0,0)--(0.809,.588));\n\ndraw((-.309,.951)--(0,0)--(.309,.951));\n\nlabel(\"$P$\",(-1,0),W);\n\nlabel(\"$Q$\",(1,0),E);\n\nlabel(\"$x^\\circ$\",(0.5,0),NW);\n\nlabel(\"$x^\\circ$\",(-0.5,0),NE);\n\nlabel(\"$x^\\circ$\",(0,0.4));\n\nlabel(\"$x^\\circ$\",(0.27,0.2),N);\n\nlabel(\"$x^\\circ$\",(-0.27,0.2),N);\n\n[/asy]",
+        "correct_solution": "Since $PQ$ is a straight line, then $x^\\circ+x^\\circ+x^\\circ+x^\\circ+x^\\circ = 180^\\circ$ or $5x=180$ or $x=\\boxed{36}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To solve this problem, we can break it down into smaller parts as follows:\n\n1. **Identify the angles**: In the given diagram, we have several angles labeled as $x^\\circ$. Let's denote these angles in relation to the straight line $PQ$. The angles can be identified as follows:\n\n- The angle at point $P$ is $x$.\n- The angle at the intersection of the two lines is also $x$.\n- The angle at point $Q$ is also $x$.\n\n2. **Understanding angles on a straight line**: When two lines form a straight line or are parallel, the sum of the interior angles on the same side of the transversal is always $180^\\circ$. In this case, the angles at $P$ and $Q$ are on the same side of the transversal, which is the straight line $PQ$.\n\n3. **Use the property of angles on a straight line**: Since the angles at $P$ and $Q$ are on the same side of the transversal and form a straight line, they add up to $180^\\circ$. This means:\n\\[ x + x = 180^\\circ \\]\n\\[ 2x = 180^\\circ \\]\n\n4. **Solve for x**: To find the value of $x$, we need to solve the equation we set up:\n\\[ 2x = 180^\\circ \\]\n\\[ x = \\frac{180^\\circ}{2} \\]\n\\[ x = 90^\\circ \\]\n\nTherefore, the value of $x$ is $90^\\circ$."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9178200692041523
+            }
+        }
+    }
+}

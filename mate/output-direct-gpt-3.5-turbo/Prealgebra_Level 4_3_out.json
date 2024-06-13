@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 4_3.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 4",
+        "problem": "Suppose 6 wallops = 5 ballops. Also suppose 3 ballops = 11 fallops. How many wallops are equivalent to 110 fallops?",
+        "correct_solution": "Multiply  \\[\n3\\text{ ballops}=11\\text{ fallops}\n\\] by 10 to find that $30$ ballops are equal to $110$ fallops.  Then multiply  \\[\n6\\text{ wallops} = 5\\text{ ballops}\n\\] by 6 to find that $\\boxed{36}$ wallops are equivalent to 30 ballops.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Let's break down the problem into smaller parts:\n\n1. First, we need to find the equivalence between wallops and fallops using the given information about wallops, ballops, and fallops.\n\nGiven:\n6 wallops = 5 ballops\n3 ballops = 11 fallops\n\nWe need to find the relationship between wallops and fallops. We can do this by finding the relationship between wallops and ballops, and then between ballops and fallops.\n\n2. From the given information, we can see that:\n6 wallops = 5 ballops\n=> 1 wallops = 5/6 ballops\n\n3. Next, we can determine the relationship between ballops and fallops:\n3 ballops = 11 fallops\n=> 1 ballops = 11/3 fallops\n\n4. Now, we can substitute the relationship between ballops and fallops into the relationship between wallops and ballops:\n1 wallops = 5/6 ballops\n=> 1 wallops = 5/6 * (11/3) fallops\n=> 1 wallops = 55/18 fallops\n\n5. Finally, to find how many wallops are equivalent to 110 fallops, we can set up a proportion:\n1 wallops = 55/18 fallops\nx wallops = 110 fallops\n\nx = (110 * 1) / (55/18) \nx = 198/5 \nx = 39.6 wallops\nTherefore, 110 fallops are equivalent to 39.6 wallops."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8454545454545455
+            }
+        }
+    }
+}

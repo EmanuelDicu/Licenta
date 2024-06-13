@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 2_2.json": {
+        "category": "Geometry",
+        "difficulty": "Level 2",
+        "problem": "The points $A(2,5), B(6,5), C(5,2)$ and $D(1,2)$ are the vertices of a parallelogram. If the parallelogram is translated down 2 units and right three units, what will be the coordinates of the final image of point $B$?",
+        "correct_solution": "When an image is translated to the right we just add the number of units it is being translated to the original $x$-coordinate. When an image is translated down we just subtract that number of units from the $y$-coordinate. In this case we'll subtract 2 from the $y$-coordinates and add 3 to the   $x$-coordinates. This will make point $B(6, 5)$ move to $B'(6 + 3, 5 - 2) = \\boxed{(9, 3)}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Let's break down the problem into smaller parts and solve them step by step:  \n\n1. First, let's find the vector representing the translation that moves points 2 units down and 3 units to the right. Let's call this vector $\\vec{v}$.\n   \n   $\\vec{v} = \\begin{pmatrix} 3 \\\\ -2 \\end{pmatrix}$\n\n2. Next, let's find the new coordinates of point B after the translation. We can do this by adding the translation vector $\\vec{v}$ to the original coordinates of point B.\n\n   New coordinates of B: $B'(6,5) + \\vec{v} = B'(6+3, 5-2) = B'(9,3)$\n\nTherefore, the coordinates of the final image of point B after the translation will be $B'(9,3)$."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7194928684627575
+            }
+        }
+    }
+}

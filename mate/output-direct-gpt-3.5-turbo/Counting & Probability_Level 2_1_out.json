@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 2_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 2",
+        "problem": "Determine the number of ways to arrange the letters of the word THAT.",
+        "correct_solution": "First we count the arrangements if the two T's are unique, which is $4!$. Then since the T's are not unique, we divide by $2!$ for the arrangements of T, for an answer of $\\dfrac{4!}{2!} = \\boxed{12}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To find the number of ways to arrange the letters of the word \"THAT,\" we can break down the problem into smaller parts:\n\n1. \\textbf{Identify the total number of letters (n):}\nThe word \"THAT\" has 4 letters.\n\n2. \\textbf{Identify the number of each unique letter:}\nIn this word, the letter \"T\" appears twice, while the letters \"H\" and \"A\" appear once each.\n\n3. \\textbf{Calculate the total number of arrangements:}\nTo calculate the total number of arrangements, we divide the total number of letters factorial by the factorials of the repeating letters.\n\nThe formula to find the number of ways to arrange n items with some items being identical is:\n\\[ \\frac{n!}{n_1! \\cdot n_2! \\cdot ... \\cdot n_k!} \\]\nwhere n is the total number of items, and n1, n2,..., nk are the number of items of each type.\n\n4. \\textbf{Apply the formula:}\nApplying the formula to our problem:\n\\[ \\frac{4!}{2!} = \\frac{24}{2} = 12 \\]\n\nTherefore, there are 12 ways to arrange the letters of the word \"THAT.\""
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8430769230769231
+            }
+        }
+    }
+}

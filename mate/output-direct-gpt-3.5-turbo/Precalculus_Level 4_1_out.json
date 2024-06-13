@@ -1,0 +1,18 @@
+{
+    "Precalculus_Level 4_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 4",
+        "problem": "Let $t$ be the smallest positive real number for which $\\cos t = \\cos t^{\\circ}$.  (We are taking the cosine of $t$ radians on the left and of $t$ degrees on the right.)  Compute $\\lfloor t\\rfloor$, the greatest integer less than $t$.",
+        "correct_solution": "Imagine two identical clock hands, each rotating counterclockwise and both initially pointing directly to the right.  If one of them rotates at 1 radian per second while the other rotates at $1^{\\circ}$ per second, then the faster one will sweep out an angle of $t$ radians at the same time that the slower one travels through $t$ degrees.  We wish to know approximately when the cosines of the corresponding angles will be equal, i.e. when the $x$-coordinates of the tips of the clock hands will be the same.\n\nClearly this will occur when the faster hand has rotated nearly all the way around the circle.  After six seconds the slow hand will have rotated only $6^{\\circ}$, while the fast hand will have traveled around 6 radians, which is still further than $6^{\\circ}$ away from its starting point.  (Recall that 1 radian is equal to $\\frac{180^{\\circ}}{\\pi}$, which is a couple degrees less than $60^{\\circ}$.)  Therefore the $x$-coordinates will not yet be equal for the first time, but will be very close.  We conclude that $\\lfloor t\\rfloor=\\boxed{6}$.  The interested reader may wish to compute the exact value of $t$ for which this occurs.  You should find that $t= \\frac{360\\pi}{\\pi+180}\\approx 6.1754$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To solve this problem, we need to convert $t^\\circ$ to radians so that we can compare the values of $\\cos t$ and $\\cos t^\\circ$.\n\nFirst, we know that $1^{\\circ} = \\frac{\\pi}{180}$ radians. Therefore, $t^\\circ = t \\cdot \\frac{\\pi}{180}$ radians.\n\nNext, we know that the cosine function has a period of $2\\pi$, so we can write $\\cos t = \\cos(t + 2\\pi k)$ for any integer $k$.\n\nNow, we can set up the equation $\\cos t = \\cos t^\\circ$ and substitute in $t^\\circ = t \\cdot \\frac{\\pi}{180}$ to get $\\cos t = \\cos\\left(t \\cdot \\frac{\\pi}{180}\\right)$.\n\nUsing the periodicity of cosine, we get: $\\cos t = \\cos\\left(t \\cdot \\frac{\\pi}{180} + 2\\pi k\\right)$ for any integer $k$.\n\nSince we want to find the smallest positive $t$, let's set $k = 0$ and solve for $t$:\n\n$\\cos t = \\cos\\left(t \\cdot \\frac{\\pi}{180}\\right)$\n\nNow, we can use the identity $\\cos\\alpha = \\cos\\beta$ if and only if $\\alpha = \\pm \\beta + 2\\pi n$ for some integer $n$.\n\nTherefore, we have $t = \\pm t \\cdot \\frac{\\pi}{180} + 2\\pi n$.\n\nSolving for $t$, we get $t = \\frac{360}{361} \\cdot 2\\pi n$.\n\nSince we want the smallest positive $t$, we set $n = 1$ to get $t = \\frac{360}{361} \\cdot 2\\pi$.\n\nTherefore, $\\lfloor t\\rfloor = \\lfloor \\frac{360}{361} \\cdot 2\\pi\\rfloor = \\lfloor 2\\pi\\rfloor = 6$.\n\nSo, the solution to the problem is $\\lfloor t\\rfloor = 6$."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7939163498098859
+            }
+        }
+    }
+}

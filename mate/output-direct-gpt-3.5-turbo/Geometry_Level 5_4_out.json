@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 5_4.json": {
+        "category": "Geometry",
+        "difficulty": "Level 5",
+        "problem": "Suppose $PABCD$ is a right square pyramid with apex $P$ and base $ABCD$.  If $PBD$ is an equilateral triangle with side length 6, then what is the volume of $PABCD$?",
+        "correct_solution": "[asy]\n\nimport three;\n\ntriple A = (0,0,0);\n\ntriple B = (1,0,0);\n\ntriple C = (1,1,0);\n\ntriple D = (0,1,0);\n\ntriple P = (0.5,0.5,1);\n\ndraw(B--C--D--P--B);\n\ndraw(P--C);\n\ndraw(B--A--D,dashed);\n\ndraw(P--A,dashed);\n\nlabel(\"$A$\",A,NW);\n\nlabel(\"$B$\",B,W);\n\nlabel(\"$C$\",C,S);\n\nlabel(\"$D$\",D,E);\n\nlabel(\"$P$\",P,N);\n\ntriple F= (0.5,0.5,0);\n\nlabel(\"$F$\",F,S);\n\ntriple M=(B+C)/2;\n\ndraw(D--B,dashed);\n\ndraw(P--F,dashed);\n\n[/asy]\n\nLet $F$ be the center of the square base.  Since the pyramid is a right pyramid, segment $\\overline{PF}$ is an altitude of triangle $PBD$.  Since $PBD$ is an equilateral triangle with side length 6, $PFB$ is a 30-60-90 triangle with $FB = BD/2 =3$ and $PF = 3\\sqrt{3}$.  Finally, $\\overline{BD}$ is a diagonal of square base $ABCD$, so we have $BC = BD/\\sqrt{2} = 6/\\sqrt{2} = 3\\sqrt{2}$.  Therefore, the volume of the pyramid is \\[\\frac{[ABCD](PF)}{3} = \\frac{(3\\sqrt{2})^2 (3\\sqrt{3})}{3} = \\boxed{18\\sqrt{3}}.\\]",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To find the volume of the right square pyramid $PABCD$, we can split the problem into smaller parts and solve them in logical order:\n\n1. Find the height of the pyramid:\nSince $PBD$ is an equilateral triangle with side length 6, the height of the pyramid is the altitude from $P$ to the base $ABCD$. \nLet's denote this height as $h$.\n\n2. Use the geometric properties of an equilateral triangle:\nIn an equilateral triangle, the altitude divides the triangle into two congruent right triangles with hypotenuse equal to the side length of the triangle and the altitude as the longer leg. \nWe know the side length of the equilateral triangle $PBD$ is 6, so the height $h$ is half of the altitude of the equilateral triangle $PBD$. \nSince the altitude of an equilateral triangle divides the base into two congruent segments, $h = 3\\sqrt{3}$.\n\n3. Calculate the volume of the pyramid:\nThe volume of a square pyramid is given by the formula:\n\\[V = \\frac{1}{3} \\times \\text{Base Area} \\times \\text{Height}\\]\nSince $PABCD$ is a square pyramid, the base area is the area of the square base $ABCD$. \nGiven that $PBD$ is an equilateral triangle, the side length of the square base $ABCD$ is also 6 units. \nThis means the area of the square base is $6^2 = 36$ square units.\n\nSubstitute the values of the base area and height into the formula for the volume of the pyramid:\n\\[V = \\frac{1}{3} \\times 36 \\times 3\\sqrt{3}\\]\n\\[V = 12\\sqrt{3}\\]\n\nTherefore, the volume of the right square pyramid $PABCD$ is $12\\sqrt{3}$ cubic units."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7610853739245532
+            }
+        }
+    }
+}

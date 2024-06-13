@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 1_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 1",
+        "problem": "If $3m+4n=47$, and $m+n=15$, what is $m$?",
+        "correct_solution": "Because the question only asks for the value of $m$, we can begin by eliminating $n$. In order to do this, we multiply the second equation by 4, giving us a system of two equations where both coefficients of $n$ are 4: \\begin{align*} 3m+4n=47\n\\\\ 4m+4n=60\n\\end{align*}From here, we can just subtract the second equation from the first. This gives us $(3m+4n)-(4m+4n)=47-60$, which simplifies to $-m=-13$ or $m=\\boxed{13}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To solve this problem, we can use the given equations to eliminate one variable and solve for the other. Here is the step-by-step solution:\n\nStep 1: Solve the second equation for one variable in terms of the other.\nGiven: $m + n = 15$\nSolving for $n$, we get: $n = 15 - m$\n\nStep 2: Substitute the expression for $n$ into the first equation.\nGiven: $3m + 4n = 47$\nSubstitute $n = 15 - m$: $3m + 4(15 - m) = 47$\nExpand: $3m + 60 - 4m = 47$\nSimplify: $-m + 60 = 47$\nSubtract 60 from both sides: $-m = -13$\nMultiply by -1 to solve for $m$: $m = 13$\n\nTherefore, the solution to the problem is $m = 13$."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7487437185929648
+            }
+        }
+    }
+}

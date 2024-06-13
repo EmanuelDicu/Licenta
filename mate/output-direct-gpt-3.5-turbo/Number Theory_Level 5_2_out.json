@@ -1,0 +1,18 @@
+{
+    "Number Theory_Level 5_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 5",
+        "problem": "Suppose that $a$ is a positive integer for which the least common multiple of $a+1$ and $a-5$ is $10508$. What is $a^2 - 4a + 1$?",
+        "correct_solution": "Notice that $(a+1)(a-5) = a^2 - 4a - 5$, so $a^2 - 4a + 1 = (a+1)(a-5) + 6$.\n\nAlso, we know that by the Euclidean algorithm, the greatest common divisor of $a+1$ and $a-5$ divides $6$: \\begin{align*}\n\\text{gcd}\\,(a+1, a-5) &= \\text{gcd}\\,(a+1-(a-5),a-5)\\\\\n&= \\text{gcd}\\,(6,a-5).\n\\end{align*}As $10508$ is even but not divisible by $3$, for the sum of the digits of $10508$ is $1 + 5 + 8 = 14$, it follows that the greatest common divisor of $a+1$ and $a-5$ must be $2$.\n\nFrom the identity $xy = \\text{lcm}\\,(x,y) \\cdot \\text{gcd}\\,(x,y)$ (consider the exponents of the prime numbers in the prime factorization of $x$ and $y$), it follows that \\begin{align*}\n(a+1)(a-5) &= \\text{lcm}\\,(a+1,a-5) \\cdot \\text{gcd}\\,(a+1, a-5) \\\\\n&= 2 \\cdot 10508.\n\\end{align*}Thus, the desired answer is $2 \\cdot 10508 + 6 = \\boxed{21022}.$\n\nWith a bit more work, we can find that $a = 147$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To solve this problem, we will split it into smaller parts and solve them step by step.\n\n1. **Find the prime factorization of 10508:**\nTo find the prime factorization of 10508, we divide it by prime numbers starting from 2:\n$10508 = 2 \\times 5254 = 2 \\times 2 \\times 2627$\nSince 2627 is a prime number, the prime factorization of 10508 is $2^2 \\times 2627$.\n\n2. **Determine the possible values of $a$ from the prime factorization:**\nGiven that the least common multiple of $a+1$ and $a-5$ is 10508, we know that the prime factorization of $a+1$ and $a-5$ must include the prime factors of 10508. Since $a+1$ and $a-5$ differ by 6, it means that $a-5$ must include the factor of 2 twice.\nSo, the possible values for $a-5$ are $2^2 \\times 2627$ and $2^3 \\times 2627$.\nTherefore, $a$ can be $2^2 \\times 2627 + 5 = 10508$ or $2^3 \\times 2627 + 5 = 21021$.\n\n3. **Calculate $a^2 - 4a + 1$ for the possible values of $a$:**\na) For $a = 10508$,\n$a^2 - 4a + 1 = (10508)^2 - 4(10508) + 1 = 110876564 - 42032 + 1 = 110834533$.\n\nb) For $a = 21021$,\n$a^2 - 4a + 1 = (21021)^2 - 4(21021) + 1 = 441847041 - 84084 + 1 = 441762958$.\n\nTherefore, the solution to the problem is $a^2 - 4a + 1 = \\boxed{110834533}$ when $a = 10508$."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7671345995045417
+            }
+        }
+    }
+}

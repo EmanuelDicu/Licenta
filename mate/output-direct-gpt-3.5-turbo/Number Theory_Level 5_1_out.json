@@ -1,0 +1,18 @@
+{
+    "Number Theory_Level 5_1.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 5",
+        "problem": "How many positive perfect cube factors does $3^65^{10}$ have?",
+        "correct_solution": "Any factor of $3^6\\cdot5^{10}$ is in the form $3^a\\cdot5^b$ for $0\\le a\\le6$ and $0\\le b\\le{10}$. To count the number of perfect cube factors, we must count the factors of $3^6\\cdot5^{10}$ that have $a=0$, $3$, or $6$ and $b=0$, $3$, $6$, or $9$. This gives $3\\cdot4=\\boxed{12}$ perfect cube factors.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Let's break down the problem into smaller parts and solve them step by step:\n\n1. **Prime factorization of $3^{6}5^{10}$**: To find the prime factorization of the given number, we can write it as $3^{6}5^{10}$. This means that the number can be expressed as the product of prime powers.\n\n2. **Finding the cube factors**: To find the perfect cube factors, we need to identify the powers of 3 and 5 that are multiples of 3. In the given expression $3^{6}5^{10}$, the powers of 3 that can form perfect cubes are 3, 6, and 9. Similarly, the powers of 5 that can form perfect cubes are 3, 6, and 9.\n\n3. **Counting the number of cube factors**: For each power of 3 and 5 that can form a perfect cube, we have 3 choices (0, 1, or 2) for each prime factor. Therefore, the total number of positive perfect cube factors will be the product of the choices for the powers of 3 and 5.\n\n4. **Calculating the total number of cube factors**: \n   - For the powers of 3: \n     - Power $3^3$: 3 choices (0, 1, 2)\n     - Power $3^6$: 3 choices (0, 1, 2)\n     - Power $3^9$: 3 choices (0, 1, 2)\n   \n   - For the powers of 5:\n     - Power $5^3$: 3 choices (0, 1, 2)\n     - Power $5^6$: 3 choices (0, 1, 2)\n     - Power $5^9$: 3 choices (0, 1, 2)\n   \n   Therefore, the total number of positive perfect cube factors would be $3 \\times 3 = 9$.\n\nSo, the solution to the problem is that $3^{6}5^{10}$ has 9 positive perfect cube factors."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8417317246273953
+            }
+        }
+    }
+}

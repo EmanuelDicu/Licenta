@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 2_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 2",
+        "problem": "Fifty students were surveyed about their participation in hockey and baseball. The results of the survey were:\n\n$\\bullet$ $33$ students played hockey\n\n$\\bullet$ $24$ students played baseball\n\n$\\bullet$ $8$ students played neither hockey nor baseball\n\nHow many of the students surveyed played both hockey and baseball?",
+        "correct_solution": "Since there were $50$ students surveyed in total and $8$ played neither hockey nor baseball, then $42$ students in total played one game or the other.\n\nSince $33$ students played hockey and $24$ students played baseball, and this totals $33+24=57$ students, then there must be $\\boxed{15}$ students who are \"double-counted\", that is who play both sports.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Let's break down the problem into smaller parts and solve them step by step:\n\n1. First, we know that there are 50 students surveyed.\n2. From the information given, there were 33 students who played hockey, 24 who played baseball, and 8 who played neither sport.\n3. Let's denote the number of students who played both hockey and baseball as $x$.\n4. We also know that the total number of students is the sum of students who played hockey, students who played baseball, students who played both, and students who played neither. Mathematically, we can write this as:\n\\[ 33 + 24 - x + 8 = 50 \\]\n\nNow let's solve for the value of $x$ from the equation above:\n\n\\[ 33 + 24 - x + 8 = 50 \\]\n\\[ 65 - x + 8 = 50 \\]\n\\[ 65 - x = 42 \\]\n\\[ -x = 42 - 65 \\]\n\\[ -x = -23 \\]\n\\[ x = 23 \\]\n\nTherefore, $\\boxed{23}$ students played both hockey and baseball."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7365269461077845
+            }
+        }
+    }
+}

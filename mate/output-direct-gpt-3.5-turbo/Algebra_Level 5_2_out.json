@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 5_2.json": {
+        "category": "Algebra",
+        "difficulty": "Level 5",
+        "problem": "Solve the inequality $$-13(r+5) + 25 > 4(r-10)$$for $r$. Express your answer in interval notation.",
+        "correct_solution": "First, we use the distributive property to expand the left-hand side of the inequality: $$-13r - 65 + 25 > 4r - 40$$The constants on the left side add up to $-40$, so adding $40$ to both sides cancels all the constant terms: $$-13r > 4r$$Adding $13r$ to both sides yields $$0 > 17r$$and dividing both sides by $17$ gives $0>r$, or in interval notation, $r\\in\\boxed{(-\\infty,0)}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To solve the given inequality: \n\n$$-13(r+5) + 25 > 4(r-10)$$\n\nWe can break it down into smaller parts and solve them step by step:\n\n1. **Distribute the values**:\nFirst, we distribute on both sides of the inequality:\n-13r - 65 + 25 > 4r - 40\n\nSimplify:\n-13r - 40 > 4r - 40\n\n2. **Combine like terms**:\nNext, combine like terms on both sides:\n-13r - 40 > 4r - 40\n\n3. **Cancel out the common terms**:\nWe can cancel the \"-40\" terms on both sides, as they are equal:\n-13r > 4r\n\n4. **Isolate the variable**:\nNext, to solve for r, we need to get all the terms involving r on one side. To do this, we can add 13r to both sides:\n-13r + 13r > 4r + 13r\n0 > 17r\n\n5. **Simplify the inequality**:\nNow we have simplified the inequality to 0 > 17r, which simplifies further to 0 > r.\n\n6. **Express the solution in interval notation**:\nSince r is greater than 0, we can express the solution as an interval:\nr \u2208 (0, \u221e)\n\nSo, the solution to the inequality -13(r+5) + 25 > 4(r-10) is r \u2208 (0, \u221e)."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7525667351129364
+            }
+        }
+    }
+}

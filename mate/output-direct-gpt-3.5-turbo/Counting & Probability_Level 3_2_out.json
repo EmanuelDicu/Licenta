@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 3_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 3",
+        "problem": "There are 30 men and 40 women in the Town Library Club.  They wish to form a 7-person steering committee with 3 men and 4 women.  In how many ways can they form the committee?",
+        "correct_solution": "In this problem, we're really selecting two separate committees.  We can choose 3 men from the 30 men total in $$ \\binom{30}{3} = \\frac{30 \\times 29 \\times 28}{3 \\times 2 \\times 1} = 4,\\!060 $$ways, and 4 women from the 40 women total in $$ \\binom{40}{4} = \\frac{40 \\times 39 \\times 38 \\times 37}{4 \\times 3 \\times 2 \\times 1} = 91,\\!390 $$ways.  Since these two selections are independent (since for each of the $4,\\!060$ ways to pick the men, there are $91,\\!390$ ways to pick the women), we multiply them together to get the number of ways that we can form the 7-member overall committee: $$ \\binom{30}{3}\\binom{40}{4} = (4,\\!060)(91,\\!390) = \\boxed{371,\\!043,\\!400}. $$",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To solve this problem, we can break it down into smaller parts and solve each part step by step:\n\nPart 1: Calculate the number of ways to choose 3 men from 30 men.\nThis can be done using the combination formula, which is denoted as $\\binom{n}{k} = \\frac{n!}{k!(n-k)!}$. Here, we have n = 30 (total number of men) and k = 3 (number of men needed for the committee).\nSo, the number of ways to select 3 men from 30 men is $\\binom{30}{3} = \\frac{30!}{3!(30-3)!}$.\n\nPart 2: Calculate the number of ways to choose 4 women from 40 women.\nSimilar to Part 1, we can use the combination formula. Here, we have n = 40 (total number of women) and k = 4 (number of women needed for the committee).\nSo, the number of ways to select 4 women from 40 women is $\\binom{40}{4} = \\frac{40!}{4!(40-4)!}$.\n\nPart 3: Calculate the total number of ways to form the steering committee.\nSince all members in the committee must be both men and women, we need to multiply the results from Part 1 and Part 2.\nTotal number of ways = $\\binom{30}{3} \\times \\binom{40}{4}$.\n\nNow, let's calculate the solution step by step:\n\nPart 1: $\\binom{30}{3} = \\frac{30!}{3!(30-3)!} = \\frac{30!}{3!27!} = \\frac{30*29*28}{3*2*1} = 4060$ ways.\n\nPart 2: $\\binom{40}{4} = \\frac{40!}{4!(40-4)!} = \\frac{40!}{4!36!} = \\frac{40*39*38*37}{4*3*2*1} = 91,390$ ways.\n\nPart 3: Total number of ways = $4060 * 91390 = 371,352,400$ ways.\n\nTherefore, there are 371,352,400 ways to form the 7-person steering committee with 3 men and 4 women from the 30 men and 40 women in the Town Library Club."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7540769732550554
+            }
+        }
+    }
+}

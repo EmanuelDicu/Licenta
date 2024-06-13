@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 1_2.json": {
+        "category": "Algebra",
+        "difficulty": "Level 1",
+        "problem": "Hillary has eleven coins, all dimes and nickels. In total, the coins are worth 75 cents. How many nickels does she have?",
+        "correct_solution": "Let the number of dimes Hillary has be $d$ and the number of nickels she has be $n$. We have the two equations \\begin{align*}\nd+n&=11\\\\\n10d+5n&=75\n\\end{align*} (The last equation is in terms of cents.) To make the second equation nicer, we divide both sides by 5 to get $2d+n=15$. From the first given equation, we have $d=11-n$. Substituting this into the simplified second given equation to eliminate $d$, we get $2(11-n)+n=15\\Rightarrow n=7$. Thus, Hillary has $\\boxed{7}$ nickels.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To solve the problem, let's break it down into smaller parts and solve them step by step:\n\n1. Let \\( n \\) be the number of nickels and \\( d \\) be the number of dimes that Hillary has.\n2. We are given that Hillary has a total of eleven coins. So, we can write this as an equation: \\( n + d = 11 \\).\n3. We are also given that the total value of the coins is 75 cents. Since each nickel is worth 5 cents and each dime is worth 10 cents, we can write this as a second equation: \\( 5n + 10d = 75 \\).\n4. Now we have a system of two equations:\n  - Equation 1: \\( n + d = 11 \\)\n  - Equation 2: \\( 5n + 10d = 75 \\)\n5. To simplify the system, we can multiply Equation 1 by 5 to make the coefficients of \\( n \\) the same:\n  - \\( 5n + 5d = 55 \\)\n6. Subtract Equation 1 from this new equation to eliminate \\( n \\):\n  - \\( 5n + 10d - 5n - 5d = 75 - 55 \\)\n  - Simplifying gives: \\( 5d = 20 \\).\n7. Solve for \\( d \\):\n  - \\( d = 4 \\).\n8. Substitute the value of \\( d \\) back into Equation 1 to find \\( n \\):\n  - \\( n + 4 = 11 \\)\n  - \\( n = 7 \\).\n\nTherefore, Hillary has 7 nickels."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7460018814675446
+            }
+        }
+    }
+}

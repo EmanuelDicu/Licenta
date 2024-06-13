@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 3_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 3",
+        "problem": "What is the tens digit in the sum $7! + 8! + 9! + \\cdots + 2006!$?",
+        "correct_solution": "Since $n!$ contains the product $2\\cdot5\\cdot10= 100$ whenever $n\\ge 10$,  it suffices to determine the tens digit of \\[\n7! + 8! + 9! = 7!(1 + 8 + 8\\cdot9) = 5040(1 + 8 + 72)= 5040\\cdot81.\n\\]This  is the same as the units digit of $4\\cdot 1$, which is $\\boxed{4}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Let's break down the problem into smaller parts and solve it step by step:\n\n1. Calculate each factorial individually:\n- $7! = 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 5040$\n- $8! = 8 \\times 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 40320$\n- $9! = 9 \\times 8 \\times 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 362880$\n- ...\n- $2006! = 2006 \\times 2005 \\times ... \\times 3 \\times 2 \\times 1$\n\n2. In order to find the tens digit in each factorial sum, we focus on the tens digit of the factorials. \n- $n!$, where $n > 4$, will have a tens digit of 0 because the tens place will be multiplied by multiples of 10.\n\n3. Now, we need to add up all the factorials from $7!$ to $2006!$.\n- Since all factorials from $10!$ to $2006!$ have a tens digit of 0, they will not contribute to the tens digit of the final sum.\n\n4. Calculate the sum of the factorials with tens digits: $7! + 8! + 9!$.\n- $7! = 5040$, tens digit is 0\n- $8! = 40320$, tens digit is 2\n- $9! = 362880$, tens digit is 8\n\n5. Add the tens digits of $8!$ and $9!$: $2 + 8 = 10$.\n- The tens digit of the sum is 1.\n\nSo, the tens digit in the sum $7! + 8! + 9! + \\cdots + 2006!$ is $\\boxed{1}$."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8506711409395973
+            }
+        }
+    }
+}

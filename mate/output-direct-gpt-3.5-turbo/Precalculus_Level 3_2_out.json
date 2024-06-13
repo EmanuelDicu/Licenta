@@ -1,0 +1,18 @@
+{
+    "Precalculus_Level 3_2.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 3",
+        "problem": "Three vertices of a cube are $P=(7,12,10)$, $Q=(8,8,1)$, and $R=(11,3,9)$. What is the side length of the cube?",
+        "correct_solution": "We compute \\[\\begin{aligned} PQ &= \\sqrt{(7-8)^2 + (12-8)^2 + (10-1)^2} = 7\\sqrt{2}, \\\\ QR &= \\sqrt{(8-11)^2 + (8-3)^2 + (1-9)^2} = 7\\sqrt{2}, \\\\ PR &= \\sqrt{(7-11)^2 + (12-3)^2 + (10-9)^2} = 7\\sqrt{2}. \\end{aligned}\\]Thus, $PQR$ is an equilateral triangle made from three vertices of a cube. It follows that each side of $PQR$ must be a face diagonal of the cube, so the side length of the cube is $\\boxed{7}.$\n[asy]\nimport three;\ntriple A=(0,0,0),B=(0,0,1),C=(0,1,1),D=(0,1,0),E=A+(1,0,0),F=B+(1,0,0),G=C+(1,0,0),H=D+(1,0,0);\ndraw(A--B--C--D--A^^E--F--G--H--E^^A--E^^B--F^^C--G^^D--H);\ndraw(B--D--E--B,dashed);\nlabel(\"$P$\",B,N);\nlabel(\"$Q$\",D,SE);\nlabel(\"$R$\",E,SW);\n[/asy]",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To solve this problem, we can use the distance formula in 3D space to find the distance between two points. The distance formula in three dimensions is given by:\n\n$$D = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2}$$\n\n1. Let's first find the distance between points P and Q to determine the length of the space diagonal of the cube.\n\nThe coordinates of points P and Q are:\n$P=(7,12,10)$ and $Q=(8,8,1)$\n\nSubstitute the coordinates into the distance formula:\n\n$$D_{PQ} = \\sqrt{(8-7)^2 + (8-12)^2 + (1-10)^2}$$\n$$D_{PQ} = \\sqrt{1^2 + (-4)^2 + (-9)^2}$$\n$$D_{PQ} = \\sqrt{1 + 16 + 81}$$\n$$D_{PQ} = \\sqrt{98}$$\n\n2. To find the side length of the cube, we need to realize that the space diagonal of a cube is related to the side length by the formula:\n\n$$\\text{Space Diagonal} = \\sqrt{3} \\times \\text{Side Length}$$\n\nEquating the space diagonal we found (D_{PQ}) to the formula above, we get:\n\n$$\\sqrt{98} = \\sqrt{3} \\times \\text{Side Length}$$\n\nNow, we can solve for the side length of the cube:\n\n$$\\text{Side Length} = \\frac{\\sqrt{98}}{\\sqrt{3}}$$\n$$\\text{Side Length} = \\sqrt{\\frac{98}{3}}$$\n$$\\text{Side Length} = \\sqrt{\\frac{98}{3} \\times \\frac{3}{3}}$$\n$$\\text{Side Length} = \\sqrt{\\frac{294}{3}}$$\n$$\\text{Side Length} = \\sqrt{98}$$\n$$\\text{Side Length} = \\boxed{\\sqrt{98}}$$\n\nTherefore, the side length of the cube is $\\sqrt{98}$."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8073188946975355
+            }
+        }
+    }
+}
