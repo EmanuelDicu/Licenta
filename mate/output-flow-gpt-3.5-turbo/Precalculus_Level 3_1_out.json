@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 3_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 3",
+        "problem": "The set of vectors $\\mathbf{v}$ such that\n\\[\\operatorname{proj}_{\\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}} \\mathbf{v} = \\begin{pmatrix} 0 \\\\ 0 \\end{pmatrix}\\]lie on a line.  Enter the equation of this line in the form \"$y = mx + b$\".",
+        "correct_solution": "Let $\\mathbf{v} = \\begin{pmatrix} x \\\\ y \\end{pmatrix}.$\n\nFrom the formula of a projection,\n\\begin{align*}\n\\operatorname{proj}_{\\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}} \\mathbf{v} &= \\frac{\\mathbf{v} \\cdot \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}}{\\left\\| \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} \\right\\|^2} \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} \\\\\n&= \\frac{\\begin{pmatrix} x \\\\ y \\end{pmatrix} \\cdot \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}}{5} \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} \\\\\n&= \\frac{2x + y}{5} \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} \\\\\n&= \\begin{pmatrix} 0 \\\\ 0 \\end{pmatrix}.\n\\end{align*}Then\n\\[\\frac{2x + y}{5} = 0,\\]so $2x + y = 0.$  Thus, the equation of the line is $\\boxed{y = -2x}.$",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nThe projection of vector v onto the vector [2, 1] is the zero vector [0, 0].\nStep 2:\nTo find the projection of a vector onto another vector, we use the formula: proj_u(v) = ((v * u) / (u * u)) * u, where * represents the dot product.\nStep 3:\nLet the vector v be (x, y). The projection of v onto [2, 1] is ((x*2 + y*1) / (2^2 + 1^2)) * [2, 1].\nStep 4:\nGiven that the projection is [0, 0], we set ((2x + y) / 5) * [2, 1] = [0, 0].\nStep 5:\nThis simplifies to 2x + y = 0.\nStep 6:\nThe slope of the line in the form y = mx + b is -2 (m = -2).\nStep 7:\nTherefore, the equation of the line representing all possible vectors v that satisfy the projection constraint is y = -2x. \nFinal answer:\n\\boxed{y = -2x}"
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8441926345609065
+            }
+        }
+    }
+}

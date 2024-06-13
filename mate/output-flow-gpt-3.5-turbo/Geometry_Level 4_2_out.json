@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 4_2.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "A circle is circumscribed about an equilateral triangle with side lengths of $6$ units each.  What is the area of the circle, in square units? Express your answer in terms of $\\pi$.",
+        "correct_solution": "[asy]\nsize(100);\ndefaultpen(linewidth(.8));\ndraw((0,0)--(4.5,7.794)--(9,0)--cycle);\ndraw(Circle((4.5,2.598),5.196));\ndraw((4.5,7.794)--(4.5,0));\ndot((4.5,2.598));\nlabel(\"$O$\",(4.5,2.598),W);\nlabel(\"$A$\",(4.5,7.794),N);\nlabel(\"$B$\",(9,0),E);\nlabel(\"$M$\",(4.5,0),S);\n[/asy]\n\nAbove is the diagram implied by the problem, with some added lines ($O$ is the center of the circle). Since $\\triangle AMB$ is a 30-60-90 triangle and $AB=6$, $AM=3\\sqrt{3}$. Since $AO$ is $2/3$ of $AM$, we have $AO=2\\sqrt{3}$. Thus, the area of the circle is $\\pi(2\\sqrt{3})^2=\\boxed{12\\pi}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nThe side length of the equilateral triangle is 6 units.\nStep 2:\nThe radius of the circumscribed circle is equal to the distance from the center of the circle to a vertex of the triangle.\nStep 3:\nDividing the equilateral triangle into two 30-60-90 triangles, we find that the height of the equilateral triangle is $3\\sqrt{3}$ units and is also the radius of the circumscribed circle.\nStep 4:\nThe formula for the area of a circle is $A = \\pi r^2$.\nStep 5:\nSubstitute $r = 3\\sqrt{3}$ into the formula $A = \\pi r^2$ to find the area of the circle.\nStep 6:\n$A = \\pi (3\\sqrt{3})^2 = \\pi (27) = \\boxed{27\\pi}$\nStep 7:\nTherefore, the area of the circle is $27\\pi$ square units."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8020679468242246
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 1_1.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 1",
+        "problem": "Let $a,$ $b,$ and $c$ be the roots of $x^3 - 3x - 5 = 0.$  Find $abc.$",
+        "correct_solution": "By Vieta's formulas, $abc = \\boxed{5}.$",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nGiven the equation $x^3 - 3x - 5 = 0$, we know that $a$, $b$, and $c$ are the roots of this equation.\n\nStep 2:\nBy Vieta's formulas for a cubic equation, the product of the roots is equal to the opposite of the constant term divided by the leading coefficient. \n\nStep 3:\nIn this case, the product of the roots $abc$ is given by $-\\frac{-5}{1} = 5$.\n\nStep 4:\nTherefore, the product of the roots $abc$ of the equation $x^3 - 3x - 5 = 0$ is $\\boxed{5}$."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.9190371991247265
+            }
+        }
+    }
+}

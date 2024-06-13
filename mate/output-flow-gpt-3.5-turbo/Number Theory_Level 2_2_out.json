@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 2_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 2",
+        "problem": "There are many two-digit multiples of 7, but only two of the multiples have digit sum of 10. The sum of these two multiples of 7 is what?",
+        "correct_solution": "The two-digit multiples of 7 are $$14, 21, \\underline{28}, 35, 42, 49, 56, 63, 70, 77, 84, \\underline{91}\\text{, and } 98.$$Only 28 and 91 have digit sums of 10. The sum of 28 and 91 is $\\boxed{119}.$",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nThe two-digit multiples of 7 are 14, 21, 28, 35, 42, 49, 56, 63, 70, 77, 84, 91, and 98.\nStep 2:\nAmong these multiples, only 21 and 70 have a digit sum of 10.\nStep 3:\nCalculate the sum of 21 and 70: 21 + 70 = 91.\nStep 4:\nTherefore, the sum of the two multiples of 7 that have a digit sum of 10 is \\boxed{91}."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": false,
+                "Same result": false,
+                "Levenshtein distance value": 0.5886075949367089
+            }
+        }
+    }
+}

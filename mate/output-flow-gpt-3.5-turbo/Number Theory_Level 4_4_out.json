@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 4_4.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 4",
+        "problem": "Find the units digit of the sum of the first $21$ positive perfect cubes.",
+        "correct_solution": "Notice that for each integer $n$ satisfying $1 \\le n \\le 19, n \\neq 10$, then using the sum of cubes factorization, $n^3 + (20 - n)^3 = (n + 20 - n)(n^2 + (20-n)n + (20-n)^2)$ $ = 20(n^2 + (20-n)n + (20-n)^2)$. Thus, we can pair each integer with the difference between $20$ and that integer, and the sum of their cubes is divisible by $20$. Hence, the units digit of the sum of the first $19$ cubes, excluding $10$, is equal to $0$. Also, the units digits of $10^3$ and $20^3$ are clearly $0$, so we just need to find the units digit of the cube of $21$, which is $\\boxed{1}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nThe units digit of a number is the digit furthest to the right.\nStep 2:\nTo find the units digit of a perfect cube, we only need to consider the units digit of the base number.\nStep 3:\nThe units digit cycle of perfect cubes repeats every 10 numbers, with the pattern 0, 1, 8, 7, 4, 5, 6, 3, 2, 9.\nStep 4:\nSince we are summing the first 21 positive perfect cubes, we need to find the units digit of each perfect cube and then sum these units digits.\nStep 5:\nThe first 21 positive perfect cubes have a pattern of units digits: 1, 8, 7, 4, 5, 6, 3, 2, 9, 0, 1, 8, 7, 4, 5, 6, 3, 2, 9, 0, 1.\nStep 6:\nSumming the units digits gives us 1 + 8 + 7 + 4 + 5 + 6 + 3 + 2 + 9 + 0 + 1 + 8 + 7 + 4 + 5 + 6 + 3 + 2 + 9 + 0 + 1 = 81.\nStep 7:\nThe units digit of the sum of the first 21 positive perfect cubes is 1, so the answer is \\boxed{1}."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.71875
+            }
+        }
+    }
+}

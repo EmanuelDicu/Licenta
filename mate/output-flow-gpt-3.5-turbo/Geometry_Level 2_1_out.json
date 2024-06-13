@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 2_1.json": {
+        "category": "Geometry",
+        "difficulty": "Level 2",
+        "problem": "In the figure below $AB = BC$, $m \\angle ABD = 30^{\\circ}$, $m \\angle C = 50^{\\circ}$ and $m \\angle CBD = 80^{\\circ}$. What is the number of degrees in the measure of angle $A$?\n\n[asy]\ndraw((0,0)--1.5dir(-15)--3.5dir(60)--(0,0),linewidth(2));\ndraw(1.5dir(-15)--1.5dir(-15)+4dir(35)--3.5dir(60),linewidth(2));\nlabel(\"A\",(0,0),W);\nlabel(\"B\",3.5dir(60),N);\nlabel(\"C\",1.5dir(-15)+4dir(35),E);\nlabel(\"D\",1.5dir(-15),S);\n[/asy]",
+        "correct_solution": "We know two of the angles in $\\triangle BCD$: $$m\\angle CBD = 80^\\circ, ~~m\\angle BCD = 50^\\circ.$$ Since the sum of angles in a triangle is $180^\\circ$, we conclude that $m\\angle BDC = 180^\\circ - (50^\\circ+80^\\circ) = 50^\\circ$.\n\nTherefore, $\\triangle BCD$ is isosceles with equal angles at $C$ and $D$, which implies that the sides opposite those angles ($BD$ and $BC$) are equal.\n\nSince we are given $AB=BC$, we now know that $AB=BD$, which means that $\\triangle ABD$ is isosceles with equal angles at $A$ and $D$. Let $x = m\\angle A$. Then the sum of angles in $\\triangle ABD$ is $180^\\circ$, so $$x + x + 30^\\circ = 180^\\circ.$$ We can solve this equation to get $x = 75^\\circ$. So, $m\\angle A = \\boxed{75^\\circ}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nGiven that $AB = BC$, angles $ABD$ and $CBD$ are congruent by base angles theorem.\nStep 2:\n$m \\angle ABD = 30^{\\circ}$ and $m \\angle CBD = 80^{\\circ}$.\nStep 3:\nSince angles $ABD$ and $CBD$ are congruent, $m \\angle ABD = m \\angle CBD = 80^{\\circ}$.\nStep 4:\nAngle $A$ is supplementary to angle $C$, which means $m \\angle A + m \\angle C = 180^{\\circ}$.\nStep 5:\nSubstitute $m \\angle A = x$ and $m \\angle C = 50^{\\circ}$ into the equation $x + 50 = 180$.\nStep 6:\nSolve for $x$: $x = 180 - 50 = 130$.\nStep 7:\nTherefore, the number of degrees in the measure of angle $A$ is $\\boxed{130}$."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7222222222222222
+            }
+        }
+    }
+}

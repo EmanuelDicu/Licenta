@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 3_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 3",
+        "problem": "Find the complex number $z$ so that $z + |z| = 2 + 8i.$",
+        "correct_solution": "Let $z = a + bi.$  Then\n\\[a + bi + \\sqrt{a^2 + b^2} = 2 + 8i.\\]Equating the imaginary parts, we get $b = 8.$  Equating the real parts, we get $a + \\sqrt{a^2 + 64} = 2.$  Then\n\\[\\sqrt{a^2 + 64} = 2 - a.\\]Squaring both sides, we get $a^2 + 64 = (2 - a)^2 = a^2 - 4a + 4.$  Solving, we find $a = -15.$  Therefore, $z = \\boxed{-15 + 8i}.$",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nLet z = a + bi, where a and b are real numbers.\nStep 2:\nSubstitute z = a + bi into the equation z + |z| = 2 + 8i.\nStep 3:\nSubstitute z = a + bi into the absolute value term |z| = \u221a(a\u00b2 + b\u00b2).\nStep 4:\nThus, the equation becomes a + bi + \u221a(a\u00b2 + b\u00b2) = 2 + 8i.\nStep 5:\nSeparate the real and imaginary parts of the equation to get two equations: a + \u221a(a\u00b2 + b\u00b2) = 2 and b = 8.\nStep 6:\nSolve the first equation for a: a + \u221a(a\u00b2 + 64) = 2 -> a\u00b2 - 4a + 4 = a(a - 4) = 0 -> a = 0, a = 4.\nStep 7:\nIf a = 0, then b = 8. If a = 4, then b = 8, satisfying both real and imaginary equations.\nStep 8:\nTherefore, the complex number z that satisfies the given equation is z = 4 + 8i.\nFinal answer:\n\\boxed{4 + 8i}"
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7424892703862661
+            }
+        }
+    }
+}

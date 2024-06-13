@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 4_2.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 4",
+        "problem": "Find the matrix $\\mathbf{P}$ such that for any vector $\\mathbf{v},$ $\\mathbf{P} \\mathbf{v}$ is the projection of $\\mathbf{v}$ onto the $yz$-plane.",
+        "correct_solution": "The projection $\\mathbf{P}$ takes $\\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix}$ to $\\begin{pmatrix} 0 \\\\ y \\\\ z \\end{pmatrix}.$\n\n[asy]\nimport three;\n\nsize(180);\ncurrentprojection = perspective(6,3,2);\n\ntriple I = (1,0,0), J = (0,1,0), K = (0,0,1), O = (0,0,0);\ntriple V = (2.2,2.5,2.5), W = (0,2.5,2.5);\n\ndraw(V--W,dashed);\ndraw(O--V, red, Arrow3(6));\ndraw(O--W,blue, Arrow3(6));\ndraw(O--3*I, Arrow3(6));\ndraw(O--3*J, Arrow3(6));\ndraw(O--3*K, Arrow3(6));\n\nlabel(\"$x$\", 3.2*I);\nlabel(\"$y$\", 3.2*J);\nlabel(\"$z$\", 3.2*K);\nlabel(\"$\\mathbf{v}$\", V, NW);\nlabel(\"$\\mathbf{w}$\", W, NE);\n[/asy]\n\nThus,\n\\[\\mathbf{P} \\mathbf{i} = \\begin{pmatrix} 0 \\\\ 0 \\\\ 0 \\end{pmatrix}, \\quad \\mathbf{P} \\mathbf{j} = \\begin{pmatrix} 0 \\\\ 1 \\\\ 0 \\end{pmatrix}, \\quad \\mathbf{P} \\mathbf{k} = \\begin{pmatrix} 0 \\\\ 0 \\\\ 1 \\end{pmatrix},\\]so\n\\[\\mathbf{P} = \\boxed{\\begin{pmatrix} 0 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix}}.\\]",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nThe projection of a vector onto a plane involves removing the component of the vector that is orthogonal to the plane.\nStep 2:\nIn this case, the $yz$-plane is defined by the equation $x = 0$.\nStep 3:\nTo project a vector onto the $yz$-plane, we need to remove its $x$ component.\nStep 4:\nThe matrix $\\mathbf{P}$ that projects any vector $\\mathbf{v}$ onto the $yz$-plane will have the form $\\begin{bmatrix} 0 & 0 & 0 \\\\ 0 & a & b \\\\ 0 & c & d \\end{bmatrix}$.\nStep 5:\nHere, $a, b, c,$ and $d$ are constants that we need to determine.\nStep 6:\nTo find the values of $a, b, c,$ and $d$, we project the standard basis vectors $\\mathbf{i} = \\begin{bmatrix} 1 \\\\ 0 \\\\ 0 \\end{bmatrix}$, $\\mathbf{j} = \\begin{bmatrix} 0 \\\\ 1 \\\\ 0 \\end{bmatrix}$, and $\\mathbf{k} = \\begin{bmatrix} 0 \\\\ 0 \\\\ 1 \\end{bmatrix}$ onto the $yz$-plane.\nStep 7:\nThe projection of $\\mathbf{i}$ onto the $yz$-plane is $\\begin{bmatrix} 0 \\\\ 0 \\\\ 0 \\end{bmatrix}$, which means that the first column of $\\mathbf{P}$ is $\\begin{bmatrix} 0 \\\\ 0 \\\\ 0 \\end{bmatrix}$.\nStep 8:\nSimilarly, projecting $\\mathbf{j}$ and $\\mathbf{k}$ onto the $yz$-plane gives the second and third columns of $\\mathbf{P}$ as $\\begin{bmatrix} 0 \\\\ 1 \\\\ 0 \\end{bmatrix}$ and $\\begin{bmatrix} 0 \\\\ 0 \\\\ 1 \\end{bmatrix}$, respectively.\nStep 9:\nThus, the matrix $\\mathbf{P}$ that projects any vector $\\mathbf{v}$ onto the $yz$-plane is $\\boxed{\\begin{bmatrix} 0 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{bmatrix}}$."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.71280276816609
+            }
+        }
+    }
+}

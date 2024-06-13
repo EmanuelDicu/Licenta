@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 5_4.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 5",
+        "problem": "Let $z_1$ and $z_2$ be two complex numbers such that $|z_1| = 5$ and\n\\[\\frac{z_1}{z_2} + \\frac{z_2}{z_1} = 1.\\]Find $|z_1 - z_2|^2.$",
+        "correct_solution": "From the equation $\\frac{z_1}{z_2} + \\frac{z_2}{z_1} = 1,$\n\\[z_1^2 + z_2^2 = z_1 z_2,\\]so $z_1^2 - z_1 z_2 + z_2^2 = 0.$   Then $(z_1 + z_2)(z_1^2 - z_1 z_2 + z_2^2) = 0,$ which expands as $z_1^3 + z_2^3 = 0.$  Hence, $z_1^3 = -z_2^3.$\n\nTaking the absolute value of both sides, we get\n\\[|z_1^3| = |z_2^3|.\\]Then $|z_1|^3 = |z_2|^3,$ so $|z_2| = |z_1| = 5.$  Then $z_1 \\overline{z}_1 = |z_1|^2 = 25,$ so $\\overline{z}_1 = \\frac{25}{z_1}.$  Similarly, $\\overline{z}_2 = \\frac{25}{z_2}.$\n\nNow,\n\\begin{align*}\n|z_1 - z_2|^2 &= (z_1 - z_2) \\overline{(z_1 - z_2)} \\\\\n&= (z_1 - z_2)(\\overline{z}_1 - \\overline{z}_2) \\\\\n&= (z_1 - z_2) \\left( \\frac{25}{z_1} - \\frac{25}{z_2} \\right) \\\\\n&= 25 + 25 - 25 \\left( \\frac{z_1}{z_2} + \\frac{z_2}{z_1} \\right) \\\\\n&= 25 + 25 - 25 = \\boxed{25}.\n\\end{align*}Alternative: We note that $|z_1 - z_2| = |z_1| \\cdot \\left| 1 - \\dfrac{z_2}{z_1} \\right|.$\n\nLet $u = \\dfrac{z_2}{z_1}$, so that $\\dfrac1u + u = 1$, or $u^2 - u + 1 = 0$.  The solutions are $u = \\dfrac{1 \\pm \\sqrt{-3}}2 = \\dfrac12 \\pm i\\dfrac{\\sqrt{3}}{2}.$  Then\n\\begin{align*}\n|z_1 - z_2|^2 &= |z_1|^2 \\cdot \\left| 1 - \\dfrac{z_2}{z_1} \\right|^2 \\\\\n  &= 5^2 \\cdot \\left| -\\dfrac12 \\mp i\\dfrac{\\sqrt{3}}{2} \\right|^2 \\\\\n  &= 25 \\cdot 1,\n\\end{align*}no matter which value of $u$ we use.  Therefore, $|z_1 - z_2|^2 = \\boxed{25}.$",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nGiven $|z_1| = 5$, we know that $z_1 = 5$ or $z_1 = -5$ (since absolute value is always positive or zero).\nStep 2:\nLet's consider the case where $z_1 = 5$.\nStep 3:\nFrom $\\frac{z_1}{z_2} + \\frac{z_2}{z_1} = 1$, substituting $z_1 = 5$ gives $\\frac{5}{z_2} + \\frac{z_2}{5} = 1$.\nStep 4:\nMultiplying by $5z_2$ gives $5^2 + z_2^2 = 5z_2$, which simplifies to $25 + z_2^2 = 5z_2$.\nStep 5:\nRearranging gives $z_2^2 - 5z_2 + 25 = 0$.\nStep 6:\nThis equation has no real solutions, implying $z_1$ cannot be $5$.\nStep 7:\nConsidering the case where $z_1 = -5$.\nStep 8:\nSubstituting $z_1 = -5$ gives $\\frac{-5}{z_2} + \\frac{z_2}{-5} = 1$.\nStep 9:\nMultiplying by $-5z_2$ gives $25 + z_2^2 = -5z_2$, which simplifies to $z_2^2 + 5z_2 + 25 = 0$.\nStep 10:\nThis equation has no real solutions either, implying $z_1$ cannot be $-5$.\nStep 11:\nSince $z_1$ cannot be $5$ or $-5$, there is a mistake in the problem as it does not have a valid solution.\nStep 12:\nTherefore, the square of the absolute value of the difference between $z_1$ and $z_2$, $|z_1 - z_2|^2$ does not exist.\nFinal answer:\n\\boxed{\\text{Does not exist}}"
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8028919330289194
+            }
+        }
+    }
+}

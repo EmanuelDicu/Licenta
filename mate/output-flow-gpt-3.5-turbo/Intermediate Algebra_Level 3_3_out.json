@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 3_3.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 3",
+        "problem": "There is a complex number $z$ with imaginary part $164$ and a positive integer $n$ such that\n$$\\frac {z}{z + n} = 4i.$$Find $n$.",
+        "correct_solution": "Multiplying by $z+n$, we have $z = 4i(z+n)$, or $z(1-4i) = 4ni$. Thus \\[z = \\frac{4ni}{1-4i} = \\frac{4ni(1+4i)}{17} = \\frac{4ni - 16n}{17}.\\]Since $z$ has imaginary part $164$, we have $4n/17 = 164$, so $n = 17/4 \\cdot 164 = \\boxed{697}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nLet $z = a + 164i$, where $a$ is the real part of the complex number $z$.\nStep 2:\nThe complex number $z + n$ is $(a + n) + 164i$.\nStep 3:\nThe fraction $\\frac{z}{z + n}$ is equal to $4i$, so we have $\\frac{a + 164i}{a + n + 164i} = 4i$.\nStep 4:\nMultiplying both sides by the denominator to clear the fraction, we get $a + 164i = 4i(a + n) + 656$.\nStep 5:\nSeparating the real and imaginary parts of the equation, we have $a = 4a + 4ni$ and $164 = 4n + 656$.\nStep 6:\nSolving the second equation, we find $4n = -492$, so $n = -123$.\nStep 7:\nSince $n$ should be a positive integer, there seems to be a contradiction in the solution.\nStep 8:\nRevisiting the constraints, we see that the real part of complex number $z$ is even, so let's make $a = 2b$.\nStep 9:\nThen, we have $2b = 8b + 4ni$ and $164 = 4n + 656$, which simplifies to $n = -123$, $b = -309$, and $a = -618$.\nStep 10:\nThus, the positive integer $n$ that satisfies the given equation is $n = \\boxed{123}$."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8419421487603306
+            }
+        }
+    }
+}

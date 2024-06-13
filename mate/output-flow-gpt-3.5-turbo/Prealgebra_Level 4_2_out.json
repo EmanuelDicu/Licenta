@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 4_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 4",
+        "problem": "Ed takes five 100-point tests in his algebra class. He scores 87, 85 and 87 points on the first three tests. If the scores of his last two tests differ by three points and he has a $90\\%$ average on his five tests, what was his highest test score?",
+        "correct_solution": "Instead of adding up scores and figuring out the new averages, a quicker way (useful for the countdown round) is as follows:\n\nSince the average is 90, we first calculate how many points below 90 he already is: he's scored 87, 85, and 87, meaning that he is 3, 5, and 3 points below 90 respectively, making for a total of 11 points below.  We then know that his remaining two tests must be a combined 11 points above 90, and since they differ by 3 points, we know that one test is 4 above 90, and the other is 7 above 90, meaning his highest score was $\\boxed{97}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nThe total number of points available for each test is 100.\nStep 2:\nThe total points Ed scored on the first three tests is 87 + 85 + 87 = 259.\nStep 3:\nLet x be the score on the fourth test and x+3 be the score on the fifth test.\nStep 4:\nThe total points Ed scored on all five tests is 259 + x + (x+3).\nStep 5:\nSince the total number of points available for all five tests is 5 * 100 = 500, we have:\n259 + x + (x+3) = 500\nStep 6:\nSolve for x:\n259 + x + x + 3 = 500\n2x + 262 = 500\n2x = 238\nx = 119\nStep 7:\nTherefore, the score on the fourth test is 119 and the score on the fifth test is 119 + 3 = 122.\nStep 8:\nTo have a $90\\%$ average on his five tests, the total points Ed scored must be 0.9 * 500 = 450.\nStep 9:\nThe total points Ed scored on all five tests is 259 + 119 + 122 = 500, meeting the requirement for a $90\\%$ average.\nStep 10:\nThe highest test score Ed achieved is 122.\nFinal answer:\n\\boxed{122}"
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7363238512035011
+            }
+        }
+    }
+}
