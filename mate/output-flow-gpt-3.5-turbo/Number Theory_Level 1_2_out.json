@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 1_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 1",
+        "problem": "What digit must be placed in the blank to make the four-digit integer $20\\_7$ a multiple of 11?",
+        "correct_solution": "A number will be divisible by 11 if you get a multiple of 11 by alternately adding and then subtracting its digits.  If we name the blank integer $A$, then the alternating sum is $2 - 0 + A - 7 = A -5$.  This value can only be equal to 0 (as 11, 22, etc all yield $A$ that are too large), so $A = \\boxed{5}$ is the only digit that will work.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nThe number is in the form $20\\_7$ where the blank needs to be filled with a digit.\nStep 2:\nTo make the number a multiple of 11, we need the difference between the sum of the digits in the odd places and the sum of the digits in the even places to be a multiple of 11.\nStep 3:\nFor the number to be a multiple of 11, the sum of the digits in the odd places minus the sum of the digits in the even places should be either 0 or a multiple of 11.\nStep 4:\nThe sum of the digits in odd places is $2 + \\text{blank} + 7 = 9 + \\text{blank}$.\nStep 5:\nFor the number to be a multiple of 11, the sum of the digits in odd places minus the sum of the digits in even places should be 0 or a multiple of 11.\nStep 6:\nThe sum of the digits in even places is 0.\nStep 7:\nTherefore, $9 + \\text{blank} - 0 = 9 + \\text{blank}$ must be 0 or a multiple of 11.\nStep 8:\nSince 9 is not a multiple of 11, the blank must be filled with the digit 2 to get $9 + 2 = 11$, which is a multiple of 11.\nStep 9:\nTherefore, the digit that must be placed in the blank to make the four-digit integer $20\\_7$ a multiple of 11 is $\\boxed{2}$."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.798372513562387
+            }
+        }
+    }
+}

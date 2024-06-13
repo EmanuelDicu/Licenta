@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 4_4.json": {
+        "category": "Algebra",
+        "difficulty": "Level 4",
+        "problem": "For what ordered pair $(a,b)$ are there infinite solutions $(x,y)$ to the system \\begin{align*}\n2ax+2y&=b,\\\\\n5x+y&=-3?\n\\end{align*}",
+        "correct_solution": "For there to be infinite solutions, the first equation needs to be consistent with the second and yet add no new information, which means it must be a multiple of the second. Since the coefficient of $y$ in the first equation is twice that of $y$ in the second equation, the multiplier is 2. This implies that the first equation must be $2(5x+y)=2(-3)$. After equating coefficients, this gives $2a=2\\cdot5$ and $b=2\\cdot-3$, or $(a,b)=\\boxed{(5,-6)}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nWe are given the system of equations as: 2ax + 2y = b and 5x + y = -3.\nStep 2:\nFor there to be infinite solutions, the two equations must be equivalent, meaning the coefficients of x and y are proportional.\nStep 3:\nComparing the coefficients of x in both equations, we get: 2a = 5.\nStep 4:\nSolving for a, we have a = 5/2.\nStep 5:\nComparing the coefficients of y in both equations, we get: 2 = 1.\nStep 6:\nSince the coefficients of y are not proportional, the value of b does not affect the number of solutions.\nStep 7:\nTherefore, the ordered pair that allows for infinite solutions is (a, b) = (5/2, any real number).\nFinal answer:\n\\boxed{(5/2, b)}"
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": false,
+                "Same result": false,
+                "Levenshtein distance value": 0.6885496183206107
+            }
+        }
+    }
+}

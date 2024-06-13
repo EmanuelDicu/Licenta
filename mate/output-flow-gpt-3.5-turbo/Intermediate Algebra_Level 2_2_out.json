@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 2_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 2",
+        "problem": "The complex numbers $a$ and $b$ satisfy\n\\[a + \\overline{b} = 2 - 7i.\\]Find $\\overline{a} + b.$",
+        "correct_solution": "Taking the conjugate of both sides, we get\n\\[\\overline{a + \\overline{b}} = \\overline{2 - 7i} = 2 + 7i.\\]But $\\overline{a + \\overline{b}} = \\overline{a} + \\overline{\\overline{b}} = \\overline{a} + b,$ so\n\\[\\overline{a} + b = \\boxed{2 + 7i}.\\]",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nGiven that the complex numbers $a$ and $b$ satisfy $a + \\overline{b} = 2 - 7i$.\nStep 2:\nTaking the conjugate of the given equation, we get $\\overline{a} + b = \\overline{2 - 7i}$.\nStep 3:\nCalculating the conjugate of $2 - 7i$ gives $\\overline{2 - 7i} = 2 + 7i$.\nStep 4:\nTherefore, $\\overline{a} + b = 2 + 7i$.\nFinal answer:\n\\boxed{2 + 7i}"
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": false,
+                "Same result": true,
+                "Levenshtein distance value": 0.6521739130434783
+            }
+        }
+    }
+}

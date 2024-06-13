@@ -155,9 +155,9 @@ Help me generate a step-by-step solution for a math problem.
 You MUST not give any additional text that is not part of the solution or relevant to it.
 Please format the text in a such way for it to be able to be included in a triple-quoted string.
 You MUST provide a single solution, not multiple variations.
-You MUST provide a detailed solution with all the necessary steps.
+The final answer of the problem should be mrked with \\boxed tag, if it exists.
+You MUST provide a detailed solution with all the necessary steps, not only the final answer.
 You MUST explain the reasoning behind each step, based only on the provided constraints and the problem text.
-You MUST provide the final answer of the problem with \\boxed tag, if it exists.
 
 Here is an example:
 Problem:
@@ -195,6 +195,7 @@ correct_solution_prompt = """
 Help me correct a solution to a math problem.
 You should correct any errors/mistake in a math problem solution, based on the provided constraints and the problem text, goal.
 If the solution is correct, you should not make any changes.
+If the solution is corret, you should not make any changes, only give the exact same solution.
 You MUST only provide the corrected solution, no other information.
 
 Here is the math problem and the solution:

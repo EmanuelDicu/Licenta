@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 4_1.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "The right pyramid shown has a square base and all eight of its edges are the same length. What is the degree measure of angle $ABD$?[asy]size(100);\nimport three; defaultpen(linewidth(0.7)); currentprojection = orthographic(0.8,-1,0.15);\npen sm = fontsize(8); triple A = (.5,.5,1), B = (0,0,0), C = (1,0,0), D = (1,1,0), E = (0,1,0); /* should be A = (.5,.5,1/2^.5) */\ndraw(A--B--C--D--A--C); draw(A--E--D,linewidth(0.7)+linetype(\"3 3\")); draw(B--E,linewidth(0.7)+linetype(\"2 2\"));\nlabel(\"A\",A,N,sm); label(\"B\",B,S,sm); label(\"C\",C,S,sm);label(\"D\",D,(1,0),sm);label(\"E\",E,NW,sm);\n[/asy]",
+        "correct_solution": "Let $x$ represent the length of each of the edges. If we draw the diagonal $\\overline{BD}$, we create the right triangle $BCD$. Since $\\overline{BC}\\cong\\overline{DC}$, $\\triangle BCD$ is a 45-45-90 right triangle, which means the hypotenuse has a length of $\\sqrt{2}$ times the length of each leg. So $BD=x\\sqrt{2}$. Since $\\triangle ABD$ is an isosceles triangle, we know that drawing a segment from $A$ to the midpoint of $\\overline{BD}$ splits the triangles into two congruent right triangles. Each right triangle has a hypotenuse of length $x$ and a leg of length $\\frac{BD}{2}=\\frac{x\\sqrt{2}}{2}=\\frac{x}{\\sqrt{2}}$. Notice that the hypotenuse has a length of $\\sqrt{2}$ times the length of the bottom leg, which means the triangle is another 45-45-90 right triangle. That means the degree measure of angle $ABD$ is $\\boxed{45^\\circ}$.\n\n[asy]size(170);\nimport three; defaultpen(linewidth(0.7)); currentprojection = orthographic(0.8,-1,0.15);\npen sm = fontsize(8); triple A = (.5,.5,1), B = (0,0,0), C = (1,0,0), D = (1,1,0), E = (0,1,0); /* should be A = (.5,.5,1/2^.5) */\ndraw(A--B--C--D--A--C); draw(A--E--D,linewidth(0.7)+linetype(\"3 3\")); draw(B--E,linewidth(0.7)+linetype(\"2 2\"));\nlabel(\"A\",A,N,sm); label(\"B\",B,S,sm); label(\"C\",C,S,sm);label(\"D\",D,(1,0),sm);label(\"E\",E,NW,sm); draw(B--D); label(\"$x$\", (B+C)/2, SW); label(\"$x$\", (C+D)/2, SE); label(\"$x\\sqrt{2}$\", (B+D)/2, N, sm); label(\"$\\frac{x}{\\sqrt{2}}$\", (B+(B+D)/2)/2, N, sm); label(\"$x$\",(A+B)/2, NW); draw(A--(B+D)/2);\n\n[/asy]",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nSince the pyramid is a right pyramid with a square base, the angle between any edge of the pyramid and the base will be equal to the angle between that edge and the center of the base. This is because each face of the pyramid is an isosceles triangle.\n\nStep 2:\nThe right triangle ABD is formed by the diagonal of the square base and the height of the pyramid. In a square, the angle formed by the diagonal and one of its sides is 45 degrees.\n\nStep 3:\nSince all eight edges of the pyramid are of the same length, triangle ABD is an isosceles triangle. In an isosceles triangle, the angles opposite the equal sides are also equal.\n\nStep 4:\nTherefore, angle ABD is equal to the average of the angles at A and D in triangle ABD. This means that angle ABD = (90 degrees + 90 degrees) / 2 = 90 degrees.\n\nFinal answer:\n\\boxed{90}"
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7731821214142762
+            }
+        }
+    }
+}

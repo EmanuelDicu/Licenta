@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 3_1.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 3",
+        "problem": "What is the value of $x$ in the equation $5x - 3x + 4(1-4x) = 32$?",
+        "correct_solution": "Begin by distributing on the left side: $$5x-3x+4-16x=32$$ Now, collect like terms and solve for $x$: \\begin{align*}\n-14x&=28\\\\\n\\Rightarrow\\qquad x&=\\frac{28}{-14}=\\boxed{-2}\n\\end{align*}",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nCombine like terms on the left side of the equation: 5x - 3x is 2x.\nStep 2:\nDistribute the 4 on the right side of the equation: 4 * 1 is 4 and 4 * -4x is -16x.\nStep 3:\nRewrite the equation after combining like terms: 2x + 4 - 16x = 32.\nStep 4:\nCombine like terms on the left side of the equation: 2x - 16x is -14x.\nStep 5:\nAdd 4 to both sides of the equation to isolate the variable x: -14x = 28.\nStep 6:\nDivide by -14 to solve for x: x = -2.\nFinal answer:\n\\boxed{-2}"
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8063157894736842
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 5_3.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 5",
+        "problem": "How many subsets of the set of divisors of $72$ contain only composite numbers? For example, $\\{8,9\\}$ and $\\{4,8,12\\}$ are two such sets. Include the empty set in your count.",
+        "correct_solution": "We know that the number of subsets of any given set is equal to $2^n,$ where $n$ is the number of elements in the set. First, then, we need to find the number of composite divisors. The prime factorization of $72$ is $72=2^3 \\cdot 3^2,$ so there are $(3+1)(2+1)=12$ total divisors. (To see this, note that we can form a divisor of the form $2^a 3^b$ by freely choosing $a=0,1,2,3$ and $b=0,1,2$). Of these, $1$ is neither prime nor composite, and $2$ and $3$ are prime, for a total of $9$ composite divisors. Therefore there are $2^9=\\boxed{512}$ subsets of the divisors of $72$ with only composite divisors.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nFind the prime factorization of 72: $72 = 2^3 \\times 3^2$.\nStep 2:\nList out all the divisors of 72: 1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, 72.\nStep 3:\nIdentify which of the divisors are composite numbers: 4, 6, 8, 9, 12, 18, 24, 36.\nStep 4:\nCreate subsets using only the composite divisors: \n- Subsets with 1 composite number: $\\binom{8}{1} = 8$ subsets\n- Subsets with 2 composite numbers: $\\binom{8}{2} = 28$ subsets\n- Subsets with 3 composite numbers: $\\binom{8}{3} = 56$ subsets\n- Subsets with 4 composite numbers: $\\binom{8}{4} = 70$ subsets\n- Subsets with 5 composite numbers: $\\binom{8}{5} = 56$ subsets\n- Subsets with 6 composite numbers: $\\binom{8}{6} = 28$ subsets\n- Subsets with 7 composite numbers: $\\binom{8}{7} = 8$ subsets\n- Subsets with 8 composite numbers: $\\binom{8}{8} = 1$ subset\nStep 5:\nSum up the number of subsets from each category: $8 + 28 + 56 + 70 + 56 + 28 + 8 + 1 = 255$.\nStep 6:\nTherefore, there are 255 subsets of the set of divisors of 72 that contain only composite numbers, including the empty set.\nFinal answer:\n\\boxed{255}"
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7412982126058325
+            }
+        }
+    }
+}

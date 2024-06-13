@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 5_4.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 5",
+        "problem": "Notice that  \\[31\\cdot37=1147.\\]Find some integer $n$ with $0\\leq n<2293$ such that  \\[31n\\equiv 3\\pmod{2293}.\\]",
+        "correct_solution": "Doubling the given equation tells us  \\[31\\cdot74=2294.\\]Specifically  \\[31\\cdot74\\equiv1\\pmod{2293}\\]and 74 is the multiplicative inverse of 31 modulo 2293.\n\nIf we triple the congruence we just found we get  \\[31\\cdot222\\equiv3\\pmod{2293}.\\]Therefore $n=\\boxed{222}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nGiven that $31\\cdot37=1147$, we know the product of these two numbers.\nStep 2:\nTo find the integer $n$ that satisfies $31n\\equiv 3\\pmod{2293}$, we need to find a number that, when multiplied by $31$, leaves a remainder of $3$ when divided by $2293$.\nStep 3:\nSince $31\\cdot37=1147$, and $1147\\equiv 3\\pmod{2293}$, we can deduce that $37$ is a solution.\nStep 4:\nTherefore, the integer $n=37$ satisfies the congruence $31n\\equiv 3\\pmod{2293}$.\nStep 5:\nMoreover, $0\\leq37<2293$, so this solution is within the specified range.\nFinal answer:\n\\boxed{37}"
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7531531531531531
+            }
+        }
+    }
+}

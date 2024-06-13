@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 4_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 4",
+        "problem": "Liz has 11 marbles of different colors. In how many ways can she choose 3 of the marbles, if she refuses to choose the green one and the purple one at the same time?",
+        "correct_solution": "We can divide this into cases:\n\nCase 1: Liz chooses the green marble, and not the purple marble. In this case, Liz must choose 2 more marbles from the remaining 9 marbles (since she won't choose the purple marble). So, there are $\\binom{9}{2}=36$ choices in this case.\n\nCase 2: Liz chooses the purple marble, and not the green marble. As in Case 1, Liz must choose 2 more marbles from the remaining 9 marbles. So, there are $\\binom{9}{2}$ choices in this case.\n\nCase 3: Liz chooses neither the green marble nor the purple marble. In this case, Liz must choose three marbles from the nine remaining marbles, and there are $\\binom{9}{3}=84$ choices in this case.\n\nThe total number of possible choices is $36+36+84=\\boxed{156}$.\n\nAlternatively, there are $\\binom{11}{3}=165$ ways to select three marbles. Of those, $\\binom{9}{1}=9$ ways contain both the purple marble and the green marble. Therefore, there are $165-9=\\boxed{156}$ ways to select three marbles such that purple and green marbles are not both chosen.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nThere are 11 marbles in total that Liz can choose from.\n\nStep 2:\nLiz needs to choose 3 marbles out of the 11 available.\n\nStep 3:\nIf Liz cannot choose the green marble and the purple marble at the same time, we can count the ways she can choose 3 marbles without both the green and purple marbles, and subtract that from the total number of ways to choose 3 marbles.\n\nStep 4:\nThere are C(11, 3) = 165 total ways to choose 3 marbles from 11 without any restrictions.\n\nStep 5:\nIgnoring the green and purple marbles, there are 9 marbles left to choose from, and Liz needs to choose 3. This can be done in C(9, 3) = 84 ways.\n\nStep 6:\nSubtracting the number of ways to choose 3 marbles without the green and purple marbles from the total gives: 165 - 84 = 81.\n\nStep 7:\nTherefore, there are 81 ways for Liz to choose 3 marbles from the 11 available marbles, given the restriction.\nFinal answer:\n\\boxed{81}"
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.708498023715415
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 5_3.json": {
+        "category": "Geometry",
+        "difficulty": "Level 5",
+        "problem": "Four circles of radius 1 are each tangent to two sides of a square and externally tangent to a circle of radius 2, as shown.  What is the area of the square?\n\n[asy]\nunitsize(1cm);draw(Circle((0,0),2));\nfor(int i=0; i<4; ++i) {\n\tdraw(Circle(scale(3)*dir(45+90*i),1));\n\tdraw((3+sqrt(2))*dir(45+90*i)--(3+sqrt(2))*dir(-45+90*i));  \n}\ndraw((0,0)--(2,0));\nlabel(\"2\",(1,0),N);\ndraw(scale(3)*dir(45+90*1)--shift((1,0))*scale(3)*dir(45+90*1));\nlabel(\"1\",point(scale(3)*dir(45+90*1)--shift((1,0))*scale(3)*dir(45+90*1),.5),S);\n[/asy]",
+        "correct_solution": "Let $s$ be the length of a side of the square. Consider an isosceles right triangle with vertices at the centers of the circle of radius 2 and two of the circles of radius 1. This triangle has legs of length 3, so its hypotenuse has length $3\\sqrt{2}$.\n\n[asy]\nunitsize(1cm);\ndraw(Circle((0,0),2));\nfor(int i=0; i<4; ++i) {\n\tdraw(Circle(scale(3)*dir(45+90*i),1));\n\tdraw((3+sqrt(2))*dir(45+90*i)--(3+sqrt(2))*dir(-45+90*i));  \n}\npair A = scale(3)*dir(45), B = scale(3)*dir(45+90);\ndraw(A--B--origin--cycle);\nlabel(\"$1$\", A, SE);\nlabel(\"$1$\", B, SW);\nlabel(\"$2$\", point(origin--A,.3), SE);\nlabel(\"$2$\", point(origin--B,.3), SW);\ndraw(rightanglemark(A,origin,B,5));\n[/asy]\n\nThe length of a side of the square is 2 more than the length of this hypotenuse, so  $s=2 + 3\\sqrt{2}$. Hence the area of the square is \\[\ns^{2}=(2+3\\sqrt{2})^{2}=\\boxed{22+12\\sqrt{2}}.\n\\]",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nLabel the center of the large circle as O, the centers of the smaller circles as A, B, C, and D, and the intersection points of the square with the external circles as E, F, G, and H.\nStep 2:\nSince the radius of the circles is 1, the distance between the centers of the large circle and the smaller circles is 2.\nStep 3:\nConnect each center of the small circles to the center of the large circle, creating 4 right triangles with hypotenuse 2 and legs 1.\nStep 4:\nSince the legs of the right triangles are radii of the smaller circles, and the sides of the square are tangent to the circles, the legs of the right triangles are also sides of the square.\nStep 5:\nThe diameter of the large circle combined with the side of the square forms a right triangle. The hypotenuse is 4, and one leg is the radius of the large circle (2), the other leg is half the side of the squares (s/2).\nStep 6:\nBy applying the Pythagorean theorem to the right triangle formed in step 5, we get (s/2)^2 + 2^2 = 4^2, simplifying to s^2/4 + 4 = 16.\nStep 7:\nMultiply through by 4 to get s^2 + 16 = 64.\nStep 8:\nSubtract 16 from both sides to get s^2 = 48.\nStep 9:\nTake the square root of both sides to find s = sqrt(48).\nStep 10:\nSince the area of a square is side squared, the area of the square is (sqrt(48))^2 = 48.\nFinal answer:\n\\boxed{48}"
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7594553706505295
+            }
+        }
+    }
+}

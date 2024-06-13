@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 5_3.json": {
+        "category": "Algebra",
+        "difficulty": "Level 5",
+        "problem": "Billy shoots an arrow from 10 feet above the ground. The height of this arrow can be expressed by the equation $h=10-23t-10t^2$, where $t$ is time in seconds since the arrow was shot. If the center of a target is raised 5 feet off the ground, in how many seconds must the arrow reach the target in order for Billy to hit the bulls eye?",
+        "correct_solution": "Since the center of the target is 5 feet above the ground, $h=5$. So we get the quadratic: \\begin{align*}5& =10-23t-10t^{2}\n\\\\ \\Rightarrow\\qquad 0& =10t^{2}+23t-5\n\\\\ \\Rightarrow\\qquad 0&=(2t+5)(5t-1).\n\\end{align*}Thus, the values of $t$ that satisfy the equation are $-\\frac52$ and $\\frac15$. However, since time can never be a negative number, the answer must be $\\boxed{\\dfrac{1}{5}}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1: \nThe height of the target where Billy wants to hit the bulls eye is 5 feet above the ground.\nStep 2:\nWe need to find the time when the height of the arrow is equal to 5 feet.\nStep 3:\nSet the equation for the height of the arrow h=10-23t-10t^2 equal to 5 feet (height of the target).\nStep 4:\n10-23t-10t^2 = 5\nStep 5:\nRearrange the equation to form a quadratic equation:\n-10t^2 - 23t + 5 = 0\nStep 6:\nUse the quadratic formula to solve for t:\nt = [-(-23) \u00b1 \u221a((-23)^2 - 4*(-10)*5)] / 2*(-10)\nStep 7:\nSimplify the equation under the square root:\nt = [23 \u00b1 \u221a(529 + 200)] / -20\nt = [23 \u00b1 \u221a729] / -20\nt = (23 \u00b1 27) / -20\nStep 8:\nCalculate the two possible values for t:\nt1 = (23 + 27) / -20 = 50 / -20 = -2.5\nt2 = (23 - 27) / -20 = -4 / -20 = 0.2\nStep 9:\nSince time cannot be negative, the arrow must reach a height of 5 feet at t = 0.2 seconds.\nStep 10:\nTherefore, Billy must hit the bulls eye within 0.2 seconds for the arrow to reach the target at a height of 5 feet.\nFinal answer:\n\\boxed{0.2}"
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7801204819277109
+            }
+        }
+    }
+}

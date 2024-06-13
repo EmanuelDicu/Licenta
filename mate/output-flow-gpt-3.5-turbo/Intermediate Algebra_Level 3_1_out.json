@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 3_1.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 3",
+        "problem": "Find the eighth term of the sequence $1440, 1716, 1848, \\ldots$, whose terms are formed by multiplying the corresponding terms of two arithmetic sequences.",
+        "correct_solution": "If $a_n =an + b$ and $b_n = cn + d$ are two arithmetic sequences, then their term-wise product takes the form \\[a_nb_n = (an+b)(cn+d) = An^2 + Bn + C,\\]where $A, B, C$ are constants. Therefore, some sequence $x_n = An^2 + Bn + C$ has $x_0 = 1440,$ $x_1 = 1716,$ and $x_2 = 1848.$ Then we have the equations \\[\\begin{aligned} C &= 1440, \\\\ A+B+C&=1716,\\\\  4A+2B+C&=1848. \\end{aligned}\\]Subtracting $C=1440$ from the second and third equations, we have $A+B=276$ and $4A+2B=408,$ or $2A+B=204.$ Then \\[A = (2A+B) - (A+B) = 204 - 276 = -72,\\]and so $B = 276-A=348.$ We conclude that the given sequence has the general formula \\[x_n = -72n^2 + 348n + 1440.\\]Then the eighth term is \\[\\begin{aligned} x_7 &= -72 \\cdot 7^2 + 348 \\cdot 7 + 1440 = \\boxed{348}. \\end{aligned}\\]",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nThe first three terms of the sequence are 1440, 1716, and 1848.\nStep 2:\nTo find the common differences of the two arithmetic sequences, we find the differences between consecutive terms:\n1716 - 1440 = 276\n1848 - 1716 = 132\nStep 3:\nThe common differences of the two arithmetic sequences are 276 and 132.\nStep 4:\nThe eighth term of the sequence can be calculated by multiplying the eighth terms of the two arithmetic sequences.\nStep 5:\nThe eighth term of the first arithmetic sequence can be found by adding the common difference 276 seven times to the third term 1440:\n1440 + 276*7 = 1440 + 1932 = 3372\nStep 6:\nThe eighth term of the second arithmetic sequence can be found by adding the common difference 132 seven times to the third term 1716:\n1716 + 132*7 = 1716 + 924 = 2640\nStep 7:\nThe eighth term of the overall sequence is obtained by multiplying the eighth terms of the two arithmetic sequences:\n3372 * 2640 = 8909280\nStep 8:\nTherefore, the eighth term of the given sequence is \\boxed{8909280}."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7651139742319127
+            }
+        }
+    }
+}

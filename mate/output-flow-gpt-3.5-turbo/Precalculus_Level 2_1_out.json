@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 2_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 2",
+        "problem": "Find the measure, in degrees, of the smallest positive angle $\\theta$ for which $\\sin 3 \\theta = \\cos 7 \\theta.$",
+        "correct_solution": "Note that $\\cos 7 \\theta = \\sin (90^\\circ - 7 \\theta),$ so\n\\[\\sin 3 \\theta = \\sin (90^\\circ - 7 \\theta).\\]If $3 \\theta = 90^\\circ - 7 \\theta,$ then $\\theta = 9^\\circ.$\n\nIf $0^\\circ < \\theta < 9^\\circ,$ then $\\sin 3 \\theta < \\sin 27^\\circ$ and $\\sin (90^\\circ - 7 \\theta) > \\sin 27^\\circ,$ so the smallest positive solution is $\\boxed{9^\\circ}.$",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nUsing the trigonometric identity sin(3theta) = cos(90 - 3theta), we rewrite the given equation sin(3theta) = cos(7theta) as cos(90 - 3theta) = cos(7theta).\n\nStep 2:\nFor the two sides to be equal, the angles inside the cosine function must be equal. Therefore, we have 90 - 3theta = 7theta.\n\nStep 3:\nSolving the equation from Step 2, we get 90 = 10theta, which simplifies to theta = 9 degrees.\n\nFinal answer:\n\\boxed{9}"
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7576470588235295
+            }
+        }
+    }
+}

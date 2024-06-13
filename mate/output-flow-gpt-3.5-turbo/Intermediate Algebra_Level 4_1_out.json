@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 4_1.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 4",
+        "problem": "The equation of the hyperbola shown below can be written as\n\\[\\frac{(y - k)^2}{a^2} - \\frac{(x - h)^2}{b^2} = 1.\\]Find $h + k + a + b.$\n\n[asy]\nunitsize(0.3 cm);\n\nreal upperhyper (real x) {\n  return (2*sqrt((x - 6)^2/16 + 1) - 5);\n}\n\nreal lowerhyper (real x) {\n  return (-2*sqrt((x - 6)^2/16 + 1) - 5);\n}\n\nint i, n = 10;\n\nfor (i = -n; i <= n; ++i) {\n  draw((i,-n)--(i,n),gray(0.7));\n  draw((-n,i)--(n,i),gray(0.7));\n}\n\ndraw((0,-n)--(0,n));\ndraw((-n,0)--(n,0));\n\ndraw(graph(upperhyper,-10,10),red);\ndraw(graph(lowerhyper,-3,10),red);\ndraw(extension((-10,-10),(10,-10),(6,-5),(6,-5) + (4,2))--extension((10,10),(10,-10),(6,-5),(6,-5) + (4,2)),dashed);\ndraw(extension((-10,-10),(-10,10),(6,-5),(6,-5) + (4,-2))--extension((10,10),(10,-10),(6,-5),(6,-5) + (4,-2)),dashed);\n\ndot((6,-5));\n[/asy]",
+        "correct_solution": "The center of the hyperbola is $(6,-5).$  The distance from the center to a vertex is $a = 2.$  The slopes of the asymptotes are $\\pm \\frac{1}{2},$ so $b = 4.$  Thus, $h + k + a + b = 6 + (-5) + 2 + 4 = \\boxed{7}.$",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nThe equation of the hyperbola is given as \\[\\frac{(y - k)^2}{a^2} - \\frac{(x - h)^2}{b^2} = 1.\\]\nStep 2:\nFrom the graph, we can observe that the center of the hyperbola is at the point (h, k).\nStep 3:\nThe distances from the center to the vertices of the hyperbola are equal, meaning that the distance from the center to the vertex on the y-axis is \"a\" and the distance from the center to the vertex on the x-axis is \"b\".\nStep 4:\nSince the vertices are points on the hyperbola, the vertices are where the curve intersects the asymptotes. This can be seen visually in the graph.\nStep 5:\nThe vertices are located a units above and below the center on the y-axis and b units right and left of the center on the x-axis.\nStep 6:\nTherefore, the sum of the parameters h, k, a, and b is h + k + a + b.\nStep 7:\nAs the distances from the center to the vertices are already given, we have h + k + a + b = 6 - 5 + 4 + 2 = 7.\nStep 8:\nTherefore, the sum of the parameters h, k, a, and b in the given hyperbola equation is \\boxed{7}."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8341463414634146
+            }
+        }
+    }
+}

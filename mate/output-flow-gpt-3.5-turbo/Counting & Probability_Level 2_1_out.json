@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 2_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 2",
+        "problem": "Determine the number of ways to arrange the letters of the word THAT.",
+        "correct_solution": "First we count the arrangements if the two T's are unique, which is $4!$. Then since the T's are not unique, we divide by $2!$ for the arrangements of T, for an answer of $\\dfrac{4!}{2!} = \\boxed{12}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nThe word \"THAT\" contains 4 letters.\nStep 2:\nSince each letter in the word \"THAT\" is unique, we can arrange the letters without restrictions.\nStep 3:\nTo find the number of ways to arrange the 4 letters, we use the formula for permutations of n objects taken all at a time: n!\nStep 4:\nTherefore, the number of ways to arrange the letters of the word \"THAT\" is 4! = 4 x 3 x 2 x 1 = 24.\nFinal answer:\n\\boxed{24}"
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7421686746987952
+            }
+        }
+    }
+}

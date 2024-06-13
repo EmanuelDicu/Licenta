@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 5_1.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 5",
+        "problem": "The foci of the ellipse $\\frac{x^2}{49} + \\frac{y^2}{33} = 1$ are $F_1$ and $F_2,$ as shown below.  Let $P$ be a point on the circle $x^2 + (y - 3)^2 = 4.$  Line $F_2 P$ intersects the ellipse again at $Q,$ where the $y$-coordinate of $Q$ is positive.  Find the maximum value of $PQ + F_1 Q.$\n\n[asy]\nunitsize(0.4 cm);\n\npair P, Q;\npair[] F;\n\npath ell = yscale(sqrt(33))*xscale(7)*Circle((0,0),1);\nF[1] = (4,0);\nF[2] = (-4,0);\nP = (0,3) + 2*dir(240);\nQ = intersectionpoint(P--interp(F[2],P,5),ell);\n\ndraw(ell);\ndraw((-8,0)--(8,0));\ndraw((0,-7)--(0,7));\ndraw(Circle((0,3),2));\ndraw(F[1]--Q--F[2]);\n\ndot(\"$F_1$\", F[1], S);\ndot(\"$F_2$\", F[2], S);\ndot(\"$P$\", P, S);\nlabel(\"$Q$\", Q, NE);\n[/asy]",
+        "correct_solution": "For the ellipse $\\frac{x^2}{49} + \\frac{y^2}{33} = 1,$ $a = 7$ and $b = \\sqrt{33},$ so\n\\[c^2 = a^2 - b^2 = 49 - 33 = 16.\\]Then $c = 4,$ so $F_1 = (4,0)$ and $F_2 = (-4,0).$\n\nSince $Q$ lies on the ellipse, $F_1 Q + F_2 Q = 2a = 14.$  Then\n\\[F_2 P + PQ + F_1 Q = 14,\\]so $PQ + F_1 Q = 14 - F_2 P.$  Thus, we want to minimize $F_2 P.$\n\nLet $O = (0,3),$ the center of the circle $x^2 + (y - 3)^2 = 4.$  Since $P$ lies on this circle, $OP = 2.$  By the Triangle Inequality,\n\\[F_2 P + PO \\ge F_2 O,\\]so $F_2 P \\ge F_2 O - PO = 5 - 2 = 3.$  Equality occurs when $P$ lies on line segment $\\overline{F_2 O}.$\n\n[asy]\nunitsize(0.8 cm);\n\npair F, O, P;\n\nF = (-4,0);\nO = (0,3);\nP = intersectionpoint(F--O,Circle((0,3),2));\n\ndraw((-5,0)--(2,0));\ndraw((0,-1)--(0,6));\ndraw(Circle((0,3),2));\ndraw(F--O);\n\ndot(\"$F_2$\", F, S);\ndot(\"$O$\", O, E);\ndot(\"$P$\", P, S);\n[/asy]\n\nTherefore, the maximum value of $PQ + F_1 Q$ is $14 - 3 = \\boxed{11}.$",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nThe given equation of the ellipse is $\\frac{x^2}{49} + \\frac{y^2}{33} = 1$, so the major axis is $2a = 14$ and the minor axis is $2b = 6\\sqrt{33}$.\nStep 2:\nThe center of the ellipse is the origin, and the distance from the center to the foci is given by $c = \\sqrt{a^2 - b^2}$.\nStep 3:\nSubstitute the values of $a$ and $b$ into the formula $c = \\sqrt{a^2 - b^2}$ to find $c$. We get $c = \\sqrt{49 - 33} = 4\\sqrt{2}$.\nStep 4:\nThe coordinates of the foci $F_1$ and $F_2$ are $(\\pm 4\\sqrt{2}, 0)$.\nStep 5:\nThe point $P$ is on the circle $x^2 + (y - 3)^2 = 4$, which has its center at $(0, 3)$ and radius 2. The point $P$ is at $(0, 3) - (0, 2) = (0, 1)$.\nStep 6:\nTherefore, the point $P$ is $(0, 1)$ and lies on the line $F_2 P$ with equation $y = 1$, giving the coordinates of $P$.\nStep 7:\nFind the equation of the line passing through $F_2(-4\\sqrt{2}, 0)$ and $P(0, 1)$. It is $y = \\frac{1}{4} x + 1$.\nStep 8:\nSolve the line and the ellipse equation $\\frac{x^2}{49} + \\frac{y^2}{33} = 1$ simultaneously to find $Q$. The coordinates of $Q$ are $(3\\sqrt{14}, 2\\sqrt{33})$.\nStep 9:\nCalculate the distance between $P$ and $Q$, which is $PQ = \\sqrt{14} + \\sqrt{33}$.\nStep 10:\nCalculate the distance between $F_1(4\\sqrt{2}, 0)$ and $Q(3\\sqrt{14}, 2\\sqrt{33})$, which is $F_1 Q = \\sqrt{10}$.\nStep 11:\nThe maximum value of $PQ + F_1 Q$ is when $PQ$ and $F_1 Q$ are collinear. Therefore, the maximum value is $PQ + F_1 Q = \\sqrt{14} + \\sqrt{33} + \\sqrt{10}$.\nFinal answer: \n\\boxed{\\sqrt{14} + \\sqrt{33} + \\sqrt{10}}"
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7389292795769994
+            }
+        }
+    }
+}

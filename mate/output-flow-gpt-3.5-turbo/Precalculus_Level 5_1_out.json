@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 5_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 5",
+        "problem": "Find the smallest positive rational number $r$ such that\n\\[\\sum_{k=1}^{35}\\sin (5k)^\\circ = \\tan r^\\circ.\\]",
+        "correct_solution": "From product-to-sum,\n\\[\\sin 5^\\circ \\sin (5k)^\\circ = \\frac{1}{2} [\\cos (5k - 5)^\\circ - \\cos (5k + 5)^\\circ].\\]Thus, we can make the sum telescope:\n\\begin{align*}\n\\sum_{k = 1}^{35} \\sin (5k)^\\circ &= \\frac{1}{\\sin 5^\\circ} \\sum_{k = 1}^{35} \\sin 5^\\circ \\sin (5k)^\\circ \\\\\n&= \\frac{1}{\\sin 5^\\circ} \\sum_{k = 1}^{35} \\frac{\\cos (5k - 5)^\\circ - \\cos (5k + 5)^\\circ}{2} \\\\\n&= \\frac{1}{2 \\sin 5^\\circ} [(\\cos 0^\\circ - \\cos 10^\\circ) + (\\cos 5^\\circ - \\cos 15^\\circ) + (\\cos 10^\\circ - \\cos 20^\\circ) + \\\\\n&\\quad + \\dots + (\\cos 165^\\circ - \\cos 175^\\circ) + (\\cos 170^\\circ - \\cos 180^\\circ)] \\\\\n&= \\frac{\\cos 0^\\circ + \\cos 5^\\circ - \\cos 175^\\circ - \\cos 180^\\circ}{2 \\sin 5^\\circ} \\\\\n&= \\frac{2 + 2 \\cos 5^\\circ}{2 \\sin 5^\\circ} \\\\\n&= \\frac{1 + \\cos 5^\\circ}{\\sin 5^\\circ}.\n\\end{align*}Then by the double-angle formulas,\n\\begin{align*}\n\\frac{1 + \\cos 5^\\circ}{\\sin 5^\\circ} &= \\frac{1 + 2 \\cos^2 2.5^\\circ - 1}{2 \\sin 2.5^\\circ \\cos 2.5^\\circ} \\\\\n&= \\frac{2 \\cos^2 2.5^\\circ}{2 \\sin 2.5^\\circ \\cos 2.5^\\circ} \\\\\n&= \\frac{\\cos 2.5^\\circ}{\\sin 2.5^\\circ} \\\\\n&= \\cot 2.5^\\circ \\\\\n&= \\tan 87.5^\\circ.\n\\end{align*}Thus, $r = \\boxed{87.5}.$",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nThe sum of sines of multiples of 5 degrees from 5 to 175 degrees can be simplified as $\\sin 5^\\circ + \\sin 10^\\circ + \\sin 15^\\circ + ... + \\sin 175^\\circ$.\nStep 2:\nWe can rewrite the sum as $\\sin 5^\\circ + \\sin (5 + 5)^\\circ + \\sin (5 + 10)^\\circ + ... + \\sin (5 + 34*5)^\\circ$.\nStep 3:\nUsing the angle sum identity for sine, we can simplify the expression to $\\sin 5^\\circ + \\sin 5^\\circ \\cos 5^\\circ + \\sin 5^\\circ \\cos 10^\\circ + ... + \\sin 5^\\circ \\cos 170^\\circ$.\nStep 4:\nFactor out $\\sin 5^\\circ$ to get $\\sin 5^\\circ(1 + \\cos 5^\\circ + \\cos 10^\\circ + ... + \\cos 170^\\circ)$.\nStep 5:\nUsing the sum to product identity for cosine, we can simplify it further to $\\sin 5^\\circ (2 \\cos 5^\\circ + 2 \\cos 10^\\circ + ... + 2 \\cos 85^\\circ)$.\nStep 6:\nThis simplifies to $2 \\sin 5^\\circ \\cos 5^\\circ + 2 \\sin 5^\\circ \\cos 10^\\circ + ... + 2 \\sin 5^\\circ \\cos 85^\\circ$.\nStep 7:\nEvery term in the sum can be expressed as $\\sin (a + b) = \\sin a \\cos b + \\cos a \\sin b$, so the sum becomes $\\sin 90^\\circ - \\sin 0^\\circ$.\nStep 8:\nTherefore, the given equation simplifies to $\\tan r^\\circ = \\tan 90^\\circ$.\nStep 9:\nThe smallest positive rational number $r$ that satisfies this equation is $\\boxed{90}$."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": false,
+                "Same result": false,
+                "Levenshtein distance value": 0.6929460580912863
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 5_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 5",
+        "problem": "In a certain isosceles right triangle, the altitude to the hypotenuse has length $6$.  What is the area of the triangle?",
+        "correct_solution": "In isosceles right triangle $\\triangle ABC$ below, $\\overline{AD}$ is the altitude to the hypotenuse.\n\n[asy]\nimport olympiad;\nunitsize(0.8inch);\npair A,B,C,D;\nA = (0,1);\nB= (1,0);\nC = -B;\nD = (0,0);\ndraw(A--B--C--A,linewidth(1));\ndraw(A--D,linewidth(0.8));\ndraw(rightanglemark(C,A,B,s=5));\ndraw(rightanglemark(C,D,A,s=5));\nlabel(\"$A$\",A,N);\nlabel(\"$B$\",B,S);\nlabel(\"$C$\",C,S);\nlabel(\"$D$\",D,S);\n[/asy]\n\nBecause $\\triangle ABC$ is an isosceles right triangle, $\\angle ABC = 45^\\circ$.  Since $\\angle ADB = 90^\\circ$, we know that $\\angle DAB = 45^\\circ$, so $\\triangle ABD$ is also a 45-45-90 triangle.  Similarly, $\\triangle ACD$ is a 45-45-90 triangle.  Therefore, $DB=DC = DA = 6$, so $BC = BD+DC = 12$, and  \\[[ABC] = \\frac{(AD)(BC)}{2} = \\frac{(6)({12})}{2} = \\boxed{36}.\\]",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nIn an isosceles right triangle, the altitude to the hypotenuse divides the triangle into two congruent triangles.\nStep 2:\nSince the altitude to the hypotenuse creates two right triangles, each with legs of length 6, this forms a 6-6-6 isosceles right triangle.\nStep 3:\nIn a 6-6-6 right triangle, the hypotenuse can be found using the Pythagorean theorem: $6^2 + 6^2 = c^2$, which simplifies to $72 = c^2$, and $c = \\sqrt{72} = 6\\sqrt{2}$.\nStep 4:\nThe area of a triangle is given by $\\frac{1}{2} \\times \\text{base} \\times \\text{height}$.\nStep 5:\nIn our case, the base and height are both 6, so the area of one half of the isosceles right triangle is $\\frac{1}{2} \\times 6 \\times 6 = 18$.\nStep 6:\nSince the whole triangle consists of two congruent halves, the total area of the isosceles right triangle is $2 \\times 18 = 36$.\nFinal answer:\n\\boxed{36}"
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8002336448598131
+            }
+        }
+    }
+}

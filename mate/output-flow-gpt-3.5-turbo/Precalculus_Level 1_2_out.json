@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 1_2.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 1",
+        "problem": "Let $a = 5 - 8i$ and $b = 30 + 48i$. Find $|ab|$.",
+        "correct_solution": "Note that $b = 6(5 + 8i) = 6\\overline{a}$. So $|ab| = |a(6\\overline{a})| = 6 |a\\overline{a}| = 6|a|^2$. We have $|a|^2 = 5^2 + 8^2 = 89$, so $|ab| = 6 \\cdot 89 = \\boxed{534}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nGiven $a = 5 - 8i$ and $b = 30 + 48i$.\nStep 2:\nThe product of $a$ and $b$ is $ab = (5 - 8i)(30 + 48i)$.\nStep 3:\nExpanding the product gives $ab = 5(30) + 5(48i) - 8i(30) - 8i(48i)$.\nStep 4:\nSimplify to get $ab = 150 + 240i - 240i - 384i^2$.\nStep 5:\nRecall that $i^2 = -1$, so $ab = 150 + 240i - 240i - 384(-1)$.\nStep 6:\nFurther simplify to get $ab = 150 + 384$.\nStep 7:\nTherefore, the absolute value of $ab$ is $|ab| = |150 + 384| = 534$.\nFinal answer:\n\\boxed{534}"
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8072033898305084
+            }
+        }
+    }
+}

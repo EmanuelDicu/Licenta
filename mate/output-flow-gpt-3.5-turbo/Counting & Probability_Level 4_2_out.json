@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 4_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 4",
+        "problem": "A 6-sided die is weighted so that the probability of any number being rolled is proportional to the value of the roll.  (So, for example, the probability of a 2 being rolled is twice that of a 1 being rolled.)  What is the expected value of a roll of this weighted die?  Express your answer as a common fraction.",
+        "correct_solution": "Let $x$ be the probability that a 1 is rolled.  Then the probability that a 2 is rolled is $2x$, the probability that a 3 is rolled is $3x$, and so on.  Since the sum of all these probabilities must be 1, we have that $x + 2x + \\cdots + 6x = 1$, which means that $21x = 1$, so $x = \\frac{1}{21}$.  Therefore \\[ E = \\frac{1}{21}(1) + \\frac{2}{21}(2) + \\cdots + \\frac{6}{21}(6) = \\frac{1^2 + 2^2 + \\cdots 6^2}{21} = \\boxed{\\frac{13}{3}}. \\]",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nThe die has 6 sides, numbered from 1 to 6.\nStep 2:\nThe probability of rolling each number is proportional to the value of the number, meaning P(1) : P(2) : P(3) : P(4) : P(5) : P(6) = 1 : 2 : 3 : 4 : 5 : 6.\nStep 3:\nTo find the total probability, we calculate the sum of the ratios: 1 + 2 + 3 + 4 + 5 + 6 = 21.\nStep 4:\nTo find the probability of rolling each number, we divide the ratio of each number by the total sum: P(1) = 1/21, P(2) = 2/21, P(3) = 3/21, P(4) = 4/21, P(5) = 5/21, P(6) = 6/21.\nStep 5:\nTo calculate the expected value, we multiply each number by its probability and sum the results: E(X) = 1*(1/21) + 2*(2/21) + 3*(3/21) + 4*(4/21) + 5*(5/21) + 6*(6/21) = 56/21.\nStep 6:\nSimplify the fraction: 56/21 = 8/3.\nStep 7:\nTherefore, the expected value of rolling the weighted die is 8/3, expressed as a common fraction.\nFinal answer:\n\\boxed{\\frac{8}{3}}"
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7605956471935853
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 4_3.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 4",
+        "problem": "For some matrix $\\mathbf{P} = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$ with nonzero integer entries,\n\\[\\begin{pmatrix} 4 & 3 \\\\ -1 & 0 \\end{pmatrix} = \\mathbf{P}^{-1} \\begin{pmatrix} 1 & 0 \\\\ 0 & 3 \\end{pmatrix} \\mathbf{P}.\\]Find the smallest possible value of $|a| + |b| + |c| + |d|.$",
+        "correct_solution": "From the equation $\\begin{pmatrix} 4 & 3 \\\\ -1 & 0 \\end{pmatrix} = \\mathbf{P}^{-1} \\begin{pmatrix} 1 & 0 \\\\ 0 & 3 \\end{pmatrix} \\mathbf{P},$ we can multiply both sides by $\\mathbf{P}$ on the left, to get\n\\[\\mathbf{P} \\begin{pmatrix} 4 & 3 \\\\ -1 & 0 \\end{pmatrix} = \\begin{pmatrix} 1 & 0 \\\\ 0 & 3 \\end{pmatrix} \\mathbf{P}.\\]Then\n\\[\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} \\begin{pmatrix} 4 & 3 \\\\ -1 & 0 \\end{pmatrix} = \\begin{pmatrix} 1 & 0 \\\\ 0 & 3 \\end{pmatrix} \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix},\\]so\n\\[\\begin{pmatrix} 4a - b & 3a \\\\ 4c - d & 3c \\end{pmatrix} = \\begin{pmatrix} a & b \\\\ 3c & 3d \\end{pmatrix}.\\]Comparing entries, we get $4a - b = a,$ $3a = b,$ $4c - d = 3c,$ and $3c = 3d.$  These reduce to $b = 3a$ and $c = d,$ so\n\\[|a| + |b| + |c| + |d| = |a| + |3a| + |c| + |d| = 4|a| + 2|d|.\\]Since $a,$ $b,$ $c,$ and $d$ are all nonzero integers, we minimize this by taking $a = \\pm 1$ and $d = \\pm 1,$ in which case $4|a| + 2|d| = \\boxed{6}.$",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nWe know that $\\begin{pmatrix} 4 & 3 \\\\ -1 & 0 \\end{pmatrix} = \\mathbf{P}^{-1} \\begin{pmatrix} 1 & 0 \\\\ 0 & 3 \\end{pmatrix} \\mathbf{P}$.\n\nStep 2:\nLet $\\begin{pmatrix} 1 & 0 \\\\ 0 & 3 \\end{pmatrix} = \\begin{pmatrix} x & y \\\\ z & w \\end{pmatrix}$ for some integers $x, y, z, w$.\n\nStep 3:\nWe find that $\\begin{pmatrix} 4 & 3 \\\\ -1 & 0 \\end{pmatrix} = \\mathbf{P}^{-1} \\begin{pmatrix} 1 & 0 \\\\ 0 & 3 \\end{pmatrix} \\mathbf{P} = \\begin{pmatrix} z & w \\\\ -y & x \\end{pmatrix} \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$. This simplifies to a system of equations.\n\nStep 4:\nSolving the system of equations gives us $a = -8, b = -9, c = 3, d = 4$.\n\nStep 5:\nThe sum of the absolute values of the entries of matrix P is $|-8| + |-9| + |3| + |4| = \\boxed{24}$.\n\nFinal answer:\n\\boxed{24}"
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": false,
+                "Same result": false,
+                "Levenshtein distance value": 0.5062111801242236
+            }
+        }
+    }
+}

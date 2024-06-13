@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 4_3.json": {
+        "category": "Algebra",
+        "difficulty": "Level 4",
+        "problem": "The product of $3t^2+5t+a$ and $4t^2+bt-2$ is $12t^4+26t^3-8t^2-16t+6$. What is $a+b$?",
+        "correct_solution": "The constant term of the product of two polynomials is just the product of the two constant terms. Therefore we know that $6=-2a$, so $a=-3$. We now consider the linear term of the product of our polynomials. It's given by $-16t=(5t\\cdot-2)+a\\cdot bt\\Longrightarrow-16t=-10t+(-3)bt\\Longrightarrow b=2$. Therefore our answer is $a+b=\\boxed{-1}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nThe coefficient of $t^4$ in the product of the two polynomials is the product of the leading coefficients of each polynomial: $3 * 4 = 12$.\nStep 2:\nThe coefficient of $t^3$ in the product is the sum of the products of the leading coefficient of one polynomial by the coefficient of $t$ in the other, and vice versa: $3*b + 5*4 = 26$.\nStep 3:\nThe coefficient of $t^2$ in the product is the sum of the product of each coefficient of the first polynomial by the coefficient of the $t^2$ term in the second polynomial: $3*(-2) + 5*b + a*4 = -8$.\nStep 4:\nThe coefficient of $t$ in the product is the sum of the product of each coefficient of the first polynomial by the coefficient of $t$ in the second polynomial, and vice versa: $3*(-2) + 5*b + a*(-2) = -16$.\nStep 5:\nThe constant term in the product is the product of the constant terms of both polynomials: $a*(-2) = 6$.\nStep 6:\nFrom Step 5, we find $a = -3$.\nStep 7:\nSubstitute $a = -3$ into Step 3 to solve for $b: 3*(-2) + 5*b + (-3)*4 = -8$, which simplifies to $5b - 20 = -8$. Solving for $b$ gives $b = 2$.\nStep 8:\nCalculate the sum of $a$ and $b$: $-3 + 2 = -1$.\nFinal answer:\n\\boxed{-1}"
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.794092093831451
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 2_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 2",
+        "problem": "Fifty students were surveyed about their participation in hockey and baseball. The results of the survey were:\n\n$\\bullet$ $33$ students played hockey\n\n$\\bullet$ $24$ students played baseball\n\n$\\bullet$ $8$ students played neither hockey nor baseball\n\nHow many of the students surveyed played both hockey and baseball?",
+        "correct_solution": "Since there were $50$ students surveyed in total and $8$ played neither hockey nor baseball, then $42$ students in total played one game or the other.\n\nSince $33$ students played hockey and $24$ students played baseball, and this totals $33+24=57$ students, then there must be $\\boxed{15}$ students who are \"double-counted\", that is who play both sports.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nLet x be the number of students who played both hockey and baseball.\nStep 2:\nThe total number of students who played hockey is 33.\nStep 3:\nThe total number of students who played baseball is 24.\nStep 4:\nThe total number of students who played neither hockey nor baseball is 8.\nStep 5:\nUsing the principle of inclusion-exclusion, the total number of students who played hockey or baseball is: 33 + 24 - x.\nStep 6:\nThis total number of students who played hockey or baseball also includes the students who played both hockey and baseball, so we need to subtract that out: 33 + 24 - x - x = 57 - 2x.\nStep 7:\nThis total number of students who played hockey or baseball is also inclusive of the 8 students who played neither, so we need to add them back in: 57 - 2x + 8.\nStep 8:\nThis total number should equal the total number of students surveyed, which is 50: 57 - 2x + 8 = 50.\nStep 9:\nSolving for x, we get: -2x + 65 = 50.\nStep 10:\nRearranging the equation gives us: -2x = -15.\nStep 11:\nDividing by -2, we find: x = 7.\nStep 12:\nTherefore, 7 students played both hockey and baseball.\nFinal answer: \\boxed{7}"
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7679856115107914
+            }
+        }
+    }
+}

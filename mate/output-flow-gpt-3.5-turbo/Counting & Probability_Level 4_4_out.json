@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 4_4.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 4",
+        "problem": "In how many ways can I place 5 different beads on a bracelet if rotations and flips of the bracelet are not treated as different arrangements?",
+        "correct_solution": "There are $5!$ ways to arrange 5 beads in a line.  Since there are 5 rotations in a circle for each of these arrangements, we must divide by 5, and since there are two matching reflections for each arrangement, we must divide by 2.  So there are $\\dfrac{5!}{5 \\times 2} = \\boxed{12}$ ways.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nThere are 5 different beads to be placed on the bracelet.\n\nStep 2:\nIf rotations and flips of the bracelet are not treated as different arrangements, we need to consider the arrangements that are the same when the bracelet is rotated or flipped.\n\nStep 3:\nTo find the number of unique ways disregarding rotations and flips, we divide the total number of arrangements by the number of arrangements that are the same under rotations and flips.\n\nStep 4:\nThe total number of arrangements of 5 beads on a bracelet is 4! (4 factorial) because the first bead can be placed in 4 ways, the second in 3 ways, the third in 2 ways, and the last bead in 1 way.\n\nStep 5:\nUnder rotations and flips, there are 5 different arrangements that look the same (as a whole), which are 5 different cycles of 1 bead each.\n\nStep 6:\nTherefore, the number of unique ways the beads can be placed on the bracelet, not considering rotations and flips as different arrangements, is 4! / 5 = 24 / 5 = 4.\n\nFinal answer:\n\\boxed{4}"
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7972027972027972
+            }
+        }
+    }
+}

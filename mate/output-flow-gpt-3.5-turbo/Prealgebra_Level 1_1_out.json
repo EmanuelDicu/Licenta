@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 1_1.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 1",
+        "problem": "Compute $(2^3)(5^5)$ in your head.",
+        "correct_solution": "Using the associative property, we can rearrange the terms to get $(2^35^3)(5^2)=(10^3)(5^2)=(1000)(25)=\\boxed{25,\\!000}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nCalculate 2^3 = 8.\nStep 2:\nCalculate 5^5 = 3125.\nStep 3:\nCalculate the product of 8 and 3125 to get the final result: 8 * 3125 = 25000.\nFinal answer:\n\\boxed{25000}"
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7777777777777778
+            }
+        }
+    }
+}

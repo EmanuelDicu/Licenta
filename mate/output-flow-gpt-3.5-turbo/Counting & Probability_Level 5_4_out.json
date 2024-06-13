@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 5_4.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 5",
+        "problem": "The letters of the word `SIXTEEN' are randomly arranged.  What is the probability that the two E's are not next to each other?",
+        "correct_solution": "The best way to do this is to find the probability that the two E's are next to each other.  There are $\\dfrac{7!}{2}$ arrangements of the word SIXTEEN.  If we want to find the number of arrangements such that the E's are next to each other, we find the number of arrangements of the six-letter word SIXT(EE)N (where we treat the two E's as a block), which is $6!$.  So the probability that an arrangement of the word SIXTEEN has the two E's next to each other is $\\dfrac{6!}{\\frac{7!}{2}} = \\dfrac{2}{7}$.  So the probability that the two E's aren't next to each other is $1 - \\dfrac{2}{7} = \\boxed{\\dfrac{5}{7}}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nTotal number of ways to arrange the letters in the word 'SIXTEEN' is 7! (7 factorial) because there are 7 letters in the word.\n\nStep 2:\nLet's consider the two E's as a single letter (EE). So, now we have 6 \"letters\" to arrange - S, I, X, T, N, EE.\n\nStep 3:\nNumber of ways to arrange these 6 \"letters\" is 6! / 2! (to account for the repeated E's) = 360.\n\nStep 4:\nNumber of ways the two E's are next to each other is 6! (considering EE as a single letter), and there are 2 ways to arrange EE within this grouping, giving a total of 6!*2 = 1440.\n\nStep 5:\nNumber of ways the two E's are not next to each other is the total ways to arrange the 6 letters (360) minus the ways where the two E's are next to each other (1440), which is 360 - 1440 = 2160.\n\nStep 6:\nThe probability that the two E's are not next to each other is the number of ways they are not together divided by the total number of ways, so 2160/5040 = 135/315.\n\nStep 7:\nSimplify the fraction 135/315 to get the final probability, which is 3/7.\n\nFinal answer:\n\\boxed{3/7}"
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7003853564547207
+            }
+        }
+    }
+}

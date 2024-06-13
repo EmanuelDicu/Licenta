@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 5_3.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 5",
+        "problem": "How many digits are in the value of the following expression: $2^{2001}\\times 5^{1950}\\div 4^{27}$?",
+        "correct_solution": "We have \\begin{align*}\n2^{2001}\\times5^{1950}\\div4^{27}&= 2^{2001}\\div2^{54}\\times5^{1950} \\\\\n&= 2^{1947}\\times5^{1950}\\\\\n&= (2\\times5)^{1947}\\times5^3 \\\\\n&= 125\\times10^{1947}\n\\end{align*}Since $125\\times10^{1947}$ has three non-zero digits followed by 1947 zeros, it has a total of $\\boxed{1950}$ digits.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nCalculate the value of the expression by simplifying each term:\n$2^{2001}\\times 5^{1950}\\div 4^{27} = 2^{2001}\\times 5^{1950}\\div (2^2)^{27} = 2^{2001}\\times 5^{1950}\\div 2^{54}$\n\nStep 2:\nUse the rule of exponents to simplify the expression further:\n$2^{2001}\\times 5^{1950}\\div 2^{54} = 2^{2001-54}\\times 5^{1950} = 2^{1947}\\times 5^{1950}$\n\nStep 3:\nCalculate the sum of the exponents to determine the number of digits in the value:\n$1947 + 1950 = 3897$\n\nStep 4:\nSince the sum of the exponents is 3897, the number of digits in the value of the expression is the number of digits in the number $10^{3897}$, which is $\\boxed{3898}$."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7089201877934272
+            }
+        }
+    }
+}

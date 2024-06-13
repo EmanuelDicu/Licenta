@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 2_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 2",
+        "problem": "In how many ways can a 3-person committee be chosen from a group of 8 people?",
+        "correct_solution": "There are $\\binom{8}{3} = \\frac{8 \\times 7 \\times 6}{3!}=\\boxed{56}$ to choose 3 people from a group of 8 without regard to order.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nThere are 8 people in the group.\nStep 2:\nWe need to choose a 3-person committee from the group.\nStep 3:\nThe number of ways to choose a 3-person committee from a group of 8 people is given by the combination formula C(n, k) = n! / (k!(n-k)!).\nStep 4:\nSubstitute n = 8 and k = 3 into the combination formula: C(8, 3) = 8! / (3!(8-3)!).\nStep 5:\nCalculate 8! = 8 x 7 x 6 x 5 x 4 x 3 x 2 x 1 = 40,320.\nStep 6:\nCalculate 3! = 3 x 2 x 1 = 6 and 5! = 5 x 4 x 3 x 2 x 1 = 120.\nStep 7:\nSubstitute the values into the formula: C(8, 3) = 40,320 / (6 x 120) = 56.\nStep 8:\nTherefore, there are 56 ways to choose a 3-person committee from a group of 8 people.\nFinal answer:\n\\boxed{56}"
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8788774002954209
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 2_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 2",
+        "problem": "If \\begin{align*}\n5x-2y&=7,\\\\\n3x+y&=2,\n\\end{align*}compute $24x-14y$.",
+        "correct_solution": "Note that $6(5x-2y)-2(3x+y)=24x-14y$.  Thus, $24x-14y=6(7)-2(2)=\\boxed{38}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nMultiply the second equation by 2 to make the coefficients of $y$ cancel out when added to the first equation.\nStep 2:\nThe modified system of equations becomes:\n$5x - 2y = 7$\n$6x + 2y = 4$\nStep 3:\nAdd the two equations to eliminate $y$ and solve for $x$: $5x + 6x = 7 + 4$ or $11x = 11$ which gives $x = 1$.\nStep 4:\nSubstitute $x = 1$ back into the second original equation to solve for $y$: $3(1) + y = 2$ or $y = -1$.\nStep 5:\nCalculate $24x - 14y$ using the values of $x = 1$ and $y = -1$: $24(1) - 14(-1) = 24 + 14 = \\boxed{38}$.\nFinal answer:\n\\boxed{38}"
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8991150442477877
+            }
+        }
+    }
+}

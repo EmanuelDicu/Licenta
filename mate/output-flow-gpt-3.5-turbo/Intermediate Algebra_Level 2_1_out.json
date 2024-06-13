@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 2_1.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 2",
+        "problem": "Two reals $x$ and $y$ are such that $x-y=4$ and $x^3-y^3=28$. Compute $xy$.",
+        "correct_solution": "We have $28=x^3-y^3=(x-y)(x^2+xy+y^2)=(x-y)((x-y)^2+3xy)=4\\cdot (16+3xy)$, from which $xy=\\boxed{-3}$.",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Step 1:\nWe are given that the difference between two real numbers x and y is 4, so we have x - y = 4.\n\nStep 2:\nWe are also given that the difference of the cubes of x and y is 28, so we have x^3 - y^3 = 28.\n\nStep 3:\nFactor the expression x^3 - y^3 as (x - y)(x^2 + xy + y^2) = 28. \nSubstitute x - y = 4 into the expression to get 4(x^2 + xy + y^2) = 28.\n\nStep 4:\nDivide the equation by 4 to simplify it to x^2 + xy + y^2 = 7.\n\nStep 5:\nWe know that (x + y)^3 = x^3 + y^3 + 3xy(x + y). \nSubstitute x^3 + y^3 = 28 and x + y = 4 into the expression to get 4^3 = 28 + 3xy(4).\n\nStep 6:\nSolve for xy in the equation 64 = 28 + 12xy to get xy = 36 / 12 = 3.\n\nStep 7:\nTherefore, the product of the two real numbers x and y is xy = 3.\nFinal answer:\n\\boxed{3}"
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8955823293172691
+            }
+        }
+    }
+}
