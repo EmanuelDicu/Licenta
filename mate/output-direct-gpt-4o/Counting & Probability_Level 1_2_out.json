@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 1_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 1",
+        "problem": "Ben flips a fair nickel four times. What is the probability that Ben flips Head, Tail, Head, Tail, in that order? Express your answer as a common fraction.",
+        "correct_solution": "Since any given flip has equal probability of $\\frac{1}{2}$ of being a Head or a Tail, and all outcomes are equally likely, the precise sequence given is equal to $\\frac{1}{2^4} = \\boxed{\\frac{1}{16}}$.",
+        "generated_solutions": {
+            "gpt-4o": "To solve the problem of finding the probability that Ben flips a Head, Tail, Head, Tail (HTHT) in that order when flipping a fair nickel four times, we can break down the problem into smaller parts and follow logical steps.\n\n### Step-by-Step Solution:\n\n1. **Understanding a Single Flip:**\n    - A fair nickel has two sides: Heads (H) and Tails (T).\n    - The probability of flipping either Heads or Tails in one flip is \\( \\frac{1}{2} \\) (since there are two equally likely outcomes).\n\n2. **Independent Events:**\n    - Each flip of the nickel is an independent event. The outcome of one flip does not affect the outcome of the next flip.\n\n3. **Determine the Probability for Each Flip:**\n    - The sequence we want is Head, Tail, Head, Tail:\n        - Probability of first flip being Heads (H): \\( \\frac{1}{2} \\)\n        - Probability of second flip being Tails (T): \\( \\frac{1}{2} \\)\n        - Probability of third flip being Heads (H): \\( \\frac{1}{2} \\)\n        - Probability of fourth flip being Tails (T): \\( \\frac{1}{2} \\)\n\n4. **Finding the Combined Probability:**\n    - The total probability of obtaining the sequence HTHT is found by multiplying the individual probabilities of each flip:\n      \\[\n      \\text{Total probability} = \\left( \\frac{1}{2} \\right) \\times \\left( \\frac{1}{2} \\right) \\times \\left( \\frac{1}{2} \\right) \\times \\left( \\frac{1}{2} \\right)\n      \\]\n    - Simplifying this expression:\n      \\[\n      \\left( \\frac{1}{2} \\right)^4 = \\frac{1}{16}\n      \\]\n\nThus, the probability that Ben flips Head, Tail, Head, Tail, in that exact order when flipping a fair nickel four times is:\n\\[\n\\boxed{\\frac{1}{16}}\n\\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8956414978514426
+            }
+        }
+    }
+}

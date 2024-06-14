@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 1_1.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 1",
+        "problem": "Compute $(2^3)(5^5)$ in your head.",
+        "correct_solution": "Using the associative property, we can rearrange the terms to get $(2^35^3)(5^2)=(10^3)(5^2)=(1000)(25)=\\boxed{25,\\!000}$.",
+        "generated_solutions": {
+            "gpt-4o": "To compute \\((2^3)(5^5)\\) in your head, let's break the problem into smaller, manageable parts and solve them step by step.\n\nFirst, we need to compute the value of \\(2^3\\):\n\\[\n2^3 = 2 \\times 2 \\times 2\n\\]\nCalculating step-by-step:\n\\[\n2 \\times 2 = 4\n\\]\n\\[\n4 \\times 2 = 8\n\\]\nSo, \\(2^3 = 8\\).\n\nNext, we need to compute the value of \\(5^5\\):\n\\[\n5^5 = 5 \\times 5 \\times 5 \\times 5 \\times 5\n\\]\nCalculating step-by-step:\n\\[\n5 \\times 5 = 25\n\\]\n\\[\n25 \\times 5 = 125\n\\]\n\\[\n125 \\times 5 = 625\n\\]\n\\[\n625 \\times 5 = 3125\n\\]\nSo, \\(5^5 = 3125\\).\n\nFinally, we multiply these results together:\n\\[\n(2^3)(5^5) = 8 \\times 3125 \n\\]\n\nTo multiply \\(8 \\times 3125\\), we can break this down further:\n\\[\n8 \\times 3000 = 24000\n\\]\n\\[\n8 \\times 100 = 800\n\\]\n\\[\n8 \\times 25 = 200\n\\]\nNow, add these results together:\n\\[\n24000 + 800 + 200 = 25000\n\\]\n\nTherefore, the final computed answer is:\n\\[\n(2^3)(5^5) = 25000\n\\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9071347678369196
+            }
+        }
+    }
+}

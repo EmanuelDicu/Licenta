@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 4_2.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "A circle is circumscribed about an equilateral triangle with side lengths of $6$ units each.  What is the area of the circle, in square units? Express your answer in terms of $\\pi$.",
+        "correct_solution": "[asy]\nsize(100);\ndefaultpen(linewidth(.8));\ndraw((0,0)--(4.5,7.794)--(9,0)--cycle);\ndraw(Circle((4.5,2.598),5.196));\ndraw((4.5,7.794)--(4.5,0));\ndot((4.5,2.598));\nlabel(\"$O$\",(4.5,2.598),W);\nlabel(\"$A$\",(4.5,7.794),N);\nlabel(\"$B$\",(9,0),E);\nlabel(\"$M$\",(4.5,0),S);\n[/asy]\n\nAbove is the diagram implied by the problem, with some added lines ($O$ is the center of the circle). Since $\\triangle AMB$ is a 30-60-90 triangle and $AB=6$, $AM=3\\sqrt{3}$. Since $AO$ is $2/3$ of $AM$, we have $AO=2\\sqrt{3}$. Thus, the area of the circle is $\\pi(2\\sqrt{3})^2=\\boxed{12\\pi}$.",
+        "generated_solutions": {
+            "gpt-4o": "To find the area of the circle circumscribed around an equilateral triangle with side lengths of 6 units, we can follow these steps:\n\n1. **Determine the radius of the circumscribed circle:**\n\n   For an equilateral triangle with side length \\( a \\), the radius \\( R \\) of the circumscribed circle (circumcircle) can be given by the formula:\n   \\[\n   R = \\frac{a}{\\sqrt{3}}\n   \\]\n   where \\( a \\) is the side length of the equilateral triangle.\n\n   Given \\( a = 6 \\) units, we can substitute this value into the formula to find \\( R \\):\n   \\[\n   R = \\frac{6}{\\sqrt{3}}\n   \\]\n\n   Simplify the expression by rationalizing the denominator:\n   \\[\n   R = \\frac{6}{\\sqrt{3}} \\times \\frac{\\sqrt{3}}{\\sqrt{3}} = \\frac{6\\sqrt{3}}{3} = 2\\sqrt{3}\n   \\]\n\n2. **Calculate the area of the circumscribed circle:**\n\n   The area \\( A \\) of a circle is given by the formula:\n   \\[\n   A = \\pi R^2\n   \\]\n\n   Substitute \\( R = 2\\sqrt{3} \\) into the formula:\n   \\[\n   A = \\pi (2\\sqrt{3})^2\n   \\]\n\n3. **Simplify the expression:**\n\n   \\[\n   (2\\sqrt{3})^2 = 2^2 \\times (\\sqrt{3})^2 = 4 \\times 3 = 12\n   \\]\n   Therefore,\n   \\[\n   A = \\pi \\times 12 = 12\\pi\n   \\]\n\nSo, the area of the circle circumscribed about an equilateral triangle with side lengths of 6 units is:\n\n\\[\n\\boxed{12\\pi}\n\\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8275039745627981
+            }
+        }
+    }
+}

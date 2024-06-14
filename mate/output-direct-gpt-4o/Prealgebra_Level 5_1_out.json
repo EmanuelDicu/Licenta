@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 5_1.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 5",
+        "problem": "In the diagram, $K$, $O$ and $M$ are the centers of the three semi-circles. Also, $OC = 32$ and $CB = 36$. [asy]\npair A, K, O, C, M, B, X, Y, Z;\nO=(0,0);\nC=(32,0);\nM=(50,0);\nB=(68,0);\nA=(-68,0);\nK=(A+C)/2;\nX=(0,68);\nY=(-18,50);\nZ=(50,18);\npath nom, bigc, middlec, smallc;\nnom=A--B--(100,100)--(-100,100)--cycle;\nbigc=A..X..B--cycle;\nmiddlec=A..Y..C--cycle;\nsmallc=C..Z..B--cycle;\nfill(bigc, gray(.5));\nfill(middlec, white);\nfill(smallc, white);\ndraw(smallc);\ndraw(middlec);\ndraw(bigc);\ndraw(A--B);\nlabel(\"A\", A, S);\nlabel(\"K\", K, S);\nlabel(\"O\", O, S);\nlabel(\"M\", M, S);\nlabel(\"C\", C, S);\nlabel(\"B\", B, S);\ndot(K);\ndot(O);\ndot(M);\n[/asy]\n\n\nWhat is the length of $AC$?",
+        "correct_solution": "We know that $OA$ and $OB$ are each radii of the semi-circle with center $O$.  Thus, $OA=OB=OC+CB=32+36=68$. Therefore, $AC=AO+OC=68+32=\\boxed{100}$.",
+        "generated_solutions": {
+            "gpt-4o": "To solve the problem of finding the length \\( AC \\) in the diagram with semicircles and given distances \\( OC = 32 \\) and \\( CB = 36 \\), we should first discuss the geometric setup and relationships involved.\n\n### Diagram Overview\nIn the given diagram:\n- \\( K \\), \\( O \\), and \\( M \\) are centers of three semicircles.\n- \\( OC \\) is a radius, equaling 32.\n- \\( CB \\) is a radius of another semicircle, equaling 36.\n\nThe primary task is calculating the total length \\( AC \\), which is a segment extending from point \\( A \\) to point \\( C \\). It can be helpful to decompose \\( AC \\) into the sum of smaller segments whose lengths we understand or can determine geometrically.\n\n### Step-by-Step Breakdown\n1. **Identify and Label Segments**:\n   - Let's consider \\( O \\) as the origin, and \\( C \\) positioned at coordinate 32 (hence \\( OC = 32 \\)).\n   - \\( B \\) is located 36 units to the right of \\( C \\) (hence \\( CB = 36 \\)).\n   \n2. **Interpret Semi-Circle Centers**:\n   - \\( O \\) is the center of the leftmost semicircle with radius \\( 32 \\).\n   - \\( M \\) is at coordinate \\( 68 \\) (32 + 36 = 68), the center of the right semicircle.\n   - \\( K \\) should be the midpoint between \\( A \\) and \\( C \\). Considering that \\( K \\) and \\( C \\) combined summarize the linear placement of three semi-circles, we look for symmetry and equal radius logic.\n\n3. **Linear Placement Analysis**:\n   - The length \\( OC \\) directly given is 32.\n   - The length \\( CB \\) is 36, so distances are consistent and segmentally continuous.\n   \n4. **Calculate Segment \\( AC \\)**:\n   - Given that \\( O \\) is 0, then until \\( C \\) is 32.\n   - From symmetrical observations and split segment methods, \\( AC \\) includes the direct span of these setups but includes no additional jumps beyond linear additions.\n   - \\( C-B \\) spans 36 providing right positions.\n\nSince \\( O \\) is direct, \\( A \\) is an amplified counter following as:\n\n### Mathematical Sum:\n\\[ AC = OC + CB\n    = 32 + 36\n    = 68 \\]\n\nThus every examination points to straightforward segment overlaid relevance.\n\n### Conclusion:\nThe length of \\( AC \\):\n\\[ \\boxed{68} \\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9457401237505949
+            }
+        }
+    }
+}

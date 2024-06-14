@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 2_1.json": {
+        "category": "Geometry",
+        "difficulty": "Level 2",
+        "problem": "In the figure below $AB = BC$, $m \\angle ABD = 30^{\\circ}$, $m \\angle C = 50^{\\circ}$ and $m \\angle CBD = 80^{\\circ}$. What is the number of degrees in the measure of angle $A$?\n\n[asy]\ndraw((0,0)--1.5dir(-15)--3.5dir(60)--(0,0),linewidth(2));\ndraw(1.5dir(-15)--1.5dir(-15)+4dir(35)--3.5dir(60),linewidth(2));\nlabel(\"A\",(0,0),W);\nlabel(\"B\",3.5dir(60),N);\nlabel(\"C\",1.5dir(-15)+4dir(35),E);\nlabel(\"D\",1.5dir(-15),S);\n[/asy]",
+        "correct_solution": "We know two of the angles in $\\triangle BCD$: $$m\\angle CBD = 80^\\circ, ~~m\\angle BCD = 50^\\circ.$$ Since the sum of angles in a triangle is $180^\\circ$, we conclude that $m\\angle BDC = 180^\\circ - (50^\\circ+80^\\circ) = 50^\\circ$.\n\nTherefore, $\\triangle BCD$ is isosceles with equal angles at $C$ and $D$, which implies that the sides opposite those angles ($BD$ and $BC$) are equal.\n\nSince we are given $AB=BC$, we now know that $AB=BD$, which means that $\\triangle ABD$ is isosceles with equal angles at $A$ and $D$. Let $x = m\\angle A$. Then the sum of angles in $\\triangle ABD$ is $180^\\circ$, so $$x + x + 30^\\circ = 180^\\circ.$$ We can solve this equation to get $x = 75^\\circ$. So, $m\\angle A = \\boxed{75^\\circ}$.",
+        "generated_solutions": {
+            "gpt-4o": "To find the measure of angle \\( \\angle A \\) in the given geometric figure, we will proceed step by step.\n\nWe are given:\n- \\( AB = BC \\)\n- \\( m \\angle ABD = 30^\\circ \\)\n- \\( m \\angle C = 50^\\circ \\)\n- \\( m \\angle CBD = 80^\\circ \\)\n\nTo solve for \\( \\angle A \\), follow these steps:\n\n1. **Identify the triangle and relevant angles:**\n\n   The first step is to understand the relationship between the angles provided:\n   - \\( \\angle ABD = 30^\\circ \\)\n   - \\( \\angle CBD = 80^\\circ \\)\n   - \\( \\angle C = 50^\\circ \\)\n\n2. **Determine \\( \\angle BDC \\):**\n\n   Since \\( \\angle CBD = 80^\\circ \\) and all angles in triangle \\( BCD \\) must sum to 180\u00b0,\n   \\[\n   \\angle BDC = 180^\\circ - \\angle CBD - \\angle C = 180^\\circ - 80^\\circ - 50^\\circ = 50^\\circ\n   \\]\n\n3. **Use the isosceles properties:**\n\n   Since \\( AB = BC \\), triangle \\( ABC \\) is isosceles with \\( AB = BC \\). Therefore, \\( \\angle BAC = \\angle BCA \\). We will denote \\( \\angle BAC = x \\).\n\n4. **Calculate \\( \\angle ABC \\):**\n\n   To calculate \\( \\angle ABC \\),\n   \\[\n   \\angle ABC = 180^\\circ - \\angle A - \\angle C\n   \\]\n   However, since it\u2019s isosceles, we recognize:\n   \\[\n   \\angle ABC = \\angle BAC = x\n   \\]\n\n5. **Calculate relation between angles in \\( \\triangle ABD \\):**\n\n   In triangle \\( ABD \\), given \\( \\angle ABD = 30^\\circ \\) and using the fact that external angle \\( \\angle CBD = \\angle ABD + \\angle ADB \\),\n   \\[\n   80^\\circ = 30^\\circ + \\angle ADB \\implies \\angle ADB = 50^\\circ\n   \\]\n\n6. **Summarize \\(\\angle A\\) using adjacent angle facts:**\n\n   Finally, in isosceles triangle \\( ABC \\):\n   \\[\n   2x + 50^\\circ = 180^\\circ \\implies 2x = 130^\\circ \\implies x = 65^\\circ \n   \\]\n\nThus, the measure of angle \\( \\angle A \\) is \\( 65^\\circ \\). So, the number of degrees in the measure of angle \\( \\angle A \\) is \\( \\boxed{65} \\)."
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7459519821328866
+            }
+        }
+    }
+}

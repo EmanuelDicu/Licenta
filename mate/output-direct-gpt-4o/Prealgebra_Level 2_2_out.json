@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 2_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 2",
+        "problem": "Fifty students were surveyed about their participation in hockey and baseball. The results of the survey were:\n\n$\\bullet$ $33$ students played hockey\n\n$\\bullet$ $24$ students played baseball\n\n$\\bullet$ $8$ students played neither hockey nor baseball\n\nHow many of the students surveyed played both hockey and baseball?",
+        "correct_solution": "Since there were $50$ students surveyed in total and $8$ played neither hockey nor baseball, then $42$ students in total played one game or the other.\n\nSince $33$ students played hockey and $24$ students played baseball, and this totals $33+24=57$ students, then there must be $\\boxed{15}$ students who are \"double-counted\", that is who play both sports.",
+        "generated_solutions": {
+            "gpt-4o": "Let's break down the problem step-by-step to determine how many students played both hockey and baseball.\n\n### Step 1: Total Number of Students\nWe know that there were 50 students surveyed in total.\n\n### Step 2: Students Not Playing Either Sport\nOut of the 50 students, 8 students played neither hockey nor baseball. Therefore, the number of students who played at least one of the two sports is:\n\\[ 50 - 8 = 42 \\]\n\n### Step 3: Applying the Principle of Inclusion-Exclusion\nWe will use the principle of inclusion-exclusion to find the number of students who played both sports. Let:\n\n- \\( H \\) represent the number of students who played hockey.\n- \\( B \\) represent the number of students who played baseball.\n- \\( H \\cap B \\) represent the number of students who played both sports.\n\nFrom the given information:\n\\[ H = 33 \\]\n\\[ B = 24 \\]\n\nAccording to the principle of inclusion-exclusion for two sets:\n\\[ H \\cup B = H + B - H \\cap B \\]\nWe know from Step 2 that \\( H \\cup B \\) (students who played at least one sport) is 42. Therefore:\n\\[ 42 = 33 + 24 - H \\cap B \\]\n\n### Step 4: Solve for \\( H \\cap B \\)\nLet's solve for the number of students who played both sports:\n\\[ 42 = 33 + 24 - H \\cap B \\]\n\\[ 42 = 57 - H \\cap B \\]\n\\[ H \\cap B = 57 - 42 \\]\n\\[ H \\cap B = 15 \\]\n\n### Conclusion\nThe number of students who played both hockey and baseball is:\n\\[ \\boxed{15} \\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7997065297138665
+            }
+        }
+    }
+}

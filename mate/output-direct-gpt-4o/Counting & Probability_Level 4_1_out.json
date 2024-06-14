@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 4_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 4",
+        "problem": "Liz has 11 marbles of different colors. In how many ways can she choose 3 of the marbles, if she refuses to choose the green one and the purple one at the same time?",
+        "correct_solution": "We can divide this into cases:\n\nCase 1: Liz chooses the green marble, and not the purple marble. In this case, Liz must choose 2 more marbles from the remaining 9 marbles (since she won't choose the purple marble). So, there are $\\binom{9}{2}=36$ choices in this case.\n\nCase 2: Liz chooses the purple marble, and not the green marble. As in Case 1, Liz must choose 2 more marbles from the remaining 9 marbles. So, there are $\\binom{9}{2}$ choices in this case.\n\nCase 3: Liz chooses neither the green marble nor the purple marble. In this case, Liz must choose three marbles from the nine remaining marbles, and there are $\\binom{9}{3}=84$ choices in this case.\n\nThe total number of possible choices is $36+36+84=\\boxed{156}$.\n\nAlternatively, there are $\\binom{11}{3}=165$ ways to select three marbles. Of those, $\\binom{9}{1}=9$ ways contain both the purple marble and the green marble. Therefore, there are $165-9=\\boxed{156}$ ways to select three marbles such that purple and green marbles are not both chosen.",
+        "generated_solutions": {
+            "gpt-4o": "To solve the problem, we need to determine the number of ways Liz can choose 3 out of her 11 marbles, under the condition that she cannot choose both the green and the purple marble together. Here's how we can split and solve the problem step-by-step:\n\n### Step 1: Calculate the Total Ways to Choose 3 Marbles\nFirst, we calculate the total number of ways to select 3 marbles out of 11 without any restrictions. This number is given by the binomial coefficient \\(\\binom{11}{3}\\):\n\n\\[\n\\binom{11}{3} = \\frac{11!}{3!(11-3)!} = \\frac{11 \\times 10 \\times 9}{3 \\times 2 \\times 1} = 165\n\\]\n\n### Step 2: Calculate the Ways that Include Both Green and Purple\nNext, we need to compute the number of ways to choose 3 marbles that include both the green and the purple marbles. If Liz chooses both the green and the purple marbles, she needs to choose 1 more marble out of the remaining 9 marbles (since we're excluding green and purple from the 11). This can be found using \\(\\binom{9}{1}\\):\n\n\\[\n\\binom{9}{1} = \\frac{9!}{1!(9-1)!} = 9\n\\]\n\n### Step 3: Subtract the Undesirable Outcomes\nSince we cannot have both the green and the purple marbles together, we subtract the undesirable cases from the total number of ways to choose 3 marbles. So, the number of desirable ways is:\n\n\\[\n\\text{Number of desirable ways} = \\binom{11}{3} - \\binom{9}{1} = 165 - 9 = 156\n\\]\n\n### Final Solution\nThus, the number of ways Liz can choose 3 of her marbles, ensuring she does not choose both the green and the purple marble together, is:\n\n\\[\n\\boxed{156}\n\\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7228047182175622
+            }
+        }
+    }
+}

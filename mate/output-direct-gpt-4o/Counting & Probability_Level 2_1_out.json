@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 2_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 2",
+        "problem": "Determine the number of ways to arrange the letters of the word THAT.",
+        "correct_solution": "First we count the arrangements if the two T's are unique, which is $4!$. Then since the T's are not unique, we divide by $2!$ for the arrangements of T, for an answer of $\\dfrac{4!}{2!} = \\boxed{12}$.",
+        "generated_solutions": {
+            "gpt-4o": "To determine the number of ways to arrange the letters in the word \"THAT\", we can follow these steps:\n\n1. **Identify the total number of letters:**\n   The given word \"THAT\" consists of 4 letters.\n\n2. **Account for repetitions:**\n   The word \"THAT\" has repeating letters. Specifically:\n   - The letter T appears 2 times.\n   - The letter H appears 1 time.\n   - The letter A appears 1 time.\n\n3. **Use the formula for permutations of multiset:**\n   The general formula for the permutations of a word with repeated characters is:\n   \\[\n   \\frac{n!}{n_1! \\cdot n_2! \\cdot \\ldots \\cdot n_k!}\n   \\]\n   where \\( n \\) is the total number of letters, and \\( n_1, n_2, \\ldots, n_k \\) are the factorials of the frequencies of each distinct letter.\n\n4. **Apply the formula to our word:**\n   In the word \"THAT\":\n   - Total number of letters, \\( n = 4 \\)\n   - Frequency of T, \\( n_1 = 2 \\)\n   - Frequency of H, \\( n_2 = 1 \\)\n   - Frequency of A, \\( n_3 = 1 \\)\n\n   Substituting these values into the formula, we get:\n   \\[\n   \\frac{4!}{2! \\cdot 1! \\cdot 1!}\n   \\]\n\n5. **Calculate the factorials:**\n   \\[\n   4! = 4 \\times 3 \\times 2 \\times 1 = 24\n   \\]\n   \\[\n   2! = 2 \\times 1 = 2\n   \\]\n   \\[\n   1! = 1\n   \\]\n\n6. **Plug in the factorial values and simplify:**\n   \\[\n   \\frac{24}{2 \\cdot 1 \\cdot 1} = \\frac{24}{2} = 12\n   \\]\n\nTherefore, the number of ways to arrange the letters in the word \"THAT\" is \\( \\boxed{12} \\)."
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8907142857142857
+            }
+        }
+    }
+}

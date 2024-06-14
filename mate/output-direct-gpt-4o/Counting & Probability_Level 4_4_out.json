@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 4_4.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 4",
+        "problem": "In how many ways can I place 5 different beads on a bracelet if rotations and flips of the bracelet are not treated as different arrangements?",
+        "correct_solution": "There are $5!$ ways to arrange 5 beads in a line.  Since there are 5 rotations in a circle for each of these arrangements, we must divide by 5, and since there are two matching reflections for each arrangement, we must divide by 2.  So there are $\\dfrac{5!}{5 \\times 2} = \\boxed{12}$ ways.",
+        "generated_solutions": {
+            "gpt-4o": "To solve the problem of counting the number of ways to place 5 different beads on a bracelet accounting for rotations and reflections not being treated as different arrangements, we need to carefully consider the constraints of rotational and reflective symmetry.\n\n### Step 1: Calculate Total Arrangements without Constraints\nFirst, let's calculate the total number of ways to arrange 5 different beads linearly. Without considering any rotational or reflective symmetries, the number of ways to arrange 5 different beads is the number of permutations of 5 distinct objects:\n\\[ 5! = 5 \\times 4 \\times 3 \\times 2 \\times 1 = 120 \\]\n\n### Step 2: Adjust for Circular Nature of the Bracelet\nSince we need to place the beads in a circular manner (bracelet), each unique arrangement can be rotated into 5 different positions. Therefore, we must divide the total number of linear arrangements by 5 to account for rotational symmetries:\n\\[ \\frac{120}{5} = 24 \\]\n\n### Step 3: Adjust for Reflections\nEach arrangement of beads on the bracelet can also be flipped. A flip is equivalent to reversing the order of the beads. Since each of the 24 unique rotationally distinct arrangements can be flipped, we should also divide by 2 to account for these reflective symmetries:\n\\[ \\frac{24}{2} = 12 \\]\n\nSo the total number of distinct ways to place 5 different beads on a bracelet, considering that rotations and reflections are not treated as different, is:\n\\[ \\boxed{12} \\]\n\nLet's summarize the logical steps:\n1. Start with the total number of permutations of 5 distinct beads.\n2. Adjust for rotational symmetry by dividing by the number of beads (5).\n3. Further adjust for reflective symmetry by dividing by 2.\n\nThe final solution is that there are \\( \\boxed{12} \\) distinct ways to arrange 5 different beads on a bracelet when rotations and reflections are considered identical."
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8680257510729614
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 4_3.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "What is the area, in square units, of the square with the four vertices at $(-2, 2), (2, -2), (-2, -6)$, and $(-6, -2)$?",
+        "correct_solution": "The length of the square is $\\sqrt{4^2 + 4^2} = 4\\sqrt{2}$. Therefore, the area of the square is $(4\\sqrt{2})^2 = \\boxed{32}$.",
+        "generated_solutions": {
+            "gpt-4o": "To solve the problem of finding the area of a square with vertices at \\((-2, 2)\\), \\((2, -2)\\), \\((-2, -6)\\), and \\((-6, -2)\\), we'll proceed in the following steps:\n\n1. **Verify that the points form a square:**\n   - Calculate the distances between the points to ensure they are all equal and diagonals are equal and check that adjacent sides are perpendicular.\n\n2. **Calculate the side length of the square:**\n   - Use the distance formula for two points.\n\n3. **Calculate the area of the square:**\n   - Use the formula for the area of a square once the side length is known.\n\n### Step 1: Verify that points form a square\nFirst, let's check that they form a square by checking distances and the perpendicularity of the adjacent sides. \n\nThe distance formula between two points \\((x_1, y_1)\\) and \\((x_2, y_2)\\) is given by:\n\\[\n\\text{Distance} = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\n\\]\n\n#### Distances between all pairs of points:\n1. Distance between points \\((-2, 2)\\) and \\( (2, -2)\\):\n\\[\n\\sqrt{(2 - (-2))^2 + (-2 - 2)^2} = \\sqrt{4^2 + (-4)^2} = \\sqrt{16 + 16} = \\sqrt{32} = 4\\sqrt{2}\n\\]\n\n2. Distance between points \\( (2, -2)\\) and \\((-2, -6)\\):\n\\[\n\\sqrt{(-2 - 2)^2 + (-6 - (-2))^2} = \\sqrt{(-4)^2 + (-4)^2} = \\sqrt{16 + 16} = \\sqrt{32} = 4\\sqrt{2}\n\\]\n\n3. Distance between points \\((-2, -6)\\) and \\((-6, -2)\\):\n\\[\n\\sqrt{(-6 - (-2))^2 + (-2 - (-6))^2} = \\sqrt{(-4)^2 + 4^2} = \\sqrt{16 + 16} = \\sqrt{32} = 4\\sqrt{2}\n\\]\n\n4. Distance between points \\((-6, -2)\\) and \\((-2, 2)\\):\n\\[\n\\sqrt{(-2 - (-6))^2 + (2 - (-2))^2} = \\sqrt{4^2 + 4^2} = \\sqrt{16 + 16} = \\sqrt{32} = 4\\sqrt{2}\n\\]\n\nSo, all sides have equal length \\(4\\sqrt{2}\\).\n\n#### Diagonal distances:\nTo verify that the diagonals are equal and twice the side length:\n- Distance between \\((-2, 2)\\) and \\((-2, -6)\\):\n\\[\n\\sqrt{(-2 - (-2))^2 + (-6 - 2)^2} = \\sqrt{0 + (-8)^2} = \\sqrt{64} = 8\n\\]\n\n- Distance between \\((2, -2)\\) and \\((-6, -2)\\):\n\\[\n\\sqrt{(-6 - 2)^2 + (-2 - (-2))^2} = \\sqrt{(-8)^2 + 0} = \\sqrt{64} = 8\n\\]\n\nDiagonals are \\(8\\), which is twice the side length \\(4\\sqrt{2}\\).\n\n### Step 2: Calculate the side length of the square\nFrom our calculations, the side length \\( s \\) of the square is \\(4\\sqrt{2}\\).\n\n### Step 3: Calculate the area of the square\nThe area \\(A\\) of a square with side length \\( s \\) is given by:\n\\[\nA = s^2\n\\]\n\nSo,\n\\[\nA = (4\\sqrt{2})^2 = 16 \\times 2 = 32\n\\]\n\n### Final answer:\nThe area of the square is \\(32\\) square units."
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9518272425249169
+            }
+        }
+    }
+}

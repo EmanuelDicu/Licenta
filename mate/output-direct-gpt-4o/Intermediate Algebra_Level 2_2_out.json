@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 2_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 2",
+        "problem": "The complex numbers $a$ and $b$ satisfy\n\\[a + \\overline{b} = 2 - 7i.\\]Find $\\overline{a} + b.$",
+        "correct_solution": "Taking the conjugate of both sides, we get\n\\[\\overline{a + \\overline{b}} = \\overline{2 - 7i} = 2 + 7i.\\]But $\\overline{a + \\overline{b}} = \\overline{a} + \\overline{\\overline{b}} = \\overline{a} + b,$ so\n\\[\\overline{a} + b = \\boxed{2 + 7i}.\\]",
+        "generated_solutions": {
+            "gpt-4o": "To solve for \\(\\overline{a} + b\\) given the complex numbers \\(a\\) and \\(b\\) with \\(a + \\overline{b} = 2 - 7i\\), we will proceed step by step.\n\n1. **Express \\(a\\) and \\(b\\) in standard form:**  \n   Let \\(a = x + yi\\) and \\(b = u + vi\\) where \\(x, y, u, v\\) are real numbers.\n   Then, \\(\\overline{a} = x - yi\\) and \\(\\overline{b} = u - vi\\).\n\n2. **Substitute the forms into the given equation:**  \n   The given equation is:\n   \\[\n   a + \\overline{b} = 2 - 7i\n   \\]\n   Substitute \\(a = x + yi\\) and \\(\\overline{b} = u - vi\\):\n   \\[\n   (x + yi) + (u - vi) = 2 - 7i\n   \\]\n\n3. **Separate real and imaginary parts:**  \n   Combine the real parts and the imaginary parts:\n   \\[\n   (x + u) + (y - v)i = 2 - 7i\n   \\]\n   Therefore, we get two separate equations:\n   \\[\n   x + u = 2 \\quad \\text{(1)}\n   \\]\n   \\[\n   y - v = -7 \\quad \\text{(2)}\n   \\]\n\n4. **Find \\(\\overline{a} + b\\):**  \n   We need to find \\(\\overline{a} + b\\). First, compute \\(\\overline{a}\\):\n   \\[\n   \\overline{a} = x - yi\n   \\]\n   Then add \\(b\\) which is \\(u + vi\\):\n   \\[\n   \\overline{a} + b = (x - yi) + (u + vi)\n   \\]\n   Combine the real and imaginary parts:\n   \\[\n   (x + u) + (v - y)i\n   \\]\n   Using the results from equations (1) and (2):\n   \\[\n   x + u = 2\n   \\]\n   \\[\n   v - y = 7\n   \\]\n\n5. **Simplify the expression:**\n   Using those results, we substitute them back into \\(\\overline{a} + b\\):\n   \\[\n   \\overline{a} + b = 2 + 7i\n   \\]\n\nThus, the final result is:\n\\[\n\\boxed{2 + 7i}\n\\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8556629834254144
+            }
+        }
+    }
+}

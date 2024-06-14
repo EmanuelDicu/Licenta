@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 5_4.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 5",
+        "problem": "On a number line, the coordinates of $P$ and $Q$ are 8 and 48, respectively. The midpoint of $\\overline{PQ}$ is $B$, the midpoint of $\\overline{BQ}$ is $C$, and the midpoint of $\\overline{PC}$ is $D$. What is the coordinate of $D$?",
+        "correct_solution": "Since $B$ is midpoint of $\\overline{PQ}$, the coordinate of $B$ is $(8+48)/2 = 4+24 = 28$.  Since $C$ is the midpoint of $\\overline{BQ}$, the coordinate of $C$ is $(28+48)/2 = 14+24=38$.  Since $D$ is the midpoint of $\\overline{PC}$, the coordinate of $D$ is $(8+38)/2 = 4 + 19 = \\boxed{23}$.\n\n[asy]\npair P, Q, B, C, D;\n\nP = (8,0);\nQ = (48,0);\nB = (P+Q)/2;\nC = (B+Q)/2;\nD = (P+C)/2;\n\ndot(P);\ndot(Q);\ndot(B);\ndot(C);\ndot(D);\n\ndraw(P--Q);\nlabel(\"$P$\",P,S);\nlabel(\"$Q$\",Q,S);\nlabel(\"$B$\",B,S);\nlabel(\"$C$\",C,S);\nlabel(\"$D$\",D,S);\n[/asy]",
+        "generated_solutions": {
+            "gpt-4o": "To find the coordinate of \\( D \\), we must carefully follow the series of midpoint calculations based on the given information. Let\u2019s proceed step-by-step to solve the problem:\n\n1. **Find the coordinate of midpoint \\( B \\) of \\( \\overline{PQ} \\)**\nThe coordinates of \\( P \\) and \\( Q \\) are given as 8 and 48, respectively. The formula for the midpoint of a segment on a number line is:\n\\[\n\\text{Midpoint} = \\frac{x_1 + x_2}{2}\n\\]\nThus, the coordinate of \\( B \\) is:\n\\[\nB = \\frac{8 + 48}{2} = \\frac{56}{2} = 28\n\\]\n\n2. **Find the coordinate of midpoint \\( C \\) of \\( \\overline{BQ} \\)**\nNow \\( B \\) has the coordinate 28, and \\( Q \\) has the coordinate 48. The midpoint formula again gives us:\n\\[\nC = \\frac{28 + 48}{2} = \\frac{76}{2} = 38\n\\]\n\n3. **Find the coordinate of midpoint \\( D \\) of \\( \\overline{PC} \\)**\nFinally, we need to find the midpoint of \\( \\overline{PC} \\). \\( P \\) has the coordinate 8, and \\( C \\) has the coordinate 38. Using the midpoint formula once more, we get:\n\\[\nD = \\frac{8 + 38}{2} = \\frac{46}{2} = 23\n\\]\n\nThus, the coordinate of \\( D \\) is:\n\\[\n\\boxed{23}\n\\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7804428044280443
+            }
+        }
+    }
+}

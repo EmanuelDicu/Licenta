@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 3_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 3",
+        "problem": "Find the complex number $z$ so that $z + |z| = 2 + 8i.$",
+        "correct_solution": "Let $z = a + bi.$  Then\n\\[a + bi + \\sqrt{a^2 + b^2} = 2 + 8i.\\]Equating the imaginary parts, we get $b = 8.$  Equating the real parts, we get $a + \\sqrt{a^2 + 64} = 2.$  Then\n\\[\\sqrt{a^2 + 64} = 2 - a.\\]Squaring both sides, we get $a^2 + 64 = (2 - a)^2 = a^2 - 4a + 4.$  Solving, we find $a = -15.$  Therefore, $z = \\boxed{-15 + 8i}.$",
+        "generated_solutions": {
+            "gpt-4o": "To solve the problem of finding the complex number \\( z \\) such that \\( z + |z| = 2 + 8i \\), we proceed by breaking down the problem into logical steps. \n\nLet's denote \\( z \\) as \\( z = a + bi \\), where \\( a \\) and \\( b \\) are real numbers and \\( i \\) is the imaginary unit.\n\nFirst, we need to express the magnitude \\( |z| \\) in terms of \\( a \\) and \\( b \\):\n\\[ |z| = \\sqrt{a^2 + b^2} \\]\n\nGiven the equation:\n\\[ z + |z| = 2 + 8i \\]\n\nSubstituting \\( z \\) and \\( |z| \\) into the equation:\n\\[ (a + bi) + \\sqrt{a^2 + b^2} = 2 + 8i \\]\n\nSeparate the equation into real and imaginary parts. For convenience, associate real parts together and imaginary parts together:\n\\[ a + \\sqrt{a^2 + b^2} = 2 \\]\n\\[ b = 8 \\]\n\nAs you can see, from the imaginary part of the equation:\n\\[ b = 8 \\]\n\nNow, substitute \\( b = 8 \\) into the real part:\n\\[ a + \\sqrt{a^2 + 64} = 2 \\]\n\nSolve for \\( a \\):\n\\[ \\sqrt{a^2 + 64} = 2 - a \\]\n\nSquare both sides to eliminate the square root:\n\\[ a^2 + 64 = (2 - a)^2 \\]\n\\[ a^2 + 64 = 4 - 4a + a^2 \\]\n\nSubtract \\( a^2 \\) from both sides:\n\\[ 64 = 4 - 4a \\]\n\\[ 64 - 4 = -4a \\]\n\\[ 60 = -4a \\]\n\\[ a = -15 \\]\n\nThus, we have found \\( a = -15 \\) and \\( b = 8 \\).\n\nTherefore, the complex number \\( z \\) is:\n\\[ z = -15 + 8i \\]\n\nTo verify our solution, let's check:\n\\[ z + |z| = (-15 + 8i) + \\sqrt{(-15)^2 + 8^2} \\]\n\\[ \\sqrt{225 + 64} = \\sqrt{289} = 17 \\]\nTherefore:\n\\[ z + |z| = -15 + 8i + 17 = 2 + 8i \\]\n\nIt satisfies the equation, confirming that our solution is correct. Thus, the solution to the problem is:\n\n\\[ \\boxed{-15 + 8i} \\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8213820078226858
+            }
+        }
+    }
+}

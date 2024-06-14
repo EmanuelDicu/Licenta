@@ -1,0 +1,18 @@
+{
+    "Precalculus_Level 3_2.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 3",
+        "problem": "Three vertices of a cube are $P=(7,12,10)$, $Q=(8,8,1)$, and $R=(11,3,9)$. What is the side length of the cube?",
+        "correct_solution": "We compute \\[\\begin{aligned} PQ &= \\sqrt{(7-8)^2 + (12-8)^2 + (10-1)^2} = 7\\sqrt{2}, \\\\ QR &= \\sqrt{(8-11)^2 + (8-3)^2 + (1-9)^2} = 7\\sqrt{2}, \\\\ PR &= \\sqrt{(7-11)^2 + (12-3)^2 + (10-9)^2} = 7\\sqrt{2}. \\end{aligned}\\]Thus, $PQR$ is an equilateral triangle made from three vertices of a cube. It follows that each side of $PQR$ must be a face diagonal of the cube, so the side length of the cube is $\\boxed{7}.$\n[asy]\nimport three;\ntriple A=(0,0,0),B=(0,0,1),C=(0,1,1),D=(0,1,0),E=A+(1,0,0),F=B+(1,0,0),G=C+(1,0,0),H=D+(1,0,0);\ndraw(A--B--C--D--A^^E--F--G--H--E^^A--E^^B--F^^C--G^^D--H);\ndraw(B--D--E--B,dashed);\nlabel(\"$P$\",B,N);\nlabel(\"$Q$\",D,SE);\nlabel(\"$R$\",E,SW);\n[/asy]",
+        "generated_solutions": {
+            "gpt-4o": "To find the side length of the cube given three vertices with coordinates \\( P = (7, 12, 10) \\), \\( Q = (8, 8, 1) \\), and \\( R = (11, 3, 9) \\), we will follow these steps:\n\n1. **Understand the Geometry of the Cube**:\n   - A cube has equal edges, and each vertex connects to three other vertices at mutual right angles.\n   - The vectors representing the sides of the cube are orthogonal (perpendicular to each other) and have the same magnitude.\n\n2. **Calculate Vector PQ and PR**:\n   - These vectors will help us determine the structure and dimensions of the cube.\n\nLet's compute \\( \\vec{PQ} \\) and \\( \\vec{PR} \\).\n\n\\[\n\\vec{PQ} = Q - P = (8 - 7, 8 - 12, 1 - 10) = (1, -4, -9)\n\\]\n\n\\[\n\\vec{PR} = R - P = (11 - 7, 3 - 12, 9 - 10) = (4, -9, -1)\n\\]\n\n3. **Check Orthogonality of These Vectors**:\n   - For \\( \\vec{PQ} \\) and \\( \\vec{PR} \\) to be sides of a cube, they must be orthogonal.\n   - Vectors are orthogonal if their dot product is zero.\n\n\\[\n\\vec{PQ} \\cdot \\vec{PR} = 1(4) + (-4)(-9) + (-9)(-1) = 4 + 36 + 9 = 49 \\neq 0\n\\]\n\nSince \\( \\vec{PQ} \\cdot \\vec{PR} \\neq 0 \\), vectors \\( \\vec{PQ} \\) and \\( \\vec{PR} \\) aren't orthogonal. This implies they don't represent adjacent sides of the cube. So we need a consistent approach:\n\n4. **Formulate an Equation for the Distance Calculation**:\n   - The side length \\( s \\) can be computed if we know the distances between vertices in terms of \\( s \\).\n\nGiven in a cube:\n- \\( \\|P - Q\\| \\) and \\( \\|P - R\\| \\) shall be interpretable directly with \\( s \\).\n\nLet\u2019s calculate these distances properly and simplify,\n\n\\[\n\\|PQ\\| = \\sqrt{(1)^2 + (-4)^2 + (-9)^2} = \\sqrt{1 + 16 + 81} = \\sqrt{98} = 7\\sqrt{2}\n\\]\n\n\\literal store equivalently on other point pairs:\n\n\\[\n\\|PR\\| = \\sqrt{(4)^2 + (-9)^2 + (-1)^2} = \\sqrt{16 + 81 + 1} = \\sqrt{98} = 7\\sqrt{2}\n\\]\n\nSince cube\u2019s pattern confirms one constant whole simplification:\n\\(\n\\boxed{7}\n\\)"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8613490364025695
+            }
+        }
+    }
+}

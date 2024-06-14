@@ -1,0 +1,18 @@
+{
+    "Number Theory_Level 4_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 4",
+        "problem": "What integer $n$ satisfies $0\\le n<18$ and $$n\\equiv -11213141\\pmod{18}~?$$",
+        "correct_solution": "An integer is divisible by $18$ if and only if the sum of its digits is divisible by $9$ and the last digit is even (meaning it is divisible by both 9 and 2).  The sum of the digits of $-11213141$ is 14.  Since $-11213141$ is negative, this number is 5 $\\textit{less than}$ a multiple of 9.  The number is 4 $\\textit{more than}$ a multiple of 9.  Subtracting 4 gives  \\[-11213141 = -11213145+4.\\]Since $-11213145$ has a digit sum of 18, this number is a multiple of 9.  However this is not a multiple of 18 so we need to subtract 9 again: \\[-11213141 = -11213154+13.\\]Now the number $-11213154$ is a multiple of 18, so the answer is $\\boxed{13}$. $$-11213141\\equiv 13\\pmod {18}.$$",
+        "generated_solutions": {
+            "gpt-4o": "To solve the problem, we need to find an integer \\( n \\) that satisfies the condition \\( 0 \\leq n < 18 \\) and\n\\[ n \\equiv -11213141 \\pmod{18}. \\]\n\n### Step-by-Step Solution\n\n#### Step 1: Simplify the given number modulo 18\nFirst, let's reduce \\(-11213141\\) modulo 18. To do this, we can use the property of modular arithmetic that allows us to reduce large numbers step-by-step by breaking them down. We will take the number \\(-11213141\\) and repeatedly reduce it modulo 18.\n\nWe note that:\n\\[ -11213141 \\equiv (-11213141 \\mod 18) \\pmod{18}. \\]\n\n#### Step 2: Compute \\(11213141 \\mod 18\\)\nTo compute \\(11213141 \\mod 18\\), we first need to simplify \\(11213141\\). We'll reduce the large number by summing its digits because of the congruence property of decimal representation.\n\n\\[ 11213141 \\text{ can be written as } 1 \\cdot 10^7 + 1 \\cdot 10^6 + 2 \\cdot 10^5 + 1 \\cdot 10^4 + 3 \\cdot 10^3 + 1 \\cdot 10^2 + 4 \\cdot 10 + 1. \\]\n\nHowever, we use properties of modular arithmetic directly:\n\n\\[ 10 \\equiv -8 \\mod 18 \\quad \\text{(since 10 - 18 = -8)} \\]\n\\[ 10^2 = 100 \\equiv 100 - 5 \\cdot 18 = 10 \\equiv -8 \\mod 18 \\]\n\\[ 10^3 = 1000 \\equiv -8^3 = -512 \\equiv -512 + 28 \\cdot 18 = -8 \\mod 18 \\]\n\\[ \\text{and similar reductions apply...} \\]\n\nWe can directly reduce the digits one-by-one modulo 18.\nAlternatively, we can use long division:\n\n\\[ 11213141 \\div 18 \\approx 622952.277 \\]\nSo, the remainder when \\(11213141\\) is divided by 18 is given directly:\n\n\\[ \\text{Thus, } 11213141 \\equiv 1 (\\text{remainder}) \\mod 18   \\]\n\\[ \\Rightarrow 11213141 \\equiv 1 \\pmod{18}. \\]\n\n#### Step 3: Apply the negative sign and reduce within bounds\nGiven \n\\[ -11213141 \\equiv -(11213141 \\mod 18) \\equiv -1 \\pmod{18}.\\]\n\nTo ensure \\(0 \\le n < 18\\), we convert \\(-1\\) to a positive equivalent:\n\n\\[ -1 \\equiv 17 \\pmod{18} \\]\n(This is because if we add 18 to -1, we get 17.)\n\nTherefore, the integer \\( n \\) that satisfies \\( 0 \\leq n < 18 \\) and \\( n \\equiv -11213141 \\pmod{18} \\) is:\n\\[ \\boxed{17} \\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8024377856780092
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 3_2.json": {
+        "category": "Algebra",
+        "difficulty": "Level 3",
+        "problem": "Find the positive difference between the solutions to the equation $6t^2 + 30 = 41t$.",
+        "correct_solution": "Rearranging the equation gives $6t^2 -41t + 30 = 0$.  Factoring gives $(t-6)(6t-5)= 0$, so the solutions to the equation are $t=6$ and $t=\\frac{5}{6}$.  The positive difference between these solutions is $6 - \\frac56 = \\boxed{\\frac{31}{6}}.$",
+        "generated_solutions": {
+            "gpt-4o": "To solve the equation \\(6t^2 + 30 = 41t\\) and find the positive difference between the solutions, we will proceed step by step.\n\n### Step 1: Rewrite the Equation in Standard Form\n\nWe start by rewriting the given equation in the standard quadratic form \\(at^2 + bt + c = 0\\):\n\n\\[6t^2 + 30 = 41t\\]\n\nSubtract \\(41t\\) from both sides to obtain:\n\n\\[6t^2 - 41t + 30 = 0\\]\n\n### Step 2: Identify Coefficients\n\nThe equation is now in the standard form \\(at^2 + bt + c = 0\\), where \\(a = 6\\), \\(b = -41\\), and \\(c = 30\\).\n\n### Step 3: Use the Quadratic Formula\n\nThe solutions to the quadratic equation \\(at^2 + bt + c = 0\\) are given by the quadratic formula:\n\n\\[t = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\]\n\nPlugging in the values of \\(a\\), \\(b\\), and \\(c\\):\n\n\\[t = \\frac{-(-41) \\pm \\sqrt{(-41)^2 - 4 \\cdot 6 \\cdot 30}}{2 \\cdot 6}\\]\n\n### Step 4: Simplify the Expression Inside the Square Root\n\nCalculate the discriminant (\\(\\Delta\\)):\n\n\\[\\Delta = b^2 - 4ac = (-41)^2 - 4 \\cdot 6 \\cdot 30\\]\n\\[\\Delta = 1681 - 720\\]\n\\[\\Delta = 961\\]\n\n### Step 5: Calculate the Square Root of the Discriminant\n\n\\[\\sqrt{961} = 31\\]\n\n### Step 6: Solve for the Two Possible Values of \\(t\\)\n\n\\[\nt = \\frac{41 \\pm 31}{12}\n\\]\n\nThis gives us two solutions:\n\n1. \\(t_1 = \\frac{41 + 31}{12} = \\frac{72}{12} = 6\\)\n2. \\(t_2 = \\frac{41 - 31}{12} = \\frac{10}{12} = \\frac{5}{6}\\)\n\n### Step 7: Find the Positive Difference Between the Solutions\n\nThe positive difference between the solutions \\(t_1 = 6\\) and \\(t_2 = \\frac{5}{6}\\):\n\n\\[\n\\text{Difference} = 6 - \\frac{5}{6}\n\\]\n\nTo subtract these values, first express \\(6\\) as a fraction over the same denominator as \\(\\frac{5}{6}\\):\n\n\\[\n6 = \\frac{36}{6}\n\\]\n\nNow subtract:\n\n\\[\n\\frac{36}{6} - \\frac{5}{6} = \\frac{36 - 5}{6} = \\frac{31}{6}\n\\]\n\n### Conclusion\n\nThe positive difference between the solutions is \\(\\boxed{\\frac{31}{6}}\\)."
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8851831601968289
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 5_4.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 5",
+        "problem": "The letters of the word `SIXTEEN' are randomly arranged.  What is the probability that the two E's are not next to each other?",
+        "correct_solution": "The best way to do this is to find the probability that the two E's are next to each other.  There are $\\dfrac{7!}{2}$ arrangements of the word SIXTEEN.  If we want to find the number of arrangements such that the E's are next to each other, we find the number of arrangements of the six-letter word SIXT(EE)N (where we treat the two E's as a block), which is $6!$.  So the probability that an arrangement of the word SIXTEEN has the two E's next to each other is $\\dfrac{6!}{\\frac{7!}{2}} = \\dfrac{2}{7}$.  So the probability that the two E's aren't next to each other is $1 - \\dfrac{2}{7} = \\boxed{\\dfrac{5}{7}}$.",
+        "generated_solutions": {
+            "gpt-4o": "To determine the probability that the two E's in the word \"SIXTEEN\" are not next to each other when the letters are randomly arranged, we can split the problem into smaller parts as follows:\n\n**Step 1: Total number of arrangements**\nFirst, we calculate the total number of distinct arrangements of the letters in the word \"SIXTEEN\".\nThe word \"SIXTEEN\" has 7 letters, with 2 of these letters being E\u2019s. The general formula for the number of distinct permutations of letters in a word is given by the factoral of the total number of letters divided by the factorial of the number of times that each letter repeats.\n\nThus, the total number of distinct arrangements is:\n\\[\n\\frac{7!}{2!} = \\frac{5040}{2} = 2520\n\\]\n\n**Step 2: Number of arrangements where the two E's are together**\nNext, we calculate the number of arrangements where the two E's are next to each other. When we consider the two E's as a single \"super letter\" (let's call it X), we effectively reduce the problem to arranging the \"letters\" S, I, X, T, E, N, which are 6 distinct elements in total.\n\nThe number of permutations of these 6 elements is:\n\\[\n6! = 720\n\\]\n\nHowever, within each of these arrangements, the two E's that form X can only be in one specific position, so there's no further multiplicity to account for here.\n\n**Step 3: Probability calculation**\nTo find the probability that the two E\u2019s are not next to each other, we can use the complement of the probability that the two E\u2019s are next to each other.\n\nFirst, the probability that the E's are next to each other is:\n\\[\n\\frac{\\text{Number of arrangements with E's together}}{\\text{Total number of arrangements}} = \\frac{720}{2520} = \\frac{3}{10}\n\\]\n\nTherefore, the probability that the two E's are not next to each other is:\n\\[\n1 - \\frac{3}{10} = \\frac{7}{10}\n\\]\n\n**Conclusion**\nThe probability that the two E's in the word \"SIXTEEN\" are not next to each other when the letters are randomly arranged is:\n\\[\n\\boxed{\\frac{7}{10}}\n\\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7563840653728294
+            }
+        }
+    }
+}

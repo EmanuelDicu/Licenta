@@ -1,0 +1,18 @@
+{
+    "Precalculus_Level 1_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 1",
+        "problem": "Compute $\\arccos \\left( -\\frac{1}{2} \\right).$  Express your answer in radians.",
+        "correct_solution": "Since $\\cos \\frac{2 \\pi}{3} = -\\frac{1}{2},$ $\\arccos \\left( -\\frac{1}{2} \\right) = \\boxed{\\frac{2 \\pi}{3}}.$",
+        "generated_solutions": {
+            "gpt-4o": "To solve the problem of finding \\(\\arccos \\left( -\\frac{1}{2} \\right)\\) expressed in radians, we can break it down into a few clear and logical steps:\n\n1. **Understanding \\(\\arccos\\)**:\n   - The \\(\\arccos\\) function, or inverse cosine function, finds the angle \\(\\theta\\) such that \\(\\cos(\\theta) = x\\), where \\(x\\) is the value inside the \\(\\arccos\\) function.\n   - The range of the \\(\\arccos\\) function is \\([0, \\pi]\\), which means it returns values within this interval.\n\n2. **Identifying when \\(\\cos(\\theta) = -\\frac{1}{2}\\)**:\n   - We need to determine the angle \\(\\theta\\) within the range \\([0, \\pi]\\) for which the cosine value is \\(-\\frac{1}{2}\\).\n\n3. **Angles with cosine values of \\(-\\frac{1}{2}\\)**:\n   - Recall from the unit circle that \\(\\cos\\) of an angle is the x-coordinate of the corresponding point on the unit circle.\n   - We know from trigonometric values that \\(\\cos( \\frac{\\pi}{3} ) = \\frac{1}{2}\\).\n   - Since cosine is an even function, \\(\\cos(-\\theta) = \\cos(\\theta)\\), thus \\(\\cos( \\frac{2\\pi}{3} ) = -\\frac{1}{2}\\).\n\n4. **Selecting the correct angle in the range \\([0, \\pi]\\)**:\n   - The value \\(\\theta\\) that lies within the interval \\([0, \\pi]\\) and satisfies \\( \\cos(\\theta) = -\\frac{1}{2} \\) is \\(\\theta = \\frac{2\\pi}{3}\\).\n\nPutting it all together:\n- We have determined that \\(\\arccos \\left( -\\frac{1}{2} \\right)\\) is the angle \\(\\theta\\) such that \\( \\cos(\\theta) = -\\frac{1}{2} \\) and that angle lies within \\([0, \\pi]\\).\n- The correct angle that meets these criteria is \\(\\frac{2\\pi}{3}\\).\n\nTherefore, the solution to the problem is:\n\\[\n\\arccos \\left( -\\frac{1}{2} \\right) = \\frac{2\\pi}{3}.\n\\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9392265193370166
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 4_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 4",
+        "problem": "Ed takes five 100-point tests in his algebra class. He scores 87, 85 and 87 points on the first three tests. If the scores of his last two tests differ by three points and he has a $90\\%$ average on his five tests, what was his highest test score?",
+        "correct_solution": "Instead of adding up scores and figuring out the new averages, a quicker way (useful for the countdown round) is as follows:\n\nSince the average is 90, we first calculate how many points below 90 he already is: he's scored 87, 85, and 87, meaning that he is 3, 5, and 3 points below 90 respectively, making for a total of 11 points below.  We then know that his remaining two tests must be a combined 11 points above 90, and since they differ by 3 points, we know that one test is 4 above 90, and the other is 7 above 90, meaning his highest score was $\\boxed{97}$.",
+        "generated_solutions": {
+            "gpt-4o": "To solve this problem, let's break it down into smaller, manageable parts. We need to use the information given to determine Ed's highest test score.\n\n### Step 1: Understand the goal\nWe need to find Ed's highest test score given his scores on five tests, requirements on the average score, and the condition that the scores of his last two tests differ by 3 points.\n\n### Step 2: Calculate the total points required for a 90% average\nA 90% average on five 100-point tests means that the total points for all five tests should be:\n\\[ 0.90 \\times 5 \\times 100 = 450 \\text{ points}. \\]\n\n### Step 3: Account for the three known scores\nEd's scores on the first three tests are 87, 85, and 87 points. Let's compute the sum of these scores:\n\\[ 87 + 85 + 87 = 259 \\text{ points}. \\]\n\n### Step 4: Determine the points needed on the last two tests\nLet the scores on the last two tests be \\( x \\) and \\( y \\). Given that their sum plus the scores from the first three tests must total 450 points, we write:\n\\[ 259 + x + y = 450. \\]\nSimplifying this, we find:\n\\[ x + y = 450 - 259 = 191. \\]\n\n### Step 5: Consider the condition that the scores differ by 3 points\nThe problem states that the scores of the last two tests differ by 3 points:\n\\[ |x - y| = 3. \\]\nThere are two possible cases:\n1. \\( x = y + 3 \\)\n2. \\( y = x + 3 \\)\n\nLet's solve each case separately.\n\n### Step 6: Solve the equation \\( x = y + 3 \\)\nSubstitute \\( x = y + 3 \\) into the equation \\( x + y = 191 \\):\n\\[ (y + 3) + y = 191 \\]\n\\[ 2y + 3 = 191 \\]\n\\[ 2y = 188 \\]\n\\[ y = 94 \\]\nThen,\n\\[ x = y + 3 = 94 + 3 = 97 \\]\n\n### Step 7: Solve the equation \\( y = x + 3 \\)\nSubstitute \\( y = x + 3 \\) into the equation \\( x + y = 191 \\):\n\\[ x + (x + 3) = 191 \\]\n\\[ 2x + 3 = 191 \\]\n\\[ 2x = 188 \\]\n\\[ x = 94 \\]\nThen,\n\\[ y = x + 3 = 94 + 3 = 97 \\]\n\n### Step 8: Determine the highest test score\nIn both cases, we've determined the scores of the last two tests are 94 and 97 regardless of which one is x or y. The highest score among all tests is thus:\n\\[ 97 \\]\n\n### Conclusion\nEd's highest test score is \\( \\boxed{97} \\)."
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8182701652089407
+            }
+        }
+    }
+}

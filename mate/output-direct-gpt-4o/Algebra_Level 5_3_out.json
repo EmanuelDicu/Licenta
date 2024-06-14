@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 5_3.json": {
+        "category": "Algebra",
+        "difficulty": "Level 5",
+        "problem": "Billy shoots an arrow from 10 feet above the ground. The height of this arrow can be expressed by the equation $h=10-23t-10t^2$, where $t$ is time in seconds since the arrow was shot. If the center of a target is raised 5 feet off the ground, in how many seconds must the arrow reach the target in order for Billy to hit the bulls eye?",
+        "correct_solution": "Since the center of the target is 5 feet above the ground, $h=5$. So we get the quadratic: \\begin{align*}5& =10-23t-10t^{2}\n\\\\ \\Rightarrow\\qquad 0& =10t^{2}+23t-5\n\\\\ \\Rightarrow\\qquad 0&=(2t+5)(5t-1).\n\\end{align*}Thus, the values of $t$ that satisfy the equation are $-\\frac52$ and $\\frac15$. However, since time can never be a negative number, the answer must be $\\boxed{\\dfrac{1}{5}}$.",
+        "generated_solutions": {
+            "gpt-4o": "To solve the given problem, we need to determine at what time \\( t \\) the height of the arrow \\( h \\) is equal to the height of the center of the target, which is 5 feet off the ground. The height of the arrow is given by the equation \\( h = 10 - 23t - 10t^2 \\). Let's proceed step-by-step to find this.\n\n### Step-by-Step Solution:\n\n1. **Setting Up the Equation:**\n   The height of the arrow \\( h \\) should be equal to the height of the center of the target, which is 5 feet. So, we set the equation:\n   \\[\n   10 - 23t - 10t^2 = 5\n   \\]\n\n2. **Rearranging the Equation:**\n   To form a standard quadratic equation, we rearrange the terms:\n   \\[\n   10 - 23t - 10t^2 = 5\n   \\]\n   Subtract 5 from both sides:\n   \\[\n   10 - 23t - 10t^2 - 5 = 0\n   \\]\n   Simplify:\n   \\[\n   -10t^2 - 23t + 5 = 0\n   \\]\n\n3. **Solving the Quadratic Equation:**\n   We need to solve the quadratic equation:\n   \\[\n   -10t^2 - 23t + 5 = 0\n   \\]\n   To make it simpler, we multiply through by -1:\n   \\[\n   10t^2 + 23t - 5 = 0\n   \\]\n\n4. **Using the Quadratic Formula:**\n   Recall the quadratic formula \\( t = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\) for an equation of the form \\( at^2 + bt + c = 0 \\). For our equation \\( 10t^2 + 23t - 5 = 0 \\), the coefficients are:\n   \\[\n   a = 10, \\quad b = 23, \\quad c = -5\n   \\]\n   Substituting into the quadratic formula, we get:\n   \\[\n   t = \\frac{-23 \\pm \\sqrt{23^2 - 4 \\cdot 10 \\cdot (-5)}}{2 \\cdot 10}\n   \\]\n\n5. **Calculating the Discriminant:**\n   First, calculate the discriminant \\( \\Delta \\):\n   \\[\n   \\Delta = 23^2 - 4 \\cdot 10 \\cdot (-5) = 529 + 200 = 729\n   \\]\n\n6. **Finding the Roots:**\n   Now substitute the discriminant back into the quadratic formula:\n   \\[\n   t = \\frac{-23 \\pm \\sqrt{729}}{20}\n   \\]\n   Since \\( \\sqrt{729} = 27 \\):\n   \\[\n   t = \\frac{-23 \\pm 27}{20}\n   \\]\n   This gives us two potential solutions:\n   \\[\n   t = \\frac{-23 + 27}{20} = \\frac{4}{20} = \\frac{1}{5} = 0.2 \\quad \\text{seconds}\n   \\]\n   And:\n   \\[\n   t = \\frac{-23 - 27}{20} = \\frac{-50}{20} = -2.5 \\quad \\text{seconds (not physically meaningful, disregard this solution)}\n   \\]\n\n### Conclusion:\n\nThe physically meaningful solution is:\n\\[\nt = 0.2 \\quad \\text{seconds}\n\\]\n\nSo, the arrow must reach the target at 0.2 seconds to hit the bull's eye."
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8808035714285715
+            }
+        }
+    }
+}

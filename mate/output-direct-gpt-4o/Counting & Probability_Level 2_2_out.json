@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 2_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 2",
+        "problem": "In how many ways can a 3-person committee be chosen from a group of 8 people?",
+        "correct_solution": "There are $\\binom{8}{3} = \\frac{8 \\times 7 \\times 6}{3!}=\\boxed{56}$ to choose 3 people from a group of 8 without regard to order.",
+        "generated_solutions": {
+            "gpt-4o": "To determine the number of ways to choose a 3-person committee from a group of 8 people, we can use combinations. Combinations are used when the order of selection does not matter.\n\n### Step-by-Step Solution:\n\n1. **Understand Combinations**:\n   The number of ways to choose \\( r \\) objects from \\( n \\) objects (combination) is denoted as \\( \\binom{n}{r} \\) and calculated using the formula:\n   \\[\n   \\binom{n}{r} = \\frac{n!}{r!(n-r)!}\n   \\]\n   where \\( n! \\) (n factorial) is the product of all positive integers up to \\( n \\).\n\n2. **Identify Variables**:\n   Here, \\( n = 8 \\) (total number of people) and \\( r = 3 \\) (number of people to choose).\n\n3. **Apply the Combination Formula**:\n   \\[\n   \\binom{8}{3} = \\frac{8!}{3!(8-3)!}\n   \\]\n   Simplify the expression:\n   \\[\n   \\binom{8}{3} = \\frac{8!}{3! \\cdot 5!}\n   \\]\n\n4. **Calculate Factorials**:\n   Calculate factorials for 8, 3, and 5:\n   - \\( 8! = 8 \\times 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 40320 \\)\n   - \\( 3! = 3 \\times 2 \\times 1 = 6 \\)\n   - \\( 5! = 5 \\times 4 \\times 3 \\times 2 \\times 1 = 120 \\)\n\n5. **Substitute Factorials into Formula**:\n   \\[\n   \\binom{8}{3} = \\frac{40320}{6 \\cdot 120}\n   \\]\n\n6. **Simplify the Expression**:\n    \\[\n    \\frac{40320}{6 \\cdot 120} = \\frac{40320}{720}\n    \\]\n    \\[\n    \\frac{40320 \\div 720}{720 \\div 720} = 56\n    \\]\n\nSo, the number of ways to choose a 3-person committee from a group of 8 people is:\n\\[\n\\boxed{56}\n\\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.929616724738676
+            }
+        }
+    }
+}

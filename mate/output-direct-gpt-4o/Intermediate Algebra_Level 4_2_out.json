@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 4_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 4",
+        "problem": "Let $f(x)$ be a polynomial of degree $4$ with rational coefficients which has $1+2\\sqrt{3}$ and $3-\\sqrt{2}$ as roots, and such that $f(0) = -154.$ Find $f(1).$",
+        "correct_solution": "Since $f$ has rational coefficients, $1-2\\sqrt{3}$ and $3+\\sqrt{2}$ must also be roots of $f(x).$ Therefore, $f$ must be divisible by the two polynomials \\[(x-(1+2\\sqrt3))(x-(1-2\\sqrt3)) = x^2 - 2x - 11\\]and \\[(x-(3-\\sqrt2))(x-(3+\\sqrt2))=x^2-6x+7,\\]so we have \\[f(x) = A(x^2-2x-11)(x^2-6x+7)\\]for some constant $A.$ Setting $x=0,$ we get \\[f(0)=A(-11)(7) = -77A,\\]so $-77A = -154,$ and $A=2.$ Thus, \\[f(x) = 2(x^2-2x-11)(x^2-6x+7)\\]and so $f(1) = 2(-12)(2) = \\boxed{-48}.$",
+        "generated_solutions": {
+            "gpt-4o": "To solve the problem, we will break it down into several logical steps:\n\n1. **Identify Conjugate Roots**: Since the given polynomial \\( f(x) \\) has rational coefficients, the complex and irrational roots must occur in conjugate pairs. Thus, if \\( 1 + 2\\sqrt{3} \\) and \\( 3 - \\sqrt{2} \\) are roots, their conjugates \\( 1 - 2\\sqrt{3} \\) and \\( 3 + \\sqrt{2} \\) must also be roots.\n\n2. **Form the Polynomial**: Use the roots to form the polynomial. Given the roots \\( 1 + 2\\sqrt{3}, 1 - 2\\sqrt{3}, 3 - \\sqrt{2}, \\) and \\( 3 + \\sqrt{2} \\), the polynomial can be written as the product of factors corresponding to these roots.\n\nLet's calculate:\n   \\[\n   (x - (1 + 2\\sqrt{3}))(x - (1 - 2\\sqrt{3})) \\quad \\text{and} \\quad (x - (3 - \\sqrt{2}))(x - (3 + \\sqrt{2}))\n   \\]\n\n3. **Simplify Each Pair of Factors**:\n   - For \\( 1 + 2\\sqrt{3} \\) and \\( 1 - 2\\sqrt{3} \\):\n   \\[\n   (x - 1 - 2\\sqrt{3})(x - 1 + 2\\sqrt{3}) = \\left((x-1) - 2\\sqrt{3}\\right)\\left((x-1) + 2\\sqrt{3}\\right) = (x-1)^2 - (2\\sqrt{3})^2\n   \\]\n   \\[\n   = (x-1)^2 - 12 = x^2 - 2x + 1 - 12 = x^2 - 2x - 11\n   \\]\n   - For \\( 3 - \\sqrt{2} \\) and \\( 3 + \\sqrt{2} \\):\n   \\[\n   (x - 3 + \\sqrt{2})(x - 3 - \\sqrt{2}) = \\left((x-3) - \\sqrt{2}\\right)\\left((x-3) + \\sqrt{2}\\right) = (x-3)^2 - (\\sqrt{2})^2\n   \\]\n   \\[\n   = (x-3)^2 - 2 = x^2 - 6x + 9 - 2 = x^2 - 6x + 7\n   \\]\n\n4. **Combine the Results**: The polynomial \\( f(x) \\) is then:\n   \\[\n   f(x) = k (x^2 - 2x - 11)(x^2 - 6x + 7)\n   \\]\n   where \\( k \\) is a constant to be determined.\n\n5. **Determine \\( k \\) Using the Given Condition**: Given \\( f(0) = -154 \\), substitute \\( x = 0 \\):\n\n\\[\nf(0) = k (0^2 - 2(0) - 11)(0^2 - 6(0) + 7) = k (-11)(7) = -77k\n\\]\n\\[\n-77k = -154\n\\]\n\\[\nk = 2\n\\]\n\nThus, we have:\n\\[\nf(x) = 2 (x^2 - 2x - 11)(x^2 - 6x + 7)\n\\]\n\n6. **Expand \\( f(x) \\)**:\n   To find \\( f(1) \\), we can evaluate \\( f(1) \\) directly from the given polynomial form:\n\n   \\[\n   f(x) = 2 [(x^2 - 2x - 11)(x^2 - 6x + 7)]\n   \\]\n   Evaluating the polynomial at \\( x = 1 \\):\n   \\[\n   f(1) = 2 [(1^2 - 2(1) - 11)(1^2 - 6(1) + 7)] = 2 [ (1 - 2 - 11)(1 - 6 + 7 ) ]\n   \\]\n   \\[\n   = 2 [ (-12)(2) ] = 2 [-24] = -48\n   \\]\nHence, the value of \\( f(1) \\) is:\n\n\\[\n\\boxed{-48}\n\\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8189814814814815
+            }
+        }
+    }
+}

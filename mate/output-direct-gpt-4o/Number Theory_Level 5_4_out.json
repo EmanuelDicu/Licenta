@@ -1,0 +1,18 @@
+{
+    "Number Theory_Level 5_4.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 5",
+        "problem": "Notice that  \\[31\\cdot37=1147.\\]Find some integer $n$ with $0\\leq n<2293$ such that  \\[31n\\equiv 3\\pmod{2293}.\\]",
+        "correct_solution": "Doubling the given equation tells us  \\[31\\cdot74=2294.\\]Specifically  \\[31\\cdot74\\equiv1\\pmod{2293}\\]and 74 is the multiplicative inverse of 31 modulo 2293.\n\nIf we triple the congruence we just found we get  \\[31\\cdot222\\equiv3\\pmod{2293}.\\]Therefore $n=\\boxed{222}$.",
+        "generated_solutions": {
+            "gpt-4o": "To solve the problem, we need to find an integer \\( n \\) such that \\( 31n \\equiv 3 \\pmod{2293} \\). We will approach the problem step-by-step.\n\n### Step 1: Understanding the Linear Congruence\nThe given congruence \\( 31n \\equiv 3 \\pmod{2293} \\) implies that we need to find \\( n \\) such that:\n\\[\n31n = 3 + 2293k\n\\]\nfor some integer \\( k \\).\n\n### Step 2: Modular Inverses\nSince \\( 31 \\cdot n \\equiv 3 \\pmod{2293} \\), we need to find the multiplicative inverse of \\( 31 \\) modulo \\( 2293 \\). The multiplicative inverse \\( 31^{-1} \\mod 2293 \\) is an integer \\( m \\) such that:\n\\[\n31m \\equiv 1 \\pmod{2293}\n\\]\nWe can find this inverse using the Extended Euclidean Algorithm.\n\n### Step 3: Applying the Extended Euclidean Algorithm\nWe need to solve the equation \\( 31m + 2293x = 1 \\).\n\n1. Apply the Euclidean Algorithm to find the greatest common divisor (gcd):\n\\[\n2293 = 74 \\cdot 31 + 27\n\\]\n\\[\n31 = 1 \\cdot 27 + 4\n\\]\n\\[\n27 = 6 \\cdot 4 + 3\n\\]\n\\[\n4 = 1 \\cdot 3 + 1\n\\]\n\\[\n3 = 3 \\cdot 1 + 0\n\\]\nThe gcd is 1, meaning 31 and 2293 are coprime, and 1 can be expressed as a linear combination of 31 and 2293.\n\n2. Perform the Extended Euclidean Algorithm backwards to express 1 as a combination of 31 and 2293:\n\\[\n1 = 4 - 1 \\cdot 3\n\\]\n\\[\n3 = 27 - 6 \\cdot 4 \\implies 1 = 4 - 1 \\cdot (27 - 6 \\cdot 4) = 7 \\cdot 4 - 1 \\cdot 27\n\\]\n\\[\n4 = 31 - 1 \\cdot 27 \\implies 1 = 7 \\cdot (31 - 1 \\cdot 27) - 1 \\cdot 27 = 7 \\cdot 31 - 8 \\cdot 27\n\\]\n\\[\n27 = 2293 - 74 \\cdot 31 \\implies 1 = 7 \\cdot 31 - 8 \\cdot (2293 - 74 \\cdot 31) = 599 \\cdot 31 - 8 \\cdot 2293\n\\]\nThus, the coefficient of 31 is 599, meaning \\( 31^{-1} \\equiv 599 \\pmod{2293} \\).\n\n### Step 4: Solving the Original Congruence\nNow that we have the inverse:\n\\[\n31n \\equiv 3 \\pmod{2293}\n\\]\n\\[\nn \\equiv 3 \\cdot 31^{-1} \\pmod{2293}\n\\]\n\\[\nn \\equiv 3 \\cdot 599 \\pmod{2293}\n\\]\nCalculate \\( 3 \\cdot 599 \\):\n\\[\n3 \\cdot 599 = 1797\n\\]\n\nThus, the integer \\( n \\) satisfying \\( 31n \\equiv 3 \\pmod{2293} \\) is:\n\\[\nn \\equiv 1797 \\pmod{2293}\n\\]\n\nSo, \\( n = 1797 \\) is the solution, satisfying \\( 0 \\leq n < 2293 \\).\n\nThe final solution to the problem is:\n\\[\n\\boxed{1797}\n\\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8964028776978418
+            }
+        }
+    }
+}

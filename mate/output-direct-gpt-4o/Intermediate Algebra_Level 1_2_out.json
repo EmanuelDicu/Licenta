@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 1_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 1",
+        "problem": "Let $a,$ $b,$ and $c$ be the roots of $x^3 + 7x^2 - 11x - 2 = 0.$  Find $a + b + c.$",
+        "correct_solution": "By Vieta's formulas, $a + b + c = \\boxed{-7}.$",
+        "generated_solutions": {
+            "gpt-4o": "We have the polynomial \\( x^3 + 7x^2 - 11x - 2 = 0 \\). We need to find the sum of its roots. To find this sum, we can use Vieta's formulas, which relate the coefficients of the polynomial to sums and products of its roots.\n\nFor a polynomial of the form \\( ax^n + b_{n-1}x^{n-1} + \\cdots + b_1x + b_0 = 0 \\):\n\n- The sum of the roots, taken one at a time, is given by \\( -\\frac{b_{n-1}}{a} \\).\n\nHere, the polynomial is \\( x^3 + 7x^2 - 11x - 2 = 0 \\), which can be rewritten in standard form:\n\n\\[ x^3 + 7x^2 - 11x - 2 = 0 \\]\n\nIn this polynomial:\n\n- The leading coefficient \\( a \\) is 1.\n- The coefficient \\( b_{n-1} \\), or the coefficient of \\( x^2 \\), is 7.\n\nAccording to Vieta's formulas, the sum of the roots \\( a, b, \\) and \\( c \\) of this polynomial is:\n\n\\[ a + b + c = -\\frac{b_{n-1}}{a} = -\\frac{7}{1} = -7 \\]\n\nTherefore, the sum of the roots \\( a + b + c \\) is:\n\n\\[ \\boxed{-7} \\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9524886877828054
+            }
+        }
+    }
+}

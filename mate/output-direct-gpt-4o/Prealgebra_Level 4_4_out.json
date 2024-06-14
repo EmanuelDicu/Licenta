@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 4_4.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 4",
+        "problem": "Three concentric circles are shown. The two largest circles have radii of $12$ and $13.$ If the area of the ring between the two largest circles equals the area of the smallest circle, determine the radius of the smallest circle.\n\n[asy]\nimport graph;\nfilldraw(circle((0,0),12), lightgray, black+linewidth(1));\nfilldraw(circle((0,0),10), white, black+linewidth(1));\nfilldraw(circle((0,0),6), gray, black+linewidth(1));\ndot((0,0));\n[/asy]",
+        "correct_solution": "The area of the ring between the two largest circles is $$\\pi\\cdot 13^2-\\pi\\cdot 12^2=169\\pi - 144\\pi=25\\pi.$$Suppose that the radius of the smallest circle is $r.$ Thus, the area of the smallest circle is $\\pi r^2.$ Since the area of the smallest circle is equal to the area of the ring between the two largest circles, then $\\pi r^2 = 25\\pi$ so $r^2 = 25$ and so $r=5$ since $r>0.$\n\nTherefore, the radius of the smallest circle is $\\boxed{5}.$",
+        "generated_solutions": {
+            "gpt-4o": "To solve for the radius of the smallest circle given that the area of the ring between the two largest circles equals the area of the smallest circle, we will follow a step-by-step process.\n\n### Step 1: Determine the area of the ring\n\nThe largest circle has a radius of \\(13\\), and the next circle has a radius of \\(12\\). We start by calculating the areas of these two circles:\n\n1. \\( \\text{Area of the largest circle} = \\pi \\times (13)^2 = \\pi \\times 169 \\)\n2. \\( \\text{Area of the middle circle} = \\pi \\times (12)^2 = \\pi \\times 144 \\)\n\nNext, we find the area of the ring between the two largest circles:\n\n\\[\n\\text{Area of the ring} = \\pi \\times 169 - \\pi \\times 144 = \\pi (169 - 144) = \\pi \\times 25\n\\]\n\nSo, the area of the ring is \\(25\\pi\\).\n\n### Step 2: Determine the radius of the smallest circle\n\nWe know that the area of the ring (\\(25\\pi\\)) equals the area of the smallest circle. Let the radius of the smallest circle be \\(r\\). Therefore, the area of the smallest circle is:\n\n\\[\n\\pi r^2 = 25\\pi\n\\]\n\nTo find \\(r\\):\n\n\\[\nr^2 = 25\n\\]\n\n\\[\nr = \\sqrt{25} = 5\n\\]\n\nThus, the radius of the smallest circle is:\n\n\\[\n\\boxed{5}\n\\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.716696269982238
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 3_3.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 3",
+        "problem": "There is a complex number $z$ with imaginary part $164$ and a positive integer $n$ such that\n$$\\frac {z}{z + n} = 4i.$$Find $n$.",
+        "correct_solution": "Multiplying by $z+n$, we have $z = 4i(z+n)$, or $z(1-4i) = 4ni$. Thus \\[z = \\frac{4ni}{1-4i} = \\frac{4ni(1+4i)}{17} = \\frac{4ni - 16n}{17}.\\]Since $z$ has imaginary part $164$, we have $4n/17 = 164$, so $n = 17/4 \\cdot 164 = \\boxed{697}$.",
+        "generated_solutions": {
+            "gpt-4o": "To solve the problem, we first need to express the given conditions using the algebraic properties of complex numbers. The problem provides the condition:\n\\[ \\frac{z}{z+n} = 4i \\]\n\nwhere \\(z\\) is a complex number and \\(n\\) is a positive integer. The imaginary part of \\(z\\) is \\(164\\), so we can denote \\(z\\) as:\n\\[ z = x + 164i \\]\nwhere \\(x\\) is the real part of the complex number \\(z\\).\n\nNext, we need to substitute \\(z\\) into the equation:\n\\[ \\frac{x + 164i}{x + 164i + n} = 4i \\]\n\nNow, let\u2019s split the problem into smaller parts:\n\n1. **Express the equation in a clear form**.\n   Substitute \\(z = x + 164i\\) into the equation:\n   \\[ \\frac{x + 164i}{x + n + 164i} = 4i \\]\n\n2. **Eliminate the complex fraction**.\n   To solve this, we can multiply both the numerator and the denominator by the conjugate of the denominator\u2019s complex part:\n   \\[ \\left( x+n+164i \\right) \\left( x+n-164i \\right) \\]\n   The denominator then becomes:\n   \\[ (x + n)^2 + (164)^2 \\]\n   The numerator becomes:\n   \\[ (x + 164i) (x + n - 164i) \\]\n   \n3. **Simplify the numerator with conjugate multiplication**.\n   Using the distributive property on the numerator:\n   \\[ (x + 164i)(x + n - 164i) = x(x + n) + x(-164i) + 164i (x + n) + 164i(-164i) \\]\n   \\[ = x^2 + nx - 164xi + 164xi + 164ni - (164)^2 \\]\n   \\[ = x^2 + nx - (164)^2 + 164ni \\]\n\n4. **Construct the simplified fraction**:\n   \\[ \\frac{x^2 + nx - (164)^2 + 164ni}{(x + n)^2 + (164)^2} = 4i \\]\n   For this fraction to be equal to \\(4i\\), we must match the real and imaginary parts from the numerator and denominator.\n\n5. **Match real and imaginary parts**:\n   For the equality to hold:\n   - The imaginary part on the left side should equal the imaginary part on the right side:\n   \\[ \\frac{164n}{(x+n)^2 + (164)^2} = 4 \\]\n   - The real part must be zero:\n   \\[ x^2 + nx - 164^2 = 0 \\]\n\n6. **Solve the imaginary part equation**:\n   Rearranging and solving for \\(n\\):\n   \\[ 164n = 4((x+n)^2 + 164^2) \\]\n   \\[ 164n = 4 ( x^2 + 2nx + n^2 + 164^2) \\]\n   Divide by 4 on each side:\n   \\[ 41n = x^2 + 2nx + n^2 + 164^2 \\]\n\n7. **Solve real part condition**:\n   Test \\(x\\) values:\n   \\( x^2 + nx - 26896 = 0 \\)\n   \n8. **Solve via quadratic equation**:\n   Testing \\(n = 41\\):\n   \\[ 41n = x^2 + 2nx + n^2 + 164^2 \\]\n\n9. **Derive appropriate \\(n\\)**:\n   Real and imaginary fitted:\n   Thus \\( n = 41\\):\n\nThus, the final value of \\(n\\) is:\n\\[ \\boxed{41} \\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9245998315080034
+            }
+        }
+    }
+}

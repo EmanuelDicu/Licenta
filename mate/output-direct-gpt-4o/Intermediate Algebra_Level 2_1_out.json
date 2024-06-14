@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 2_1.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 2",
+        "problem": "Two reals $x$ and $y$ are such that $x-y=4$ and $x^3-y^3=28$. Compute $xy$.",
+        "correct_solution": "We have $28=x^3-y^3=(x-y)(x^2+xy+y^2)=(x-y)((x-y)^2+3xy)=4\\cdot (16+3xy)$, from which $xy=\\boxed{-3}$.",
+        "generated_solutions": {
+            "gpt-4o": "To find the value of \\(xy\\) given the conditions \\(x - y = 4\\) and \\(x^3 - y^3 = 28\\), we will tackle the problem step by step:\n\n### Step 1: Using the Identity for Difference of Cubes\nWe start by using the algebraic identity for the difference of cubes:\n\\[ x^3 - y^3 = (x - y)(x^2 + xy + y^2). \\]\n\nGiven:\n\\[ x^3 - y^3 = 28, \\]\n\\[ x - y = 4. \\]\n\nSubstitute \\( x - y = 4 \\) into the identity:\n\\[ x^3 - y^3 = (4)(x^2 + xy + y^2). \\]\n\nSince \\( x^3 - y^3 = 28 \\), we have:\n\\[ 28 = 4(x^2 + xy + y^2). \\]\n\n### Step 2: Simplifying the Equation\nDivide both sides by 4 to simplify:\n\\[ 7 = x^2 + xy + y^2. \\]\n\n### Step 3: Expressing \\( xy \\) in Terms of Known Quantities\nWe need to solve for \\( xy \\), but first, we use the quadratic expression obtained:\n\\[ x^2 + xy + y^2 = 7. \\]\n\nWe already have one more equation, which is:\n\\[ x - y = 4. \\]\n\n### Step 4: Squaring the Equation \\( x - y = 4 \\)\nSquare the given equation \\( x - y = 4 \\):\n\\[ (x - y)^2 = 16. \\]\n\nExpanding the square:\n\\[ x^2 - 2xy + y^2 = 16. \\]\n\n### Step 5: Solving the System of Equations\nNow we have two equations:\n1. \\( x^2 + xy + y^2 = 7 \\)\n2. \\( x^2 - 2xy + y^2 = 16 \\)\n\nWe can subtract the second equation from the first:\n\\[ (x^2 + xy + y^2) - (x^2 - 2xy + y^2) = 7 - 16. \\]\n\nSimplifying, we get:\n\\[ 3xy = -9. \\]\n\nDivide both sides by 3 to solve for \\( xy \\):\n\\[ xy = -3. \\]\n\nThus, the value of \\( xy \\) is:\n\\[\n\\boxed{-3}.\n\\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9365079365079365
+            }
+        }
+    }
+}

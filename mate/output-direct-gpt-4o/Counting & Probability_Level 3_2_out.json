@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 3_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 3",
+        "problem": "There are 30 men and 40 women in the Town Library Club.  They wish to form a 7-person steering committee with 3 men and 4 women.  In how many ways can they form the committee?",
+        "correct_solution": "In this problem, we're really selecting two separate committees.  We can choose 3 men from the 30 men total in $$ \\binom{30}{3} = \\frac{30 \\times 29 \\times 28}{3 \\times 2 \\times 1} = 4,\\!060 $$ways, and 4 women from the 40 women total in $$ \\binom{40}{4} = \\frac{40 \\times 39 \\times 38 \\times 37}{4 \\times 3 \\times 2 \\times 1} = 91,\\!390 $$ways.  Since these two selections are independent (since for each of the $4,\\!060$ ways to pick the men, there are $91,\\!390$ ways to pick the women), we multiply them together to get the number of ways that we can form the 7-member overall committee: $$ \\binom{30}{3}\\binom{40}{4} = (4,\\!060)(91,\\!390) = \\boxed{371,\\!043,\\!400}. $$",
+        "generated_solutions": {
+            "gpt-4o": "To solve the problem of forming a 7-person steering committee with 3 men and 4 women from a pool of 30 men and 40 women, we will break the problem into smaller, manageable parts. We will use combinations to determine the number of ways to select the committee members.\n\n### Step-by-Step Solution\n\n1. **Determine the number of ways to select 3 men from 30:**\n   The number of ways to choose 3 men from 30 is given by the combination formula \\(\\binom{n}{k}\\), where \\(n\\) is the total number of items, and \\(k\\) is the number of items to choose.\n\n   \\[\n   \\binom{30}{3} = \\frac{30!}{3!(30-3)!} = \\frac{30!}{3! \\cdot 27!}\n   \\]\n\n   We can simplify the calculation by canceling out \\(27!\\) in the numerator and the denominator:\n\n   \\[\n   \\binom{30}{3} = \\frac{30 \\times 29 \\times 28}{3 \\times 2 \\times 1} = \\frac{30 \\times 29 \\times 28}{6}\n   \\]\n\n   \\[\n   = 4060\n   \\]\n\n2. **Determine the number of ways to select 4 women from 40:**\n   Similarly, the number of ways to choose 4 women from 40 is:\n\n   \\[\n   \\binom{40}{4} = \\frac{40!}{4!(40-4)!} = \\frac{40!}{4! \\cdot 36!}\n   \\]\n\n   We can simplify this calculation by canceling out \\(36!\\) in the numerator and the denominator:\n\n   \\[\n   \\binom{40}{4} = \\frac{40 \\times 39 \\times 38 \\times 37}{4 \\times 3 \\times 2 \\times 1}\n   \\]\n\n   \\[\n   = \\frac{40 \\times 39 \\times 38 \\times 37}{24}\n   \\]\n\n   \\[\n   = 91,390\n   \\]\n\n3. **Calculate the total number of ways to form the 7-person committee:**\n   Since we are selecting the men and women independently, the total number of ways to form the committee is the product of the number of ways to choose the men and the number of ways to choose the women.\n\n   \\[\n   \\text{Total ways} = \\binom{30}{3} \\times \\binom{40}{4}\n   \\]\n\n   Substitute the values we found:\n\n   \\[\n   \\text{Total ways} = 4060 \\times 91390\n   \\]\n\n4. **Final calculation:**\n\n   \\[\n   4060 \\times 91390 = 370,141,400\n   \\]\n\nSo, the total number of ways to form the 7-person steering committee with 3 men and 4 women is:\n\n\\[\n\\boxed{370141400}\n\\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7663831915957979
+            }
+        }
+    }
+}

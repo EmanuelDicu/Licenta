@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 5_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 5",
+        "problem": "Factor $36-4x^2$ completely.",
+        "correct_solution": "We have $36-4x^2 = 6^2 - (2x)^2 = (6-2x)(6+2x)$.  We can factor a 2 out of each of $6-2x$ and $6+2x$ to give $2\\cdot(3-x)\\cdot 2\\cdot(3+x) = \\boxed{4(3-x)(3+x)}$. (We could also have factored out a 4 at the beginning: $36-4x^2 = 4(9-x^2)=4(3-x)(3+x)$.)",
+        "generated_solutions": {
+            "gpt-4o": "To factor the expression \\( 36 - 4x^2 \\) completely, we can follow these steps:\n\n1. **Identify the structure of the expression**:\n   The given expression is \\( 36 - 4x^2 \\). Notice that it is a difference of squares, which has the general form \\( a^2 - b^2 \\).\n\n2. **Rewrite the expression in the form of a difference of squares**:\n   Recall that \\( a^2 - b^2 = (a - b)(a + b) \\). Here, we need to express \\( 36 - 4x^2 \\) in this form.\n   Notice that:\n   \\[\n   36 = 6^2 \\quad \\text{and} \\quad 4x^2 = (2x)^2\n   \\]\n   Therefore, we can rewrite the expression as:\n   \\[\n   36 - 4x^2 = 6^2 - (2x)^2\n   \\]\n\n3. **Apply the difference of squares formula**:\n   Using the formula \\( a^2 - b^2 = (a - b)(a + b) \\), where \\( a = 6 \\) and \\( b = 2x \\), we have:\n   \\[\n   6^2 - (2x)^2 = (6 - 2x)(6 + 2x)\n   \\]\n\n4. **Check for further factorization**:\n   We should check if the factors \\( (6 - 2x) \\) and \\( (6 + 2x) \\) can be factored further. In this case, each factor is already in its simplest form and cannot be factored further.\n\n5. **Write the final factored form**:\n   The completely factored form of the expression \\( 36 - 4x^2 \\) is:\n   \\[\n   (6 - 2x)(6 + 2x)\n   \\]\n\nTherefore, the solution to the problem is:\n\\[\n36 - 4x^2 = (6 - 2x)(6 + 2x)\n\\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.864516129032258
+            }
+        }
+    }
+}

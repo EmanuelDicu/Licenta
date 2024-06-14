@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 4_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 4",
+        "problem": "What is the value of $x$ for which $$\\sqrt{x + \\sqrt{x + \\sqrt{x + \\ldots}}} = 5?$$",
+        "correct_solution": "Squaring both sides of the given equation yields $$x + \\sqrt{x + \\sqrt{x + \\ldots}} = 25,$$ so $$\\sqrt{x + \\sqrt{x + \\ldots}} = 25-x.$$ We already know the value of the left-hand side to be equal to $5$. Thus, $5 = 25-x$, and $x = \\boxed{20}.$",
+        "generated_solutions": {
+            "gpt-4o": "To solve the problem given by the equation \\( \\sqrt{x + \\sqrt{x + \\sqrt{x + \\ldots}}} = 5 \\), we first introduce a substitution to make the equation more manageable. Let:\n\n\\[ y = \\sqrt{x + \\sqrt{x + \\sqrt{x + \\ldots}}} \\]\n\nGiven that \\( y = 5 \\) from the problem statement, it implies that the infinite nested radical equals 5. We can substitute \\( y \\) back into the nested radical:\n\n\\[ 5 = \\sqrt{x + 5} \\]\n\nNext, we need to solve this equation for \\( x \\). To do this, we square both sides to eliminate the square root:\n\n\\[ 5^2 = x + 5 \\]\n\nThis simplifies to:\n\n\\[ 25 = x + 5 \\]\n\nTo isolate \\( x \\), we subtract 5 from both sides:\n\n\\[ 25 - 5 = x \\]\n\n\\[ x = 20 \\]\n\nThus, the value of \\( x \\) that satisfies the equation \\( \\sqrt{x + \\sqrt{x + \\sqrt{x + \\ldots}}} = 5 \\) is:\n\n\\[ \\boxed{20} \\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7876106194690266
+            }
+        }
+    }
+}

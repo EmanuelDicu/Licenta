@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 3_3.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 3",
+        "problem": "A target consists of four concentric circles with radii 4 inches, 6 inches, 8 inches and 10 inches as shown. Given that a dart is thrown that hits the target at a random point, what is the probability that it hits a shaded region? Express your answer as a common fraction.\n\n[asy]size(100); import graph; fill(Circle((0,0),5),gray(.6));\n\nclip(Circle((0,0),2) ^^ Circle((0,0),3) ^^ Circle((0,0),4),fillrule(1));\ndraw(Circle((0,0),2) ^^ Circle((0,0),3) ^^ Circle((0,0),4) ^^ Circle((0,0),5));[/asy]",
+        "correct_solution": "The total area of the target is $\\pi\\cdot 10^2=100\\pi$.  The area of the inner shaded region is the area of a circle with radius 4, and that is equal to $\\pi\\cdot 4^2=16\\pi$.  We can calculate the area of the shaded ring as the difference in areas of a circle with radius 8 and with radius 6.  This gives an area of $\\pi \\cdot 8^2 - \\pi \\cdot 6^2 = 28\\pi$.  The total shaded area is $16\\pi+28\\pi=44\\pi$.  The probability a dart will hit a shaded region is equal to $\\frac{44\\pi}{100\\pi}=\\boxed{\\frac{11}{25}}$.",
+        "generated_solutions": {
+            "gpt-4o": "To solve this problem, we need to calculate the probability that the dart hits a shaded region. The target consists of four concentric circles with radii 4 inches, 6 inches, 8 inches, and 10 inches. We will find this probability by determining the areas of the circles and the specific shaded regions.\n\n### Step-by-Step Solution:\n\n1. **Calculate the areas of the circles:**\n\n    - The formula for the area of a circle is \\(A = \\pi r^2\\).\n\n    - Area of the circle with a radius of 4 inches:\n      \\[\n      A_1 = \\pi \\times 4^2 = 16\\pi\n      \\]\n\n    - Area of the circle with a radius of 6 inches:\n      \\[\n      A_2 = \\pi \\times 6^2 = 36\\pi\n      \\]\n\n    - Area of the circle with a radius of 8 inches:\n      \\[\n      A_3 = \\pi \\times 8^2 = 64\\pi\n      \\]\n\n    - Area of the circle with a radius of 10 inches:\n      \\[\n      A_4 = \\pi \\times 10^2 = 100\\pi\n      \\]\n\n2. **Determine which regions are shaded:**\n\n    From the target description, it appears the shaded regions are the annular regions (or rings) between the circles.\n\n    - The first shaded region between the circle of radius 4 inches and 6 inches:\n      \\[\n      \\text{Shaded Area}_1 = A_2 - A_1 = 36\\pi - 16\\pi = 20\\pi\n      \\]\n\n    - The second shaded region between the circle of radius 8 inches and 10 inches:\n      \\[\n      \\text{Shaded Area}_2 = A_4 - A_3 = 100\\pi - 64\\pi = 36\\pi\n      \\]\n\n3. **Calculate the total shaded area:**\n    \\[\n    \\text{Total Shaded Area} = \\text{Shaded Area}_1 + \\text{Shaded Area}_2 = 20\\pi + 36\\pi = 56\\pi\n    \\]\n\n4. **Calculate the total area of the target:**\n    \\[\n    \\text{Total Area} = A_4 = 100\\pi\n    \\]\n\n5. **Calculate the probability that a dart hits a shaded region:**\n    \\[\n    \\text{Probability} = \\frac{\\text{Total Shaded Area}}{\\text{Total Area}} = \\frac{56\\pi}{100\\pi} = \\frac{56}{100} = \\frac{14}{25}\n    \\]\n\nThus, the probability that the dart hits a shaded region is:\n\\[\n\\boxed{\\frac{14}{25}}\n\\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7969728601252609
+            }
+        }
+    }
+}

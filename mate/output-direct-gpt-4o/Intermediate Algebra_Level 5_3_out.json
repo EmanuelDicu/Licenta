@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 5_3.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 5",
+        "problem": "The complex numbers $z$ and $w$ satisfy the system\n\\begin{align*}\nz + \\frac{20i}w &= 5+i, \\\\\nw+\\frac{12i}z &= -4+10i.\n\\end{align*}Find the smallest possible value of $\\vert zw\\vert^2$.",
+        "correct_solution": "Multiplying the two equations, we have \\[zw + 12i + 20i - \\frac{240}{zw} = (5+i) (-4+10i) = -30 + 46i.\\]Letting $t = zw,$ this simplifies to \\[t^2 + (30-14i)t - 240 = 0.\\]By the quadratic formula, \\[t = \\frac{-(30-14i) \\pm \\sqrt{(30-14i)^2 + 4\\cdot240}}{2} = -(15-7i) \\pm \\sqrt{416-210i}.\\]We hope that we can write $416 - 210i = (a+bi)^2,$ for some integers $a$ and $b.$ Upon expansion, we get the equations $416 = a^2-b^2$ and $-210=2ab$. The smallest perfect square greater than $416$ is $21^2 = 441$, so we try $a = 21$; then $416 = 441 - b^2$, so $b^2 = 25$ and $b = \\pm 5$. Indeed, we get the solution $(a, b) = (21, -5)$.\n\nTherefore, \\[t = -(15-7i) \\pm (21-5i) = 6+2i \\; \\text{or} \\; -36+12i.\\]The choice of $t=zw$ with smallest magnitude is $t = 6+2i,$ giving \\[|t|^2 = 6^2 + 2^2 = \\boxed{40}.\\]",
+        "generated_solutions": {
+            "gpt-4o": "To solve the system of equations involving the complex numbers \\( z \\) and \\( w \\):\n\n\\[\nz + \\frac{20i}{w} = 5 + i,\n\\]\n\\[\nw + \\frac{12i}{z} = -4 + 10i,\n\\]\n\nwe will proceed as follows.\n\n### Part 1: Solve the first equation for \\( z \\) in terms of \\( w \\)\n\nFirst, let's isolate \\( z \\) in the first equation:\n\n\\[\nz = 5 + i - \\frac{20i}{w}.\n\\]\n\n### Part 2: Substitute \\( z \\) into the second equation\n\nNext, substitute \\( z = 5 + i - \\frac{20i}{w} \\) into the second equation. \n\n\\[\nw + \\frac{12i}{5 + i - \\frac{20i}{w}} = -4 + 10i.\n\\]\n\nTo simplify the fraction, let\u2019s find a common denominator for the complex fraction:\n\n\\[\nz = 5 + i - \\frac{20i}{w}\n\\]\nthus\n\\[\n\\frac{w(5+i)-20i}{w}.\n\\]\n\nNow substitute this back into the second equation:\n\n\\[\nw + \\frac{12i}{\\frac{w(5+i)-20i}{w}} = -4 + 10i\n\\]\n\nThis simplifies to:\n\n\\[\nw + \\frac{12i \\cdot w}{w(5 + i) - 20i} = -4 + 10i,\n\\]\n\nwhich further simplifies to:\n\n\\[\nw + \\frac{12iw}{ w(5 + i) - 20i}.\n\\]\n\n### Part 3: Clear the fractions\n\nMultiply both sides by the denominator to clear the fraction:\n\n\\[\n(w)(5 + i) - 20i\n\\]\nwe have:\n\\[\n[w(5 + i) - 20i](-4 + 10i) = w[w(5 + i) - 20i] + 12iw. \nWe will next try another logical step.\n\n### Step 4: Solve for missing values or try another logical step elseword \n\nGiven these equations of the form:\n\n\\[z(w + 0) + 20 i /w = 5+i\\] , we can solve for w by squaring and taking the absolute value.\n\nGiven, the form may also have z in the terms of mod,\n\n### Part 5: Solving square, Magnitude and product terms,\n\nWe'll solve this intermediate algebraic problem by squaring both sides if benefit and finding magnitude.\n\nUltimately given abs as:\n##\nSo \\vert zw\\vert = root 116 \\] 112,\n\nHence final value solving smallest and to find smallest inverse root,product yields and denominator rest:\n\nFinally \\( smallest value 22 + yz inverse of root."
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7937120794263651
+            }
+        }
+    }
+}

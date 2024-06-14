@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 5_2.json": {
+        "category": "Algebra",
+        "difficulty": "Level 5",
+        "problem": "Solve the inequality $$-13(r+5) + 25 > 4(r-10)$$for $r$. Express your answer in interval notation.",
+        "correct_solution": "First, we use the distributive property to expand the left-hand side of the inequality: $$-13r - 65 + 25 > 4r - 40$$The constants on the left side add up to $-40$, so adding $40$ to both sides cancels all the constant terms: $$-13r > 4r$$Adding $13r$ to both sides yields $$0 > 17r$$and dividing both sides by $17$ gives $0>r$, or in interval notation, $r\\in\\boxed{(-\\infty,0)}$.",
+        "generated_solutions": {
+            "gpt-4o": "Let's solve the inequality step by step. The inequality given is:\n\\[ -13(r + 5) + 25 > 4(r - 10) \\]\n\n### Step 1: Distribute the constants inside the parentheses\nWe start by distributing \\( -13 \\) and \\( 4 \\) inside their respective parentheses.\n\\[ -13(r + 5) = -13r - 65 \\]\n\\[ 4(r - 10) = 4r - 40 \\]\n\nSo the inequality becomes:\n\\[ -13r - 65 + 25 > 4r - 40 \\]\n\n### Step 2: Simplify each side\nCombine like terms on the left-hand side:\n\\[ -13r - 65 + 25 = -13r - 40 \\]\n\nThis simplifies the inequality to:\n\\[ -13r - 40 > 4r - 40 \\]\n\n### Step 3: Bring all terms involving \\( r \\) to one side\nAdd \\( 13r \\) to both sides to start consolidating the \\( r \\) terms:\n\\[ -13r + 13r - 40 > 4r + 13r - 40 \\]\n\\[ -40 > 17r - 40 \\]\n\n### Step 4: Eliminate the constant term on the side with \\( r \\)\nAdd 40 to both sides to isolate terms involving \\( r \\):\n\\[ -40 + 40 > 17r - 40 + 40 \\]\n\\[ 0 > 17r \\]\n\n### Step 5: Solve for \\( r \\)\nDivide both sides by 17:\n\\[ \\frac{0}{17} > r \\]\n\\[ 0 > r \\]\n\n### Step 6: Express the solution in interval notation\nThe inequality \\( 0 > r \\) can be written as:\n\\[ r < 0 \\]\n\nTherefore, in interval notation, the solution is:\n\\[ (-\\infty, 0) \\]\n\n### Conclusion\nThe solution to the inequality \\( -13(r+5) + 25 > 4(r-10) \\) is \\( r \\in (-\\infty, 0) \\)."
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7862232779097387
+            }
+        }
+    }
+}

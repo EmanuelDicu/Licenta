@@ -1,0 +1,18 @@
+{
+    "Intermediate Algebra_Level 4_1.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 4",
+        "problem": "The equation of the hyperbola shown below can be written as\n\\[\\frac{(y - k)^2}{a^2} - \\frac{(x - h)^2}{b^2} = 1.\\]Find $h + k + a + b.$\n\n[asy]\nunitsize(0.3 cm);\n\nreal upperhyper (real x) {\n  return (2*sqrt((x - 6)^2/16 + 1) - 5);\n}\n\nreal lowerhyper (real x) {\n  return (-2*sqrt((x - 6)^2/16 + 1) - 5);\n}\n\nint i, n = 10;\n\nfor (i = -n; i <= n; ++i) {\n  draw((i,-n)--(i,n),gray(0.7));\n  draw((-n,i)--(n,i),gray(0.7));\n}\n\ndraw((0,-n)--(0,n));\ndraw((-n,0)--(n,0));\n\ndraw(graph(upperhyper,-10,10),red);\ndraw(graph(lowerhyper,-3,10),red);\ndraw(extension((-10,-10),(10,-10),(6,-5),(6,-5) + (4,2))--extension((10,10),(10,-10),(6,-5),(6,-5) + (4,2)),dashed);\ndraw(extension((-10,-10),(-10,10),(6,-5),(6,-5) + (4,-2))--extension((10,10),(10,-10),(6,-5),(6,-5) + (4,-2)),dashed);\n\ndot((6,-5));\n[/asy]",
+        "correct_solution": "The center of the hyperbola is $(6,-5).$  The distance from the center to a vertex is $a = 2.$  The slopes of the asymptotes are $\\pm \\frac{1}{2},$ so $b = 4.$  Thus, $h + k + a + b = 6 + (-5) + 2 + 4 = \\boxed{7}.$",
+        "generated_solutions": {
+            "gpt-4o": "To solve the problem, let\u2019s break it down into smaller, manageable parts:\n\n1. **Identify the Characteristics of the Hyperbola:**\n   - Identify the center \\((h, k)\\),\n   - Identify the values of \\(a\\) (the semi-major axis length) and \\(b\\) (the semi-minor axis length),\n   - Recall the standard form of the equation of a hyperbola that opens vertically: \n     \n     \\[\n     \\frac{(y - k)^2}{a^2} - \\frac{(x - h)^2}{b^2} = 1.\n     \\]\n\n2. **Locate the Center of the Hyperbola:**\n   - From the diagram, we see the center of the hyperbola is at \\((6, -5)\\). Therefore:\n     \\[\n     h = 6 \\quad \\text{and} \\quad k = -5.\n     \\]\n\n3. **Determine the Length of the Transverse and Conjugate Axes:**\n   - The vertices of the hyperbola can also help determine \\(a\\) and \\(b\\).\n   - The vertices of the hyperbola are the points where the curve crosses the \\(y\\)-axis. These are 2 units away vertically from the center since \\(a = 2\\). \n     Thus,\n     \\[\n     a = 2 \\quad \\text{and hence} \\quad a^2 = 4.\n     \\]\n\n4. **Observe the Slope of the Asymptotes:**\n   - The asymptotes of this hyperbola are linear equations passing through the center \\((6, -5)\\) and have slopes \\(\\pm \\frac{a}{b}\\).\n   - The lines drawn are at slopes \\(\\pm \\frac{2}{4} = \\pm \\frac{1}{2}\\):\n     \\[\n     \\text{Thus, } b = 4.\n     \\]\n\n5. **Add the Values of \\(h\\), \\(k\\), \\(a\\), and \\(b\\):**\n   - We now have all required values:\n     \\[\n     h = 6, \\quad k = -5, \\quad a = 2, \\quad \\text{and} \\quad b = 4.\n     \\]\n\n6. **Calculating the Sum \\(h + k + a + b\\):**\n   \\[\n   h + k + a + b = 6 + (-5) + 2 + 4 = 7.\n   \\]\n\nTherefore, the final answer to the problem is:\n\\[\n\\boxed{7}\n\\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8822452715070165
+            }
+        }
+    }
+}

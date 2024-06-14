@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 4_3.json": {
+        "category": "Algebra",
+        "difficulty": "Level 4",
+        "problem": "The product of $3t^2+5t+a$ and $4t^2+bt-2$ is $12t^4+26t^3-8t^2-16t+6$. What is $a+b$?",
+        "correct_solution": "The constant term of the product of two polynomials is just the product of the two constant terms. Therefore we know that $6=-2a$, so $a=-3$. We now consider the linear term of the product of our polynomials. It's given by $-16t=(5t\\cdot-2)+a\\cdot bt\\Longrightarrow-16t=-10t+(-3)bt\\Longrightarrow b=2$. Therefore our answer is $a+b=\\boxed{-1}$.",
+        "generated_solutions": {
+            "gpt-4o": "To solve the given algebra problem, we need to determine the coefficients \\(a\\) and \\(b\\) by comparing the coefficients from the product of the polynomials to the given polynomial. \n\nThe polynomials are:\n\\[\nP(t) = 3t^2 + 5t + a\n\\]\n\\[\nQ(t) = 4t^2 + bt - 2\n\\]\n\nTheir product is given by:\n\\[\nP(t) \\cdot Q(t) = (3t^2 + 5t + a)(4t^2 + bt - 2)\n\\]\n\nWe are told this product is equal to:\n\\[\n12t^4 + 26t^3 - 8t^2 - 16t + 6\n\\]\n\nTo find \\(a\\) and \\(b\\), we'll expand the product \\(P(t) \\cdot Q(t)\\) and compare the coefficients term-by-term with \\(12t^4 + 26t^3 - 8t^2 - 16t + 6\\).\n\n### Step-by-Step Expansion\n\n1. **Multiply each term:**\n   \\[ (3t^2) \\cdot (4t^2) = 12t^4 \\]\n   \\[ (3t^2) \\cdot (bt) = 3bt^3 \\]\n   \\[ (3t^2) \\cdot (-2) = -6t^2 \\]\n\n2. **Multiply each term:**\n   \\[ (5t) \\cdot (4t^2) = 20t^3 \\]\n   \\[ (5t) \\cdot (bt) = 5bt^2 \\]\n   \\[ (5t) \\cdot (-2) = -10t \\]\n\n3. **Multiply each term:**\n   \\[ (a) \\cdot (4t^2) = 4at^2 \\]\n   \\[ (a) \\cdot (bt) = abt \\]\n   \\[ (a) \\cdot (-2) = -2a \\]\n\nSumming these terms, we get:\n\\[\n12t^4 + (3b + 20)t^3 + (-6 + 5b + 4a)t^2 + (ab - 10)t - 2a\n\\]\n\nWe now compare this with:\n\\[\n12t^4 + 26t^3 - 8t^2 - 16t + 6\n\\]\n\n### Matching Coefficients:\n\n1. **Coefficient of \\(t^4\\):**\n   \\[\n   12 = 12 \\quad \\text{(This is already correct)}\n   \\]\n\n2. **Coefficient of \\(t^3\\):**\n   \\[\n   3b + 20 = 26\n   \\]\n   \\[\n   3b = 26 - 20\n   \\]\n   \\[\n   3b = 6\n   \\]\n   \\[\n   b = 2\n   \\]\n\n3. **Coefficient of \\(t^2\\):**\n   \\[\n   -6 + 5b + 4a = -8\n   \\]\n   Substitute \\(b = 2\\):\n   \\[\n   -6 + 10 + 4a = -8\n   \\]\n   \\[\n   4 + 4a = -8\n   \\]\n   \\[\n   4a = -8 - 4\n   \\]\n   \\[\n   4a = -12\n   \\]\n   \\[\n   a = -3\n   \\]\n\n4. **Coefficient of \\(t\\):**\n   \\[\n   ab - 10 = -16\n   \\]\n   Substitute \\(a = -3\\) and \\(b = 2\\):\n   \\[\n   (-3)(2) - 10 = -16\n   \\]\n   \\[\n   -6 - 10 = -16\n   \\]\n   \\[\n   -16 = -16 \\quad \\text{(This is correct)}\n   \\]\n\n5. **Constant term:**\n   \\[\n   -2a = 6\n   \\]\n   Substitute \\(a = -3\\):\n   \\[\n   -2(-3) = 6\n   \\]\n   \\[\n   6 = 6 \\quad \\text{(This is correct)}\n   \\]\n\n### Conclusion\n\nHaving verified all coefficients, we confirm:\n\\[\na = -3\n\\]\n\\[\nb = 2\n\\]\n\nTherefore:\n\\[\na + b = -3 + 2 = -1\n\\]\n\nThe solution to the problem is:\n\\[\n\\boxed{-1}\n\\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8926919518963923
+            }
+        }
+    }
+}

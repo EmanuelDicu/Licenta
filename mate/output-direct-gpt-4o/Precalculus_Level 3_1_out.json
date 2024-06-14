@@ -1,0 +1,18 @@
+{
+    "Precalculus_Level 3_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 3",
+        "problem": "The set of vectors $\\mathbf{v}$ such that\n\\[\\operatorname{proj}_{\\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}} \\mathbf{v} = \\begin{pmatrix} 0 \\\\ 0 \\end{pmatrix}\\]lie on a line.  Enter the equation of this line in the form \"$y = mx + b$\".",
+        "correct_solution": "Let $\\mathbf{v} = \\begin{pmatrix} x \\\\ y \\end{pmatrix}.$\n\nFrom the formula of a projection,\n\\begin{align*}\n\\operatorname{proj}_{\\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}} \\mathbf{v} &= \\frac{\\mathbf{v} \\cdot \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}}{\\left\\| \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} \\right\\|^2} \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} \\\\\n&= \\frac{\\begin{pmatrix} x \\\\ y \\end{pmatrix} \\cdot \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}}{5} \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} \\\\\n&= \\frac{2x + y}{5} \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} \\\\\n&= \\begin{pmatrix} 0 \\\\ 0 \\end{pmatrix}.\n\\end{align*}Then\n\\[\\frac{2x + y}{5} = 0,\\]so $2x + y = 0.$  Thus, the equation of the line is $\\boxed{y = -2x}.$",
+        "generated_solutions": {
+            "gpt-4o": "To determine the set of vectors \\(\\mathbf{v} = \\begin{pmatrix} x \\\\ y \\end{pmatrix}\\) such that the projection of \\(\\mathbf{v}\\) onto \\(\\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}\\) is \\(\\begin{pmatrix} 0 \\\\ 0 \\end{pmatrix}\\), we can break down the solution into several steps.\n\n### Step 1: Understand Vector Projection\n\nThe projection of \\(\\mathbf{v}\\) onto \\(\\mathbf{u} = \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}\\) is given by the formula:\n\n\\[\n\\operatorname{proj}_{\\mathbf{u}} \\mathbf{v} = \\frac{\\mathbf{v} \\cdot \\mathbf{u}}{\\mathbf{u} \\cdot \\mathbf{u}} \\mathbf{u}\n\\]\n\n### Step 2: Calculate \\(\\mathbf{v} \\cdot \\mathbf{u}\\) and \\(\\mathbf{u} \\cdot \\mathbf{u}\\)\n\nLet \\(\\mathbf{v} = \\begin{pmatrix} x \\\\ y \\end{pmatrix}\\) and \\(\\mathbf{u} = \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}\\). Compute the dot products:\n\n\\[\n\\mathbf{v} \\cdot \\mathbf{u} = x \\cdot 2 + y \\cdot 1 = 2x + y\n\\]\n\n\\[\n\\mathbf{u} \\cdot \\mathbf{u} = 2 \\cdot 2 + 1 \\cdot 1 = 4 + 1 = 5\n\\]\n\n### Step 3: Apply the Projection Formula\n\nUsing the projection formula:\n\n\\[\n\\operatorname{proj}_{\\mathbf{u}} \\mathbf{v} = \\frac{2x + y}{5} \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}\n\\]\n\n### Step 4: Set the Projection to Zero\n\nWe need this projection to equal \\(\\begin{pmatrix} 0 \\\\ 0 \\end{pmatrix}\\):\n\n\\[\n\\frac{2x + y}{5} \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 0 \\end{pmatrix}\n\\]\n\nFor the vector to be the zero vector, the scalar multiplier needs to be zero. Therefore:\n\n\\[\n\\frac{2x + y}{5} = 0\n\\]\n\n### Step 5: Solve for the Equation of the Line\n\nSimplify the equation:\n\n\\[\n2x + y = 0\n\\]\n\nThis represents a linear relationship between \\(x\\) and \\(y\\). To put it in the form \"y = mx + b\":\n\n\\[\ny = -2x\n\\]\n\n### Conclusion\n\nTherefore, the equation of the line on which the set of vectors \\(\\mathbf{v} = \\begin{pmatrix} x \\\\ y \\end{pmatrix}\\) such that \\(\\operatorname{proj}_{\\mathbf{u}} \\mathbf{v} = \\begin{pmatrix} 0 \\\\ 0 \\end{pmatrix}\\) lie, is:\n\n\\[\n\\boxed{y = -2x}\n\\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7075718015665796
+            }
+        }
+    }
+}

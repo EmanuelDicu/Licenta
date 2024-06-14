@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 1_2.json": {
+        "category": "Geometry",
+        "difficulty": "Level 1",
+        "problem": "$\\overline{BC}$ is parallel to the segment through $A$, and $AB = BC$. What is the number of degrees represented by $x$?\n\n[asy]\ndraw((0,0)--(10,0));\ndraw((0,3)--(10,3));\ndraw((2,3)--(8,0));\ndraw((2,3)--(4,0));\nlabel(\"$A$\",(2,3),N);\nlabel(\"$B$\",(4,0),S);\nlabel(\"$C$\",(8,0),S);\nlabel(\"$124^{\\circ}$\",(2,3),SW);\nlabel(\"$x^{\\circ}$\",(4.5,3),S);\n[/asy]",
+        "correct_solution": "Angle $\\angle BCA$ and the angle we're trying to measure are alternate interior angles, so they are congruent. Thus, $\\angle BCA=x^\\circ$:\n\n[asy]\ndraw((0,0)--(10,0));\ndraw((0,3)--(10,3));\ndraw((2,3)--(8,0));\ndraw((2,3)--(4,0));\nlabel(\"$A$\",(2,3),N);\nlabel(\"$B$\",(4,0),S);\nlabel(\"$C$\",(8,0),S);\nlabel(\"$124^{\\circ}$\",(2,3),SW);\nlabel(\"$x^{\\circ}$\",(4.5,3),S);\nlabel(\"$x^{\\circ}$\",(6,0),N);\n[/asy]\n\nSince $AB=BC$, we know that $\\triangle ABC$ is isosceles with equal angles at $C$ and $A$. Therefore, $\\angle BAC = x^\\circ$:\n\n[asy]\ndraw((0,0)--(10,0));\ndraw((0,3)--(10,3));\ndraw((2,3)--(8,0));\ndraw((2,3)--(4,0));\nlabel(\"$A$\",(2,3),N);\nlabel(\"$B$\",(4,0),S);\nlabel(\"$C$\",(8,0),S);\nlabel(\"$124^{\\circ}$\",(2,3),SW);\nlabel(\"$x^{\\circ}$\",(4.5,3),S);\nlabel(\"$x^{\\circ}$\",(6,0),N);\nlabel(\"$x^{\\circ}$\",(3.6,1.7));\n[/asy]\n\nThe sum of the three angles at $A$ is $180^\\circ$, since they form a straight angle. Therefore, $$124+x+x=180,$$ which we can solve to obtain $x=\\boxed{28}$.",
+        "generated_solutions": {
+            "gpt-4o": "To solve the problem, let's first note down the given information and what is being asked:\n\n1. \\(\\overline{BC}\\) is parallel to the segment through \\(A\\). This implies that the angles formed by these parallel lines and the transversal have special relationships.\n2. \\(AB = BC\\), which implies that triangle \\(ABC\\) is an isosceles triangle with \\(AB = BC\\).\n3. The measure of \\(\\angle BAC\\) is given as \\(124^\\circ\\).\n4. We need to determine the value of \\(x\\), the angle labeled \\(x^\\circ\\) in the diagram.\n\nSince \\(\\overline{BC}\\) is parallel to the segment through \\(A\\) and \\(\\angle BAC = 124^\\circ\\), we can understand that the extension of \\(A\\) beyond \\(C\\) makes the angle relationship with parallel lines important to us. One useful point here is \\(A\\) in relation to lines \\(\\overline{BC}\\).\n\nGiven that lines are parallel and \\(\\angle BAC\\) extends over \\( \\angle BCA \\):\n\\[\n\\angle BAC + \\angle ACB = 180^\\circ\n\\]\n\\[\n124^\\circ + x = 180^\\circ \\quad \\text{(Because \\(\\angle BCA\\) is a straight line extending parallel segments C through to B)}\n\\]\n\\[\nx = 180^\\circ - 124^\\circ\n\\]\n\\[\nx = 56^\\circ\n\\]\n\nTherefore, the value of the angle \\(x\\) is \\(56^\\circ\\).\n\nSo, the solution to the problem is:\n\\[\n\\boxed{56}\n\\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.815422477440525
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 4_4.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "We have a triangle $\\triangle ABC$ where $AC = 17,$ $BC = 15,$ and $AB = 8.$ Let $M$ be the midpoint of $AB.$ What is the length of $CM$?",
+        "correct_solution": "First, we notice that $8:15:17$ is a Pythagorean triple, so we have a right triangle. Let's draw a sketch: [asy]\npair A, B, C, M;\nA = (0, 8);\nB = (0, 0);\nC = (15, 0);\nM = 0.5 * A + 0.5 * B;\ndraw(A--B--C--cycle);\ndraw(C--M);\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$M$\", M, NE);\nlabel(\"$8$\", A--B, W);\nlabel(\"$15$\", B--C, S);\nlabel(\"$17$\", A--C, NE);\ndraw(rightanglemark(A,B,C,20));\n[/asy] Since we know that $BM = \\frac{1}{2} \\cdot AB = 4,$ we simply apply the Pythagorean theorem to right triangle $\\triangle MBC.$ \\begin{align*}\nCM^2 &= BM^2 + BC^2\\\\\nCM^2 &= 4^2 + 15^2 = 241\\\\\nCM &= \\boxed{\\sqrt{241}}.\n\\end{align*}",
+        "generated_solutions": {
+            "gpt-4o": "To solve for the length of \\( CM \\) in triangle \\( \\triangle ABC \\) with \\( AC = 17 \\), \\( BC = 15 \\), and \\( AB = 8 \\), where \\( M \\) is the midpoint of \\( AB \\), we approach the problem using the distance formula in coordinate geometry.\n\nFirst, assign coordinates to the points \\( A, B, \\) and \\( C \\):\n\n1. Place \\( A \\) at the origin: \\( A = (0, 0) \\).\n2. Since \\( AB = 8 \\), we place \\( B \\) at \\( (8, 0) \\).\n\nNext, we find coordinates for point \\( C \\). Let \\( C = (x, y) \\). From the distance formula, we know:\n\n\\[ AC = 17 \\Rightarrow \\sqrt{x^2 + y^2} = 17 \\Rightarrow x^2 + y^2 = 289 \\]\n\\[ BC = 15 \\Rightarrow \\sqrt{(x - 8)^2 + y^2} = 15 \\Rightarrow (x - 8)^2 + y^2 = 225 \\]\n\nNow we solve for \\( x \\) and \\( y \\):\n\nFirst, from \\( AC \\):\n\n\\[ x^2 + y^2 = 289 \\]  \\(\\quad \\quad (1)\\)\n\nFrom \\( BC \\):\n\n\\[ (x - 8)^2 + y^2 = 225 \\]\n\\[ x^2 - 16x + 64 + y^2 = 225 \\]\nSubstitute \\( x^2 + y^2 = 289 \\) from (1):\n\n\\[ 289 - 16x + 64 = 225 \\]\n\\[ 353 - 16x = 225 \\]\n\\[ 128 = 16x \\]\n\\[ x = 8 \\]\n\nSubstitute \\( x = 8 \\) into \\( x^2 + y^2 = 289 \\):\n\n\\[ 64 + y^2 = 289 \\]\n\\[ y^2 = 225 \\]\n\\[ y = 15 \\] or \\( y = -15 \\)\n\nThus, the coordinates of \\( C \\) are either \\( (8, 15) \\) or \\( (8, -15) \\).\n\nNext, find the midpoint \\( M \\):\n\n\\[ M = \\left( \\frac{0+8}{2}, \\frac{0+0}{2} \\right) = (4, 0) \\]\n\nNow, calculate \\( CM \\), using either \\( C = (8, 15) \\) or \\( C = (8, -15)\\):\n\n\\[\nCM = \\sqrt{(8-4)^2 + (15-0)^2} \\quad \\text{or} \\quad CM = \\sqrt{(8-4)^2 + (-15-0)^2}\n\\]\n\nEither gives:\n\n\\[\nCM = \\sqrt{4^2 + 15^2} = \\sqrt{16 + 225} = \\sqrt{241}\n\\]\n\nThus, the length of \\( CM \\) is:\n\n\\[\n\\boxed{\\sqrt{241}}\n\\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.830081812460667
+            }
+        }
+    }
+}

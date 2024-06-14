@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 3_1.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 3",
+        "problem": "What is the value of $x$ in the equation $5x - 3x + 4(1-4x) = 32$?",
+        "correct_solution": "Begin by distributing on the left side: $$5x-3x+4-16x=32$$ Now, collect like terms and solve for $x$: \\begin{align*}\n-14x&=28\\\\\n\\Rightarrow\\qquad x&=\\frac{28}{-14}=\\boxed{-2}\n\\end{align*}",
+        "generated_solutions": {
+            "gpt-4o": "Let's solve the equation \\(5x - 3x + 4(1-4x) = 32\\) step-by-step.\n\n### Step 1: Simplify the Equation\nFirst, combine like terms on the left side of the equation. Notice that \\(5x - 3x\\) can be simplified.\n\n\\[5x - 3x = 2x\\]\n\nSo the equation becomes:\n\n\\[2x + 4(1 - 4x) = 32\\]\n\n### Step 2: Distribute the Constant\nNext, distribute the 4 in the expression \\(4(1 - 4x)\\).\n\n\\[4 \\cdot 1 = 4\\]\n\\[4 \\cdot -4x = -16x\\]\n\nTherefore,\n\n\\[4(1 - 4x) = 4 - 16x\\]\n\nNow, substitute this back into the equation:\n\n\\[2x + 4 - 16x = 32\\]\n\n### Step 3: Combine Like Terms\nCombine the \\(2x\\) and \\(-16x\\) on the left side of the equation.\n\n\\[2x - 16x = -14x\\]\n\nSo the equation simplifies to:\n\n\\[-14x + 4 = 32\\]\n\n### Step 4: Isolate the Variable Term\nSubtract 4 from both sides to isolate the \\(-14x\\) term.\n\n\\[-14x + 4 - 4 = 32 - 4\\]\n\nThis simplifies to:\n\n\\[-14x = 28\\]\n\n### Step 5: Solve for \\(x\\)\nDivide both sides by -14 to solve for \\(x\\).\n\n\\[\nx = \\frac{28}{-14}\n\\]\n\nThis simplifies to:\n\n\\[x = -2\\]\n\nTherefore, the value of \\(x\\) is \\(\\boxed{-2}\\)."
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8760975609756098
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 1_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 1",
+        "problem": "If $PQ$ is a straight line, what is the value of $x$? [asy]\n\nsize(150);\n\ndraw((-1,0)--(1,0));\n\ndraw((-0.809,.588)--(0,0)--(0.809,.588));\n\ndraw((-.309,.951)--(0,0)--(.309,.951));\n\nlabel(\"$P$\",(-1,0),W);\n\nlabel(\"$Q$\",(1,0),E);\n\nlabel(\"$x^\\circ$\",(0.5,0),NW);\n\nlabel(\"$x^\\circ$\",(-0.5,0),NE);\n\nlabel(\"$x^\\circ$\",(0,0.4));\n\nlabel(\"$x^\\circ$\",(0.27,0.2),N);\n\nlabel(\"$x^\\circ$\",(-0.27,0.2),N);\n\n[/asy]",
+        "correct_solution": "Since $PQ$ is a straight line, then $x^\\circ+x^\\circ+x^\\circ+x^\\circ+x^\\circ = 180^\\circ$ or $5x=180$ or $x=\\boxed{36}$.",
+        "generated_solutions": {
+            "gpt-4o": "To solve for the value of \\( x \\) where \\( PQ \\) is a straight line, let's analyze the geometry and the angles involved.\n\nGiven that \\( PQ \\) is a straight line implies that the total angle around point \\( P \\) or \\( Q \\) is \\( 180^\\circ \\).\n\nLet's consider the intersection point where the various angles are marked.\n\nSince the straight line \\( PQ \\) corresponds to \\( 180^\\circ \\) and each angle marked around the intersection adds up to the straight angle due to symmetry, we are required to determine the value of all individual angles combined being \\( 180^\\circ \\).\n\nLet's count the number of times \\( x \\) appears around point \\( P \\):\n- From the given Asymptote diagram, it shows that \\( x \\) appears 6 times equally distributed around the path.\n\nSo we write the equation encompassing the sum of these angles being equal to the total \\( 180^\\circ \\):\n\n\\[\n6x = 180^\\circ\n\\]\n\nNow, solving for \\( x \\):\n\n\\[\nx = \\frac{180^\\circ}{6} = 30^\\circ\n\\]\n\nSo the value of \\( x \\) is \\(\\boxed{30}\\)."
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.904330312185297
+            }
+        }
+    }
+}

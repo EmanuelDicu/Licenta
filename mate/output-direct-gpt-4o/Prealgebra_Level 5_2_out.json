@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 5_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 5",
+        "problem": "In a certain isosceles right triangle, the altitude to the hypotenuse has length $6$.  What is the area of the triangle?",
+        "correct_solution": "In isosceles right triangle $\\triangle ABC$ below, $\\overline{AD}$ is the altitude to the hypotenuse.\n\n[asy]\nimport olympiad;\nunitsize(0.8inch);\npair A,B,C,D;\nA = (0,1);\nB= (1,0);\nC = -B;\nD = (0,0);\ndraw(A--B--C--A,linewidth(1));\ndraw(A--D,linewidth(0.8));\ndraw(rightanglemark(C,A,B,s=5));\ndraw(rightanglemark(C,D,A,s=5));\nlabel(\"$A$\",A,N);\nlabel(\"$B$\",B,S);\nlabel(\"$C$\",C,S);\nlabel(\"$D$\",D,S);\n[/asy]\n\nBecause $\\triangle ABC$ is an isosceles right triangle, $\\angle ABC = 45^\\circ$.  Since $\\angle ADB = 90^\\circ$, we know that $\\angle DAB = 45^\\circ$, so $\\triangle ABD$ is also a 45-45-90 triangle.  Similarly, $\\triangle ACD$ is a 45-45-90 triangle.  Therefore, $DB=DC = DA = 6$, so $BC = BD+DC = 12$, and  \\[[ABC] = \\frac{(AD)(BC)}{2} = \\frac{(6)({12})}{2} = \\boxed{36}.\\]",
+        "generated_solutions": {
+            "gpt-4o": "To solve for the area of a certain isosceles right triangle where the altitude to the hypotenuse has length 6, we can break down the problem into smaller parts. We will leverage the properties of isosceles right triangles and geometric relationships.\n\n### Step 1: Understand the properties of an isosceles right triangle\nAn isosceles right triangle has two equal legs and one hypotenuse. The angles of the triangle are 45\u00b0, 45\u00b0, and 90\u00b0. If the legs of the right triangle have length \\( x \\), the hypotenuse would be \\( x\\sqrt{2} \\).\n\n### Step 2: Relate the altitude to the hypotenuse\nLet's denote the vertices of the isosceles right triangle as \\( A, B, \\) and \\( C \\) with \\( \\angle C = 90^\\circ \\). Let \\( AB \\) be the hypotenuse. Let \\( D \\) be the point on \\( AB \\) where the altitude from \\( C \\) intersects \\( AB \\).\n\nWe know that the altitude \\( CD \\) from the right angle to the hypotenuse \\( AB \\) has a length of \\( 6 \\).\n\n### Step 3: Find the length of the hypotenuse\nIn an isosceles right triangle, the altitude to the hypotenuse splits the triangle into two smaller, congruent 45\u00b0-45\u00b0-90\u00b0 triangles. \n\nUsing the formula for the length of the altitude \\( h \\) from a right angle to the hypotenuse \\( c \\) in a 45\u00b0-45\u00b0-90\u00b0 triangle:\n\\[ h = \\frac{a \\sqrt{2}}{2} \\]\nwhere \\( a\\) is the leg length and \\( c = a\\sqrt{2} \\).\n\nSince \\( h = 6 \\):\n\\[ 6 = \\frac{a \\sqrt{2}}{2} \\]\nSolving for \\( a \\):\n\\[ a \\sqrt{2} = 12 \\]\n\\[ a = \\frac{12}{\\sqrt{2}} = 6\\sqrt{2} \\]\n\n### Step 4: Find the hypotenuse\nThe hypotenuse \\( AB \\) in terms of \\( a \\):\n\\[ AB = a\\sqrt{2} = (6\\sqrt{2})\\sqrt{2} = 6 \\times 2 = 12 \\]\n\n### Step 5: Calculate the area of the triangle\nThe area \\( A \\) of the triangle can be calculated as:\n\\[ A = \\frac{1}{2} \\times \\text{base} \\times \\text{height} \\]\n\nThe base and height of the original triangle, being the legs, are both \\( 6\\sqrt{2} \\):\n\n\\[ A = \\frac{1}{2} \\times 6\\sqrt{2} \\times 6\\sqrt{2} = \\frac{1}{2} \\times 72 = 36 \\]\n\nTherefore, the area of the isosceles right triangle is \\( \\boxed{36} \\)."
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8158415841584158
+            }
+        }
+    }
+}

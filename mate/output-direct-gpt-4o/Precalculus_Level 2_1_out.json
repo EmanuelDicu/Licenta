@@ -1,0 +1,18 @@
+{
+    "Precalculus_Level 2_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 2",
+        "problem": "Find the measure, in degrees, of the smallest positive angle $\\theta$ for which $\\sin 3 \\theta = \\cos 7 \\theta.$",
+        "correct_solution": "Note that $\\cos 7 \\theta = \\sin (90^\\circ - 7 \\theta),$ so\n\\[\\sin 3 \\theta = \\sin (90^\\circ - 7 \\theta).\\]If $3 \\theta = 90^\\circ - 7 \\theta,$ then $\\theta = 9^\\circ.$\n\nIf $0^\\circ < \\theta < 9^\\circ,$ then $\\sin 3 \\theta < \\sin 27^\\circ$ and $\\sin (90^\\circ - 7 \\theta) > \\sin 27^\\circ,$ so the smallest positive solution is $\\boxed{9^\\circ}.$",
+        "generated_solutions": {
+            "gpt-4o": "To solve the problem, we need to find the smallest positive angle \\(\\theta\\) such that \\(\\sin 3\\theta = \\cos 7\\theta\\). Let's break it down step by step.\n\n### Step 1: Understanding the Trigonometric Equality\nWe start with the given equation:\n\\[\n\\sin 3\\theta = \\cos 7\\theta\n\\]\n\nWe can use a trigonometric identity to transform the equation. We know that:\n\\[\n\\cos x = \\sin (90^\\circ - x)\n\\]\n\nTherefore, we can rewrite \\(\\cos 7\\theta\\) as:\n\\[\n\\cos 7\\theta = \\sin (90^\\circ - 7\\theta)\n\\]\n\nSubstituting this into the original equation gives us:\n\\[\n\\sin 3\\theta = \\sin (90^\\circ - 7\\theta)\n\\]\n\n### Step 2: Solving the Sine Equality\nFor the equality \\(\\sin A = \\sin B\\) to hold, we have the general solution:\n\\[\n3\\theta = 90^\\circ - 7\\theta + 360^\\circ n \\quad \\text{or} \\quad 3\\theta = 180^\\circ - (90^\\circ - 7\\theta) + 360^\\circ n\n\\]\nwhere \\(n\\) is any integer. \n\nSo, we have two cases to consider.\n\n### Case 1: \\(3\\theta = 90^\\circ - 7\\theta + 360^\\circ n\\)\nSolving for \\(\\theta\\):\n\\[\n3\\theta + 7\\theta = 90^\\circ + 360^\\circ n\n\\]\n\\[\n10\\theta = 90^\\circ + 360^\\circ n\n\\]\n\\[\n\\theta = 9^\\circ + 36^\\circ n\n\\]\n\n### Case 2: \\(3\\theta = 180^\\circ - (90^\\circ - 7\\theta) + 360^\\circ n\\)\nSimplifying inside the parentheses first:\n\\[\n3\\theta = 180^\\circ - 90^\\circ + 7\\theta + 360^\\circ n\n\\]\n\\[\n3\\theta = 90^\\circ + 7\\theta + 360^\\circ n\n\\]\nCombining like terms and solving for \\(\\theta\\):\n\\[\n3\\theta - 7\\theta = 90^\\circ + 360^\\circ n\n\\]\n\\[\n-4\\theta = 90^\\circ + 360^\\circ n\n\\]\n\\[\n\\theta = -22.5^\\circ - 90^\\circ n\n\\]\n\nSince \\(\\theta\\) must be a positive angle, we disregard the solutions from Case 2 as they lead to negative angles when \\(n\\) is a non-negative integer.\n\n### Step 3: Finding the Smallest Positive \\(\\theta\\)\nFrom Case 1, we have the solution:\n\\[\n\\theta = 9^\\circ + 36^\\circ n\n\\]\n\nSetting \\(n = 0\\), we get:\n\\[\n\\theta = 9^\\circ\n\\]\n\nTherefore, the smallest positive angle \\(\\theta\\) for which \\(\\sin 3\\theta = \\cos 7\\theta\\) is:\n\\[\n\\boxed{9^\\circ}\n\\]\n\nThis angle satisfies the given trigonometric equation, and it is clearly the smallest positive value."
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8542274052478134
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 4_4.json": {
+        "category": "Algebra",
+        "difficulty": "Level 4",
+        "problem": "For what ordered pair $(a,b)$ are there infinite solutions $(x,y)$ to the system \\begin{align*}\n2ax+2y&=b,\\\\\n5x+y&=-3?\n\\end{align*}",
+        "correct_solution": "For there to be infinite solutions, the first equation needs to be consistent with the second and yet add no new information, which means it must be a multiple of the second. Since the coefficient of $y$ in the first equation is twice that of $y$ in the second equation, the multiplier is 2. This implies that the first equation must be $2(5x+y)=2(-3)$. After equating coefficients, this gives $2a=2\\cdot5$ and $b=2\\cdot-3$, or $(a,b)=\\boxed{(5,-6)}$.",
+        "generated_solutions": {
+            "gpt-4o": "For there to be an infinite number of solutions to the system of equations\n\n\\[\n\\begin{cases}\n2ax + 2y = b, \\\\\n5x + y = -3,\n\\end{cases}\n\\]\n\nthe two equations must be dependent, meaning they represent the same line. To determine this, we need one equation to be a scalar multiple of the other.\n\nFirst, solve the second equation for \\( y \\):\n\n\\[\ny = -3 - 5x.\n\\]\n\nNext, substitute \\( y = -3 - 5x \\) into the first equation:\n\n\\[\n2ax + 2(-3 - 5x) = b.\n\\]\n\nSimplify the equation:\n\n\\[\n2ax - 6 - 10x = b,\n\\]\n\n\\[\n(2a - 10)x - 6 = b.\n\\]\n\nFor these equations to be dependent, they must be proportional. Compare the equations:\n\n\\[\n(2a - 10)x - 6 = b \\quad \\text{and} \\quad y = -3 - 5x.\n\\]\n\nRewriting \\( y = -3 - 5x \\) as \\( -5x - y = 3 \\), then multiplying by 2 to obtain a comparable form:\n\n\\[\n-10x - 2y = 6.\n\\]\n\nThe original equation is \\( 2ax + 2y = b \\). To have dependency, we must have:\n\n\\[\n2ax + 2(-3 - 5x) = b \\quad \\leftrightarrow \\quad -10x - 2y = 6.\n\\]\n\nSo, comparing the coefficients \\( 2a - 10 = -10 \\) and the constants \\( b = 6 \\).\n\nFrom the coefficient alignment:\n\n\\[\n2a - 10 = -10,\n\\]\n\nsolving this for \\( a \\):\n\n\\[\n2a = 0,\n\\]\n\n\\[\na = 0.\n\\]\n\nFor the constants:\n\n\\[\nb = 6.\n\\]\n\nThus, the ordered pair \\((a, b)\\) where there are infinitely many solutions is:\n\n\\[\n(a, b) = (0, 6).\n\\]\n\nTo confirm this result, substitute \\( a = 0 \\) and \\( b = 6 \\) back into the original system:\n\n\\[\n\\begin{cases}\n0x + 2y = 6, \\\\\n5x + y = -3.\n\\end{cases}\n\\]\n\nSimplify the first equation:\n\n\\[\n2y = 6,\n\\]\n\n\\[\ny = 3.\n\\]\n\nAnalyzing the second equation with \\( y = 3 \\):\n\n\\[\n5x + 3 = -3,\n\\]\n\n\\[\n5x = -6,\n\\]\n\n\\[\nx = -\\frac{6}{5}.\n\\]\n\nThus, no contradictions arise confirming our representations. Therefore, the correct solution is:\n\n\\(\\boxed{(0, 6)}\\)."
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8183921341816078
+            }
+        }
+    }
+}

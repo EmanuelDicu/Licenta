@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 1_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 1",
+        "problem": "If $3m+4n=47$, and $m+n=15$, what is $m$?",
+        "correct_solution": "Because the question only asks for the value of $m$, we can begin by eliminating $n$. In order to do this, we multiply the second equation by 4, giving us a system of two equations where both coefficients of $n$ are 4: \\begin{align*} 3m+4n=47\n\\\\ 4m+4n=60\n\\end{align*}From here, we can just subtract the second equation from the first. This gives us $(3m+4n)-(4m+4n)=47-60$, which simplifies to $-m=-13$ or $m=\\boxed{13}$.",
+        "generated_solutions": {
+            "gpt-4o": "To solve for \\( m \\) given the equations\n\n\\[ 3m + 4n = 47 \\]\nand\n\\[ m + n = 15, \\]\n\nwe will use the method of substitution. We'll split the problem into smaller logical steps:\n\n### Step 1: Isolate one variable in the simpler equation\nFrom the equation \\( m + n = 15 \\), let's solve for \\( n \\):\n\n\\[ n = 15 - m. \\]\n\n### Step 2: Substitute the expression for the isolated variable into the other equation\nSubstitute \\( n = 15 - m \\) into the first equation \\( 3m + 4n = 47 \\):\n\n\\[ 3m + 4(15 - m) = 47. \\]\n\n### Step 3: Simplify and solve for \\( m \\)\nFirst, distribute the \\( 4 \\) in the equation:\n\n\\[ 3m + 60 - 4m = 47. \\]\n\nCombine like terms:\n\n\\[ 3m - 4m + 60 = 47 \\]\n\n\\[ -m + 60 = 47. \\]\n\nNow, isolate \\( m \\):\n\n\\[ -m = 47 - 60 \\]\n\n\\[ -m = -13 \\]\n\n\\[ m = 13. \\]\n\n### Step 4: Verify the solution\nOnce we have \\( m = 13 \\), substitute back into the equation \\( m + n = 15 \\) to find \\( n \\):\n\n\\[ 13 + n = 15 \\]\n\n\\[ n = 15 - 13 \\]\n\n\\[ n = 2. \\]\n\nNow, verify by substituting \\( m \\) and \\( n \\) into the original equation \\( 3m + 4n = 47 \\):\n\n\\[ 3(13) + 4(2) = 39 + 8 = 47. \\]\n\nBoth equations are satisfied, confirming our solution is correct.\n\n### Final Answer\nThe value of \\( m \\) is\n\n\\[ \\boxed{13}. \\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8081734778982486
+            }
+        }
+    }
+}

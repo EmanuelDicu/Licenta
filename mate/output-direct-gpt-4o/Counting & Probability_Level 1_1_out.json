@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 1_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 1",
+        "problem": "Compute $\\dbinom{15}{2}$.",
+        "correct_solution": "\\begin{align*}\n\\dbinom{15}{2} &= \\dfrac{15!}{13!2!} \\\\\n&= \\dfrac{15\\times 14}{2\\times 1} \\\\\n&= 15 \\times \\dfrac{14}{2} \\\\\n&= 15 \\times 7 \\\\\n&= \\boxed{105}.\n\\end{align*}",
+        "generated_solutions": {
+            "gpt-4o": "The problem is to compute \\(\\dbinom{15}{2}\\), which is a binomial coefficient also referred to as \"15 choose 2.\" The general formula for \\(\\dbinom{n}{r}\\) is given by:\n\n\\[\n\\dbinom{n}{r} = \\frac{n!}{r!(n-r)!}\n\\]\n\nHere, \\(n = 15\\) and \\(r = 2\\). To find \\(\\dbinom{15}{2}\\), we need to compute these factorials and substitute them into the formula.\n\n### Step-by-Step Solution:\n\n1. **Calculate \\(15!\\) (Factorial of 15):**\n   However, since \\(r\\) is just 2, we don't need to calculate the full factorial of 15. Instead, let's use the portion relevant to our formula:\n   \\[\n   15! = 15 \\times 14 \\times 13 \\times \\dots \\times 1\n   \\]\n\n2. **Calculate \\(2!\\) (Factorial of 2):**\n   \\[\n   2! = 2 \\times 1 = 2\n   \\]\n\n3. **Calculate \\((15-2)!\\) (Factorial of 13):**\n   Similarly, we don't need the full factorial here:\n   \\[\n   13! = 13 \\times 12 \\times \\dots \\times 1\n   \\]\n\n4. **Substitute into the Binomial Coefficient Formula:**\n   \\[\n   \\dbinom{15}{2} = \\frac{15!}{2!(15-2)!} = \\frac{15!}{2! \\cdot 13!}\n   \\]\n\nNotice that most terms in the numerator (15!) and the denominator (13!) will cancel out:\n\\[\n   \\dbinom{15}{2} = \\frac{15 \\times 14 \\times 13!}{2! \\times 13!} = \\frac{15 \\times 14}{2 \\times 1}\n   \\]\n\n5. **Simplify the Expression:**\n   \\[\n   \\dbinom{15}{2} = \\frac{15 \\times 14}{2}\n   \\]\n   \\[\n   \\dbinom{15}{2} = \\frac{210}{2} = 105\n   \\]\n\nThus, the solution to the problem \\(\\dbinom{15}{2}\\) is:\n\n\\[\n\\boxed{105}\n\\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.904862579281184
+            }
+        }
+    }
+}

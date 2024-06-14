@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 3_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 3",
+        "problem": "Solve $(2x+1)(3x+2) = (x-3)(6x-5)$. Express your answer as a simplified fraction.",
+        "correct_solution": "Multiplying the terms, we obtain $6x^{2}+7x+2 = 6x^{2}-23x+15$, which simplifies to $30x = 13$, so $x=\\boxed{\\frac{13}{30}}$.",
+        "generated_solutions": {
+            "gpt-4o": "To solve the equation \\((2x+1)(3x+2) = (x-3)(6x-5)\\), we need to expand both sides, collect like terms, and then solve the resulting quadratic equation. Let's go through each step in detail.\n\n### Step 1: Expand both sides of the equation\n\nFirst, we will expand the left-hand side \\((2x+1)(3x+2)\\):\n\n\\[\n(2x + 1)(3x + 2) = 2x \\cdot 3x + 2x \\cdot 2 + 1 \\cdot 3x + 1 \\cdot 2\n\\]\n\n\\[\n= 6x^2 + 4x + 3x + 2 = 6x^2 + 7x + 2\n\\]\n\nNext, we will expand the right-hand side \\((x-3)(6x-5)\\):\n\n\\[\n(x - 3)(6x - 5) = x \\cdot 6x + x \\cdot (-5) + (-3) \\cdot 6x + (-3) \\cdot (-5)\n\\]\n\n\\[\n= 6x^2 - 5x - 18x + 15 = 6x^2 - 23x + 15\n\\]\n\n### Step 2: Set the expanded expressions equal to each other\n\nNow we have:\n\n\\[\n6x^2 + 7x + 2 = 6x^2 - 23x + 15\n\\]\n\n### Step 3: Subtract \\(6x^2\\) from both sides\n\nSubtracting \\(6x^2\\) from both sides of the equation, we get:\n\n\\[\n7x + 2 = -23x + 15\n\\]\n\n### Step 4: Move all terms involving \\(x\\) to one side\n\nAdd \\(23x\\) to both sides to collect the \\(x\\)-terms on one side:\n\n\\[\n7x + 23x + 2 = 15\n\\]\n\n\\[\n30x + 2 = 15\n\\]\n\n### Step 5: Isolate the \\(x\\) term\n\nSubtract 2 from both sides:\n\n\\[\n30x = 13\n\\]\n\n### Step 6: Solve for \\(x\\)\n\nDivide both sides by 30:\n\n\\[\nx = \\frac{13}{30}\n\\]\n\n### Conclusion\n\nThe solution to the equation \\((2x+1)(3x+2) = (x-3)(6x-5)\\) is:\n\n\\[\nx = \\frac{13}{30}\n\\]\n\nThus, the solution to the problem is:\n\n\\[\n\\boxed{\\frac{13}{30}}\n\\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9236977256052825
+            }
+        }
+    }
+}

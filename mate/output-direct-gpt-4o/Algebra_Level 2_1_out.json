@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 2_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 2",
+        "problem": "If \\begin{align*}\n5x-2y&=7,\\\\\n3x+y&=2,\n\\end{align*}compute $24x-14y$.",
+        "correct_solution": "Note that $6(5x-2y)-2(3x+y)=24x-14y$.  Thus, $24x-14y=6(7)-2(2)=\\boxed{38}$.",
+        "generated_solutions": {
+            "gpt-4o": "To solve for \\(24x - 14y\\) given the system of equations:\n\n1. \\(5x - 2y = 7 \\)         \\(\\quad\\)   (Equation 1)\n2. \\(3x + y = 2 \\)            \\(\\quad\\)   (Equation 2)\n\nwe will follow these steps:\n\n### Step 1: Solve for \\(y\\) in terms of \\(x\\)\nFrom Equation 2:\n\n\\[ 3x + y = 2 \\]\n\nIsolate \\(y\\):\n\n\\[ y = 2 - 3x \\]\n\n### Step 2: Substitute \\(y\\) in Equation 1\nNow that we have \\(y\\) in terms of \\(x\\), substitute \\(y\\) into Equation 1:\n\n\\[ 5x - 2(2 - 3x) = 7 \\]\n\nSimplify inside the parentheses:\n\n\\[ 5x - 4 + 6x = 7 \\]\n\nCombine like terms:\n\n\\[ 11x - 4 = 7 \\]\n\n### Step 3: Solve for \\(x\\)\nIsolate \\(x\\):\n\n\\[ 11x = 11 \\]\n\n\\[ x = 1 \\]\n\n### Step 4: Find \\(y\\) using the value of \\(x\\)\nUsing \\(x = 1\\) in the expression for \\(y\\):\n\n\\[ y = 2 - 3(1) \\]\n\n\\[ y = 2 - 3 \\]\n\n\\[ y = -1 \\]\n\n### Step 5: Compute \\(24x - 14y\\)\nNow that we have \\(x = 1\\) and \\(y = -1\\):\n\n\\[ 24x - 14y = 24(1) - 14(-1) \\]\n\n\\[ = 24 + 14 \\]\n\n\\[ = 38 \\]\n\n### Conclusion\nThe value of \\(24x - 14y\\) is \\(38\\)."
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9420889348500517
+            }
+        }
+    }
+}

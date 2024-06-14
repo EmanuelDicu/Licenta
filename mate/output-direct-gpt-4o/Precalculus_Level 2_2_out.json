@@ -1,0 +1,18 @@
+{
+    "Precalculus_Level 2_2.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 2",
+        "problem": "If $\\tan \\theta = 7,$ then find $\\tan 2 \\theta.$",
+        "correct_solution": "From the double angle formula,\n\\[\\tan 2 \\theta = \\frac{2 \\tan \\theta}{1 - \\tan^2 \\theta} = \\boxed{-\\frac{7}{24}}.\\]",
+        "generated_solutions": {
+            "gpt-4o": "To solve for \\(\\tan 2\\theta\\) given that \\(\\tan \\theta = 7\\), we will use the double-angle identity for tangent. The double-angle formula for tangent is:\n\n\\[\n\\tan 2\\theta = \\frac{2\\tan \\theta}{1 - \\tan^2 \\theta}\n\\]\n\nGiven:\n\\[\n\\tan \\theta = 7\n\\]\n\nFirst, substitute \\(\\tan \\theta = 7\\) into the double-angle formula:\n\n\\[\n\\tan 2\\theta = \\frac{2 \\times 7}{1 - 7^2}\n\\]\n\nNext, calculate the value of the denominator \\(1 - \\tan^2 \\theta\\):\n\n\\[\n1 - 7^2 = 1 - 49 = -48\n\\]\n\nNow, substitute this value back into the double-angle formula:\n\n\\[\n\\tan 2\\theta = \\frac{2 \\times 7}{-48} = \\frac{14}{-48} = -\\frac{7}{24}\n\\]\n\nTherefore, the value of \\(\\tan 2\\theta\\) is:\n\n\\[\n\\tan 2\\theta = -\\frac{7}{24}\n\\]\n\nSo, the solution to the problem is:\n\n\\[\n\\tan 2\\theta = -\\frac{7}{24}\n\\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8603425559947299
+            }
+        }
+    }
+}

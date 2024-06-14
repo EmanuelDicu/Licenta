@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 3_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 3",
+        "problem": "What is the tens digit in the sum $7! + 8! + 9! + \\cdots + 2006!$?",
+        "correct_solution": "Since $n!$ contains the product $2\\cdot5\\cdot10= 100$ whenever $n\\ge 10$,  it suffices to determine the tens digit of \\[\n7! + 8! + 9! = 7!(1 + 8 + 8\\cdot9) = 5040(1 + 8 + 72)= 5040\\cdot81.\n\\]This  is the same as the units digit of $4\\cdot 1$, which is $\\boxed{4}$.",
+        "generated_solutions": {
+            "gpt-4o": "To find the tens digit in the sum \\(7! + 8! + 9! + \\cdots + 2006!\\), we can break the problem into smaller, more manageable parts.\n\n### Step 1: Identifying factorial contributions\n\nFirst, note that factorials grow very rapidly. Factorials \\( n! \\) for \\( n \\geq 10 \\) are divisible by \\(10\\) because they include both 2 and 5 as factors. Therefore, \\( n! \\) for \\( n \\geq 10 \\) will be multiples of \\(100\\), and they contribute \\(0\\) in both the units digit and the tens digit:\n\n\\[\n10! = 3,628,800,\\quad 11! = 39,916,800,\\quad 12! = 479,001,600,\\quad \\cdots\n\\]\n\nThus, contributions to the tens and units digits of these factorials \\(10!\\) and beyond are all zeroes.\n\n### Step 2: Summing relevant factorials\n\nNow, we only need to consider the sum of factorials from \\(7!\\) to \\(9!\\) since all factorials from \\(10!\\) onwards do not affect the tens digit.\n\nCalculating the relevant factorials:\n\\[\n7! = 5040\n\\]\n\\[\n8! = 40320\n\\]\n\\[\n9! = 362880\n\\]\n\n### Step 3: Summing last two digits\n\nWe consider the last two digits of each:\n\\[\n5040 \\rightarrow 40\n\\]\n\\[\n40320 \\rightarrow 20\n\\]\n\\[\n362880 \\rightarrow 80\n\\]\n\n### Step 4: Sum these numbers\n\nNow, adding these last two digits:\n\\[\n40 + 20 + 80 = 140\n\\]\n\n### Step 5: Extracting the tens digit\n\nThe last two digits of the sum are \"40\", hence the tens digit is:\n\n\\[\n\\boxed{4}\n\\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8610478359908884
+            }
+        }
+    }
+}

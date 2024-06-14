@@ -1,0 +1,18 @@
+{
+    "Number Theory_Level 1_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 1",
+        "problem": "What digit must be placed in the blank to make the four-digit integer $20\\_7$ a multiple of 11?",
+        "correct_solution": "A number will be divisible by 11 if you get a multiple of 11 by alternately adding and then subtracting its digits.  If we name the blank integer $A$, then the alternating sum is $2 - 0 + A - 7 = A -5$.  This value can only be equal to 0 (as 11, 22, etc all yield $A$ that are too large), so $A = \\boxed{5}$ is the only digit that will work.",
+        "generated_solutions": {
+            "gpt-4o": "To determine what digit must be placed in the blank to make the four-digit integer \\(20\\_7\\) a multiple of 11, we can utilize the divisibility rule for 11. Here's a step-by-step approach:\n\n### Step-by-Step Solution:\n\n1. **Understand the Divisibility Rule for 11**: \n   A number is divisible by 11 if the alternating sum of its digits (starting from the leftmost digit) is equal to 0 or a multiple of 11. For the number \\(20\\_7\\), let's denote the unknown digit by \\(x\\).\n\n2. **Set Up the Alternating Sum**:\n   The number  \\(20\\_7\\) can be written as following, considering the positions of digits:\n   - Thousands place: 2 (even position)\n   - Hundreds place: 0 (odd position)\n   - Tens place: \\(x\\) (even position)\n   - Units place: 7 (odd position)\n\n   The alternating sum according to positions would be:\n   \\[\n   (2 + x) - (0 + 7)\n   \\]\n\n3. **Simplify the Alternating Sum**:\n   Simplify the expression:\n   \\[\n   (2 + x) - (0 + 7) = (2 + x) - 7 = x - 5\n   \\]\n\n4. **Set the Condition for Divisibility**:\n   Since the number must be divisible by 11, the alternating sum must be 0 or a multiple of 11. Therefore, we need:\n   \\[\n   x - 5 = 0 \\quad \\text{or} \\quad x - 5 = 11k\n   \\]\n   Since \\(x\\) is a single digit (0-9), the multiple condition \\(11k\\) isn't applicable here, so:\n   \\[\n   x - 5 = 0\n   \\]\n   \n5. **Solve for \\(x\\)**:\n   Solve the equation:\n   \\[\n   x - 5 = 0 \\implies x = 5\n   \\]\n\n### Conclusion:\nThe digit 5 must be placed in the blank to make the four-digit integer \\(20\\_7\\) a multiple of 11. \n\nThus, the solution to the problem is:\n\\[\n\\boxed{5}\n\\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8402555910543131
+            }
+        }
+    }
+}

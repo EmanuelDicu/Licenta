@@ -1,0 +1,18 @@
+{
+    "Geometry_Level 2_2.json": {
+        "category": "Geometry",
+        "difficulty": "Level 2",
+        "problem": "The points $A(2,5), B(6,5), C(5,2)$ and $D(1,2)$ are the vertices of a parallelogram. If the parallelogram is translated down 2 units and right three units, what will be the coordinates of the final image of point $B$?",
+        "correct_solution": "When an image is translated to the right we just add the number of units it is being translated to the original $x$-coordinate. When an image is translated down we just subtract that number of units from the $y$-coordinate. In this case we'll subtract 2 from the $y$-coordinates and add 3 to the   $x$-coordinates. This will make point $B(6, 5)$ move to $B'(6 + 3, 5 - 2) = \\boxed{(9, 3)}$.",
+        "generated_solutions": {
+            "gpt-4o": "To solve the problem of finding the final coordinates of point \\( B \\) after translating a parallelogram down 2 units and right 3 units, we'll break down the process into clear, logical steps:\n\n### Step 1: Identify the original coordinates of point \\( B \\)\nGiven point \\( B \\) has coordinates \\( (6,5) \\).\n\n### Step 2: Understand the translations\n- **Down 2 units**: This will affect the y-coordinate by subtracting 2 from it.\n- **Right 3 units**: This will affect the x-coordinate by adding 3 to it.\n\n### Step 3: Apply the translation to the x-coordinate\nSince the translation is right 3 units, we will add 3 to the x-coordinate:\n\\[ x \\text{ (new)} = x \\text{ (original)} + 3 \\]\n\\[ x \\text{ (new)} = 6 + 3 = 9 \\]\n\n### Step 4: Apply the translation to the y-coordinate\nSince the translation is down 2 units, we will subtract 2 from the y-coordinate:\n\\[ y \\text{ (new)} = y \\text{ (original)} - 2 \\]\n\\[ y \\text{ (new)} = 5 - 2 = 3 \\]\n\n### Step 5: Combine the new coordinates\nAfter applying the translations, the new coordinates of point \\( B \\) will be:\n\\[ B \\text{ (new)} = (9, 3) \\]\n\nTherefore, the final image of point \\( B \\) after translating the parallelogram down 2 units and right 3 units is:\n\\[ \\boxed{(9, 3)} \\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.7745901639344263
+            }
+        }
+    }
+}

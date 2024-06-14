@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 4_3.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 4",
+        "problem": "Suppose 6 wallops = 5 ballops. Also suppose 3 ballops = 11 fallops. How many wallops are equivalent to 110 fallops?",
+        "correct_solution": "Multiply  \\[\n3\\text{ ballops}=11\\text{ fallops}\n\\] by 10 to find that $30$ ballops are equal to $110$ fallops.  Then multiply  \\[\n6\\text{ wallops} = 5\\text{ ballops}\n\\] by 6 to find that $\\boxed{36}$ wallops are equivalent to 30 ballops.",
+        "generated_solutions": {
+            "gpt-4o": "To determine how many wallops are equivalent to 110 fallops, we can break the problem into smaller parts and solve them step-by-step.\n\n### Step 1: Convert fallops to ballops.\nFirst, understand the relationship between ballops and fallops. \nWe know that 3 ballops = 11 fallops. Therefore:\n\\[ 1 \\text{ ballop} = \\frac{11 \\text{ fallops}}{3}.\\]\n\nWe need to convert 110 fallops to ballops. Using the above relationship:\n\\[ 110 \\text{ fallops} = \\frac{110}{\\frac{11}{3}} \\text{ ballops} = \\frac{110 \\times 3}{11} \\text{ ballops}. \\]\n\\[ 110 \\text{ fallops} = \\frac{330}{11} \\text{ ballops} = 30 \\text{ ballops}. \\]\n\n### Step 2: Convert ballops to wallops.\nNext, we need the relationship between wallops and ballops:\n\\[ 6 \\text{ wallops} = 5 \\text{ ballops}. \\]\n\nFrom this, we find:\n\\[ 1 \\text{ ballop} = \\frac{6 \\text{ wallops}}{5}. \\]\n\nWe need to convert 30 ballops to wallops. Using the above relationship:\n\\[ 30 \\text{ ballops} = 30 \\times \\frac{6}{5} \\text{ wallops} = \\frac{180}{5} \\text{ wallops} = 36 \\text{ wallops}. \\]\n\n### Conclusion:\nHence, 110 fallops are equivalent to 36 wallops. \n\n```plaintext\nThe solution is: 36 wallops.\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8220264317180617
+            }
+        }
+    }
+}

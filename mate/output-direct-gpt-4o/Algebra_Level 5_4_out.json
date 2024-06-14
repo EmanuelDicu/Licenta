@@ -1,0 +1,18 @@
+{
+    "Algebra_Level 5_4.json": {
+        "category": "Algebra",
+        "difficulty": "Level 5",
+        "problem": "An infinite geometric series has common ratio $-1/2$ and sum 45.  What is the first term of the series?",
+        "correct_solution": "Let the first term be $a$.  Because the sum of the series is 45, we have $45= a/[1-(-1/2)] = a/(3/2) = 2a/3$.  Therefore, $a=\\boxed{\\frac{135}{2}}$.",
+        "generated_solutions": {
+            "gpt-4o": "To solve for the first term of the infinite geometric series with a common ratio of \\(-\\frac{1}{2}\\) and a sum of 45, we can proceed step-by-step:\n\n### Step 1: Understand the Sum Formula for an Infinite Geometric Series\nThe sum \\(S\\) of an infinite geometric series with the first term \\(a\\) and common ratio \\(r\\) (where \\(|r| < 1\\)) is given by the formula:\n\\[\nS = \\frac{a}{1 - r}\n\\]\n\n### Step 2: Identify Given Information\nFrom the problem, we know:\n- The sum \\(S = 45\\)\n- The common ratio \\(r = -\\frac{1}{2}\\)\n\n### Step 3: Substitute Given Values into the Formula\nWe substitute \\(S = 45\\) and \\(r = -\\frac{1}{2}\\) into the sum formula \\(S = \\frac{a}{1 - r}\\):\n\\[\n45 = \\frac{a}{1 - (-\\frac{1}{2})}\n\\]\n\n### Step 4: Simplify the Denominator\nSimplify the denominator \\(1 - (-\\frac{1}{2})\\):\n\\[\n1 - (-\\frac{1}{2}) = 1 + \\frac{1}{2} = \\frac{3}{2}\n\\]\n\n### Step 5: Set Up the Equation\nNow the equation becomes:\n\\[\n45 = \\frac{a}{\\frac{3}{2}}\n\\]\n\n### Step 6: Solve for \\(a\\)\nTo isolate \\(a\\), multiply both sides of the equation by \\(\\frac{3}{2}\\):\n\\[\n45 \\times \\frac{3}{2} = a\n\\]\n\nCalculate the multiplication on the left-hand side:\n\\[\n45 \\times \\frac{3}{2} = \\frac{45 \\times 3}{2} = \\frac{135}{2} = 67.5\n\\]\n\n### Conclusion\nThe first term \\(a\\) of the geometric series is:\n\\[\n\\boxed{67.5}\n\\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9059097978227061
+            }
+        }
+    }
+}

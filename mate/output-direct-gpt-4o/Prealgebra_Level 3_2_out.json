@@ -1,0 +1,18 @@
+{
+    "Prealgebra_Level 3_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 3",
+        "problem": "In how many ways can a President, Vice-President, and Treasurer be chosen from a group of 8 people if no one can serve two roles at the same time?",
+        "correct_solution": "We have 8 choices for the President, 7 choices for the Vice-President, and 6 choices for the Treasurer, for a total of $8\\times 7\\times 6=\\boxed{336}$ choices.",
+        "generated_solutions": {
+            "gpt-4o": "To determine the number of ways to choose a President, Vice-President, and Treasurer from a group of 8 people with no one serving more than one role, we can think of this as a permutation problem. Each role (President, Vice-President, Treasurer) must be filled by a different person.\n\nHere\u2019s the step-by-step breakdown:\n\n1. **Choosing the President**:\n   - We have 8 people to choose from for the President role. So, there are 8 possible choices for President.\n\n2. **Choosing the Vice-President**:\n   - After choosing the President, we have 7 remaining people to choose from for the Vice-President role. So, there are 7 possible choices for Vice-President.\n\n3. **Choosing the Treasurer**:\n   - After choosing the President and Vice-President, we have 6 remaining people to choose from for the Treasurer role. So, there are 6 possible choices for Treasurer.\n\n4. **Calculating the total number of permutations**:\n   - We multiply the number of choices for each role:\n     \\[\n     8 \\text{ (choices for President)} \\times 7 \\text{ (choices for Vice-President)} \\times 6 \\text{ (choices for Treasurer)}\n     \\]\n\nSo, the total number of ways to assign the three roles is:\n\\[\n8 \\times 7 \\times 6 = 336\n\\]\n\nThus, the solution to the problem is that there are \\( \\boxed{336} \\) ways to choose a President, Vice-President, and Treasurer from a group of 8 people."
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.8861788617886179
+            }
+        }
+    }
+}
