@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 1_2.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 1",
+        "problem": "Let $a = 5 - 8i$ and $b = 30 + 48i$. Find $|ab|$.",
+        "correct_solution": "Note that $b = 6(5 + 8i) = 6\\overline{a}$. So $|ab| = |a(6\\overline{a})| = 6 |a\\overline{a}| = 6|a|^2$. We have $|a|^2 = 5^2 + 8^2 = 89$, so $|ab| = 6 \\cdot 89 = \\boxed{534}$.",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\nStep 1: \nGiven \\( a = 5 - 8i \\) and \\( b = 30 + 48i \\).\n\nStep 2:\nCalculate the magnitudes of \\( a \\) and \\( b \\).\nThe magnitude of a complex number \\( c = x + yi \\) is given by \\( |c| = \\sqrt{x^2 + y^2} \\).\n\nStep 3:\nFind the magnitude of \\( a \\).\n\\[ |a| = \\sqrt{5^2 + (-8)^2} = \\sqrt{25 + 64} = \\sqrt{89} \\]\n\nStep 4:\nFind the magnitude of \\( b \\).\n\\[ |b| = \\sqrt{30^2 + 48^2} = \\sqrt{900 + 2304} = \\sqrt{3204} = 2\\sqrt{801} \\]\n\nStep 5:\nUse the property of magnitudes that \\( |ab| = |a| \\cdot |b| \\).\n\\[ |ab| = \\sqrt{89} \\cdot 2\\sqrt{801} \\]\n\nStep 6:\nSimplify the expression.\n\\[ |ab| = 2\\sqrt{89 \\times 801} \\]\n\\[ |ab| = 2\\sqrt{71289} \\]\n\nStep 7:\nSimplify the square root if possible.\n\\[ \\sqrt{71289} = 267 \\]\nTherefore,\n\\[ |ab| = 2 \\times 267 = 534 \\]\n\nFinal answer:\n\\boxed{534}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8630653266331658
+            }
+        }
+    }
+}

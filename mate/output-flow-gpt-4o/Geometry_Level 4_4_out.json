@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 4_4.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "We have a triangle $\\triangle ABC$ where $AC = 17,$ $BC = 15,$ and $AB = 8.$ Let $M$ be the midpoint of $AB.$ What is the length of $CM$?",
+        "correct_solution": "First, we notice that $8:15:17$ is a Pythagorean triple, so we have a right triangle. Let's draw a sketch: [asy]\npair A, B, C, M;\nA = (0, 8);\nB = (0, 0);\nC = (15, 0);\nM = 0.5 * A + 0.5 * B;\ndraw(A--B--C--cycle);\ndraw(C--M);\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$M$\", M, NE);\nlabel(\"$8$\", A--B, W);\nlabel(\"$15$\", B--C, S);\nlabel(\"$17$\", A--C, NE);\ndraw(rightanglemark(A,B,C,20));\n[/asy] Since we know that $BM = \\frac{1}{2} \\cdot AB = 4,$ we simply apply the Pythagorean theorem to right triangle $\\triangle MBC.$ \\begin{align*}\nCM^2 &= BM^2 + BC^2\\\\\nCM^2 &= 4^2 + 15^2 = 241\\\\\nCM &= \\boxed{\\sqrt{241}}.\n\\end{align*}",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\nStep 1:\nGiven triangle \\(\\triangle ABC\\) with side lengths \\(AC = 17\\), \\(BC = 15\\), and \\(AB = 8\\).\n\nStep 2:\nPoint \\(M\\) is the midpoint of \\(AB\\), so \\(AM = MB\\). This implies \\(AM = MB = \\frac{AB}{2} = \\frac{8}{2} = 4\\).\n\nStep 3:\nTo find the length of \\(CM\\), we can use the Apollonius's theorem. It states that for any triangle, the sum of the squares of the sides equals twice the square of a median plus twice the square of the half side:\n\\[ AB^2 + AC^2 = 2AM^2 + 2CM^2 \\]\n\nStep 4:\nSubstitute the known values into the theorem:\n\\[ 8^2 + 17^2 = 2 \\cdot 4^2 + 2 \\cdot CM^2 \\]\n\\[ 64 + 289 = 2 \\cdot 16 + 2 \\cdot CM^2 \\]\n\\[ 353 = 32 + 2CM^2 \\]\n\nStep 5:\nSubtract 32 from both sides to isolate \\(CM^2\\):\n\\[ 353 - 32 = 2CM^2 \\]\n\\[ 321 = 2CM^2 \\]\n\nStep 6:\nDivide both sides by 2 to solve for \\(CM^2\\):\n\\[ CM^2 = \\frac{321}{2} \\]\n\\[ CM^2 = 160.5 \\]\n\nStep 7:\nTake the square root of both sides to find \\(CM\\):\n\\[ CM = \\sqrt{160.5} \\]\n\nFinal answer:\n\\boxed{\\sqrt{160.5}}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.814852492370295
+            }
+        }
+    }
+}

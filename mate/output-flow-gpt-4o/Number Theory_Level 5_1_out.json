@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 5_1.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 5",
+        "problem": "How many positive perfect cube factors does $3^65^{10}$ have?",
+        "correct_solution": "Any factor of $3^6\\cdot5^{10}$ is in the form $3^a\\cdot5^b$ for $0\\le a\\le6$ and $0\\le b\\le{10}$. To count the number of perfect cube factors, we must count the factors of $3^6\\cdot5^{10}$ that have $a=0$, $3$, or $6$ and $b=0$, $3$, $6$, or $9$. This gives $3\\cdot4=\\boxed{12}$ perfect cube factors.",
+        "generated_solutions": {
+            "gpt-4o": "```\nStep 1:\nIdentify the prime factorization of the given number.\nThe number is already expressed as \\(3^6 \\times 5^{10}\\).\n\nStep 2:\nUnderstand the requirement for a factor to be a perfect cube.\nA factor is a perfect cube if all the exponents in the factor's prime factorization are multiples of 3.\n\nStep 3:\nDetermine the possible exponents for the factors that are perfect cubes.\nFor the prime factor \\(3^a\\), \\(a\\) must be a multiple of 3. Given \\(3^6\\), \\(a\\) can be 0, 3, or 6 (three options).\nFor the prime factor \\(5^b\\), \\(b\\) must be a multiple of 3. Given \\(5^{10}\\), \\(b\\) can be 0, 3, 6, or 9 (four options).\n\nStep 4:\nCalculate the total number of such factors by multiplying the number of options for each prime factor.\nThere are 3 choices for the exponent of 3 (0, 3, or 6).\nThere are 4 choices for the exponent of 5 (0, 3, 6, or 9).\nSo, the total number of positive perfect cube factors is \\(3 \\times 4 = 12\\).\n\nFinal answer:\n\\boxed{12}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8081761006289309
+            }
+        }
+    }
+}

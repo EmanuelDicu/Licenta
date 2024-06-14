@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 2_1.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 2",
+        "problem": "Sarah, James, and Matthew are on a team in a game show. In the game, Sarah always earns 5 points, Matthew always earns -2 points, and James always earns 3 points. To calculate their team's score, they multiply the first person's score by the second person's score, then subtract the third person's score. If they can choose the order in which they play the game, what is the maximum possible score that their team can earn?",
+        "correct_solution": "If we let the first, second, and third persons' score equal $a$, $b$, and $c$ respectively, then their team's score is $((a \\cdot b)-c)$.  We may test all six possible orderings:\n$a = 5$, $b = -2$, $c = 3 \\rightarrow ((5 \\cdot (-2)) - 3) = -13$\n$a = -2$, $b = 5$, $c = 3 \\rightarrow (((-2) \\cdot 5) - 3) = -13$\n$a = 5$, $b = 3$, $c = -2 \\rightarrow ((5 \\cdot 3) - (-2)) = 17$\n$a = 3$, $b = 5$, $c = -2 \\rightarrow ((3 \\cdot 5) - (-2)) = 17$\n$a = 3$, $b = -2$, $c = 5 \\rightarrow ((3 \\cdot (-2)) - 5) = -11$\n$a = -2$, $b = 3$, $c = 5 \\rightarrow (((-2) \\cdot 3) - 5) = -11$\nThus, our total answer is $\\boxed{17}$\nAdditionally, we may note that the only way to obtain a positive answer is to multiply the two positive scores together and subtract the negative score.  Because multiplication is commutative, the order of $a$ and $b$ does not matter, and we need only compute the single case $(3 \\cdot 5) - (-2) = \\boxed{17}$",
+        "generated_solutions": {
+            "gpt-4o": "```\nStep 1:\nList the points earned by each team member:\nSarah earns 5 points.\nMatthew earns -2 points.\nJames earns 3 points.\n\nStep 2:\nConsider all possible orders in which the team members can play and calculate the score for each order.\n\nOrder 1: Sarah, James, Matthew\nScore = (Sarah's points) * (James's points) - (Matthew's points)\nScore = 5 * 3 - (-2)\nScore = 15 + 2\nScore = 17\n\nOrder 2: Sarah, Matthew, James\nScore = (Sarah's points) * (Matthew's points) - (James's points)\nScore = 5 * (-2) - 3\nScore = -10 - 3\nScore = -13\n\nOrder 3: James, Sarah, Matthew\nScore = (James's points) * (Sarah's points) - (Matthew's points)\nScore = 3 * 5 - (-2)\nScore = 15 + 2\nScore = 17\n\nOrder 4: James, Matthew, Sarah\nScore = (James's points) * (Matthew's points) - (Sarah's points)\nScore = 3 * (-2) - 5\nScore = -6 - 5\nScore = -11\n\nOrder 5: Matthew, Sarah, James\nScore = (Matthew's points) * (Sarah's points) - (James's points)\nScore = (-2) * 5 - 3\nScore = -10 - 3\nScore = -13\n\nOrder 6: Matthew, James, Sarah\nScore = (Matthew's points) * (James's points) - (Sarah's points)\nScore = (-2) * 3 - 5\nScore = -6 - 5\nScore = -11\n\nStep 3:\nCompare all the scores calculated to find the maximum possible score.\nMaximum possible score based on the calculations is 17.\n\nFinal answer:\n\\boxed{17}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7602201257861635
+            }
+        }
+    }
+}

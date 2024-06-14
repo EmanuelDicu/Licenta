@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 5_4.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 5",
+        "problem": "On a number line, the coordinates of $P$ and $Q$ are 8 and 48, respectively. The midpoint of $\\overline{PQ}$ is $B$, the midpoint of $\\overline{BQ}$ is $C$, and the midpoint of $\\overline{PC}$ is $D$. What is the coordinate of $D$?",
+        "correct_solution": "Since $B$ is midpoint of $\\overline{PQ}$, the coordinate of $B$ is $(8+48)/2 = 4+24 = 28$.  Since $C$ is the midpoint of $\\overline{BQ}$, the coordinate of $C$ is $(28+48)/2 = 14+24=38$.  Since $D$ is the midpoint of $\\overline{PC}$, the coordinate of $D$ is $(8+38)/2 = 4 + 19 = \\boxed{23}$.\n\n[asy]\npair P, Q, B, C, D;\n\nP = (8,0);\nQ = (48,0);\nB = (P+Q)/2;\nC = (B+Q)/2;\nD = (P+C)/2;\n\ndot(P);\ndot(Q);\ndot(B);\ndot(C);\ndot(D);\n\ndraw(P--Q);\nlabel(\"$P$\",P,S);\nlabel(\"$Q$\",Q,S);\nlabel(\"$B$\",B,S);\nlabel(\"$C$\",C,S);\nlabel(\"$D$\",D,S);\n[/asy]",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\n```\nStep 1:\nThe coordinate of $P$ is 8 and the coordinate of $Q$ is 48.\n\nStep 2:\nTo find the midpoint $B$ of $\\overline{PQ}$, we use the midpoint formula: $\\frac{x_1 + x_2}{2}$.\nThus, the coordinate of $B$ is $\\frac{8 + 48}{2} = \\frac{56}{2} = 28$.\n\nStep 3:\nNext, to find the midpoint $C$ of $\\overline{BQ}$, use the midpoint formula. The coordinates of $B$ and $Q$ are 28 and 48, respectively.\nThus, the coordinate of $C$ is $\\frac{28 + 48}{2} = \\frac{76}{2} = 38$.\n\nStep 4:\nFinally, to find the midpoint $D$ of $\\overline{PC}$, use the midpoint formula. The coordinates of $P$ and $C$ are 8 and 38, respectively.\nThus, the coordinate of $D$ is $\\frac{8 + 38}{2} = \\frac{46}{2} = 23$.\n\nFinal answer:\n\\boxed{23}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7064471879286695
+            }
+        }
+    }
+}

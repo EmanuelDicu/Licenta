@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 5_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 5",
+        "problem": "How many squares have all four vertices on the 5 by 5 rectangular grid of dots below? Two such squares are displayed. [asy]\nsize(50);\nfor(int i = 0; i < 5; ++i){\n\nfor(int j = 0; j < 5; ++j){\n\ndot((i,j));\n\n}\n}\ndraw((0,4)--(1,4)--(1,3)--(0,3)--cycle,linewidth(0.7));\ndraw((2,0)--(4,1)--(3,3)--(1,2)--cycle,linewidth(0.7));\n[/asy]",
+        "correct_solution": "Identify all the possible sizes of squares and count the number of squares of each size separately.   \\[\n\\begin{array}{cc}\n\\text{Size} & \\text{number of squares} \\\\ \\hline\n\\rule{0pt}{12pt}1\\times 1 & 16 \\\\\n2 \\times 2 & 9 \\\\\n3 \\times 3 & 4 \\\\\n4 \\times 4 & 1 \\\\\n\\sqrt{2}\\times\\sqrt{2} & 9 \\\\\n\\sqrt{5}\\times\\sqrt{5} & 8 \\\\\n\\sqrt{8}\\times\\sqrt{8} & 1 \\\\\n\\sqrt{10}\\times\\sqrt{10} & 2\n\\end{array}\n\\] The sum of the numbers in the second column is $\\boxed{50}$.\n\nNote: the possible side lengths of a square drawn on a square grid with $n^2$ dots are the real numbers of the form $\\sqrt{x^2+y^2}$ where $x$ and $y$ are nonnegative integers satisfying $x+y\\leq n-1$.",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\nStep 1:\nConsider a 5 by 5 rectangular grid of dots. Each square must have all four vertices lying on these dots.\n\nStep 2:\nWe need to analyze squares of various sizes. The smallest square has side length 1, the next has side length \\(\\sqrt{2}\\), then side length 2, and so on, up to the maximum possible square inscribed in the grid.\n\nStep 3:\nCount the number of 1 by 1 squares:\n- Each square of side length 1 can be defined by choosing any 4 adjacent dots in a 1x1 arrangement.\n- There are 4 internal rows and columns, so we have \\(4 \\times 4 = 16\\) such squares.\n\nStep 4:\nCount the number of 2 by 2 squares:\n- Each square of side length 2 is defined by choosing any 4 dots in a 2x2 arrangement.\n- We can place a square in each 3x3 subgrid of our 5x5 grid, i.e., \\(3 \\times 3 = 9\\) such squares.\n\nStep 5:\nCount the number of 3 by 3 squares:\n- Each square of side length 3 is defined by choosing any 4 dots in a 3x3 arrangement.\n- We can place a square in each 2x2 subgrid of our 5x5 grid, i.e., \\(2 \\times 2 = 4\\) such squares.\n\nStep 6:\nCount the number of 4 by 4 squares:\n- Each square of side length 4 is defined by choosing any 4 dots in a 4x4 arrangement.\n- We can place a square in 1x1 central subgrid of our 5x5 grid, i.e., \\(1 \\times 1 = 1\\) such squares.\n\nStep 7:\nSum all the counted squares:\n- Adding up all the different sizes: \\(16\\) (1 by 1) + \\(9\\) (2 by 2) + \\(4\\) (3 by 3) + \\(1\\) (4 by 4).\n\nFinal answer:\n\\boxed{30}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7819185645272602
+            }
+        }
+    }
+}

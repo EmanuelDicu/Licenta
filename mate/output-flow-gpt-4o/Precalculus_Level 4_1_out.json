@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 4_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 4",
+        "problem": "Let $t$ be the smallest positive real number for which $\\cos t = \\cos t^{\\circ}$.  (We are taking the cosine of $t$ radians on the left and of $t$ degrees on the right.)  Compute $\\lfloor t\\rfloor$, the greatest integer less than $t$.",
+        "correct_solution": "Imagine two identical clock hands, each rotating counterclockwise and both initially pointing directly to the right.  If one of them rotates at 1 radian per second while the other rotates at $1^{\\circ}$ per second, then the faster one will sweep out an angle of $t$ radians at the same time that the slower one travels through $t$ degrees.  We wish to know approximately when the cosines of the corresponding angles will be equal, i.e. when the $x$-coordinates of the tips of the clock hands will be the same.\n\nClearly this will occur when the faster hand has rotated nearly all the way around the circle.  After six seconds the slow hand will have rotated only $6^{\\circ}$, while the fast hand will have traveled around 6 radians, which is still further than $6^{\\circ}$ away from its starting point.  (Recall that 1 radian is equal to $\\frac{180^{\\circ}}{\\pi}$, which is a couple degrees less than $60^{\\circ}$.)  Therefore the $x$-coordinates will not yet be equal for the first time, but will be very close.  We conclude that $\\lfloor t\\rfloor=\\boxed{6}$.  The interested reader may wish to compute the exact value of $t$ for which this occurs.  You should find that $t= \\frac{360\\pi}{\\pi+180}\\approx 6.1754$.",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\nStep 1:\nWe are given that $t$ is the smallest positive real number that satisfies $\\cos t = \\cos t^{\\circ}$, where $t$ is in radians on the left and degrees on the right. \n\nStep 2:\nSince the cosine function is periodic, the equation $\\cos t = \\cos t^{\\circ}$ can be true if $t$ radians and $t$ degrees correspond to the same angle in the unit circle.\n\nStep 3:\nTo find the relationship between radians and degrees, recall that $360$ degrees equal $2\\pi$ radians. Thus, $t$ degrees correspond to $\\frac{t \\pi}{180}$ radians.\n\nStep 4:\nNow, we set the two expressions for cosine equal to each other:\n$$\\cos t = \\cos \\left( \\frac{t \\pi}{180} \\right)$$\n\nStep 5:\nTo find the smallest positive $t$ where the cosines are equal, we need to consider the periodicity and the properties of the cosine function. The cosine function repeats its values every $2\\pi$ radians, and since degrees scale linearly with radians, we can set:\n$$t = \\frac{t\\pi}{180} + 2k\\pi$$\nwhere $k$ is an integer because the cosine function is periodic with period $2\\pi$. However, this implies finding a specific $t$ that is self-consistent without requiring an additional periodic shift.\n\nStep 6:\nSimplifying, we solve for $t$:\n$$t = \\frac{180t}{\\pi}$$\n\nStep 7:\nThis corresponds to finding the relationship between $t$ and $\\frac{t}{\\pi}$ which infers:\n$$ \\cos t = \\cos \\left( \\frac{t \\pi}{180} \\right), \\text{requires small continuous } k$$ \nWe correctly use matching $t$ arm points:\n$$t = k \\cdot (\\frac{180}{\\pi}+2k\\pi) $$\nUsing the same principal value theories now calculate discrete matching points:\nUsing minimal $k \\cdot (\\frac{180}{\\pi})$\n$$ t \\approx 6 k \\cdots$$\n\nStep 8:\nIsolating $t$, we get minimal integer value for $k=1$\n$$ t =\\boxed{6}$$\".\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.733601841196778
+            }
+        }
+    }
+}

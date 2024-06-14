@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 1_1.json": {
+        "category": "Geometry",
+        "difficulty": "Level 1",
+        "problem": "In $\\triangle ABC$, what is the value of $x + y$? [asy]\nimport olympiad;\nsize(7cm);\n\npair a = dir(76);\npair b = (-1, 0);\npair c = (1, 0);\npair o = (0, 0);\n\ndraw(a--b--c--cycle);\ndraw(a--o);\n\nlabel(\"$A$\", a, N); label(\"$B$\", b, SW); label(\"$C$\", c, SE);\nlabel(\"$104^\\circ$\", o, 1.8 * NW + 0.4 * E);\nlabel(\"$x^\\circ$\", b, 3 * E + NE + NE);\nlabel(\"$y^\\circ$\", c, 2 * W + 2 * NW);\n\nadd(pathticks(b--o, s=3));\nadd(pathticks(c--o, s=3));\nadd(pathticks(a--o, s=3));\n\n[/asy]",
+        "correct_solution": "Since $\\triangle BDA$ is isosceles, $\\angle BAD = \\angle ABD = x^\\circ$.\nSince $\\triangle CDA$ is isosceles, $\\angle CAD = \\angle ACD = y^\\circ$. [asy]\nimport olympiad;\nsize(7cm);\n\npair a = dir(76);\npair b = (-1, 0);\npair c = (1, 0);\npair o = (0, 0);\n\ndraw(a--b--c--cycle);\ndraw(a--o);\n\nlabel(\"$A$\", a, N); label(\"$B$\", b, SW); label(\"$C$\", c, SE); label(\"$D$\", o, S);\nlabel(\"$104^\\circ$\", o, 1.8 * NW + 0.4 * E);\nlabel(\"$x^\\circ$\", b, 3 * E + NE + NE);\nlabel(\"$y^\\circ$\", c, 2 * W + 2 * NW);\n\nadd(pathticks(b--o, s=3));\nadd(pathticks(c--o, s=3));\nadd(pathticks(a--o, s=3));\n\nlabel(\"$x^\\circ$\", a, 3 * S + 2 * SW + W); label(\"$y^\\circ$\", a, 3 * S + SE);\n\n[/asy] Therefore, $\\angle BAC = (x + y)^\\circ$.\n\nSince the sum of the angles in $\\triangle ABC$ is $180^\\circ$, we have \\begin{align*}\nx + y + (x + y) &= 180\\\\\n2x + 2y &= 180\\\\\nx + y &= 90.\n\\end{align*}Therefore, $x + y = \\boxed{90}$.",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\nStep 1:\nIn $\\triangle ABC$, we are given that $BO = CO = AO$ because the segments $BO$, $CO$, and $AO$ all have pathticks indicating that they are of equal length.\n\nStep 2:\nSince $AO = BO = CO$, $\\triangle ABC$ is an isosceles triangle with the base $BC$. This means that the angles at $B$ and $C$ are equal. Therefore, $x^\\circ = y^\\circ$.\n\nStep 3:\nThe angle at $O$ is $104^\\circ$. The sum of the angles in $\\triangle ABC$ must be $180^\\circ$. \n\nStep 4:\nLet $x$ represent the angle at $B$ and $y$ represent the angle at $C$. Since $x = y$, we denote the angles at $B$ and $C$ as $x$ and $x$, respectively.\n\nStep 5:\nThe angle sum of $\\triangle ABC$ is: $x + x + 104^\\circ = 180^\\circ$.\n\nStep 6:\nSimplify the equation: \n$2x + 104^\\circ = 180^\\circ$\n\nStep 7:\nSolve for $x$: \n$2x = 180^\\circ - 104^\\circ$\n$2x = 76^\\circ$\n$x = 38^\\circ$\n\nStep 8:\nSince $x = y$, $x + y = 38^\\circ + 38^\\circ = 76^\\circ$.\n\nFinal answer:\n\\boxed{76}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.826963906581741
+            }
+        }
+    }
+}

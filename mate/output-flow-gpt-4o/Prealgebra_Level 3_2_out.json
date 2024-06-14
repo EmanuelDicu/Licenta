@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 3_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 3",
+        "problem": "In how many ways can a President, Vice-President, and Treasurer be chosen from a group of 8 people if no one can serve two roles at the same time?",
+        "correct_solution": "We have 8 choices for the President, 7 choices for the Vice-President, and 6 choices for the Treasurer, for a total of $8\\times 7\\times 6=\\boxed{336}$ choices.",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\n\nStep 1:\nWe start with a group of 8 people. We need to choose 3 distinct roles: President, Vice-President, and Treasurer.\n\nStep 2:\nTo choose a President, we have 8 possibilities since no one has been chosen yet.\n\nStep 3:\nAfter selecting the President, we now have 7 remaining candidates for the Vice-President role.\n\nStep 4:\nAfter selecting both the President and the Vice-President, we have 6 remaining candidates for the Treasurer role.\n\nStep 5:\nThe total number of ways to choose the three roles is the product of the number of choices for each role. Therefore, the total number of ways is:\n\\[ 8 \\text{ (choices for President)} \\times 7 \\text{ (choices for Vice-President)} \\times 6 \\text{ (choices for Treasurer)} \\]\n\nStep 6:\nCalculate the product:\n\\[ 8 \\times 7 = 56 \\]\n\\[ 56 \\times 6 = 336 \\]\n\nFinal answer:\n\\boxed{336}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8362989323843416
+            }
+        }
+    }
+}

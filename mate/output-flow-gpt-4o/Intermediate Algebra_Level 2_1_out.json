@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 2_1.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 2",
+        "problem": "Two reals $x$ and $y$ are such that $x-y=4$ and $x^3-y^3=28$. Compute $xy$.",
+        "correct_solution": "We have $28=x^3-y^3=(x-y)(x^2+xy+y^2)=(x-y)((x-y)^2+3xy)=4\\cdot (16+3xy)$, from which $xy=\\boxed{-3}$.",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\n\nStep 1:\nWe are given two reals \\( x \\) and \\( y \\) such that \\( x - y = 4 \\).\n\nStep 2:\nWe are also given that \\( x^3 - y^3 = 28 \\).\n\nStep 3:\nWe use the factorization \\( x^3 - y^3 = (x-y)(x^2 + xy + y^2) \\). Substituting \\( (x-y) = 4 \\) into the equation, we have:\n\\[ x^3 - y^3 = 4(x^2 + xy + y^2) \\]\n\nStep 4:\nSince \\( x^3 - y^3 = 28 \\), we equate the two expressions:\n\\[ 4(x^2 + xy + y^2) = 28 \\]\n\nStep 5:\nDivide both sides of the equation by 4:\n\\[ x^2 + xy + y^2 = 7 \\]\n\nStep 6:\nWe know from algebraic identities that \\( (x - y)^2 = x^2 - 2xy + y^2 \\), so:\n\\[ 4^2 = x^2 - 2xy + y^2 \\]\n\\[ 16 = x^2 - 2xy + y^2 \\]\n\nStep 7:\nWe now have two equations:\n1) \\( x^2 + xy + y^2 = 7 \\)\n2) \\( x^2 - 2xy + y^2 = 16 \\)\n\nStep 8:\nSubtract the second equation from the first:\n\\[ (x^2 + xy + y^2) - (x^2 - 2xy + y^2) = 7 - 16 \\]\n\\[ x^2 + xy + y^2 - x^2 + 2xy - y^2 = -9 \\]\n\\[ 3xy = -9 \\]\n\nStep 9:\nDivide both sides by 3:\n\\[ xy = -3 \\]\n\nFinal answer:\n\\boxed{-3}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.9075804776739356
+            }
+        }
+    }
+}

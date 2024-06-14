@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 4_4.json": {
+        "category": "Algebra",
+        "difficulty": "Level 4",
+        "problem": "For what ordered pair $(a,b)$ are there infinite solutions $(x,y)$ to the system \\begin{align*}\n2ax+2y&=b,\\\\\n5x+y&=-3?\n\\end{align*}",
+        "correct_solution": "For there to be infinite solutions, the first equation needs to be consistent with the second and yet add no new information, which means it must be a multiple of the second. Since the coefficient of $y$ in the first equation is twice that of $y$ in the second equation, the multiplier is 2. This implies that the first equation must be $2(5x+y)=2(-3)$. After equating coefficients, this gives $2a=2\\cdot5$ and $b=2\\cdot-3$, or $(a,b)=\\boxed{(5,-6)}$.",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\nStep 1:\nThe system of equations is:\n\\begin{align*}\n2ax + 2y &= b \\quad \\quad (1) \\\\\n5x + y &= -3 \\quad \\quad (2)\n\\end{align*}\n\nStep 2:\nFor the system to have infinite solutions, the equations must be multiples of each other. This means:\n\\[\n2ax + 2y = c(5x + y)\n\\]\nfor some constant \\(c\\).\n\nStep 3:\nSet the equations equal after multiplication:\n\\begin{align*}\n2ax + 2y &= c(5x + y)\n\\end{align*}\n\nStep 4:\nExpand and equate the coefficients:\n\\begin{align*}\n2ax + 2y &= 5cx + cy\n\\end{align*}\n\nStep 5:\nMatch the coefficients for \\(x\\) and \\(y\\):\n\\begin{align*}\n2a &= 5c \\\\\n2 &= c\n\\end{align*}\n\nStep 6:\nSolve for \\(a\\) using \\(c = 2\\):\n\\begin{align*}\n2a &= 5 \\times 2 \\\\\n2a &= 10 \\\\\na &= 5\n\\end{align*}\n\nStep 7:\nUsing \\(c = 2\\), determine the corresponding \\(b\\):\n\\begin{align*}\n2ax + 2y &= 2(5x + y) \\\\\nb &= 2(-3) \\\\\nb &= -6\n\\end{align*}\n\nStep 8:\nThe ordered pair \\((a, b)\\) that results in infinite solutions is \\((5, -6)\\).\n\nFinal answer:\n\\boxed{(5, -6)}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7678018575851393
+            }
+        }
+    }
+}

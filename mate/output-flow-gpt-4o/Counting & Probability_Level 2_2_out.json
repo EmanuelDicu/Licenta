@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 2_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 2",
+        "problem": "In how many ways can a 3-person committee be chosen from a group of 8 people?",
+        "correct_solution": "There are $\\binom{8}{3} = \\frac{8 \\times 7 \\times 6}{3!}=\\boxed{56}$ to choose 3 people from a group of 8 without regard to order.",
+        "generated_solutions": {
+            "gpt-4o": "Solution:\nStep 1:\nIdentify the number of people to choose from. In this problem, the number of people to choose from is 8.\n\nStep 2:\nIdentify the number of people to be chosen for the committee. In this problem, a 3-person committee is to be chosen.\n\nStep 3:\nDetermine the formula for combination, which is used to find the number of ways to choose k items from n items without regard to order. The combination formula is given by:\n\\[ \\binom{n}{k} = \\frac{n!}{k! \\cdot (n - k)!} \\]\nwhere \\( n \\) is the total number of items, \\( k \\) is the number of items to choose, and \\( ! \\) denotes factorial.\n\nStep 4:\nSubstitute the values into the combination formula where \\( n = 8 \\) and \\( k = 3 \\):\n\\[ \\binom{8}{3} = \\frac{8!}{3! \\cdot (8 - 3)!} \\]\n\\[ \\binom{8}{3} = \\frac{8!}{3! \\cdot 5!} \\]\n\nStep 5:\nSimplify the expression by calculating the factorials:\n\\[ 8! = 8 \\times 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 \\]\n\\[ 3! = 3 \\times 2 \\times 1 \\]\n\\[ 5! = 5 \\times 4 \\times 3 \\times 2 \\times 1 \\]\n\nStep 6:\nCancel out the common factorials in the numerator and denominator:\n\\[ \\binom{8}{3} = \\frac{8 \\times 7 \\times 6 \\times 5!}{3! \\times 5!} \\]\n\\[ \\binom{8}{3} = \\frac{8 \\times 7 \\times 6}{3 \\times 2 \\times 1} \\]\n\\[ \\binom{8}{3} = \\frac{8 \\times 7 \\times 6}{6} \\]\n\nStep 7:\nPerform the final multiplication and division:\n\\[ \\binom{8}{3} = 8 \\times 7 = 56 \\]\n\nFinal answer:\n\\boxed{56}"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.9282124910265613
+            }
+        }
+    }
+}

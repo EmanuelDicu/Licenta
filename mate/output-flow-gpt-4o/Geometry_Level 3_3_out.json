@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 3_3.json": {
+        "category": "Geometry",
+        "difficulty": "Level 3",
+        "problem": "A rectangle with perimeter 176 is divided into five congruent rectangles as shown in the diagram.  What is the perimeter of one of the five congruent rectangles?\n\n[asy]\nunitsize(0.6 cm);\n\ndraw((0,0)--(6,0)--(6,5)--(0,5)--cycle);\ndraw((0,2)--(6,2));\ndraw((3,0)--(3,2));\ndraw((2,2)--(2,5));\ndraw((4,2)--(4,5));\n[/asy]",
+        "correct_solution": "Let $x$ and $y$ be the width and length of one of the five rectangles, respectively.\n\n[asy]\nunitsize(0.6 cm);\n\ndraw((0,0)--(6,0)--(6,5)--(0,5)--cycle);\ndraw((0,2)--(6,2));\ndraw((3,0)--(3,2));\ndraw((2,2)--(2,5));\ndraw((4,2)--(4,5));\n\nlabel(\"$x$\", (1,5), N);\nlabel(\"$x$\", (3,5), N);\nlabel(\"$x$\", (5,5), N);\nlabel(\"$y$\", (6,7/2), E);\nlabel(\"$x$\", (6,1), E);\nlabel(\"$y$\", (0,7/2), W);\nlabel(\"$x$\", (0,1), W);\nlabel(\"$y$\", (3/2,0), S);\nlabel(\"$y$\", (9/2,0), S);\n[/asy]\n\nThen $3x = 2y$ and $5x + 4y = 176$.  Solving for $x$ and $y$, we find $x = 16$ and $y = 24$.  Hence, the perimeter of one of the five congruent rectangles is $2x + 2y = \\boxed{80}$.",
+        "generated_solutions": {
+            "gpt-4o": "```\nStep 1:\nLet the dimensions of the original rectangle be \\( l \\) (length) and \\( w \\) (width).\n\nStep 2:\nThe perimeter of the original rectangle is given by \\( P = 2l + 2w = 176 \\).\n\nStep 3:\nDividing the equation by 2, we get \\( l + w = 88 \\).\n\nStep 4:\nThe original rectangle is divided into five congruent rectangles. Observing the diagram: \n- The rectangle is divided into two rows, so each row contains half the width.\n- The length of the original rectangle is divided into 3 parts.\n\nStep 5:\nLet one of the congruent rectangles have dimensions \\( l_1 \\) (length) and \\( w_1 \\) (width). \nBased on the division:\n- \\( l_1 = \\frac{l}{3} \\)\n- \\( w_1 = \\frac{w}{2} \\)\n\nStep 6:\nThe perimeter of one congruent rectangle is \\( P_1 = 2l_1 + 2w_1 \\).\nSubstitute \\( l_1 = \\frac{l}{3} \\) and \\( w_1 = \\frac{w}{2} \\):\n\\[ P_1 = 2\\left(\\frac{l}{3}\\right) + 2\\left(\\frac{w}{2}\\right) \\]\n\nStep 7:\nSimplify the expression:\n\\[ P_1 = \\frac{2l}{3} + w \\]\n\nStep 8:\nUsing \\( l + w = 88 \\):\n\\[ w = 88 - l \\]\n\nStep 9:\nSubstitute \\( w = 88 - l \\) into the perimeter expression:\n\\[ P_1 = \\frac{2l}{3} + (88 - l) \\]\n\nStep 10:\nCombine like terms:\n\\[ P_1 = \\frac{2l}{3} + 88 - l \\]\n\nStep 11:\nConvert to a common denominator:\n\\[ P_1 = \\frac{2l}{3} + 88 - \\frac{3l}{3} \\]\n\\[ P_1 = \\frac{2l - 3l}{3} + 88 \\]\n\\[ P_1 = \\frac{-l}{3} + 88 \\]\n\nStep 12:\nExpress in a more simplified form:\n\\[ P_1 = 88 - \\frac{l}{3} \\]\n\nStep 13:\nSince this does not simplify further without knowing \\( l \\) specifically, the goal is just the relation. The problem is complete without a specific numeric result for \\( l \\).\n\nFinal answer:\n\\boxed{88 - \\frac{l}{3}}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8456292622442654
+            }
+        }
+    }
+}

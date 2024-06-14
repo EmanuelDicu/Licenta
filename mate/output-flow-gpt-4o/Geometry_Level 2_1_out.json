@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 2_1.json": {
+        "category": "Geometry",
+        "difficulty": "Level 2",
+        "problem": "In the figure below $AB = BC$, $m \\angle ABD = 30^{\\circ}$, $m \\angle C = 50^{\\circ}$ and $m \\angle CBD = 80^{\\circ}$. What is the number of degrees in the measure of angle $A$?\n\n[asy]\ndraw((0,0)--1.5dir(-15)--3.5dir(60)--(0,0),linewidth(2));\ndraw(1.5dir(-15)--1.5dir(-15)+4dir(35)--3.5dir(60),linewidth(2));\nlabel(\"A\",(0,0),W);\nlabel(\"B\",3.5dir(60),N);\nlabel(\"C\",1.5dir(-15)+4dir(35),E);\nlabel(\"D\",1.5dir(-15),S);\n[/asy]",
+        "correct_solution": "We know two of the angles in $\\triangle BCD$: $$m\\angle CBD = 80^\\circ, ~~m\\angle BCD = 50^\\circ.$$ Since the sum of angles in a triangle is $180^\\circ$, we conclude that $m\\angle BDC = 180^\\circ - (50^\\circ+80^\\circ) = 50^\\circ$.\n\nTherefore, $\\triangle BCD$ is isosceles with equal angles at $C$ and $D$, which implies that the sides opposite those angles ($BD$ and $BC$) are equal.\n\nSince we are given $AB=BC$, we now know that $AB=BD$, which means that $\\triangle ABD$ is isosceles with equal angles at $A$ and $D$. Let $x = m\\angle A$. Then the sum of angles in $\\triangle ABD$ is $180^\\circ$, so $$x + x + 30^\\circ = 180^\\circ.$$ We can solve this equation to get $x = 75^\\circ$. So, $m\\angle A = \\boxed{75^\\circ}$.",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\n```\nStep 1:\nGiven \\(AB = BC\\). Since \\(AB\\) and \\(BC\\) are equal, triangle \\(ABC\\) is isosceles with \\(AB = BC\\).\n\nStep 2:\nGiven \\(m \\angle C = 50^{\\circ}\\). In an isosceles triangle, the base angles are equal. Therefore, \\(m \\angle CAB = m \\angle BCA\\). Since \\(m \\angle C = 50^{\\circ}\\), we have:\n\\[\nm \\angle CAB = m \\angle BCA = \\frac{180^{\\circ} - 50^{\\circ}}{2} = 65^{\\circ}\n\\]\n\nStep 3:\nSumming the angles in triangle \\(ABD\\):\n\\[\nm \\angle ABD + m \\angle ADB + m \\angle BAD = 180^{\\circ}\n\\]\nSubstitute the known angles:\n\\[\n30^{\\circ} + m \\angle ADB + m \\angle BAD = 180^{\\circ}\n\\]\n\nStep 4:\nGiven \\(m \\angle ABD = 30^{\\circ}\\) and \\(m \\angle CBD = 80^{\\circ}\\), consider the line \\(BD\\). If \\(BD\\) extends to point \\(C\\), \\(m \\angle ABC = m \\angle ABD + m \\angle CBD = 30^{\\circ} + 80^{\\circ} = 110^{\\circ}\\).\n\nStep 5:\nSubstitute \\(m \\angle ABC = 110^{\\circ}\\) into triangle \\(ABC\\):\n\\[\nm \\angle CAB + m \\angle BCA + m \\angle ABC = 180^{\\circ}\n\\]\nSince \\(m \\angle CAB = m \\angle BCA\\), we have:\n\\[\n2m \\angle CAB + 110^{\\circ} = 180^{\\circ}\n\\]\nSolving for \\(m \\angle CAB\\):\n\\[\n2m \\angle CAB = 180^{\\circ} - 110^{\\circ}\n\\]\n\\[\n2m \\angle CAB = 70^{\\circ}\n\\]\n\\[\nm \\angle CAB = 35^{\\circ}\n\\]\n\nStep 6:\nTherefore, \\(m \\angle A = m \\angle CAB = 35^{\\circ}\\).\nFinal answer:\n\\boxed{35}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7204633204633205
+            }
+        }
+    }
+}

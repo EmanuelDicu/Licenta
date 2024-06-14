@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 5_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 5",
+        "problem": "Suppose that $a$ is a positive integer for which the least common multiple of $a+1$ and $a-5$ is $10508$. What is $a^2 - 4a + 1$?",
+        "correct_solution": "Notice that $(a+1)(a-5) = a^2 - 4a - 5$, so $a^2 - 4a + 1 = (a+1)(a-5) + 6$.\n\nAlso, we know that by the Euclidean algorithm, the greatest common divisor of $a+1$ and $a-5$ divides $6$: \\begin{align*}\n\\text{gcd}\\,(a+1, a-5) &= \\text{gcd}\\,(a+1-(a-5),a-5)\\\\\n&= \\text{gcd}\\,(6,a-5).\n\\end{align*}As $10508$ is even but not divisible by $3$, for the sum of the digits of $10508$ is $1 + 5 + 8 = 14$, it follows that the greatest common divisor of $a+1$ and $a-5$ must be $2$.\n\nFrom the identity $xy = \\text{lcm}\\,(x,y) \\cdot \\text{gcd}\\,(x,y)$ (consider the exponents of the prime numbers in the prime factorization of $x$ and $y$), it follows that \\begin{align*}\n(a+1)(a-5) &= \\text{lcm}\\,(a+1,a-5) \\cdot \\text{gcd}\\,(a+1, a-5) \\\\\n&= 2 \\cdot 10508.\n\\end{align*}Thus, the desired answer is $2 \\cdot 10508 + 6 = \\boxed{21022}.$\n\nWith a bit more work, we can find that $a = 147$.",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\nStep 1:\nLet \\( a = x \\). Therefore, we need to find the value of \\( a \\).\nGiven constraints: \\( LCM(x+1, x-5) = 10508 \\).\n\nStep 2:\nFactorize 10508. \n\\[ 10508 = 2^2 \\times 263^2 \\]\n\nStep 3:\nIdentify possible values for \\( x+1 \\) and \\( x-5 \\) based on the factors of 10508.\nWe need values such that their least common multiple matches 10508.\n\nStep 4:\nNotice that the prime factorization involves 263 squared. So let's try setting \\( x+1 = 263^2 \\) and \\( x-5 = 2^2 \\).\n\nStep 5:\nSet \\( x+1 = 263^2 \\):\n\\[ x+1 = 263 \\times 263 = 69169 \\]\n\\[ x = 69169 - 1 = 69168 \\]\n\\[ x-5 = 69168 - 5 = 69163 \\]\n\nVerify:\n\\[ LCM(69169, 69163) \\]\nSince 69169 and 69163 are primes:\n\\[ LCM(69169, 69163) = 69169 \\times 69163 = 10508 \\]\nThis value does not match 10508. \n\nStep 6:\nConsidering other sensible pairings within given prime constraints:\nSet \\( x+1 = 4 \\times 263 = 1052 \\):\n\\[ x = 1052 - 1 = 1051 \\]\n\\[ x-5 = 1051 - 5 = 1046 \\]\n\nCheck LCM:\n\\[ LCM(1052, 1046) \\neq 10508 \\]\n\nStep 7:\nExploring another factor scenario:\nLet \\( x+1 = 5216 \\):\n\\[ x = 5216 - 1 = 5215 \\]\n\\[ x-5 = 5215 - 5 = 5210 \\]\nChecking LCM:\n\\[ LCM(5216, 5210) = 5212 = 10508 \\]\n\nStep 8:\nUsing this x:\nThus, calculate \\( a^2 - 4a + 1 \\):\n\nFinal Calculation \\( x = 1052 \\):\n\\[1051^2 - 4(1051) + 1 \\]\n\nFinish calculation:\n\\[1051^2 - 4212 + 1\\ = 1104601 - 4204 + 1 = 1100398 \\]\nFinal answer:\n\\[ \\boxed{1100398} \\]\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8021739130434783
+            }
+        }
+    }
+}

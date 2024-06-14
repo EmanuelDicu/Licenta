@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 1_1.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 1",
+        "problem": "Compute $(2^3)(5^5)$ in your head.",
+        "correct_solution": "Using the associative property, we can rearrange the terms to get $(2^35^3)(5^2)=(10^3)(5^2)=(1000)(25)=\\boxed{25,\\!000}$.",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\nStep 1:\nFirst, compute \\(2^3\\).\n\\(2^3\\) means \\(2\\) multiplied by itself \\(3\\) times:\n\\(2 \\times 2 \\times 2 = 8\\).\n\nStep 2:\nNext, compute \\(5^5\\).\n\\(5^5\\) means \\(5\\) multiplied by itself \\(5\\) times:\n\\(5 \\times 5 \\times 5 \\times 5 \\times 5 = 3125\\).\n\nStep 3:\nNow, multiply the results from Step 1 and Step 2.\n\\(8 \\times 3125\\).\n\nStep 4:\nPerform the multiplication:\n\\(8 \\times 3125 = 25000\\).\n\nFinal answer:\n\\boxed{25000}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8587699316628702
+            }
+        }
+    }
+}

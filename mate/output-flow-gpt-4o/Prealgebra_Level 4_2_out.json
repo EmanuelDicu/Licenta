@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 4_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 4",
+        "problem": "Ed takes five 100-point tests in his algebra class. He scores 87, 85 and 87 points on the first three tests. If the scores of his last two tests differ by three points and he has a $90\\%$ average on his five tests, what was his highest test score?",
+        "correct_solution": "Instead of adding up scores and figuring out the new averages, a quicker way (useful for the countdown round) is as follows:\n\nSince the average is 90, we first calculate how many points below 90 he already is: he's scored 87, 85, and 87, meaning that he is 3, 5, and 3 points below 90 respectively, making for a total of 11 points below.  We then know that his remaining two tests must be a combined 11 points above 90, and since they differ by 3 points, we know that one test is 4 above 90, and the other is 7 above 90, meaning his highest score was $\\boxed{97}$.",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\nStep 1:\nEd takes five 100-point tests. Let the scores of the last two tests be \\( x \\) and \\( y \\).\n\nStep 2:\nEd scores 87, 85, and 87 points on the first three tests. So, the sum of the first three tests is:\n\\[ 87 + 85 + 87 = 259 \\]\n\nStep 3:\nThe scores of Ed's last two tests differ by three points. This can be written as:\n\\[ x - y = 3 \\]\n\nStep 4:\nEd has a 90% average on his five tests. To find the total score needed for a 90% average over five tests:\n\\[ 0.9 \\times 500 = 450 \\]\nSo, the sum of all five test scores must be 450 points.\n\nStep 5:\nSince the sum of the first three test scores is 259, the sum of the scores for the last two tests is:\n\\[ 450 - 259 = 191 \\]\n\nStep 6:\nWe have two equations now:\n\\[ x + y = 191 \\]\n\\[ x - y = 3 \\]\n\nStep 7:\nSolve the system of equations. Add the equations \\( x + y = 191 \\) and \\( x - y = 3 \\):\n\\[ (x + y) + (x - y) = 191 + 3 \\]\n\\[ 2x = 194 \\]\n\\[ x = 97 \\]\n\nStep 8:\nSubstitute \\( x = 97 \\) back into the equation \\( x + y = 191 \\):\n\\[ 97 + y = 191 \\]\n\\[ y = 94 \\]\n\nStep 9:\nTherefore, Ed's scores for the last two tests are 97 and 94. The highest score among these is:\n\\[ \\boxed{97} \\]\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7624454148471616
+            }
+        }
+    }
+}

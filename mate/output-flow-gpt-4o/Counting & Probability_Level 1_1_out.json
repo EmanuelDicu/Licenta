@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 1_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 1",
+        "problem": "Compute $\\dbinom{15}{2}$.",
+        "correct_solution": "\\begin{align*}\n\\dbinom{15}{2} &= \\dfrac{15!}{13!2!} \\\\\n&= \\dfrac{15\\times 14}{2\\times 1} \\\\\n&= 15 \\times \\dfrac{14}{2} \\\\\n&= 15 \\times 7 \\\\\n&= \\boxed{105}.\n\\end{align*}",
+        "generated_solutions": {
+            "gpt-4o": "```Solution:\nStep 1:\nThe problem involves computing a binomial coefficient, which is denoted as $\\dbinom{15}{2}$.\nStep 2:\nThe binomial coefficient $\\dbinom{n}{k}$ is defined as $\\frac{n!}{k!(n-k)!}$, where $n$ is the total number of items, and $k$ is the number of items chosen.\nStep 3:\nIn this case, $n = 15$ and $k = 2$.\nStep 4:\nWe will use the formula $\\dbinom{15}{2} = \\frac{15!}{2!(15-2)!}$.\nStep 5:\nSimplifying the factorials, we get $\\dbinom{15}{2} = \\frac{15!}{2! \\cdot 13!}$.\nStep 6:\nNotice that $15! = 15 \\times 14 \\times 13!$, so the $13!$ terms cancel out in the numerator and the denominator:\n$\\frac{15 \\times 14 \\times 13!}{2! \\cdot 13!} = \\frac{15 \\times 14}{2!}$.\nStep 7:\nSince $2! = 2$, we substitute it into the equation:\n$\\frac{15 \\times 14}{2} = \\frac{210}{2} = 105$.\nStep 8:\nTherefore, $\\dbinom{15}{2} = 105$.\nFinal answer:\n\\boxed{105}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8546511627906976
+            }
+        }
+    }
+}

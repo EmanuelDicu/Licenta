@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 1_1.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 1",
+        "problem": "Let $a,$ $b,$ and $c$ be the roots of $x^3 - 3x - 5 = 0.$  Find $abc.$",
+        "correct_solution": "By Vieta's formulas, $abc = \\boxed{5}.$",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\nStep 1:\nGiven the polynomial equation \\\\(x^3 - 3x - 5 = 0\\\\), identify the roots as \\\\(a, b,\\\\) and \\\\(c\\\\).\n\nStep 2:\nAccording to Vieta's formulas, for a cubic polynomial equation \\\\(x^3 + px^2 + qx + r = 0\\\\) with roots \\\\(a, b,\\\\) and \\\\(c\\\\), the product of the roots taken one at a time \\\\(abc\\\\) equals \\\\(-r\\\\).\n\nStep 3:\nIn the given polynomial, \\\\(x^3 - 3x - 5 = 0\\\\), there is no \\\\(x^2\\\\) term, so the coefficient of \\\\(x^2\\\\) is 0.\n\nStep 4:\nRewrite the polynomial as \\\\(x^3 + 0x^2 - 3x - 5 = 0\\\\).\n\nStep 5:\nIdentify the constant term \\\\(r = -5\\\\).\n\nStep 6:\nUsing Vieta's formulas, for the product of the roots \\\\(abc = -r\\\\).\n\nStep 7:\nSubstitute \\\\(r = -5\\\\) into the formula: \\\\(abc = -(-5) = 5\\\\).\n\nFinal answer:\n\\boxed{5}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.953519256308101
+            }
+        }
+    }
+}

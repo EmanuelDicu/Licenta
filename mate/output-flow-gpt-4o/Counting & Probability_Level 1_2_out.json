@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 1_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 1",
+        "problem": "Ben flips a fair nickel four times. What is the probability that Ben flips Head, Tail, Head, Tail, in that order? Express your answer as a common fraction.",
+        "correct_solution": "Since any given flip has equal probability of $\\frac{1}{2}$ of being a Head or a Tail, and all outcomes are equally likely, the precise sequence given is equal to $\\frac{1}{2^4} = \\boxed{\\frac{1}{16}}$.",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\nStep 1:\nA fair nickel has two possible outcomes for each flip: Head (H) or Tail (T).\n\nStep 2:\nThe probability of getting either Head or Tail for a single flip is \\(\\frac{1}{2}\\).\n\nStep 3:\nThe desired sequence of outcomes is Head (H), Tail (T), Head (H), Tail (T).\n\nStep 4:\nThe probability of flipping a Head on the first flip is \\(\\frac{1}{2}\\).\n\nStep 5:\nThe probability of flipping a Tail on the second flip is \\(\\frac{1}{2}\\).\n\nStep 6:\nThe probability of flipping a Head on the third flip is \\(\\frac{1}{2}\\).\n\nStep 7:\nThe probability of flipping a Tail on the fourth flip is \\(\\frac{1}{2}\\).\n\nStep 8:\nTo find the probability of the sequence Head, Tail, Head, Tail, we multiply the probabilities of each individual flip: \n\\[\n\\frac{1}{2} \\times \\frac{1}{2} \\times \\frac{1}{2} \\times \\frac{1}{2} = \\frac{1}{16}\n\\]\n\nFinal answer:\n\\boxed{\\frac{1}{16}}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8106235565819861
+            }
+        }
+    }
+}

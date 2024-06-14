@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 3_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 3",
+        "problem": "Find the complex number $z$ so that $z + |z| = 2 + 8i.$",
+        "correct_solution": "Let $z = a + bi.$  Then\n\\[a + bi + \\sqrt{a^2 + b^2} = 2 + 8i.\\]Equating the imaginary parts, we get $b = 8.$  Equating the real parts, we get $a + \\sqrt{a^2 + 64} = 2.$  Then\n\\[\\sqrt{a^2 + 64} = 2 - a.\\]Squaring both sides, we get $a^2 + 64 = (2 - a)^2 = a^2 - 4a + 4.$  Solving, we find $a = -15.$  Therefore, $z = \\boxed{-15 + 8i}.$",
+        "generated_solutions": {
+            "gpt-4o": "Solution:\nStep 1:\nLet \\( z = x + yi \\), where \\( x \\) and \\( y \\) are real numbers. Then, the magnitude (absolute value) of \\( z \\) is \\( |z| = \\sqrt{x^2 + y^2} \\).\n\nStep 2:\nBased on the given equation \\( z + |z| = 2 + 8i \\), we substitute \\( z \\) and \\( |z| \\):\n\\[ (x + yi) + \\sqrt{x^2 + y^2} = 2 + 8i. \\]\n\nStep 3:\nSeparate the real and imaginary parts in the equation:\n\\[ (x + \\sqrt{x^2 + y^2}) + yi = 2 + 8i. \\]\nThis gives us two equations:\n\\[ x + \\sqrt{x^2 + y^2} = 2 \\quad \\text{(real part)}, \\]\n\\[ y = 8 \\quad \\text{(imaginary part)}. \\]\n\nStep 4:\nFrom \\( y = 8 \\), we substitute \\( y \\) into the equation for the real part:\n\\[ x + \\sqrt{x^2 + 8^2} = 2. \\]\nThis simplifies to:\n\\[ x + \\sqrt{x^2 + 64} = 2. \\]\n\nStep 5:\nIsolate the square root term:\n\\[ \\sqrt{x^2 + 64} = 2 - x. \\]\n\nStep 6:\nSquare both sides to eliminate the square root:\n\\[ x^2 + 64 = (2 - x)^2. \\]\nExpand and simplify:\n\\[ x^2 + 64 = 4 - 4x + x^2. \\]\nSubtract \\( x^2 \\) from both sides:\n\\[ 64 = 4 - 4x. \\]\nSolve for \\( x \\):\n\\[ 64 - 4 = -4x, \\]\n\\[ 60 = -4x, \\]\n\\[ x = -15. \\]\n\nStep 7:\nThus, we find the complex number \\( z \\) to be:\n\\[ z = -15 + 8i. \\]\n\nFinal answer:\n\\boxed{-15 + 8i}"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7727666955767563
+            }
+        }
+    }
+}

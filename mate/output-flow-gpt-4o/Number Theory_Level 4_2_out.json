@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 4_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 4",
+        "problem": "What integer $n$ satisfies $0\\le n<18$ and $$n\\equiv -11213141\\pmod{18}~?$$",
+        "correct_solution": "An integer is divisible by $18$ if and only if the sum of its digits is divisible by $9$ and the last digit is even (meaning it is divisible by both 9 and 2).  The sum of the digits of $-11213141$ is 14.  Since $-11213141$ is negative, this number is 5 $\\textit{less than}$ a multiple of 9.  The number is 4 $\\textit{more than}$ a multiple of 9.  Subtracting 4 gives  \\[-11213141 = -11213145+4.\\]Since $-11213145$ has a digit sum of 18, this number is a multiple of 9.  However this is not a multiple of 18 so we need to subtract 9 again: \\[-11213141 = -11213154+13.\\]Now the number $-11213154$ is a multiple of 18, so the answer is $\\boxed{13}$. $$-11213141\\equiv 13\\pmod {18}.$$",
+        "generated_solutions": {
+            "gpt-4o": "Solution:\nStep 1:\nFirst, we need to simplify the expression \\( -11213141 \\pmod{18} \\). We will start by finding \\( 11213141 \\pmod{18} \\).\n\nStep 2:\nCalculate the remainder when \\( 11213141 \\) is divided by 18. This can be done by performing the division and taking the remainder:\n\\[ 11213141 \\div 18 \\approx 622952.277777 \\]\n\\[ 11213141 - 18 \\times 622952 = 11213141 - 11213136 = 5 \\]\n\nSo, \\( 11213141 \\equiv 5 \\pmod{18} \\).\n\nStep 3:\nNow, we need to consider the negative of our result, since the original expression was \\( -11213141 \\pmod{18} \\). We take:\n\\[ -11213141 \\equiv -5 \\pmod{18} \\]\n\nStep 4:\nTo find a positive equivalent for \\( -5 \\) within the range \\( 0 \\le n < 18 \\), we add 18 to -5:\n\\[ -5 + 18 = 13 \\]\n\nStep 5:\nTherefore, the integer \\( n \\) that satisfies \\( 0 \\le n < 18 \\) and \\( n \\equiv -11213141 \\pmod{18} \\) is 13.\n\nFinal answer:\n\\boxed{13}"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7470997679814385
+            }
+        }
+    }
+}

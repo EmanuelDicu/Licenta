@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 3_3.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 3",
+        "problem": "In the diagram, the area of rectangle $ABCD$ is $40$. What is the area of $MBCN$? [asy]\nimport olympiad;\npair a = (0, 0); pair m = (4, 0); pair b = (8, 0); pair c = (8, -5); pair n = (6, -5); pair d = (0, -5);\ndraw(m--n);\ndraw(a--b--c--d--cycle);\nlabel(\"$A$\", a, NW); label(\"$B$\", b, NE); label(\"$C$\", c, SE); label(\"$D$\", d, SW);\nlabel(\"$M$\", m, N); label(\"$N$\", n, S);\nlabel(\"$4$\", midpoint(a--m), N); label(\"$4$\", midpoint(m--b), N);\nlabel(\"$2$\", midpoint(n--c), S);\n[/asy]",
+        "correct_solution": "Since the area of rectangle $ABCD$ is 40 and $AB=8$, then $BC=5$.\n\nTherefore, $MBCN$ is a trapezoid with height 5 and parallel bases of lengths 4 and 2, so has area $$\\frac{1}{2}(5)(4+2)=\\boxed{15}.$$",
+        "generated_solutions": {
+            "gpt-4o": "```\nStep 1:\nThe area of the rectangle \\(ABCD\\) is given as 40 square units.\n\nStep 2:\nThe length of segment \\(AM\\) is 4 units, and the length of segment \\(MB\\) is also 4 units, making the total length of \\(AB\\) equal to 4 + 4 = 8 units.\n\nStep 3:\nLet\u2019s denote the height of the rectangle \\(ABCD\\) as \\(h\\).\nThe area of a rectangle is calculated as length \\(\\times\\) height.\nSince the area is 40 square units and the length \\(AB = 8\\) units, we have:\n\\[ 8 \\times h = 40 \\]\n\nStep 4:\nSolving for \\(h\\):\n\\[ h = \\frac{40}{8} = 5 \\]\nSo, the height \\(h\\) (which is the length of \\(AD\\)) is 5 units.\n\nStep 5:\nNow, consider the quadrilateral \\(MBCN\\). Its base \\(MB = 4\\) units.\n\nStep 6:\nThe height of \\(MBCN\\) is the height of the rectangle minus the height of the small rectangle \\(ANDM\\) formed by segments \\(AM\\) and \\(ND\\) since \\(ND = 2\\) units.\n\\[ \\text{Height } = 5 - 2 = 3 \\text{ units} \\]\n\nStep 7:\nThus, the area of \\(MBCN\\) is calculated as:\n\\[ \\text{Area} = \\text{base} \\times \\text{height} = 4 \\times 3 = 12 \\text{ square units} \\]\n\nFinal answer:\n\\boxed{12}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8607714016933208
+            }
+        }
+    }
+}

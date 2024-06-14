@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 3_2.json": {
+        "category": "Geometry",
+        "difficulty": "Level 3",
+        "problem": "We have a triangle $\\triangle ABC$ and a point $K$ on segment $\\overline{BC}$ such that $AK$ is an altitude to $\\triangle ABC$. If $AK = 6,$ $BK = 8$, and $CK = 6,$ then what is the perimeter of the triangle?",
+        "correct_solution": "Time to draw! [asy]\npair A, B, C, K;\nA = (0, 6);\nB = (-8, 0);\nC = (6, 0);\nK = (0, 0);\ndraw(A--B--C--cycle);\ndraw(A--K);\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$K$\", K, S);\nlabel(\"6\", A--K, E);\nlabel(\"8\", B--K, S);\nlabel(\"6\", C--K, S);\ndraw(rightanglemark(A,K,B,10));\n[/asy] To find the perimeter, we need $AB$ and $AC.$ We recognize $\\triangle ABK$ as a $3:4:5$ triangle and and $\\triangle ACK$ as a $45^\\circ-45^\\circ-90^\\circ$ triangle, which means that $AB = 10$ and $AC = 6\\sqrt{2}.$ As for $BC,$ we have $BC = BK + CK = 14.$ Therefore, our answer is $AB + AC + BC = \\boxed{24 + 6\\sqrt{2}}.$",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\n```\nStep 1:\nThere is a triangle $\\triangle ABC$, and point $K$ is on segment $\\overline{BC}$ such that $AK$ is an altitude to $\\triangle ABC$.\nStep 2:\nGiven that $AK = 6$ and is an altitude, it means $AK$ is perpendicular to $\\overline{BC}$.\nStep 3:\nPoint $K$ divides $\\overline{BC}$ into segments $BK$ and $CK$, where $BK = 8$ and $CK = 6$.\nStep 4:\nTo find the length of $BC$, we sum $BK$ and $CK$: $BC = BK + CK = 8 + 6 = 14$.\nStep 5:\nTo find the lengths of $AB$ and $AC$, we use the Pythagorean theorem for the right triangles $\\triangle ABK$ and $\\triangle ACK$.\nStep 6:\nIn $\\triangle ABK$, applying the Pythagorean theorem:\n$AB^2 = AK^2 + BK^2$\n$AB^2 = 6^2 + 8^2$\n$AB^2 = 36 + 64$\n$AB^2 = 100$\n$AB = \\sqrt{100} = 10$\nStep 7:\nIn $\\triangle ACK$, applying the Pythagorean theorem:\n$AC^2 = AK^2 + CK^2$\n$AC^2 = 6^2 + 6^2$\n$AC^2 = 36 + 36$\n$AC^2 = 72$\n$AC = \\sqrt{72} = 6\\sqrt{2}$\nStep 8:\nThe perimeter of $\\triangle ABC$ is calculated by summing the lengths of $AB$, $AC$, and $BC$.\nStep 9:\nAdd the lengths: $AB + AC + BC = 10 + 6\\sqrt{2} + 14$.\nFinal answer:\n\\boxed{24 + 6\\sqrt{2}}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.76497277676951
+            }
+        }
+    }
+}

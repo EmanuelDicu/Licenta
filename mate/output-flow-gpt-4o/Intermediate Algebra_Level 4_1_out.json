@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 4_1.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 4",
+        "problem": "The equation of the hyperbola shown below can be written as\n\\[\\frac{(y - k)^2}{a^2} - \\frac{(x - h)^2}{b^2} = 1.\\]Find $h + k + a + b.$\n\n[asy]\nunitsize(0.3 cm);\n\nreal upperhyper (real x) {\n  return (2*sqrt((x - 6)^2/16 + 1) - 5);\n}\n\nreal lowerhyper (real x) {\n  return (-2*sqrt((x - 6)^2/16 + 1) - 5);\n}\n\nint i, n = 10;\n\nfor (i = -n; i <= n; ++i) {\n  draw((i,-n)--(i,n),gray(0.7));\n  draw((-n,i)--(n,i),gray(0.7));\n}\n\ndraw((0,-n)--(0,n));\ndraw((-n,0)--(n,0));\n\ndraw(graph(upperhyper,-10,10),red);\ndraw(graph(lowerhyper,-3,10),red);\ndraw(extension((-10,-10),(10,-10),(6,-5),(6,-5) + (4,2))--extension((10,10),(10,-10),(6,-5),(6,-5) + (4,2)),dashed);\ndraw(extension((-10,-10),(-10,10),(6,-5),(6,-5) + (4,-2))--extension((10,10),(10,-10),(6,-5),(6,-5) + (4,-2)),dashed);\n\ndot((6,-5));\n[/asy]",
+        "correct_solution": "The center of the hyperbola is $(6,-5).$  The distance from the center to a vertex is $a = 2.$  The slopes of the asymptotes are $\\pm \\frac{1}{2},$ so $b = 4.$  Thus, $h + k + a + b = 6 + (-5) + 2 + 4 = \\boxed{7}.$",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\nStep 1:\nObserve the given hyperbola equation:\n\\[\\frac{(y - k)^2}{a^2} - \\frac{(x - h)^2}{b^2} = 1.\\]\n\nStep 2:\nIdentify the center of the hyperbola \\((h, k)\\). From the graph, the center \\((h, k)\\) is clearly marked at \\((6, -5)\\).\n\nStep 3:\nFrom the center, we know \\(h = 6\\) and \\(k = -5\\).\n\nStep 4:\nObserve the equation, the terms \\(\\frac{(y - k)^2}{a^2}\\) and \\(\\frac{(x - h)^2}{b^2}\\) describe the vertical and horizontal extents of the hyperbola respectively. \n\nStep 5:\nFrom the graph, we notice the distance from the center to the vertex along the y-axis (distance \\(a\\)) is 2. Therefore, \\(a = 2\\).\n\nStep 6:\nThe distance from the center to a vertex along the x-axis (distance \\(b\\)) can be seen from the graph. The hyperbola's asymptotes help determine this. The slope of the asymptotes gives \\(b\\), and it can be noted that the difference in x-coordinates (10 to 6) is 4 units. Hence \\(b = 4\\), where the slope matches the hyperbola coefficients.\n\nStep 7:\nSum the values obtained: \\(h + k + a + b\\):\n\\[6 + (-5) + 2 + 4 = 7.\\]\n\nFinal answer:\n\\boxed{7}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8306976744186046
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 4_3.json": {
+        "category": "Algebra",
+        "difficulty": "Level 4",
+        "problem": "The product of $3t^2+5t+a$ and $4t^2+bt-2$ is $12t^4+26t^3-8t^2-16t+6$. What is $a+b$?",
+        "correct_solution": "The constant term of the product of two polynomials is just the product of the two constant terms. Therefore we know that $6=-2a$, so $a=-3$. We now consider the linear term of the product of our polynomials. It's given by $-16t=(5t\\cdot-2)+a\\cdot bt\\Longrightarrow-16t=-10t+(-3)bt\\Longrightarrow b=2$. Therefore our answer is $a+b=\\boxed{-1}$.",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\n```\nStep 1:\nIdentify the given polynomials and their product.\n$P(t) = 3t^2 + 5t + a$\n$Q(t) = 4t^2 + bt - 2$\n$P(t) \\cdot Q(t) = 12t^4 + 26t^3 - 8t^2 - 16t + 6$\n\nStep 2:\nMultiply the polynomials $P(t)$ and $Q(t)$ term by term and group similar terms.\n\n$P(t) \\cdot Q(t)$:\n$(3t^2)(4t^2) + (3t^2)(bt) + (3t^2)(-2) + (5t)(4t^2) + (5t)(bt) + (5t)(-2) + (a)(4t^2) + (a)(bt) + (a)(-2)$\n\nStep 3:\nCombine like terms.\n$12t^4 + (3b+20)t^3 + (4a + 5b - 6)t^2 + (-10 + 2a)t - 2a$\n\nStep 4:\nSet up equations by equating coefficients of similar powers of $t$ in the expanded product to the given polynomial.\n$12t^4 + (3b+20)t^3 + (4a + 5b - 6)t^2 + (-10 + 2a)t - 2a = 12t^4 + 26t^3 - 8t^2 - 16t + 6$\n\nStep 5:\nMatch and solve for $a$ and $b$:\nFor $t^3$ term: $3b + 20 = 26$\n$3b = 6$\n$b = 2$\n\nFor $t^2$ term: $4a + 5b - 6 = -8$\n$4a + 5(2) - 6 = -8$\n$4a + 10 - 6 = -8$\n$4a + 4 = -8$\n$4a = -12$\n$a = -3$\n\nStep 6:\nCalculate $a + b$:\n$a + b = -3 + 2 = -1$\n\nFinal answer:\n\\boxed{-1}"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8177136972193615
+            }
+        }
+    }
+}

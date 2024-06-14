@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 1_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 1",
+        "problem": "If $PQ$ is a straight line, what is the value of $x$? [asy]\n\nsize(150);\n\ndraw((-1,0)--(1,0));\n\ndraw((-0.809,.588)--(0,0)--(0.809,.588));\n\ndraw((-.309,.951)--(0,0)--(.309,.951));\n\nlabel(\"$P$\",(-1,0),W);\n\nlabel(\"$Q$\",(1,0),E);\n\nlabel(\"$x^\\circ$\",(0.5,0),NW);\n\nlabel(\"$x^\\circ$\",(-0.5,0),NE);\n\nlabel(\"$x^\\circ$\",(0,0.4));\n\nlabel(\"$x^\\circ$\",(0.27,0.2),N);\n\nlabel(\"$x^\\circ$\",(-0.27,0.2),N);\n\n[/asy]",
+        "correct_solution": "Since $PQ$ is a straight line, then $x^\\circ+x^\\circ+x^\\circ+x^\\circ+x^\\circ = 180^\\circ$ or $5x=180$ or $x=\\boxed{36}$.",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\nStep 1:\nThe diagram shows the line $PQ$ as a straight line.\n\nStep 2:\nSince $PQ$ is a straight line, the angles along this line must sum to $180^\\circ$.\n\nStep 3:\nThere are six angles labeled $x^\\circ$ along the line $PQ$.\n\nStep 4:\nSince all these angles are equal and they must add up to $180^\\circ$, we set up the equation:\n\\[ 6x = 180^\\circ \\]\n\nStep 5:\nTo find the value of $x$, divide both sides of the equation by 6:\n\\[ x = \\frac{180^\\circ}{6} = 30^\\circ \\]\n\nFinal answer:\n\\boxed{30}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8174603174603174
+            }
+        }
+    }
+}

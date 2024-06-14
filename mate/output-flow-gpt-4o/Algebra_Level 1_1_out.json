@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 1_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 1",
+        "problem": "If $3m+4n=47$, and $m+n=15$, what is $m$?",
+        "correct_solution": "Because the question only asks for the value of $m$, we can begin by eliminating $n$. In order to do this, we multiply the second equation by 4, giving us a system of two equations where both coefficients of $n$ are 4: \\begin{align*} 3m+4n=47\n\\\\ 4m+4n=60\n\\end{align*}From here, we can just subtract the second equation from the first. This gives us $(3m+4n)-(4m+4n)=47-60$, which simplifies to $-m=-13$ or $m=\\boxed{13}$.",
+        "generated_solutions": {
+            "gpt-4o": "```\nStep 1:\nWe are given the system of linear equations:\n\\[\n3m + 4n = 47\n\\]\n\\[\nm + n = 15\n\\]\n\nStep 2:\nFrom the second equation, solve for \\( n \\) in terms of \\( m \\):\n\\[\nn = 15 - m\n\\]\n\nStep 3:\nSubstitute \\( n = 15 - m \\) into the first equation:\n\\[\n3m + 4(15 - m) = 47\n\\]\n\nStep 4:\nDistribute the 4 in the substituted equation:\n\\[\n3m + 60 - 4m = 47\n\\]\n\nStep 5:\nCombine like terms:\n\\[\n-m + 60 = 47\n\\]\n\nStep 6:\nIsolate \\( m \\) by subtracting 60 from both sides:\n\\[\n-m = 47 - 60\n\\]\n\\[\n-m = -13\n\\]\n\nStep 7:\nSolve for \\( m \\) by multiplying both sides by -1:\n\\[\nm = 13\n\\]\n\nFinal answer:\n\\boxed{13}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7663865546218488
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 4_2.json": {
+        "category": "Algebra",
+        "difficulty": "Level 4",
+        "problem": "Suppose that $\\Join$ is an operation defined by $x \\Join y = (x+2)(y-3)$. What is $((t) \\Join (t+2)) - ((t+1) \\Join (t+1))$?",
+        "correct_solution": "First, we evaluate the first pair of parentheses:\n\n\\begin{align*}\n(t) \\Join (t+2) &= (t + 2)((t+2) - 3) \\\\\n&= (t+2)(t - 1)\\\\\n&= t^2 + 2t - t - 2\\\\\n&= t^2 + t - 2.\n\\end{align*}Next, we evaluate the second pair of parentheses:\n\n\\begin{align*}\n(t + 1) \\Join (t+1) &= ((t+1) + 2)((t+1) - 3) \\\\\n&= (t+3)(t - 2) \\\\\n&= t^2 + 3t - 2t - 6 \\\\\n&= t^2 + t - 6.\n\\end{align*}Subtracting the two expressions and noting that certain terms cancel, we obtain $(t^2 + t - 2) - (t^2 + t - 6) = -2 - (-6) = \\boxed{4}$.",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\nStep 1:\nThe operation $\\Join$ is defined by $x \\Join y = (x+2)(y-3)$.\n\nStep 2:\nTo find $t \\Join (t+2)$, substitute $x = t$ and $y = t+2$ into the operation definition:\n$t \\Join (t+2) = (t+2)((t+2) - 3)$.\n\nStep 3:\nSimplify the expression:\n$t \\Join (t+2) = (t+2)(t-1)$.\n\nStep 4:\nTo find $(t+1) \\Join (t+1)$, substitute $x = t+1$ and $y = t+1$ into the operation definition:\n$(t+1) \\Join (t+1) = ((t+1)+2)((t+1)-3)$.\n\nStep 5:\nSimplify the expression:\n$(t+1) \\Join (t+1) = (t+3)(t-2)$.\n\nStep 6:\nNow calculate the desired expression: $((t) \\Join (t+2)) - ((t+1) \\Join (t+1))$.\nThis gives us $(t+2)(t-1) - (t+3)(t-2)$.\n\nStep 7:\nExpand both products:\n$(t+2)(t-1) = t^2 + t - 2$,\n$(t+3)(t-2) = t^2 + t - 6$.\n\nStep 8:\nSubtract the expanded forms:\n$(t^2 + t - 2) - (t^2 + t - 6) = t^2 + t - 2 - t^2 - t + 6$.\n\nStep 9:\nCombine like terms:\n$t^2 - t^2 + t - t + 6 - 2 = 6 - 2 = 4$.\n\nFinal answer:\n\\boxed{4}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7343578485181119
+            }
+        }
+    }
+}

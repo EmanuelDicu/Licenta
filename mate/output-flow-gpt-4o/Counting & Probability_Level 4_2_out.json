@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 4_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 4",
+        "problem": "A 6-sided die is weighted so that the probability of any number being rolled is proportional to the value of the roll.  (So, for example, the probability of a 2 being rolled is twice that of a 1 being rolled.)  What is the expected value of a roll of this weighted die?  Express your answer as a common fraction.",
+        "correct_solution": "Let $x$ be the probability that a 1 is rolled.  Then the probability that a 2 is rolled is $2x$, the probability that a 3 is rolled is $3x$, and so on.  Since the sum of all these probabilities must be 1, we have that $x + 2x + \\cdots + 6x = 1$, which means that $21x = 1$, so $x = \\frac{1}{21}$.  Therefore \\[ E = \\frac{1}{21}(1) + \\frac{2}{21}(2) + \\cdots + \\frac{6}{21}(6) = \\frac{1^2 + 2^2 + \\cdots 6^2}{21} = \\boxed{\\frac{13}{3}}. \\]",
+        "generated_solutions": {
+            "gpt-4o": "```\nStep 1:\nDefine the weights for each face of the die. Since the probability is proportional to the value of the face, let the probability of rolling a 1 be \\( p \\). Then the probabilities for each face are: \\( p, 2p, 3p, 4p, 5p, 6p \\).\n\nStep 2:\nThe sum of all probabilities must equal 1. Therefore:\n\\[ p + 2p + 3p + 4p + 5p + 6p = 1 \\]\n\nStep 3:\nSimplify the equation:\n\\[ 21p = 1 \\]\n\\[ p = \\frac{1}{21} \\]\n\nStep 4:\nDetermine the probability for each face:\n\\[ P(1) = \\frac{1}{21} \\]\n\\[ P(2) = \\frac{2}{21} \\]\n\\[ P(3) = \\frac{3}{21} \\]\n\\[ P(4) = \\frac{4}{21} \\]\n\\[ P(5) = \\frac{5}{21} \\]\n\\[ P(6) = \\frac{6}{21} \\]\n\nStep 5:\nThe expected value \\( E \\) of a roll is calculated by multiplying each value by its probability and summing the results:\n\\[ E = 1 \\cdot P(1) + 2 \\cdot P(2) + 3 \\cdot P(3) + 4 \\cdot P(4) + 5 \\cdot P(5) + 6 \\cdot P(6) \\]\n\nStep 6:\nSubstitute the probabilities:\n\\[ E = 1 \\cdot \\frac{1}{21} + 2 \\cdot \\frac{2}{21} + 3 \\cdot \\frac{3}{21} + 4 \\cdot \\frac{4}{21} + 5 \\cdot \\frac{5}{21} + 6 \\cdot \\frac{6}{21} \\]\n\nStep 7:\nCalculate each term:\n\\[ E = \\frac{1}{21} + \\frac{4}{21} + \\frac{9}{21} + \\frac{16}{21} + \\frac{25}{21} + \\frac{36}{21} \\]\n\nStep 8:\nSum the terms:\n\\[ E = \\frac{1 + 4 + 9 + 16 + 25 + 36}{21} \\]\n\\[ E = \\frac{91}{21} \\]\n\nStep 9:\nSimplify the fraction:\n\\[ E = \\frac{91}{21} = \\frac{13}{3} \\]\n\nFinal answer:\n\\boxed{\\frac{13}{3}}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7716593245227606
+            }
+        }
+    }
+}

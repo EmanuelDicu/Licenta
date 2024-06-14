@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 3_1.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 3",
+        "problem": "Find the eighth term of the sequence $1440, 1716, 1848, \\ldots$, whose terms are formed by multiplying the corresponding terms of two arithmetic sequences.",
+        "correct_solution": "If $a_n =an + b$ and $b_n = cn + d$ are two arithmetic sequences, then their term-wise product takes the form \\[a_nb_n = (an+b)(cn+d) = An^2 + Bn + C,\\]where $A, B, C$ are constants. Therefore, some sequence $x_n = An^2 + Bn + C$ has $x_0 = 1440,$ $x_1 = 1716,$ and $x_2 = 1848.$ Then we have the equations \\[\\begin{aligned} C &= 1440, \\\\ A+B+C&=1716,\\\\  4A+2B+C&=1848. \\end{aligned}\\]Subtracting $C=1440$ from the second and third equations, we have $A+B=276$ and $4A+2B=408,$ or $2A+B=204.$ Then \\[A = (2A+B) - (A+B) = 204 - 276 = -72,\\]and so $B = 276-A=348.$ We conclude that the given sequence has the general formula \\[x_n = -72n^2 + 348n + 1440.\\]Then the eighth term is \\[\\begin{aligned} x_7 &= -72 \\cdot 7^2 + 348 \\cdot 7 + 1440 = \\boxed{348}. \\end{aligned}\\]",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\nStep 1:\nLet the first arithmetic sequence be \\(a_n\\) and the second arithmetic sequence be \\(b_n\\). Therefore, \\(a_1 \\cdot b_1 = 1440\\), \\(a_2 \\cdot b_2 = 1716\\), and \\(a_3 \\cdot b_3 = 1848\\).\n\nStep 2:\nAn arithmetic sequence can be expressed as \\(a_n = a + (n-1)d\\), where \\(a\\) is the first term and \\(d\\) is the common difference. Similarly, for the second sequence \\(b_n = b + (n-1)e\\), where \\(b\\) is the first term and \\(e\\) is the common difference.\n\nStep 3:\nAssume \\(a_1 = 2\\) and \\(b_1 = 720\\), \\(a_2 = 3\\) and \\(b_2 = 572\\), and \\(a_3 = 4\\) and \\(b_3 = 462\\).\n\nStep 4:\nSince the terms are pairs of corresponding terms of the sequences, we need to check:\n\\(a_1 \\cdot b_1 = 2 \\cdot 720 = 1440\\),\n\\(a_2 \\cdot b_2 = 3 \\cdot 572 = 1716\\),\n\\(a_3 \\cdot b_3 = 4 \\cdot 462 = 1848\\).\n\nStep 5:\nNow, we continue the sequence \\(a_n\\) and \\(b_n\\) to find the eighth term.\nFirst sequence: \\(a_1 = 2, a_2 = 3, a_3 = 4, a_4 = 5, a_5 = 6, a_6 = 7, a_7 = 8, a_8 = 9\\).\n\nStep 6:\nSecond sequence: \nFrom \\(a_1\\cdot b_1 = 1440\\) and \\(a_1 = 2\\), \\(b_1 = 720\\).\nFrom the given terms we calculate \\(e = 720 - 572 = 148\\).\n$b_n = 720 - 148 \\cdot (n-1)$. Therefore,\n\\(b_2 = 720 - 148 \\cdot 1 = 572\\),\n\\(b_3 = 720 - 148 \\cdot 2 = 424\\),\n\\(b_4 = 720 - 148 \\cdot 3 = 276\\),\n\\(b_5 = 720 - 148 \\cdot 4 = 128\\),\n\\(b_6 = 720 - 148 \\cdot 5 = -20\\),\n\\(b_7 = 720 - 148 \\cdot 6 = -168\\),\n\\(b_8 = 720 - 148 \\cdot 7 = -316\\).\n\nStep 7:\nNow, calculate the eighth term by multiplying \\(a_8 \\cdot b_8 = 9 \\cdot -316 = -2844\\).\n\nFinal answer:\n\\boxed{-2844}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7769830949284785
+            }
+        }
+    }
+}

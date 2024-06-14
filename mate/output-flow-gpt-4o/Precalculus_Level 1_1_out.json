@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 1_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 1",
+        "problem": "Compute $\\arccos \\left( -\\frac{1}{2} \\right).$  Express your answer in radians.",
+        "correct_solution": "Since $\\cos \\frac{2 \\pi}{3} = -\\frac{1}{2},$ $\\arccos \\left( -\\frac{1}{2} \\right) = \\boxed{\\frac{2 \\pi}{3}}.$",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\nStep 1:\nRecognize that the value to compute is $\\arccos \\left( -\\frac{1}{2} \\right)$.\nStep 2:\nRecall that $\\arccos(x)$ is the angle whose cosine is $x$ within the range $[0, \\pi]$.\nStep 3:\nIdentify that $-\\frac{1}{2}$ is the cosine of the angle $\\frac{2\\pi}{3}$ because $\\cos \\left( \\frac{2\\pi}{3} \\right) = -\\frac{1}{2}$.\nStep 4:\nTherefore, $\\arccos \\left( -\\frac{1}{2} \\right)$ is $\\frac{2\\pi}{3}$ radians.\nFinal answer:\n\\boxed{\\frac{2\\pi}{3}}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7796976241900648
+            }
+        }
+    }
+}

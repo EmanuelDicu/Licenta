@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 3_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 3",
+        "problem": "The set of vectors $\\mathbf{v}$ such that\n\\[\\operatorname{proj}_{\\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}} \\mathbf{v} = \\begin{pmatrix} 0 \\\\ 0 \\end{pmatrix}\\]lie on a line.  Enter the equation of this line in the form \"$y = mx + b$\".",
+        "correct_solution": "Let $\\mathbf{v} = \\begin{pmatrix} x \\\\ y \\end{pmatrix}.$\n\nFrom the formula of a projection,\n\\begin{align*}\n\\operatorname{proj}_{\\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}} \\mathbf{v} &= \\frac{\\mathbf{v} \\cdot \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}}{\\left\\| \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} \\right\\|^2} \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} \\\\\n&= \\frac{\\begin{pmatrix} x \\\\ y \\end{pmatrix} \\cdot \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}}{5} \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} \\\\\n&= \\frac{2x + y}{5} \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} \\\\\n&= \\begin{pmatrix} 0 \\\\ 0 \\end{pmatrix}.\n\\end{align*}Then\n\\[\\frac{2x + y}{5} = 0,\\]so $2x + y = 0.$  Thus, the equation of the line is $\\boxed{y = -2x}.$",
+        "generated_solutions": {
+            "gpt-4o": "```markdown\nStep 1:\nGiven the vector projection formula:\n\\[\n\\operatorname{proj}_{\\mathbf{a}} \\mathbf{v} = \\frac{\\mathbf{v} \\cdot \\mathbf{a}}{\\mathbf{a} \\cdot \\mathbf{a}} \\mathbf{a}\n\\]\nwe need to find the condition where this projection is equal to \\(\\begin{pmatrix} 0 \\\\ 0 \\end{pmatrix}\\).\n\nStep 2:\nSet \\(\\mathbf{a} = \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}\\) and \\(\\mathbf{v} = \\begin{pmatrix} x \\\\ y \\end{pmatrix}\\).\n\nStep 3:\nCalculate the dot product \\(\\mathbf{v} \\cdot \\mathbf{a}\\):\n\\[\n\\mathbf{v} \\cdot \\mathbf{a} = \\begin{pmatrix} x \\\\ y \\end{pmatrix} \\cdot \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} = 2x + y\n\\]\n\nStep 4:\nCalculate the dot product \\(\\mathbf{a} \\cdot \\mathbf{a}\\):\n\\[\n\\mathbf{a} \\cdot \\mathbf{a} = \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} \\cdot \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} = 4 + 1 = 5\n\\]\n\nStep 5:\nSet the projection equal to zero:\n\\[\n\\operatorname{proj}_{\\mathbf{a}} \\mathbf{v} = \\frac{2x + y}{5} \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 0 \\end{pmatrix}\n\\]\n\nStep 6:\nFrom this equation, we deduce:\n\\[\n\\frac{2x + y}{5} = 0 \\Rightarrow 2x + y = 0\n\\]\n\nStep 7:\nSolve for \\(y\\):\n\\[\ny = -2x\n\\]\n\nStep 8:\nTherefore, the equation of the line is:\n\\[\ny = -2x\n\\]\n\nFinal answer:\n\\boxed{y = -2x}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": false,
+                "Same result": true,
+                "Levenshtein distance value": 0.5770491803278689
+            }
+        }
+    }
+}

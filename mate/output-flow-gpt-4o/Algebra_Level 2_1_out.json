@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 2_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 2",
+        "problem": "If \\begin{align*}\n5x-2y&=7,\\\\\n3x+y&=2,\n\\end{align*}compute $24x-14y$.",
+        "correct_solution": "Note that $6(5x-2y)-2(3x+y)=24x-14y$.  Thus, $24x-14y=6(7)-2(2)=\\boxed{38}$.",
+        "generated_solutions": {
+            "gpt-4o": "```\nStep 1:\nWe start with the system of equations:\n\\[ 5x - 2y = 7 \\]\n\\[ 3x + y = 2 \\]\n\nStep 2:\nFirst, solve the second equation for \\( y \\):\n\\[ 3x + y = 2 \\]\n\\[ y = 2 - 3x \\]\n\nStep 3:\nSubstitute \\( y = 2 - 3x \\) into the first equation:\n\\[ 5x - 2(2 - 3x) = 7 \\]\n\\[ 5x - 4 + 6x = 7 \\]\n\\[ 11x - 4 = 7 \\]\n\\[ 11x = 11 \\]\n\\[ x = 1 \\]\n\nStep 4:\nSubstitute \\( x = 1 \\) back into \\( y = 2 - 3x \\) to find \\( y \\):\n\\[ y = 2 - 3(1) \\]\n\\[ y = 2 - 3 \\]\n\\[ y = -1 \\]\n\nStep 5:\nWe now have \\( x = 1 \\) and \\( y = -1 \\).\n\nStep 6:\nSubstitute \\( x = 1 \\) and \\( y = -1 \\) into the expression \\( 24x - 14y \\):\n\\[ 24x - 14y = 24(1) - 14(-1) \\]\n\\[ 24 - (-14) = 24 + 14 \\]\n\\[ 38 \\]\n\nFinal answer:\n\\boxed{38}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.9156976744186046
+            }
+        }
+    }
+}

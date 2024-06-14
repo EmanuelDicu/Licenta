@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 5_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 5",
+        "problem": "Find the smallest positive rational number $r$ such that\n\\[\\sum_{k=1}^{35}\\sin (5k)^\\circ = \\tan r^\\circ.\\]",
+        "correct_solution": "From product-to-sum,\n\\[\\sin 5^\\circ \\sin (5k)^\\circ = \\frac{1}{2} [\\cos (5k - 5)^\\circ - \\cos (5k + 5)^\\circ].\\]Thus, we can make the sum telescope:\n\\begin{align*}\n\\sum_{k = 1}^{35} \\sin (5k)^\\circ &= \\frac{1}{\\sin 5^\\circ} \\sum_{k = 1}^{35} \\sin 5^\\circ \\sin (5k)^\\circ \\\\\n&= \\frac{1}{\\sin 5^\\circ} \\sum_{k = 1}^{35} \\frac{\\cos (5k - 5)^\\circ - \\cos (5k + 5)^\\circ}{2} \\\\\n&= \\frac{1}{2 \\sin 5^\\circ} [(\\cos 0^\\circ - \\cos 10^\\circ) + (\\cos 5^\\circ - \\cos 15^\\circ) + (\\cos 10^\\circ - \\cos 20^\\circ) + \\\\\n&\\quad + \\dots + (\\cos 165^\\circ - \\cos 175^\\circ) + (\\cos 170^\\circ - \\cos 180^\\circ)] \\\\\n&= \\frac{\\cos 0^\\circ + \\cos 5^\\circ - \\cos 175^\\circ - \\cos 180^\\circ}{2 \\sin 5^\\circ} \\\\\n&= \\frac{2 + 2 \\cos 5^\\circ}{2 \\sin 5^\\circ} \\\\\n&= \\frac{1 + \\cos 5^\\circ}{\\sin 5^\\circ}.\n\\end{align*}Then by the double-angle formulas,\n\\begin{align*}\n\\frac{1 + \\cos 5^\\circ}{\\sin 5^\\circ} &= \\frac{1 + 2 \\cos^2 2.5^\\circ - 1}{2 \\sin 2.5^\\circ \\cos 2.5^\\circ} \\\\\n&= \\frac{2 \\cos^2 2.5^\\circ}{2 \\sin 2.5^\\circ \\cos 2.5^\\circ} \\\\\n&= \\frac{\\cos 2.5^\\circ}{\\sin 2.5^\\circ} \\\\\n&= \\cot 2.5^\\circ \\\\\n&= \\tan 87.5^\\circ.\n\\end{align*}Thus, $r = \\boxed{87.5}.$",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\n\nStep 1:\nWe start by considering the sum \\(\\sum_{k=1}^{35}\\sin(5k)^\\circ\\).\n\nStep 2:\nNotice that \\(\\sin(5k)^\\circ\\) can be written using the sum of sine angles:\n\\[\n\\sum_{k=1}^{35} \\sin(5k)^\\circ = \\sin 5^\\circ + \\sin 10^\\circ + \\sin 15^\\circ + \\cdots + \\sin 175^\\circ\n\\]\n\nStep 3:\nUsing the identity for the sum of sines of an arithmetic progression:\n\\[\n\\sum_{k=0}^{n-1} \\sin(a + kd) = \\frac{\\sin\\left(\\frac{nd}{2}\\right)\\cdot \\sin\\left(a + (n-1)\\frac{d}{2}\\right)}{\\sin\\left(\\frac{d}{2}\\right)}\n\\]\nSubstitute \\(n = 35\\), \\(a = 5^\\circ\\), and \\(d = 5^\\circ\\):\n\\[\n\\sum_{k=0}^{34} \\sin(5^\\circ + 5k^\\circ) = \\frac{\\sin\\left(\\frac{35\\cdot 5^\\circ}{2}\\right)\\cdot \\sin\\left(5^\\circ + (35-1)\\frac{5^\\circ}{2}\\right)}{\\sin\\left(\\frac{5^\\circ}{2}\\right)}\n\\]\nSimplify:\n\\[\n\\sum_{k=0}^{34} \\sin(5^\\circ + 5k^\\circ) = \\frac{\\sin(87.5^\\circ)\\cdot \\sin(90^\\circ)}{\\sin(2.5^\\circ)}\n\\]\n\nStep 4:\nSimplify further using \\(\\sin(90^\\circ) = 1\\):\n\\[\n\\sum_{k=0}^{34} \\sin(5^\\circ + 5k^\\circ) = \\frac{\\sin(87.5^\\circ)}{\\sin(2.5^\\circ)}\n\\]\n\nStep 5:\nWe use the complementary angle identity \\(\\sin(87.5^\\circ) = \\cos(2.5^\\circ)\\):\n\\[\n\\sum_{k=0}^{34} \\sin(5^\\circ + 5k^\\circ) = \\frac{\\cos(2.5^\\circ)}{\\sin(2.5^\\circ)} = \\cot(2.5^\\circ)\n\\]\n\nStep 6:\nWe equate this sum to \\(\\tan r^\\circ\\):\n\\[\n\\cot(2.5^\\circ) = \\tan r^\\circ\n\\]\n\nStep 7:\nRecognize the identity \\(\\cot(x) = \\tan(90^\\circ - x)\\):\n\\[\n\\cot(2.5^\\circ) = \\tan(87.5^\\circ)\n\\]\n\nStep 8:\nThus, we have:\n\\[\nr = 87.5\n\\]\n\nFinal answer:\n\\boxed{87.5}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": false,
+                "Same result": true,
+                "Levenshtein distance value": 0.6501007387508395
+            }
+        }
+    }
+}

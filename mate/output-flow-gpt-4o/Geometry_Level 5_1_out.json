@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 5_1.json": {
+        "category": "Geometry",
+        "difficulty": "Level 5",
+        "problem": "An arc of $55$ degrees on circle $A$ has the same length as an arc of $40$ degrees on circle $B$.  What is the ratio of the area of circle $A$ to the area of circle $B$? Express your answer as a common fraction.",
+        "correct_solution": "For a circle of radius $r$ and an arc of $\\theta$ degrees, the arc length is $(2\\pi r)\\frac{\\theta}{360}$. Thus, for the same arc length, the arc angle is inversely proportional to the radius, so the ratio of the radius of circle $A$ to the radius of circle $B$ is $40:55$, or $8:11$. Since the ratio of the areas of two circles is the square of the ratio of their radii, the ratio of the area of circle $A$ to the area of circle $B$ is $(8/11)^2=\\boxed{\\frac{64}{121}}$.",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\nStep 1:\nLet the radius of circle $A$ be $R_A$ and the radius of circle $B$ be $R_B$.\n\nStep 2:\nThe length of an arc in a circle is given by the formula:\n\\[ \\text{Arc Length} = \\left(\\frac{\\theta}{360}\\right) \\times 2\\pi r \\]\nwhere $\\theta$ is the angle of the arc in degrees and $r$ is the radius of the circle.\n\nStep 3:\nFor circle $A$, the arc length corresponding to 55 degrees is:\n\\[ \\left(\\frac{55}{360}\\right) \\times 2\\pi R_A \\]\n\nStep 4:\nFor circle $B$, the arc length corresponding to 40 degrees is:\n\\[ \\left(\\frac{40}{360}\\right) \\times 2\\pi R_B \\]\n\nStep 5:\nSince the lengths of the arcs are equal, we set the two expressions equal to each other:\n\\[ \\left(\\frac{55}{360}\\right) \\times 2\\pi R_A = \\left(\\frac{40}{360}\\right) \\times 2\\pi R_B \\]\n\nStep 6:\nWe can cancel $2\\pi$ on both sides:\n\\[ \\frac{55}{360} \\times R_A = \\frac{40}{360} \\times R_B \\]\n\nStep 7:\nFurther simplifying, we have:\n\\[ 55 \\times R_A = 40 \\times R_B \\]\n\nStep 8:\nSolving for the ratio of the radii, we get:\n\\[ \\frac{R_A}{R_B} = \\frac{40}{55} = \\frac{8}{11} \\]\n\nStep 9:\nThe area of a circle is given by the formula:\n\\[ \\text{Area} = \\pi r^2 \\]\n\nStep 10:\nSo the area of circle $A$ is:\n\\[ \\text{Area of circle } A = \\pi R_A^2 \\]\n\nStep 11:\nThe area of circle $B$ is:\n\\[ \\text{Area of circle } B = \\pi R_B^2 \\]\n\nStep 12:\nThe ratio of the areas of circle $A$ to circle $B$ is:\n\\[ \\frac{\\text{Area of circle } A}{\\text{Area of circle } B} = \\frac{\\pi R_A^2}{\\pi R_B^2} = \\left(\\frac{R_A}{R_B}\\right)^2 \\]\n\nStep 13:\nSubstituting the ratio of the radii:\n\\[ \\left(\\frac{R_A}{R_B}\\right)^2 = \\left(\\frac{8}{11}\\right)^2 = \\frac{64}{121} \\]\n\nFinal answer:\n\\boxed{\\frac{64}{121}}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7890295358649789
+            }
+        }
+    }
+}

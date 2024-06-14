@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 5_3.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 5",
+        "problem": "The complex numbers $z$ and $w$ satisfy the system\n\\begin{align*}\nz + \\frac{20i}w &= 5+i, \\\\\nw+\\frac{12i}z &= -4+10i.\n\\end{align*}Find the smallest possible value of $\\vert zw\\vert^2$.",
+        "correct_solution": "Multiplying the two equations, we have \\[zw + 12i + 20i - \\frac{240}{zw} = (5+i) (-4+10i) = -30 + 46i.\\]Letting $t = zw,$ this simplifies to \\[t^2 + (30-14i)t - 240 = 0.\\]By the quadratic formula, \\[t = \\frac{-(30-14i) \\pm \\sqrt{(30-14i)^2 + 4\\cdot240}}{2} = -(15-7i) \\pm \\sqrt{416-210i}.\\]We hope that we can write $416 - 210i = (a+bi)^2,$ for some integers $a$ and $b.$ Upon expansion, we get the equations $416 = a^2-b^2$ and $-210=2ab$. The smallest perfect square greater than $416$ is $21^2 = 441$, so we try $a = 21$; then $416 = 441 - b^2$, so $b^2 = 25$ and $b = \\pm 5$. Indeed, we get the solution $(a, b) = (21, -5)$.\n\nTherefore, \\[t = -(15-7i) \\pm (21-5i) = 6+2i \\; \\text{or} \\; -36+12i.\\]The choice of $t=zw$ with smallest magnitude is $t = 6+2i,$ giving \\[|t|^2 = 6^2 + 2^2 = \\boxed{40}.\\]",
+        "generated_solutions": {
+            "gpt-4o": "```markdown\nStep 1:\nLet \\( z = a + bi \\) and \\( w = c + di \\), where \\( a, b, c, d \\) are real numbers.\n\nStep 2:\nFrom the equation \\( z + \\frac{20i}{w} = 5 + i \\), substitute \\( w = c + di \\) and simplify:\n\\[\n\\frac{20i}{c + di} = \\frac{20i(c - di)}{c^2 + d^2} = \\frac{20ic + 20d}{c^2 + d^2}\n\\]\nThen,\n\\[\na + bi + \\frac{20ic + 20d}{c^2 + d^2} = 5 + i\n\\]\n\nStep 3:\nEquate the real and imaginary parts separately:\n\\[\na + \\frac{20d}{c^2 + d^2} = 5 \\quad \\text{(1)}\n\\]\n\\[\nb + \\frac{20c}{c^2 + d^2} = 1 \\quad \\text{(2)}\n\\]\n\nStep 4:\nFrom the equation \\( w + \\frac{12i}{z} = -4 + 10i \\), substitute \\( z = a + bi \\) and simplify:\n\\[\n\\frac{12i}{a + bi} = \\frac{12i(a - bi)}{a^2 + b^2} = \\frac{12ia + 12b}{a^2 + b^2}\n\\]\nThen,\n\\[\nc + di + \\frac{12ia + 12b}{a^2 + b^2} = -4 + 10i\n\\]\n\nStep 5:\nEquate the real and imaginary parts separately:\n\\[\nc + \\frac{12b}{a^2 + b^2} = -4 \\quad \\text{(3)}\n\\]\n\\[\nd + \\frac{12a}{a^2 + b^2} = 10 \\quad \\text{(4)}\n\\]\n\nStep 6:\nExpress \\( \\vert zw \\vert^2 \\) in terms of the real numbers:\n\\[\n\\vert zw \\vert^2 = (ac - bd)^2 + (ad + bc)^2\n\\]\n\nStep 7:\nBy multiplying equations (1) by \\(c^2 + d^2\\), (2) by \\(c^2 + d^2\\), (3) by \\(a^2 + b^2\\), and (4) by \\(a^2 + b^2\\) and solving the pairs, we find a common solution. Assume symmetry and let:\n\\[\nz = 3 + 2i \\quad \\text{and} \\quad w = 2 - i\n\\]\n\nStep 8:\nSubstitute into \\( \\vert z \\vert^2 \\) and \\( \\vert w \\vert^2 \\):\n\\[\n\\vert z \\vert^2 = 3^2 + 2^2 = 9 + 4 = 13\n\\]\n\\[\n\\vert w \\vert^2 = 2^2 + (-1)^2 = 4 + 1 = 5\n\\]\nTherefore, \\( \\vert zw \\vert^2 = \\vert z \\vert^2 \\times \\vert w \\vert^2 = 13 \\times 5 = 65 \\).\n\nFinal answer:\n\\boxed{65}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7804878048780488
+            }
+        }
+    }
+}

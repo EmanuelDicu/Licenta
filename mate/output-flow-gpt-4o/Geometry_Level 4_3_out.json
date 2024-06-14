@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 4_3.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "What is the area, in square units, of the square with the four vertices at $(-2, 2), (2, -2), (-2, -6)$, and $(-6, -2)$?",
+        "correct_solution": "The length of the square is $\\sqrt{4^2 + 4^2} = 4\\sqrt{2}$. Therefore, the area of the square is $(4\\sqrt{2})^2 = \\boxed{32}$.",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\nStep 1:\nIdentify the coordinates of the vertices: $(-2, 2)$, $(2, -2)$, $(-2, -6)$, and $(-6, -2)$.\n\nStep 2:\nCalculate the distances between each pair of adjacent vertices to determine the side length of the square.\nUsing the distance formula: $d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$.\n\nStep 3:\nCalculate the distance between two adjacent vertices, say $(-2, 2)$ and $(2, -2)$:\n$d = \\sqrt{(2 - (-2))^2 + (-2 - 2)^2} = \\sqrt{(2 + 2)^2 + (-2 - 2)^2} = \\sqrt{4^2 + (-4)^2} = \\sqrt{16 + 16} = \\sqrt{32} = 4\\sqrt{2}$.\n\nStep 4:\nVerify that the calculated distance is consistent with the distances between other adjacent vertices:\nFor $(-2, 2)$ to $(-6, -2)$:\n$d = \\sqrt{(-6 - (-2))^2 + (-2 - 2)^2} = \\sqrt{(-6 + 2)^2 + (-2 - 2)^2} = \\sqrt{(-4)^2 + (-4)^2} = \\sqrt{16 + 16} = \\sqrt{32} = 4\\sqrt{2}$.\n\nFor $(2, -2)$ to $(-2, -6)$:\n$d = \\sqrt{(-2 - (2))^2 + (-6 - (-2))^2} = \\sqrt{(-2 - 2)^2 + (-6 + 2)^2} = \\sqrt{(-4)^2 + (-4)^2} = \\sqrt{16 + 16} = \\sqrt{32} = 4\\sqrt{2}$.\n\nFor $(-2, -6)$ to $(-6, -2)$:\n$d = \\sqrt{(-6 - (-2))^2 + (-2 - (-6))^2} = \\sqrt{(-6 + 2)^2 + (-2 + 6)^2} = \\sqrt{(-4)^2 + 4^2} = \\sqrt{16 + 16} = \\sqrt{32} = 4\\sqrt{2}$.\n\nStep 5:\nDetermine the area of the square using the side length calculated.\nArea of a square = (side length)^2 = $(4\\sqrt{2})^2 = 16 \\cdot 2 = 32$ square units.\n\nFinal answer:\n\\boxed{32}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.910581222056632
+            }
+        }
+    }
+}

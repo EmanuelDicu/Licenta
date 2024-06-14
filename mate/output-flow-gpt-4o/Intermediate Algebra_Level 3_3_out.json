@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 3_3.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 3",
+        "problem": "There is a complex number $z$ with imaginary part $164$ and a positive integer $n$ such that\n$$\\frac {z}{z + n} = 4i.$$Find $n$.",
+        "correct_solution": "Multiplying by $z+n$, we have $z = 4i(z+n)$, or $z(1-4i) = 4ni$. Thus \\[z = \\frac{4ni}{1-4i} = \\frac{4ni(1+4i)}{17} = \\frac{4ni - 16n}{17}.\\]Since $z$ has imaginary part $164$, we have $4n/17 = 164$, so $n = 17/4 \\cdot 164 = \\boxed{697}$.",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\n```\nStep 1:\nGiven that the complex number \\( z \\) has an imaginary part of 164, we can write \\( z \\) as \\( z = a + 164i \\), where \\( a \\) is the real part of \\( z \\).\n\nStep 2:\nThe equation provided is \\(\\frac{z}{z + n} = 4i\\). Substitute \\(z = a + 164i\\) into this equation:\n\\[\n\\frac{a + 164i}{a + 164i + n} = 4i\n\\]\n\nStep 3:\nTo eliminate the denominator, multiply both sides by \\(a + 164i + n\\):\n\\[\na + 164i = 4i(a + 164i + n)\n\\]\n\nStep 4:\nDistribute \\(4i\\) on the right-hand side:\n\\[\na + 164i = 4i \\cdot a + 4i \\cdot 164i + 4i \\cdot n\n\\]\n\nStep 5:\nSimplify the terms on the right-hand side. Note that \\(4i \\cdot 164i = 4 \\cdot 164 \\cdot i^2 = 4 \\cdot 164 \\cdot (-1) = -656\\):\n\\[\na + 164i = 4ai - 656 + 4ni\n\\]\n\nStep 6:\nSeparate the real and imaginary parts on both sides of the equation:\nReal part: \\(a = -656\\)\n\nImaginary part: \\(164 = 4a + 4n\\)\n\nStep 7:\nSubstitute \\(a = -656\\) into the imaginary part equation:\n\\[\n164 = 4(-656) + 4n\n\\]\n\nStep 8:\nSimplify inside the parentheses:\n\\[\n164 = -2624 + 4n\n\\]\n\nStep 9:\nSolve for \\(4n\\):\n\\[\n164 + 2624 = 4n\n\\]\n\nStep 10:\nSimplify the sum:\n\\[\n2788 = 4n\n\\]\n\nStep 11:\nSolve for \\(n\\) by dividing both sides by 4:\n\\[\nn = \\frac{2788}{4} = 697\n\\]\n\nFinal answer:\n\\boxed{697}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8661224489795918
+            }
+        }
+    }
+}

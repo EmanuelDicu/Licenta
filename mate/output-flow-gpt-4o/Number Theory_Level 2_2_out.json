@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 2_2.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 2",
+        "problem": "There are many two-digit multiples of 7, but only two of the multiples have digit sum of 10. The sum of these two multiples of 7 is what?",
+        "correct_solution": "The two-digit multiples of 7 are $$14, 21, \\underline{28}, 35, 42, 49, 56, 63, 70, 77, 84, \\underline{91}\\text{, and } 98.$$Only 28 and 91 have digit sums of 10. The sum of 28 and 91 is $\\boxed{119}.$",
+        "generated_solutions": {
+            "gpt-4o": "```\nStep 1:\nList the two-digit multiples of 7.\n14, 21, 28, 35, 42, 49, 56, 63, 70, 77, 84, 91, 98\n\nStep 2:\nDetermine if their digit sum is 10.\n14: 1 + 4 = 5 (not 10)\n21: 2 + 1 = 3 (not 10)\n28: 2 + 8 = 10 (this is one multiple)\n35: 3 + 5 = 8 (not 10)\n42: 4 + 2 = 6 (not 10)\n49: 4 + 9 = 13 (not 10)\n56: 5 + 6 = 11 (not 10)\n63: 6 + 3 = 9 (not 10)\n70: 7 + 0 = 7 (not 10)\n77: 7 + 7 = 14 (not 10)\n84: 8 + 4 = 12 (not 10)\n91: 9 + 1 = 10 (this is another multiple)\n98: 9 + 8 = 17 (not 10)\n\nStep 3:\nIdentify the two multiples with digit sum of 10.\nThe multiples are 28 and 91.\n\nStep 4:\nAdd the two multiples.\n28 + 91 = 119\n\nStep 5:\nTherefore, the sum of these two multiples of 7 is 119.\nFinal answer:\n\\boxed{119}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8118811881188119
+            }
+        }
+    }
+}

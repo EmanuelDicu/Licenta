@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 2_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 2",
+        "problem": "Determine the number of ways to arrange the letters of the word THAT.",
+        "correct_solution": "First we count the arrangements if the two T's are unique, which is $4!$. Then since the T's are not unique, we divide by $2!$ for the arrangements of T, for an answer of $\\dfrac{4!}{2!} = \\boxed{12}$.",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\nStep 1:\nThe word is 'THAT' which has a total of 4 letters.\nStep 2:\nWe need to calculate the number of distinct arrangements of the 4 letters.\nStep 3:\nWe use the formula for permutations of a multiset: \n\n          n! / (n1! * n2! * ... * nk!)\n\nwhere n is the total number of items, and n1, n2, ..., nk are the frequencies of the distinct items.\nStep 4:\nIn 'THAT', n = 4, the frequency of 'T' (n1) is 2, the frequency of 'H' (n2) is 1, and the frequency of 'A' (n3) is 1.\nStep 5:\nCalculate the factorial of 4 (4!):\n\n          4! = 4 * 3 * 2 * 1 = 24\n\nStep 6:\nCalculate the factorial of the frequencies of the repeated letters:\n\n          2! = 2 * 1 = 2\n\nStep 7:\nUse the permutations of a multiset formula:\n\n          4! / (2! * 1! * 1!) = 24 / 2 = 12\n\nStep 8:\nTherefore, the number of distinct arrangements of the letters in the word 'THAT' is 12.\nFinal answer:\n\\boxed{12}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8400900900900901
+            }
+        }
+    }
+}

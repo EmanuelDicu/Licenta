@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 4_2.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "A circle is circumscribed about an equilateral triangle with side lengths of $6$ units each.  What is the area of the circle, in square units? Express your answer in terms of $\\pi$.",
+        "correct_solution": "[asy]\nsize(100);\ndefaultpen(linewidth(.8));\ndraw((0,0)--(4.5,7.794)--(9,0)--cycle);\ndraw(Circle((4.5,2.598),5.196));\ndraw((4.5,7.794)--(4.5,0));\ndot((4.5,2.598));\nlabel(\"$O$\",(4.5,2.598),W);\nlabel(\"$A$\",(4.5,7.794),N);\nlabel(\"$B$\",(9,0),E);\nlabel(\"$M$\",(4.5,0),S);\n[/asy]\n\nAbove is the diagram implied by the problem, with some added lines ($O$ is the center of the circle). Since $\\triangle AMB$ is a 30-60-90 triangle and $AB=6$, $AM=3\\sqrt{3}$. Since $AO$ is $2/3$ of $AM$, we have $AO=2\\sqrt{3}$. Thus, the area of the circle is $\\pi(2\\sqrt{3})^2=\\boxed{12\\pi}$.",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\nStep 1:\nThe given problem involves an equilateral triangle with side lengths of 6 units, circumscribed by a circle. We need to find the area of the circle.\n\nStep 2:\nFirst, calculate the height (h) of the equilateral triangle using the Pythagorean theorem. By splitting the triangle into two right triangles, each side of the right triangle will have lengths: 3 units (half of the base) and a hypotenuse of 6 units.\nUsing the formula \\( h = \\sqrt{s^2 - \\left(\\frac{s}{2}\\right)^2} \\):\n\\[\nh = \\sqrt{6^2 - 3^2}\n\\]\n\\[\nh = \\sqrt{36 - 9} = \\sqrt{27} = 3\\sqrt{3}\n\\]\n\nStep 3:\nThe centroid of the equilateral triangle divides its height in a 2:1 ratio. The radius (R) of the circumscribed circle is twice the length from the centroid to a vertex:\n\\[\n\\text{Centroid to vertex} = \\frac{2}{3}h\n\\]\n\\[\nR = \\frac{2}{3} \\times 3\\sqrt{3} = 2\\sqrt{3}\n\\]\n\nStep 4:\nThe area of the circle is given by the formula \\( A = \\pi R^2 \\):\n\\[\nA = \\pi (2\\sqrt{3})^2\n\\]\n\\[\nA = \\pi (4 \\times 3) = 12\\pi\n\\]\n\nFinal answer:\n\\boxed{12\\pi}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8088235294117647
+            }
+        }
+    }
+}

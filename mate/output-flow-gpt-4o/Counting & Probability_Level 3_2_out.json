@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 3_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 3",
+        "problem": "There are 30 men and 40 women in the Town Library Club.  They wish to form a 7-person steering committee with 3 men and 4 women.  In how many ways can they form the committee?",
+        "correct_solution": "In this problem, we're really selecting two separate committees.  We can choose 3 men from the 30 men total in $$ \\binom{30}{3} = \\frac{30 \\times 29 \\times 28}{3 \\times 2 \\times 1} = 4,\\!060 $$ways, and 4 women from the 40 women total in $$ \\binom{40}{4} = \\frac{40 \\times 39 \\times 38 \\times 37}{4 \\times 3 \\times 2 \\times 1} = 91,\\!390 $$ways.  Since these two selections are independent (since for each of the $4,\\!060$ ways to pick the men, there are $91,\\!390$ ways to pick the women), we multiply them together to get the number of ways that we can form the 7-member overall committee: $$ \\binom{30}{3}\\binom{40}{4} = (4,\\!060)(91,\\!390) = \\boxed{371,\\!043,\\!400}. $$",
+        "generated_solutions": {
+            "gpt-4o": "```Solution:\nStep 1:\nThe problem states there are 30 men in the Town Library Club.\n\nStep 2:\nThere are 40 women in the Town Library Club.\n\nStep 3:\nThe steering committee must have 7 people, consisting of 3 men and 4 women.\n\nStep 4:\nFirst, we calculate the number of ways to choose 3 men out of 30. This can be done using the combination formula \\(\\binom{n}{k}\\), where \\(n\\) is the total number of items, and \\(k\\) is the number of items to choose.\n\\(\\binom{30}{3} = \\frac{30!}{3!(30-3)!} = \\frac{30 \\times 29 \\times 28}{3 \\times 2 \\times 1} = 4060\\)\n\nStep 5:\nNext, we calculate the number of ways to choose 4 women out of 40 using the same combination formula.\n\\(\\binom{40}{4} = \\frac{40!}{4!(40-4)!} = \\frac{40 \\times 39 \\times 38 \\times 37}{4 \\times 3 \\times 2 \\times 1} = 91,390\\)\n\nStep 6:\nTo find the total number of ways to form the 7-person committee, we multiply the number of ways to choose the men by the number of ways to choose the women.\nTotal ways = \\(\\binom{30}{3} \\times \\binom{40}{4}\\)\nTotal ways = \\(4060 \\times 91,390 = 371,450,400\\)\n\nFinal answer:\n\\boxed{371,450,400}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": false,
+                "Levenshtein distance": false,
+                "Same result": false,
+                "Levenshtein distance value": 0.6853211009174311
+            }
+        }
+    }
+}

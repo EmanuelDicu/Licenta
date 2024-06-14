@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 2_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 2",
+        "problem": "The complex numbers $a$ and $b$ satisfy\n\\[a + \\overline{b} = 2 - 7i.\\]Find $\\overline{a} + b.$",
+        "correct_solution": "Taking the conjugate of both sides, we get\n\\[\\overline{a + \\overline{b}} = \\overline{2 - 7i} = 2 + 7i.\\]But $\\overline{a + \\overline{b}} = \\overline{a} + \\overline{\\overline{b}} = \\overline{a} + b,$ so\n\\[\\overline{a} + b = \\boxed{2 + 7i}.\\]",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\nStep 1:\nGiven the equation \\( a + \\overline{b} = 2 - 7i \\).\n\nStep 2:\nLet \\( a = x + yi \\) and \\( b = u + vi \\), where \\( x, y, u, v \\) are real numbers. Then \\( \\overline{a} = x - yi \\) and \\( \\overline{b} = u - vi \\).\n\nStep 3:\nSubstituting \\( a \\) and \\( \\overline{b} \\) in the given equation, we have:\n\\[ (x + yi) + (u - vi) = 2 - 7i. \\]\n\nStep 4:\nSeparate the equation into its real and imaginary parts:\n\\[ x + u + (y - v)i = 2 - 7i. \\]\n\nStep 5:\nMatch real parts and imaginary parts:\n\\[ x + u = 2 \\]\n\\[ y - v = -7. \\]\n\nStep 6:\nWe need to find \\( \\overline{a} + b \\). Substituting \\( a = x + yi \\) and \\( b = u + vi \\), we get:\n\\[ \\overline{a} + b = (x - yi) + (u + vi). \\]\n\nStep 7:\nCombine the real and imaginary parts:\n\\[ \\overline{a} + b = (x + u) + (v - y)i. \\]\n\nStep 8:\nUsing the values from step 5, substitute \\( x + u = 2 \\) and \\( v - y = 7 \\):\n\\[ \\overline{a} + b = 2 + 7i. \\]\n\nFinal answer:\n\\boxed{2 + 7i}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8008565310492506
+            }
+        }
+    }
+}

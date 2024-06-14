@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 4_4.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 4",
+        "problem": "Three concentric circles are shown. The two largest circles have radii of $12$ and $13.$ If the area of the ring between the two largest circles equals the area of the smallest circle, determine the radius of the smallest circle.\n\n[asy]\nimport graph;\nfilldraw(circle((0,0),12), lightgray, black+linewidth(1));\nfilldraw(circle((0,0),10), white, black+linewidth(1));\nfilldraw(circle((0,0),6), gray, black+linewidth(1));\ndot((0,0));\n[/asy]",
+        "correct_solution": "The area of the ring between the two largest circles is $$\\pi\\cdot 13^2-\\pi\\cdot 12^2=169\\pi - 144\\pi=25\\pi.$$Suppose that the radius of the smallest circle is $r.$ Thus, the area of the smallest circle is $\\pi r^2.$ Since the area of the smallest circle is equal to the area of the ring between the two largest circles, then $\\pi r^2 = 25\\pi$ so $r^2 = 25$ and so $r=5$ since $r>0.$\n\nTherefore, the radius of the smallest circle is $\\boxed{5}.$",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\nStep 1:\nIdentify the radii of the two largest circles. The radius of the second largest circle is $12$ units and the radius of the largest circle is $13$ units.\n\nStep 2:\nCalculate the area of the largest circle.\nThe area, \\( A_1 \\), is given by the formula \\( \\pi r^2 \\).\nFor the largest circle:\n\\[ A_1 = \\pi \\cdot 13^2 = \\pi \\cdot 169 \\]\n\nStep 3:\nCalculate the area of the second largest circle.\nThe area, \\( A_2 \\), is given by the formula \\( \\pi r^2 \\).\nFor the second largest circle:\n\\[ A_2 = \\pi \\cdot 12^2 = \\pi \\cdot 144 \\]\n\nStep 4:\nCalculate the area of the ring between the two largest circles.\nThis area is the difference between the area of the largest circle and the area of the second largest circle:\n\\[ \\text{Ring Area} = A_1 - A_2 = \\pi \\cdot 169 - \\pi \\cdot 144 = \\pi \\cdot (169 - 144) = \\pi \\cdot 25 \\]\n\nStep 5:\nRecognize that the area of the ring equals the area of the smallest circle.\nThus, the area of the smallest circle is \\( \\pi \\cdot 25 \\).\n\nStep 6:\nDetermine the radius of the smallest circle.\nUsing the formula for the area of a circle \\( A = \\pi r^2 \\), solve for \\( r \\) in the equation:\n\\[ \\pi r^2 = \\pi \\cdot 25 \\]\nDivide both sides by \\( \\pi \\):\n\\[ r^2 = 25 \\]\nTake the square root of both sides:\n\\[ r = \\sqrt{25} = 5 \\]\n\nFinal answer:\n\\boxed{5}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7629343629343629
+            }
+        }
+    }
+}

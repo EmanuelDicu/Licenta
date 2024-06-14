@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 5_3.json": {
+        "category": "Geometry",
+        "difficulty": "Level 5",
+        "problem": "Four circles of radius 1 are each tangent to two sides of a square and externally tangent to a circle of radius 2, as shown.  What is the area of the square?\n\n[asy]\nunitsize(1cm);draw(Circle((0,0),2));\nfor(int i=0; i<4; ++i) {\n\tdraw(Circle(scale(3)*dir(45+90*i),1));\n\tdraw((3+sqrt(2))*dir(45+90*i)--(3+sqrt(2))*dir(-45+90*i));  \n}\ndraw((0,0)--(2,0));\nlabel(\"2\",(1,0),N);\ndraw(scale(3)*dir(45+90*1)--shift((1,0))*scale(3)*dir(45+90*1));\nlabel(\"1\",point(scale(3)*dir(45+90*1)--shift((1,0))*scale(3)*dir(45+90*1),.5),S);\n[/asy]",
+        "correct_solution": "Let $s$ be the length of a side of the square. Consider an isosceles right triangle with vertices at the centers of the circle of radius 2 and two of the circles of radius 1. This triangle has legs of length 3, so its hypotenuse has length $3\\sqrt{2}$.\n\n[asy]\nunitsize(1cm);\ndraw(Circle((0,0),2));\nfor(int i=0; i<4; ++i) {\n\tdraw(Circle(scale(3)*dir(45+90*i),1));\n\tdraw((3+sqrt(2))*dir(45+90*i)--(3+sqrt(2))*dir(-45+90*i));  \n}\npair A = scale(3)*dir(45), B = scale(3)*dir(45+90);\ndraw(A--B--origin--cycle);\nlabel(\"$1$\", A, SE);\nlabel(\"$1$\", B, SW);\nlabel(\"$2$\", point(origin--A,.3), SE);\nlabel(\"$2$\", point(origin--B,.3), SW);\ndraw(rightanglemark(A,origin,B,5));\n[/asy]\n\nThe length of a side of the square is 2 more than the length of this hypotenuse, so  $s=2 + 3\\sqrt{2}$. Hence the area of the square is \\[\ns^{2}=(2+3\\sqrt{2})^{2}=\\boxed{22+12\\sqrt{2}}.\n\\]",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\nStep 1:\nWe start by noting that each of the four smaller circles of radius 1 is tangent to two sides of the square.\n\nStep 2:\nEach smaller circle is also externally tangent to the larger circle of radius 2.\n\nStep 3:\nSince the smaller circles have radius 1 and the larger circle has radius 2, the distance from the center of the larger circle to the center of any smaller circle equals 2 (radius of large circle) + 1 (radius of small circle) = 3.\n\nStep 4:\nThe centers of the four smaller circles form a smaller square inside the larger square, with each side of this smaller square being 2 units long (distance between the centers of two tangent smaller circles, each of radius 1).\n\nStep 5:\nTo find the side length of the larger square, consider the distance from the center of the larger circle to the sides of the larger square:\n- This distance is equal to the radius of the larger circle (2) plus the distance from the center of any smaller circle to one side of the larger square.\n\nStep 6:\nThe distance from the center of any smaller circle to one side of the larger square equals the side length of the smaller square (2) divided by 2, as the smaller square is centrally located inside the larger square, plus the radius of the smaller circle (1). So this distance is 1 + 1 = 2.\n\nStep 7:\nThus, the side length of the larger square is: 2 (distance from larger circle center to larger square side) plus 2 (half the side of the smaller square plus the radius of a smaller circle):\n\\[ 2 + 2 = 4 \\]\n\nStep 8:\nTherefore, the side length of the larger square is 4 units.\n\nStep 9:\nFinally, the area of the larger square is given by the side length squared:\n\\[ 4^2 = 16 \\]\n\nFinal answer:\n\\boxed{16}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7729666471620831
+            }
+        }
+    }
+}

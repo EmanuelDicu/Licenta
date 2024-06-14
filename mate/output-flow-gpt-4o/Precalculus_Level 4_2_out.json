@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 4_2.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 4",
+        "problem": "Find the matrix $\\mathbf{P}$ such that for any vector $\\mathbf{v},$ $\\mathbf{P} \\mathbf{v}$ is the projection of $\\mathbf{v}$ onto the $yz$-plane.",
+        "correct_solution": "The projection $\\mathbf{P}$ takes $\\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix}$ to $\\begin{pmatrix} 0 \\\\ y \\\\ z \\end{pmatrix}.$\n\n[asy]\nimport three;\n\nsize(180);\ncurrentprojection = perspective(6,3,2);\n\ntriple I = (1,0,0), J = (0,1,0), K = (0,0,1), O = (0,0,0);\ntriple V = (2.2,2.5,2.5), W = (0,2.5,2.5);\n\ndraw(V--W,dashed);\ndraw(O--V, red, Arrow3(6));\ndraw(O--W,blue, Arrow3(6));\ndraw(O--3*I, Arrow3(6));\ndraw(O--3*J, Arrow3(6));\ndraw(O--3*K, Arrow3(6));\n\nlabel(\"$x$\", 3.2*I);\nlabel(\"$y$\", 3.2*J);\nlabel(\"$z$\", 3.2*K);\nlabel(\"$\\mathbf{v}$\", V, NW);\nlabel(\"$\\mathbf{w}$\", W, NE);\n[/asy]\n\nThus,\n\\[\\mathbf{P} \\mathbf{i} = \\begin{pmatrix} 0 \\\\ 0 \\\\ 0 \\end{pmatrix}, \\quad \\mathbf{P} \\mathbf{j} = \\begin{pmatrix} 0 \\\\ 1 \\\\ 0 \\end{pmatrix}, \\quad \\mathbf{P} \\mathbf{k} = \\begin{pmatrix} 0 \\\\ 0 \\\\ 1 \\end{pmatrix},\\]so\n\\[\\mathbf{P} = \\boxed{\\begin{pmatrix} 0 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix}}.\\]",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\nStep 1:\nTo project a vector $\\mathbf{v} = \\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix}$ onto the $yz$-plane, we need to remove its $x$-component.\n\nStep 2:\nThe projection of $\\mathbf{v}$ onto the $yz$-plane is $\\begin{pmatrix} 0 \\\\ y \\\\ z \\end{pmatrix}$.\n\nStep 3:\nWe need to find a matrix $\\mathbf{P}$ such that $\\mathbf{P} \\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ y \\\\ z \\end{pmatrix}$.\n\nStep 4:\nThis implies:\n\\[\n\\mathbf{P} = \\begin{pmatrix} p_{11} & p_{12} & p_{13} \\\\ p_{21} & p_{22} & p_{23} \\\\ p_{31} & p_{32} & p_{33} \\end{pmatrix}\n\\]\nshould satisfy $\\mathbf{P} \\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ y \\\\ z \\end{pmatrix}$ for any vector $\\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix}$.\n\nStep 5:\nWriting out the product $\\mathbf{P} \\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix}$, we get:\n\\[\n\\mathbf{P} \\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix} = \\begin{pmatrix} p_{11}x + p_{12}y + p_{13}z \\\\ p_{21}x + p_{22}y + p_{23}z \\\\ p_{31}x + p_{32}y + p_{33}z \\end{pmatrix}\n\\]\n\nStep 6:\nFor this to equal $\\begin{pmatrix} 0 \\\\ y \\\\ z \\end{pmatrix}$, we need:\n\\[\np_{11}x + p_{12}y + p_{13}z = 0 \\quad \\text{(for any } x, y, z)\n\\]\nThis means $p_{11} = 0$, $p_{12} = 0$, and $p_{13} = 0$.\n\nStep 7:\nAlso,\n\\[\np_{21}x + p_{22}y + p_{23}z = y \\quad \\text{(for any } y, z)\n\\]\nThis indicates $p_{21} = 0$, $p_{22} = 1$, $p_{23} = 0$.\n\nStep 8:\nFinally,\n\\[\np_{31}x + p_{32}y + p_{33}z = z \\quad \\text{(for any } y, z)\n\\]\nThis means $p_{31} = 0$, $p_{32} = 0$, $p_{33} = 1$.\n\nStep 9:\nThus, the matrix $\\mathbf{P}$ that projects $\\mathbf{v}$ onto the $yz$-plane is:\n\\[\n\\mathbf{P} = \\begin{pmatrix} 0 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix}\n\\]\n\nFinal answer:\n\\boxed{\\begin{pmatrix} 0 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix}}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7498594716132658
+            }
+        }
+    }
+}

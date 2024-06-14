@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 5_3.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 5",
+        "problem": "How many subsets of the set of divisors of $72$ contain only composite numbers? For example, $\\{8,9\\}$ and $\\{4,8,12\\}$ are two such sets. Include the empty set in your count.",
+        "correct_solution": "We know that the number of subsets of any given set is equal to $2^n,$ where $n$ is the number of elements in the set. First, then, we need to find the number of composite divisors. The prime factorization of $72$ is $72=2^3 \\cdot 3^2,$ so there are $(3+1)(2+1)=12$ total divisors. (To see this, note that we can form a divisor of the form $2^a 3^b$ by freely choosing $a=0,1,2,3$ and $b=0,1,2$). Of these, $1$ is neither prime nor composite, and $2$ and $3$ are prime, for a total of $9$ composite divisors. Therefore there are $2^9=\\boxed{512}$ subsets of the divisors of $72$ with only composite divisors.",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\nStep 1:\nStart by listing all the divisors of $72$. The divisors are: $1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, 72$.\n\nStep 2:\nIdentify which of these divisors are composite numbers. Composite numbers have more than two distinct positive divisors. Among the divisors of $72$, the composite numbers are: $4, 6, 8, 9, 12, 18, 24, 36, 72$.\n\nStep 3:\nThere are 9 composite numbers among the divisors of $72$. These numbers form the set $\\{4, 6, 8, 9, 12, 18, 24, 36, 72\\}$.\n\nStep 4:\nTo find the number of subsets containing only these composite numbers, we consider all possible subsets of the set of 9 elements. The total number of subsets of a set with $n$ elements is given by $2^n$.\n\nStep 5:\nSince we have 9 composite numbers, the number of subsets is $2^9 = 512$. \n\nStep 6:\nThus, the number of subsets of the set of divisors of $72$ that contain only composite numbers, including the empty set, is $512$.\n\nFinal answer:\n\\boxed{512}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7094379639448568
+            }
+        }
+    }
+}

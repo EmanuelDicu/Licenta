@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 2_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 2",
+        "problem": "Fifty students were surveyed about their participation in hockey and baseball. The results of the survey were:\n\n$\\bullet$ $33$ students played hockey\n\n$\\bullet$ $24$ students played baseball\n\n$\\bullet$ $8$ students played neither hockey nor baseball\n\nHow many of the students surveyed played both hockey and baseball?",
+        "correct_solution": "Since there were $50$ students surveyed in total and $8$ played neither hockey nor baseball, then $42$ students in total played one game or the other.\n\nSince $33$ students played hockey and $24$ students played baseball, and this totals $33+24=57$ students, then there must be $\\boxed{15}$ students who are \"double-counted\", that is who play both sports.",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\nStep 1:\nThe total number of students surveyed is 50.\nStep 2:\nThe number of students who played neither hockey nor baseball is 8.\nStep 3:\nSubtracting the students who played neither from the total number of students, we have 50 - 8 = 42 students who played either hockey or baseball or both.\nStep 4:\nLet x be the number of students who played both hockey and baseball. According to the principle of inclusion-exclusion, the total number of students who played either hockey or baseball or both can be found by summing the number of students who played hockey and the number of students who played baseball, and then subtracting the number of students who played both:\n33 + 24 - x = 42.\nStep 5:\nSolving for x, we get:\n57 - x = 42.\nStep 6:\nSubtracting 42 from both sides, we have:\n57 - 42 = x.\nStep 7:\nTherefore, x = 15.\nFinal answer:\n\\boxed{15}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.713953488372093
+            }
+        }
+    }
+}

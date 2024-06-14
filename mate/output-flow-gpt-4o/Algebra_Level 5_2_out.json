@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 5_2.json": {
+        "category": "Algebra",
+        "difficulty": "Level 5",
+        "problem": "Solve the inequality $$-13(r+5) + 25 > 4(r-10)$$for $r$. Express your answer in interval notation.",
+        "correct_solution": "First, we use the distributive property to expand the left-hand side of the inequality: $$-13r - 65 + 25 > 4r - 40$$The constants on the left side add up to $-40$, so adding $40$ to both sides cancels all the constant terms: $$-13r > 4r$$Adding $13r$ to both sides yields $$0 > 17r$$and dividing both sides by $17$ gives $0>r$, or in interval notation, $r\\in\\boxed{(-\\infty,0)}$.",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\nStep 1:\nStart with the given inequality:\n$$-13(r+5) + 25 > 4(r-10)$$\n\nStep 2:\nDistribute the -13 on the left side and the 4 on the right side:\n$$-13r - 65 + 25 > 4r - 40$$\n\nStep 3:\nCombine like terms on the left side:\n$$-13r - 40 > 4r - 40$$\n\nStep 4:\nAdd 13r to both sides to isolate the variable term on one side:\n$$-40 > 17r - 40$$\n\nStep 5:\nAdd 40 to both sides to simplify:\n$$0 > 17r$$\n\nStep 6:\nDivide both sides by 17 to solve for $r$:\n$$r < 0$$\n\nStep 7:\nExpress the solution set in interval notation:\nThe solution set for $r$ is:\n$$(-\\infty, 0)$$\n\nFinal answer:\n\\boxed{(-\\infty, 0)}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": false,
+                "Same result": false,
+                "Levenshtein distance value": 0.6016528925619835
+            }
+        }
+    }
+}

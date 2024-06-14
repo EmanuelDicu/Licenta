@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 4_3.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 4",
+        "problem": "Beginning at point $A$ in the diagram below, Dora selects one of the four possible directions with equal probability. Each time she comes to an intersection, she again randomly selects one of the possible directions. What is the probability that, in her first four steps, she will walk completely around the gray square? Express your answer as a common fraction. [asy]size(100);\nfill((1,1)--(1,2)--(2,2)--(2,1)--cycle, gray(.6));\ndraw((0,0)--(0,3)--(3,3)--(3,0)--cycle, linewidth(1.5));\ndraw((0,1)--(3,1), linewidth(1.5));\ndraw((0,2)--(3,2), linewidth(1.5));\ndraw((1,0)--(1,3), linewidth(1.5));\ndraw((2,0)--(2,3), linewidth(1.5));\ndot(MP(\"A\", (1,2), NW));\n[/asy]",
+        "correct_solution": "The only way for the Dora to end up at her starting point in four steps is for her to traverse the four sides of the gray square.  She can do this in two ways: clockwise and counterclockwise. The probability of each of these two paths is $\\left(\\frac{1}{4}\\right)^4=\\frac{1}{256}$.  Therefore, the probability that she ends up where she started is $\\dfrac{1}{256}+\\dfrac{1}{256}=\\boxed{\\dfrac{1}{128}}$.",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\nStep 1:\nIdentify the starting point and directions. Dora starts at point $A$ and can choose one of the four directions (up, down, left, right) with equal probability.\n\nStep 2:\nDetermine the valid sequence of moves that form a complete walk around the gray square. To walk completely around the gray square, Dora must make the following moves in order: (right, down, left, up) or (left, up, right, down).\n\nStep 3:\nCalculate the probability of each valid sequence occurring.\n- For sequence (right, down, left, up):\n  - The probability Dora chooses the correct first move (right) is $\\frac{1}{4}$.\n  - The probability Dora chooses the correct second move (down) is $\\frac{1}{3}$.\n  - The probability Dora chooses the correct third move (left) is $\\frac{1}{2}$.\n  - The probability Dora chooses the correct fourth move (up) is $\\frac{1}{1}$.\n  Therefore, the probability of the sequence (right, down, left, up) occurring is $\\frac{1}{4} \\times \\frac{1}{3} \\times \\frac{1}{2} \\times 1 = \\frac{1}{24}$.\n\n- For sequence (left, up, right, down):\n  - The probability Dora chooses the correct first move (left) is $\\frac{1}{4}$.\n  - The probability Dora chooses the correct second move (up) is $\\frac{1}{3}$.\n  - The probability Dora chooses the correct third move (right) is $\\frac{1}{2}$.\n  - The probability Dora chooses the correct fourth move (down) is $\\frac{1}{1}$.\n  Therefore, the probability of the sequence (left, up, right, down) occurring is $\\frac{1}{4} \\times \\frac{1}{3} \\times \\frac{1}{2} \\times 1 = \\frac{1}{24}$.\n\nStep 4:\nSince there are two valid sequences, the total probability is the sum of the probabilities of each valid sequence:\n\\[\nP(\\text{complete walk}) = \\frac{1}{24} + \\frac{1}{24} = \\frac{2}{24} = \\frac{1}{12}\n\\]\n\nFinal answer:\n\\boxed{\\frac{1}{12}}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8233650083845724
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 3_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 3",
+        "problem": "What is the tens digit in the sum $7! + 8! + 9! + \\cdots + 2006!$?",
+        "correct_solution": "Since $n!$ contains the product $2\\cdot5\\cdot10= 100$ whenever $n\\ge 10$,  it suffices to determine the tens digit of \\[\n7! + 8! + 9! = 7!(1 + 8 + 8\\cdot9) = 5040(1 + 8 + 72)= 5040\\cdot81.\n\\]This  is the same as the units digit of $4\\cdot 1$, which is $\\boxed{4}$.",
+        "generated_solutions": {
+            "gpt-4o": "Solution:\n```\nConsider the factorial calculations starting with 7!. \nNote that for any \\( n \\geq 10 \\), \\( n! \\) (the factorial of \\( n \\)) will be divisible by 10 because it includes both 2 and 5 as factors.\nThis indicates that any factorial \\( n! \\) for \\( n \\geq 10 \\) will end in at least one '0'.\n\nSince \\( 10! \\), \\( 11! \\), \\( 12! \\), up to \\( 2006! \\) all end in at least one '0', their tens digit will be 0.\n\nNow, we consider only the factorials from \\( 7! \\) to \\( 9! \\) to find the tens digit of their sum. \nWe need to calculate their values:\n\\[ 7! = 5040 \\]\n\\[ 8! = 40320 \\]\n\\[ 9! = 362880 \\]\n\nWe sum \\( 7! \\), \\( 8! \\), and \\( 9! \\):\n\\[ 5040 + 40320 + 362880 \\]\n\nTo find the tens digit of the sum:\n\\[ 5040 + 40320 = 45360 \\]\n\\[ 45360 + 362880 = 408240 \\]\n\nThe tens digit of the resulting sum \\( 408240 \\) is 4.\n\nSince all higher factorials (\\( 10! \\) to \\( 2006! \\)) do not contribute to the tens digit of the sum, the tens digit of the sum of \\( 7! + 8! + 9! + \\cdots + 2006! \\) is determined solely by the sum \\( 408240 \\).\n\nFinal answer:\n\\boxed{4}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8209934395501406
+            }
+        }
+    }
+}

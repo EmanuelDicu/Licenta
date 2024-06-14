@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 2_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 2",
+        "problem": "Find the measure, in degrees, of the smallest positive angle $\\theta$ for which $\\sin 3 \\theta = \\cos 7 \\theta.$",
+        "correct_solution": "Note that $\\cos 7 \\theta = \\sin (90^\\circ - 7 \\theta),$ so\n\\[\\sin 3 \\theta = \\sin (90^\\circ - 7 \\theta).\\]If $3 \\theta = 90^\\circ - 7 \\theta,$ then $\\theta = 9^\\circ.$\n\nIf $0^\\circ < \\theta < 9^\\circ,$ then $\\sin 3 \\theta < \\sin 27^\\circ$ and $\\sin (90^\\circ - 7 \\theta) > \\sin 27^\\circ,$ so the smallest positive solution is $\\boxed{9^\\circ}.$",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\nStep 1:\nWe start by using the identity that $\\cos x = \\sin (90^\\circ - x).$\nFor the given problem, $\\sin 3\\theta = \\cos 7\\theta,$ we can rewrite $\\cos 7\\theta$ as $\\sin (90^\\circ - 7\\theta).$\nSo, the equation becomes $\\sin 3\\theta = \\sin (90^\\circ - 7\\theta).$\n\nStep 2:\nTo find the smallest positive angle $\\theta$ that satisfies this equation, we set the arguments of the sine functions equal to each other or their supplements.\nThus, we have two cases:\n1) $3\\theta = 90^\\circ - 7\\theta$\n2) $3\\theta = 180^\\circ - (90^\\circ - 7\\theta).$\n\nStep 3:\nSolve the first case:\n$3\\theta = 90^\\circ - 7\\theta$\nAdd $7\\theta$ to both sides:\n$3\\theta + 7\\theta = 90^\\circ$\n$10\\theta = 90^\\circ$\nDivide both sides by 10:\n$\\theta = 9^\\circ$\n\nStep 4:\nSolve the second case:\n$3\\theta = 180^\\circ - (90^\\circ - 7\\theta)$\nSimplify the right-hand side:\n$3\\theta = 180^\\circ - 90^\\circ + 7\\theta$\n$3\\theta = 90^\\circ + 7\\theta$\nSubtract $7\\theta$ from both sides:\n$3\\theta - 7\\theta = 90^\\circ$\n$-4\\theta = 90^\\circ$\nDivide both sides by -4:\n$\\theta = -22.5^\\circ$\n\nStep 5:\nSince we need the smallest positive angle, we discard $\\theta = -22.5^\\circ$ because it is negative.\n\nFinal answer:\n\\boxed{9^\\circ}\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7612312811980033
+            }
+        }
+    }
+}
