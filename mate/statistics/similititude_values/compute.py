@@ -9,6 +9,9 @@ from google.api_core.exceptions import ResourceExhausted
 
 # List of folders as seen in the provided image
 folders = [
+    'output-direct-gemini-1.5-flash',
+    'output-direct-gemini-1.5-pro',
+    'output-direct-gpt-3.5-turbo',
     'output-direct-gpt-4o',
     'output-direct-meta/llama3-70b-instruct',
     'output-flow-gemini-1.5-flash',
@@ -80,7 +83,7 @@ def invoke(model, text: str) -> str:
             sleep += 1
             if sleep > 5:
                 print(f"ResourceExhausted exception occurred 5 times in a row. Exiting.")
-                break
+                return "NONE"
             time.sleep(sleep_time)
             sleep_time *= 2
         except Exception as e:
@@ -88,8 +91,15 @@ def invoke(model, text: str) -> str:
             return "NONE"
         else:
             completed = True
-
-    return response.text.strip()
+    
+    try:
+        response = response.text.strip()
+    except Exception as e:
+        print(f"Exception occurred while processing property: {e}")
+        return "NONE"
+    
+    return response
+    
 
 # Function to summarize the solution via api call
 def summarize_solution(solution):
@@ -114,11 +124,13 @@ def compute_similitude_rates(folder_path):
     sim1 = 0
     sim2 = 0
     total = 0
+    inx = 0
     for root, dirs, files in os.walk(folder_path):
         for file_name in files:
             if file_name.endswith('.json'):
                 file_path = os.path.join(root, file_name)
-                print("Processing file: ", file_path, f'-  {total + 1}/{len(files)}...')
+                print("Processing file: ", file_path, f'-  {inx + 1}/{len(files)}...')
+                inx += 1
                 with open(file_path, 'r') as json_file:
                     data = json.load(json_file)
                     # remove _out from file name from string
@@ -149,14 +161,29 @@ def list_files_in_specified_folders(root_dir, folder_list):
         folder_path = os.path.join(root_dir, folder_name)
 
         algorithm_name = folder_name.split('/')[-1]
-        print("Processing folder: ", algorithm_name, "...")
         if algorithm_name.startswith('output-'):
             algorithm_name = algorithm_name[7:]
+        else:
+            if 'direct' in folder_name:
+                algorithm_name = 'direct-llama3-' + algorithm_name[7:]
+            else:
+                algorithm_name = 'flow-llama3-' + algorithm_name[7:]
+        print(f'Processing folder: {folder_name}...')
 
         # Check if the current path is a directory
         if os.path.isdir(folder_path):
-            sim1, sim2 = compute_similitude_rates(folder_path)
-            csv_writer.writerow([algorithm_name, sim1, sim2])
+            # check if the file exists
+            if not os.path.exists(f'{algorithm_name}_similitude_values.txt'):
+                sim1, sim2 = compute_similitude_rates(folder_path)
+                with open(f'{algorithm_name}_similitude_values.txt', 'w') as f:
+                    f.write(f'Similitude 1: {sim1}\nSimilitude 2: {sim2}')
+                csv_writer.writerow([algorithm_name, sim1, sim2])
+            else:
+                with open(f'{algorithm_name}_similitude_values.txt', 'r') as f:
+                    lines = f.readlines()
+                    sim1 = float(lines[0].split(': ')[1])
+                    sim2 = float(lines[1].split(': ')[1])
+                csv_writer.writerow([algorithm_name, sim1, sim2])
         else:
             csv_writer.writerow([algorithm_name, 0, 0, 0])
                     
