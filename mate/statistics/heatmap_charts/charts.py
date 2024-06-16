@@ -2,6 +2,7 @@ import os
 import json
 import matplotlib.pyplot as plt
 import seaborn as sns
+import matplotlib as mpl
 
 # List of folders as seen in the provided image
 folders = [
@@ -60,7 +61,14 @@ def compute_pair_value(folder_path):
     return true_true_count, true_false_count, false_true_count, false_false_count
 
 def list_files_in_specified_folders(root_dir, folder_list):
-    fig, axes = plt.subplots(1, 5, figsize=(25, 5))
+    fig = plt.figure()
+    spec = mpl.gridspec.GridSpec(ncols=6, nrows=2) # 6 columns evenly divides both 2 & 3
+
+    ax1 = fig.add_subplot(spec[0,0:2]) # row 0 with axes spanning 2 cols on evens
+    ax2 = fig.add_subplot(spec[0,2:4])
+    ax3 = fig.add_subplot(spec[0,4:])
+    ax4 = fig.add_subplot(spec[1,1:3]) # row 0 with axes spanning 2 cols on odds
+    ax5 = fig.add_subplot(spec[1,3:5])
     
     for idx, folder_name in enumerate(folder_list):
         folder_path = os.path.join(root_dir, folder_name)
@@ -79,12 +87,14 @@ def list_files_in_specified_folders(root_dir, folder_list):
         # Create heatmap data
         heatmap_data = [[true_true, true_false], [false_true, false_false]]
 
+        my_ax = [ax1, ax2, ax3, ax4, ax5][idx]
+
         # Plot heatmap in the subplot
         sns.heatmap(heatmap_data, annot=True, fmt='d', cmap='Blues', 
-                    xticklabels=['True', 'False'], yticklabels=['True', 'False'], ax=axes[idx])
-        axes[idx].set_title(f"{algorithm_name}")
-        axes[idx].set_xlabel('Same Result')
-        axes[idx].set_ylabel('Cvorum')
+                    xticklabels=['True', 'False'], yticklabels=['True', 'False'], ax=my_ax)
+        my_ax.set_title(f"{algorithm_name}")
+        my_ax.set_xlabel('Same Result')
+        my_ax.set_ylabel('Cvorum')
     
     plt.tight_layout()
     # Save the plot to a file instead of showing it
