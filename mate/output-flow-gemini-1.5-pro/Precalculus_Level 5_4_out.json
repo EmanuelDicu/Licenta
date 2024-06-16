@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 5_4.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 5",
+        "problem": "Let $0, a, b, c$ be the vertices of a square in counterclockwise order.  Compute\n\\[\\frac{ac + b^2}{ab}.\\]Enter your answer in rectangular form.",
+        "correct_solution": "Here's a labelled picture of our square, with the vertices connected to the origin:\n[asy]\nimport TrigMacros; \nsize(180); \n\npair O, A, B, C;\n\nrr_cartesian_axes(-2, 8, -5, 7, complexplane = true, usegrid = false); \nO = (0,0); \nA = (3, -1); \nB = scale(sqrt(2))*rotate(45)*A; \nC = rotate(90)*A; \n\ndraw(A--B--C--O--cycle); \ndraw(O--B); \n\ndot(\"$a$\", A, S); \ndot(\"$b$\", B, E); \ndot(\"$c$\", C, N); \ndot(\"$0$\", O, SW); \n[/asy]\n\nWe know $b$ is a rotation of $a$ by $\\pi/4$ around the origin, scaled by a factor of $\\sqrt{2}$. That means that $b = \\sqrt{2}e^{\\pi i/4} a$, which becomes\n\\begin{align*} \nb &= \\sqrt{2}(\\cos (\\pi/4) + i \\sin(\\pi/4))a \\\\\n    &= \\sqrt{2}\\left( \\dfrac{\\sqrt{2}}{2} + \\dfrac{\\sqrt{2}}{2} i\\right)a \\\\\n    &= (1+i)a.\n\\end{align*}Therefore, $\\frac{b}{a} = 1+i.$\n\nSimilarly, $c$ is a rotation of $b$ by $\\pi/4$ around the origin, scaled by a factor of $\\frac{1}{\\sqrt{2}},$  That means $c = \\frac{e^{\\pi i/4}}{\\sqrt{2}} b,$ which becomes\n\\[c = \\frac{\\sqrt{2}/2 + \\sqrt{2}/2 \\cdot i}{\\sqrt{2}} b = \\frac{1 + i}{2} b.\\]Therefore, $\\frac{c}{b} = \\frac{1 + i}{2}.$\n\nThen\n\\[\\frac{ac + b^2}{ab} = \\frac{c}{b} + \\frac{b}{a} = \\frac{1 + i}{2} + 1 + i = \\boxed{\\frac{3}{2} + \\frac{3}{2} i}.\\]",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1:\nLet's represent the complex numbers as points on the complex plane.  Let $a$ be the complex number $p + qi,$ where $p$ and $q$ are real numbers.\n\n[asy]\nunitsize(1 cm);\n\npair A, B, C, O;\n\nA = (1,1);\nB = (1,-1);\nC = (-1,-1);\nO = (0,0);\n\ndraw(O--A,Arrow(6));\ndraw(O--B,Arrow(6));\ndraw(O--C,Arrow(6));\ndraw(A--B--C--cycle);\n\nlabel(\"$0$\", O, SW);\nlabel(\"$a$\", A, NE);\nlabel(\"$b$\", B, SE);\nlabel(\"$c$\", C, SW);\n[/asy]\n\nStep 2:\nSince $0abc$ is a square, $b$ is obtained by rotating $a$ counterclockwise by $90^\\circ.$  This is the same as multiplying $a$ by $i,$ so $b = ai = (p + qi) i = -q + pi.$\n\nStep 3:\nAlso, $c$ is obtained by rotating $b$ counterclockwise by $90^\\circ,$ so $c = bi = (-q + pi) i = -p - qi.$\n\nStep 4:\nNow, we can compute\n\\begin{align*}\n\\frac{ac + b^2}{ab} &= \\frac{(p + qi)(-p - qi) + (-q + pi)^2}{(p + qi)(-q + pi)} \\\\\n&= \\frac{-(p^2 + q^2) + (q^2 - p^2 - 2pqi)}{(p + qi)(-q + pi)} \\\\\n&= \\frac{-2p^2 - 2pqi}{-pq - q^2 + p^2 i + pqi} \\\\\n&= \\frac{2p(p + qi)}{(-q + pi)(p + qi)} \\\\\n&= \\frac{2p}{-q + pi} \\\\\n&= \\frac{2p(-q - pi)}{(-q + pi)(-q - pi)} \\\\\n&= \\frac{-2pq - 2p^2 i}{q^2 + p^2} \\\\\n&= \\boxed{-\\frac{2pq}{q^2 + p^2} - \\frac{2p^2}{q^2 + p^2} i}.\n\\end{align*}\nFinal answer:\n\\boxed{-\\frac{2pq}{q^2 + p^2} - \\frac{2p^2}{q^2 + p^2} i}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7437304075235109
+            }
+        }
+    }
+}

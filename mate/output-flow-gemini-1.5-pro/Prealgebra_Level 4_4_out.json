@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 4_4.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 4",
+        "problem": "Three concentric circles are shown. The two largest circles have radii of $12$ and $13.$ If the area of the ring between the two largest circles equals the area of the smallest circle, determine the radius of the smallest circle.\n\n[asy]\nimport graph;\nfilldraw(circle((0,0),12), lightgray, black+linewidth(1));\nfilldraw(circle((0,0),10), white, black+linewidth(1));\nfilldraw(circle((0,0),6), gray, black+linewidth(1));\ndot((0,0));\n[/asy]",
+        "correct_solution": "The area of the ring between the two largest circles is $$\\pi\\cdot 13^2-\\pi\\cdot 12^2=169\\pi - 144\\pi=25\\pi.$$Suppose that the radius of the smallest circle is $r.$ Thus, the area of the smallest circle is $\\pi r^2.$ Since the area of the smallest circle is equal to the area of the ring between the two largest circles, then $\\pi r^2 = 25\\pi$ so $r^2 = 25$ and so $r=5$ since $r>0.$\n\nTherefore, the radius of the smallest circle is $\\boxed{5}.$",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1: We know that the area of a circle is calculated using the formula: Area = \u03c0 * r\u00b2, where r is the radius. \n\nStep 2: Let's denote the radius of the smallest circle as 'r'.\n\nStep 3: The area of the largest circle is \u03c0 * 13\u00b2 = 169\u03c0.\n\nStep 4: The area of the middle circle is \u03c0 * 12\u00b2 = 144\u03c0.\n\nStep 5: The area of the ring between the two largest circles is the difference between their areas: 169\u03c0 - 144\u03c0 = 25\u03c0.\n\nStep 6: According to the problem, the area of this ring (25\u03c0) is equal to the area of the smallest circle (\u03c0 * r\u00b2). Therefore, we have the equation: 25\u03c0 = \u03c0 * r\u00b2.\n\nStep 7: Dividing both sides of the equation by \u03c0, we get: 25 = r\u00b2.\n\nStep 8: Taking the square root of both sides, we find: r = 5.\n\nFinal answer:\n\\boxed{5}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": false,
+                "Same result": true,
+                "Levenshtein distance value": 0.6449468085106383
+            }
+        }
+    }
+}

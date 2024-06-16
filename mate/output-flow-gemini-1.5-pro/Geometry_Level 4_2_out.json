@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 4_2.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "A circle is circumscribed about an equilateral triangle with side lengths of $6$ units each.  What is the area of the circle, in square units? Express your answer in terms of $\\pi$.",
+        "correct_solution": "[asy]\nsize(100);\ndefaultpen(linewidth(.8));\ndraw((0,0)--(4.5,7.794)--(9,0)--cycle);\ndraw(Circle((4.5,2.598),5.196));\ndraw((4.5,7.794)--(4.5,0));\ndot((4.5,2.598));\nlabel(\"$O$\",(4.5,2.598),W);\nlabel(\"$A$\",(4.5,7.794),N);\nlabel(\"$B$\",(9,0),E);\nlabel(\"$M$\",(4.5,0),S);\n[/asy]\n\nAbove is the diagram implied by the problem, with some added lines ($O$ is the center of the circle). Since $\\triangle AMB$ is a 30-60-90 triangle and $AB=6$, $AM=3\\sqrt{3}$. Since $AO$ is $2/3$ of $AM$, we have $AO=2\\sqrt{3}$. Thus, the area of the circle is $\\pi(2\\sqrt{3})^2=\\boxed{12\\pi}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1:\nWe know that the area of a circle is calculated using the formula  $A = \\pi r^2$, where $r$ is the radius of the circle.  Therefore, to find the area of the circle, we need to determine its radius.\n\nStep 2:\nAn important property of equilateral triangles is that their altitudes, medians, and angle bisectors all coincide. This property is crucial for solving this problem.\n\nStep 3:\nLet's draw an altitude from one of the vertices of the triangle to the midpoint of the opposite side. This altitude will bisect the opposite side into two segments of length 3 units each.\n\nStep 4:\nThis altitude also divides the equilateral triangle into two congruent 30-60-90 right triangles.\n\nStep 5:\nWe know that in a 30-60-90 right triangle, the length of the hypotenuse is twice the length of the shorter leg, and the length of the longer leg is  $\\sqrt{3}$ times the length of the shorter leg.\n\nStep 6:\nSince the hypotenuse of our 30-60-90 triangle is 6 (the side length of the equilateral triangle), the shorter leg has length 3, and the longer leg (which is also the altitude of the equilateral triangle) has length $3\\sqrt{3}$.\n\nStep 7:\nThe center of the circle circumscribed about a triangle is the point where the perpendicular bisectors of the sides of the triangle meet.  This point is also called the circumcenter.\n\nStep 8:\nThe altitude we drew is also a perpendicular bisector of a side of the equilateral triangle, and it passes through the circumcenter of the circle.\n\nStep 9:\nThe circumcenter divides the altitude in the ratio 2:1.  This means that the distance from a vertex of the equilateral triangle to the circumcenter is $\\frac{2}{3}$ the length of the altitude.\n\nStep 10:\nTherefore, the radius of our circle is $\\frac{2}{3}(3\\sqrt{3}) = 2\\sqrt{3}$.\n\nStep 11:\nFinally, we can use the formula  $A = \\pi r^2$ to calculate the area of the circle: $A = \\pi (2\\sqrt{3})^2 = \\boxed{12\\pi}$ square units.\nFinal answer:\n\\boxed{12\\pi}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.85743484925907
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 3_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 3",
+        "problem": "What is the tens digit in the sum $7! + 8! + 9! + \\cdots + 2006!$?",
+        "correct_solution": "Since $n!$ contains the product $2\\cdot5\\cdot10= 100$ whenever $n\\ge 10$,  it suffices to determine the tens digit of \\[\n7! + 8! + 9! = 7!(1 + 8 + 8\\cdot9) = 5040(1 + 8 + 72)= 5040\\cdot81.\n\\]This  is the same as the units digit of $4\\cdot 1$, which is $\\boxed{4}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\n```python\nStep 1: \nWe know that for any number n >= 10, n! will have at least two trailing zeros. This is because 10 = 2 * 5, and any factorial from 10! onwards will have at least one 2 and one 5 in its multiplication, resulting in a trailing zero.\n\nStep 2:\nSince 10! and all factorials after it have two trailing zeros, their tens digit will always be 0. \n\nStep 3:\nThis means we only need to consider the tens digit of the sum 7! + 8! + 9!.\n\nStep 4:\nCalculate 7! = 5040, 8! = 40320, and 9! = 362880.\n\nStep 5:\nThe tens digit of the sum is 4 + 3 + 2 = 9.\n\nStep 6:\nTherefore, the tens digit of the sum 7! + 8! + 9! + ... + 2006! is \\boxed{9}. \n```\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.77526395173454
+            }
+        }
+    }
+}

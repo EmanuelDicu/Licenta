@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 3_3.json": {
+        "category": "Geometry",
+        "difficulty": "Level 3",
+        "problem": "A rectangle with perimeter 176 is divided into five congruent rectangles as shown in the diagram.  What is the perimeter of one of the five congruent rectangles?\n\n[asy]\nunitsize(0.6 cm);\n\ndraw((0,0)--(6,0)--(6,5)--(0,5)--cycle);\ndraw((0,2)--(6,2));\ndraw((3,0)--(3,2));\ndraw((2,2)--(2,5));\ndraw((4,2)--(4,5));\n[/asy]",
+        "correct_solution": "Let $x$ and $y$ be the width and length of one of the five rectangles, respectively.\n\n[asy]\nunitsize(0.6 cm);\n\ndraw((0,0)--(6,0)--(6,5)--(0,5)--cycle);\ndraw((0,2)--(6,2));\ndraw((3,0)--(3,2));\ndraw((2,2)--(2,5));\ndraw((4,2)--(4,5));\n\nlabel(\"$x$\", (1,5), N);\nlabel(\"$x$\", (3,5), N);\nlabel(\"$x$\", (5,5), N);\nlabel(\"$y$\", (6,7/2), E);\nlabel(\"$x$\", (6,1), E);\nlabel(\"$y$\", (0,7/2), W);\nlabel(\"$x$\", (0,1), W);\nlabel(\"$y$\", (3/2,0), S);\nlabel(\"$y$\", (9/2,0), S);\n[/asy]\n\nThen $3x = 2y$ and $5x + 4y = 176$.  Solving for $x$ and $y$, we find $x = 16$ and $y = 24$.  Hence, the perimeter of one of the five congruent rectangles is $2x + 2y = \\boxed{80}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```python\nSolution:\nStep 1:\nLet's denote the width of a smaller rectangle as 'w' and the length of a smaller rectangle as 'l'. \n\nStep 2:\nThe length of the larger rectangle is equal to three times the length of one of the smaller rectangles, so it is '3l'. The width of the larger rectangle is equal to five times the width of a smaller rectangle, so it is '5w'.\n\nStep 3:\nThe perimeter of a rectangle is calculated as 2 * (length + width). We know the perimeter of the larger rectangle is 176, so we can write the equation: 2 * (3l + 5w) = 176.\n\nStep 4:\nSimplifying the equation from Step 3, we get: 6l + 10w = 176.\n\nStep 5:\nDividing both sides of the equation by 2, we get: 3l + 5w = 88.\n\nStep 6:\nLooking at the diagram, we can see that the length of the larger rectangle ('3l') is equal to the width of five smaller rectangles ('5w'). Therefore, we can write the equation: 3l = 5w.\n\nStep 7:\nSolving for 'l', we get: l = (5/3)w.\n\nStep 8:\nSubstituting 'l' in the equation from Step 5 with (5/3)w, we get: 3 * (5/3)w + 5w = 88.\n\nStep 9:\nSimplifying the equation from Step 8, we get: 5w + 5w = 88.\n\nStep 10:\nCombining like terms, we get: 10w = 88.\n\nStep 11:\nSolving for 'w', we get: w = 8.8.\n\nStep 12:\nNow that we know the width of a smaller rectangle ('w' = 8.8), we can find the length ('l') using the equation from Step 7: l = (5/3) * 8.8 = 14.67.\n\nStep 13:\nNow that we know both the length ('l' = 14.67) and width ('w' = 8.8) of a smaller rectangle, we can calculate its perimeter: 2 * (14.67 + 8.8) = 2 * 23.47 = 46.94.\n\nFinal answer:\n\\boxed{46.94}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.833976833976834
+            }
+        }
+    }
+}

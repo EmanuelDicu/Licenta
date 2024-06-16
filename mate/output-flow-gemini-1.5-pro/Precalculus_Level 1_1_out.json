@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 1_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 1",
+        "problem": "Compute $\\arccos \\left( -\\frac{1}{2} \\right).$  Express your answer in radians.",
+        "correct_solution": "Since $\\cos \\frac{2 \\pi}{3} = -\\frac{1}{2},$ $\\arccos \\left( -\\frac{1}{2} \\right) = \\boxed{\\frac{2 \\pi}{3}}.$",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nStep 1: We seek an angle $\\theta$ such that $\\cos \\theta = -\\frac{1}{2}.$\nStep 2: Recall that the cosine function is negative in the second and third quadrants.\nStep 3: We know that $\\cos \\frac{\\pi}{3} = \\frac{1}{2}.$  Therefore, $\\cos \\left( \\pi - \\frac{\\pi}{3} \\right) = -\\frac{1}{2}$ and $\\cos \\left( \\pi + \\frac{\\pi}{3} \\right) = -\\frac{1}{2}.$\nStep 4:  The angle in the interval $[0,2 \\pi)$ whose cosine is $-\\frac{1}{2}$ is $\\boxed{\\frac{2 \\pi}{3}}.$ \n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7827956989247312
+            }
+        }
+    }
+}

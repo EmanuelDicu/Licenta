@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 1_2.json": {
+        "category": "Geometry",
+        "difficulty": "Level 1",
+        "problem": "$\\overline{BC}$ is parallel to the segment through $A$, and $AB = BC$. What is the number of degrees represented by $x$?\n\n[asy]\ndraw((0,0)--(10,0));\ndraw((0,3)--(10,3));\ndraw((2,3)--(8,0));\ndraw((2,3)--(4,0));\nlabel(\"$A$\",(2,3),N);\nlabel(\"$B$\",(4,0),S);\nlabel(\"$C$\",(8,0),S);\nlabel(\"$124^{\\circ}$\",(2,3),SW);\nlabel(\"$x^{\\circ}$\",(4.5,3),S);\n[/asy]",
+        "correct_solution": "Angle $\\angle BCA$ and the angle we're trying to measure are alternate interior angles, so they are congruent. Thus, $\\angle BCA=x^\\circ$:\n\n[asy]\ndraw((0,0)--(10,0));\ndraw((0,3)--(10,3));\ndraw((2,3)--(8,0));\ndraw((2,3)--(4,0));\nlabel(\"$A$\",(2,3),N);\nlabel(\"$B$\",(4,0),S);\nlabel(\"$C$\",(8,0),S);\nlabel(\"$124^{\\circ}$\",(2,3),SW);\nlabel(\"$x^{\\circ}$\",(4.5,3),S);\nlabel(\"$x^{\\circ}$\",(6,0),N);\n[/asy]\n\nSince $AB=BC$, we know that $\\triangle ABC$ is isosceles with equal angles at $C$ and $A$. Therefore, $\\angle BAC = x^\\circ$:\n\n[asy]\ndraw((0,0)--(10,0));\ndraw((0,3)--(10,3));\ndraw((2,3)--(8,0));\ndraw((2,3)--(4,0));\nlabel(\"$A$\",(2,3),N);\nlabel(\"$B$\",(4,0),S);\nlabel(\"$C$\",(8,0),S);\nlabel(\"$124^{\\circ}$\",(2,3),SW);\nlabel(\"$x^{\\circ}$\",(4.5,3),S);\nlabel(\"$x^{\\circ}$\",(6,0),N);\nlabel(\"$x^{\\circ}$\",(3.6,1.7));\n[/asy]\n\nThe sum of the three angles at $A$ is $180^\\circ$, since they form a straight angle. Therefore, $$124+x+x=180,$$ which we can solve to obtain $x=\\boxed{28}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1: \nWe are given that $\\overline{BC}$ is parallel to the segment through $A$. Therefore, we know that by the property of corresponding angles, that the angle adjacent to x is congruent to the angle formed by AB and the horizontal segment through A.\nStep 2:\nWe are also given that $AB = BC$, meaning that triangle ABC is an isosceles triangle.\nStep 3:\nBecause triangle ABC is isosceles, we know that angle ABC is congruent to angle ACB.\nStep 4:\nSince the angles in a triangle add up to $180^{\\circ}$, and the angle adjacent to x is $124^{\\circ}$, we have: $x + angle ABC + angle ACB = 180^{\\circ}$\nStep 5:\nCombining the information from steps 3 and 4, we get: $x + angle ABC + angle ABC = 180^{\\circ}$, which can be simplified to: $x + 2 * angle ABC = 180^{\\circ}$.\nStep 6:\nBecause angle ABC and the $124^{\\circ}$ angle are supplementary, we know that:  $angle ABC + 124^{\\circ} = 180^{\\circ}$, so $angle ABC = 56^{\\circ}$\nStep 7:\nSubstituting the value of angle ABC we just calculated into the equation from Step 5, we get: $x + 2 * 56^{\\circ} = 180^{\\circ}$\nStep 8:\nSimplifying the equation from Step 7, we have: $x + 112^{\\circ} = 180^{\\circ}$.\nStep 9:\nSolving for x, we get: $x = 180^{\\circ} - 112^{\\circ} = 68^{\\circ}$\nFinal answer:\n$\\boxed{68^{\\circ}}$\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8078125
+            }
+        }
+    }
+}

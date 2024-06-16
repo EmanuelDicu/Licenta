@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 3_3.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 3",
+        "problem": "There is a complex number $z$ with imaginary part $164$ and a positive integer $n$ such that\n$$\\frac {z}{z + n} = 4i.$$Find $n$.",
+        "correct_solution": "Multiplying by $z+n$, we have $z = 4i(z+n)$, or $z(1-4i) = 4ni$. Thus \\[z = \\frac{4ni}{1-4i} = \\frac{4ni(1+4i)}{17} = \\frac{4ni - 16n}{17}.\\]Since $z$ has imaginary part $164$, we have $4n/17 = 164$, so $n = 17/4 \\cdot 164 = \\boxed{697}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```python\n\"\"\"\nStep 1:\nLet's represent the complex number 'z' in the standard form, z = a + 164i, where 'a' represents the real part of 'z'.\n\nStep 2:\nWe'll substitute this representation of 'z' into the given equation: \n(a + 164i) / (a + 164i + n) = 4i\n\nStep 3:\nTo simplify this equation, we'll multiply both sides by the denominator of the left side:\na + 164i = 4i(a + 164i + n)\n\nStep 4:\nExpanding the right side of the equation gives us:\na + 164i = 4ai + 656i\u00b2 + 4ni\n\nStep 5:\nSince i\u00b2 equals -1, we can further simplify the equation:\na + 164i = 4ai - 656 + 4ni\n\nStep 6:\nLet's group the real and imaginary terms on both sides of the equation:\n(a + 656) + 164i = (4a + 4n)i\n\nStep 7:\nFor two complex numbers to be equal, their corresponding real and imaginary parts must be equal. Therefore, we get two equations:\na + 656 = 0  (Equating the real parts)\n164 = 4a + 4n (Equating the imaginary parts)\n\nStep 8:\nFrom the first equation, we can find the value of 'a':\na = -656\n\nStep 9:\nSubstituting this value of 'a' into the second equation:\n164 = 4(-656) + 4n\n\nStep 10:\nSimplifying the equation:\n164 = -2624 + 4n\n\nStep 11:\nSolving for 'n':\n4n = 2788\nn = 697\n\nFinal answer:\n\\boxed{697} \n\"\"\"\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8770008424599831
+            }
+        }
+    }
+}

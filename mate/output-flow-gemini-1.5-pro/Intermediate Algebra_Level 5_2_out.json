@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 5_2.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 5",
+        "problem": "Let $z$ be a complex number such that $|z| = 1.$  Find the maximum value of\n\\[|1 + z| + |1 - z + z^2|.\\]",
+        "correct_solution": "Let $z = x + yi,$ where $x$ and $y$ are real numbers.  Since $|z| = 1,$ $x^2 + y^2 = 1.$  Then\n\\begin{align*}\n|1 + z| + |1 - z + z^2| &= |1 + x + yi| + |1 - x - yi + x^2 + 2xyi - y^2| \\\\\n&= |(1 + x) + yi| + |(1 - x + x^2 - 1 + x^2) + (-y + 2xy)i| \\\\\n&= |(1 + x) + yi| + |(-x + 2x^2) + (-y + 2xy)i| \\\\\n&= \\sqrt{(1 + x)^2 + y^2} + \\sqrt{(-x + 2x^2)^2 + (-y + 2xy)^2} \\\\\n&= \\sqrt{(1 + x)^2 + y^2} + \\sqrt{(-x + 2x^2)^2 + y^2 (1 - 2x)^2} \\\\\n&= \\sqrt{(1 + x)^2 + 1 - x^2} + \\sqrt{(-x + 2x^2)^2 + (1 - x^2) (1 - 2x)^2} \\\\\n&= \\sqrt{2 + 2x} + \\sqrt{1 - 4x + 4x^2} \\\\\n&= \\sqrt{2 + 2x} + |1 - 2x|.\n\\end{align*}Let $u = \\sqrt{2 + 2x}.$  Then $u^2 = 2 + 2x,$ so\n\\[\\sqrt{2 + 2x} + |1 - 2x| = u + |3 - u^2|.\\]Since $-1 \\le x \\le 1,$ $0 \\le u \\le 2.$\n\nIf $0 \\le u \\le \\sqrt{3},$ then\n\\[u + |3 - u^2| = u + 3 - u^2 = \\frac{13}{4} - \\left( u - \\frac{1}{2} \\right)^2 \\le \\frac{13}{4}.\\]Equality occurs when $u = \\frac{1}{2},$ or $x = -\\frac{7}{8}.$\n\nIf $\\sqrt{3} \\le u \\le 2,$ then\n\\[u + u^2 - 3 = \\left( u + \\frac{1}{2} \\right)^2 - \\frac{13}{4} \\le \\left( 2 + \\frac{1}{2} \\right)^2 - \\frac{13}{4} = 3 < \\frac{13}{4}.\\]Therefore, the maximum value is $\\boxed{\\frac{13}{4}}.$",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```python\n\"\"\"\nStep 1:\nWe begin by trying to interpret the given information geometrically.  The condition $|z| = 1$ means $z$ lies on the unit circle in the complex plane.\n\nStep 2:\nLet $O$ be the origin, and let $A,$ $B,$ and $C$ represent the complex numbers $1,$ $z,$ and $z^2,$ respectively.  Then by the geometric interpretation of complex number addition, the vector $\\overrightarrow{OA} + \\overrightarrow{OB}$ represents $1 + z,$ so $|1 + z| = OA.$  Similarly, $|1 - z + z^2| = BC.$\n\n[asy]\nunitsize(1 cm);\n\npair A, B, C, O;\n\nO = (0,0);\nA = (1,0);\nB = dir(110);\nC = B^2;\n\ndraw(Circle(O,1));\ndraw((-1.2,0)--(1.5,0));\ndraw((0,-1.2)--(0,1.2));\ndraw(O--A,Arrow(6));\ndraw(O--B,Arrow(6));\ndraw(O--C,Arrow(6));\ndraw(A--B--C,dashed);\n\nlabel(\"$O$\", O, SW);\nlabel(\"$A$\", A, SE);\nlabel(\"$B$\", B, NW);\nlabel(\"$C$\", C, NE);\nlabel(\"$1$\", (O + A)/2, S);\nlabel(\"$z$\", (O + B)/2, W);\nlabel(\"$z^2$\", (O + C)/2, NE);\n[/asy]\n\nStep 3:\nSince $|z| = 1,$ $\\angle BOA = \\angle BOC.$  Then by SAS, triangles $BOA$ and $BOC$ are congruent, so $AB = BC.$  Then\n\\[|1 + z| + |1 - z + z^2| = OA + BC = OA + AB.\\]By the Triangle Inequality, $OA + AB \\ge OB,$ so\n\\[|1 + z| + |1 - z + z^2| \\ge OB = |1 + z^2|.\\]\n\nStep 4:\nBy the Triangle Inequality on the points $O,$ $C,$ and $-A,$\n\\[OC + OA \\ge AC = |z^2 + 1|,\\]so\n\\[|1 + z| + |1 - z + z^2| \\ge |1 + z^2| \\ge OC + OA - 1 = 2.\\]Equality occurs when $z = i,$ so the maximum value is $\\boxed{2}.$\n\"\"\"\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8039353478566409
+            }
+        }
+    }
+}

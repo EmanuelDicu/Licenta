@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 5_1.json": {
+        "category": "Geometry",
+        "difficulty": "Level 5",
+        "problem": "An arc of $55$ degrees on circle $A$ has the same length as an arc of $40$ degrees on circle $B$.  What is the ratio of the area of circle $A$ to the area of circle $B$? Express your answer as a common fraction.",
+        "correct_solution": "For a circle of radius $r$ and an arc of $\\theta$ degrees, the arc length is $(2\\pi r)\\frac{\\theta}{360}$. Thus, for the same arc length, the arc angle is inversely proportional to the radius, so the ratio of the radius of circle $A$ to the radius of circle $B$ is $40:55$, or $8:11$. Since the ratio of the areas of two circles is the square of the ratio of their radii, the ratio of the area of circle $A$ to the area of circle $B$ is $(8/11)^2=\\boxed{\\frac{64}{121}}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1: \nThe ratio of the arc lengths is equal to the ratio of the radii of the circles.\nStep 2:\nLet the radius of circle $A$ be $r_a$ and the radius of circle $B$ be $r_b$.\nStep 3:\nWe are given that the arc of $55$ degrees on circle $A$ has the same length as an arc of $40$ degrees on circle $B$. This can be expressed as  $\\frac{55^\\circ}{360^\\circ}\\cdot 2\\pi r_a = \\frac{40^\\circ}{360^\\circ}\\cdot 2\\pi r_b$.\nStep 4:\nSimplifying the expression from Step 3, we get  $\\frac{11}{72}\\cdot 2\\pi r_a = \\frac{1}{9}\\cdot 2\\pi r_b$.\nStep 5:\nFurther simplifying, we find  $\\frac{r_a}{r_b} = \\frac{8}{11}$.\nStep 6:\nThe ratio of the areas of two similar figures is the square of the ratio of corresponding side lengths. Therefore, the ratio of the area of circle $A$ to the area of circle $B$ is $\\left(\\frac{8}{11}\\right)^2 = \\boxed{\\frac{64}{121}}$.\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": false,
+                "Same result": true,
+                "Levenshtein distance value": 0.6406976744186047
+            }
+        }
+    }
+}

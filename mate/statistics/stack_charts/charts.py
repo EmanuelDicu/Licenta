@@ -70,11 +70,14 @@ def create_stack_bar_chart(data, algorithm_name):
     
     bottoms = [0] * len(categories)
     for i, level in enumerate(levels):
+        # sort the categories by their name
+        categories = sorted(categories)
         ax.bar(categories, level, width, label=f'Level {i+1}', bottom=bottoms, color=colors[i])
         bottoms = [bottoms[j] + level[j] for j in range(len(categories))]
     
     ax.set_xlabel('Categories')
     ax.set_ylabel('Number of Solved Problems')
+    ax.set_ylim(0, 16)
     ax.set_title(f'{algorithm_name}')
     ax.legend()
     
@@ -90,7 +93,12 @@ def list_files_in_specified_folders(root_dir, folder_list):
             algorithm_name = folder_name.split('/')[-1]
             if algorithm_name.startswith('output-'):
                 algorithm_name = algorithm_name[7:]
-
+            else:
+                if 'direct' in folder_name:
+                    algorithm_name = 'direct-llama3-' + algorithm_name[7:]
+                else:
+                    algorithm_name = 'flow-llama3-' + algorithm_name[7:]
+            print("Processing folder: ", algorithm_name, "...")
             data = compute_stack_charts(folder_path)
             create_stack_bar_chart(data, algorithm_name)
         else:
