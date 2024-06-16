@@ -12,7 +12,7 @@ folders = [
     'output-direct-gpt-4o',
     'output-direct-meta/llama3-70b-instruct',
     'output-flow-gemini-1.5-flash',
-    'output-flow-gemini-1.5-pro-old',
+    'output-flow-gemini-1.5-pro',
     'output-flow-gpt-3.5-turbo',
     'output-flow-gpt-4o',
     'output-flow-meta/llama3-70b-instruct'
