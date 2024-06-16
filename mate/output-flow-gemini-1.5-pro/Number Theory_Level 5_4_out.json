@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 5_4.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 5",
+        "problem": "Notice that  \\[31\\cdot37=1147.\\]Find some integer $n$ with $0\\leq n<2293$ such that  \\[31n\\equiv 3\\pmod{2293}.\\]",
+        "correct_solution": "Doubling the given equation tells us  \\[31\\cdot74=2294.\\]Specifically  \\[31\\cdot74\\equiv1\\pmod{2293}\\]and 74 is the multiplicative inverse of 31 modulo 2293.\n\nIf we triple the congruence we just found we get  \\[31\\cdot222\\equiv3\\pmod{2293}.\\]Therefore $n=\\boxed{222}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1:\nWe begin by finding the greatest common divisor (GCD) of 31 and 2293 using the Euclidean Algorithm. \nStep 2:\nSince 2293 is larger than 31, we divide 2293 by 31:\n2293 = 74 * 31 + 1 \nStep 3:\nThe remainder is 1, so we continue the algorithm with 31 and 1:\n31 = 31 * 1 + 0\nStep 4:\nSince we have reached a remainder of 0, the GCD of 31 and 2293 is 1. This implies that 31 has a multiplicative inverse modulo 2293.\nStep 5:\nTo find the inverse, we work backwards through the Euclidean Algorithm. From the equation 2293 = 74 * 31 + 1, we can express 1 as a linear combination of 31 and 2293:\n1 = 2293 - 74 * 31 \nStep 6:\nTherefore, the inverse of 31 modulo 2293 is -74. However, we want an integer n such that 0 \u2264 n < 2293.\nStep 7: \nTo get a positive value, we add 2293 to -74:\n-74 + 2293 = 2219\nStep 8:\nThus, the multiplicative inverse of 31 modulo 2293 is 2219.\nStep 9:\nTo solve the congruence 31n \u2261 3 (mod 2293), we multiply both sides by the inverse of 31 modulo 2293:\n2219 * 31n  \u2261 2219 * 3 (mod 2293)\nStep 10:\nSimplifying both sides:\nn \u2261 6657 (mod 2293)\nStep 11: \nTo get an integer n within the range 0 \u2264 n < 2293, we take the remainder when 6657 is divided by 2293:\n6657 = 2 * 2293 + 2071\nTherefore, n = 2071.\nFinal answer:\n\\boxed{2071}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8444444444444444
+            }
+        }
+    }
+}

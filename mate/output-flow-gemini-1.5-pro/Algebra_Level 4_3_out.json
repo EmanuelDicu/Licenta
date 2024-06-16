@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 4_3.json": {
+        "category": "Algebra",
+        "difficulty": "Level 4",
+        "problem": "The product of $3t^2+5t+a$ and $4t^2+bt-2$ is $12t^4+26t^3-8t^2-16t+6$. What is $a+b$?",
+        "correct_solution": "The constant term of the product of two polynomials is just the product of the two constant terms. Therefore we know that $6=-2a$, so $a=-3$. We now consider the linear term of the product of our polynomials. It's given by $-16t=(5t\\cdot-2)+a\\cdot bt\\Longrightarrow-16t=-10t+(-3)bt\\Longrightarrow b=2$. Therefore our answer is $a+b=\\boxed{-1}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1: \nWe perform the multiplication of the two polynomials on the left side of the equation:\n(3t\u00b2 + 5t + a) * (4t\u00b2 + bt - 2)  =  12t\u2074 + 26t\u00b3 - 8t\u00b2 - 16t + 6\n\nStep 2:\nWe multiply each term in the first polynomial by each term in the second polynomial:\n12t\u2074 + 3bt\u00b3 - 6t\u00b2 + 20t\u00b3 + 5bt\u00b2 - 10t + 4at\u00b2 + abt - 2a = 12t\u2074 + 26t\u00b3 - 8t\u00b2 - 16t + 6\n\nStep 3:\nWe combine like terms:\n12t\u2074 + (3b + 20)t\u00b3 + (5b + 4a - 6)t\u00b2 + (ab - 10)t - 2a = 12t\u2074 + 26t\u00b3 - 8t\u00b2 - 16t + 6\n\nStep 4:\nWe equate the coefficients of the corresponding terms on both sides of the equation:\n* For t\u2074: 12 = 12 \n* For t\u00b3: 3b + 20 = 26\n* For t\u00b2: 5b + 4a - 6 = -8\n* For t: ab - 10 = -16\n* For the constant term: -2a = 6\n\nStep 5:\nWe solve the system of equations to find the values of a and b:\nFrom -2a = 6, we get a = -3.\nSubstituting a = -3 into 5b + 4a - 6 = -8, we get 5b - 18 = -8, so 5b = 10 and b = 2.\n\nStep 6: \nFinally, we calculate a + b:  a + b = (-3) + 2 = -1.\n\nFinal answer:\n\\boxed{-1}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.811340206185567
+            }
+        }
+    }
+}

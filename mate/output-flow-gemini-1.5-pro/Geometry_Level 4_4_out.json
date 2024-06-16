@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 4_4.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "We have a triangle $\\triangle ABC$ where $AC = 17,$ $BC = 15,$ and $AB = 8.$ Let $M$ be the midpoint of $AB.$ What is the length of $CM$?",
+        "correct_solution": "First, we notice that $8:15:17$ is a Pythagorean triple, so we have a right triangle. Let's draw a sketch: [asy]\npair A, B, C, M;\nA = (0, 8);\nB = (0, 0);\nC = (15, 0);\nM = 0.5 * A + 0.5 * B;\ndraw(A--B--C--cycle);\ndraw(C--M);\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$M$\", M, NE);\nlabel(\"$8$\", A--B, W);\nlabel(\"$15$\", B--C, S);\nlabel(\"$17$\", A--C, NE);\ndraw(rightanglemark(A,B,C,20));\n[/asy] Since we know that $BM = \\frac{1}{2} \\cdot AB = 4,$ we simply apply the Pythagorean theorem to right triangle $\\triangle MBC.$ \\begin{align*}\nCM^2 &= BM^2 + BC^2\\\\\nCM^2 &= 4^2 + 15^2 = 241\\\\\nCM &= \\boxed{\\sqrt{241}}.\n\\end{align*}",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nStep 1: We are told that $M$ is the midpoint of $AB$. Therefore, $AM=MB=\\frac{1}{2}AB = 4$.\n\nStep 2: We are also given that  $\\\\triangle ABC$ is a right triangle with right angle at $C$. We can apply the Pythagorean Theorem to find the lengths of the legs of the triangle.\n\nStep 3: Since $AC$ and $BC$ are the legs of the right triangle, we can use the Pythagorean Theorem ($a^2 + b^2 = c^2$) to find the length of the hypotenuse, which is $AB$. \n\nStep 4: We are given $AC = 17$ and $BC = 15$. Applying the Pythagorean Theorem: $AB^2 = AC^2 + BC^2 = 17^2 + 15^2 = 289 + 225 = 514$. Therefore, $AB = \\sqrt{514}$.\n\nStep 5: Now, we can use the Pythagorean Theorem again to find $CM$.  Triangle $AMC$ is also a right triangle (since $\\triangle ABC$ is a right triangle), with right angle at $A$.\n\nStep 6:  We know $AM = 4$ and $AC = 17$. Applying the Pythagorean Theorem:  $CM^2 = AC^2 - AM^2 = 17^2 - 4^2 = 289 - 16 = 273$. Therefore, $CM = \\sqrt{273} = \\boxed{3\\sqrt{31}}$.\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7681307456588355
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 3_3.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 3",
+        "problem": "What is the smallest whole number $b$ such that 47 can be expressed in base $b$ using only two digits?",
+        "correct_solution": "For 47 to be expressed in two digits in base $b$, $47 < 100_b = 1 \\cdot b^2$.  So $\\! \\sqrt{47} < b$, which means the smallest whole number $b$ can be is $\\boxed{7}$.  We can check to be sure: $47 = 65_7 = 115_6$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1:\nWe need to find the smallest base b such that 47 can be represented with two digits in that base. Let the two digits be $a_1$ and $a_0$, where $a_1$ is the most significant digit and $a_0$ is the least significant digit. \n\nStep 2:\nThe place values in base b are powers of b:  ..., $b^2$, $b^1$, $b^0$.  Since we're using two digits, the representation of 47 in base b will be of the form: $a_1b^1 + a_0b^0 = a_1b + a_0$.\n\nStep 3:\nWe are given that this representation must equal 47: $a_1b + a_0 = 47$.\n\nStep 4: \nTo find the smallest possible value for b, we want to maximize the value of $a_1$ since it is multiplied by b. The largest possible value for a digit in any base is one less than the base itself.  Therefore, the largest possible value for $a_1$ is $b-1$.\n\nStep 5:\nSubstituting  $a_1 = b-1$ into the equation from Step 3, we get: $(b-1)b + a_0 = 47$.\n\nStep 6:\nSimplifying the equation, we get: $b^2 - b + a_0 = 47$.\n\nStep 7: \nTo minimize b, we should maximize $a_0$. The largest possible value for $a_0$ is also $b-1$. Substituting, we get: $b^2 - b + (b - 1) = 47$.\n\nStep 8:\nSimplifying the equation, we get: $b^2 = 48$.\n\nStep 9: \nTaking the square root of both sides, we get $b = \\sqrt{48}$. Since we are looking for the smallest **whole number** b, we need to find the smallest whole number greater than $\\sqrt{48}$. This number is $\\boxed{7}$. \n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8866425992779784
+            }
+        }
+    }
+}

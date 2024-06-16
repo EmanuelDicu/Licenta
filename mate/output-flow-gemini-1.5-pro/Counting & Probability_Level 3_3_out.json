@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 3_3.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 3",
+        "problem": "A target consists of four concentric circles with radii 4 inches, 6 inches, 8 inches and 10 inches as shown. Given that a dart is thrown that hits the target at a random point, what is the probability that it hits a shaded region? Express your answer as a common fraction.\n\n[asy]size(100); import graph; fill(Circle((0,0),5),gray(.6));\n\nclip(Circle((0,0),2) ^^ Circle((0,0),3) ^^ Circle((0,0),4),fillrule(1));\ndraw(Circle((0,0),2) ^^ Circle((0,0),3) ^^ Circle((0,0),4) ^^ Circle((0,0),5));[/asy]",
+        "correct_solution": "The total area of the target is $\\pi\\cdot 10^2=100\\pi$.  The area of the inner shaded region is the area of a circle with radius 4, and that is equal to $\\pi\\cdot 4^2=16\\pi$.  We can calculate the area of the shaded ring as the difference in areas of a circle with radius 8 and with radius 6.  This gives an area of $\\pi \\cdot 8^2 - \\pi \\cdot 6^2 = 28\\pi$.  The total shaded area is $16\\pi+28\\pi=44\\pi$.  The probability a dart will hit a shaded region is equal to $\\frac{44\\pi}{100\\pi}=\\boxed{\\frac{11}{25}}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1:\nThe shaded region is the area between circles of radius 6 inches and 8 inches.\nStep 2:\nThe area of a circle is calculated using the formula: Area = \u03c0 * radius\u00b2.\nStep 3:\nThe area of the circle with radius 8 inches is \u03c0 * 8\u00b2 = 64\u03c0 square inches.\nStep 4:\nThe area of the circle with radius 6 inches is  \u03c0 * 6\u00b2 = 36\u03c0 square inches.\nStep 5:\nThe area of the shaded region is the difference between the areas of these two circles: 64\u03c0 - 36\u03c0 = 28\u03c0 square inches.\nStep 6:\nThe area of the entire target is the area of the circle with radius 10 inches: \u03c0 * 10\u00b2 = 100\u03c0 square inches.\nStep 7:\nThe probability of the dart hitting the shaded region is the ratio of the shaded area to the total area of the target: (28\u03c0) / (100\u03c0).\nStep 8:\nSimplifying the fraction, we get 7/25. \nFinal answer:\n\\boxed{\\frac{7}{25}}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": false,
+                "Same result": false,
+                "Levenshtein distance value": 0.6731470230862697
+            }
+        }
+    }
+}

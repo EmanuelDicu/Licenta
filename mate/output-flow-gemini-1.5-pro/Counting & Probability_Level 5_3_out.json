@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 5_3.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 5",
+        "problem": "How many subsets of the set of divisors of $72$ contain only composite numbers? For example, $\\{8,9\\}$ and $\\{4,8,12\\}$ are two such sets. Include the empty set in your count.",
+        "correct_solution": "We know that the number of subsets of any given set is equal to $2^n,$ where $n$ is the number of elements in the set. First, then, we need to find the number of composite divisors. The prime factorization of $72$ is $72=2^3 \\cdot 3^2,$ so there are $(3+1)(2+1)=12$ total divisors. (To see this, note that we can form a divisor of the form $2^a 3^b$ by freely choosing $a=0,1,2,3$ and $b=0,1,2$). Of these, $1$ is neither prime nor composite, and $2$ and $3$ are prime, for a total of $9$ composite divisors. Therefore there are $2^9=\\boxed{512}$ subsets of the divisors of $72$ with only composite divisors.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1:\nFirst, we need to find all the divisors of 72.\nStep 2:\nWe can do this by listing out all the numbers from 1 to the square root of 72, which is approximately 8.49. For each number that divides 72, we also include its quotient when 72 is divided by that number.\nStep 3:\nThis gives us the following list of divisors of 72: 1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, and 72.\nStep 4:\nNext, we need to identify the composite numbers in this list. A composite number is a number that has more than two factors (including 1 and itself).\nStep 5:\nThe composite divisors of 72 are: 4, 6, 8, 9, 12, 18, 24, 36, and 72.\nStep 6:\nThere are 9 composite divisors of 72.  We want to find the number of subsets of this 9-element set. \nStep 7:\nEach of the 9 composite divisors can either be in a subset or not, giving us 2 choices for each divisor. So there are $2^9 = \\boxed{512}$ subsets.\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7179775280898877
+            }
+        }
+    }
+}

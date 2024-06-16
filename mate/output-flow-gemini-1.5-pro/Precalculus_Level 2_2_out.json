@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 2_2.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 2",
+        "problem": "If $\\tan \\theta = 7,$ then find $\\tan 2 \\theta.$",
+        "correct_solution": "From the double angle formula,\n\\[\\tan 2 \\theta = \\frac{2 \\tan \\theta}{1 - \\tan^2 \\theta} = \\boxed{-\\frac{7}{24}}.\\]",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1: We can use the double-angle formula for tangent, which states:\n$\\\\tan 2 \\\\theta = \\\\frac{2 \\\\tan \\\\theta}{1 - \\\\tan^2 \\\\theta}$.\nStep 2: We are given that $\\\\tan \\\\theta = 7$. Substituting this into the double-angle formula, we get:\n$\\\\tan 2 \\\\theta = \\\\frac{2 (7)}{1 - 7^2}$.\nStep 3: Simplifying the expression, we have:\n$\\\\tan 2 \\\\theta = \\\\frac{14}{1 - 49} = \\\\frac{14}{-48}$.\nStep 4: Reducing the fraction to lowest terms, we get:\n$\\\\tan 2 \\\\theta = \\\\boxed{-\\\\frac{7}{24}}$.\n\nFinal answer:\n\\boxed{-\\\\frac{7}{24}}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8011049723756906
+            }
+        }
+    }
+}

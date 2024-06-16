@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 1_2.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 1",
+        "problem": "Let $a = 5 - 8i$ and $b = 30 + 48i$. Find $|ab|$.",
+        "correct_solution": "Note that $b = 6(5 + 8i) = 6\\overline{a}$. So $|ab| = |a(6\\overline{a})| = 6 |a\\overline{a}| = 6|a|^2$. We have $|a|^2 = 5^2 + 8^2 = 89$, so $|ab| = 6 \\cdot 89 = \\boxed{534}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1: \nFirst, we need to calculate the product of $a$ and $b$:\n$ab = (5 - 8i)(30 + 48i)$.\nStep 2:\nMultiplying out using the distributive property (or FOIL), we get: \n$ab = 5 \\cdot 30 + 5 \\cdot 48i - 8i \\cdot 30 - 8i \\cdot 48i$.\nStep 3:\nSimplifying:\n$ab = 150 + 240i - 240i - 384i^2$.\nStep 4:\nSince $i^2 = -1$, we can substitute:\n$ab = 150 + 240i - 240i + 384$.\nStep 5: \nCombining real and imaginary terms:\n$ab = (150 + 384) + (240 - 240)i = 534$. \nStep 6:\nFinally, we find the modulus of $ab$. Since $ab = 534$ is a real number, its modulus is simply its absolute value:\n$|ab| = |534| = 534$.\nFinal answer:\n\\boxed{534}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.841692789968652
+            }
+        }
+    }
+}

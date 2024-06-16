@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 4_4.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 4",
+        "problem": "Find the units digit of the sum of the first $21$ positive perfect cubes.",
+        "correct_solution": "Notice that for each integer $n$ satisfying $1 \\le n \\le 19, n \\neq 10$, then using the sum of cubes factorization, $n^3 + (20 - n)^3 = (n + 20 - n)(n^2 + (20-n)n + (20-n)^2)$ $ = 20(n^2 + (20-n)n + (20-n)^2)$. Thus, we can pair each integer with the difference between $20$ and that integer, and the sum of their cubes is divisible by $20$. Hence, the units digit of the sum of the first $19$ cubes, excluding $10$, is equal to $0$. Also, the units digits of $10^3$ and $20^3$ are clearly $0$, so we just need to find the units digit of the cube of $21$, which is $\\boxed{1}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```python\n\"\"\"\nStep 1: \nWe can start by listing the units digits of the first few cubes: \n1, 8, 7, 4, 5, 6, 3, 2, 9, 0, 1, 8, 7, 4, 5, 6, 3, 2, 9, 0, 1...\n\nStep 2: \nWe notice a repeating pattern in the units digits: 1, 8, 7, 4, 5, 6, 3, 2, 9, 0.  This sequence of 10 digits will continue to repeat as we calculate higher cubes.\n\nStep 3: \nSince the pattern has length 10, we need to find the remainder when 21 (the number of cubes) is divided by 10.  This remainder is 1.\n\nStep 4:\nA remainder of 1 indicates that the units digit of the sum of the first 21 cubes will be the same as the first digit in our repeating pattern.\n\nFinal answer:\n\\boxed{1}\n\"\"\"\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7507645259938838
+            }
+        }
+    }
+}

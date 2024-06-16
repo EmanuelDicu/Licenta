@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 4_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 4",
+        "problem": "Let $t$ be the smallest positive real number for which $\\cos t = \\cos t^{\\circ}$.  (We are taking the cosine of $t$ radians on the left and of $t$ degrees on the right.)  Compute $\\lfloor t\\rfloor$, the greatest integer less than $t$.",
+        "correct_solution": "Imagine two identical clock hands, each rotating counterclockwise and both initially pointing directly to the right.  If one of them rotates at 1 radian per second while the other rotates at $1^{\\circ}$ per second, then the faster one will sweep out an angle of $t$ radians at the same time that the slower one travels through $t$ degrees.  We wish to know approximately when the cosines of the corresponding angles will be equal, i.e. when the $x$-coordinates of the tips of the clock hands will be the same.\n\nClearly this will occur when the faster hand has rotated nearly all the way around the circle.  After six seconds the slow hand will have rotated only $6^{\\circ}$, while the fast hand will have traveled around 6 radians, which is still further than $6^{\\circ}$ away from its starting point.  (Recall that 1 radian is equal to $\\frac{180^{\\circ}}{\\pi}$, which is a couple degrees less than $60^{\\circ}$.)  Therefore the $x$-coordinates will not yet be equal for the first time, but will be very close.  We conclude that $\\lfloor t\\rfloor=\\boxed{6}$.  The interested reader may wish to compute the exact value of $t$ for which this occurs.  You should find that $t= \\frac{360\\pi}{\\pi+180}\\approx 6.1754$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```python\nStep 1: \nWe begin by understanding that the cosine function has a period of $360^\\circ$ or $2\\pi$ radians. This means that $\\cos x = \\cos (x + 360^\\circ k)$ for any integer $k$.\n\nStep 2:\nWe want to find the smallest positive real number $t$ such that $\\cos t = \\cos t^\\circ$.  Since $t$ is in radians on the left side of the equation and $t$ is in degrees on the right side of the equation, we can rewrite this equation as:\n\n```\n\n$\\cos t = \\cos \\left(\\frac{\\pi}{180}t\\right)$\n\n```\n\nStep 3:\nUsing the periodicity of the cosine function, we can write:\n\n```\n\n$t = \\frac{\\pi}{180}t + 2\\pi k$\n\n```\n\nor \n\n```\n$ \\frac{\\pi}{180}t = t + 2\\pi k$\n```\n\nStep 4:\nSolving for $t$, we get:\n\n```\n\n$t (\\frac{\\pi}{180} - 1)= 2\\pi k$\n\n```\n\n```\n\n$t = \\frac{2\\pi k}{ \\frac{\\pi}{180} - 1}$\n\n```\n```\n\n$t = \\frac{360 \\pi k}{\\pi - 180}$\n\n```\n\nStep 5:\nTo get the smallest positive value of  $t$, we should take $k = -1$.  This gives us:\n\n```\n\n$t = \\frac{-360\\pi}{\\pi - 180} = \\frac{360\\pi}{180 - \\pi} \\approx 6.2832.$\n\n```\n\nStep 6:\nSince $\\pi \\approx 3.14$, we see that $t$ is slightly greater than 6 and less than 7.  Therefore, the greatest integer less than $t$ is $\\boxed{6}$. \n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8120362737015664
+            }
+        }
+    }
+}

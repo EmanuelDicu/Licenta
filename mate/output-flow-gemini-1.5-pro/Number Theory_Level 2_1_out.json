@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 2_1.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 2",
+        "problem": "What is the tens digit of $5^{2005}$?",
+        "correct_solution": "Note that for $n\\geq 2$, the last two digits of $5^n$ are 25.  To prove this, note that $5^2\\equiv 25 \\pmod{100}$, and whenever $5^{n-1}\\equiv 25\\pmod{100}$, we also have $5^n=5\\cdot 5^{n-1}\\equiv 5\\cdot 25 \\equiv 125 \\equiv 25 \\pmod{100}$. Thus the tens digit of $5^{2005}$ is $\\boxed{2}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1: \nLet's start by analyzing the cycle of the units digits of the powers of 5.\nStep 2:\nWe notice that the units digits of the powers of 5 repeat in a cycle of 1: \n5^1 = 5, \n5^2 = 25, \n5^3 = 125, \n5^4 = 625, \n5^5 = 3125, and so on.\nStep 3:\nNotice that for any n > 1, 5^n will have a units digit of 5, and a tens digit of 2. \nStep 4:\nTherefore, the tens digit of 5^2005 is \\boxed{2}.\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7128712871287128
+            }
+        }
+    }
+}

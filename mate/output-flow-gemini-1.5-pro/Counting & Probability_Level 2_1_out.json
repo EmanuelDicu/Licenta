@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 2_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 2",
+        "problem": "Determine the number of ways to arrange the letters of the word THAT.",
+        "correct_solution": "First we count the arrangements if the two T's are unique, which is $4!$. Then since the T's are not unique, we divide by $2!$ for the arrangements of T, for an answer of $\\dfrac{4!}{2!} = \\boxed{12}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```python\nSolution:\nStep 1:\nThe word \"THAT\" has 4 letters.\nStep 2:\nIf all the letters were unique, there would be 4! (4 factorial) ways to arrange them. \nThis is calculated as 4 * 3 * 2 * 1 = 24.\nStep 3:\nHowever, the letter 'T' is repeated twice. \nStep 4:\nWe need to account for the overcounting due to the repetition of the letter 'T'.\nStep 5:\nThe number of ways to arrange the two 'T's within any arrangement of the four letters is 2! (2 factorial), which is 2 * 1 = 2.\nStep 6:\nTo correct for the overcounting, we divide the number of arrangements with unique letters by the number of ways to arrange the repeated letters.\nStep 7:\nTherefore, the total number of distinct arrangements of the letters in the word \"THAT\" is (4!)/(2!) = 24 / 2 = 12.\nFinal answer:\n\\boxed{12}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8144329896907216
+            }
+        }
+    }
+}

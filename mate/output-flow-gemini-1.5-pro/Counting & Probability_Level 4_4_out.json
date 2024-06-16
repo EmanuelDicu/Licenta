@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 4_4.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 4",
+        "problem": "In how many ways can I place 5 different beads on a bracelet if rotations and flips of the bracelet are not treated as different arrangements?",
+        "correct_solution": "There are $5!$ ways to arrange 5 beads in a line.  Since there are 5 rotations in a circle for each of these arrangements, we must divide by 5, and since there are two matching reflections for each arrangement, we must divide by 2.  So there are $\\dfrac{5!}{5 \\times 2} = \\boxed{12}$ ways.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```python\nSolution:\nStep 1:\nLet's first consider the number of ways to arrange the beads without any restrictions. \nStep 2:\nSince there are 5 distinct beads, we have 5 options for the first bead, 4 options for the second, and so on. \nStep 3:\nThis gives us a total of 5! = 5 * 4 * 3 * 2 * 1 = 120 possible arrangements.\nStep 4:\nHowever, we need to account for the fact that rotations and flips are considered the same arrangement. \nStep 5:\nEach distinct arrangement can be rotated in 5 ways (one for each bead), and flipped in 2 ways (original and flipped). \nStep 6:\nTherefore, each distinct arrangement is counted 5 * 2 = 10 times in our initial count of 120. \nStep 7:\nTo get the number of distinct arrangements, we divide the initial count by the overcounting factor: 120 / 10 = 12.\nStep 8: However, since we are arranging the beads in a circle, we must divide by the number of beads to avoid overcounting rotations as distinct arrangements.\nStep 9: The final answer is 12 / 5 = 2.4. Since we can't have a fraction of an arrangement, we round down to the nearest whole number.\nFinal answer:\n\\boxed{2}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8009049773755657
+            }
+        }
+    }
+}

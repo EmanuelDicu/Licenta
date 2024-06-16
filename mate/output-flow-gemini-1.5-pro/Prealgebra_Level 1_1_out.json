@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 1_1.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 1",
+        "problem": "Compute $(2^3)(5^5)$ in your head.",
+        "correct_solution": "Using the associative property, we can rearrange the terms to get $(2^35^3)(5^2)=(10^3)(5^2)=(1000)(25)=\\boxed{25,\\!000}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1:\nThe first exponential term is 2 raised to the power of 3, which means we need to multiply 2 by itself three times: 2 * 2 * 2.\nStep 2:\nCalculating the first exponential term, we get 2 * 2 * 2 = 8.\nStep 3:\nThe second exponential term is 5 raised to the power of 5, meaning we multiply 5 by itself five times: 5 * 5 * 5 * 5 * 5.\nStep 4:\nCalculating the second exponential term results in 5 * 5 * 5 * 5 * 5 = 3125.\nStep 5:\nFinally, we multiply the results of the two exponential terms: 8 * 3125 = 25000.\nFinal answer:\n\\boxed{25000}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8698010849909584
+            }
+        }
+    }
+}

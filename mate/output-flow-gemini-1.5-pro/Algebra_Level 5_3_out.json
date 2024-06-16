@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 5_3.json": {
+        "category": "Algebra",
+        "difficulty": "Level 5",
+        "problem": "Billy shoots an arrow from 10 feet above the ground. The height of this arrow can be expressed by the equation $h=10-23t-10t^2$, where $t$ is time in seconds since the arrow was shot. If the center of a target is raised 5 feet off the ground, in how many seconds must the arrow reach the target in order for Billy to hit the bulls eye?",
+        "correct_solution": "Since the center of the target is 5 feet above the ground, $h=5$. So we get the quadratic: \\begin{align*}5& =10-23t-10t^{2}\n\\\\ \\Rightarrow\\qquad 0& =10t^{2}+23t-5\n\\\\ \\Rightarrow\\qquad 0&=(2t+5)(5t-1).\n\\end{align*}Thus, the values of $t$ that satisfy the equation are $-\\frac52$ and $\\frac15$. However, since time can never be a negative number, the answer must be $\\boxed{\\dfrac{1}{5}}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1: \nThe problem requires us to find the time ($t$) when the arrow's height ($h$) is 5 feet. \n\nStep 2:\nWe are provided with the equation  $h=10-23t-10t^2$ that represents the arrow's height as a function of time.\n\nStep 3:\nWe can substitute $h = 5$ into the equation: $5=10-23t-10t^2$.\n\nStep 4:\nTo solve for  't', we'll rearrange the equation to get a quadratic equation: $10t^2 + 23t + 5 = 0$.\n\nStep 5:\nWe can solve this quadratic equation using the quadratic formula: $t = \\dfrac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$, where $a = 10$, $b = 23$, and $c = 5$.\n\nStep 6:\nSubstituting the values into the quadratic formula, we get: $t = \\dfrac{-23 \\pm \\sqrt{23^2 - 4 \\cdot 10 \\cdot 5}}{2 \\cdot 10}$.\n\nStep 7:\nSimplifying the expression inside the square root: $t = \\dfrac{-23 \\pm \\sqrt{529 - 200}}{20}$.\n\nStep 8:\nFurther simplification: $t = \\dfrac{-23 \\pm \\sqrt{329}}{20}$.\n\nStep 9:\nTherefore, the two possible solutions for $t$ are:  $t = \\dfrac{-23 + \\sqrt{329}}{20}$ and  $t = \\dfrac{-23 - \\sqrt{329}}{20}$.\n\nStep 10:\nSince time cannot be negative, we discard the second solution. The first solution is approximately 0.2 seconds. \n\nFinal answer:\n\\boxed{t \\approx 0.2 \\text{ seconds}} \n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7946577629382304
+            }
+        }
+    }
+}

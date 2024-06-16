@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 1_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 1",
+        "problem": "Compute $\\dbinom{15}{2}$.",
+        "correct_solution": "\\begin{align*}\n\\dbinom{15}{2} &= \\dfrac{15!}{13!2!} \\\\\n&= \\dfrac{15\\times 14}{2\\times 1} \\\\\n&= 15 \\times \\dfrac{14}{2} \\\\\n&= 15 \\times 7 \\\\\n&= \\boxed{105}.\n\\end{align*}",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```python\nStep 1: \nRecall that the binomial coefficient $\\binom{n}{k}$ is defined as $\\dfrac{n!}{k!(n-k)!}$.\n\nStep 2:\nSubstitute $n = 15$ and $k = 2$ into the formula: $\\dfrac{15!}{2!(15-2)!}$.\n\nStep 3:\nSimplify the expression: $\\dfrac{15!}{2!13!} = \\dfrac{15\\times 14 \\times 13!}{2 \\times 1 \\times 13!} = \\dfrac{15 \\times 14}{2}$.\n\nStep 4: \nCalculate the final result: $\\dfrac{15\\times 14}{2} = 105$.\n\nFinal answer:\n\\boxed{105}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.75
+            }
+        }
+    }
+}

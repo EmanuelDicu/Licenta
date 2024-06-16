@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 5_2.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 5",
+        "problem": "In a certain isosceles right triangle, the altitude to the hypotenuse has length $6$.  What is the area of the triangle?",
+        "correct_solution": "In isosceles right triangle $\\triangle ABC$ below, $\\overline{AD}$ is the altitude to the hypotenuse.\n\n[asy]\nimport olympiad;\nunitsize(0.8inch);\npair A,B,C,D;\nA = (0,1);\nB= (1,0);\nC = -B;\nD = (0,0);\ndraw(A--B--C--A,linewidth(1));\ndraw(A--D,linewidth(0.8));\ndraw(rightanglemark(C,A,B,s=5));\ndraw(rightanglemark(C,D,A,s=5));\nlabel(\"$A$\",A,N);\nlabel(\"$B$\",B,S);\nlabel(\"$C$\",C,S);\nlabel(\"$D$\",D,S);\n[/asy]\n\nBecause $\\triangle ABC$ is an isosceles right triangle, $\\angle ABC = 45^\\circ$.  Since $\\angle ADB = 90^\\circ$, we know that $\\angle DAB = 45^\\circ$, so $\\triangle ABD$ is also a 45-45-90 triangle.  Similarly, $\\triangle ACD$ is a 45-45-90 triangle.  Therefore, $DB=DC = DA = 6$, so $BC = BD+DC = 12$, and  \\[[ABC] = \\frac{(AD)(BC)}{2} = \\frac{(6)({12})}{2} = \\boxed{36}.\\]",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```python\n\"\"\"\nSolution:\nStep 1:\nLet's draw an isosceles right triangle and label the altitude to the hypotenuse as having length 6.\n\n[asy]\npair A,B,C,D;\nA = (0,0);\nB = (1,0);\nC = (0,1);\nD = (0.5,0);\ndraw(A--B--C--A);\ndraw(C--D);\nlabel(\"$A$\",A,SW);\nlabel(\"$B$\",B,SE);\nlabel(\"$C$\",C,N);\nlabel(\"$D$\",D,S);\nlabel(\"$6$\",(C+D)/2,E);\n[/asy]\n\nStep 2:\nSince $\\triangle ABC$ is isosceles, we know that $AC=BC$.  \n\nStep 3:\nFurthermore, since $\\triangle ABC$ is a right triangle, we know that $\\angle ACB = 90^\\circ$. \n\nStep 4:\nSince $\\triangle ACD$ is also a right triangle, and $\\angle CAD = \\angle BAC$, we have that $\\triangle ACD \\sim \\triangle ABC$.  \n\nStep 5:\nSimilarly, $\\triangle BCD \\sim \\triangle ABC$.  \n\nStep 6:\nSince $\\triangle ACD \\sim \\triangle ABC \\sim \\triangle BCD$, we know that all three triangles are isosceles right triangles.\n\nStep 7:\nSince $CD$ is a leg of the isosceles right triangle $ACD$, and $AD$ is the altitude to the hypotenuse of $\\triangle ACD$, we know that $CD=AD$.  \n\nStep 8:\nSimilarly, $CD=BD$.\n\nStep 9:\nTherefore, $AB = AD+CD = 6+6 = 12$.\n\nStep 10:\nThe area of $\\triangle ABC$ is then $\\frac{AB\\cdot CD}{2} = \\frac{12\\cdot 6}{2} = \\boxed{36}$.\nFinal answer:\n\\boxed{36}\n\"\"\"\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": false,
+                "Same result": true,
+                "Levenshtein distance value": 0.6794019933554817
+            }
+        }
+    }
+}

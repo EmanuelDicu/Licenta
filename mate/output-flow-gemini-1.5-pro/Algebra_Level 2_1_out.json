@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 2_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 2",
+        "problem": "If \\begin{align*}\n5x-2y&=7,\\\\\n3x+y&=2,\n\\end{align*}compute $24x-14y$.",
+        "correct_solution": "Note that $6(5x-2y)-2(3x+y)=24x-14y$.  Thus, $24x-14y=6(7)-2(2)=\\boxed{38}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```python\nSolution:\nStep 1:\nOur goal is to manipulate the given equations to find the value of  24x - 14y. We can achieve this by using elimination or substitution methods. Let's use the elimination method.\nStep 2:\nWe will multiply the second equation (3x + y = 2) by 2 to match the y-coefficient in the first equation:\n2 * (3x + y) = 2 * 2\nSimplifying the equation:\n6x + 2y = 4\nStep 3:\nNow, we will add the modified second equation to the first equation:\n(5x - 2y) + (6x + 2y) = 7 + 4\nSimplifying the equation:\n11x = 11\nStep 4:\nSolving for x, we get:\nx = 11 / 11\nx = 1\nStep 5:\nSubstitute the value of x (x = 1) into either of the original equations to solve for y. Let's use the second equation:\n3 * 1 + y = 2\nSimplifying the equation:\n3 + y = 2\nStep 6:\nSolving for y, we get:\ny = 2 - 3\ny = -1\nStep 7:\nNow that we have the values of x and y, we can substitute them into the expression 24x - 14y:\n24 * 1 - 14 * (-1)\nStep 8:\nSimplifying the expression:\n24 + 14\nStep 9:\nTherefore, the value of the expression 24x - 14y is:\n24 + 14 = 38\nFinal answer:\n\\boxed{38}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.9444444444444444
+            }
+        }
+    }
+}

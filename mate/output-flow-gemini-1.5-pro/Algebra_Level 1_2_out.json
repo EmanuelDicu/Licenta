@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 1_2.json": {
+        "category": "Algebra",
+        "difficulty": "Level 1",
+        "problem": "Hillary has eleven coins, all dimes and nickels. In total, the coins are worth 75 cents. How many nickels does she have?",
+        "correct_solution": "Let the number of dimes Hillary has be $d$ and the number of nickels she has be $n$. We have the two equations \\begin{align*}\nd+n&=11\\\\\n10d+5n&=75\n\\end{align*} (The last equation is in terms of cents.) To make the second equation nicer, we divide both sides by 5 to get $2d+n=15$. From the first given equation, we have $d=11-n$. Substituting this into the simplified second given equation to eliminate $d$, we get $2(11-n)+n=15\\Rightarrow n=7$. Thus, Hillary has $\\boxed{7}$ nickels.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```python\n\"\"\"\nSolution:\nStep 1:\nLet 'x' represent the number of nickels Hillary has.\n\nStep 2:\nSince she has a total of eleven coins, the number of dimes she has can be represented as 11 - x.\n\nStep 3:\nThe value of the nickels, in cents, is 5x.\n\nStep 4:\nThe value of the dimes, in cents, is 10(11 - x).\n\nStep 5:\nThe total value of all her coins is 75 cents, so we can set up the equation: 5x + 10(11 - x) = 75.\n\nStep 6:\nSimplify and solve the equation:\n5x + 110 - 10x = 75\n-5x = -35\nx = 7\n\nStep 7:\nTherefore, Hillary has 7 nickels. \n\nFinal answer:\n\\boxed{7}\n\"\"\"\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7317939609236235
+            }
+        }
+    }
+}

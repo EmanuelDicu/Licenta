@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 2_1.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 2",
+        "problem": "Two reals $x$ and $y$ are such that $x-y=4$ and $x^3-y^3=28$. Compute $xy$.",
+        "correct_solution": "We have $28=x^3-y^3=(x-y)(x^2+xy+y^2)=(x-y)((x-y)^2+3xy)=4\\cdot (16+3xy)$, from which $xy=\\boxed{-3}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```python\n\"\"\"\nStep 1:\nWe can factor the difference of cubes:  x\u00b3 - y\u00b3 = (x - y)(x\u00b2 + xy + y\u00b2).\n\nStep 2:\nWe are given that x - y = 4 and x\u00b3 - y\u00b3 = 28. Substituting, we get 4(x\u00b2 + xy + y\u00b2) = 28.\n\nStep 3: \nDividing both sides by 4, we have x\u00b2 + xy + y\u00b2 = 7.\n\nStep 4:\nWe want to find xy.  Notice that we can obtain an expression containing xy by squaring the equation x - y = 4. \n\nStep 5:\nSquaring both sides of x - y = 4, we get x\u00b2 - 2xy + y\u00b2 = 16.\n\nStep 6:\nSubtracting the equation in Step 3 (x\u00b2 + xy + y\u00b2 = 7) from the equation in Step 5 (x\u00b2 - 2xy + y\u00b2 = 16), we get -3xy = 9.\n\nStep 7:\nDividing both sides by -3, we find xy = -3.\n\nFinal answer:\n\\boxed{-3}\n\"\"\"\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8942598187311178
+            }
+        }
+    }
+}

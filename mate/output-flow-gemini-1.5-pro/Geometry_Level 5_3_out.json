@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 5_3.json": {
+        "category": "Geometry",
+        "difficulty": "Level 5",
+        "problem": "Four circles of radius 1 are each tangent to two sides of a square and externally tangent to a circle of radius 2, as shown.  What is the area of the square?\n\n[asy]\nunitsize(1cm);draw(Circle((0,0),2));\nfor(int i=0; i<4; ++i) {\n\tdraw(Circle(scale(3)*dir(45+90*i),1));\n\tdraw((3+sqrt(2))*dir(45+90*i)--(3+sqrt(2))*dir(-45+90*i));  \n}\ndraw((0,0)--(2,0));\nlabel(\"2\",(1,0),N);\ndraw(scale(3)*dir(45+90*1)--shift((1,0))*scale(3)*dir(45+90*1));\nlabel(\"1\",point(scale(3)*dir(45+90*1)--shift((1,0))*scale(3)*dir(45+90*1),.5),S);\n[/asy]",
+        "correct_solution": "Let $s$ be the length of a side of the square. Consider an isosceles right triangle with vertices at the centers of the circle of radius 2 and two of the circles of radius 1. This triangle has legs of length 3, so its hypotenuse has length $3\\sqrt{2}$.\n\n[asy]\nunitsize(1cm);\ndraw(Circle((0,0),2));\nfor(int i=0; i<4; ++i) {\n\tdraw(Circle(scale(3)*dir(45+90*i),1));\n\tdraw((3+sqrt(2))*dir(45+90*i)--(3+sqrt(2))*dir(-45+90*i));  \n}\npair A = scale(3)*dir(45), B = scale(3)*dir(45+90);\ndraw(A--B--origin--cycle);\nlabel(\"$1$\", A, SE);\nlabel(\"$1$\", B, SW);\nlabel(\"$2$\", point(origin--A,.3), SE);\nlabel(\"$2$\", point(origin--B,.3), SW);\ndraw(rightanglemark(A,origin,B,5));\n[/asy]\n\nThe length of a side of the square is 2 more than the length of this hypotenuse, so  $s=2 + 3\\sqrt{2}$. Hence the area of the square is \\[\ns^{2}=(2+3\\sqrt{2})^{2}=\\boxed{22+12\\sqrt{2}}.\n\\]",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1:\nLet's draw a diagonal of the square, and focus on the right triangle formed by this diagonal, a side of the square, and a diagonal of a smaller square with side length 2 (which is also the diameter of the circle with radius 1). \n\n[asy]\nunitsize(1cm);draw(Circle((0,0),2));\nfor(int i=0; i<4; ++i) {\n\tdraw(Circle(scale(3)*dir(45+90*i),1));\n\tdraw((3+sqrt(2))*dir(45+90*i)--(3+sqrt(2))*dir(-45+90*i));  \n}\ndraw((0,0)--(2,0));\nlabel(\"2\",(1,0),N);\ndraw(scale(3)*dir(45+90*1)--shift((1,0))*scale(3)*dir(45+90*1));\nlabel(\"1\",point(scale(3)*dir(45+90*1)--shift((1,0))*scale(3)*dir(45+90*1),.5),S);\ndraw((0,0)--(3+sqrt(2),3+sqrt(2));\ndraw((0,0)--(2,2));\n[/asy]\n\nStep 2:\nThe hypotenuse of this right triangle is equal to the diameter of the circle with radius 2 plus twice the radius of the smaller circle, or  2 + 2 * 1 = 4.\n\nStep 3:\nOne leg of this right triangle is equal to the diameter of the smaller circle, or 2.\n\nStep 4:\nWe can use the Pythagorean Theorem to find the other leg of this triangle, which is also a side of the square. \nLet $s$ represent the length of the side of the square.  Then we have $s^2 + 2^2 = 4^2$\n\nStep 5:\nSolving for $s$, we find  $s = \\sqrt{4^2 - 2^2} = \\sqrt{12} = 2\\sqrt{3}$.\n\nStep 6:\nThe area of the square is then $s^2 = (2\\sqrt{3})^2 = \\boxed{12}$.\nFinal answer:\n\\boxed{12}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": false,
+                "Same result": false,
+                "Levenshtein distance value": 0.6375282592313489
+            }
+        }
+    }
+}

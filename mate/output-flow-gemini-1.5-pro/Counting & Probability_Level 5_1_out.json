@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 5_1.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 5",
+        "problem": "How many different positive integers divisible by 4 can be formed using each of the digits 1, 2, 3, and 4 at most once, and no other digits? For example, 12 counts, but 512 does not.",
+        "correct_solution": "The only one-digit integer divisible by $4$ that we can construct is $4$.\n\nWe can construct $3$ two-digit integers divisible by $4$: $12$, $32$, and $24$.\n\nAn integer is divisible by $4$ if its rightmost two digits are divisible by $4$.  Thus we can append either or both of the remaining two digits to any of these two-digit integers and preserve divisibility by $4$.  For each, there are $2$ ways to choose one digit to append, and $2$ ways to order the digits if we append both of them.  Thus we get $4$ more integers for each, or $12$ total.\n\nThe full number is $12+3+1=\\boxed{16}$ integers.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1:\nWe know that a number is divisible by 4 if the last two digits are divisible by 4. \nStep 2:\nUsing the digits 1, 2, 3, and 4, the possible two-digit numbers divisible by 4 are: 12, 24, 32 and 44.\nStep 3:\nConsider each two-digit number from Step 2 as a single unit.  For each of these units, we can form different integers by placing the remaining digits in front. \nStep 4:\nFor example, using '12', we can form two additional integers: 312 and 412. The same applies to '24' and '32'. However, for '44', we can only form 144 and 244 since we can only use each digit at most once.\nStep 5:\nTherefore, there are a total of 3 (two-digit units with 2 additional integers) * 2 (additional integers per unit) + 2 (two-digit unit with 1 additional integer) = 8 integers divisible by 4.\nStep 6:\nWe also need to include the four two-digit numbers themselves: 12, 24, 32 and 44.\nStep 7:\nFinally, we add the single-digit number 4, which is also divisible by 4.\nStep 8:\nTherefore, the total number of integers divisible by 4 is 8 + 4 + 1 = 13.\nFinal answer:\n\\boxed{13}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.725417439703154
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 5_1.json": {
+        "category": "Algebra",
+        "difficulty": "Level 5",
+        "problem": "Factor $36-4x^2$ completely.",
+        "correct_solution": "We have $36-4x^2 = 6^2 - (2x)^2 = (6-2x)(6+2x)$.  We can factor a 2 out of each of $6-2x$ and $6+2x$ to give $2\\cdot(3-x)\\cdot 2\\cdot(3+x) = \\boxed{4(3-x)(3+x)}$. (We could also have factored out a 4 at the beginning: $36-4x^2 = 4(9-x^2)=4(3-x)(3+x)$.)",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1:\nWe can factor out a 4 from both terms: $36-4x^2 = 4(9-x^2)$. This is allowed by the distributive property of multiplication. \nStep 2:\nThe expression inside the parentheses is a difference of squares, which factors as $(a+b)(a-b)$.\nStep 3:\nApplying the difference of squares pattern, we get $4(9-x^2) = 4(3+x)(3-x)$.\nFinal answer:\n\\boxed{4(3+x)(3-x)} \n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.776595744680851
+            }
+        }
+    }
+}

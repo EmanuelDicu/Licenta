@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 3_2.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 3",
+        "problem": "Three vertices of a cube are $P=(7,12,10)$, $Q=(8,8,1)$, and $R=(11,3,9)$. What is the side length of the cube?",
+        "correct_solution": "We compute \\[\\begin{aligned} PQ &= \\sqrt{(7-8)^2 + (12-8)^2 + (10-1)^2} = 7\\sqrt{2}, \\\\ QR &= \\sqrt{(8-11)^2 + (8-3)^2 + (1-9)^2} = 7\\sqrt{2}, \\\\ PR &= \\sqrt{(7-11)^2 + (12-3)^2 + (10-9)^2} = 7\\sqrt{2}. \\end{aligned}\\]Thus, $PQR$ is an equilateral triangle made from three vertices of a cube. It follows that each side of $PQR$ must be a face diagonal of the cube, so the side length of the cube is $\\boxed{7}.$\n[asy]\nimport three;\ntriple A=(0,0,0),B=(0,0,1),C=(0,1,1),D=(0,1,0),E=A+(1,0,0),F=B+(1,0,0),G=C+(1,0,0),H=D+(1,0,0);\ndraw(A--B--C--D--A^^E--F--G--H--E^^A--E^^B--F^^C--G^^D--H);\ndraw(B--D--E--B,dashed);\nlabel(\"$P$\",B,N);\nlabel(\"$Q$\",D,SE);\nlabel(\"$R$\",E,SW);\n[/asy]",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1: \nTo find the side length of the cube, we can calculate the distance between any two adjacent vertices. \nStep 2:\nLet's calculate the distance between points P=(7,12,10) and Q=(8,8,1) using the distance formula:\nDistance = \u221a((x\u2082 - x\u2081)\u00b2 + (y\u2082 - y\u2081)\u00b2 + (z\u2082 - z\u2081)\u00b2).\nStep 3:\nSubstituting the coordinates of P and Q into the distance formula:\nDistance PQ = \u221a((8 - 7)\u00b2 + (8 - 12)\u00b2 + (1 - 10)\u00b2) = \u221a(1 + 16 + 81) = \u221a98 = 7\u221a2.\nStep 4:\nLet's check if points P, Q and R really form a cube. For this we need to calculate the length of the segment PR.\nDistance PR = \u221a((11 - 7)\u00b2 + (3 - 12)\u00b2 + (9 - 10)\u00b2) = \u221a(16 + 81 + 1) = \u221a98 = 7\u221a2.\nWe see that PQ=PR.\nStep 5: Now we need to calculate the vector PQ = (8-7, 8-12, 1-10) = (1, -4, -9) and vector PR = (11-7, 3-12, 9-10) = (4, -9, -1).\nStep 6: Now we need to calculate the dot product of vectors PQ and PR.\nPQ * PR = 1*4 + (-4)*(-9) + (-9)*(-1) = 4 + 36 + 9 = 49.\nStep 7: Now we need to calculate the product of lengths of vectors PQ and PR.\n|PQ|*|PR| = 7\u221a2 * 7\u221a2 = 98.\nStep 8: Since the dot product of vectors PQ and PR is not equal to the product of lengths of vectors PQ and PR, then the angle between these vectors is not equal to 90 degrees, and points P, Q and R do not form a cube.\nTherefore, there is no cube with vertices P=(7,12,10), Q=(8,8,1), and R=(11,3,9).\nFinal answer:\n\\boxed{\\text{No solution.}}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8519328956965718
+            }
+        }
+    }
+}

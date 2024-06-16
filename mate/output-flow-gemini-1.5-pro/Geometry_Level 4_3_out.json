@@ -1,0 +1,19 @@
+{
+    "Geometry_Level 4_3.json": {
+        "category": "Geometry",
+        "difficulty": "Level 4",
+        "problem": "What is the area, in square units, of the square with the four vertices at $(-2, 2), (2, -2), (-2, -6)$, and $(-6, -2)$?",
+        "correct_solution": "The length of the square is $\\sqrt{4^2 + 4^2} = 4\\sqrt{2}$. Therefore, the area of the square is $(4\\sqrt{2})^2 = \\boxed{32}$.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```python\nSolution:\nStep 1:\nWe can choose any two vertices of the square to calculate the side length. Let's take the points (-2, 2) and (2, -2). These two points lie on a diagonal of the square. To find the side length, we need to calculate the distance between these two points. \n\nStep 2:\nUsing the distance formula, the side length of the square is  \u221a((2 - (-2))^2 + (-2 - 2)^2) = \u221a(4^2 + (-4)^2) = \u221a32 = 4\u221a2.\n\nStep 3:\nThe area of a square is calculated by squaring the side length.\n\nStep 4: \nTherefore, the area of the square is (4\u221a2)^2 = 32 square units.\n\nFinal answer:\n\\boxed{32}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8268251273344652
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 4_4.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 4",
+        "problem": "In a certain polynomial, all the coefficients are integers, and the constant coefficient is 42.  All the roots are integers, and distinct.  Find the largest possible number of integer roots.",
+        "correct_solution": "By the Integer Root Theorem, any integer root must be a factor of 42.  The prime factorization of 42 is $2 \\cdot 3 \\cdot 7.$  Furthermore, the product of the roots is $(-1)^n \\cdot \\frac{42}{a_0},$ where $n$ is the degree of the polynomial, and $a_0$ is the leading coefficient.\n\nTo maximize the number of integer roots, which must be distinct, we can take the integer roots to be 2, 3, 7, 1, and $-1.$  This gives us a maximum of $\\boxed{5}$ integer roots.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1:\nThe Integer Root Theorem states that any integer root of a polynomial with integer coefficients must be a divisor of the constant term.\nStep 2:\nThe constant term of our polynomial is 42. Therefore, any integer root of the polynomial must be a divisor of 42.\nStep 3:\nThe divisors of 42 are: \u00b11, \u00b12, \u00b13, \u00b16, \u00b17, \u00b114, \u00b121, \u00b142.\nStep 4:\nSince the roots must be distinct, the maximum number of integer roots is equal to the number of distinct divisors of 42, which is 16.\nStep 5:\nHowever, we must also consider that the polynomial has integer coefficients.  If we have an odd number of negative roots, the coefficient of the term with the highest power of x will be negative.\nStep 6:\nTherefore, we can have at most 8 negative roots to maintain a positive leading coefficient.  This leaves us with a maximum of 8 positive roots as well.\nFinal answer:\n\\boxed{8}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": false,
+                "Same result": false,
+                "Levenshtein distance value": 0.6954545454545454
+            }
+        }
+    }
+}

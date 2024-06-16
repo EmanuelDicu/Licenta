@@ -1,0 +1,19 @@
+{
+    "Algebra_Level 3_2.json": {
+        "category": "Algebra",
+        "difficulty": "Level 3",
+        "problem": "Find the positive difference between the solutions to the equation $6t^2 + 30 = 41t$.",
+        "correct_solution": "Rearranging the equation gives $6t^2 -41t + 30 = 0$.  Factoring gives $(t-6)(6t-5)= 0$, so the solutions to the equation are $t=6$ and $t=\\frac{5}{6}$.  The positive difference between these solutions is $6 - \\frac56 = \\boxed{\\frac{31}{6}}.$",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1:\nMove all terms to one side to obtain a standard quadratic equation:\n$6t^2 - 41t + 30 = 0$\n\nStep 2:\nFactor the quadratic expression: \n$(2t - 5)(3t - 6) = 0$\n\nStep 3:\nSet each factor equal to zero and solve for 't':\n*  $2t - 5 = 0  =>  t = \\frac{5}{2}$\n*  $3t - 6 = 0  =>  t = 2$\n\nStep 4:\nWe are asked to find the positive difference between the solutions. Since both solutions are positive, subtract the smaller value from the larger: \n$\\frac{5}{2} - 2 = \\frac{1}{2}$.\n\nFinal answer:\n\\boxed{\\frac{1}{2}} \n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": false,
+                "Same result": false,
+                "Levenshtein distance value": 0.6767485822306238
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Number Theory_Level 5_1.json": {
+        "category": "Number Theory",
+        "difficulty": "Level 5",
+        "problem": "How many positive perfect cube factors does $3^65^{10}$ have?",
+        "correct_solution": "Any factor of $3^6\\cdot5^{10}$ is in the form $3^a\\cdot5^b$ for $0\\le a\\le6$ and $0\\le b\\le{10}$. To count the number of perfect cube factors, we must count the factors of $3^6\\cdot5^{10}$ that have $a=0$, $3$, or $6$ and $b=0$, $3$, $6$, or $9$. This gives $3\\cdot4=\\boxed{12}$ perfect cube factors.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1:\nA positive integer is a perfect cube if and only if every prime in its prime factorization appears with an exponent divisible by 3.\nStep 2: \nThe prime factorization of  $3^65^{10}$  is $3^6\\cdot5^{10}$.\nStep 3:\nTo form a perfect cube factor, the exponent of 3 must be 0, 3, or 6, and the exponent of 5 must be 0, 3, 6, or 9.\nStep 4:\nThis gives us $3 \\cdot 4 = 12$ possible combinations of exponents, and hence $\\boxed{12}$ perfect cube factors.\nFinal answer:\n\\boxed{12}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.7212121212121212
+            }
+        }
+    }
+}

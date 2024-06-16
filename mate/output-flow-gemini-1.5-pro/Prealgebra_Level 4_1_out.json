@@ -1,0 +1,19 @@
+{
+    "Prealgebra_Level 4_1.json": {
+        "category": "Prealgebra",
+        "difficulty": "Level 4",
+        "problem": "How many possible 9-digit zip codes are possible if the first digit cannot be zero?",
+        "correct_solution": "There are nine choices for the first digit and ten for the eight thereafter. Thus, there are $9 \\cdot 10^8 = \\boxed{900,\\!000,\\!000}$ such zip codes.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```python\n\"\"\"\nStep 1:\nThe first digit of the zip code can be any of the digits from 1 to 9, giving us 9 choices.\n\nStep 2:\nThe remaining digits of the zip code (digits 2 through 9) can be any of the 10 possible digits (0 through 9).\n\nStep 3:\nSince each digit choice is independent of the others, we can multiply the number of choices for each digit to find the total number of possible zip codes.\n\nStep 4:\nTherefore, the total number of possible 9-digit zip codes is 9 * 10 * 10 * 10 * 10 * 10 * 10 * 10 * 10 = 9 * 10^8\n\nFinal answer:\n\\boxed{9 \\times 10^8}\n\"\"\"\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.8241563055062167
+            }
+        }
+    }
+}

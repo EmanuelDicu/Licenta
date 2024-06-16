@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 5_1.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 5",
+        "problem": "Find the smallest positive rational number $r$ such that\n\\[\\sum_{k=1}^{35}\\sin (5k)^\\circ = \\tan r^\\circ.\\]",
+        "correct_solution": "From product-to-sum,\n\\[\\sin 5^\\circ \\sin (5k)^\\circ = \\frac{1}{2} [\\cos (5k - 5)^\\circ - \\cos (5k + 5)^\\circ].\\]Thus, we can make the sum telescope:\n\\begin{align*}\n\\sum_{k = 1}^{35} \\sin (5k)^\\circ &= \\frac{1}{\\sin 5^\\circ} \\sum_{k = 1}^{35} \\sin 5^\\circ \\sin (5k)^\\circ \\\\\n&= \\frac{1}{\\sin 5^\\circ} \\sum_{k = 1}^{35} \\frac{\\cos (5k - 5)^\\circ - \\cos (5k + 5)^\\circ}{2} \\\\\n&= \\frac{1}{2 \\sin 5^\\circ} [(\\cos 0^\\circ - \\cos 10^\\circ) + (\\cos 5^\\circ - \\cos 15^\\circ) + (\\cos 10^\\circ - \\cos 20^\\circ) + \\\\\n&\\quad + \\dots + (\\cos 165^\\circ - \\cos 175^\\circ) + (\\cos 170^\\circ - \\cos 180^\\circ)] \\\\\n&= \\frac{\\cos 0^\\circ + \\cos 5^\\circ - \\cos 175^\\circ - \\cos 180^\\circ}{2 \\sin 5^\\circ} \\\\\n&= \\frac{2 + 2 \\cos 5^\\circ}{2 \\sin 5^\\circ} \\\\\n&= \\frac{1 + \\cos 5^\\circ}{\\sin 5^\\circ}.\n\\end{align*}Then by the double-angle formulas,\n\\begin{align*}\n\\frac{1 + \\cos 5^\\circ}{\\sin 5^\\circ} &= \\frac{1 + 2 \\cos^2 2.5^\\circ - 1}{2 \\sin 2.5^\\circ \\cos 2.5^\\circ} \\\\\n&= \\frac{2 \\cos^2 2.5^\\circ}{2 \\sin 2.5^\\circ \\cos 2.5^\\circ} \\\\\n&= \\frac{\\cos 2.5^\\circ}{\\sin 2.5^\\circ} \\\\\n&= \\cot 2.5^\\circ \\\\\n&= \\tan 87.5^\\circ.\n\\end{align*}Thus, $r = \\boxed{87.5}.$",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1: \nLet\n\\[S = \\sin 5^\\circ + \\sin 10^\\circ + \\dots + \\sin 175^\\circ.\\]Then\n\\[2S \\sin 5^\\circ = 2 \\sin 5^\\circ \\sin 5^\\circ + 2 \\sin 5^\\circ \\sin 10^\\circ + \\dots + 2 \\sin 5^\\circ \\sin 175^\\circ.\\]We can write\n\\begin{align*}\n2 \\sin 5^\\circ \\sin 5^\\circ &= \\cos 0^\\circ - \\cos 10^\\circ, \\\\\n2 \\sin 5^\\circ \\sin 10^\\circ &= \\cos 5^\\circ - \\cos 15^\\circ, \\\\\n2 \\sin 5^\\circ \\sin 15^\\circ &= \\cos 10^\\circ - \\cos 20^\\circ, \\\\\n&\\dots, \\\\\n2 \\sin 5^\\circ \\sin 175^\\circ &= \\cos 170^\\circ - \\cos 180^\\circ.\n\\end{align*}\nReasoning:\nWe multiply both sides of the equation by 2sin(5\u00b0). We will use the product-to-sum identity for sine, which states that 2sin(x)sin(y) = cos(x-y) - cos(x+y). \n\nStep 2: \nSumming all these equations, we get\n\\[2S \\sin 5^\\circ = \\cos 0^\\circ + \\cos 5^\\circ - \\cos 180^\\circ - \\cos 175^\\circ = 2 \\cos 5^\\circ.\\]Then $S = \\frac{\\cos 5^\\circ}{\\sin 5^\\circ} = \\cot 5^\\circ.$\nReasoning:\nMost of the terms on the right-hand side cancel. We are left with 2Ssin(5\u00b0) = 2cos(5\u00b0). Dividing both sides by 2sin(5\u00b0) gives us S = cot(5\u00b0).\n\nStep 3: \nHence, $\\tan r^\\circ = \\cot 5^\\circ = \\tan (90^\\circ - 5^\\circ) = \\tan 85^\\circ,$ so the smallest such positive rational number $r$ is $\\boxed{\\frac{85}{1}}.$\nReasoning:\nWe've shown that the sum of the series is equal to cot(5\u00b0).  Since cot(x) = tan(90\u00b0 - x), we have cot(5\u00b0) = tan(85\u00b0).  Thus, r = 85/1. \n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": false,
+                "Same result": false,
+                "Levenshtein distance value": 0.6702977487291213
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 2_2.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 2",
+        "problem": "In how many ways can a 3-person committee be chosen from a group of 8 people?",
+        "correct_solution": "There are $\\binom{8}{3} = \\frac{8 \\times 7 \\times 6}{3!}=\\boxed{56}$ to choose 3 people from a group of 8 without regard to order.",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```python\nSolution:\nStep 1:\nWe have 8 choices for the first person on the committee.\nStep 2:\nFor each choice of the first person, we have 7 people remaining who could be the second person on the committee.\nStep 3:\nThat leaves 6 people who could be the third person on the committee for each choice of the first two.\nStep 4:\nSo it seems like there are 8*7*6 = 336 ways to choose the committee. However, this counts each committee multiple times.\nStep 5:\nFor example, picking person 1 then person 3 then person 2 gives us the same committee as picking person 3 then person 2 then person 1.\nStep 6:\nThe number of different orderings of a 3 person committee is 3! = 3*2*1 = 6.\nStep 7:\nTherefore, the number of ways to choose a committee of 3 from 8 people is (8*7*6)/(3*2*1) = 56.\nFinal answer:\n\\boxed{56}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.8968944099378882
+            }
+        }
+    }
+}

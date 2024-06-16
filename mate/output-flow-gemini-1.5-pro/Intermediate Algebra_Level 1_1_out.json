@@ -1,0 +1,19 @@
+{
+    "Intermediate Algebra_Level 1_1.json": {
+        "category": "Intermediate Algebra",
+        "difficulty": "Level 1",
+        "problem": "Let $a,$ $b,$ and $c$ be the roots of $x^3 - 3x - 5 = 0.$  Find $abc.$",
+        "correct_solution": "By Vieta's formulas, $abc = \\boxed{5}.$",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1:\nRecall the relationship between the roots and coefficients of a cubic polynomial.\nFor a cubic polynomial of the form $ax^3 + bx^2 + cx + d = 0$, the following relationships hold:\n-  Sum of roots:  $a + b + c = -b/a$\n-  Sum of products of roots taken two at a time: $ab + ac + bc = c/a$\n-  Product of roots: $abc = -d/a$\n\nStep 2:\nIdentify the coefficients in the given polynomial $x^3 - 3x - 5 = 0$. \nWe have $a = 1$, $b = 0$, $c = -3$, and $d = -5$.\n\nStep 3:\nApply the formula for the product of roots: $abc = -d/a$.\nSubstitute the values of $a$ and $d$:  $abc = -(-5)/1 = 5$.\n\nFinal answer:\n\\boxed{5} \n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Same result": true,
+                "Levenshtein distance value": 0.947452229299363
+            }
+        }
+    }
+}

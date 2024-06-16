@@ -1,0 +1,19 @@
+{
+    "Precalculus_Level 5_2.json": {
+        "category": "Precalculus",
+        "difficulty": "Level 5",
+        "problem": "Let $ x$ be a real number such that the five numbers $ \\cos(2 \\pi x)$, $ \\cos(4 \\pi x)$, $ \\cos(8 \\pi x)$, $ \\cos(16 \\pi x)$, and $ \\cos(32 \\pi x)$ are all nonpositive.  What is the smallest possible positive value of $ x$?",
+        "correct_solution": "More generally, let $t$ be a positive real number, and let $n$ be a positive integer.  Let\n\\[t = \\lfloor t \\rfloor + (0.t_1 t_2 t_3 \\dots)_2.\\]Here, we are expressing the fractional part of $t$ in binary.  Then\n\\begin{align*}\n\\cos (2^n \\pi t) &= \\cos (2^n \\pi \\lfloor t \\rfloor + 2^n \\pi (0.t_1 t_2 t_3 \\dots)_2) \\\\\n&= \\cos (2^n \\pi \\lfloor t \\rfloor + \\pi (t_1 t_2 \\dots t_{n - 1} 0)_2 + \\pi (t_n.t_{n + 1} t_{n + 2} \\dots)_2).\n\\end{align*}Since $2^n \\pi \\lfloor t \\rfloor + \\pi (t_1 t_2 \\dots t_{n - 1} 0)_2$ is an integer multiple of $2 \\pi,$ this is equal to\n\\[\\cos (\\pi (t_n.t_{n + 1} t_{n + 2} \\dots)_2).\\]This is non-positive precisely when\n\\[\\frac{1}{2} \\le (t_n.t_{n + 1} t_{n + 2} \\dots)_2 \\le \\frac{3}{2}.\\]If $t_n = 0,$ then $t_{n + 1} = 1.$  And if $t_n = 1,$ then $t_{n + 1} = 0$ (unless $t_{n + 1} = 1$ and $t_m = 0$ for all $m \\ge n + 2$.)\n\nTo find the smallest such $x,$ we can assume that $0 < x < 1.$  Let\n\\[x = (0.x_1 x_2 x_3 \\dots)_2\\]in binary.  Since we want the smallest such $x,$ we can assume $x_1 = 0.$  Then from our work above,\n\\[\n\\begin{array}{c}\n\\dfrac{1}{2} \\le x_1.x_2 x_3 x_4 \\dotsc \\le \\dfrac{3}{2}, \\\\\n\\\\\n\\dfrac{1}{2} \\le x_2.x_3 x_4 x_5 \\dotsc \\le \\dfrac{3}{2}, \\\\\n\\\\\n\\dfrac{1}{2} \\le x_3.x_4 x_5 x_6 \\dotsc \\le \\dfrac{3}{2}, \\\\\n\\\\\n\\dfrac{1}{2} \\le x_4.x_5 x_6 x_7 \\dotsc \\le \\dfrac{3}{2}, \\\\\n\\\\\n\\dfrac{1}{2} \\le x_5.x_6 x_7 x_8 \\dotsc \\le \\dfrac{3}{2}.\n\\end{array}\n\\]To minimize $x,$ we can take $x_1 = 0.$  Then the first inequality forces $x_2 = 1.$\n\nFrom the second inequality, if $x_3 = 1,$ then $x_n = 0$ for all $n \\ge 4,$ which does not work, so $x_3 = 0.$\n\nFrom the third inequality, $x_4 = 1.$\n\nFrom the fourth inequality, if $x_5 = 1,$ then $x_n = 0$ for all $n \\ge 6,$ which does not work, so $x_5 = 0.$\n\nFrom the fifth inequality, $x_6 = 1.$\n\nThus,\n\\[x = (0.010101 x_7 x_8 \\dots)_2.\\]The smallest positive real number of this form is\n\\[x = 0.010101_2 = \\frac{1}{4} + \\frac{1}{16} + \\frac{1}{64} = \\boxed{\\frac{21}{64}}.\\]",
+        "generated_solutions": {
+            "gemini-1.5-pro": "```\nSolution:\nStep 1: \nWe know that $ \\cos \\theta \\le 0$ when $ \\frac{\\pi}{2} + 2 \\pi k \\le \\theta \\le \\frac{3 \\pi}{2} + 2 \\pi k$, where $ k$ is an integer.\n\nStep 2:\nTherefore, for each $ n = 1$, 2, 4, 8, 16, we must have\n\\[\\frac{1}{4} + k_n \\le 2^n x \\le \\frac{3}{4} + k_n\\]for some integer $ k_n$.\n\nStep 3:\nDividing by $ 2^n$, we get\n\\[\\frac{1}{2^{n + 2}} + \\frac{k_n}{2^n} \\le x \\le \\frac{3}{2^{n + 2}} + \\frac{k_n}{2^n}.\\]\n\nStep 4:\nWe want to find the smallest positive $ x$ that satisfies these inequalities.  We can take $ k_1 = k_2 = k_4 = k_8 =0$ and $ k_{16} = 1$ to get\n\\begin{align*}\n\\frac{1}{16} &\\le x \\le \\frac{3}{16}, \\\\\n\\frac{1}{64} &\\le x \\le \\frac{3}{64}, \\\\\n\\frac{1}{256} &\\le x \\le \\frac{3}{256}, \\\\\n\\frac{1}{1024}  &\\le x \\le \\frac{3}{1024} , \\\\\n\\frac{1}{4096} + \\frac{1}{16} &\\le x \\le \\frac{3}{4096} + \\frac{1}{16}.\n\\end{align*}The smallest possible value of $ x$ is then $  \\frac{1}{4096} + \\frac{1}{16} = \\boxed{\\frac{257}{4096}}$.\nFinal answer:\n\\boxed{\\frac{257}{4096}}\n```"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Same result": false,
+                "Levenshtein distance value": 0.7427701674277016
+            }
+        }
+    }
+}
