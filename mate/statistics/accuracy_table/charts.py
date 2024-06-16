@@ -61,6 +61,12 @@ def list_files_in_specified_folders(root_dir, folder_list):
         algorithm_name = folder_name.split('/')[-1]
         if algorithm_name.startswith('output-'):
             algorithm_name = algorithm_name[7:]
+        else:
+            if 'direct' in folder_name:
+                algorithm_name = 'direct-llama3-' + algorithm_name[7:]
+            else:
+                algorithm_name = 'flow-llama3-' + algorithm_name[7:]
+        print("Processing folder: ", algorithm_name, "...")
 
         # Check if the current path is a directory
         if os.path.isdir(folder_path):
