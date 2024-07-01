@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 5_3.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 5",
+        "problem": "How many subsets of the set of divisors of $72$ contain only composite numbers? For example, $\\{8,9\\}$ and $\\{4,8,12\\}$ are two such sets. Include the empty set in your count.",
+        "correct_solution": "We know that the number of subsets of any given set is equal to $2^n,$ where $n$ is the number of elements in the set. First, then, we need to find the number of composite divisors. The prime factorization of $72$ is $72=2^3 \\cdot 3^2,$ so there are $(3+1)(2+1)=12$ total divisors. (To see this, note that we can form a divisor of the form $2^a 3^b$ by freely choosing $a=0,1,2,3$ and $b=0,1,2$). Of these, $1$ is neither prime nor composite, and $2$ and $3$ are prime, for a total of $9$ composite divisors. Therefore there are $2^9=\\boxed{512}$ subsets of the divisors of $72$ with only composite divisors.",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Here is the solution:\n\nStep 1:\nThe set of divisors of 72 is {1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, 72}.\n\nStep 2:\nThe composite numbers in the set are {4, 6, 8, 9, 12, 18, 24, 36}.\n\nStep 3:\nTo count the number of subsets that contain only composite numbers, we consider the power set of {4, 6, 8, 9, 12, 18, 24, 36}, which has 2^8 = 256 subsets.\n\nStep 4:\nThe empty set is a subset that contains only composite numbers, so we do not need to subtract it.\n\nStep 5:\nThe single-element subsets are {4}, {6}, {8}, {9}, {12}, {18}, {24}, {36}, which are 8 subsets that contain only composite numbers.\n\nStep 6:\nTherefore, the number of subsets that contain only composite numbers is 256.\n\nFinal answer:\n\\boxed{256}"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Similitude 1": 0.2571022727272727,
+                "Similitude 2": 0.34296482412060303,
+                "Same result": false
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "Counting & Probability_Level 5_3.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 5",
+        "problem": "How many subsets of the set of divisors of $72$ contain only composite numbers? For example, $\\{8,9\\}$ and $\\{4,8,12\\}$ are two such sets. Include the empty set in your count.",
+        "correct_solution": "We know that the number of subsets of any given set is equal to $2^n,$ where $n$ is the number of elements in the set. First, then, we need to find the number of composite divisors. The prime factorization of $72$ is $72=2^3 \\cdot 3^2,$ so there are $(3+1)(2+1)=12$ total divisors. (To see this, note that we can form a divisor of the form $2^a 3^b$ by freely choosing $a=0,1,2,3$ and $b=0,1,2$). Of these, $1$ is neither prime nor composite, and $2$ and $3$ are prime, for a total of $9$ composite divisors. Therefore there are $2^9=\\boxed{512}$ subsets of the divisors of $72$ with only composite divisors.",
+        "generated_solutions": {
+            "gpt-4o": "```\nSolution:\nStep 1:\nFirst, we need to find all the divisors of 72. \nSince 72 = 2^3 * 3^2, the divisors are all numbers of the form 2^a * 3^b where 0 \u2264 a \u2264 3 and 0 \u2264 b \u2264 2.\n\nStep 2:\nThe complete list of divisors of 72 is: \n1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, 72.\n\nStep 3:\nIdentify all the composite divisors of 72.\nA composite number has at least one divisor other than 1 and itself.\nThe composite divisors of 72 are:\n4, 6, 8, 9, 12, 18, 24, 36, 72.\n\nStep 4:\nCreate the set of all composite divisors: \n{4, 6, 8, 9, 12, 18, 24, 36, 72}.\n\nStep 5:\nDetermine the number of subsets that can be formed from this set, including the empty set.\nThe number of subsets of a set with n elements is 2^n. Here, n = 9.\n\nStep 6:\nCalculate the number of subsets:\n2^9 = 512.\n\nStep 7:\nTherefore, the number of subsets of the set of divisors of 72 that contain only composite numbers, including the empty set, is \\boxed{512}.\n```"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Similitude 1": 0.2766190998902305,
+                "Similitude 2": 0.32271325796505657,
+                "Same result": true
+            }
+        }
+    }
+}

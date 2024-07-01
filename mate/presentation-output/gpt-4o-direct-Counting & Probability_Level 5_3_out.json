@@ -1,0 +1,18 @@
+{
+    "Counting & Probability_Level 5_3.json": {
+        "category": "Counting & Probability",
+        "difficulty": "Level 5",
+        "problem": "How many subsets of the set of divisors of $72$ contain only composite numbers? For example, $\\{8,9\\}$ and $\\{4,8,12\\}$ are two such sets. Include the empty set in your count.",
+        "correct_solution": "We know that the number of subsets of any given set is equal to $2^n,$ where $n$ is the number of elements in the set. First, then, we need to find the number of composite divisors. The prime factorization of $72$ is $72=2^3 \\cdot 3^2,$ so there are $(3+1)(2+1)=12$ total divisors. (To see this, note that we can form a divisor of the form $2^a 3^b$ by freely choosing $a=0,1,2,3$ and $b=0,1,2$). Of these, $1$ is neither prime nor composite, and $2$ and $3$ are prime, for a total of $9$ composite divisors. Therefore there are $2^9=\\boxed{512}$ subsets of the divisors of $72$ with only composite divisors.",
+        "generated_solutions": {
+            "gpt-4o": "To solve the problem of finding the number of subsets of the set of divisors of 72 that contain only composite numbers, we will follow these steps:\n\n1. Identify all the divisors of 72.\n2. Determine which of these divisors are composite numbers.\n3. Count the number of subsets that can be formed from these composite numbers, including the empty set.\n\nLet's go through these steps in detail.\n\n### Step 1: Identify all the divisors of 72\nFirst, we find the prime factorization of 72:\n\\[ 72 = 2^3 \\times 3^2 \\]\n\nUsing the prime factorization, the divisors of 72 can be found by considering all possible combinations of the powers of the prime factors:\n\\[ 72 \\divisors = \\{1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, 72\\} \\]\n\n### Step 2: Identify the composite numbers among these divisors\nA composite number is a positive integer greater than 1 that is not prime. Therefore, we need to exclude 1 (neither prime nor composite) and any primes from our set of divisors.\n\nThe primes in the divisors of 72 are:\n\\[ \\{2, 3\\} \\]\n\nHence, the composite numbers among the divisors are:\n\\[ \\{4, 6, 8, 9, 12, 18, 24, 36, 72\\} \\]\n\n### Step 3: Count the subsets containing only composite numbers\nWe have identified the set of composite divisors:\n\\[ \\{4, 6, 8, 9, 12, 18, 24, 36, 72\\} \\]\n\nThe number of subsets of a set with \\( n \\) elements is \\( 2^n \\). In our case, the number of elements in our set of composite numbers is 9:\n\\[ n = 9 \\]\n\nThus, the number of subsets of this set (including the empty set) is:\n\\[ 2^9 = 512 \\]\n\n### Conclusion:\nThe number of subsets of the set of divisors of 72 that contain only composite numbers, including the empty set, is:\n\\[ \\boxed{512} \\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Similitude 1": 0.24788391777509067,
+                "Similitude 2": 0.2559808612440191
+            }
+        }
+    }
+}
