@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_16.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "A painter needs to paint 3 houses. The first house requires 14 gallons of paint, the second house requires twice as much paint as the first, and the third house needs half as much paint as the second house. If one gallon of paint costs $35 and the painter gets a bulk discount of 10% for purchases over 30 gallons, how much will the paint cost in total?",
+        "correct_solution": "\\boxed{1764}",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how we can break down this problem:\n\n**1. Calculate the paint needed for the second house:**\n\n* The second house needs twice the paint of the first house, which needs 14 gallons.\n* Twice the paint of the first house is 14 gallons * 2 = 28 gallons.\n\n**2. Calculate the paint needed for the third house:**\n\n* The third house needs half the paint of the second house, which needs 28 gallons.\n* Half the paint of the second house is 28 gallons / 2 = 14 gallons.\n\n**3. Calculate the total paint needed:**\n\n* Add up the paint needed for all three houses: 14 gallons + 28 gallons + 14 gallons = 56 gallons.\n\n**4. Determine if the discount applies:**\n\n* The painter bought 56 gallons of paint, which is more than 30 gallons. So, the discount applies.\n\n**5. Calculate the original cost of the paint:**\n\n* The cost per gallon is $35, and the painter needs 56 gallons.\n* The original cost would be $35/gallon * 56 gallons = $1960.\n\n**6. Calculate the discount amount:**\n\n* The discount is 10% of the original price.\n* The discount amount is $1960 * 0.10 = $196.\n\n**7. Calculate the final cost of the paint:**\n\n* Subtract the discount from the original price to find the final price.\n* The final cost is $1960 - $196 = $1764.\n\n**Solution:** The total cost of the paint, after the discount, will be $1764. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9938508839354343
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_12.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Leah and 2 of her friends go to an all-you-can-eat dumpling buffet. Leah\u2019s 1st friend ate 30 dumplings, her 2nd friend ate twice as many dumplings as her 1st friend, and Leah ate 1.5 times as many dumplings as her 2nd friend. How many dumplings in total did Leah and her friends eat?",
+        "correct_solution": "\\boxed{180}",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Let's break down the problem into smaller parts and solve it logically:\n\n1. Leah's 1st friend ate 30 dumplings.\n2. Leah's 2nd friend ate twice as many dumplings as the 1st friend, so the 2nd friend ate 30 * 2 = 60 dumplings.\n3. Leah ate 1.5 times as many dumplings as her 2nd friend, so Leah ate 60 * 1.5 = 90 dumplings.\n\nNow, let's find the total number of dumplings Leah and her friends ate:\nTotal = Leah + 1st friend + 2nd friend\nTotal = 90 + 60 + 30\nTotal = 180 dumplings\n\nTherefore, Leah and her friends ate a total of 180 dumplings at the buffet."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9873188405797102
+            }
+        }
+    }
+}

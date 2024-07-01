@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_15.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Henry is renovating his kitchen and adding a new tile floor. He needs to cover an area of 200 square feet. He has a stack of tiles that measure 0.5 feet in length and width. He can get 40 tiles done per hour. Henry works for 6 hours at that rate, then has some coffee and works at a faster rate for the next 2 hours (60 tiles per hour). Henry runs out of tiles, so he goes to a store to purchase the remaining tiles needed to finish the floor. Given that the price per tile is $2.50, how much will he need to spend at the store to get exactly enough tiles to finish the floor?",
+        "correct_solution": "\\boxed{1100}",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Let's break down this problem step by step:\n\n**1. Calculate the area of each tile:**\n\n* The tiles are 0.5 feet in length and 0.5 feet in width.\n* Area of a square = length * width\n* Area of each tile = 0.5 feet * 0.5 feet = 0.25 square feet\n\n**2. Calculate the number of tiles needed for the entire floor:**\n\n* Total floor area = 200 square feet\n* Area of each tile = 0.25 square feet\n* Total tiles needed = Total floor area / Area of each tile \n* Total tiles needed = 200 square feet / 0.25 square feet/tile = 800 tiles\n\n**3. Calculate the number of tiles laid in the first 6 hours:**\n\n* Tiles laid per hour = 40 tiles\n* Work time = 6 hours\n* Total tiles laid = Tiles laid per hour * Work time\n* Total tiles laid = 40 tiles/hour * 6 hours = 240 tiles\n\n**4. Calculate the number of tiles laid in the next 2 hours:**\n\n* Tiles laid per hour = 60 tiles\n* Work time = 2 hours\n* Total tiles laid = Tiles laid per hour * Work time\n* Total tiles laid = 60 tiles/hour * 2 hours = 120 tiles\n\n**5. Calculate the total number of tiles laid:**\n\n* Tiles laid in the first 6 hours = 240 tiles\n* Tiles laid in the next 2 hours = 120 tiles\n* Total tiles laid = 240 tiles + 120 tiles = 360 tiles\n\n**6. Calculate the number of tiles still needed:**\n\n* Total tiles needed = 800 tiles\n* Total tiles laid = 360 tiles\n* Tiles still needed = Total tiles needed - Total tiles laid\n* Tiles still needed = 800 tiles - 360 tiles = 440 tiles\n\n**7. Calculate the total cost of the remaining tiles:**\n\n* Tiles still needed = 440 tiles\n* Price per tile = $2.50\n* Total cost = Tiles still needed * Price per tile\n* Total cost = 440 tiles * $2.50/tile = $1100\n\n**Solution:** Henry will need to spend $1100 at the store to get enough tiles to finish the floor. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9947916666666666
+            }
+        }
+    }
+}

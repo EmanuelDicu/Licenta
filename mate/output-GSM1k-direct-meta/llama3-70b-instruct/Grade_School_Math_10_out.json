@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_10.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Emily is applying to 6 different colleges. 1/2 of the colleges have an application fee of $60, and the other half have an application fee of $90. She must also pay $15 per transcript to send them to each college. Her parents offer to help pay for half of the total costs. How many dollars does she have to pay?",
+        "correct_solution": "\\boxed{270}",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them step by step.\n\n**Part 1: Find the total application fee**\n\nEmily is applying to 6 different colleges. Half of them have an application fee of $60, and the other half have an application fee of $90.\n\nLet's find the number of colleges with each fee:\n\n* Number of colleges with $60 fee = 6 / 2 = 3\n* Number of colleges with $90 fee = 6 / 2 = 3\n\nNow, let's calculate the total application fee:\n\n* Total $60 fee = 3 colleges x $60 = $180\n* Total $90 fee = 3 colleges x $90 = $270\n* Total application fee = $180 + $270 = $450\n\n**Part 2: Find the total transcript fee**\n\nEmily needs to pay $15 per transcript to send them to each college. Since she's applying to 6 colleges, the total transcript fee is:\n\n* Total transcript fee = 6 colleges x $15 = $90\n\n**Part 3: Find the total cost**\n\nThe total cost is the sum of the total application fee and the total transcript fee:\n\n* Total cost = $450 (application fee) + $90 (transcript fee) = $540\n\n**Part 4: Find the amount Emily's parents will pay**\n\nEmily's parents offer to pay for half of the total cost. To find the amount they will pay, we can divide the total cost by 2:\n\n* Amount parents will pay = $540 / 2 = $270\n\n**Part 5: Find the amount Emily needs to pay**\n\nTo find the amount Emily needs to pay, we can subtract the amount her parents will pay from the total cost:\n\n* Amount Emily needs to pay = $540 - $270 = $270\n\nTherefore, Emily needs to pay $270."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9945429740791268
+            }
+        }
+    }
+}

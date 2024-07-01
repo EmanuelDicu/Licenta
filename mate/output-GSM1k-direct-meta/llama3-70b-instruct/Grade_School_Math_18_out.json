@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_18.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Sally went to the mall to buy clothes for the summer. She went to Forever 21 and bought 4 tops, each priced at $12.99, $6.99, $17.99, $21.99, and 3 pants each priced at $15.99. If her subtotal is over $75, she gets a discount of 15% on her purchase at that store. Then she goes to Shoe Palace and buys 2 shoes for a total of $123.26. How much money did Sally spend at the mall?",
+        "correct_solution": "\\boxed{215}",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them step by step.\n\n**Part 1: Calculate the subtotal at Forever 21**\n\nSally bought 4 tops and 3 pants at Forever 21. We need to calculate the total cost of these items.\n\n**Tops:**\n\n* Top 1: $12.99\n* Top 2: $6.99\n* Top 3: $17.99\n* Top 4: $21.99\n\nAdd up the prices of the tops: $12.99 + $6.99 + $17.99 + $21.99 = $60.96\n\n**Pants:**\n\n* 3 pants, each priced at $15.99\n* Total cost of pants: 3 x $15.99 = $47.97\n\n**Subtotal at Forever 21:**\n\nAdd the total cost of tops and pants: $60.96 + $47.97 = $108.93\n\n**Part 2: Apply the discount at Forever 21 (if applicable)**\n\nSince the subtotal is over $75, Sally gets a 15% discount on her purchase. To find the discount, multiply the subtotal by the discount percentage:\n\nDiscount = $108.93 x 0.15 = $16.34\n\n**New subtotal at Forever 21 (after discount):**\n\nSubtract the discount from the original subtotal: $108.93 - $16.34 = $92.59\n\n**Part 3: Calculate the total cost at Shoe Palace**\n\nSally bought 2 shoes for a total of $123.26. This is a straightforward calculation, and we don't need to do anything else here.\n\n**Part 4: Calculate the total amount Sally spent at the mall**\n\nAdd the new subtotal at Forever 21 (after discount) to the total cost at Shoe Palace:\n\nTotal amount spent = $92.59 + $123.26 = $215.85\n\nTherefore, Sally spent a total of $215.85 at the mall."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9941563184806428
+            }
+        }
+    }
+}

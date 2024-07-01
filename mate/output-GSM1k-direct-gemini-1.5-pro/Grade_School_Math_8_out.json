@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_8.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Molly wants to win the contest at school for reading 25 books before the end of May. So far, she has read 5 books by the end of January. How many more books will she need to read on average each month until the end of May to win the contest?",
+        "correct_solution": "\\boxed{5}",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how to break down the problem and solve it:\n\n**1. Figure out how many months are left:**\n\n* January is already over.\n* We need to count February, March, April, and May.\n* That means there are **4** months left.\n\n**2. Calculate how many more books Molly needs to read:**\n\n* She needs to read 25 books total.\n* She's already read 5 books.\n* She needs to read 25 - 5 = **20** more books.\n\n**3. Determine the average number of books per month:**\n\n* Molly needs to read 20 more books.\n* She has 4 months left.\n* She needs to read an average of 20 / 4 = **5** books per month.\n\n**Solution:** Molly needs to read an average of 5 books per month from February to May to win the contest. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.992721979621543
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_2.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Bernie is a street performer who plays guitar. On average, he breaks three guitar strings a week, and each guitar string costs $3 to replace. How much does he spend on guitar strings over the course of an entire year?",
+        "correct_solution": "\\boxed{468}",
+        "generated_solutions": {
+            "gpt-4o": "To solve this problem, we will break it down into smaller, manageable steps and solve each part in logical order.\n\n### Step 1: Determine the number of weeks in a year\nA year typically has 52 weeks.\n\n### Step 2: Calculate the total number of guitar strings Bernie breaks in a year\nOn average, Bernie breaks 3 guitar strings per week. Therefore, we need to find out how many guitar strings he breaks in a year.\n\\[\n\\text{Number of guitar strings in a year} = \\text{Number of weeks in a year} \\times \\text{Average number of strings broken per week}\n\\]\n\\[\n\\text{Number of guitar strings in a year} = 52 \\times 3 = 156\n\\]\n\n### Step 3: Calculate the total cost of replacing these guitar strings\nEach guitar string costs $3 to replace. Hence, we need to find out the total cost for 156 guitar strings.\n\\[\n\\text{Total cost} = \\text{Number of guitar strings in a year} \\times \\text{Cost per guitar string}\n\\]\n\\[\n\\text{Total cost} = 156 \\times 3 = 468\n\\]\n\n### Step 4: Present the final solution\nBernie spends a total of $468 on guitar strings over the course of an entire year.\n\n### Summary of solution:\n1. There are 52 weeks in a year.\n2. Bernie breaks an average of 3 strings per week, so he breaks 156 strings in a year.\n3. The cost to replace 156 strings, at $3 per string, is $468.\n\nThus, the solution to the problem is:\n\\[\n\\boxed{468}\n\\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9917417417417418
+            }
+        }
+    }
+}

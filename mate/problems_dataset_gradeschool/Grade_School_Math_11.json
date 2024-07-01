@@ -1,0 +1,7 @@
+{
+    "problem": "Bob has to read 2 books and 3 articles, while Emily has to read 4 books and 2 articles. Each book has 3 chapters and each chapter has 4 paragraphs. Each article has 4 sections and each section has 2 paragraphs. How many paragraphs in total will Bob and Emily read?",
+    "category": "Grade School Math",
+    "level": "Level 3",
+    "solution": "\\boxed{112}"
+  }
+  

@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_14.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Maryann is saving up for a new bike that costs $450. She already has $120 saved up. She earns $15 per hour at her part-time job. How many hours does she need to work to afford the bike?",
+        "correct_solution": "\\boxed{22}",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve it in a logical order.\n\n**Part 1: Determine the amount Maryann still needs to save**\n\nMaryann needs to buy a bike that costs $450, and she already has $120 saved up. To find out how much more she needs to save, we subtract the amount she already has from the total cost of the bike:\n\n$450 (cost of the bike) - $120 (amount already saved) = $330\n\nSo, Maryann still needs to save $330 to afford the bike.\n\n**Part 2: Determine how much Maryann earns per hour**\n\nMaryann earns $15 per hour at her part-time job. This information will help us find out how many hours she needs to work to earn the remaining amount.\n\n**Part 3: Calculate how many hours Maryann needs to work**\n\nNow, we need to find out how many hours Maryann needs to work to earn the remaining amount of $330. We can do this by dividing the amount she still needs to save ($330) by her hourly wage ($15):\n\n$330 (amount still needed) \u00f7 $15 (hourly wage) = 22 hours\n\nSo, Maryann needs to work 22 hours to earn the remaining amount of $330 and afford the bike.\n\n**Solution:**\n\nMaryann needs to work 22 hours at her part-time job to earn enough money to afford the bike that costs $450."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9950041631973355
+            }
+        }
+    }
+}

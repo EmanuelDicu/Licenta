@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_8.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Molly wants to win the contest at school for reading 25 books before the end of May. So far, she has read 5 books by the end of January. How many more books will she need to read on average each month until the end of May to win the contest?",
+        "correct_solution": "\\boxed{5}",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "1. **Determine the number of months remaining:**  \nFrom January to May, there are 5 months remaining.\n\n2. **Determine the total number of books needed:**  \nMolly wants to read 25 books in total. She has already read 5 books, so the total number of books she needs to read is 25 - 5 = 20 books.\n\n3. **Calculate the average number of books she needs to read each month:**  \nTo win the contest and read all 20 remaining books by the end of May, Molly needs to read 20 books in 5 months.  \nAverage books per month = Total books / Total months  \nAverage books per month = 20 books / 5 months  \nAverage books per month = 4 books  \nSo, she needs to read an average of 4 books per month to win the contest.\n\nTherefore, Molly needs to read an average of 4 books per month to achieve her goal of reading 25 books by the end of May and win the contest."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9940546967895363
+            }
+        }
+    }
+}

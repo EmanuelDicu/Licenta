@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_11.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Bob has to read 2 books and 3 articles, while Emily has to read 4 books and 2 articles. Each book has 3 chapters and each chapter has 4 paragraphs. Each article has 4 sections and each section has 2 paragraphs. How many paragraphs in total will Bob and Emily read?",
+        "correct_solution": "\\boxed{112}",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how to break down the problem and solve it step-by-step:\n\n**1. Calculate the number of paragraphs in one book:**\n\n*   Each book has 3 chapters x 4 paragraphs/chapter = 12 paragraphs\n\n**2. Calculate the number of paragraphs Bob reads in books:**\n\n*   Bob reads 2 books x 12 paragraphs/book = 24 paragraphs\n\n**3. Calculate the number of paragraphs in one article:**\n\n*   Each article has 4 sections x 2 paragraphs/section = 8 paragraphs\n\n**4. Calculate the number of paragraphs Bob reads in articles:**\n\n*   Bob reads 3 articles x 8 paragraphs/article = 24 paragraphs\n\n**5. Calculate the total number of paragraphs Bob reads:**\n\n*   Bob reads 24 paragraphs (books) + 24 paragraphs (articles) = 48 paragraphs\n\n**6. Calculate the number of paragraphs Emily reads in books:**\n\n*   Emily reads 4 books x 12 paragraphs/book = 48 paragraphs\n\n**7. Calculate the number of paragraphs Emily reads in articles:**\n\n*   Emily reads 2 articles x 8 paragraphs/article = 16 paragraphs \n\n**8. Calculate the total number of paragraphs Emily reads:**\n\n*   Emily reads 48 paragraphs (books) + 16 paragraphs (articles) = 64 paragraphs\n\n**9. Calculate the total number of paragraphs Bob and Emily read:**\n\n*   Bob reads 48 paragraphs + Emily reads 64 paragraphs = 112 paragraphs\n\n**Solution:** Bob and Emily will read a total of 112 paragraphs. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9939849624060151
+            }
+        }
+    }
+}

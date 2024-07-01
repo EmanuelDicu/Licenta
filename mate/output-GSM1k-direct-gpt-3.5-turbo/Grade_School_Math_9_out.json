@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_9.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Ms. Crabapple has a bag of jelly beans that she is going to divide equally among all of her 32 students who complete their homework every day over the course of a week. The bag has 384 jellybeans in it. Unfortunately, many of Ms. Crabapple\u2019s students have a poorly developed work ethic, and only half of them complete all of the required homework. How many jelly beans will each of the eligible students receive?",
+        "correct_solution": "\\boxed{24}",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To solve this problem, we can break it down into smaller parts:\n\n1. Find out how many students are eligible to receive jellybeans:\n   Ms. Crabapple has 32 students in total. And only half of them, which is 32 students / 2 = 16 students, complete their homework every day.\n\n2. Calculate the total number of jellybeans per eligible student:\n   Ms. Crabapple has 384 jellybeans in the bag. To divide the jellybeans equally among the 16 eligible students, we need to divide the total number of jellybeans by the number of eligible students:\n   384 jellybeans / 16 students = 24 jellybeans per eligible student\n\nTherefore, each of the eligible students will receive 24 jellybeans."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9911111111111112
+            }
+        }
+    }
+}

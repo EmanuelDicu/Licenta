@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_7.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Andy\u2019s soccer team needs 80 points to finish in first place. His team plays 38 games, and he gets 3 points for each win, 1 point for each tie, and 0 points for each loss. After 26 games, the team has 15 wins, 5 ties, and 6 losses. How many more points does Andy\u2019s team need to reach 80 points?",
+        "correct_solution": "\\boxed{30}",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Let's break down the problem into smaller parts to solve it step by step:\n\n1. Calculate the total points obtained so far:\nWe know that Andy gets 3 points for each win, 1 point for each tie, and 0 points for each loss. \nFor 15 wins, Andy earned 15 * 3 = 45 points.\nFor 5 ties, Andy earned 5 * 1 = 5 points.\nFor 6 losses, Andy earned 6 * 0 = 0 points.\nTherefore, the total points earned after 26 games is 45 (wins) + 5 (ties) = 50 points.\n\n2. Calculate the points remaining to reach 80 points:\nAndy's team needs a total of 80 points to finish in first place, and they have already earned 50 points.\nTherefore, the points remaining to reach 80 is 80 - 50 = 30 points.\n\n3. Calculate the remaining number of games:\nSince Andy's team has played 26 games out of 38 games in total, the remaining number of games is 38 - 26 = 12 games.\n\n4. Calculate the maximum possible points Andy can earn in the remaining games:\nFor the remaining 12 games, Andy can earn a maximum of:\n12 games * 3 points/win = 36 points.\n\n5. Compare the points remaining to reach 80 and the maximum possible points from remaining games:\nSince Andy needs 30 points to reach 80 and can earn a maximum of 36 points from the remaining games, there are more than enough points to reach the goal of 80 points.\n\nTherefore, Andy's team does not need any more points to reach 80 points since they can earn more points than needed in the remaining games.\n\nSo, the solution to the problem is that Andy's team does not need any more points to reach the 80 points goal."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9953886693017128
+            }
+        }
+    }
+}

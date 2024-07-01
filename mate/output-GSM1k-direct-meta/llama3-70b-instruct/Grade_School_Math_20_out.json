@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_20.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Dean wants to buy flowers to make arrangements for a party. He is going to make 12 arrangements. He wants to include 4 roses and 3 daisies in each arrangement. Roses come by the dozens and are $15 for each dozen. Daisies come in groups of 4 and are $8 for the set. How much will it cost for Dean to make all 12 arrangements?",
+        "correct_solution": "\\boxed{132}",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them step by step.\n\n**Part 1: Calculating the total number of roses needed**\n\nDean wants to make 12 arrangements, and each arrangement requires 4 roses. To find the total number of roses needed, we can multiply the number of arrangements by the number of roses per arrangement:\n\n12 arrangements x 4 roses/arrangement = 48 roses\n\n**Part 2: Calculating the total cost of roses**\n\nRoses come in dozens, and each dozen costs $15. Since we need 48 roses, we can divide 48 by 12 to find the number of dozens needed:\n\n48 roses \u00f7 12 roses/dozen = 4 dozens\n\nThe total cost of roses will be the number of dozens multiplied by the cost per dozen:\n\n4 dozens x $15/dozen = $60\n\n**Part 3: Calculating the total number of daisies needed**\n\nDean wants to make 12 arrangements, and each arrangement requires 3 daisies. To find the total number of daisies needed, we can multiply the number of arrangements by the number of daisies per arrangement:\n\n12 arrangements x 3 daisies/arrangement = 36 daisies\n\n**Part 4: Calculating the total cost of daisies**\n\nDaisies come in groups of 4, and each group costs $8. Since we need 36 daisies, we can divide 36 by 4 to find the number of groups needed:\n\n36 daisies \u00f7 4 daisies/group = 9 groups\n\nThe total cost of daisies will be the number of groups multiplied by the cost per group:\n\n9 groups x $8/group = $72\n\n**Part 5: Calculating the total cost**\n\nThe total cost will be the sum of the cost of roses and the cost of daisies:\n\nTotal cost = Cost of roses + Cost of daisies\n= $60 + $72\n= $132\n\n**Solution**\n\nIt will cost Dean $132 to make all 12 arrangements."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9951249238269348
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_10.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Emily is applying to 6 different colleges. 1/2 of the colleges have an application fee of $60, and the other half have an application fee of $90. She must also pay $15 per transcript to send them to each college. Her parents offer to help pay for half of the total costs. How many dollars does she have to pay?",
+        "correct_solution": "\\boxed{270}",
+        "generated_solutions": {
+            "gpt-4o": "Alright, let's break this problem down into smaller parts and solve it step by step.\n\n### Step 1: Understand the problem and identify the quantities\n- Emily is applying to 6 different colleges.\n- 1/2 of the colleges have an application fee of $60.\n- The other half have an application fee of $90.\n- She must also pay $15 per transcript to send them to each college.\n- Her parents offer to help pay for half of the total costs.\n\n### Step 2: Calculate the application fees\n- Since Emily is applying to 6 colleges, half of them (3 colleges) have an application fee of $60, and the other half (3 colleges) have an application fee of $90.\n- For the colleges with a $60 application fee:\n  \\[\n  3 \\times 60 = 180 \\text{ dollars}\n  \\]\n- For the colleges with a $90 application fee:\n  \\[\n  3 \\times 90 = 270 \\text{ dollars}\n  \\]\n\n### Step 3: Calculate the total application fee\n- Adding these amounts together:\n  \\[\n  180 + 270 = 450 \\text{ dollars}\n  \\]\n\n### Step 4: Calculate the cost of transcripts\n- She needs to send one transcript to each of the 6 colleges, and each transcript costs $15:\n  \\[\n  6 \\times 15 = 90 \\text{ dollars}\n  \\]\n\n### Step 5: Calculate the total cost\n- Add the total application fee and the total cost of transcripts:\n  \\[\n  450 + 90 = 540 \\text{ dollars}\n  \\]\n\n### Step 6: Determine the amount Emily needs to pay after her parents' contribution\n- Her parents offer to pay for half of the total cost:\n  \\[\n  \\frac{540}{2} = 270 \\text{ dollars}\n  \\]\n\n- Therefore, Emily has to pay the remaining half:\n  \\[\n  540 - 270 = 270 \\text{ dollars}\n  \\]\n\n### Solution\nThe total amount of money that Emily has to pay is:\n\\[\n\\boxed{270 \\text{ dollars}}\n\\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9933774834437086
+            }
+        }
+    }
+}

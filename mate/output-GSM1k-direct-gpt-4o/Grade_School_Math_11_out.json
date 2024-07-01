@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_11.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Bob has to read 2 books and 3 articles, while Emily has to read 4 books and 2 articles. Each book has 3 chapters and each chapter has 4 paragraphs. Each article has 4 sections and each section has 2 paragraphs. How many paragraphs in total will Bob and Emily read?",
+        "correct_solution": "\\boxed{112}",
+        "generated_solutions": {
+            "gpt-4o": "Sure, let's break the problem down into smaller parts and solve it in a logical order. We'll determine the total number of paragraphs that Bob and Emily will read by calculating the paragraphs from the books and articles separately.\n\n### Step-by-Step Solution:\n\n**Step 1: Calculate the number of paragraphs in one book**\n- Each book has 3 chapters.\n- Each chapter has 4 paragraphs.\n- Therefore, paragraphs per book = 3 chapters/book * 4 paragraphs/chapter\n  \\[\n  3 \\times 4 = 12 \\text{ paragraphs per book}\n  \\]\n\n**Step 2: Calculate the total number of paragraphs Bob will read from books**\n- Bob has to read 2 books.\n- Paragraphs from books = 2 books * 12 paragraphs/book\n  \\[\n  2 \\times 12 = 24 \\text{ paragraphs from books}\n  \\]\n\n**Step 3: Calculate the number of paragraphs in one article**\n- Each article has 4 sections.\n- Each section has 2 paragraphs.\n- Therefore, paragraphs per article = 4 sections/article * 2 paragraphs/section\n  \\[\n  4 \\times 2 = 8 \\text{ paragraphs per article}\n  \\]\n\n**Step 4: Calculate the total number of paragraphs Bob will read from articles**\n- Bob has to read 3 articles.\n- Paragraphs from articles = 3 articles * 8 paragraphs/article\n  \\[\n  3 \\times 8 = 24 \\text{ paragraphs from articles}\n  \\]\n\n**Step 5: Calculate the total number of paragraphs Bob will read**\n- Total paragraphs Bob will read = Paragraphs from books + Paragraphs from articles\n  \\[\n  24 + 24 = 48 \\text{ paragraphs}\n  \\]\n\n**Step 6: Calculate the total number of paragraphs Emily will read from books** \n- Emily has to read 4 books.\n- Paragraphs from books = 4 books * 12 paragraphs/book\n  \\[\n  4 \\times 12 = 48 \\text{ paragraphs from books}\n  \\]\n\n**Step 7: Calculate the total number of paragraphs Emily will read from articles**\n- Emily has to read 2 articles.\n- Paragraphs from articles = 2 articles * 8 paragraphs/article\n  \\[\n  2 \\times 8 = 16 \\text{ paragraphs from articles}\n  \\]\n\n**Step 8: Calculate the total number of paragraphs Emily will read**\n- Total paragraphs Emily will read = Paragraphs from books + Paragraphs from articles\n  \\[\n  48 + 16 = 64 \\text{ paragraphs}\n  \\]\n\n**Step 9: Calculate the combined total number of paragraphs Bob and Emily will read**\n- Combined total paragraphs = Total paragraphs Bob will read + Total paragraphs Emily will read\n  \\[\n  48 + 64 = 112 \\text{ paragraphs}\n  \\]\n\nSo, the total number of paragraphs that Bob and Emily will read is \\( \\boxed{112} \\)."
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9954318936877077
+            }
+        }
+    }
+}

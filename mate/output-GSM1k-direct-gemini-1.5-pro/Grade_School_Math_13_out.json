@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_13.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Francis has a bowl of candy in front of him. There are three different flavors of candies that he\u2019s eaten over the course of 3 hours. He\u2019s eaten ten lemon, four orange, and sixteen cherry-flavored candies. If there were twenty of each when he started, how much of an average percentage is still left?",
+        "correct_solution": "\\boxed{50}",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how to solve the problem step-by-step:\n\n**1. Calculate the total number of candies Francis started with:**\n\n* He started with 20 candies of each flavor and there are 3 flavors: 20 candies/flavor * 3 flavors = 60 candies\n\n**2. Calculate the total number of candies Francis ate:**\n\n* He ate 10 lemon + 4 orange + 16 cherry = 30 candies\n\n**3. Calculate the total number of candies remaining:**\n\n* He started with 60 candies and ate 30: 60 candies - 30 candies = 30 candies\n\n**4. Calculate the percentage of candies remaining:**\n\n* Divide the number of candies remaining by the original number of candies and multiply by 100%: (30 candies / 60 candies) * 100% = 50%\n\n**Solution:** Francis has an average of **50%** of his candy left. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.991869918699187
+            }
+        }
+    }
+}

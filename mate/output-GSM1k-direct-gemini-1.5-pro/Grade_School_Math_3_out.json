@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_3.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "John Henry is competing against a machine to see who can dig a tunnel more quickly. John works without rest, and excavates at a rate of 6 cubic feet of rock per hour. The machine excavates more quickly but needs to be refueled and maintained by its operator for 30 minutes out of every hour. When it\u2019s not under maintenance, the machine excavates at a rate of 10 cubic feet of stone per hour. Provided that the competition lasts for 8 hours, how much more rock will John have excavated compared to the machine?",
+        "correct_solution": "\\boxed{8}",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how we can break down the problem and solve it:\n\n**1. Calculate the machine's active digging time:**\n\n* The machine spends 30 minutes (0.5 hours) out of every hour on maintenance.\n* Over 8 hours, the machine is under maintenance for 8 hours * 0.5 hours/hour = 4 hours.\n* Therefore, the machine actively digs for 8 hours - 4 hours = 4 hours.\n\n**2. Calculate the total rock excavated by the machine:**\n\n* The machine excavates 10 cubic feet of rock per hour.\n* Over 4 hours of active digging, the machine excavates 10 cubic feet/hour * 4 hours = 40 cubic feet.\n\n**3. Calculate the total rock excavated by John Henry:**\n\n* John Henry digs at a rate of 6 cubic feet per hour.\n* Over 8 hours, John Henry excavates 6 cubic feet/hour * 8 hours = 48 cubic feet.\n\n**4. Determine the difference in excavated rock:**\n\n* John Henry excavates 48 cubic feet, and the machine excavates 40 cubic feet.\n* John Henry excavates 48 cubic feet - 40 cubic feet = 8 cubic feet more than the machine.\n\n**Solution:** John Henry will have excavated 8 cubic feet more rock than the machine. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9944029850746269
+            }
+        }
+    }
+}

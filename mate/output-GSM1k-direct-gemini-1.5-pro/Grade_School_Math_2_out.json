@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_2.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Bernie is a street performer who plays guitar. On average, he breaks three guitar strings a week, and each guitar string costs $3 to replace. How much does he spend on guitar strings over the course of an entire year?",
+        "correct_solution": "\\boxed{468}",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how we can break down this problem:\n\n**Part 1: Calculate the weekly cost**\n\n* Bernie breaks 3 strings a week.\n* Each string costs $3.\n* His weekly cost is 3 strings * $3/string = $9\n\n**Part 2: Calculate the yearly cost**\n\n* There are 52 weeks in a year.\n* His yearly cost is $9/week * 52 weeks/year = $468\n\n**Solution:** Bernie spends $468 on guitar strings over the course of a year. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9821882951653944
+            }
+        }
+    }
+}

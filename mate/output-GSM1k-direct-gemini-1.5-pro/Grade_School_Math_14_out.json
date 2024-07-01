@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_14.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Maryann is saving up for a new bike that costs $450. She already has $120 saved up. She earns $15 per hour at her part-time job. How many hours does she need to work to afford the bike?",
+        "correct_solution": "\\boxed{22}",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how to break down the problem and solve it:\n\n**1. Figure out how much more money Maryann needs:**\n\n* **Problem:** Maryann needs $450 and has $120. How much more does she need?\n* **Solution:** Subtract the money she has from the total cost of the bike: $450 - $120 = $330\n\n**2. Calculate how many hours of work it will take to earn the rest:**\n\n* **Problem:** Maryann needs to earn $330, and she makes $15 per hour. How many hours does she need to work?\n* **Solution:** Divide the total amount she needs to earn by her hourly wage: $330 / $15/hour = 22 hours\n\n**Answer:** Maryann needs to work 22 hours to afford the bike. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9904761904761905
+            }
+        }
+    }
+}

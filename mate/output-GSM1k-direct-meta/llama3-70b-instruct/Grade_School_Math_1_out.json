@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_1.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Gabriela has $65.00 and is shopping for groceries so that her grandmother can make her favorite kale soup. She needs heavy cream, kale, cauliflower, and meat (bacon and sausage). Gabriella spends 40% of her money on the meat. She spends $5.00 less than one-third of the remaining money on heavy cream. Cauliflower costs three-fourth of the price of the heavy cream and the kale costs $2.00 less than the cauliflower. As Gabriela leaves the store, she spends one-third of her remaining money on her grandmother\u2019s favorite Girl Scout Cookies. How much money, in dollars, does Gabriela spend on Girl Scout cookies?",
+        "correct_solution": "\\boxed{7}",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them step by step.\n\n**Part 1: Find the amount spent on meat**\n\nGabriela spends 40% of her money on meat. To find the amount spent on meat, we can calculate 40% of $65:\n\n40% of $65 = 0.4 x $65 = $26\n\nSo, Gabriela spends $26 on meat.\n\n**Part 2: Find the remaining money**\n\nGabriela has $65 initially, and she spends $26 on meat. To find the remaining money, we can subtract the amount spent on meat from the initial amount:\n\nRemaining money = $65 - $26 = $39\n\n**Part 3: Find the amount spent on heavy cream**\n\nGabriela spends $5 less than one-third of the remaining money on heavy cream. First, let's find one-third of the remaining money:\n\nOne-third of $39 = $39 \u00f7 3 = $13\n\nNow, subtract $5 from this amount to find the amount spent on heavy cream:\n\nAmount spent on heavy cream = $13 - $5 = $8\n\n**Part 4: Find the amount spent on cauliflower**\n\nThe cauliflower costs three-fourths of the price of the heavy cream. We can find the amount spent on cauliflower by multiplying the amount spent on heavy cream by three-fourths:\n\nAmount spent on cauliflower = $8 x (3/4) = $8 x 0.75 = $6\n\n**Part 5: Find the amount spent on kale**\n\nThe kale costs $2 less than the cauliflower. To find the amount spent on kale, we can subtract $2 from the amount spent on cauliflower:\n\nAmount spent on kale = $6 - $2 = $4\n\n**Part 6: Find the remaining money after buying groceries**\n\nGabriela has $39 remaining after buying meat. She spends $8 on heavy cream, $6 on cauliflower, and $4 on kale. To find the remaining money after buying groceries, we can subtract these amounts from the remaining money:\n\nRemaining money after groceries = $39 - $8 - $6 - $4 = $21\n\n**Part 7: Find the amount spent on Girl Scout cookies**\n\nGabriela spends one-third of her remaining money on Girl Scout cookies. We can find the amount spent on Girl Scout cookies by multiplying the remaining money by one-third:\n\nAmount spent on Girl Scout cookies = $21 x (1/3) = $21 \u00f7 3 = $7\n\n**Solution:**\n\nGabriela spends $7 on Girl Scout cookies.\n\nBy breaking down the problem into smaller parts and solving them step by step, we can arrive at the solution in a logical and organized manner."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9972652689152234
+            }
+        }
+    }
+}

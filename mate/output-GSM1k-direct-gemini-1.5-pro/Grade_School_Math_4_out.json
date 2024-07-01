@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_4.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Colin is playing dice with his friend Eoin and needs some help keeping track of his score. He begins with 5 points and wins 6 points in the first round. In the second round, he won twice as many points as he won in the first round. In the third round, he had a fantastic roll and was able to triple his current total point count! How many points did Colin end the game with?",
+        "correct_solution": "\\boxed{69}",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how we can break down the problem to solve it:\n\n**Part 1: Points won in the second round**\n\n* Colin won 6 points in the first round.\n* In the second round, he won twice as many points as the first round, so he won 6 * 2 = 12 points.\n\n**Part 2: Total points before the third round**\n\n* He started with 5 points.\n* He won 6 points in the first round and 12 in the second round.\n* His total before the third round is 5 + 6 + 12 = 23 points.\n\n**Part 3: Points after the third round**\n\n* In the third round, Colin tripled his total points.\n* His final score is 23 * 3 = 69 points.\n\n**Solution:** Colin ended the game with 69 points. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9905660377358491
+            }
+        }
+    }
+}

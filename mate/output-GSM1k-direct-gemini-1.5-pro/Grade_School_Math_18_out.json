@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_18.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Sally went to the mall to buy clothes for the summer. She went to Forever 21 and bought 4 tops, each priced at $12.99, $6.99, $17.99, $21.99, and 3 pants each priced at $15.99. If her subtotal is over $75, she gets a discount of 15% on her purchase at that store. Then she goes to Shoe Palace and buys 2 shoes for a total of $123.26. How much money did Sally spend at the mall?",
+        "correct_solution": "\\boxed{215}",
+        "generated_solutions": {
+            "gemini-1.5-pro": "## Sally's Shopping Spree:\n\nHere's how we can break down the problem:\n\n**Part 1: Calculate the cost of the tops at Forever 21**\n\n* Sally bought 4 tops at different prices: $12.99, $6.99, $17.99, and $21.99.\n* To find the total cost, we add the prices together: $12.99 + $6.99 + $17.99 + $21.99 = $59.96\n\n**Part 2: Calculate the cost of the pants at Forever 21**\n\n* Sally bought 3 pairs of pants at $15.99 each.\n* To find the total cost, we multiply the price per pant by the number of pants: $15.99 x 3 = $47.97\n\n**Part 3: Calculate Sally's total cost at Forever 21**\n\n* We add the cost of the tops and the pants: $59.96 + $47.97 = $107.93\n\n**Part 4: Determine if Sally gets a discount at Forever 21**\n\n* Her subtotal at Forever 21 is $107.93, which is over $75.\n* Therefore, she gets a 15% discount.\n\n**Part 5: Calculate the amount of the discount**\n\n* We multiply the subtotal by the discount percentage: $107.93 x 0.15 = $16.19 (rounded to the nearest cent)\n\n**Part 6: Calculate Sally's final cost at Forever 21**\n\n* We subtract the discount from the subtotal: $107.93 - $16.19 = $91.74\n\n**Part 7: Calculate Sally's total spending at the mall**\n\n* We add her final cost at Forever 21 to the cost of the shoes at Shoe Palace: $91.74 + $123.26 = $215.00\n\n**Solution:** Sally spent a total of $215.00 at the mall. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.993916349809886
+            }
+        }
+    }
+}

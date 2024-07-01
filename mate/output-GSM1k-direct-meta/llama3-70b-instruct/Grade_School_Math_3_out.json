@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_3.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "John Henry is competing against a machine to see who can dig a tunnel more quickly. John works without rest, and excavates at a rate of 6 cubic feet of rock per hour. The machine excavates more quickly but needs to be refueled and maintained by its operator for 30 minutes out of every hour. When it\u2019s not under maintenance, the machine excavates at a rate of 10 cubic feet of stone per hour. Provided that the competition lasts for 8 hours, how much more rock will John have excavated compared to the machine?",
+        "correct_solution": "\\boxed{8}",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them step by step.\n\n**Part 1: Find out how much rock John can excavate in 8 hours**\n\nJohn excavates at a rate of 6 cubic feet of rock per hour. Since the competition lasts for 8 hours, we can multiply John's rate by the number of hours to find the total amount of rock he can excavate:\n\n6 cubic feet/hour x 8 hours = 48 cubic feet of rock\n\n**Part 2: Find out how much rock the machine can excavate in 1 hour**\n\nThe machine excavates at a rate of 10 cubic feet of stone per hour, but it needs to be refueled and maintained for 30 minutes out of every hour. This means the machine only works for 30 minutes out of every hour. Since there are 60 minutes in an hour, the machine works for:\n\n60 minutes - 30 minutes = 30 minutes\n\nTo find the machine's effective rate per hour, we can multiply its original rate by the fraction of time it's working:\n\n10 cubic feet/hour x (30 minutes / 60 minutes) = 5 cubic feet/hour\n\n**Part 3: Find out how much rock the machine can excavate in 8 hours**\n\nNow that we have the machine's effective rate per hour, we can multiply it by the number of hours to find the total amount of rock it can excavate:\n\n5 cubic feet/hour x 8 hours = 40 cubic feet of rock\n\n**Part 4: Compare John's and the machine's excavated rock and find the difference**\n\nWe've found that John can excavate 48 cubic feet of rock and the machine can excavate 40 cubic feet of rock. To find out how much more rock John can excavate, we subtract the machine's amount from John's amount:\n\n48 cubic feet - 40 cubic feet = 8 cubic feet\n\n**Solution**\n\nJohn can excavate 8 cubic feet more rock than the machine in 8 hours.\n\nI hope this step-by-step solution helps! Let me know if you have any questions."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9965772960638904
+            }
+        }
+    }
+}

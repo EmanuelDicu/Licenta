@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_10.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Emily is applying to 6 different colleges. 1/2 of the colleges have an application fee of $60, and the other half have an application fee of $90. She must also pay $15 per transcript to send them to each college. Her parents offer to help pay for half of the total costs. How many dollars does she have to pay?",
+        "correct_solution": "\\boxed{270}",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how we can break down the problem to solve it:\n\n**1. Colleges with each application fee:**\n\n* Emily applies to 6 colleges, and half have a $60 fee: 6 colleges / 2 = 3 colleges\n* The other half have a $90 fee: 6 colleges / 2 = 3 colleges\n\n**2. Total cost of the $60 application fees:**\n\n* 3 colleges have a $60 fee: 3 colleges * $60/college = $180\n\n**3. Total cost of the $90 application fees:**\n\n* 3 colleges have a $90 fee: 3 colleges * $90/college = $270\n\n**4. Total cost of all application fees:**\n\n* Add the cost of the two types of fees: $180 + $270 = $450\n\n**5. Total cost of all transcripts:**\n\n* She needs a transcript for each of the 6 colleges: 6 colleges * $15/transcript = $90\n\n**6. Total cost of applications and transcripts:**\n\n* Add the application fees and transcript costs: $450 + $90 = $540\n\n**7. Amount Emily's parents pay:**\n\n* Her parents pay for half the total costs: $540 / 2 = $270\n\n**8. Amount Emily pays:**\n\n* Subtract her parents' contribution from the total cost: $540 - $270 = $270\n\n**Solution:** Emily has to pay $270. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9933774834437086
+            }
+        }
+    }
+}

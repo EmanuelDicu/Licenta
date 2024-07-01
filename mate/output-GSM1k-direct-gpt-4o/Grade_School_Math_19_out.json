@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_19.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "A plane owned by Sunny Skies Airlines is flying from Indianapolis to Phoenix. The plane holds 180 passengers and is 2/3 full. Each passenger brings 2 carry-on bags and is charged a carry-on bag fee of $35 per bag. How much money does Sunny Skies Airlines collect for the carry-on bag fees for this flight?",
+        "correct_solution": "\\boxed{8400}",
+        "generated_solutions": {
+            "gpt-4o": "To solve this problem, let's break it down into smaller parts and solve them step by step.\n\n### Step 1: Calculate the number of passengers on the plane\nThe plane holds a maximum of 180 passengers and it is 2/3 full.\n\nNumber of passengers = \\( 180 \\times \\frac{2}{3} \\)\n\nFirst, we need to calculate:\n\\[ 180 \\times \\frac{2}{3} = 120 \\]\n\nSo, there are 120 passengers on the plane.\n\n### Step 2: Calculate the total number of carry-on bags\nEach passenger brings 2 carry-on bags.\n\nTotal number of carry-on bags = Number of passengers \\(\\times\\) Number of bags per passenger \n\\[ = 120 \\times 2 = 240 \\]\n\nSo, there are a total of 240 carry-on bags.\n\n### Step 3: Calculate the total carry-on bag fee collected\nEach carry-on bag is charged a fee of $35.\n\nTotal carry-on bag fee = Total number of carry-on bags \\(\\times\\) Fee per bag\n\\[ = 240 \\times 35 \\]\n\nLet's calculate this step-by-step:\n\\[ 240 \\times 35 = 240 \\times (30 + 5) \\]\n\\[ = 240 \\times 30 + 240 \\times 5 \\]\n\\[ = 7200 + 1200 \\]\n\\[ = 8400 \\]\n\nSo, the total carry-on bag fee collected is $8400.\n\n### Final Solution\nSunny Skies Airlines collects $8400 in carry-on bag fees for this flight.\n\nTherefore, the solution to the problem is:\n\\[ \\boxed{8400} \\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9900083263946711
+            }
+        }
+    }
+}

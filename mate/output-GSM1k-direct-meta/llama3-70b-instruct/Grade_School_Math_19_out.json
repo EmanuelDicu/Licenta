@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_19.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "A plane owned by Sunny Skies Airlines is flying from Indianapolis to Phoenix. The plane holds 180 passengers and is 2/3 full. Each passenger brings 2 carry-on bags and is charged a carry-on bag fee of $35 per bag. How much money does Sunny Skies Airlines collect for the carry-on bag fees for this flight?",
+        "correct_solution": "\\boxed{8400}",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them step by step.\n\n**Part 1: Find the number of passengers on the plane**\n\nThe problem states that the plane holds 180 passengers and is 2/3 full. To find the number of passengers, we need to convert the fraction 2/3 into a decimal and then multiply it by the total capacity of the plane.\n\n2/3 = 0.67 (approximately)\n\nNumber of passengers = Total capacity \u00d7 Fraction of capacity\n= 180 \u00d7 0.67\n= 120 passengers\n\n**Part 2: Find the total number of carry-on bags**\n\nEach passenger brings 2 carry-on bags, so we need to multiply the number of passengers by 2.\n\nTotal number of carry-on bags = Number of passengers \u00d7 Number of bags per passenger\n= 120 \u00d7 2\n= 240 bags\n\n**Part 3: Calculate the total carry-on bag fee**\n\nThe airline charges $35 per bag, so we need to multiply the total number of bags by the fee per bag.\n\nTotal carry-on bag fee = Total number of bags \u00d7 Fee per bag\n= 240 \u00d7 $35\n= $8,400\n\n**Solution:**\n\nSunny Skies Airlines collects $8,400 in carry-on bag fees for this flight.\n\nBy breaking down the problem into smaller parts, we were able to solve it step by step and arrive at the final answer."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9922680412371134
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_18.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Sally went to the mall to buy clothes for the summer. She went to Forever 21 and bought 4 tops, each priced at $12.99, $6.99, $17.99, $21.99, and 3 pants each priced at $15.99. If her subtotal is over $75, she gets a discount of 15% on her purchase at that store. Then she goes to Shoe Palace and buys 2 shoes for a total of $123.26. How much money did Sally spend at the mall?",
+        "correct_solution": "\\boxed{215}",
+        "generated_solutions": {
+            "gpt-4o": "Sure, let's break the problem into smaller parts and solve them step-by-step.\n\n### Part 1: Calculating Total Cost at Forever 21\nFirst, let's calculate the total cost of the items Sally bought at Forever 21.\n\n#### Tops:\n- Top 1: $12.99\n- Top 2: $6.99\n- Top 3: $17.99\n- Top 4: $21.99\n\nTotal cost of tops:\n\\[ 12.99 + 6.99 + 17.99 + 21.99 = 59.96 \\]\n\n#### Pants:\n- Pants 1: $15.99\n- Pants 2: $15.99\n- Pants 3: $15.99\n\nTotal cost of pants:\n\\[ 15.99 \\times 3 = 47.97 \\]\n\n#### Subtotal at Forever 21:\nAdd the cost of tops and pants:\n\\[ 59.96 + 47.97 = 107.93 \\]\n\n### Part 2: Applying Discount\nSally gets a discount if her subtotal is over $75. Let's determine if she gets the discount and calculate the final amount after applying the discount, if applicable.\n\nSince $107.93 > $75, she gets a 15% discount.\n\nDiscount amount:\n\\[ 107.93 \\times 0.15 = 16.19 \\]\n\nFinal amount after discount:\n\\[ 107.93 - 16.19 = 91.74 \\]\n\n### Part 3: Calculating Total Cost at Shoe Palace\nSally buys 2 pairs of shoes at Shoe Palace for a total of $123.26.\n\n### Part 4: Calculating Overall Total Cost\nNow we add the final amount spent at Forever 21 and the total spent at Shoe Palace.\n\nOverall total cost:\n\\[ 91.74 + 123.26 = 215.00 \\]\n\n### Final Answer\nSally spent a total of \\( \\$215.00 \\) at the mall."
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9937254901960785
+            }
+        }
+    }
+}

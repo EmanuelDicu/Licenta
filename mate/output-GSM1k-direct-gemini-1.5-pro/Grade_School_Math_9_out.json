@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_9.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Ms. Crabapple has a bag of jelly beans that she is going to divide equally among all of her 32 students who complete their homework every day over the course of a week. The bag has 384 jellybeans in it. Unfortunately, many of Ms. Crabapple\u2019s students have a poorly developed work ethic, and only half of them complete all of the required homework. How many jelly beans will each of the eligible students receive?",
+        "correct_solution": "\\boxed{24}",
+        "generated_solutions": {
+            "gemini-1.5-pro": "## Solving the Jelly Bean Problem\n\nHere's how we can break down the problem to solve it:\n\n**Part 1: Find the number of eligible students**\n\n* Ms. Crabapple has 32 students.\n* Only half do their homework: 32 students / 2 = 16 students\n\n**Part 2: Divide the jelly beans among the eligible students**\n\n* Ms. Crabapple has 384 jellybeans.\n* 16 students get jellybeans: 384 jellybeans / 16 students = 24 jellybeans/student\n\n**Solution:** Each of the eligible students will receive 24 jelly beans. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9878296146044625
+            }
+        }
+    }
+}

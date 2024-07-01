@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_1.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Gabriela has $65.00 and is shopping for groceries so that her grandmother can make her favorite kale soup. She needs heavy cream, kale, cauliflower, and meat (bacon and sausage). Gabriella spends 40% of her money on the meat. She spends $5.00 less than one-third of the remaining money on heavy cream. Cauliflower costs three-fourth of the price of the heavy cream and the kale costs $2.00 less than the cauliflower. As Gabriela leaves the store, she spends one-third of her remaining money on her grandmother\u2019s favorite Girl Scout Cookies. How much money, in dollars, does Gabriela spend on Girl Scout cookies?",
+        "correct_solution": "\\boxed{7}",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Let's break down this problem step-by-step:\n\n**1. Calculate the cost of the meat:**\n\n* Gabriela spends 40% of $65.00 on meat: 0.40 * $65.00 = $26.00\n\n**2. Calculate the money remaining after buying meat:**\n\n* Gabriela started with $65.00 and spent $26.00 on meat: $65.00 - $26.00 = $39.00\n\n**3. Calculate the cost of the heavy cream:**\n\n* One-third of the remaining money is: $39.00 / 3 = $13.00\n* The heavy cream cost $5.00 less than that: $13.00 - $5.00 = $8.00\n\n**4. Calculate the cost of the cauliflower:**\n\n* The cauliflower cost three-fourths the price of the heavy cream: (3/4) * $8.00 = $6.00\n\n**5. Calculate the cost of the kale:**\n\n* The kale cost $2.00 less than the cauliflower: $6.00 - $2.00 = $4.00\n\n**6. Calculate the total spent on groceries before cookies:**\n\n* Add up the cost of all the groceries: $26.00 + $8.00 + $6.00 + $4.00 = $44.00\n\n**7. Calculate the money remaining after buying groceries:**\n\n* Gabriela started with $65.00 and spent $44.00 on groceries: $65.00 - $44.00 = $21.00\n\n**8. Calculate the amount spent on Girl Scout cookies:**\n\n* Gabriela spends one-third of her remaining money on cookies: $21.00 / 3 = $7.00\n\n**Solution:** Gabriela spends $7.00 on Girl Scout cookies. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9958643507030603
+            }
+        }
+    }
+}

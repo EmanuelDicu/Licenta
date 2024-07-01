@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_17.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "A coal miner is loading up coal into mine carts. During the first hour of the day, he is able to load 15 carts. His boss yells at him after that, so for each of the next three hours, he loads twice as many carts. Each cart weighs 78 pounds. What was the total weight of the coal he loaded on this day?",
+        "correct_solution": "\\boxed{8190}",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them step by step.\n\n**Part 1: Finding the number of carts loaded during the first hour**\nThe problem states that the coal miner loads 15 carts during the first hour.\n\n**Part 2: Finding the number of carts loaded during the next three hours**\nAfter being yelled at by his boss, the coal miner loads twice as many carts during each of the next three hours. This means he loads 2 \u00d7 15 = 30 carts per hour for the next three hours.\n\nSince there are three hours, the total number of carts loaded during this time is:\n30 carts/hour \u00d7 3 hours = 90 carts\n\n**Part 3: Finding the total number of carts loaded**\nAdd the number of carts loaded during the first hour to the number of carts loaded during the next three hours:\n15 carts (first hour) + 90 carts (next three hours) = 105 carts\n\n**Part 4: Finding the total weight of the coal**\nEach cart weighs 78 pounds, so the total weight of the coal is:\n105 carts \u00d7 78 pounds/cart = 8190 pounds\n\n**The solution to the problem is:** The total weight of the coal loaded by the coal miner on this day is 8190 pounds."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9918772563176895
+            }
+        }
+    }
+}

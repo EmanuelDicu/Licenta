@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_6.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Marge got a job so she can buy her first car. Her job pays $15/hr and she works there 30 hours a week. The car Marge wants is $3600. How many weeks does Marge need to work to buy the car?",
+        "correct_solution": "\\boxed{8}",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how to solve the problem step-by-step:\n\n**1. Calculate Marge's weekly earnings:**\n\n* She earns $15 per hour.\n* She works 30 hours a week.\n* Her weekly earnings are $15/hour * 30 hours/week = $450/week\n\n**2. Determine how many weeks of work are needed:**\n\n* The car costs $3600.\n* She earns $450 per week.\n* The number of weeks to afford the car is $3600 / $450/week = 8 weeks\n\n**Solution:** Marge needs to work for **8 weeks** to buy the car. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9889135254988913
+            }
+        }
+    }
+}

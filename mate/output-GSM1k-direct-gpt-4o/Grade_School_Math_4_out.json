@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_4.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Colin is playing dice with his friend Eoin and needs some help keeping track of his score. He begins with 5 points and wins 6 points in the first round. In the second round, he won twice as many points as he won in the first round. In the third round, he had a fantastic roll and was able to triple his current total point count! How many points did Colin end the game with?",
+        "correct_solution": "\\boxed{69}",
+        "generated_solutions": {
+            "gpt-4o": "To solve the problem, let's break it down into smaller steps and calculate Colin's points round by round.\n\n1. **Initial Points:**\n   - Colin starts with 5 points.\n\n2. **First Round:**\n   - In the first round, Colin wins 6 points.\n   - New total after the first round: \\( 5 \\text{ points} + 6 \\text{ points} = 11 \\text{ points} \\).\n\n3. **Second Round:**\n   - In the second round, Colin wins twice as many points as he won in the first round.\n   - Points won in the first round: 6 points.\n   - Points won in the second round: \\( 2 \\times 6 \\text{ points} = 12 \\text{ points} \\).\n   - New total after the second round: \\( 11 \\text{ points} + 12 \\text{ points} = 23 \\text{ points} \\).\n\n4. **Third Round:**\n   - In the third round, Colin triples his current total point count.\n   - Current total before the third round: 23 points.\n   - Points after tripling: \\( 3 \\times 23 \\text{ points} = 69 \\text{ points} \\).\n\nTherefore, after following these steps:\n- Colin began with 5 points.\n- First round: \\( 5 + 6 = 11 \\) points.\n- Second round: \\( 11 + 12 = 23 \\) points.\n- Third round: \\( 23 \\times 3 = 69 \\) points.\n\nThe solution to the problem is that Colin ended the game with \\( \\boxed{69} \\) points."
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9916247906197655
+            }
+        }
+    }
+}

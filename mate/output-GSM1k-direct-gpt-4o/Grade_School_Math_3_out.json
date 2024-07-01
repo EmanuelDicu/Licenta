@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_3.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "John Henry is competing against a machine to see who can dig a tunnel more quickly. John works without rest, and excavates at a rate of 6 cubic feet of rock per hour. The machine excavates more quickly but needs to be refueled and maintained by its operator for 30 minutes out of every hour. When it\u2019s not under maintenance, the machine excavates at a rate of 10 cubic feet of stone per hour. Provided that the competition lasts for 8 hours, how much more rock will John have excavated compared to the machine?",
+        "correct_solution": "\\boxed{8}",
+        "generated_solutions": {
+            "gpt-4o": "To solve this problem, let's break it down into smaller parts and solve them in a logical order. \n\n### Part 1: Determine John Henry's total excavation.\n\nJohn Henry excavates 6 cubic feet of rock per hour without rest. The competition lasts for 8 hours. Thus, his total excavation can be calculated as:\n\\[ \\text{John's excavation} = 6 \\text{ cubic feet/hour} \\times 8 \\text{ hours} = 48 \\text{ cubic feet} \\]\n\n### Part 2: Determine the machine's total active excavation time.\n\nThe machine works at a rate of 10 cubic feet per hour, but it needs maintenance for 30 minutes (or 0.5 hours) out of every hour. Therefore, it effectively works for only 30 minutes each hour. Converting this to hours:\n\\[ \\text{Machine's active time per hour} = 0.5 \\text{ hours} \\]\n\nSince the competition lasts for 8 hours, the machine's total active excavation time can be calculated as:\n\\[ \\text{Total hours machine actively excavates} = 0.5 \\text{ hours/hour} \\times 8 \\text{ hours} = 4 \\text{ hours} \\]\n\n### Part 3: Determine the machine's total excavation.\n\nSince the machine works for a total of 4 hours at a rate of 10 cubic feet per hour, its total excavation can be calculated as:\n\\[ \\text{Machine's excavation} = 10 \\text{ cubic feet/hour} \\times 4 \\text{ hours} = 40 \\text{ cubic feet} \\]\n\n### Part 4: Determine the difference in the amount of rock excavated.\n\nTo find out how much more rock John Henry excavated compared to the machine, we subtract the machine's total excavation from John's total excavation:\n\\[ \\text{Difference} = \\text{John's excavation} - \\text{Machine's excavation} \\]\n\\[ \\text{Difference} = 48 \\text{ cubic feet} - 40 \\text{ cubic feet} = 8 \\text{ cubic feet} \\]\n\n### Solution\n\nJohn Henry excavated 8 cubic feet more rock than the machine in the 8-hour competition.\n\nSo the answer to the problem is:\n\\[ \\boxed{8 \\text{ cubic feet}} \\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9951219512195122
+            }
+        }
+    }
+}

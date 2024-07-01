@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_19.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "A plane owned by Sunny Skies Airlines is flying from Indianapolis to Phoenix. The plane holds 180 passengers and is 2/3 full. Each passenger brings 2 carry-on bags and is charged a carry-on bag fee of $35 per bag. How much money does Sunny Skies Airlines collect for the carry-on bag fees for this flight?",
+        "correct_solution": "\\boxed{8400}",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Let's break down the problem into smaller parts and solve it step by step:\n\n1. Find out how many passengers are on the plane:\nSince the plane is 2/3 full and it can hold 180 passengers, the number of passengers on the plane is: \n\\( 180 \\times \\frac{2}{3} = 120 \\) passengers.\n\n2. Calculate the total number of carry-on bags:\nEach passenger brings 2 carry-on bags, so the total number of carry-on bags is: \n\\( 120 \\times 2 = 240 \\) bags.\n\n3. Calculate the total amount of money collected for carry-on bags:\nEach carry-on bag is charged a fee of $35, so the total amount of money collected for carry-on bags is:\n\\( 240 \\times $35 = $8400 \\).\n\nTherefore, Sunny Skies Airlines collects $8400 for the carry-on bag fees for this flight."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9876712328767123
+            }
+        }
+    }
+}

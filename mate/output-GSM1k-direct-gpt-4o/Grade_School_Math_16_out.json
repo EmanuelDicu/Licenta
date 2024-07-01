@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_16.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "A painter needs to paint 3 houses. The first house requires 14 gallons of paint, the second house requires twice as much paint as the first, and the third house needs half as much paint as the second house. If one gallon of paint costs $35 and the painter gets a bulk discount of 10% for purchases over 30 gallons, how much will the paint cost in total?",
+        "correct_solution": "\\boxed{1764}",
+        "generated_solutions": {
+            "gpt-4o": "Let's solve the problem step-by-step by breaking it down into smaller parts.\n\n1. **Determine the amount of paint needed for each house:**\n   - The first house requires 14 gallons of paint.\n   - The second house requires twice as much paint as the first house. So the second house needs \\(2 \\times 14 = 28\\) gallons of paint.\n   - The third house needs half as much paint as the second house. So the third house needs \\(\\frac{1}{2} \\times 28 = 14\\) gallons of paint.\n\n2. **Calculate the total amount of paint required:**\n   \\[\n   \\text{Total paint} = 14 \\text{ gallons (first house)} + 28 \\text{ gallons (second house)} + 14 \\text{ gallons (third house)}\n   \\]\n   \\[\n   \\text{Total paint} = 14 + 28 + 14 = 56 \\text{ gallons}\n   \\]\n\n3. **Determine if a bulk discount applies:**\n   - The total amount of paint required is 56 gallons, which is more than 30 gallons.\n   - Therefore, the painter will receive a 10% bulk discount.\n\n4. **Calculate the total cost without discount:**\n   - One gallon of paint costs $35.\n   \\[\n   \\text{Total cost without discount} = 56 \\text{ gallons} \\times \\$35/\\text{gallon}\n   \\]\n   \\[\n   \\text{Total cost without discount} = 56 \\times 35 = \\$1960\n   \\]\n\n5. **Calculate the discount amount:**\n   - The discount is 10%.\n   \\[\n   \\text{Discount} = 0.10 \\times \\$1960 = \\$196\n   \\]\n\n6. **Calculate the total cost with the discount:**\n   \\[\n   \\text{Total cost with discount} = \\$1960 - \\$196 = \\$1764\n   \\]\n\nTherefore, the total cost of the paint after applying the bulk discount is \\$1764."
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9927392739273927
+            }
+        }
+    }
+}

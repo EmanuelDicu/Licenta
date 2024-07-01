@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_16.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "A painter needs to paint 3 houses. The first house requires 14 gallons of paint, the second house requires twice as much paint as the first, and the third house needs half as much paint as the second house. If one gallon of paint costs $35 and the painter gets a bulk discount of 10% for purchases over 30 gallons, how much will the paint cost in total?",
+        "correct_solution": "\\boxed{1764}",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Let's break down the problem into smaller parts:\n\n1. Calculate the amount of paint needed for the second house:\nThe second house requires twice as much paint as the first house, so it needs 2 * 14 = 28 gallons of paint.\n\n2. Calculate the amount of paint needed for the third house:\nThe third house needs half as much paint as the second house, so it needs 28 / 2 = 14 gallons of paint.\n\n3. Calculate the total amount of paint needed for all 3 houses:\nTotal paint needed = 14 (first house) + 28 (second house) + 14 (third house) = 56 gallons\n\n4. Determine the cost of the paint before the bulk discount:\nCost of paint before discount = 56 gallons * $35/gallon = $1960\n\n5. Check if the total gallons purchased can get the bulk discount:\nSince the total gallons purchased is 56 which is over 30, the bulk discount of 10% applies.\n\n6. Calculate the discounted cost of the paint:\nDiscounted cost = $1960 - (10% * $1960) = $1960 - $196 = $1764\n\nTherefore, the total cost of the paint for all three houses is $1764."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9920634920634921
+            }
+        }
+    }
+}

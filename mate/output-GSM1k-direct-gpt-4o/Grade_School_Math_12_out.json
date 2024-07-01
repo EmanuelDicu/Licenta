@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_12.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Leah and 2 of her friends go to an all-you-can-eat dumpling buffet. Leah\u2019s 1st friend ate 30 dumplings, her 2nd friend ate twice as many dumplings as her 1st friend, and Leah ate 1.5 times as many dumplings as her 2nd friend. How many dumplings in total did Leah and her friends eat?",
+        "correct_solution": "\\boxed{180}",
+        "generated_solutions": {
+            "gpt-4o": "To solve the problem of finding out how many dumplings Leah and her friends ate in total, we can break it down into smaller, manageable steps. \n\n### Step 1: Determine the Number of Dumplings Each Person Ate\n\n1. **Leah\u2019s 1st friend:** \n   - The 1st friend ate 30 dumplings.\n   \n   \\[\n   \\text{Number of dumplings 1st friend ate} = 30\n   \\]\n\n2. **Leah\u2019s 2nd friend:** \n   - The 2nd friend ate twice as many dumplings as the 1st friend.\n   \n   \\[\n   \\text{Number of dumplings 2nd friend ate} = 2 \\times 30 = 60\n   \\]\n\n3. **Leah:** \n   - Leah ate 1.5 times as many dumplings as the 2nd friend.\n   \n   \\[\n   \\text{Number of dumplings Leah ate} = 1.5 \\times 60 = 90\n   \\]\n\n### Step 2: Sum the Number of Dumplings Eaten by All Three\n\nNext, we sum the number of dumplings eaten by Leah, her 1st friend, and her 2nd friend.\n\n\\[\n\\text{Total number of dumplings eaten} = (\\text{number eaten by 1st friend}) + (\\text{number eaten by 2nd friend}) + (\\text{number eaten by Leah})\n\\]\n\nSubstituting the values we calculated:\n\n\\[\n\\text{Total number of dumplings eaten} = 30 + 60 + 90 \n\\]\n\n### Step 3: Calculate the Total\n\nSumming these:\n\n\\[\n30 + 60 + 90 = 180\n\\]\n\n### Conclusion\n\nSo, Leah and her friends ate a total of 180 dumplings.\n\n\\[\n\\boxed{180}\n\\]"
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9911003236245954
+            }
+        }
+    }
+}

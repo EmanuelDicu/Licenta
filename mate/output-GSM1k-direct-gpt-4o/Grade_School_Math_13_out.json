@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_13.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Francis has a bowl of candy in front of him. There are three different flavors of candies that he\u2019s eaten over the course of 3 hours. He\u2019s eaten ten lemon, four orange, and sixteen cherry-flavored candies. If there were twenty of each when he started, how much of an average percentage is still left?",
+        "correct_solution": "\\boxed{50}",
+        "generated_solutions": {
+            "gpt-4o": "To solve the problem, let's break it down into smaller parts and address each part step by step. We need to determine the average percentage of candies left for each flavor, and then compute the overall average percentage.\n\n### Step-by-step solution:\n\n1. **Determine the initial and remaining amount of each candy flavor:**\n   - Francis started with 20 lemon, 20 orange, and 20 cherry-flavored candies.\n\n2. **Calculate how many candies of each flavor are left:**\n   - Lemon: He ate 10 lemon candies out of 20.\n     \\[ 20 - 10 = 10 \\text{ lemon candies left} \\]\n   - Orange: He ate 4 orange candies out of 20.\n     \\[ 20 - 4 = 16 \\text{ orange candies left} \\]\n   - Cherry: He ate 16 cherry candies out of 20.\n     \\[ 20 - 16 = 4 \\text{ cherry candies left} \\]\n\n3. **Calculate the percentage of each type of candy that is still left:**\n   - Lemon:\n     \\[ \\frac{10 \\text{ (left)}}{20 \\text{ (initial)}} \\times 100 = 50\\% \\]\n   - Orange:\n     \\[ \\frac{16 \\text{ (left)}}{20 \\text{ (initial)}} \\times 100 = 80\\% \\]\n   - Cherry:\n     \\[ \\frac{4 \\text{ (left)}}{20 \\text{ (initial)}} \\times 100 = 20\\% \\]\n\n4. **Calculate the average percentage of candies left across all flavors:**\n   - Add the percentages and divide by the number of flavors (3):\n     \\[ \\frac{50\\% + 80\\% + 20\\%}{3} = \\frac{150\\%}{3} = 50\\% \\]\n\n### Solution:\nThe average percentage of candies still left is \\(50\\%\\)."
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9934782608695653
+            }
+        }
+    }
+}

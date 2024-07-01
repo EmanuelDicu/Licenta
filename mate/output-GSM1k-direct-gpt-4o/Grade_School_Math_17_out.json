@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_17.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "A coal miner is loading up coal into mine carts. During the first hour of the day, he is able to load 15 carts. His boss yells at him after that, so for each of the next three hours, he loads twice as many carts. Each cart weighs 78 pounds. What was the total weight of the coal he loaded on this day?",
+        "correct_solution": "\\boxed{8190}",
+        "generated_solutions": {
+            "gpt-4o": "To solve the problem, we need to calculate the total number of mine carts loaded by the coal miner and their total weight. Here's a step-by-step breakdown:\n\n### Step 1: Calculate the number of carts loaded each hour.\n1. **First hour:**\n   The coal miner loads 15 carts.\n\n2. **Next three hours:**\n   - **Second hour:**\n     He loads twice as many carts as he did in the first hour.\n     \\(2 \\times 15 = 30\\) carts.\n   - **Third hour:**\n     He loads twice as many carts as he did in the second hour.\n     \\(2 \\times 30 = 60\\) carts.\n   - **Fourth hour:**\n     He loads twice as many carts as he did in the third hour.\n     \\(2 \\times 60 = 120\\) carts.\n\n### Step 2: Calculate the total number of carts loaded.\nAdd up the carts loaded in each hour:\n\\[ 15 + 30 + 60 + 120 = 225 \\text{ carts} \\]\n\n### Step 3: Calculate the total weight of the coal.\nEach cart weighs 78 pounds. Multiply the total number of carts by the weight of each cart:\n\\[ 225 \\text{ carts} \\times 78 \\text{ pounds per cart} \\]\n\nTo make the multiplication easier, let's break it down:\n\\[ 225 \\times 78 = 225 \\times (70 + 8) \\]\n\\[ 225 \\times 70 = 225 \\times 7 \\times 10 = 1575 \\times 10 = 15750 \\]\n\\[ 225 \\times 8 = 1800 \\]\n\\[ 225 \\times 78 = 15750 + 1800 = 17550 \\]\n\n### Solution\nThe total weight of the coal he loaded on that day is \\( 17550 \\) pounds."
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.992412746585736
+            }
+        }
+    }
+}

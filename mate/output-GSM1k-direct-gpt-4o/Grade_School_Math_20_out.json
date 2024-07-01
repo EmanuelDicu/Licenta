@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_20.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Dean wants to buy flowers to make arrangements for a party. He is going to make 12 arrangements. He wants to include 4 roses and 3 daisies in each arrangement. Roses come by the dozens and are $15 for each dozen. Daisies come in groups of 4 and are $8 for the set. How much will it cost for Dean to make all 12 arrangements?",
+        "correct_solution": "\\boxed{132}",
+        "generated_solutions": {
+            "gpt-4o": "To find out how much it will cost Dean to make all 12 arrangements, we'll break down the problem into smaller parts and solve them step by step. \n\n### Step 1: Determine the total number of flowers needed.\nDean wants to make 12 arrangements, with each arrangement containing:\n- 4 roses\n- 3 daisies\n\n**Total number of roses needed:**\n- Each arrangement requires 4 roses.\n- For 12 arrangements: \\( 4 \\text{ roses/arrangement} \\times 12 \\text{ arrangements} = 48 \\text{ roses} \\)\n\n**Total number of daisies needed:**\n- Each arrangement requires 3 daisies.\n- For 12 arrangements: \\( 3 \\text{ daisies/arrangement} \\times 12 \\text{ arrangements} = 36 \\text{ daisies} \\)\n\n### Step 2: Calculate the cost of roses.\nRoses are sold by the dozen (12 roses per dozen) and cost $15 per dozen.\n\n**Number of dozen roses needed for 48 roses:**\n- \\( 48 \\text{ roses} \\div 12 \\text{ roses/dozen} = 4 \\text{ dozens} \\)\n\n**Cost for the roses:**\n- \\( 4 \\text{ dozens} \\times \\$15 \\text{ per dozen} = \\$60 \\)\n\n### Step 3: Calculate the cost of daisies.\nDaisies are sold in sets of 4 and cost $8 per set.\n\n**Number of sets needed for 36 daisies:**\n- \\( 36 \\text{ daisies} \\div 4 \\text{ daisies/set} = 9 \\text{ sets} \\)\n\n**Cost for the daisies:**\n- \\( 9 \\text{ sets} \\times \\$8 \\text{ per set} = \\$72 \\)\n\n### Step 4: Add up the total cost.\n**Total cost:** \n- Cost of roses: $60\n- Cost of daisies: $72\n\n\\[\n\\text{Total cost} = \\$60 + \\$72 = \\$132\n\\]\n\nTherefore, the total cost for Dean to make all 12 arrangements is **\\$132**."
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9926617745163442
+            }
+        }
+    }
+}

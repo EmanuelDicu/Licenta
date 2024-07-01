@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_15.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Henry is renovating his kitchen and adding a new tile floor. He needs to cover an area of 200 square feet. He has a stack of tiles that measure 0.5 feet in length and width. He can get 40 tiles done per hour. Henry works for 6 hours at that rate, then has some coffee and works at a faster rate for the next 2 hours (60 tiles per hour). Henry runs out of tiles, so he goes to a store to purchase the remaining tiles needed to finish the floor. Given that the price per tile is $2.50, how much will he need to spend at the store to get exactly enough tiles to finish the floor?",
+        "correct_solution": "\\boxed{1100}",
+        "generated_solutions": {
+            "gpt-4o": "To tackle this problem, we need to break it down into several steps. We'll figure out the total number of tiles needed, the number of tiles Henry installed through his work periods, and then calculate how many tiles he needs to buy from the store. Finally, we'll determine the cost.\n\n### Step-by-Step Solution\n\n1. **Calculate the Total Number of Tiles Needed:**\n   - The area to cover is 200 square feet.\n   - Each tile measures 0.5 feet by 0.5 feet.\n   - The area of one tile is \\(0.5 \\times 0.5 = 0.25\\) square feet.\n   - The total number of tiles needed is \\( \\frac{200}{0.25} = 800 \\) tiles.\n\n2. **Calculate the Number of Tiles Installed During the First 6 Hours:**\n   - Henry installs 40 tiles per hour.\n   - He works 6 hours at this rate.\n   - Total tiles installed in this period: \\( 40 \\text{ tiles/hour} \\times 6 \\text{ hours} = 240 \\text{ tiles} \\).\n\n3. **Calculate the Number of Tiles Installed During the Next 2 Hours:**\n   - After coffee, Henry works at 60 tiles per hour.\n   - He works 2 hours at this rate.\n   - Total tiles installed in this period: \\( 60 \\text{ tiles/hour} \\times 2 \\text{ hours} = 120 \\text{ tiles} \\).\n\n4. **Calculate the Total Number of Tiles Installed So Far:**\n   - Total tiles installed = tiles installed in first period + tiles installed in second period.\n   - Total installed tiles: \\( 240 + 120 = 360 \\) tiles.\n\n5. **Determine the Number of Tiles Henry Still Needs:**\n   - Total tiles needed: 800 tiles.\n   - Total tiles installed: 360 tiles.\n   - Tiles still needed: \\( 800 - 360 = 440 \\) tiles.\n\n6. **Calculate the Cost of the Remaining Tiles:**\n   - Each tile costs $2.50.\n   - Number of tiles needed: 440 tiles.\n   - Total cost: \\( 440 \\times 2.50 = 1100 \\) dollars.\n\n### Solution\n\nThe total amount Henry needs to spend at the store to buy the remaining tiles is \\(\\boxed{1100}\\) dollars."
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9934569247546347
+            }
+        }
+    }
+}

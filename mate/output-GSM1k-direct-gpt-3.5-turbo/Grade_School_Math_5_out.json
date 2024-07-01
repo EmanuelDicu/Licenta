@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_5.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Bradley and his friends enjoy playing marbles. They possess a box of marbles containing 12 red balls, 15 yellow balls, and 18 green balls. How many additional red balls do they require to double the number of red balls compared to the combined number of yellow and green balls?",
+        "correct_solution": "\\boxed{54}",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Let's break down the problem into smaller parts and solve it step by step:\n\nPart 1: Find the total number of red balls currently in the box.\nGiven that there are 12 red balls in the box, the total number of red balls is 12.\n\nPart 2: Find the total number of yellow and green balls combined.\nThe total number of yellow balls is 15 and green balls is 18. Therefore, the total number of yellow and green balls combined is 15 + 18 = 33.\n\nPart 3: Determine the current ratio of red balls to the combined number of yellow and green balls.\nThe ratio of red balls to the combined yellow and green balls is 12:33, which can be simplified to 4:11 by dividing both numbers by the greatest common divisor, which is 3.\n\nPart 4: Double the number of red balls and find how many additional red balls are required.\nTo double the number of red balls (12) compared to the combined yellow and green balls (33), we need a total of 2 * 12 = 24 red balls. Since we already have 12 red balls, we need 24 - 12 = 12 additional red balls to achieve the required number.\n\nTherefore, Bradley and his friends require 12 additional red balls to double the number of red balls compared to the combined number of yellow and green balls.\n\nSolution: They require 12 additional red balls."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.994413407821229
+            }
+        }
+    }
+}

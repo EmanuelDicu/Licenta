@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_5.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Bradley and his friends enjoy playing marbles. They possess a box of marbles containing 12 red balls, 15 yellow balls, and 18 green balls. How many additional red balls do they require to double the number of red balls compared to the combined number of yellow and green balls?",
+        "correct_solution": "\\boxed{54}",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve it in a logical order.\n\n**Part 1: Understand the problem**\nThe problem states that Bradley and his friends want to double the number of red balls compared to the combined number of yellow and green balls. This means we need to find the combined number of yellow and green balls first.\n\n**Part 2: Find the combined number of yellow and green balls**\nWe are given the number of yellow balls (15) and green balls (18). To find the combined number, we add these two numbers together:\n\n15 (yellow balls) + 18 (green balls) = 33\n\nSo, the combined number of yellow and green balls is 33.\n\n**Part 3: Find the number of red balls needed to double the combined number**\nWe want to double the number of red balls compared to the combined number of yellow and green balls. This means we need to find the number of red balls that is double the combined number:\n\n2 \u00d7 33 (combined number) = 66\n\nThis means we need 66 red balls to double the combined number of yellow and green balls.\n\n**Part 4: Find the number of additional red balls needed**\nWe are given that there are already 12 red balls. To find the number of additional red balls needed, we subtract the number of red balls we already have from the number of red balls we need:\n\n66 (needed) - 12 (already have) = 54\n\nTherefore, Bradley and his friends require 54 additional red balls to double the number of red balls compared to the combined number of yellow and green balls.\n\n**Solution:**\nThe solution to the problem is 54 additional red balls."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9961215255332903
+            }
+        }
+    }
+}

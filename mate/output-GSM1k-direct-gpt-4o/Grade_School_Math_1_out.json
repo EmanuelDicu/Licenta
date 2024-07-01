@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_1.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Gabriela has $65.00 and is shopping for groceries so that her grandmother can make her favorite kale soup. She needs heavy cream, kale, cauliflower, and meat (bacon and sausage). Gabriella spends 40% of her money on the meat. She spends $5.00 less than one-third of the remaining money on heavy cream. Cauliflower costs three-fourth of the price of the heavy cream and the kale costs $2.00 less than the cauliflower. As Gabriela leaves the store, she spends one-third of her remaining money on her grandmother\u2019s favorite Girl Scout Cookies. How much money, in dollars, does Gabriela spend on Girl Scout cookies?",
+        "correct_solution": "\\boxed{7}",
+        "generated_solutions": {
+            "gpt-4o": "To solve the problem, we'll break it down step by step. We will find out how much Gabriela spends on each category and ultimately how much she spends on the Girl Scout Cookies. Here are the steps:\n\n1. **Determine the amount spent on meat:**\n   Gabriela has $65. She spends 40% of her money on meat.\n   \\[\n   \\text{Amount spent on meat} = 0.40 \\times 65 = 26 \\text{ dollars}\n   \\]\n\n2. **Calculate the remaining money after buying meat:**\n   \\[\n   \\text{Remaining money} = 65 - 26 = 39 \\text{ dollars}\n   \\]\n\n3. **Determine the amount spent on heavy cream:**\n   She spends $5.00 less than one-third of her remaining money on heavy cream.\n   \\[\n   \\text{One-third of remaining money} = \\frac{39}{3} = 13 \\text{ dollars}\n   \\]\n   \\[\n   \\text{Amount spent on heavy cream} = 13 - 5 = 8 \\text{ dollars}\n   \\]\n\n4. **Calculate the cost of cauliflower:**\n   Cauliflower costs three-fourths the price of the heavy cream.\n   \\[\n   \\text{Cost of cauliflower} = \\frac{3}{4} \\times 8 = 6 \\text{ dollars}\n   \\]\n\n5. **Calculate the cost of kale:**\n   The kale costs $2.00 less than the cauliflower.\n   \\[\n   \\text{Cost of kale} = 6 - 2 = 4 \\text{ dollars}\n   \\]\n\n6. **Calculate the remaining money after buying the heavy cream, cauliflower, and kale:**\n   \\[\n   \\text{Total spent on cream, cauliflower, and kale} = 8 + 6 + 4 = 18 \\text{ dollars}\n   \\]\n   \\[\n   \\text{Remaining money} = 39 - 18 = 21 \\text{ dollars}\n   \\]\n\n7. **Determine the amount spent on Girl Scout Cookies:**\n   Gabriela spends one-third of her remaining money on Girl Scout Cookies.\n   \\[\n   \\text{Amount spent on cookies} = \\frac{21}{3} = 7 \\text{ dollars}\n   \\]\n\nTherefore, Gabriela spends $7.00 on Girl Scout Cookies."
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9946236559139785
+            }
+        }
+    }
+}

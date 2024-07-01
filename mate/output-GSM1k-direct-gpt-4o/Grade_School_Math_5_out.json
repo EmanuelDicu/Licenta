@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_5.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Bradley and his friends enjoy playing marbles. They possess a box of marbles containing 12 red balls, 15 yellow balls, and 18 green balls. How many additional red balls do they require to double the number of red balls compared to the combined number of yellow and green balls?",
+        "correct_solution": "\\boxed{54}",
+        "generated_solutions": {
+            "gpt-4o": "To solve this problem, we need to determine how many additional red balls Bradley and his friends need to add to their collection to make the number of red balls twice the combined number of yellow and green balls. Let's break down the problem into smaller steps and solve each part methodically.\n\n### Step-by-Step Solution\n\n1. **Understand the current counts of each type of ball:**\n   - Red balls (R): 12\n   - Yellow balls (Y): 15\n   - Green balls (G): 18\n\n2. **Calculate the combined number of yellow and green balls:**\n   \\[\n   \\text{Combined number of yellow and green balls} = Y + G = 15 + 18\n   \\]\n   \\[\n   \\text{Combined number of yellow and green balls} = 33\n   \\]\n\n3. **Determine the desired number of red balls to be twice the combined number of yellow and green balls:**\n   \\[\n   \\text{Desired number of red balls} = 2 \\times \\text{Combined number of yellow and green balls} = 2 \\times 33\n   \\]\n   \\[\n   \\text{Desired number of red balls} = 66\n   \\]\n\n4. **Calculate how many additional red balls are needed:**\n   \\[\n   \\text{Additional red balls needed} = \\text{Desired number of red balls} - \\text{Current number of red balls}\n   \\]\n   \\[\n   \\text{Additional red balls needed} = 66 - 12\n   \\]\n   \\[\n   \\text{Additional red balls needed} = 54\n   \\]\n\nTherefore, Bradley and his friends need to add **54** additional red balls to their current collection to have twice the number of red balls compared to the combined number of yellow and green balls.\n\n### Solution to the Problem\nBradley and his friends require 54 additional red balls to double the number of red balls compared to the combined number of yellow and green balls."
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9945088468578401
+            }
+        }
+    }
+}

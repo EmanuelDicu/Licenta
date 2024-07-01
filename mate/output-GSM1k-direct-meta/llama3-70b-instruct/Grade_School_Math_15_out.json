@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_15.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Henry is renovating his kitchen and adding a new tile floor. He needs to cover an area of 200 square feet. He has a stack of tiles that measure 0.5 feet in length and width. He can get 40 tiles done per hour. Henry works for 6 hours at that rate, then has some coffee and works at a faster rate for the next 2 hours (60 tiles per hour). Henry runs out of tiles, so he goes to a store to purchase the remaining tiles needed to finish the floor. Given that the price per tile is $2.50, how much will he need to spend at the store to get exactly enough tiles to finish the floor?",
+        "correct_solution": "\\boxed{1100}",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them step by step.\n\n**Part 1: Find the total number of tiles needed to cover the area**\n\nHenry needs to cover an area of 200 square feet. Since each tile measures 0.5 feet in length and width, the area of each tile is:\n\nArea of each tile = length \u00d7 width = 0.5 \u00d7 0.5 = 0.25 square feet\n\nTo find the total number of tiles needed, divide the total area by the area of each tile:\n\nTotal number of tiles needed = Total area \u00f7 Area of each tile\n= 200 \u00f7 0.25\n= 800 tiles\n\n**Part 2: Find the number of tiles Henry can lay in 6 hours at the normal rate**\n\nHenry can lay 40 tiles per hour at the normal rate. In 6 hours, he can lay:\n\nNumber of tiles laid in 6 hours = Rate \u00d7 Time\n= 40 \u00d7 6\n= 240 tiles\n\n**Part 3: Find the number of tiles Henry can lay in 2 hours at the faster rate**\n\nHenry can lay 60 tiles per hour at the faster rate. In 2 hours, he can lay:\n\nNumber of tiles laid in 2 hours = Rate \u00d7 Time\n= 60 \u00d7 2\n= 120 tiles\n\n**Part 4: Find the total number of tiles Henry can lay**\n\nAdd the number of tiles Henry laid at the normal rate and the faster rate:\n\nTotal number of tiles laid = 240 + 120\n= 360 tiles\n\n**Part 5: Find the number of tiles Henry needs to purchase**\n\nHenry needs 800 tiles in total, but he has already laid 360 tiles. To find the number of tiles he needs to purchase, subtract the number of tiles he has already laid from the total number of tiles needed:\n\nNumber of tiles to purchase = Total number of tiles needed - Total number of tiles laid\n= 800 - 360\n= 440 tiles\n\n**Part 6: Find the cost of the tiles Henry needs to purchase**\n\nThe price per tile is $2.50. To find the total cost, multiply the number of tiles Henry needs to purchase by the price per tile:\n\nTotal cost = Number of tiles to purchase \u00d7 Price per tile\n= 440 \u00d7 $2.50\n= $1100\n\nTherefore, Henry needs to spend $1100 at the store to get exactly enough tiles to finish the floor."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9958311620635748
+            }
+        }
+    }
+}

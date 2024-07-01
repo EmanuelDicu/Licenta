@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_1.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Gabriela has $65.00 and is shopping for groceries so that her grandmother can make her favorite kale soup. She needs heavy cream, kale, cauliflower, and meat (bacon and sausage). Gabriella spends 40% of her money on the meat. She spends $5.00 less than one-third of the remaining money on heavy cream. Cauliflower costs three-fourth of the price of the heavy cream and the kale costs $2.00 less than the cauliflower. As Gabriela leaves the store, she spends one-third of her remaining money on her grandmother\u2019s favorite Girl Scout Cookies. How much money, in dollars, does Gabriela spend on Girl Scout cookies?",
+        "correct_solution": "\\boxed{7}",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Let's break down the problem into smaller parts:\n\n1. **Calculate the amount Gabriela spends on meat:**\n   She spends 40% of $65.00 on the meat.\n   40% of $65.00 = 0.40 * $65.00 = $26.00\n   \n2. **Calculate the remaining amount after spending on meat:**\n   Remaining amount = Total amount - Amount spent on meat\n   Remaining amount = $65.00 - $26.00 = $39.00\n   \n3. **Calculate the amount spent on heavy cream:**\n   One-third of the remaining amount is spent on heavy cream, which is $5.00 less than this amount.\n   Let x be the amount spent on heavy cream.\n   x = 1/3 * $39.00\n   x = $13.00\n   So, the actual amount spent on heavy cream = $13.00 - $5.00 = $8.00\n\n4. **Calculate the cost of cauliflower:**\n   Cauliflower costs three-fourth of the price of the heavy cream.\n   Cost of cauliflower = 3/4 * $8.00 = $6.00\n\n5. **Calculate the cost of kale:**\n   Kale costs $2.00 less than the cauliflower.\n   Cost of kale = $6.00 - $2.00 = $4.00\n\n6. **Calculate the remaining amount after buying cauliflower and kale:**\n   Remaining amount = Total amount - Amount spent on meat - Amount spent on heavy cream - Cost of cauliflower - Cost of kale\n   Remaining amount = $65.00 - $26.00 - $8.00 - $6.00 - $4.00 = $21.00\n\n7. **Calculate the amount spent on Girl Scout Cookies:**\n   Gabriela spends one-third of the remaining $21.00 on Girl Scout Cookies.\n   Amount spent on Girl Scout Cookies = 1/3 * $21.00 = $7.00\n\nSo, Gabriela spends $7.00 on Girl Scout Cookies."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9958706125258087
+            }
+        }
+    }
+}

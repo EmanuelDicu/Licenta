@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_8.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Molly wants to win the contest at school for reading 25 books before the end of May. So far, she has read 5 books by the end of January. How many more books will she need to read on average each month until the end of May to win the contest?",
+        "correct_solution": "\\boxed{5}",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them step by step.\n\n**Part 1: Understanding the goal**\nMolly wants to read 25 books by the end of May. She has already read 5 books by the end of January. Our goal is to find out how many more books she needs to read on average each month until the end of May to win the contest.\n\n**Part 2: Finding the total number of books left to read**\nMolly has already read 5 books, and she needs to read 25 books in total. To find the total number of books left to read, we subtract the number of books she has already read from the total number of books she needs to read:\n\n25 (total books) - 5 (books already read) = 20 books left to read\n\n**Part 3: Finding the number of months left**\nMolly needs to read the remaining books by the end of May. Since it's already the end of January, we need to find the number of months left until May. There are 4 months left: February, March, April, and May.\n\n**Part 4: Finding the average number of books to read each month**\nMolly needs to read 20 books in 4 months. To find the average number of books she needs to read each month, we divide the total number of books left to read by the number of months left:\n\n20 books / 4 months = 5 books per month\n\n**Solution**\nMolly needs to read 5 books on average each month from February to May to win the contest.\n\nExplanation: By breaking down the problem into smaller parts, we were able to find the total number of books left to read, the number of months left, and finally, the average number of books Molly needs to read each month to reach her goal of 25 books by the end of May."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9962894248608535
+            }
+        }
+    }
+}

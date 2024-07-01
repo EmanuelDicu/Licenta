@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_14.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Maryann is saving up for a new bike that costs $450. She already has $120 saved up. She earns $15 per hour at her part-time job. How many hours does she need to work to afford the bike?",
+        "correct_solution": "\\boxed{22}",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Let's break down the problem into smaller parts and solve them step by step:\n\n1. Maryann's total target amount to afford the bike = $450\n2. Amount Maryann already has saved = $120\n3. Remaining amount needed to afford the bike = $450 - $120 = $330\n4. Maryann's hourly earning rate = $15 per hour\n5. Number of hours needed to work to earn $330 = $330 / $15/hour = 22 hours\n\nTherefore, Maryann needs to work 22 hours at her part-time job to earn enough money to afford the bike."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9873684210526316
+            }
+        }
+    }
+}

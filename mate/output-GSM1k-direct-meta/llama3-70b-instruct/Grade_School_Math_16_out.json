@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_16.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "A painter needs to paint 3 houses. The first house requires 14 gallons of paint, the second house requires twice as much paint as the first, and the third house needs half as much paint as the second house. If one gallon of paint costs $35 and the painter gets a bulk discount of 10% for purchases over 30 gallons, how much will the paint cost in total?",
+        "correct_solution": "\\boxed{1764}",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them step by step.\n\n**Part 1: Find the amount of paint needed for each house**\n\n* The first house requires 14 gallons of paint.\n* The second house requires twice as much paint as the first, so it needs 2 x 14 = 28 gallons of paint.\n* The third house needs half as much paint as the second, so it needs 28 / 2 = 14 gallons of paint.\n\n**Part 2: Find the total amount of paint needed**\n\n* Add up the amount of paint needed for each house: 14 + 28 + 14 = 56 gallons of paint.\n\n**Part 3: Check if the bulk discount applies**\n\n* The problem states that the painter gets a bulk discount of 10% for purchases over 30 gallons. Since the total amount of paint needed is 56 gallons, which is more than 30 gallons, the bulk discount applies.\n\n**Part 4: Calculate the total cost of paint without the bulk discount**\n\n* The cost of one gallon of paint is $35.\n* The total cost of paint without the bulk discount is 56 gallons x $35/gallon = $1960.\n\n**Part 5: Calculate the bulk discount and apply it**\n\n* The bulk discount is 10% of the total cost without the discount, which is 0.10 x $1960 = $196.\n* Subtract the bulk discount from the total cost without the discount: $1960 - $196 = $1764.\n\n**Solution:**\n\nThe total cost of the paint will be $1764.\n\nHere's a summary of the solution:\n\n* We first found the amount of paint needed for each house and added them up to get the total amount of paint needed (56 gallons).\n* We checked if the bulk discount applies and calculated the total cost of paint without the discount ($1960).\n* We calculated the bulk discount ($196) and subtracted it from the total cost without the discount to get the final answer ($1764)."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9947245017584995
+            }
+        }
+    }
+}

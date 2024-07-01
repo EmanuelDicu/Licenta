@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_9.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Ms. Crabapple has a bag of jelly beans that she is going to divide equally among all of her 32 students who complete their homework every day over the course of a week. The bag has 384 jellybeans in it. Unfortunately, many of Ms. Crabapple\u2019s students have a poorly developed work ethic, and only half of them complete all of the required homework. How many jelly beans will each of the eligible students receive?",
+        "correct_solution": "\\boxed{24}",
+        "generated_solutions": {
+            "gpt-4o": "To solve this problem, we need to break it down into smaller, more manageable parts and solve it step by step.\n\n### Step-by-Step Solution:\n\n1. **Understanding the Problem:**\n   - Ms. Crabapple has 32 students.\n   - Only half of them complete all of the required homework.\n   - There are 384 jelly beans to be distributed among those students who completed their homework.\n\n2. **Determine the Number of Students Who Completed Their Homework:**\n   - Since only half of the 32 students completed all the required homework:\n   \\[\n   \\text{Number of students who completed homework} = \\frac{32}{2} = 16\n   \\]\n\n3. **Calculate the Number of Jelly Beans Each Eligible Student Will Receive:**\n   - We need to divide the total number of jelly beans (384) by the number of students who completed their homework (16):\n   \\[\n   \\text{Jelly beans per student} = \\frac{384}{16}\n   \\]\n\n4. **Perform the Division:**\n   - To find \\(\\frac{384}{16}\\):\n   \\[\n   384 \\div 16 = 24\n   \\]\n\n### Final Answer:\nEach of the 16 students who completed their homework will receive 24 jelly beans.\n\nThus, the solution to the problem is that each eligible student receives **24 jelly beans**."
+        },
+        "correctitude": {
+            "gpt-4o": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9922279792746114
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_5.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Bradley and his friends enjoy playing marbles. They possess a box of marbles containing 12 red balls, 15 yellow balls, and 18 green balls. How many additional red balls do they require to double the number of red balls compared to the combined number of yellow and green balls?",
+        "correct_solution": "\\boxed{54}",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how we can solve this problem step-by-step:\n\n**1. Find the total number of yellow and green balls:**\n\n* Yellow balls + Green balls = 15 + 18 = 33 balls\n\n**2.  Calculate the target number of red balls:**\n\n* Double the number of yellow and green balls = 33 balls * 2 = 66 balls\n\n**3. Determine how many more red balls are needed:**\n\n* Target number of red balls - Current number of red balls = 66 balls - 12 balls = 54 balls\n\n**Solution:** Bradley and his friends need **54** more red balls. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9879518072289156
+            }
+        }
+    }
+}

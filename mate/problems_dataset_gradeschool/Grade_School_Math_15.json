@@ -1,0 +1,7 @@
+{
+    "problem": "Henry is renovating his kitchen and adding a new tile floor. He needs to cover an area of 200 square feet. He has a stack of tiles that measure 0.5 feet in length and width. He can get 40 tiles done per hour. Henry works for 6 hours at that rate, then has some coffee and works at a faster rate for the next 2 hours (60 tiles per hour). Henry runs out of tiles, so he goes to a store to purchase the remaining tiles needed to finish the floor. Given that the price per tile is $2.50, how much will he need to spend at the store to get exactly enough tiles to finish the floor?",
+    "category": "Grade School Math",
+    "level": "Level 3",
+    "solution": "\\boxed{1100}"
+  }
+  

@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_18.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Sally went to the mall to buy clothes for the summer. She went to Forever 21 and bought 4 tops, each priced at $12.99, $6.99, $17.99, $21.99, and 3 pants each priced at $15.99. If her subtotal is over $75, she gets a discount of 15% on her purchase at that store. Then she goes to Shoe Palace and buys 2 shoes for a total of $123.26. How much money did Sally spend at the mall?",
+        "correct_solution": "\\boxed{215}",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Let's break down the problem into smaller parts:\n\nPart 1: Calculate the total cost of the tops at Forever 21.\n- Tops prices: $12.99, $6.99, $17.99, and $21.99\n- Calculate the total cost of the tops: \n$12.99 + $6.99 + $17.99 + $21.99 = $59.96\n\nPart 2: Calculate the total cost of the pants at Forever 21.\n- Pants price: $15.99\n- Number of pants: 3\n- Calculate the total cost of the pants:\n$15.99 * 3 = $47.97\n\nPart 3: Calculate the subtotal before the discount at Forever 21.\n- Add the total cost of the tops and pants:\n$59.96 + $47.97 = $107.93\n\nPart 4: Apply the discount at Forever 21.\n- If the subtotal is over $75, Sally gets a 15% discount.\n- Calculate the discount amount: 15% of $107.93 = 0.15 * $107.93 = $16.19\n- Calculate the new subtotal after the discount:\n$107.93 - $16.19 = $91.74\n\nPart 5: Calculate the total cost of the shoes at Shoe Palace:\n- Total cost of the shoes: $123.26\n\nPart 6: Calculate the total amount Sally spent at the mall.\n- Add the new subtotal after the discount and the total cost of the shoes:\n$91.74 + $123.26 = $215.00\n\nTherefore, Sally spent $215.00 at the mall."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9936363636363637
+            }
+        }
+    }
+}

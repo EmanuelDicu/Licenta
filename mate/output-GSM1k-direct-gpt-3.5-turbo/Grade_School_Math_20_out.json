@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_20.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Dean wants to buy flowers to make arrangements for a party. He is going to make 12 arrangements. He wants to include 4 roses and 3 daisies in each arrangement. Roses come by the dozens and are $15 for each dozen. Daisies come in groups of 4 and are $8 for the set. How much will it cost for Dean to make all 12 arrangements?",
+        "correct_solution": "\\boxed{132}",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "To solve this problem, we can break it down into smaller parts and solve them step by step:\n\nPart 1: Calculate the cost of roses for one arrangement.\nSince Dean wants to include 4 roses in each arrangement and roses come by the dozens for $15 per dozen, we need to first find the cost of 4 roses.\nCost of one dozen roses = $15\nCost of 4 roses = $15 / 12 * 4 = $5\n\nPart 2: Calculate the cost of daisies for one arrangement.\nSince Dean wants to include 3 daisies in each arrangement and daisies come in groups of 4 for $8 per set, we need to first find the cost of 3 daisies.\nCost of one set of daisies = $8\nCost of 3 daisies = $8 / 4 * 3 = $6\n\nPart 3: Calculate the total cost for one arrangement.\nTotal cost for one arrangement = Cost of roses + Cost of daisies\nTotal cost for one arrangement = $5 + $6 = $11\n\nPart 4: Calculate the total cost for all 12 arrangements.\nSince Dean is making 12 arrangements, we need to multiply the total cost for one arrangement by 12 to find the total cost for all 12 arrangements.\nTotal cost for all 12 arrangements = $11 * 12 = $132\n\nTherefore, the total cost for Dean to make all 12 arrangements will be $132."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.993886462882096
+            }
+        }
+    }
+}

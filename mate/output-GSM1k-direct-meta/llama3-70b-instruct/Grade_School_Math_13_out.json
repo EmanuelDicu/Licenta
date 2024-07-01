@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_13.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Francis has a bowl of candy in front of him. There are three different flavors of candies that he\u2019s eaten over the course of 3 hours. He\u2019s eaten ten lemon, four orange, and sixteen cherry-flavored candies. If there were twenty of each when he started, how much of an average percentage is still left?",
+        "correct_solution": "\\boxed{50}",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them step by step.\n\n**Part 1: Calculate the total number of candies at the start**\n\nFrancis had 20 of each flavor of candy, so there were:\n\n* 20 lemon candies\n* 20 orange candies\n* 20 cherry candies\n\nTotal number of candies at the start = 20 + 20 + 20 = 60 candies\n\n**Part 2: Calculate the number of candies eaten**\n\nFrancis ate:\n\n* 10 lemon candies\n* 4 orange candies\n* 16 cherry candies\n\nTotal number of candies eaten = 10 + 4 + 16 = 30 candies\n\n**Part 3: Calculate the number of candies left**\n\nTotal number of candies left = Total number of candies at the start - Total number of candies eaten\n= 60 - 30\n= 30 candies\n\n**Part 4: Calculate the percentage of candies left for each flavor**\n\nLet's calculate the percentage of candies left for each flavor:\n\n* Lemon candies: 20 - 10 = 10 left. Percentage = (10/20) \u00d7 100% = 50%\n* Orange candies: 20 - 4 = 16 left. Percentage = (16/20) \u00d7 100% = 80%\n* Cherry candies: 20 - 16 = 4 left. Percentage = (4/20) \u00d7 100% = 20%\n\n**Part 5: Calculate the average percentage of candies left**\n\nTo find the average percentage, we add the percentages for each flavor and divide by 3:\n\n(50% + 80% + 20%) / 3 = 150% / 3 = 50%\n\nSo, the average percentage of candies left is 50%.\n\nTherefore, the solution to the problem is:\n\n**Francis has an average of 50% of the candies left.**"
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9956076134699854
+            }
+        }
+    }
+}

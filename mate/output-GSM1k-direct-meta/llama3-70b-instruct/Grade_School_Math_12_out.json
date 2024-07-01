@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_12.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Leah and 2 of her friends go to an all-you-can-eat dumpling buffet. Leah\u2019s 1st friend ate 30 dumplings, her 2nd friend ate twice as many dumplings as her 1st friend, and Leah ate 1.5 times as many dumplings as her 2nd friend. How many dumplings in total did Leah and her friends eat?",
+        "correct_solution": "\\boxed{180}",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them step by step.\n\n**Part 1: Find out how many dumplings the 2nd friend ate**\n\nWe know that the 2nd friend ate twice as many dumplings as the 1st friend. The 1st friend ate 30 dumplings, so we can multiply 30 by 2 to find out how many dumplings the 2nd friend ate:\n\n2nd friend's dumplings = 30 x 2 = 60 dumplings\n\n**Part 2: Find out how many dumplings Leah ate**\n\nWe know that Leah ate 1.5 times as many dumplings as her 2nd friend. We just found out that the 2nd friend ate 60 dumplings, so we can multiply 60 by 1.5 to find out how many dumplings Leah ate:\n\nLeah's dumplings = 60 x 1.5 = 90 dumplings\n\n**Part 3: Add up the total number of dumplings**\n\nNow we know how many dumplings each person ate. Let's add them up to find the total:\n\nTotal dumplings = 30 (1st friend) + 60 (2nd friend) + 90 (Leah)\n= 180 dumplings\n\n**Solution:**\n\nLeah and her friends ate a total of 180 dumplings.\n\nBy breaking down the problem into smaller parts, we were able to solve it step by step and find the total number of dumplings eaten by Leah and her friends."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9927470534904805
+            }
+        }
+    }
+}

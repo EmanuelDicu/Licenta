@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_4.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Colin is playing dice with his friend Eoin and needs some help keeping track of his score. He begins with 5 points and wins 6 points in the first round. In the second round, he won twice as many points as he won in the first round. In the third round, he had a fantastic roll and was able to triple his current total point count! How many points did Colin end the game with?",
+        "correct_solution": "\\boxed{69}",
+        "generated_solutions": {
+            "meta/llama3-70b-instruct": "Let's break down the problem into smaller parts and solve them step by step.\n\n**Part 1: Colin's starting points and first round win**\n\nColin begins with 5 points and wins 6 points in the first round. To find his total points after the first round, we can simply add the points he won to his starting points:\n\n5 (starting points) + 6 (first round win) = 11 points\n\n**Part 2: Second round win**\n\nIn the second round, Colin wins twice as many points as he won in the first round. Since he won 6 points in the first round, he wins:\n\n2 x 6 = 12 points\n\nin the second round. To find his total points after the second round, we add the points he won in the second round to his total points after the first round:\n\n11 (total points after first round) + 12 (second round win) = 23 points\n\n**Part 3: Third round win**\n\nIn the third round, Colin triples his current total point count. His current total point count is 23 points, so he wins:\n\n3 x 23 = 69 points\n\nin the third round. To find his final total points, we add the points he won in the third round to his total points after the second round:\n\n23 (total points after second round) + 69 (third round win) = 92 points\n\n**Solution**\n\nColin ends the game with a total of 92 points."
+        },
+        "correctitude": {
+            "meta/llama3-70b-instruct": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9942857142857143
+            }
+        }
+    }
+}

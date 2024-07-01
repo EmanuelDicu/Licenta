@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_20.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Dean wants to buy flowers to make arrangements for a party. He is going to make 12 arrangements. He wants to include 4 roses and 3 daisies in each arrangement. Roses come by the dozens and are $15 for each dozen. Daisies come in groups of 4 and are $8 for the set. How much will it cost for Dean to make all 12 arrangements?",
+        "correct_solution": "\\boxed{132}",
+        "generated_solutions": {
+            "gemini-1.5-pro": "Here's how to solve the problem step-by-step:\n\n**1. Calculate the total number of roses:**\n\n* Dean needs 4 roses per arrangement and is making 12 arrangements.\n* Total roses needed: 4 roses/arrangement * 12 arrangements = 48 roses\n\n**2. Calculate how many dozens of roses Dean needs:**\n\n* Roses come in dozens (12 roses per dozen).\n* Dozens of roses needed: 48 roses / 12 roses/dozen = 4 dozen roses\n\n**3. Calculate the total cost of the roses:**\n\n* Each dozen roses costs $15.\n* Total rose cost: 4 dozen roses * $15/dozen = $60\n\n**4. Calculate the total number of daisies:**\n\n* Dean needs 3 daisies per arrangement and is making 12 arrangements.\n* Total daisies needed: 3 daisies/arrangement * 12 arrangements = 36 daisies\n\n**5. Calculate how many sets of daisies Dean needs:**\n\n* Daisies come in sets of 4.\n* Sets of daisies needed: 36 daisies / 4 daisies/set = 9 sets of daisies\n\n**6. Calculate the total cost of the daisies:**\n\n* Each set of daisies costs $8.\n* Total daisy cost: 9 sets of daisies * $8/set = $72\n\n**7. Calculate the total cost of the flowers:**\n\n* Total cost: $60 (roses) + $72 (daisies) = $132\n\n**Solution:** It will cost Dean $132 to make all 12 arrangements. \n"
+        },
+        "correctitude": {
+            "gemini-1.5-pro": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9940878378378378
+            }
+        }
+    }
+}

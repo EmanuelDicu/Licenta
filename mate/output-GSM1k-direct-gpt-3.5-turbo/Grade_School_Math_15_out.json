@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_15.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Henry is renovating his kitchen and adding a new tile floor. He needs to cover an area of 200 square feet. He has a stack of tiles that measure 0.5 feet in length and width. He can get 40 tiles done per hour. Henry works for 6 hours at that rate, then has some coffee and works at a faster rate for the next 2 hours (60 tiles per hour). Henry runs out of tiles, so he goes to a store to purchase the remaining tiles needed to finish the floor. Given that the price per tile is $2.50, how much will he need to spend at the store to get exactly enough tiles to finish the floor?",
+        "correct_solution": "\\boxed{1100}",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Let's break down the problem into smaller parts and solve them step by step.\n\n1. Calculate the total number of tiles needed to cover the 200 square feet area:\nArea to cover = 200 square feet\nEach tile measures 0.5 feet in length and width\nArea covered by one tile = 0.5 feet * 0.5 feet = 0.25 square feet\nTotal number of tiles needed = Area to cover / Area covered by one tile\nTotal number of tiles needed = 200 sq ft / 0.25 sq ft = 800 tiles\n\n2. Calculate the number of tiles Henry can set in 6 hours at a rate of 40 tiles per hour:\nTiles set in 6 hours at 40 tiles per hour = 6 hours * 40 tiles/hour = 240 tiles\n\n3. Calculate the number of tiles Henry can set in the next 2 hours at a faster rate of 60 tiles per hour:\nTiles set in the next 2 hours at 60 tiles per hour = 2 hours * 60 tiles/hour = 120 tiles\n\n4. Total number of tiles set by Henry before running out of tiles = 240 tiles + 120 tiles = 360 tiles\nRemaining tiles needed to finish the floor = Total number of tiles needed - Total tiles set by Henry\nRemaining tiles needed = 800 tiles - 360 tiles = 440 tiles\n\n5. Calculate the cost to purchase the remaining 440 tiles at a price of $2.50 per tile:\nCost per tile = $2.50\nTotal cost to purchase remaining tiles = Remaining tiles needed * Cost per tile\nTotal cost = 440 tiles * $2.50 = $1100\n\nTherefore, Henry will need to spend $1100 at the store to get exactly enough tiles to finish the floor."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9936034115138592
+            }
+        }
+    }
+}

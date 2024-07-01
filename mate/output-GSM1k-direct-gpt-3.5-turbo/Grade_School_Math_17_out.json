@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_17.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "A coal miner is loading up coal into mine carts. During the first hour of the day, he is able to load 15 carts. His boss yells at him after that, so for each of the next three hours, he loads twice as many carts. Each cart weighs 78 pounds. What was the total weight of the coal he loaded on this day?",
+        "correct_solution": "\\boxed{8190}",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Let's break down the problem into smaller parts and solve them step by step:\n\n1. In the first hour, the coal miner loads 15 carts: 15 carts * 78 pounds/cart = 1170 pounds\n\n2. In each of the next three hours, the coal miner loads twice as many carts as in the previous hour. Let's calculate the number of carts loaded in the second hour:\n\n   - Second hour: 15 carts * 2 = 30 carts\n   - Total weight loaded in the second hour: 30 carts * 78 pounds/cart = 2340 pounds\n\n3. Now, let's calculate the total weight loaded in the third hour using the same logic:\n\n   - Third hour: 30 carts * 2 = 60 carts\n   - Total weight loaded in the third hour: 60 carts * 78 pounds/cart = 4680 pounds\n\n4. Finally, let's calculate the total weight loaded in the fourth hour:\n\n   - Fourth hour: 60 carts * 2 = 120 carts\n   - Total weight loaded in the fourth hour: 120 carts * 78 pounds/cart = 9360 pounds\n\n5. To find the total weight loaded on this day, we need to sum up the weights loaded in each hour:\n\n   Total weight = 1170 pounds (first hour) + 2340 pounds (second hour) + 4680 pounds (third hour) + 9360 pounds (fourth hour)\n                = 17550 pounds\n\nTherefore, the total weight of the coal the miner loaded on this day was 17,550 pounds."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": false,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9926769731489016
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Grade_School_Math_10.json": {
+        "category": "Grade School Math",
+        "difficulty": "Level 3",
+        "problem": "Emily is applying to 6 different colleges. 1/2 of the colleges have an application fee of $60, and the other half have an application fee of $90. She must also pay $15 per transcript to send them to each college. Her parents offer to help pay for half of the total costs. How many dollars does she have to pay?",
+        "correct_solution": "\\boxed{270}",
+        "generated_solutions": {
+            "gpt-3.5-turbo": "Let's break down the problem into smaller parts and solve it step by step:\n\nPart 1: Calculate the number of colleges with a $60 application fee and a $90 application fee.\nSince Emily is applying to 6 colleges and half of them have a $60 application fee and the other half have a $90 application fee, she is applying to 3 colleges with a $60 fee and 3 colleges with a $90 fee.\n\nPart 2: Calculate the total application fee for each type of college.\nFor the colleges with a $60 application fee, the total fee would be 3 colleges * $60 = $180.\nFor the colleges with a $90 application fee, the total fee would be 3 colleges * $90 = $270.\n\nPart 3: Calculate the total transcript fee.\nSince Emily has to pay $15 per transcript for each college, and she is applying to 6 colleges, the total transcript fee would be 6 colleges * $15 = $90.\n\nPart 4: Calculate the total amount she needs to pay without her parents' help.\nAdding up the application fees and the transcript fees, the total cost without her parents' help would be $180 (from colleges with $60 fee) + $270 (from colleges with $90 fee) + $90 (transcript fees) = $540.\n\nPart 5: Calculate the amount her parents will help pay.\nHer parents offer to help pay for half of the total costs, which is $540 / 2 = $270.\n\nPart 6: Calculate the amount Emily needs to pay.\nFinally, Emily needs to pay the remaining half of the total cost after her parents' help, which is $540 - $270 = $270.\n\nTherefore, Emily needs to pay $\\boxed{270}$ dollars."
+        },
+        "correctitude": {
+            "gpt-3.5-turbo": {
+                "Cvorum": true,
+                "Levenshtein distance": true,
+                "Levenshtein distance value": 0.9925826028320971
+            }
+        }
+    }
+}
