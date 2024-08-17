@@ -485,7 +485,7 @@ Existing key points:
 New key point:
 """
 
-validate_likelyhood_of_key_point_prompt = """
+validate_likelihood_of_key_point_prompt = """
 Help me evaluate the likelihood of a new key point for an algorithmic problem.
 - You MUST provide a SURE/LIKELY/UNLIKELY/NO as your final answer.
 - You MUST NOT provide any solution or answer to the problem.
