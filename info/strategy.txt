@@ -1,0 +1,43 @@
+1) Pornesc mai multe AI-uri in paralel pe mai multe solutii generate in partea preliminara si acelasi model si cand una devine clar mai buna decat alta incerc sa imbunatatesc un model cu feedback de la cel mai bun. Daca pica un test corectez strict testul ala si dupa rerulez. (tree of thoughts kinda)
+!!! atentie la if else.
+gpt 4o, gemini 1.5 pro si meta - llama370b
+
+2)
+•⁠  ⁠lasi un model sa iti genereze teste
+•⁠  ⁠rulez o solutie deja corecta
+
+3) MACM - condition mining - spart problema in subprobleme - sa ma uit la prompt-uri.
+•⁠  ⁠pleci cu un ai si incerci sa rezolvi problema in limbaj natural adaugand informatii iterativ
+•⁠  ⁠cand adaugi o noua informatie:
+	- ii dai lista de informatii anterioare si enuntul problemei (context) si ii spui sa deduca una noua
+	- o validezi cu un cvorum
+	- daca nu e buna, o corectezi cu tot cu exemplu
+	- ca sa te opresti, il intrebi daca e suficient sa te opresti folosind cvorum (TRUE/FALSE folosind cvorum)
+	- gandeste-mi o solutie pas cu pas pe baza observatiilor astora in limbaj natural
+
+4) tree / graph of thought
+	- din MACM -> referinte
+	- m-am uitat ce lucrari exista pe dataset-ul de la google.
+
+prompting
+prompt engineering
+
+
+chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://arxiv.org/pdf/2404.04735
+chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://arxiv.org/pdf/2302.11382
+chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://arxiv.org/pdf/2203.11171
+chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://arxiv.org/pdf/2404.10952
+chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://arxiv.org/pdf/2401.08500
+chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://arxiv.org/pdf/2402.03620
+chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://arxiv.org/pdf/2305.10601
+chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://arxiv.org/pdf/2308.08614
+
+
+explica-mi enuntul in bullet points
+ii dau primele 3 teste, de ce inputul ala da outputul ala
+genereaza 3 solutii in limbaj natural
+
+il intreb care considera ca este cea mai buna solutie
+generare teste aditionale
+genereaza o solutie
+iterare prin teste, daca da eroare reflecta
