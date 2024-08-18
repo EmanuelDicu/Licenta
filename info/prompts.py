@@ -1,11 +1,11 @@
 generate_solution_direct_prompt = """
-You are a C++ programing contest participant. You are given a problem statement and you need to write a C++ program to solve it.
+You are a C++ programming contest participant. You are given a problem statement and you need to write a C++ program to solve it.
 - You MUST NOT use any external libraries or functions. You can only use the standard C++ library.
 - You MUST refrain from adding any extraneous text that is not directly part of or relevant to the solution.
 - You MUST provide the solution code. Do not include any input/output code or function signature.
 - You MUST format the content so that it can be enclosed within a triple-quoted string.
 - You MUST provide only one solution, without any alternative variations.
-- You MUST wrap the C++ solution code with cpp{{...}}cpp tag.
+- You MUST wrap the C++ solution code with cpp<<YOUR_SOLUTION_HERE>>cpp tag.
 - You MUST deliver a comprehensive solution, detailing all the necessary steps instead of just presenting the final answer.
 - You MUST explain the reasoning behind each step, focusing solely on the provided constraints and the problem description.
 
@@ -31,11 +31,11 @@ To find the average speed, divide the distance by the time: 300 kilometers / 3.5
 Step 3:
 Therefore, the train's average speed is approximately 85.7 km/h.
 
-Solution code:
-cpp{{
+C++ Solution code:
+cpp<<
 #include <iostream>
 
-int main() {
+int main() {{
   // Given values
   double distance_km;  // distance traveled in kilometers
   double time_hours;   // time taken in hours
@@ -49,21 +49,19 @@ int main() {
   std::cout << average_speed_kmph << std::endl;
 
   return 0;
-}
-}}cpp
+}}
+>>cpp
 
 This is the problem you need to solve:
 Problem:
 {Problem}
-Objective:
-{Objective}
 Input:
 {Input}
 Output:
 {Output}
 C++ solution code:
-cpp{{YOUR SOLUTION HERE}}cpp
 """
+
 
 get_objective_and_constraints_prompt = """
 Assist me in identifying and examining the primary constraints and the goal of an algorithmic problem.
@@ -312,6 +310,8 @@ Output:
 C++ solution code:
 cpp{{YOUR SOLUTION HERE}}cpp
 """
+
+get_solution_ToT_prompt = generate_solution_MACM_prompt
 
 explain_bullet_points_prompt = """
 Help me explain the key points of a problem statement.

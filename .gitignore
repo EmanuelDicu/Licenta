@@ -1,8 +1,7 @@
 mate/math
 info/datasets
-# ignore everything beneath info/old
 info/old
-info/corpuses
 .idea
 .vscode
 .DS_Store
+generated
