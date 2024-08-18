@@ -41,3 +41,25 @@ il intreb care considera ca este cea mai buna solutie
 generare teste aditionale
 genereaza o solutie
 iterare prin teste, daca da eroare reflecta
+
+
+
+
+Pentru fiecare strategie ai un stackbar per model (3 stackbar-uri per strategie)
+Un stackbar e format din 6 coloane, fiecare coloana este media de succes (% nr teste trecute) pe categoria aia
+
+Heatmap:
+ox: model
+oy: strategia
+
+ori cate unu pt fiecare clasa de pb, ori unu singur, rata de rezolvare pt
+
+
+
+
+alt table chart:
+
+pt fiecare model in parte
+
+ox: strategie
+oy: alea 6 categorii
