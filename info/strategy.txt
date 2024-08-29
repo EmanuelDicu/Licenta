@@ -23,14 +23,14 @@ prompting
 prompt engineering
 
 
-chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://arxiv.org/pdf/2404.04735
-chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://arxiv.org/pdf/2302.11382
-chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://arxiv.org/pdf/2203.11171
-chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://arxiv.org/pdf/2404.10952
-chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://arxiv.org/pdf/2401.08500
-chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://arxiv.org/pdf/2402.03620
-chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://arxiv.org/pdf/2305.10601
-chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://arxiv.org/pdf/2308.08614
+https://arxiv.org/pdf/2404.04735
+https://arxiv.org/pdf/2302.11382
+https://arxiv.org/pdf/2203.11171
+https://arxiv.org/pdf/2404.10952
+https://arxiv.org/pdf/2401.08500
+https://arxiv.org/pdf/2402.03620
+https://arxiv.org/pdf/2305.10601
+https://arxiv.org/pdf/2308.08614
 
 
 explica-mi enuntul in bullet points
